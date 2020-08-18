@@ -56,5 +56,5 @@ jobs:
         if: (github.event.inputs.stable != '' || github.event.inputs.beta != '') && github.event.inputs.msg
         run: |
           git add --all
-          git commit -m "Update: ${{ github.event.inputs.msg }}"
+          git commit -m "${{ github.event.inputs.msg }}"
           git push
