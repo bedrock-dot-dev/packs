@@ -30,7 +30,7 @@ jobs:
           mkdir -p beta/behavior
           mkdir -p beta/resource
       - name: Download Stable
-        if: github.event.inputs.stable != ''
+        if: github.event.inputs.stable == 'true'
         run: |
           git checkout master
           curl -L https://aka.ms/behaviorpacktemplate -o ./tmp/behavior.zip
@@ -42,7 +42,7 @@ jobs:
           unzip ./tmp/behavior.zip -d stable/behavior
           unzip ./tmp/resource.zip -d stable/resource
       - name: Download Beta
-        if: github.event.inputs.beta != ''
+        if: github.event.inputs.beta == 'true'
         run: |
           curl -L https://aka.ms/MinecraftBetaBehaviors -o ./tmp/beta-behavior.zip
           curl -L https://aka.ms/MinecraftBetaResources -o ./tmp/beta-resource.zip
@@ -53,7 +53,7 @@ jobs:
           unzip ./tmp/beta-behavior.zip -d beta/behavior
           unzip ./tmp/beta-resource.zip -d beta/resource
       - name: Push
-        if: (github.event.inputs.stable != '' || github.event.inputs.beta != '') && github.event.inputs.msg
+        if: (github.event.inputs.stable == 'true' || github.event.inputs.beta == 'true') && github.event.inputs.msg
         run: |
           git add --all
           git commit -m "${{ github.event.inputs.msg }}"
