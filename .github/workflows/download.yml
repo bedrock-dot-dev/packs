@@ -1,0 +1,60 @@
+name: Update Pack Files
+
+on:
+  workflow_dispatch:
+    inputs:
+      stable:
+        description: 'Stable version'
+        required: false
+      beta:
+        description: 'Beta version'
+        required: false
+      msg:
+        description: 'Commit message'
+        required: true
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup git environment
+        run: |
+          git config --global user.name 'destruc7i0n'
+          git config --global user.email 'destruc7i0n@users.noreply.github.com'
+      - name: Ensure folders
+        run: |
+          mkdir -p tmp
+          mkdir -p stable/behavior
+          mkdir -p stable/resource
+          mkdir -p beta/behavior
+          mkdir -p beta/resource
+      - name: Download Stable
+        if: github.event.inputs.stable != ''
+        run: |
+          git checkout master
+          curl -L https://aka.ms/behaviorpacktemplate -o ./tmp/behavior.zip
+          curl -L https://aka.ms/resourcepacktemplate -o ./tmp/resource.zip
+
+          rm -rf stable/behavior/*
+          rm -rf stable/resource/*
+
+          unzip ./tmp/behavior.zip -d stable/behavior
+          unzip ./tmp/resource.zip -d stable/resource
+      - name: Download Beta
+        if: github.event.inputs.beta != ''
+        run: |
+          curl -L https://aka.ms/MinecraftBetaBehaviors -o ./tmp/beta-behavior.zip
+          curl -L https://aka.ms/MinecraftBetaResources -o ./tmp/beta-resource.zip
+          
+          rm -rf beta/behavior/*
+          rm -rf beta/resource/*
+
+          unzip ./tmp/beta-behavior.zip -d beta/behavior
+          unzip ./tmp/beta-resource.zip -d beta/resource
+      - name: Push
+        if: (github.event.inputs.stable != '' || github.event.inputs.beta != '') && github.event.inputs.msg
+        run: |
+          git add --all
+          git commit -m "Update: ${{ github.event.inputs.msg }}"
+          git push
