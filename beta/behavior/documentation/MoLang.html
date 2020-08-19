@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.16.100.51</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.16.100.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -689,6 +689,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.above_top_solid</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the height of the block immediately above the highest solid block at the input (x,z) position</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.actor_count</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the number of actors rendered in the last frame</br></td>
 </tr>
@@ -853,6 +857,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">Takes the armor slot index as a parameter, and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.has_biome_tag</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns whether or not a Block Placement Target has a specific biome tag</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.has_cape</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the player has a cape, else it returns 0.0</br></td>
 </tr>
@@ -891,6 +899,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.health</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.heightmap</td>
+<td style="border-style:solid; border-width:3; padding:7px">Queries Height Map</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.hurt_direction</td>
@@ -1321,8 +1333,16 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">returns the specified axis of the normalized position delta of the entity</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.noise</td>
+<td style="border-style:solid; border-width:3; padding:7px">Queries Perlin Noise Map</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.on_fire_time</td>
 <td style="border-style:solid; border-width:3; padding:7px">returns the time that the entity is on fire, else it returns 0.0</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.out_of_control</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is out of control, else it returns 0.0</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.overlay_alpha</td>

@@ -1,4 +1,4 @@
-<h1>SCRIPTING DOCUMENTATION </br>Version: 1.16.100.51</h1>
+<h1>SCRIPTING DOCUMENTATION </br>Version: 1.16.100.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -1673,7 +1673,7 @@ if (has_container === true) {
 
 <h2><p id="minecraft:collision_box">minecraft:collision_box</p></h2>
 
-<h3></h3>
+Sets the width and height of the Entity's collision box.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -1681,13 +1681,13 @@ if (has_container === true) {
 <td style="border-style:solid; border-width:2; padding:8px">height</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Height of the collision box in blocks. A negative value will be assumed to be 0</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Height of the collision box in blocks. A negative value will be assumed to be 0.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">width</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Width and Depth of the collision box in blocks. A negative value will be assumed to be 0</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Width and Depth of the collision box in blocks. A negative value will be assumed to be 0.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -1752,7 +1752,7 @@ this.listenForEvent("minecraft:player_attacked_entity", function(eventData) {
 
 <h2><p id="minecraft:equipment">minecraft:equipment</p></h2>
 
-<h3></h3>
+Sets the Equipment table to use for this Entity.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -1760,13 +1760,13 @@ this.listenForEvent("minecraft:player_attacked_entity", function(eventData) {
 <td style="border-style:solid; border-width:2; padding:8px">slot_drop_chance</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">A list of slots with the chance to drop an equipped item from that slot</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A list of slots with the chance to drop an equipped item from that slot.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">table</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The file path to the equipment table, relative to the behavior pack's root</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The file path to the equipment table, relative to the behavior pack's root.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
