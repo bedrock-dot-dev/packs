@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.100.51</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.100.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -10247,21 +10247,6 @@ This filter group will pass only when the moon_intensity is greater than 0.5 AND
 
 <a href="#Index">Back to top</a><br><br>
 
-<h2><p id="minecraft:behavior.harvest_farm_block">minecraft:behavior.harvest_farm_block</p></h2>
-
-<h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
 <h2><p id="minecraft:behavior.squid_idle">minecraft:behavior.squid_idle</p></h2>
 
 <a href="#Index">Back to top</a><br><br>
@@ -11295,120 +11280,6 @@ This filter group will pass only when the moon_intensity is greater than 0.5 AND
 </table>
 <a href="#Index">Back to top</a><br><br>
 
-<h2><p id="minecraft:behavior.drop_item_for">minecraft:behavior.drop_item_for</p></h2>
-
-<h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">drop_item_chance</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">[1.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">The probability that the mob will drop an item.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">entity_types</td>
-<td style="border-style:solid; border-width:2; padding:8px">JSON Object</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">List of entity types this mob will drop items for.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
-<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">filters</td>
-<td style="border-style:solid; border-width:1; padding:9px">Minecraft Filter</td>
-<td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">Conditions that make this entry in the list valid</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">max_dist</td>
-<td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
-<td style="border-style:solid; border-width:1; padding:9px">16</td>
-<td style="border-style:solid; border-width:1; padding:9px">Maximum distance this mob can be away to be a valid choice</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">must_see</td>
-<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
-<td style="border-style:solid; border-width:1; padding:9px">false</td>
-<td style="border-style:solid; border-width:1; padding:9px">If true, the mob has to be visible to be a valid choice</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">must_see_forget_duration</td>
-<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
-<td style="border-style:solid; border-width:1; padding:9px">3.0</td>
-<td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
-<td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
-<td style="border-style:solid; border-width:1; padding:9px">1.0</td>
-<td style="border-style:solid; border-width:1; padding:9px">Multiplier for the running speed. A value of 1.0 means the speed is unchanged</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">walk_speed_multiplier</td>
-<td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
-<td style="border-style:solid; border-width:1; padding:9px">1.0</td>
-<td style="border-style:solid; border-width:1; padding:9px">Multiplier for the walking speed. A value of 1.0 means the speed is unchanged</br></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">goal_radius</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.5</td>
-<td style="border-style:solid; border-width:2; padding:8px">Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">loot_table</td>
-<td style="border-style:solid; border-width:2; padding:8px">String</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Loot table to select items from.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">max_dist</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Maximum distance in blocks this mob will look for entities to drop an item for.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">offering_distance</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">[1.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">The distance in blocks the mob will try to be away from the entity when it drops the item.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">on_drop_attempt</td>
-<td style="border-style:solid; border-width:2; padding:8px">String</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Event to run when this mob attempts to drop an item.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">search_height</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">1</td>
-<td style="border-style:solid; border-width:2; padding:8px">Height in blocks from the target the mob can be.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">search_range</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The distance in blocks from the target the mob can be.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">time_of_day_range</td>
-<td style="border-style:solid; border-width:2; padding:8px">Range [a, b]</td>
-<td style="border-style:solid; border-width:2; padding:8px">[0.0, 1.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">The valid times of day that this goal can be used.  For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0.</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
 <h2><p id="minecraft:behavior.sneeze">minecraft:behavior.sneeze</p></h2>
 
 <h3></h3>
@@ -12070,18 +11941,6 @@ Fires off a specified event when a block in the block list is broken within the 
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">sensor_radius</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">List</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">on_break</br></td>
-</tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
@@ -13337,6 +13196,21 @@ The amount of damage done each tick that the conditions are met.</br><a href="#I
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h2><p id="minecraft:inside_block_notifier">minecraft:inside_block_notifier</p></h2>
+
+Verifies whether the entity is inside any of the listed blocks.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">block_list</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">List of blocks, with certain block states, that we are monitoring to see if the entity is inside.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
 <h2><p id="minecraft:insomnia">minecraft:insomnia</p></h2>
 
 Adds a timer since last rested to see if phantoms should spawn.</br><h3></h3>
@@ -13528,10 +13402,6 @@ Defines this entity's inventory properties.</br><h3></h3>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
-
-<h2><p id="minecraft:is_illager_captain">minecraft:is_illager_captain</p></h2>
-
-Sets that this entity is an illager captain.</br><a href="#Index">Back to top</a><br><br>
 
 <h2><p id="minecraft:item_hopper">minecraft:item_hopper</p></h2>
 
@@ -14424,6 +14294,10 @@ Allows this entity to generate paths by walking around and jumping up and down a
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h2><p id="minecraft:out_of_control">minecraft:out_of_control</p></h2>
+
+Defines the entity's 'out of control' state.</br><a href="#Index">Back to top</a><br><br>
+
 <h2><p id="minecraft:peek">minecraft:peek</p></h2>
 
 Defines the entity's 'peek' behavior, defining the events that should be called during it.</br><h3></h3>
@@ -14457,7 +14331,7 @@ Defines whether an entity should be persistent in the game world.</br><a href="#
 
 <h2><p id="minecraft:physics">minecraft:physics</p></h2>
 
-Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.</br><h3></h3>
+Defines physics properties of an actor, including if it is affected by gravity or if it collides with objects.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -15628,20 +15502,20 @@ Defines the rules for a mob to trust players.</br><h3></h3>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">probability</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1</td>
-<td style="border-style:solid; border-width:2; padding:8px">The chance of the entity trusting with each item use between 0.0 and 1.0, where 1.0 is 100%</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">1.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">The chance of the entity trusting with each item use between 0.0 and 1.0, where 1.0 is 100%.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">trust_event</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Event to run when this entity becomes trusting</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Event to run when this entity becomes trusting.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">trust_items</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The list of items that can be used to get the entity to trust players</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The list of items that can be used to get the entity to trust players.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -15916,10 +15790,6 @@ Sets the mapping of internal animation controller references to actual animation
 <td style="border-style:solid; border-width:2; padding:8px">277029334</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.drop_item_for</td>
-<td style="border-style:solid; border-width:2; padding:8px">1846615759</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.eat_carried_item</td>
 <td style="border-style:solid; border-width:2; padding:8px">-184757575</br></td>
 </tr>
@@ -15982,10 +15852,6 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.go_home</td>
 <td style="border-style:solid; border-width:2; padding:8px">-1579225026</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.harvest_farm_block</td>
-<td style="border-style:solid; border-width:2; padding:8px">10843010</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.hold_ground</td>
@@ -16494,6 +16360,10 @@ Sets the mapping of internal animation controller references to actual animation
 <td style="border-style:solid; border-width:2; padding:8px">163715083</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:inside_block_notifier</td>
+<td style="border-style:solid; border-width:2; padding:8px">-377593253</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:insomnia</td>
 <td style="border-style:solid; border-width:2; padding:8px">-300455606</br></td>
 </tr>
@@ -16604,6 +16474,10 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:npc</td>
 <td style="border-style:solid; border-width:2; padding:8px">1140005505</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:out_of_control</td>
+<td style="border-style:solid; border-width:2; padding:8px">-639930856</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:peek</td>
@@ -16796,10 +16670,6 @@ Sets the mapping of internal animation controller references to actual animation
 <td style="border-style:solid; border-width:2; padding:8px">-570508595</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft:foot_size</td>
-<td style="border-style:solid; border-width:2; padding:8px">1133270874</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:friction_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">-714364556</br></td>
 </tr>
@@ -16987,7 +16857,7 @@ Sets the entity's delay between playing its ambient sound.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">8.000000</td>
-<td style="border-style:solid; border-width:2; padding:8px">Minimum time in seconds before the entity plays its ambient sound again</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Minimum time in seconds before the entity plays its ambient sound again.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17014,13 +16884,13 @@ Sets the width and height of the Entity's collision box.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">height</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Height of the collision box in blocks. A negative value will be assumed to be 0</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Height of the collision box in blocks. A negative value will be assumed to be 0.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">width</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Width and Depth of the collision box in blocks. A negative value will be assumed to be 0</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Width and Depth of the collision box in blocks. A negative value will be assumed to be 0.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17035,7 +16905,7 @@ Defines the entity's color. Only works on vanilla entities that have predefined 
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The Palette Color value of the entity</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The Palette Color value of the entity.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17050,7 +16920,7 @@ Defines the entity's second texture color. Only works on vanilla entities that h
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The second Palette Color value of the entity</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The second Palette Color value of the entity.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17065,7 +16935,7 @@ Sets this entity's default head rotation angle.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.0f</td>
-<td style="border-style:solid; border-width:2; padding:8px">Angle in degrees</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Angle in degrees.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17080,13 +16950,13 @@ Sets the Equipment table to use for this Entity.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">slot_drop_chance</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">A list of slots with the chance to drop an equipped item from that slot</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A list of slots with the chance to drop an equipped item from that slot.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">table</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The file path to the equipment table, relative to the behavior pack's root</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The file path to the equipment table, relative to the behavior pack's root.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17109,29 +16979,14 @@ Speed in Blocks that this entity flies at.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.02</td>
-<td style="border-style:solid; border-width:2; padding:8px">Flying speed in blocks per tick</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
-<h2><p id="minecraft:foot_size">minecraft:foot_size</p></h2>
-
-Sets the number of blocks the entity can step without jumping.</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">value</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.5</td>
-<td style="border-style:solid; border-width:2; padding:8px">The value of the size of the entity's step</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Flying speed in blocks per tick.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
 <h2><p id="minecraft:friction_modifier">minecraft:friction_modifier</p></h2>
 
-Defines how much does friction affect this entity.</br><h3></h3>
+Defines how much friction affects this entity.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -17139,7 +16994,7 @@ Defines how much does friction affect this entity.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17154,7 +17009,7 @@ Sets the offset from the ground that the entity is actually at.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The value of the entity's offset from the terrain, in blocks</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The value of the entity's offset from the terrain, in blocks.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17185,7 +17040,7 @@ Allows dyes to be used on this entity to change its color.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">interact_text</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The text that will display when interacting with this entity with a dye when playing with Touch-screen controls</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The text that will display when interacting with this entity with a dye when playing with Touch-screen controls.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17228,7 +17083,7 @@ Sets that this entity is currently tamed.</br><a href="#Index">Back to top</a><b
 
 <h2><p id="minecraft:item_controllable">minecraft:item_controllable</p></h2>
 
-Defines what items can be used to control this entity while ridden</br><h3></h3>
+Defines what items can be used to control this entity while ridden.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -17236,7 +17091,7 @@ Defines what items can be used to control this entity while ridden</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">control_items</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">List of items that can be used to control this entity</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">List of items that can be used to control this entity.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17251,7 +17106,7 @@ Sets the loot table for what items this entity drops upon death.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">table</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The path to the loot table, relative to the Behavior Pack's root</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The path to the loot table, relative to the Behavior Pack's root.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17266,7 +17121,7 @@ Additional variant value. Can be used to further differentiate variants.</br><h3
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The ID of the variant. By convention, 0 is the ID of the base entity</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The ID of the variant. By convention, 0 is the ID of the base entity.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17281,7 +17136,7 @@ Sets the distance through which the entity can push through.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The value of the entity's push-through, in blocks</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The value of the entity's push-through, in blocks.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17296,7 +17151,7 @@ Sets the entity's visual size.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The value of the scale. 1.0 means the entity will appear at the scale they are defined in their model. Higher numbers make the entity bigger</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The value of the scale. 1.0 means the entity will appear at the scale they are defined in their model. Higher numbers make the entity bigger.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17311,7 +17166,7 @@ Skin ID value. Can be used to differentiate skins, such as base skins for villag
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The ID of the skin. By convention, 0 is the ID of the base skin</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The ID of the skin. By convention, 0 is the ID of the base skin.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17326,7 +17181,7 @@ Sets the entity's base volume for sound effects.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The value of the volume the entity uses for sound effects</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The value of the volume the entity uses for sound effects.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17341,14 +17196,14 @@ Defines the families this entity belongs to.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">family</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">List of family names</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">List of family names.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
 <h2><p id="minecraft:variant">minecraft:variant</p></h2>
 
-Used to differentiate the component group of a variant of an entity from others (e.g. ocelot, villager)</br><h3></h3>
+Used to differentiate the component group of a variant of an entity from others. (e.g. ocelot, villager)</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -17356,7 +17211,7 @@ Used to differentiate the component group of a variant of an entity from others 
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The ID of the variant. By convention, 0 is the ID of the base entity</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The ID of the variant. By convention, 0 is the ID of the base entity.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -17371,7 +17226,7 @@ Sets the speed multiplier for this entity's walk animation speed.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">value</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The higher the number, the faster the animation for walking plays. A value of 1.0 means normal speed, while 2.0 means twice as fast</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The higher the number, the faster the animation for walking plays. A value of 1.0 means normal speed, while 2.0 means twice as fast.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
