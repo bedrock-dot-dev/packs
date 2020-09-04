@@ -692,7 +692,6 @@ commands.clone.description=Klont Blöcke aus einer Region in eine andere.	#
 commands.clone.failed=Keine Blöcke kopiert	#
 commands.clone.filtered.error=Gefilterte Nutzung benötigt einen Filterblock, um präzisiert zu werden.	#
 commands.clone.noOverlap=Quelle und Ziel können sich nicht überschneiden	#
-commands.clone.outOfWorld=Auf Blöcke außerhalb der geladenen Welt kann nicht zugegriffen werden	#
 commands.clone.success=%1$d Blöcke kopiert	#
 commands.clone.tooManyBlocks=Zu viele Blöcke im angegebenen Bereich (%1$d > %2$d)	#
 commands.closechat.description=Schließt das Chatfenster des lokalen Spielers, wenn es geöffnet ist.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Schließt eine eventuell vorhandene Websocke
 commands.code.description=Startet den Code-Builder.	#
 commands.code.success=Code-Builder gestartet.	#
 commands.compare.failed=Quelle und Ziel sind nicht identisch	#
-commands.compare.outOfWorld=Auf Blöcke außerhalb der geladenen Welt kann nicht zugegriffen werden	#
 commands.compare.success=%1$d Blöcke verglichen	#
 commands.compare.tooManyBlocks=Zu viele Blöcke im angegebenen Bereich (%1$d > %2$d)	#
 commands.corruptworld.description=Korrumpiert die auf dem Server geladene Welt.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Nicht durchgeführt	#
 commands.generic.num.invalid='%1$s' ist keine gültige Zahl	#
 commands.generic.num.tooBig=Die eingegebene Zahl (%1$d) ist zu groß. Sie darf höchstens %2$d betragen	#
 commands.generic.num.tooSmall=Die eingegebene Zahl (%1$d) ist zu klein. Sie muss mindestens %2$d betragen	#
+commands.generic.outOfWorld=Auf Blöcke außerhalb der geladenen Welt kann nicht zugegriffen werden	#
 commands.generic.parameter.invalid='%1$s' ist kein gültiger Parameter	#
 commands.generic.permission.selector=<unzureichende Berechtigungen für Selektor-Erweiterung>	#
 commands.generic.player.notFound=Dieser Spieler konnte nicht gefunden werden	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Berechtigungsstufe %s für Spieler %s konnte nic
 commands.permissions.set.success=Berechtigungsstufe %s für Spieler %s erfolgreich eingestellt.	#
 commands.permissions.save.failed=Berechtigungsstufe %s für Spieler %s konnte nicht gespeichert werden.	#
 commands.permissions.save.success=Berechtigungsstufe %s für Spieler %s erfolgreich gespeichert.	#
+commands.screenshake.description=Wendet Kamerawackeln mit angegebener Intensität und Dauer auf die Kamera des Spielers an.	#
+commands.screenshake.success=Eine Anfrage für Kamerawackeln an die folgenden Spieler schicken: %s	#
 commands.spawnParticleEmitter.description=Erzeugt einen Partikelemitter	#
 commands.particle.description=Erstellt Partikel.	#
 commands.particle.notFound=Unbekannter Effektname %1$s	#
 commands.particle.success=Effekt wird %2$d mal für %1$s abgespielt	#
+commands.playanimation.description=Lässt eins oder mehr Wesen eine einmalige Animation abspielen, vorausgesetzt, alle Variablen sind korrekt eingestellt.	#
+commands.playanimation.success=Animationsanfragen zur Bearbeitung an Clients geschickt.	#
 commands.players.list=Es sind %1$d/%2$d Spieler online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Gibt einen Sound wieder.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Platz %d konnte nicht ausgetauscht werden. We
 commands.replaceitem.success=%s Slot %d durch %d * %s ersetzt	#
 commands.replaceitem.success.entity=%s Slot %d von %s mit %d * %s ersetzt	#
 commands.replaceitem.tagError=Analysieren von Daten-Tag fehlgeschlagen: %1$s	#
+commands.ride.description=Lässt Wesen mithilfe eines anderen Wesens reisen, beendet die Reise, lässt Reisegelegenheiten den Reisenden hinausbefördern oder ruft Reisegelegenheiten oder Reisende herbei.	#
+commands.ride.evictRiders.success=Reisegelegenheiten, die Reisende erfolgreich hinausbefördert haben: %1$s	#
+commands.ride.startRiding.failure=Reisende, die die Reisevoraussetzungen nicht erfüllt haben: %1$s	#
+commands.ride.startRiding.groupDoesntFit=Die Gruppe von Reisenden passt nicht auf die Reisegelegenheit.	#
+commands.ride.startRiding.notRideable=Das ausgewählte Wesen ist zur Beförderung nicht geeignet.	#
+commands.ride.startRiding.rideFull=Die Reisegelegenheit ist bereits voll.	#
+commands.ride.startRiding.rideFullRidersLeft=Die Reisegelegenheit ist voll, daher wurden nicht alle Reisenden hinzugefügt.	#
+commands.ride.startRiding.success=Der Reisegelegenheit erfolgreich hinzugefügte Reisende: %1$s	#
+commands.ride.startRiding.tooManyRiders=Zu viele Reisende. Für teleport_ride kann immer nur ein Reisender angegeben werden.	#
+commands.ride.startRiding.tooManyRides=Zu viele Reisegelegenheiten. Es kann immer nur eine Reisegelegenheit angegeben werden.	#
+commands.ride.stopRiding.success=Reisende, die die Reise erfolgreich beendet haben: %1$s	#
+commands.ride.summonRide.failed=Reisegelegenheiten wurden gerufen, doch folgende Reisenden konnten nicht hinzugefügt werden: %1$s	#
+commands.ride.summonRide.notRideable=Wesen wurde gerufen, kann aber nicht als Reisegelegenheit genutzt werden.	#
+commands.ride.summonRide.success=Reisegelegenheit für folgende Reisenden erfolgreich gerufen: %1$s	#
+commands.ride.summonRider.failed=Reisende wurden gerufen, konnten aber den Reisegelegenheiten nicht hinzugefügt werden: %1$s	#
+commands.ride.summonRider.fullRides=Reisende konnte diese Reisegelegenheiten nicht nutzen, da sie voll sind: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Die folgenden Wesen können nichts befördern: %1$s	#
+commands.ride.summonRider.success=Erfolgreich für Reisen gerufene Reisende: %1$s	#
 commands.save.description=Steuern oder prüfen, wie das Spiel Daten auf der Festplatte speichert.	#
 commands.save.disabled=Automatisches Speichern der Welt ausgeschaltet	#
 commands.save.enabled=Automatisches Speichern der Welt eingeschaltet	#
@@ -957,6 +978,9 @@ commands.save-on.description=Aktiviert die automatische Serverspeicherung.	#
 commands.save-on.success=Änderungen am Level werden fortgesetzt.	#
 commands.save-state.description=Prüft, ob der vorherige "Alles speichern"-Vorgang abgeschlossen ist, und führt die entsprechenden Dateien auf.	#
 commands.say.description=Sendet eine Chatnachricht an andere Spieler.	#
+commands.schedule.description=Setzt eine Aktion zur Ausführung an, sobald ein Gebiet geladen wurde, oder nach einer gewissen Zeitspanne.	#
+commands.schedule.functionQueued=Funktion ist in Warteschlange und wird ausgeführt, sobald das angegebene Gebiet geladen wurde.	#
+commands.schedule.functionRan=%1$d Funktionen wurden erfolgreich in Funktion %2$s ausgeführt.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Server wird gestoppt	#
 commands.stopsound.description=Beendet einen Sound.	#
 commands.stopsound.success=Sound %s für %s angehalten	#
 commands.stopsound.success.all=Alle Sounds für %s angehalten	#
+commands.structure.description=Speichert oder lädt eine Struktur der Welt.	#
+commands.structure.empty.load=Struktur kann ohne Wesen und Blöcke nicht geladen werden.	#
+commands.structure.empty.save=Struktur kann ohne Wesen und Blöcke nicht gespeichert werden.	#
+commands.structure.invalid.integrity=Die Integrität muss sich zwischen 0 und 100 befinden.	#
+commands.structure.invalid.name=Namen müssen im Format "Name" oder "Namespace:Name" angegeben werden. Sollte kein Namespace angegeben sein, wird der Standard verwendet.	#
+commands.structure.load.success=Struktur mit dem Namen %s geladen.	#
+commands.structure.notFound=Die Struktur %s kann nicht gefunden werden. Stelle sicher, dass der Name korrekt geschrieben ist und versuche es dann erneut.	#
+commands.structure.save.success=Struktur mit dem Namen %s gespeichert.	#
+commands.structure.size.tooBig=Die Strukturgröße darf nicht größer sein als (%1$d, %2$d, %3$d), war zuvor (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=Die Strukturgröße darf nicht kleiner sein als (%1$d, %2$d, %3$d), war zuvor (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Unbekannte Strukturaktion angegeben	#
+commands.structure.y.tooHigh=Blöcke können nicht außerhalb der Welt platziert werden. Probiere es mit einem Wert von %d oder geringer als die Y-Komponente von <to: x y z>.	#
+commands.structure.y.tooLow=Blöcke können nicht außerhalb der Welt platziert werden. Probiere es mit einem Wert größer als 0 als die Y-Komponente von <to: x y z>.	#
 commands.summon.description=Beschwört eine Entität.	#
 commands.summon.failed=Kann Objekt nicht erzeugen	#
 commands.summon.outOfWorld=Kann Objekt nicht außerhalb der geladenen Welt erzeugen	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus-Abonnement abgelaufen	#
 realmsPlus.popup.message=Dein Realms Plus-Abonnement ist abgelaufen. Erneuere dein Abonnement, um wieder Zugang zu deinem Realm und Realms Plus-Paketen und -Skins zu erhalten. 	#
 
 realmsPlusUpgradeNotice.title=Willkommen zu Realms Plus!	#
-realmsPlusUpgradeNotice.body=Dein Realms-Abonnement wurde hochgestuft auf Realms Plus. Du kannst nun ohne weitere Kosten auf mehr als 50 Inhaltspaketen vom Marketplace zugreifen. Zudem können bis zu 10 Spieler gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Abonnementinhalte in deinem Realm.	#
+realmsPlusUpgradeNotice.body=Dein Realms-Abonnement wurde hochgestuft auf Realms Plus. Du kannst nun ohne weitere Kosten auf mehr als 100 Inhaltspakete vom Marketplace zugreifen. Zudem können bis zu 10 Spieler gleichzeitig spielen und alle komplett gratis Zugriff auf die Abonnementinhalte in deinem Realm erhalten!	#
 realmsPlusUpgradeNotice.continue=Weiter	#
 realmsPlusUpgradeNotice.viewpacks=Realms Plus-Pakete ansehen	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Verwalten	#
 options.viewSubscriptions.renew=Wird alle 30 Tage erneuert.	#
 options.viewSubscriptions.daysRemaining=%d Tage verbleiben	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus-Abonnement	#
-options.viewSubscriptions.realmsPlus.detail=Über 50 neue Inhalte und dein eigener Realm-Server.	#
+options.viewSubscriptions.realmsPlus.detail=Über 100 neue Inhalte und dein eigener Realm-Server.	#
 options.viewSubscriptions.realms.header=Zusätzliche Abonnements	#
 options.viewSubscriptions.realms.detail=Zugriff auf deinen eigenen Realm-Server mit bis zu %d Spielern gleichzeitig.	#
 options.viewSubscriptions.loadingSubscriptions=Deine Abonnements werden geladen ...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=FEHLER KEIN ANGEBOT GEFUNDEN	#
 store.realmsPlus.manageSubscription=ABONNEMENT VERWALTEN	#
 store.realmsPlus.viewAllPacksTitle=GROSSARTIGES ANGEBOT: PAKETE IM WERT VON ÜBER §g$150 (USD)!§r	#
 
-store.realmsPlus.nowActive=Realms Plus ist nun auf diesem Gerät aktiv. Du kannst jetzt ohne weitere Kosten auf mehr als 50 Inhaltspaketen vom Marketplace zugreifen. Zudem können bis zu 10 Spieler gleichzeitig in deinem Realm spielen und sie erhalten alle komplett gratis Zugriff auf die Abonnementinhalte in deinem Realm!	#
+store.realmsPlus.nowActive=Realms Plus ist nun auf diesem Gerät aktiv. Du kannst jetzt ohne weitere Kosten auf mehr als 100 Inhaltspakete vom Marketplace zugreifen. Zudem können bis zu 10 Spieler gleichzeitig in deinem Realm spielen und alle komplett gratis Zugriff auf die Abonnementinhalte in deinem Realm erhalten!	#
 
 store.realmsPlus.buyNow.buttonText=FÜR %s KAUFEN	#
 store.realmsPlus.buyNow.viewTerms=GESCHÄFTSBEDINGUNGEN	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=DATENSCHUTZRICHTLINIE	#
 
 store.realmsPlus.buyNow.title=Beginne dein Realms Plus-Abonnement	#
 store.realmsPlus.startTrial.title=Starte jetzt deine KOSTENLOSE 30-Tage-Demoversion!	#
-store.realmsPlus.startTrial.description=Dein Realm und über 50 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und sie erhalten komplett gratis Zugriff auf die Welten in deinem Realm! Dein erster Monat ist kostenlos. Danach werden dir %s/Monat in Rechnung gestellt. Du kannst das Abonnent jederzeit beenden.	#
-store.realmsPlus.noTrial.description=Dein Realm und über 50 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und sie erhalten komplett gratis Zugriff auf die Welten in deinem Realm! Dein Abonnement steht dir 30 Tage lang zum Preis von %s:minecoin: zur Verfügung.	#
-store.realmsPlus.noTrial.description.iap=Dein Realm und über 50 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Welten in deinem Realm! Dein Abonnement steht dir 30 Tage lang zum Preis von %s zur Verfügung.	#
+store.realmsPlus.startTrial.description=Dein Realm und über 100 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten! Dein erster Monat ist kostenlos. Danach werden dir %s/Monat in Rechnung gestellt. Das Abonnement ist jederzeit kündbar.	#
+store.realmsPlus.noTrial.description=Dein Realm und über 100 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten! Dein Abonnement steht dir 30 Tage lang zum Preis von %s:minecoin: zur Verfügung.	#
+store.realmsPlus.noTrial.description.iap=Dein Realm und über 100 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten! Dein Abonnement steht dir 30 Tage lang zum Preis von %s zur Verfügung.	#
 store.realmsPlus.realmName.placeholder=Realm von %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Dein Realm und über 50 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Welten in deinem Realm. Dein erster Monat ist kostenlos. Danach werden dir %s/Monat in Rechnung gestellt. Das Abonnent ist jederzeit kündbar.	#
-store.realmsPlus.recurring.withoutTrial=Dein Realm und über 50 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Welten in deinem Realm. Dir werden %s/Monat in Rechnung gestellt. Das Abonnent ist jederzeit kündbar.	#
-store.realmsPlus.consumable.offerTrial=Dein Realm und über 50 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Abonnementinhalte in deinem Realm! Dein Abonnement steht dir 30 Tage lang gratis und anschließend zum Preis von %s alle 30 Tage zur Verfügung.	#
-store.realmsPlus.consumable.withoutTrial=Dein Realm und über 50 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Welten in deinem Realm! Dein Abonnement steht dir 30 Tage lang zum Preis von %s zur Verfügung.	#
+store.realmsPlus.recurring.offerTrial=Dein Realm und über 100 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten! Dein erster Monat ist kostenlos. Danach werden dir %s/Monat in Rechnung gestellt. Das Abonnement ist jederzeit kündbar.	#
+store.realmsPlus.recurring.withoutTrial=Dein Realm und über 100 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten! Dir werden %s/Monat in Rechnung gestellt. Das Abonnement ist jederzeit kündbar.	#
+store.realmsPlus.consumable.offerTrial=Dein Realm und über 100 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten! Dein Abonnement steht dir die erste 30 Tage lang kostenlos zur Verfügung und du kannst es danach für 30 Tage zum Preis von %s verlängern.	#
+store.realmsPlus.consumable.withoutTrial=Dein Realm und über 100 Marketplace-Pakete stehen umgehend zur Verfügung. Bis zu 10 Spieler können gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten! Dein Abonnement steht dir 30 Tage lang zum Preis von %s zur Verfügung.	#
 
 store.realmsPlus.landing.header=Abonnement beinhaltet:	#
 
-store.realmsPlus.landing.info1.line1=– Zugriff auf über 50 Marketplace-Pakete	#
+store.realmsPlus.landing.info1.line1=– Zugriff auf über 100 Marketplace-Pakete	#
 store.realmsPlus.landing.info1.line2=- Dein persönlicher Realm-Server	#
 store.realmsPlus.landing.info1.line3=– Freunde spielen kostenlos in deinem Realm	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Probiere von allem etwas mit Mash-ups
 
 store.realmsPlus.content.popularPacks=Beliebte Pakete in Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=ALLE PAKETE ANZEIGEN	#
-store.realmsPlus.content.contentDescription=Mach dir eine Quelle unglaublicher Minecraft-Inhalte zunutze! Mit Realms Plus erhältst du sofortigen Zugang zu über 50 Marketplace-Objekten wie Mash-ups, Welten, Skinpaketen und epischen Abenteuern. Und jeden Monat gibt es etwas Neues! Deine Inhalte werden auf deinem persönlichen Server gespeichert und stehen dir auf allen Plattformen zur Verfügung, auf denen du sowohl Realms als auch den Minecraft Marketplace nutzen kannst. Zudem können bis zu 10 Spieler gleichzeitig spielen und sie erhalten komplett gratis Zugriff auf die Welten in deinem Realm!	#
+store.realmsPlus.content.contentDescription=Mach dir eine Quelle unglaublicher Minecraft-Inhalte zunutze! Mit Realms Plus erhältst du sofortigen Zugang zu über 100 Marketplace-Objekten wie Mash-ups, Welten, Skinpaketen und epischen Abenteuern – und jeden Monat kommt etwas Neues dazu! Deine Inhalte werden auf deinem persönlichen Server gespeichert und stehen dir auf allen Plattformen zur Verfügung, auf denen du sowohl Realms als auch den Minecraft Marketplace nutzen kannst. Zudem können bis zu 10 Spieler gleichzeitig spielen und komplett gratis Zugriff auf die Welten in deinem Realm erhalten!	#
 
 
 store.realmsPlus.freeTrial=KOSTENLOSE TESTVERSION (1 MONAT) STARTEN	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Benutzer ändern	#
 
 lateJoinScreen.waitingForUserReady=Mach dich bereit	#
 
+hbui.AchievementDetails.anotherPlatform=Auf einer anderen Plattform abgeschlossen	#
 hbui.AchievementDetails.completed=Abgeschlossen	#
 hbui.AchievementDetails.gamerscore=Gamerscore	#
 hbui.AchievementDetails.locked=Gesperrt	#
+hbui.AchievementDetails.yes=Ja	#
 hbui.AchievementDetailsRoute.errorMessage=Erfolg konnte nicht geladen werden. Bitte versuche es später erneut oder überprüfe deine Internetverbindung.	#
 hbui.AchievementDetailsRoute.narration.completed=abgeschlossen	#
 hbui.AchievementDetailsRoute.narration.gamerscore=Gamerscore	#

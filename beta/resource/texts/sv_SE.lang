@@ -692,7 +692,6 @@ commands.clone.description=Klonar block från en region till en annan.	#
 commands.clone.failed=Inga block har klonats	#
 commands.clone.filtered.error=Du måste ange ett filterblock för filtrerad användning	#
 commands.clone.noOverlap=Källan och målet får inte överlappa varandra	#
-commands.clone.outOfWorld=Kan inte komma åt block utanför världen	#
 commands.clone.success=%1$d block har klonats	#
 commands.clone.tooManyBlocks=För många block i det angivna området (%1$d > %2$d)	#
 commands.closechat.description=Stänger den lokala spelarens chattfönster om det är öppet	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Stänger Websocket-anslutningen om en sådan
 commands.code.description=Startar Code Builder.	#
 commands.code.success=Startade Code Builder.	#
 commands.compare.failed=Källan och målet är inte identiska	#
-commands.compare.outOfWorld=Kan inte komma åt block utanför världen	#
 commands.compare.success=%1$d block har jämförts	#
 commands.compare.tooManyBlocks=För många block i det angivna området (%1$d > %2$d)	#
 commands.corruptworld.description=Skadar världen som lästs in på servern.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Inte implementerat	#
 commands.generic.num.invalid="%1$s" är inget giltigt nummer	#
 commands.generic.num.tooBig=Numret du har angett (%1$d) är för stort; det får inte vara större än %2$d	#
 commands.generic.num.tooSmall=Numret du har angett (%1$d) är för litet; det får inte vara mindre än %2$d	#
+commands.generic.outOfWorld=Kan inte komma åt block utanför världen	#
 commands.generic.parameter.invalid="%1$s" är ingen giltig parameter	#
 commands.generic.permission.selector=<otillräckligt tillstånd för expansion av väljare>	#
 commands.generic.player.notFound=Spelaren kan inte hittas	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Kunde inte ange tillståndsnivå %s för spelare
 commands.permissions.set.success=Angav tillståndsnivå %s för spelare %s.	#
 commands.permissions.save.failed=Kunde inte spara tillståndsnivå %s för spelare %s.	#
 commands.permissions.save.success=Sparade tillståndsnivå %s för spelare %s.	#
+commands.screenshake.description=Applicerar skakningar på spelarnas kamera med en angiven intensitet och varaktighet.	#
+commands.screenshake.success=Skickade en förfrågan till följande spelare för att få deras kamera att skaka: %s	#
 commands.spawnParticleEmitter.description=Skapar en partikelutsöndrare	#
 commands.particle.description=Skapar partiklar.	#
 commands.particle.notFound=Okänt effektnamn (%1$s)	#
 commands.particle.success=Spelar upp effekten %1$s %2$d gånger	#
+commands.playanimation.description=Gör att en eller flera enheter spelar upp en engångsanimation. Förutsätter att alla variabler är korrekt konfigurerade.	#
+commands.playanimation.success=Animeringsbegäran som skickas till klienter för bearbetning.	#
 commands.players.list=%1$d/%2$d spelare online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Spelar upp ett ljud.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Kunde inte ersätta plats %d; måste vara ett
 commands.replaceitem.success=Ersatte %s plats %d med %d * %s	#
 commands.replaceitem.success.entity=Ersatte %s plats %d för %s med %d * %s	#
 commands.replaceitem.tagError=Tolkning av dataetikett misslyckades: %1$s	#
+commands.ride.description=Får enheter att rida på andra enheter, gör att enheter slutar rida, får riddjur att slänga av sina ryttare, eller sammankallar riddjur eller ryttare.	#
+commands.ride.evictRiders.success=Riddjur som har slängt av sina ryttare: %1$s	#
+commands.ride.startRiding.failure=Ryttare som inte uppfyllde ridvillkoren: %1$s	#
+commands.ride.startRiding.groupDoesntFit=Gruppen av ryttare får inte plats på riddjuret.	#
+commands.ride.startRiding.notRideable=Den valda enheten är inte ridbar.	#
+commands.ride.startRiding.rideFull=Det här riddjuret är redan fullt.	#
+commands.ride.startRiding.rideFullRidersLeft=Riddjuret är fullt, så vissa ryttare lades inte till.	#
+commands.ride.startRiding.success=Ryttare har lagts till på riddjuret: %1$s	#
+commands.ride.startRiding.tooManyRiders=För många ryttare har angetts. Endast en åt gången är tillåten för teleport_ride.	#
+commands.ride.startRiding.tooManyRides=För många riddjur har angetts. Endast en åt gången är tillåten.	#
+commands.ride.stopRiding.success=Ryttare som har slutat rida: %1$s	#
+commands.ride.summonRide.failed=Riddjuren sammankallades, men dessa ryttare kunde inte läggas till på dem: %1$s	#
+commands.ride.summonRide.notRideable=Enheten sammankallades, men den är inte ridbar.	#
+commands.ride.summonRide.success=Riddjur har sammankallats för dessa ryttare: %1$s	#
+commands.ride.summonRider.failed=Ryttare sammankallades, men kunde inte läggas till på riddjur: %1$s	#
+commands.ride.summonRider.fullRides=Ryttare kunde inte rida på dessa riddjur eftersom de är fulla: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Följande enheter är inte ridbara: %1$s	#
+commands.ride.summonRider.success=Ryttare har sammankallats för riddjur: %1$s	#
 commands.save.description=Bestäm eller kontrollera hur spelet sparar data till hårddisken.	#
 commands.save.disabled=Stängde av automatisk sparning av världen	#
 commands.save.enabled=Slog på automatisk sparning av världen	#
@@ -957,6 +978,9 @@ commands.save-on.description=Aktiverar automatisk sparning på servern.	#
 commands.save-on.success=Ändringar till nivån återupptas.	#
 commands.save-state.description=Kontrollerar om ett tidigare "spara allt" har fullbordats och listar alla inblandade filer.	#
 commands.say.description=Skickar ett chattmeddelande till andra spelare.	#
+commands.schedule.description=Schemalägger en åtgärd som ska utföras när ett område har laddats, eller efter en viss tid.	#
+commands.schedule.functionQueued=Funktionen har köats och den kommer att utföras när det angivna området har laddats.	#
+commands.schedule.functionRan=Körde %1$d funktionsposter i funktionen %2$s.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Stoppar servern	#
 commands.stopsound.description=Stoppar ett ljud.	#
 commands.stopsound.success=Stoppade ljudet %s för %s	#
 commands.stopsound.success.all=Stoppade alla ljud för %s	#
+commands.structure.description=Sparar eller laddar en struktur i världen.	#
+commands.structure.empty.load=Det går inte att ladda en struktur utan enheter och utan block	#
+commands.structure.empty.save=Det går inte att spara en struktur utan enheter och utan block	#
+commands.structure.invalid.integrity=Integriteten måste ligga i intervallet 0 till 100	#
+commands.structure.invalid.name=Namn bör vara i formatet "namn" eller "namnområde:namn". Om inte namnområde anges kommer det att tilldelas standardnamnet.	#
+commands.structure.load.success=Laddade en struktur med namnet %s	#
+commands.structure.notFound=Strukturen %s kan inte hittas. Kontrollera att namnet var rättstavat och försök igen.	#
+commands.structure.save.success=Sparade en struktur med namnet %s	#
+commands.structure.size.tooBig=En strukturs storlek får inte vara större än (%1$d, %2$d, %3$d), den var (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=En strukturs storlek får inte vara mindre än (%1$d, %2$d, %3$d), den var (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Okänd strukturåtgärd angiven	#
+commands.structure.y.tooHigh=Det går inte att placera block utanför världen. Försök med ett värde på %d eller lägre för Y-komponenten av <till: x y z>.	#
+commands.structure.y.tooLow=Det går inte att placera block utanför världen. Försök med ett värde som är större än 0 för Y-komponenten av <till: x y z>.	#
 commands.summon.description=Åkallar en enhet.	#
 commands.summon.failed=Kan inte åkalla objekt	#
 commands.summon.outOfWorld=Kan inte åkalla objektet utanför världen	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus-abonnemanget har gått ut	#
 realmsPlus.popup.message=Ditt Realms Plus-abonnemang har gått ut. Du måste förnya abonnemanget för att återfå tillgång till ditt Realm samt de paket och utseenden du fått via Realms Plus. 	#
 
 realmsPlusUpgradeNotice.title=Välkommen till Realms Plus!	#
-realmsPlusUpgradeNotice.body=Ditt Realms-abonnemang har uppgraderats till Realms Plus. Nu har du tillgång till över 50 innehållspaket från marknaden utan extra kostnad. Upp till 10 spelare kan spela åt gången, och de får tillgång till allt abonnemangsinnehåll i ditt Realm – helt gratis!	#
+realmsPlusUpgradeNotice.body=Ditt Realms-abonnemang har uppgraderats till Realms Plus. Nu har du tillgång till över 100 innehållspaket från marknaden utan extra kostnad. Upp till 10 spelare kan spela samtidigt, och de får tillgång till allt abonnemangsinnehåll i ditt Realm – helt gratis!	#
 realmsPlusUpgradeNotice.continue=Fortsätt	#
 realmsPlusUpgradeNotice.viewpacks=Visa Realms Plus-paket	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Administrera	#
 options.viewSubscriptions.renew=Förnyas var 30:e dag	#
 options.viewSubscriptions.daysRemaining=%d dagar återstår	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus-abonnemang	#
-options.viewSubscriptions.realmsPlus.detail=Över 50 saker ingår och du får din egen Realm-server	#
+options.viewSubscriptions.realmsPlus.detail=Över 100 saker ingår och du får din egen Realm-server	#
 options.viewSubscriptions.realms.header=Övriga abonnemang	#
 options.viewSubscriptions.realms.detail=Tillgång till din egen Realm-server med upp till %d spelare samtidigt	#
 options.viewSubscriptions.loadingSubscriptions=Laddar dina abonnemang …	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=HITTADE INGET ERBJUDANDE	#
 store.realmsPlus.manageSubscription=ADMINISTRERA ABONNEMANG	#
 store.realmsPlus.viewAllPacksTitle=PRISVÄRT! PAKET VÄRDA ÖVER §g150 USD!§r	#
 
-store.realmsPlus.nowActive=Realms Plus har aktiverats på enheten. Nu har du tillgång till över 50 innehållspaket från marknaden utan extra kostnad. Upp till 10 spelare kan spela i dina Realms åt gången, och de får tillgång till allt abonnemangsinnehåll i ditt Realm – helt gratis!	#
+store.realmsPlus.nowActive=Realms Plus har aktiverats på enheten. Nu har du tillgång till över 100 innehållspaket från marknaden utan extra kostnad. Upp till 10 spelare kan spela i dina Realms samtidigt, och de får tillgång till allt abonnemangsinnehåll i ditt Realm – helt gratis!	#
 
 store.realmsPlus.buyNow.buttonText=KÖP FÖR %s	#
 store.realmsPlus.buyNow.viewTerms=VILLKOR	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=SEKRETESSPOLICY	#
 
 store.realmsPlus.buyNow.title=Starta ditt Realms Plus-abonnemang	#
 store.realmsPlus.startTrial.title=Starta din 30-dagarsdemo nu!	#
-store.realmsPlus.startTrial.description=Du får omedelbar tillgång till ditt Realm och över 50 innehållspaket från marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis! Första månaden är gratis, sedan kostar det %s/månad. Du kan säga upp abonnemanget när som helst.	#
-store.realmsPlus.noTrial.description=Du får omedelbar tillgång till ditt Realm och över 50 innehållspaket från marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis! I 30 dagar får du ditt abonnemang för %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Du får omedelbar tillgång till ditt Realm och över 50 innehållspaket från marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis! I 30 dagar får du ditt abonnemang för %s.	#
+store.realmsPlus.startTrial.description=Du får omedelbar tillgång till ditt Realm och över 100 innehållspaket från marknaden. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis! Första månaden är gratis, sedan kostar det %s/månad. Du kan säga upp abonnemanget när som helst.	#
+store.realmsPlus.noTrial.description=Du får omedelbar tillgång till ditt Realm och över 100 innehållspaket från marknaden. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis! I 30 dagar får du ditt abonnemang för %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Du får omedelbar tillgång till ditt Realm och över 100 innehållspaket från marknaden. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis! I 30 dagar får du ditt abonnemang för %s.	#
 store.realmsPlus.realmName.placeholder=%ss Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Du får omedelbar tillgång till ditt Realm och över 50 innehållspaket från marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis! Första månaden är gratis, sedan kostar det %s/månad. Du kan säga upp abonnemanget när som helst.	#
-store.realmsPlus.recurring.withoutTrial=Du får omedelbar tillgång till ditt Realm och över 50 innehållspaket från marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis! Det kostar %s/månad och du kan säga upp abonnemanget när som helst.	#
-store.realmsPlus.consumable.offerTrial=Du får omedelbar tillgång till ditt Realm och över 50 innehållspaket från marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis! De första 30 dagarna är gratis, sedan kan du förlänga i 30 dagar för %s.	#
-store.realmsPlus.consumable.withoutTrial=Du får omedelbar tillgång till ditt Realm och över 50 innehållspaket från marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis! I 30 dagar får du ditt abonnemang för %s.	#
+store.realmsPlus.recurring.offerTrial=Du får omedelbar tillgång till ditt Realm och över 100 innehållspaket från marknaden. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis! Första månaden är gratis, sedan kostar det %s/månad. Du kan säga upp abonnemanget när som helst.	#
+store.realmsPlus.recurring.withoutTrial=Du får omedelbar tillgång till ditt Realm och över 100 innehållspaket från marknaden. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis! Det kostar %s/månad och du kan säga upp abonnemanget när som helst.	#
+store.realmsPlus.consumable.offerTrial=Du får omedelbar tillgång till ditt Realm och över 100 innehållspaket från marknaden. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis! De första 30 dagarna är gratis, sedan kan du förlänga i 30 dagar för %s.	#
+store.realmsPlus.consumable.withoutTrial=Du får omedelbar tillgång till ditt Realm och över 100 innehållspaket från marknaden. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis! I 30 dagar får du ditt abonnemang för %s.	#
 
 store.realmsPlus.landing.header=Abonnemanget inkluderar:	#
 
-store.realmsPlus.landing.info1.line1=- Tillgång till en katalog med över 50 paket från marknaden	#
+store.realmsPlus.landing.info1.line1=- Tillgång till en katalog med över 100 paket från marknaden	#
 store.realmsPlus.landing.info1.line2=- Din egen personliga Realm-server	#
 store.realmsPlus.landing.info1.line3=- Kompisar spelar gratis i ditt Realm	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Prova på lite av varje i mixpaket!	#
 
 store.realmsPlus.content.popularPacks=Populära paket i Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=VISA ALLA PAKET	#
-store.realmsPlus.content.contentDescription=Få en direktkanal till otroligt Minecraft-innehåll! Realms Plus ger dig omedelbar tillgång till över 50 produkter på marknaden, bland annat mixpaket, världar, utseendepaket och otroliga äventyr – och nya saker läggs till varje månad. Innehållet lagras på din egen personliga server, och det finns tillgängligt på alla plattformar där du använder Minecraft-marknaden och Realms. Upp till 10 spelare kan spela åt gången, och de får tillgång till världarna i ditt Realm helt gratis!	#
+store.realmsPlus.content.contentDescription=Få en direktkanal till otroligt Minecraft-innehåll! Realms Plus ger dig omedelbar tillgång till över 100 produkter på marknaden, bland annat mixpaket, världar, utseendepaket och otroliga äventyr – och nya saker läggs till varje månad. Innehållet lagras på din egen personliga server, och det finns tillgängligt på alla plattformar där du använder Minecraft-marknaden och Realms. Upp till 10 spelare kan spela samtidigt, och de får tillgång till världarna i ditt Realm helt gratis!	#
 
 
 store.realmsPlus.freeTrial=STARTA 1 MÅNADS PROVABONNEMANG	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Byt användare	#
 
 lateJoinScreen.waitingForUserReady=Förbereder grejer	#
 
+hbui.AchievementDetails.anotherPlatform=Färdigställd på en annan plattform	#
 hbui.AchievementDetails.completed=Avklarad	#
 hbui.AchievementDetails.gamerscore=Gamerscore	#
 hbui.AchievementDetails.locked=Låst	#
+hbui.AchievementDetails.yes=Ja	#
 hbui.AchievementDetailsRoute.errorMessage=Denna achievement kunde inte laddas. Försök igen eller kontrollera din internetanslutning.	#
 hbui.AchievementDetailsRoute.narration.completed=avklarad	#
 hbui.AchievementDetailsRoute.narration.gamerscore=gamerscore	#

@@ -692,7 +692,6 @@ commands.clone.description=Naklonuje bloky z jednoho regionu do druhého.	#
 commands.clone.failed=Žádné bloky nebyly klonovány	#
 commands.clone.filtered.error=Filtrované použití vyžaduje zadání filtrovaného bloku	#
 commands.clone.noOverlap=Zdroj a cíl se nemohou překrývat	#
-commands.clone.outOfWorld=Nelze získat přístup k blokům mimo svět	#
 commands.clone.success=Počet klonovaných bloků: %1$d	#
 commands.clone.tooManyBlocks=V zadané oblasti je příliš mnoho bloků (%1$d > %2$d)	#
 commands.closechat.description=Zavře okno chatu místního hráče, pokud je otevřené.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Uzavírá připojení soketu webu, pokud exi
 commands.code.description=Spouští nástroj pro tvorbu kódu.	#
 commands.code.success=Nástroj pro tvorbu kódu byl spuštěn.	#
 commands.compare.failed=Zdroj a cíl se neshodují	#
-commands.compare.outOfWorld=Nelze získat přístup k blokům mimo svět	#
 commands.compare.success=Počet porovnávaných bloků: %1$d	#
 commands.compare.tooManyBlocks=V zadané oblasti je příliš mnoho bloků (%1$d > %2$d)	#
 commands.corruptworld.description=Způsobí poškození světa spuštěného na serveru.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Není implementováno	#
 commands.generic.num.invalid=„%1$s“ není platné číslo	#
 commands.generic.num.tooBig=Zadané číslo (%1$d) je příliš velké, nejvyšší povolená hodnota je %2$d	#
 commands.generic.num.tooSmall=Zadané číslo (%1$d) je příliš malé, nejmenší povolená hodnota je %2$d	#
+commands.generic.outOfWorld=Nelze získat přístup k blokům mimo svět.	#
 commands.generic.parameter.invalid=„%1$s“ není platný parametr	#
 commands.generic.permission.selector=<nedostatečná oprávnění pro rozšíření oblasti výběru>	#
 commands.generic.player.notFound=Daného hráče nelze najít	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Úroveň oprávnění %s pro hráče %s nelze na
 commands.permissions.set.success=Nastavení úrovně oprávnění %s pro hráče %s se podařilo.	#
 commands.permissions.save.failed=Úroveň oprávnění %s pro hráče %s nelze uložit.	#
 commands.permissions.save.success=Uložení úrovně oprávnění %s pro hráče %s se podařilo.	#
+commands.screenshake.description=Použije třepání na kameru hráčů se zadanou intenzitou a dobou trvání.	#
+commands.screenshake.success=Byl odeslán požadavek na použití třepání kamery následujících hráčů: %s	#
 commands.spawnParticleEmitter.description=Vytvoří zářič částic	#
 commands.particle.description=Vytvoří částice.	#
 commands.particle.notFound=Neznámý název účinku (%1$s)	#
 commands.particle.success=Přehrávání účinku %1$s %2$dkrát	#
+commands.playanimation.description=Způsobí, že jedna nebo více entit přehraje jednorázovou animaci. Předpokládá, že všechny proměnné jsou správně nastaveny.	#
+commands.playanimation.success=Byl odeslán požadavek klientům na zpracování animace.	#
 commands.players.list=%1$d/%2$d hráčů je online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Přehraje zvuk.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Pozici %d nelze nahradit, je nutno použít h
 commands.replaceitem.success=Pozice %s hráče %d byla nahrazena %d * %s	#
 commands.replaceitem.success.entity=Pozice %s %d hráče %s byla nahrazena %d * %s	#
 commands.replaceitem.tagError=Analýza datových značek se nezdařila: %1$s	#
+commands.ride.description=Způsobí, že entity budou jezdit na jiných entitách, entity ukončí jízdu, jízdní entita setřese jezdce nebo bude přivolána jízdní entita nebo jezdec.	#
+commands.ride.evictRiders.success=Jízdní entity, které úspěšně setřásly své jezdce: %1$s	#
+commands.ride.startRiding.failure=Jezdci, kteří nesplnili podmínky jízdy: %1$s	#
+commands.ride.startRiding.groupDoesntFit=Skupina jezdců se nevejde na jízdní entitu.	#
+commands.ride.startRiding.notRideable=Na vybrané entitě nelze jezdit.	#
+commands.ride.startRiding.rideFull=Tato jízdní entita je již plně obsazena.	#
+commands.ride.startRiding.rideFullRidersLeft=Jízdní entita je plně obsazena, proto nebyli někteří jezdci přidáni.	#
+commands.ride.startRiding.success=Jezdci byli úspěšně přidáni k jízdní entitě: %1$s	#
+commands.ride.startRiding.tooManyRiders=Bylo zadáno příliš mnoho jezdců. Pro příkaz teleport_ride je najednou povolen jen jeden.	#
+commands.ride.startRiding.tooManyRides=Bylo zadáno příliš mnoho jízdních entit. Najednou je povolena jen jedna.	#
+commands.ride.stopRiding.success=Jezdci, kteří úspěšně ukončili jízdu: %1$s	#
+commands.ride.summonRide.failed=Byly vyvolány jízdní entity, ale tyto jezdce k nim nelze přidat: %1$s	#
+commands.ride.summonRide.notRideable=Entita byla vyvolána, ale nelze na ní jezdit.	#
+commands.ride.summonRide.success=Pro tyto jezdce byla úspěšně vyvolána jízdní entita: %1$s	#
+commands.ride.summonRider.failed=Byly vyvoláni jezdci, ale nelze je přidat k jízdním entitám: %1$s	#
+commands.ride.summonRider.fullRides=Jezdci nemohou jezdit na těchto jízdních entitách, protože jsou plně obsazeny: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Na následujících entitách nelze jezdit: %1$s	#
+commands.ride.summonRider.success=Jezdci byli úspěšně vyvoláni pro jízdní entity: %1$s	#
 commands.save.description=Zkontrolujte nebo ověřte, jak hra ukládá data na disk.	#
 commands.save.disabled=Automatické ukládání světa vypnuto	#
 commands.save.enabled=Automatické ukládání světa zapnuto	#
@@ -957,6 +978,9 @@ commands.save-on.description=Povolí automatické ukládání serveru.	#
 commands.save-on.success=Změny úrovně budou pokračovat.	#
 commands.save-state.description=Ověřuje, zda bylo úplné uložení dokončeno, a uvádí dané soubory.	#
 commands.say.description=Odešle zprávu ostatním hráčům prostřednictvím chatu.	#
+commands.schedule.description=Naplánuje akci, která má být provedena po načtení oblasti nebo po určité době.	#
+commands.schedule.functionQueued=Funkce byla zařazena do fronty a bude provedena po úplném načtení zadané oblasti.	#
+commands.schedule.functionRan=%1$d záznamů funkce ve funkci %2$s bylo úspěšně provedeno.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Zastavování serveru	#
 commands.stopsound.description=Zastaví zvuk.	#
 commands.stopsound.success=Zastaven zvuk %s pro %s	#
 commands.stopsound.success.all=Zastaveny všechny zvuky pro %s	#
+commands.structure.description=Uloží nebo načte stavbu ve světě.	#
+commands.structure.empty.load=Nelze načíst stavbu bez entit a bez bloků.	#
+commands.structure.empty.save=Nelze uložit stavbu bez entit a bez bloků.	#
+commands.structure.invalid.integrity=Integrita musí být v rozsahu 0 až 100.	#
+commands.structure.invalid.name=Název musí být ve formátu „name“ nebo „namespace:name“. Pokud není uvedena proměnná namespace, bude přiřazena výchozí.	#
+commands.structure.load.success=Byla načtena stavba s názvem %s.	#
+commands.structure.notFound=Stavbu %s nelze najít. Zkontrolujte, zda byl její název zadán správně, a zkuste to znovu.	#
+commands.structure.save.success=Byla uložena struktura s názvem %s.	#
+commands.structure.size.tooBig=Stavba nemůže být větší než (%1$d, %2$d, %3$d), byla (%4$d, %5$d, %6$d).	#
+commands.structure.size.tooSmall=Stavba nemůže být menší než (%1$d, %2$d, %3$d), byla (%4$d, %5$d, %6$d).	#
+commands.structure.unknown.action=Byla zadána neznámá akce stavby.	#
+commands.structure.y.tooHigh=Bloky nelze umístit mimo svět. Zkuste hodnotu %d nebo menší pro komponentu Y <to: x y z>.	#
+commands.structure.y.tooLow=Bloky nelze umístit mimo svět. Zkuste hodnotu větší než 0 pro komponentu Y <to: x y z>.	#
 commands.summon.description=Vyvolá entitu.	#
 commands.summon.failed=Objekt nelze vyvolat	#
 commands.summon.outOfWorld=Objekt mimo svět nelze vyvolat	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Předplatné Realms Plus vypršelo	#
 realmsPlus.popup.message=Vaše předplatné Realms Plus vypršelo. Abyste opět získali přístup do své říše a k sadám nebo skinům, které jste v rámci předplatného Realms Plus obdrželi, musíte své předplatné obnovit. 	#
 
 realmsPlusUpgradeNotice.title=Vítejte ve službě Realms Plus!	#
-realmsPlusUpgradeNotice.body=Vaše předplatné Realms bylo upgradováno na předplatné Realms Plus. Nyní máte přístup k více než 50 sadám obsahu z obchodu Marketplace bez dalších poplatků. Najednou může hrát až 10 hráčů, kteří získají přístup k veškerému obsahu předplatného ve vaší říši – zdarma!	#
+realmsPlusUpgradeNotice.body=Vaše předplatné Realms bylo upgradováno na předplatné Realms Plus. Nyní máte přístup k více než 100 balíčkům obsahu z obchodu Marketplace bez dalších poplatků. Najednou může hrát až 10 hráčů, kteří získají přístup k veškerému obsahu předplatného ve vaší říši – zdarma!	#
 realmsPlusUpgradeNotice.continue=Pokračovat	#
 realmsPlusUpgradeNotice.viewpacks=Zobrazit sady Realms Plus	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Správa	#
 options.viewSubscriptions.renew=Obnovuje se každých 30 dní	#
 options.viewSubscriptions.daysRemaining=Zbývá dní: %d	#
 options.viewSubscriptions.realmsPlus.header=Předplatné Realms Plus	#
-options.viewSubscriptions.realmsPlus.detail=Více než 50 položek obsahu a váš vlastní server služby Realms.	#
+options.viewSubscriptions.realmsPlus.detail=Více než 100 položek obsahu a váš vlastní server služby Realms.	#
 options.viewSubscriptions.realms.header=Další předplatná	#
 options.viewSubscriptions.realms.detail=Přístup k vašemu vlastnímu serveru služby Realms, kde může současně hrát až %d hráčů.	#
 options.viewSubscriptions.loadingSubscriptions=Načítání vašich předplatných...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=CHYBA, NEBYLA NALEZENA ŽÁDNÁ NABÍDKA	#
 store.realmsPlus.manageSubscription=SPRAVOVAT PŘEDPLATNÉ	#
 store.realmsPlus.viewAllPacksTitle=VÝHODNÁ NABÍDKA – BALÍČKY V HODNOTĚ PŘES §g$150 (USD)!§r	#
 
-store.realmsPlus.nowActive=Vaše předplatné Realms Plus je nyní aktivní pro toto zařízení. Nyní máte přístup k více než 50 sadám obsahu z obchodu Marketplace bez dalších poplatků. Ve vaší říši může najednou hrát až 10 hráčů, kteří získají přístup k veškerému obsahu předplatného ve vaší říši – zdarma!	#
+store.realmsPlus.nowActive=Vaše předplatné Realms Plus je nyní aktivní pro toto zařízení. Nyní máte přístup k více než 100 balíčkům obsahu z obchodu Marketplace bez dalších poplatků. Ve vaší říši může najednou hrát až 10 hráčů, kteří získají přístup k veškerému obsahu předplatného ve vaší říši – zdarma!	#
 
 store.realmsPlus.buyNow.buttonText=KOUPIT ZA %s	#
 store.realmsPlus.buyNow.viewTerms=PODMÍNKY A UJEDNÁNÍ	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ	#
 
 store.realmsPlus.buyNow.title=Zahajte své předplatné Realms Plus	#
 store.realmsPlus.startTrial.title=Zahájit BEZPLATNOU 30denní zkušební verzi!	#
-store.realmsPlus.startTrial.description=Vaše říše a více než 50 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši – zdarma! První měsíc budete mít zdarma a pak vám budeme účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
-store.realmsPlus.noTrial.description=Vaše říše a více než 50 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši – zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Vaše říše a více než 50 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši – zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
+store.realmsPlus.startTrial.description=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! První měsíc budete mít zdarma a pak vám budeme účtovat %s/měsíc, přičemž předplatné můžete kdykoli zrušit.	#
+store.realmsPlus.noTrial.description=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
 store.realmsPlus.realmName.placeholder=Říše uživatele %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Vaše říše a více než 50 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! První měsíc budete mít zdarma a pak vám budeme účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
-store.realmsPlus.recurring.withoutTrial=Vaše říše a více než 50 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! Budeme vám účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
-store.realmsPlus.consumable.offerTrial=Vaše říše a více než 50 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! Prvních 30 dní budete mít zdarma a pak budete moct předplatné obnovit na dalších 30 dní za cenu %s.	#
-store.realmsPlus.consumable.withoutTrial=Vaše říše a více než 50 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
+store.realmsPlus.recurring.offerTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! První měsíc budete mít zdarma a pak vám budeme účtovat %s/měsíc, přičemž předplatné můžete kdykoli zrušit.	#
+store.realmsPlus.recurring.withoutTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Budeme vám účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
+store.realmsPlus.consumable.offerTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Prvních 30 dní budete mít zdarma a pak budete moct předplatné obnovit na dalších 30 dní za cenu %s.	#
+store.realmsPlus.consumable.withoutTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
 
 store.realmsPlus.landing.header=Předplatné zahrnuje:	#
 
-store.realmsPlus.landing.info1.line1=– Přístup ke katalogu více než 50 balíčků z obchodu Marketplace	#
+store.realmsPlus.landing.info1.line1=– Přístup ke katalogu více než 100 balíčků z obchodu Marketplace	#
 store.realmsPlus.landing.info1.line2=– Váš vlastní server služby Realms	#
 store.realmsPlus.landing.info1.line3=– Přátelé hrají ve vaší říši zdarma	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Mash-upy umožňují vyzkoušet něco
 
 store.realmsPlus.content.popularPacks=Populární balíčky služby Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=ZOBRAZIT VŠECHNY BALÍČKY	#
-store.realmsPlus.content.contentDescription=Využívejte zdroj úžasného obsahu pro Minecraft! S předplatným Realms Plus získáte okamžitý přístup k více než 50 položkám v obchodě Marketplace, mezi které patří mash-upy, světy, sady skinů a epická dobrodružství – každý měsíc přibývají další. Váš obsah se ukládá na váš osobní server a je přístupný na všech platformách, kde je možné využívat službu Realms i obchod Minecraft Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši – zdarma!	#
+store.realmsPlus.content.contentDescription=Využívejte zdroj úžasného obsahu pro Minecraft! S předplatným Realms Plus získáte okamžitý přístup k více než 100 položkám v obchodě Marketplace, mezi které patří mash-upy, světy, sady skinů a epická dobrodružství – každý měsíc přibývají další. Váš obsah se ukládá na váš osobní server a je přístupný na všech platformách, kde je možné využívat službu Realms i obchod Minecraft Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma!	#
 
 
 store.realmsPlus.freeTrial=ZAHÁJIT MĚSÍČNÍ BEZPLATNÉ ZKUŠEBNÍ OBDOBÍ	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Změnit uživatele	#
 
 lateJoinScreen.waitingForUserReady=Probíhá příprava	#
 
+hbui.AchievementDetails.anotherPlatform=Získáno na jiné platformě	#
 hbui.AchievementDetails.completed=Získán	#
 hbui.AchievementDetails.gamerscore=Skóre hráče	#
 hbui.AchievementDetails.locked=Uzamčen	#
+hbui.AchievementDetails.yes=Ano	#
 hbui.AchievementDetailsRoute.errorMessage=Herní úspěch nelze načíst. Zkuste to znovu nebo zkontrolujte připojení k internetu.	#
 hbui.AchievementDetailsRoute.narration.completed=získán	#
 hbui.AchievementDetailsRoute.narration.gamerscore=skóre hráče	#

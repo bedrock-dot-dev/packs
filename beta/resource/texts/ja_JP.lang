@@ -692,7 +692,6 @@ commands.clone.description=1 つの領域から別の領域にブロックを複
 commands.clone.failed=複製したブロックはありません	#
 commands.clone.filtered.error=フィルターの使用にはフィルター ブロックの指定が必要です	#
 commands.clone.noOverlap=コピー元とコピー先を重ねることはできません	#
-commands.clone.outOfWorld=世界の外にあるブロックにはアクセスできません	#
 commands.clone.success=%1$d 個のブロックを複製しました	#
 commands.clone.tooManyBlocks=指定した領域にあるブロックが多すぎます (%1$d > %2$d)	#
 commands.closechat.description=ローカル プレイヤーとのチャット ウィンドウが開いている場合は閉じてください。	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=websocket 接続がある場合、それを�
 commands.code.description=コード ビルダーを起動します。	#
 commands.code.success=コード ビルダーを起動しました。	#
 commands.compare.failed=比較元と比較先が同一ではありません	#
-commands.compare.outOfWorld=世界の外にあるブロックにはアクセスできません	#
 commands.compare.success=%1$d 個のブロックを比較しました	#
 commands.compare.tooManyBlocks=指定した領域にあるブロックが多すぎます (%1$d > %2$d)	#
 commands.corruptworld.description=サーバーに読み込まれた世界を破損させます。	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=実装されていません	#
 commands.generic.num.invalid='%1$s' は無効な数値です	#
 commands.generic.num.tooBig=入力した数値 (%1$d) は大きすぎます。%2$%d 以下の数値を入力してください	#
 commands.generic.num.tooSmall=入力した数値 (%1$d) は小さすぎます。%2$d 以上の数値を入力してください	#
+commands.generic.outOfWorld=世界の外にあるブロックにはアクセスできません	#
 commands.generic.parameter.invalid='%1$s' は無効なパラメーターです	#
 commands.generic.permission.selector=<セレクターを拡大するには権限が不十分です>	#
 commands.generic.player.notFound=指定されたプレイヤーが見つかりません	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=プレイヤー %s にはオペレーター レ�
 commands.permissions.set.success=プレイヤー %s のオペレーター レベルを %s に設定しました。	#
 commands.permissions.save.failed=プレイヤー %s のオペレーター レベル %s を保存できません。	#
 commands.permissions.save.success=プレイヤー %s のオペレーター レベル %s を保存しました。	#
+commands.screenshake.description=プレーヤーのカメラに指定した強度と長さの揺れを適用します。	#
+commands.screenshake.success=カメラを揺らすリクエストを次のプレーヤーに送信しました: %s	#
 commands.spawnParticleEmitter.description=パーティクル エミッタを作成します	#
 commands.particle.description=パーティクルを作成します	#
 commands.particle.notFound=効果の名前が不明です (%1$s)	#
 commands.particle.success=効果 %1$s を %2$d 回発生させます	#
+commands.playanimation.description=1 つまたは複数のエンティティが 1 回限りのアニメーションを再生します。すべての変数が正しく設定されていると仮定します。	#
+commands.playanimation.success=処理のためにクライアントにアニメーション要求が送信されました。	#
 commands.players.list=%1$d/%2$d のプレイヤーがオンラインです:	#
 commands.players.list.names=%s	#
 commands.playsound.description=サウンドを再生します	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=スロット %d を置き換えられませ�
 commands.replaceitem.success=%s スロット %d を %d * %s に置き換えました	#
 commands.replaceitem.success.entity=スロット %s の %d にある %s を %d * %s に置き換えました	#
 commands.replaceitem.tagError=データ タグの解析に失敗しました: %1$s	#
+commands.ride.description=エンティティが他のエンティティに乗ったり、エンティティが乗るのを止めたり、乗り物がライダーを追い出したり、乗り物やライダーを呼び出したりします。	#
+commands.ride.evictRiders.success=ライダーを無事に退けた乗り物: %1$s	#
+commands.ride.startRiding.failure=乗車条件を満たさなかったライダー: %1$s	#
+commands.ride.startRiding.groupDoesntFit=集団のライダーでは乗り物に乗り切れません。	#
+commands.ride.startRiding.notRideable=選択されたエンティティは乗車できません。	#
+commands.ride.startRiding.rideFull=この乗り物はすでにいっぱいです。	#
+commands.ride.startRiding.rideFullRidersLeft=乗り心地は満員なので、一部のライダーは追加されませんでした。	#
+commands.ride.startRiding.success=ライダーは正常に乗り物に追加されました: %1$s	#
+commands.ride.startRiding.tooManyRiders=指定されたライダーが多すぎます。teleport_ride には、一度に 1 人だけ許可されます。	#
+commands.ride.startRiding.tooManyRides=指定された乗り物が多すぎます。一度に指定できるのは 1 つだけです。	#
+commands.ride.stopRiding.success=正常に乗車を止めたライダー: %1$s	#
+commands.ride.summonRide.failed=乗り物は呼び出されましたが、これらのライダーは追加できませんでした: %1$s	#
+commands.ride.summonRide.notRideable=エンティティは呼び出されましたが、乗車はできません。	#
+commands.ride.summonRide.success=このライダーたちのために無事に呼び出された乗り物: %1$s	#
+commands.ride.summonRider.failed=ライダーは呼び出されましたが、乗り物に追加されませんでした: %1$s	#
+commands.ride.summonRider.fullRides=満員のため、ライダーはこれらの乗り物に乗ることができませんでした: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=次のエンティティは乗車できません: %1$s	#
+commands.ride.summonRider.success=ライダーは乗り物のために無事呼び出されました: %1$s	#
 commands.save.description=HDD へのデータのセーブ方法を管理または確認します	#
 commands.save.disabled=世界の自動保存を無効にしました	#
 commands.save.enabled=世界の自動保存を有効にしました	#
@@ -957,6 +978,9 @@ commands.save-on.description=サーバーの自動保存を有効にする。	#
 commands.save-on.success=レベルへの変更が維持されます。	#
 commands.save-state.description=前の save-all が完了しているかどうかを確認し、関連ファイルを一覧表示します	#
 commands.say.description=チャットで他のプレイヤーにメッセージを送信する。	#
+commands.schedule.description=エリアがロードされた後、または一定の時間が経過した後に実行されるアクションをスケジュールします。	#
+commands.schedule.functionQueued=関数はキューに入れられており、指定されたエリアが完全に読み込まれれば実行されます。	#
+commands.schedule.functionRan=関数 %2$s 内にある %1$d の関数エントリが正常に実行されました。	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=サーバーを停止しています	#
 commands.stopsound.description=サウンドを停止します	#
 commands.stopsound.success=サウンド %sを %s の間停止する。	#
 commands.stopsound.success.all=すべてのサウンドを %s の間停止する。	#
+commands.structure.description=世界の構造を保存またはロードします。	#
+commands.structure.empty.load=エンティティもブロックもない構造をロードできません	#
+commands.structure.empty.save=エンティティもブロックもない構造を保存できません	#
+commands.structure.invalid.integrity=整合性は 0 ~ 100 の範囲でなければなりません	#
+commands.structure.invalid.name=名前は「name」 または「namespace:name」の形式にする必要があります。名前空間が指定されていない場合は、既定の名前空間が割り当てられます。	#
+commands.structure.load.success=%s の名前の構造体を読み込みました	#
+commands.structure.notFound=%s という構造が見つかりません。名前のスペルが正しいことを確認してから、やり直してください。	#
+commands.structure.save.success=構造を %s という名前で保存しました	#
+commands.structure.size.tooBig=構造体のサイズは、(%1$d、%2$d、%3$d) より大きくすることはできません、サイズは (%4$d、%5$d、%6$d) でした	#
+commands.structure.size.tooSmall=構造体のサイズは、(%1$d、%2$d、%3$d) より小さくすることはできません、サイズは (%4$d、%5$d、%6$d) でした	#
+commands.structure.unknown.action=不明な構造アクションが規定されました	#
+commands.structure.y.tooHigh=世界の外にブロックを配置することはできません。<to: x y z> の Y コンポーネントには %d かそれ以下の値をお試しください。	#
+commands.structure.y.tooLow=世界の外にブロックを配置することはできません。<to: x y z> の Y コンポーネントには 0 かそれ以上の値をお試しください。	#
 commands.summon.description=エンティティを召喚する。	#
 commands.summon.failed=対象を召喚することができません	#
 commands.summon.outOfWorld=世界の範囲外から召喚することはできません	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus のサブスクリプションが失効して
 realmsPlus.popup.message=Realms Plus のサブスクリプションが失効しています。Realm および Realms Plus の特典であるパックまたはスキンを再度利用するには、サブスクリプションを更新する必要があります。	#
 
 realmsPlusUpgradeNotice.title=Realms Plus へようこそ!	#
-realmsPlusUpgradeNotice.body=Realms のサブスクリプションが Realms Plus へアップグレードされました。以降は、マーケットプレイスにある 50 種類以上のパックを追加料金なしでご利用いただけます。また、最大 10 人までの同時接続が可能になり、接続中の全プレイヤーはあなたの Realm の加入特典コンテンツを無料で利用できます!	#
+realmsPlusUpgradeNotice.body=Realms のサブスクリプションが Realms Plus へアップグレードされました。以降は、マーケットプレイスにある 100 種類以上のパックを追加料金なしでご利用いただけます。また、最大 10 人までの同時接続が可能になり、接続中の全プレーヤーはあなたの Realm の加入特典コンテンツを無料で利用できます!	#
 realmsPlusUpgradeNotice.continue=続ける	#
 realmsPlusUpgradeNotice.viewpacks=Realms Plus のパックを確認	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=管理	#
 options.viewSubscriptions.renew=30 日ごとに更新	#
 options.viewSubscriptions.daysRemaining=残り %d 日	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus のサブスクリプション	#
-options.viewSubscriptions.realmsPlus.detail=50 項目以上のコンテンツと自分だけの Realm サーバー	#
+options.viewSubscriptions.realmsPlus.detail=100 項目以上のコンテンツと自分だけの Realm サーバー	#
 options.viewSubscriptions.realms.header=追加のサブスクリプション	#
 options.viewSubscriptions.realms.detail=最大 %d 人のプレイヤーが同時接続できる Realm サーバーを利用可能	#
 options.viewSubscriptions.loadingSubscriptions=サブスクリプションをロード中...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=エラー: セールが見つかりません	#
 store.realmsPlus.manageSubscription=サブスクリプションの管理	#
 store.realmsPlus.viewAllPacksTitle=超お得 - §g$150 (USD)!§r 以上の価値があるパック	#
 
-store.realmsPlus.nowActive=このデバイスで Realms Plus が有効になりました。以降は、マーケットプレイスにある 50 種類以上のパックを追加料金なしでご利用いただけます。また、Realms で最大 10 人までの同時接続が可能になり、接続中の全プレイヤーはあなたの Realm の加入特典コンテンツを無料で利用できます!	#
+store.realmsPlus.nowActive=このデバイスで Realms Plus が有効になりました。以降は、マーケットプレイスにある 100 種類以上のパックを追加料金なしでご利用いただけます。また、Realms で最大 10 人までの同時接続が可能になり、接続中の全プレーヤーはあなたの Realm の加入特典コンテンツを無料で利用できます!	#
 
 store.realmsPlus.buyNow.buttonText=%s で購入	#
 store.realmsPlus.buyNow.viewTerms=ご契約条件	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=プライバシーに関する声明	#
 
 store.realmsPlus.buyNow.title=Realms Plus のサブスクリプションを開始します	#
 store.realmsPlus.startTrial.title=今すぐ 30 日間の無料トライアルをスタート!	#
-store.realmsPlus.startTrial.description=Realm と 50 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレイヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 1 か月は無料で利用でき、その後は月額 %s でお楽しみいただけます。サブスクリプションのキャンセルはいつでも可能です。	#
-store.realmsPlus.noTrial.description=Realm と 50 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレイヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 30 日間は無料で利用でき、その後は月額 %s:minecoin: でお楽しみいただけます。	#
-store.realmsPlus.noTrial.description.iap=Realm と 50 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレイヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 30 日間は無料で利用でき、その後は月額 %s でお楽しみいただけます。	#
+store.realmsPlus.startTrial.description=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 1 か月は無料で利用でき、その後は月額 %s でお楽しみいただけます。サブスクリプションのキャンセルはいつでも可能です。	#
+store.realmsPlus.noTrial.description=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 30 日間は無料で利用でき、その後は月額 %s:minecoin: でお楽しみいただけます。	#
+store.realmsPlus.noTrial.description.iap=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! サブスクリプションは %s の価格で30日間利用できます。	#
 store.realmsPlus.realmName.placeholder=%s の Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm と 50 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレイヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 1 か月は無料で利用でき、その後は月額 %s でお楽しみいただけます。サブスクリプションのキャンセルはいつでも可能です。	#
-store.realmsPlus.recurring.withoutTrial=Realm と 50 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレイヤーはあなたの Realm にある世界を無料でプレイできます! 料金は月額 %s です。サブスクリプションのキャンセルはいつでも可能です。	#
-store.realmsPlus.consumable.offerTrial=Realm と 50 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレイヤーはあなたの Realm にある世界を無料でプレイできます! 最初の30日間は無料で、その後は %s の価格で30日間更新できます。	#
-store.realmsPlus.consumable.withoutTrial=Realm と 50 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレイヤーはあなたの Realm にある世界を無料でプレイできます! ブスクリプションは %s の価格で30日間利用できます。	#
+store.realmsPlus.recurring.offerTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 1 か月は無料で利用でき、その後は月額 %s でお楽しみいただけます。サブスクリプションのキャンセルはいつでも可能です。	#
+store.realmsPlus.recurring.withoutTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 料金は月額 %s です。サブスクリプションのキャンセルはいつでも可能です。	#
+store.realmsPlus.consumable.offerTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の30日間は無料で、その後は %s の価格で30日間更新できます。	#
+store.realmsPlus.consumable.withoutTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! サブスクリプションは %s の価格で30日間利用できます。	#
 
 store.realmsPlus.landing.header=サブスクリプションの内容:	#
 
-store.realmsPlus.landing.info1.line1=- 50 を超えるマーケットプレイス パックを利用可能	#
+store.realmsPlus.landing.info1.line1=- 100 を超えるマーケットプレイス パックを利用可能	#
 store.realmsPlus.landing.info1.line2=- 自分だけのプライベート Realm サーバー	#
 store.realmsPlus.landing.info1.line3=- フレンドはあなたの Realm を無料でプレイ可能	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=マッシュアップを試してみ�
 
 store.realmsPlus.content.popularPacks=Realms Plus で人気のパック	#
 store.realmsPlus.content.viewAllPacks=すべてのパックを見る	#
-store.realmsPlus.content.contentDescription=魅力的な Minecraft コンテンツの源がここに! Realms Plus に加入すると、マッシュアップ、世界、スキン パックなどのマーケットプレイス コンテンツ 50 種類以上を利用して冒険をお楽しみいただけます。また、コンテンツは毎月新しく追加されます。入手したコンテンツはプライベート サーバーに保存され、Realms および Minecraft マーケットプレイスの両方にアクセス可能なすべてのプラットフォームでお楽しみいただけます。 また、最大 10 人までの同時接続が可能になり、接続中の全プレイヤーはあなたの Realm にある世界を無料でプレイできます!	#
+store.realmsPlus.content.contentDescription=魅力的な Minecraft コンテンツの源がここに! Realms Plus に加入すると、マッシュアップ、世界、スキン パックなどのマーケットプレイス コンテンツ 100 種類以上を利用して冒険をお楽しみいただけます。また、コンテンツは毎月新しく追加されます。入手したコンテンツはプライベート サーバーに保存され、Realms および Minecraft マーケットプレイスの両方にアクセス可能なすべてのプラットフォームでお楽しみいただけます。 また、最大 10 人までの同時接続が可能になり、接続中の全プレーヤーはあなたの Realm にある世界を無料でプレイできます!	#
 
 
 store.realmsPlus.freeTrial=1 か月の無料トライアルを始める	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=ユーザーを変更	#
 
 lateJoinScreen.waitingForUserReady=準備完了	#
 
+hbui.AchievementDetails.anotherPlatform=別のプラットフォームで完了	#
 hbui.AchievementDetails.completed=完了	#
 hbui.AchievementDetails.gamerscore=ゲーマースコア	#
 hbui.AchievementDetails.locked=未解除	#
+hbui.AchievementDetails.yes=はい	#
 hbui.AchievementDetailsRoute.errorMessage=実績を読み込めませんでした。もう一度やり直すか、インターネット接続を確認してください。	#
 hbui.AchievementDetailsRoute.narration.completed=完了	#
 hbui.AchievementDetailsRoute.narration.gamerscore=ゲーマースコア	#

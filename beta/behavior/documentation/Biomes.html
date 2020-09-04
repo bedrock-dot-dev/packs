@@ -1,4 +1,4 @@
-<h1>BIOMES DOCUMENTATION </br>Version: 1.16.100.53</h1>
+<h1>BIOMES DOCUMENTATION </br>Version: 1.16.100.54</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -735,6 +735,20 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
       }
       object "minecraft:nether_surface" : opt // Use default Minecraft Nether terrain generation.
       object "minecraft:the_end_surface" : opt // Use default Minecraft End terrain generation.
+      object "minecraft:capped_surface"[0,5] : opt // Generates surface on blocks with non-solid blocks above or below.
+      {
+          array "floor_materials"[1,*] // Materials used for the surface floor.
+          {
+              block_reference "<any array element>"
+          }
+          array "ceiling_materials"[1,*] // Materials used for the surface ceiling.
+          {
+              block_reference "<any array element>"
+          }
+          block_reference "sea_material" // Material used to replace air blocks below sea level.
+          block_reference "foundation_material" // Material used to repalce solid blocks that are not surface blocks.
+          block_reference "beach_material" : opt // Material used to decorate surface near sea level.
+      }
       object "minecraft:overworld_generation_rules"[0,5] : opt // Control how this biome is instantiated (and then potentially modified) during world generation of the overworld.
       {
           biome_reference "hills_transformation" : opt

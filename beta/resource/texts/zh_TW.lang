@@ -692,7 +692,6 @@ commands.clone.description=將方塊從某個地區複製到另一個地區。	#
 commands.clone.failed=沒有複製任何方塊	#
 commands.clone.filtered.error=採取過濾用法時需要指定過濾方塊	#
 commands.clone.noOverlap=來源地不能與目的地重疊	#
-commands.clone.outOfWorld=無法進入位於世界外的方塊	#
 commands.clone.success=已複製 %1$d 個方塊	#
 commands.clone.tooManyBlocks=指定區域內的方塊數量太多 (%1$d > %2$d)	#
 commands.closechat.description=如果本機玩家的聊天視窗開啟則關閉。	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=關閉 WebSocket 連線 (如有的話)。	#
 commands.code.description=執行程式碼生成器。	#
 commands.code.success=已執行程式碼生成器。	#
 commands.compare.failed=來源地與目的地不同	#
-commands.compare.outOfWorld=無法進入位於世界外的方塊	#
 commands.compare.success=已比對 %1$d 個方塊	#
 commands.compare.tooManyBlocks=指定區域內的方塊數量太多 (%1$d > %2$d)	#
 commands.corruptworld.description=損毀在伺服器中載入的世界。	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=未實行	#
 commands.generic.num.invalid=%1$s' 不是一個有效的數字	#
 commands.generic.num.tooBig=您所輸入的數字 (%1$d) 過大，最大為 %2$d。	#
 commands.generic.num.tooSmall=您所輸入的數目 (%1$d) 過小，最少為 %2$d。	#
+commands.generic.outOfWorld=無法進入位於世界外的方塊	#
 commands.generic.parameter.invalid=%1$s' 參數無效	#
 commands.generic.permission.selector=<權限不足，無法擴大選擇器>	#
 commands.generic.player.notFound=找不到該玩家	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=無法為玩家 %s 設定權限等級 %s。	#
 commands.permissions.set.success=設定玩家 %s 的權限等級 %s 成功。	#
 commands.permissions.save.failed=無法儲存玩家 %s 的權限等級 %s。	#
 commands.permissions.save.success=儲存玩家 %s 的權限等級 %s 成功。	#
+commands.screenshake.description=以特定的強度與持續時間對玩家的攝影機進行晃動。	#
+commands.screenshake.success=向下列玩家發送要求，要求對相機進行晃動：%s	#
 commands.spawnParticleEmitter.description=建立顆粒發射器	#
 commands.particle.description=創建粒子。	#
 commands.particle.notFound=未知的效果名稱 (%1$s)	#
 commands.particle.success=正在應用「%1$s」效果共 %2$d 次	#
+commands.playanimation.description=使一個或多個實體播放一次性動畫。假設所有變數都正確設定。	#
+commands.playanimation.success=已發送至客戶端進行處理的動畫要求。	#
 commands.players.list=共有 %1$d/%2$d 玩家在線上：	#
 commands.players.list.names=%s	#
 commands.playsound.description=播放音效。	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=無法取代 %d，數值必須介於 %d 和 %
 commands.replaceitem.success=已將 %s 物品欄 %d 取代成 %d * %s	#
 commands.replaceitem.success.entity=已將 %s 物品欄 %d 的 %s 取代成 %d * %s	#
 commands.replaceitem.tagError=資料標籤解析失敗：%1$s	#
+commands.ride.description=讓實體搭乘其他實體、阻止實體搭乘、讓載具驅逐搭乘者，或是召喚載具或搭乘者。	#
+commands.ride.evictRiders.success=成功驅逐搭乘者的載具：%1$s	#
+commands.ride.startRiding.failure=不符合搭乘條件的搭乘者：%1$s	#
+commands.ride.startRiding.groupDoesntFit=這群搭乘者不適合搭乘。	#
+commands.ride.startRiding.notRideable=所選實體不可搭乘。	#
+commands.ride.startRiding.rideFull=此載具已滿。	#
+commands.ride.startRiding.rideFullRidersLeft=此載具已滿，所以某些搭乘者無法加入。	#
+commands.ride.startRiding.success=已成功新增搭乘者至載具：%1$s	#
+commands.ride.startRiding.tooManyRiders=指定的搭乘者太多。teleport_ride 一次只允許一位搭乘者。	#
+commands.ride.startRiding.tooManyRides=指定的載具太多。一次只允許指定一個。	#
+commands.ride.stopRiding.success=已成功停止搭乘的搭乘者：%1$s	#
+commands.ride.summonRide.failed=載具受召喚而來，但這些搭乘者無法加入這些載具：%1$s	#
+commands.ride.summonRide.notRideable=實體受召喚而來，但不可搭乘。	#
+commands.ride.summonRide.success=載具成功召喚了這些搭乘者：%1$s	#
+commands.ride.summonRider.failed=搭乘者受召喚而來，但無法加入這些載具：%1$s	#
+commands.ride.summonRider.fullRides=搭乘者無法搭乘這些載具，因為載具已滿：%1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=下列實體無法搭乘：%1$s	#
+commands.ride.summonRider.success=搭乘者成功召喚載具：%1$s	#
 commands.save.description=控制或檢查遊戲儲存資料至磁碟的方式。	#
 commands.save.disabled=關閉地圖自動存檔功能	#
 commands.save.enabled=開啓地圖自動存檔功能	#
@@ -957,6 +978,9 @@ commands.save-on.description=啟用自動伺服器儲存。	#
 commands.save-on.success=變更等級現已繼續。	#
 commands.save-state.description=檢查是否之前的全部儲存已經完成，並列出包含在內的檔案。	#
 commands.say.description=在聊天中傳訊息給其他玩家。	#
+commands.schedule.description=安排在區域載入後 (或一定時間後) 執行的操作。	#
+commands.schedule.functionQueued=函數已進行佇列，將指定區域完全載入時執行。	#
+commands.schedule.functionRan=在函數 %1$d 中成功執行函數 %2$s。	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=正在停止伺服器	#
 commands.stopsound.description=停止播放一種音效。	#
 commands.stopsound.success=已停止音效 %s 共 %s 秒	#
 commands.stopsound.success.all=已停止所有音效共 %s 秒	#
+commands.structure.description=在世界中儲存或載入結構。	#
+commands.structure.empty.load=無法載入沒有實體和方塊的結構	#
+commands.structure.empty.save=無法儲存沒有實體和方塊的結構	#
+commands.structure.invalid.integrity=整數必須介於 0 到 100 之間	#
+commands.structure.invalid.name=名稱應採用「名稱」或「命名空間：名稱」的格式。如果未提供命名空間，則將分配一個預設命名空間。	#
+commands.structure.load.success=載入名稱 %s 的結構	#
+commands.structure.notFound=找不到 %s 結構。請確定名稱拼寫正確，然後重試一次。	#
+commands.structure.save.success=已儲存名稱為 %s 的結構	#
+commands.structure.size.tooBig=結構的大小不能大於 (%1$d、%2$d、%3$d)，原限制為 (%4$d、%5$d、%6$d)	#
+commands.structure.size.tooSmall=結構的大小不能小於 (%1$d、%2$d、%3$d)，原限制為 (%4$d、%5$d、%6$d)	#
+commands.structure.unknown.action=提供未知結構操作	#
+commands.structure.y.tooHigh=不能將方塊放在世界之外。對於 Y 分量 <to: x y z>，請嘗試 %d 或更低的值。	#
+commands.structure.y.tooLow=不能將方塊放在世界之外。對於 Y 分量 <to: x y z>，請嘗試大於 0 的值。	#
 commands.summon.description=召喚某個實體。	#
 commands.summon.failed=召喚物體失敗	#
 commands.summon.outOfWorld=無法召喚在世界外的物體	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus 訂閱已過期	#
 realmsPlus.popup.message=您的 Realms Plus 訂閱已經過期。若要再次取得 Realm 以及您從 Realms Plus 獲得的套件或外觀的存取權限，您必須續訂。 	#
 
 realmsPlusUpgradeNotice.title=歡迎使用 Realms Plus！	#
-realmsPlusUpgradeNotice.body=您的 Realms 訂閱已升級為 Realms Plus。現在您可以從市集存取超過 50 種內容套件，而且不須額外付費。一次最多可有 10 名玩家一起玩遊戲，而且他們可以免費存取您 Realm 中所有訂閱的內容！	#
+realmsPlusUpgradeNotice.body=您的 Realms 訂閱已升級為 Realms Plus。現在您可以從市集存取超過 100 種以上的內容套件，而且不須額外付費。一次最多可有 10 名玩家一起玩遊戲，而且他們可以免費存取您 Realm 中所有訂閱的內容！	#
 realmsPlusUpgradeNotice.continue=繼續	#
 realmsPlusUpgradeNotice.viewpacks=檢視 Realms Plus 套件	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=管理	#
 options.viewSubscriptions.renew=每 30 天續訂	#
 options.viewSubscriptions.daysRemaining=剩下 %d 天	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus 訂閱	#
-options.viewSubscriptions.realmsPlus.detail=超過 50 種以上的內容和您的專屬 Realm 伺服器	#
+options.viewSubscriptions.realmsPlus.detail=超過 100 種以上的內容與專屬 Realm 伺服器	#
 options.viewSubscriptions.realms.header=其他訂閱	#
 options.viewSubscriptions.realms.detail=您的 Realm 伺服器最多可同時 %d 位玩家存許	#
 options.viewSubscriptions.loadingSubscriptions=載入您的訂閱..	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=錯誤，沒有任何優惠	#
 store.realmsPlus.manageSubscription=管理訂閱	#
 store.realmsPlus.viewAllPacksTitle=超值優惠 - 價值超過 §g150 美元§r的套件！	#
 
-store.realmsPlus.nowActive=Realms Plus 已在此裝置中啟用。現在您可以從市集存取超過 50 種內容套件，而且不須額外付費。一次最多可有 10 名玩家在您的 Realm 中一起玩遊戲，而且他們可以免費存取您 Realm 中所有訂閱的內容！	#
+store.realmsPlus.nowActive=Realms Plus 已在此裝置中啟用。現在您可以從市集存取超過 100 種以上的內容套件，而且不須額外付費。一次最多可有 10 名玩家在您的 Realm 中一起玩遊戲，而且他們可以免費存取您 Realm 中所有訂閱的內容！	#
 
 store.realmsPlus.buyNow.buttonText=以 %s 購買	#
 store.realmsPlus.buyNow.viewTerms=合約條款	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=隱私政策	#
 
 store.realmsPlus.buyNow.title=開始您的 Realms Plus 訂閱	#
 store.realmsPlus.startTrial.title=現在就開始免費試用 30 天！	#
-store.realmsPlus.startTrial.description=您的 Realm 和超過 50 個市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的第一個月將無須付費，之後將每月支付 %s，隨時都可取消。	#
-store.realmsPlus.noTrial.description=您的 Realm 和超過 50 個市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的訂閱將以 %s :minecoin: 的價格提供使用 30 天。	#
-store.realmsPlus.noTrial.description.iap=您的 Realm 和超過 50 個市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的訂閱將以 %s 的價格提供使用 30 天。	#
+store.realmsPlus.startTrial.description=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的第一個月將無須付費，之後將每月支付 %s，隨時都可取消。	#
+store.realmsPlus.noTrial.description=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的訂閱將以 %s :minecoin: 的價格提供使用 30 天。	#
+store.realmsPlus.noTrial.description.iap=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的訂閱將以 %s 的價格提供使用 30 天。	#
 store.realmsPlus.realmName.placeholder=%s 的 Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=您的 Realm 和超過 50 個市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的第一個月將無須付費，之後將每月支付 %s，隨時都可取消。	#
-store.realmsPlus.recurring.withoutTrial=您的 Realm 和超過 50 個市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您將每月支付 %s，隨時都可取消。	#
-store.realmsPlus.consumable.offerTrial=您的 Realm 和超過 50 個市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的前 30 天將無須付費，之後可以 %s 的價格續訂 30 天。	#
-store.realmsPlus.consumable.withoutTrial=您的 Realm 和超過 50 個市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您可以 %s 的價格訂閱 30 天。	#
+store.realmsPlus.recurring.offerTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的第一個月將無須付費，之後將每月支付 %s，隨時都可取消。	#
+store.realmsPlus.recurring.withoutTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您將每月支付 %s，隨時都可取消。	#
+store.realmsPlus.consumable.offerTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的前 30 天將無須付費，之後可以 %s 的價格續訂 30 天。	#
+store.realmsPlus.consumable.withoutTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的訂閱將以 %s 的價格提供使用 30 天。	#
 
 store.realmsPlus.landing.header=訂閱包含：	#
 
-store.realmsPlus.landing.info1.line1=- 存取超過 50 個市集套件目錄	#
+store.realmsPlus.landing.info1.line1=- 存取超過 100 種以上的市集套件目錄	#
 store.realmsPlus.landing.info1.line2=- 您的專屬私人 Realm 伺服器	#
 store.realmsPlus.landing.info1.line3=- 好友可免費在您的 Realm 中遊玩	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=在混搭裡什麼都來一點！	#
 
 store.realmsPlus.content.popularPacks=Realms Plus 中的熱門套件：	#
 store.realmsPlus.content.viewAllPacks=檢視所有套件	#
-store.realmsPlus.content.contentDescription=妥善利用豐富的 Minecraft 資源！有了 Realms Plus，您就能立即存取超過 50 種市集內容，例如：混搭、世界、外觀套件和史詩冒險，而且每月都會加入新內容。您的內容會儲存在個人伺服器中，只要透過 Realms 和 Minecraft 市集，無論在何種平台都能使用。一次最多可供 10 名玩家一起遊玩，而且他們可以免費存取您 Realm 中的世界！	#
+store.realmsPlus.content.contentDescription=妥善利用豐富的 Minecraft 資源！有了 Realms Plus，您就能立即存取超過 100 種以上的市集內容，例如：混搭、世界、外觀套件和史詩冒險，而且每月都會加入新內容。您的內容會儲存在個人伺服器中，只要透過 Realms 和 Minecraft 市集，無論在何種平台都能使用。一次最多可供 10 名玩家一起遊玩，而且他們可以免費存取您 Realm 中的世界！	#
 
 
 store.realmsPlus.freeTrial=開始免費試用一個月	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=變更使用者	#
 
 lateJoinScreen.waitingForUserReady=做好準備	#
 
+hbui.AchievementDetails.anotherPlatform=在另一個平台上完成	#
 hbui.AchievementDetails.completed=已完成	#
 hbui.AchievementDetails.gamerscore=玩家分數	#
 hbui.AchievementDetails.locked=已鎖定	#
+hbui.AchievementDetails.yes=是	#
 hbui.AchievementDetailsRoute.errorMessage=成就無法載入。請重試或檢查您的網路連線。	#
 hbui.AchievementDetailsRoute.narration.completed=已完成	#
 hbui.AchievementDetailsRoute.narration.gamerscore=玩家分數	#

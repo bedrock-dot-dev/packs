@@ -692,7 +692,6 @@ commands.clone.description=Kloonaa kuutioita yhdeltä alueelta toiselle.	#
 commands.clone.failed=Kuutioita ei kloonattu	#
 commands.clone.filtered.error=Suodatettu käyttö edellyttää suodatinkuution määrittämistä	#
 commands.clone.noOverlap=Lähde ja kohde eivät voi olla päällekkäin	#
-commands.clone.outOfWorld=Kuutioita ei voi käsitellä maailman ulkopuolella	#
 commands.clone.success=Kloonattiin %1$s kuutiota	#
 commands.clone.tooManyBlocks=Määritetyllä alueella (%1$d > %2$d) on liikaa kuutioita	#
 commands.closechat.description=Sulkee paikallisen pelaajan chatti-ikkunan, jos se on auki.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Sulkee websocket-yhteyden, jos sellainen on.
 commands.code.description=Käynnistää Koodinrakentajan.	#
 commands.code.success=Koodinrakentaja käynnistetty.	#
 commands.compare.failed=Lähde ja kohde eivät ole identtisiä	#
-commands.compare.outOfWorld=Kuutioita ei voi käsitellä maailman ulkopuolella	#
 commands.compare.success=%1$d kuutiota vertailtu	#
 commands.compare.tooManyBlocks=Määritetyllä alueella (%1$d > %2$d) on liikaa kuutioita	#
 commands.corruptworld.description=Vahingoittaa palvelimelle ladattua maailmaa.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Ei toteutettuna	#
 commands.generic.num.invalid="%1$s" ei ole hyväksyttävä luku	#
 commands.generic.num.tooBig=Antamasi luku (%1$d) on liian suuri, se saa olla enintään %2$d	#
 commands.generic.num.tooSmall=Antamasi luku (%1$d) on liian pieni, sen on oltava vähintään %2$d	#
+commands.generic.outOfWorld=Kuutioita ei voi käsitellä maailman ulkopuolella	#
 commands.generic.parameter.invalid="%1$s" ei ole hyväksyttävä parametri	#
 commands.generic.permission.selector=<puutteelliset oikeudet haun laajennukseen>	#
 commands.generic.player.notFound=Pelaajaa ei löydy	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Käyttöoikeustasoa %s ei voitu asettaa pelaajal
 commands.permissions.set.success=Käyttöoikeustason %s asettaminen pelaajalle %s onnistui.	#
 commands.permissions.save.failed=Käyttöoikeustasoa %s ei voitu tallentaa pelaajalle %s.	#
 commands.permissions.save.success=Käyttöoikeustason %s tallentaminen pelaajalle %s onnistui.	#
+commands.screenshake.description=Saa pelaajan kameran tärisemään määritetyllä voimakkuudella ja kestolla.	#
+commands.screenshake.success=Lähetti tärisevää kameraa koskevan pyynnön seuraaville pelaajille: %s	#
 commands.spawnParticleEmitter.description=Luo partikkeliefektin	#
 commands.particle.description=Luo hiukkasia.	#
 commands.particle.notFound=Tuntematon vaikutuksen nimi (%1$s)	#
 commands.particle.success=Näytetään tehoste %1$s %2$d kertaa	#
+commands.playanimation.description=Saa yhden tai useamman entiteetin toistamaan kertaluonteisen animaation. Olettaa, että kaikki muuttujat on määritetty oikein.	#
+commands.playanimation.success=Animaatiopyyntö lähetetty asiakkaille käsittelyä varten.	#
 commands.players.list=Online-tilassa %1$d/%2$d pelaajaa:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Toistaa äänen.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Ei voitu korvata paikkaa %d, sen on oltava ar
 commands.replaceitem.success=Korvattu %s-paikka %d paikalla %d * %s	#
 commands.replaceitem.success.entity=Korvattu %s-paikka %d/%s paikalla %d * %s	#
 commands.replaceitem.tagError=Tietotunnisteen jäsennys epäonnistui: %1$s	#
+commands.ride.description=Saa entiteetit ratsastamaan muilla entiteeteillä, estää entiteettejä ratsastamasta, saa ratsut häätämään ratsastajansa tai kutsuu ratsuja tai ratsastajia.	#
+commands.ride.evictRiders.success=Ratsut, jotka ovat onnistuneet häätämään ratsastajansa %1$s	#
+commands.ride.startRiding.failure=Ratsastajat, jotka eivät täyttäneet ratsastusehtoja: %1$s	#
+commands.ride.startRiding.groupDoesntFit=Ratsastajaryhmä ei mahdu ratsun päälle.	#
+commands.ride.startRiding.notRideable=Valitulla entiteetillä ei voi ratsastaa.	#
+commands.ride.startRiding.rideFull=Tämä ratsu on jo täynnä.	#
+commands.ride.startRiding.rideFullRidersLeft=Ratsu on täynnä, joten osaa ratsastajista ei lisätty.	#
+commands.ride.startRiding.success=Ratsastajat lisättiin onnistuneesti ratsulle %1$s	#
+commands.ride.startRiding.tooManyRiders=Liian monta ratsastajaa määritettiin. teleport_ride sallii vain yhden kerrallaan.	#
+commands.ride.startRiding.tooManyRides=Liian monta ratsua määritettiin. Vain yksi kerrallaan on sallittu.	#
+commands.ride.stopRiding.success=Ratsastajat, jotka lopettivat ratsastamisen onnistuneesti: %1$s	#
+commands.ride.summonRide.failed=Ratsuja kutsuttiin, mutta näitä ratsastajia ei voitu lisätä niille: %1$s	#
+commands.ride.summonRide.notRideable=Entiteetti kutsuttiin, mutta sillä ei voinut ratsastaa.	#
+commands.ride.summonRide.success=Ratsu kutsuttiin onnistuneesti ratsastajille %1$s	#
+commands.ride.summonRider.failed=Ratsastajat kutsuttiin, mutta heitä ei voitu lisätä ratsuille %1$s	#
+commands.ride.summonRider.fullRides=Ratsastajat eivät voineet ratsastaa näillä ratsuilla, koske ne ovat täynnä: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Seuraavat entiteetit eivät ole ratsastettavia: %1$s	#
+commands.ride.summonRider.success=Ratsastajat kutsuttiin onnistuneesti ratsuille %1$s	#
 commands.save.description=Hallitse tai tarkista, miten peli tallentaa tietoja levylle.	#
 commands.save.disabled=Maailmojen automaattinen tallennus otettu pois käytöstä	#
 commands.save.enabled=Maailmojen automaattinen tallennus otettu käyttöön	#
@@ -957,6 +978,9 @@ commands.save-on.description=Ottaa automaattisen palvelintallennuksen käyttöö
 commands.save-on.success=Muutokset tasoon säilytetään.	#
 commands.save-state.description=Tarkistaa, mikäli edellinen täystallennus on suoritettu, ja listaa kaikki siihen liittyvät tiedostot.	#
 commands.say.description=Lähettää chatissa viestin muille pelaajille.	#
+commands.schedule.description=Ajoittaa toiminnon suoritettavaksi, kun alue on ladattu, tai tietyn ajan kuluttua.	#
+commands.schedule.functionQueued=Toiminto on jonossa, ja se suoritetaan, kun määritetty alue on ladattu kokonaan.	#
+commands.schedule.functionRan=Suoritettiin onnistuneesti %1$d toimintosuoritetta toiminnossa %2$s.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Pysäytetään palvelinta	#
 commands.stopsound.description=Sammuttaa äänen.	#
 commands.stopsound.success=Estetty ääni %s lähteestä %s	#
 commands.stopsound.success.all=Estetty kaikki äänet lähteestä %s	#
+commands.structure.description=Tallentaa tai lataa rakenteen maailmassa.	#
+commands.structure.empty.load=Rakennetta ei voi ladata ilman entiteettejä ja kuutioita	#
+commands.structure.empty.save=Rakennetta ei voi tallentaa ilman entiteettejä ja kuutioita	#
+commands.structure.invalid.integrity=Eheyden on oltava välillä 0–100	#
+commands.structure.invalid.name=Nimen on oltava muodossa "nimi" tai "nimiavaruus:nimi". Jos nimiavaruutta ei määritetä, käytetään oletusarvoista nimiavaruutta.	#
+commands.structure.load.success=Ladataan rakennetta %s	#
+commands.structure.notFound=Rakennetta %s ei löydy. Varmista, että nimi on kirjoitettu oikein, ja yritä uudelleen.	#
+commands.structure.save.success=Tallennettiin rakenne %s	#
+commands.structure.size.tooBig=Rakenteen koko voi olla enintään (%1$d, %2$d, %3$d), se oli (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=Rakenteen koon on oltava vähintään (%1$d, %2$d, %3$d), se oli (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Annettu tuntematon rakennetoiminto	#
+commands.structure.y.tooHigh=Kuutioita ei voi asettaa maailman ulkopuolelle. Kokeile enintään arvoa %d kohteen <to: x y z> Y-arvolle.	#
+commands.structure.y.tooLow=Kuutioita ei voi asettaa maailman ulkopuolelle. Kokeile nollaa suurempaa arvoa kohteen <to: x y z> Y-arvolle.	#
 commands.summon.description=Kutsuu kohteen.	#
 commands.summon.failed=Esinettä ei voi kutsua	#
 commands.summon.outOfWorld=Esinettä ei voi kutsua ulos maailmasta	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus -tilaus on umpeutunut	#
 realmsPlus.popup.message=Realms Plus -tilauksesi on umpeutunut. Sinun on uusittava tilauksesi, jotta voit käyttää valtakuntaasi ja Realms Plussasta saamiasi paketteja tai olemuksia.	#
 
 realmsPlusUpgradeNotice.title=Tervetuloa Realms Plussaan!	#
-realmsPlusUpgradeNotice.body=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä kaikki valtakuntasi tilaussisällöt maksuttomasti!	#
+realmsPlusUpgradeNotice.body=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä kaikki Realmisi tilaussisällöt maksuttomasti!	#
 realmsPlusUpgradeNotice.continue=Jatka	#
 realmsPlusUpgradeNotice.viewpacks=Näytä Realms Plussan paketit	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Hallitse	#
 options.viewSubscriptions.renew=Uusiutuu 30 päivän välein	#
 options.viewSubscriptions.daysRemaining=%d päivää jäljellä	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus -tilaus	#
-options.viewSubscriptions.realmsPlus.detail=Yli 50 sisältökohdetta ja oma valtakuntapalvelimesi	#
+options.viewSubscriptions.realmsPlus.detail=Yli 100 sisältöpakettia ja oma Realms-palvelin	#
 options.viewSubscriptions.realms.header=Lisätilaukset	#
 options.viewSubscriptions.realms.detail=Käytä omaa valtakuntapalvelintasi, jossa voi olla kerralla jopa %d pelaajaa	#
 options.viewSubscriptions.loadingSubscriptions=Ladataan tilauksiasi...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=VIRHE, TARJOUSTA EI LÖYTYNYT	#
 store.realmsPlus.manageSubscription=HALLITSE TILAUSTA	#
 store.realmsPlus.viewAllPacksTitle=VASTINETTA RAHOILLE – PAKETTEJA YLI §g150 EURON ARVOSTA!§r	#
 
-store.realmsPlus.nowActive=Realms Plus on nyt aktiivinen tällä laitteella. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata Realm-kohteissasi samanaikaisesti ja saada käyttöönsä kaikki Realm-tilaussisällöt maksuttomasti!	#
+store.realmsPlus.nowActive=Realms Plus on nyt aktiivinen tällä laitteella. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Realmissasi voi pelata jopa 10 pelaajaa kerrallaan ja käyttää siellä kaikkea tilaajasisältöä maksutta!	#
 
 store.realmsPlus.buyNow.buttonText=OSTA HINTAAN %s	#
 store.realmsPlus.buyNow.viewTerms=KÄYTTÖEHDOT	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=TIETOSUOJAKÄYTÄNTÖ	#
 
 store.realmsPlus.buyNow.title=Aloita Realms Plus -tilauksesi	#
 store.realmsPlus.startTrial.title=Aloita 30 päivän MAKSUTON kokeilusi nyt!	#
-store.realmsPlus.startTrial.description=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäinen kuukautesi on maksuton, minkä jälkeen sinulta veloitetaan %s kuukaudessa. Voit perua tilauksen milloin tahansa.	#
-store.realmsPlus.noTrial.description=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
+store.realmsPlus.startTrial.description=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäinen kuukautesi on maksuton, minkä jälkeen sinulta veloitetaan %s kuukaudessa. Voit perua tilauksen milloin tahansa.	#
+store.realmsPlus.noTrial.description=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s :minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
 store.realmsPlus.realmName.placeholder=Pelaajan %s valtakunta		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäinen kuukautesi on maksuton, minkä jälkeen sinulta veloitetaan %s kuukaudessa. Voit perua tilauksen milloin tahansa.	#
-store.realmsPlus.recurring.withoutTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Sinulta veloitetaan %s kuukaudessa ja perua tilauksen milloin tahansa.	#
-store.realmsPlus.consumable.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäiset 30 päivääsi ovat maksuttomia ja voit uusia tilauksen sen jälkeen hintaan %s.	#
-store.realmsPlus.consumable.withoutTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 50 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
+store.realmsPlus.recurring.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäinen kuukautesi on maksuton, minkä jälkeen sinulta veloitetaan %s kuukaudessa. Voit perua tilauksen milloin tahansa.	#
+store.realmsPlus.recurring.withoutTrial=Realmisi ja yli 100 kaupan pakettia ovat käytettävissä välittömästi. Jopa 10 pelaajaa voi pelata samanaikaisesti ja he kaikki saavat maksuttomasti käyttöönsä Realmisi maailmat! Sinulta veloitetaan %s/kk, ja voit perua tilauksen milloin tahansa.	#
+store.realmsPlus.consumable.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäiset 30 päivääsi ovat maksuttomia ja voit uusia tilauksen sen jälkeen hintaan %s.	#
+store.realmsPlus.consumable.withoutTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
 
 store.realmsPlus.landing.header=Tilaukseen sisältyy:	#
 
-store.realmsPlus.landing.info1.line1=- Käyttöoikeus yli 50:een kaupan pakettiin	#
+store.realmsPlus.landing.info1.line1=- Käyttöoikeus yli 100 pakettiin kaupassa	#
 store.realmsPlus.landing.info1.line2=- Oma henkilökohtainen Realm-palvelimesi	#
 store.realmsPlus.landing.info1.line3=- Ystävät pelaavat maksutta Realmissasi	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Kokeile vähän kaikkea yhdistelmill�
 
 store.realmsPlus.content.popularPacks=Suosituimmat Realms Plus -paketit:	#
 store.realmsPlus.content.viewAllPacks=NÄYTÄ KAIKKI PAKETIT	#
-store.realmsPlus.content.contentDescription=Hyödynnä upeaa Minecraft-sisältöä! Realms Plussalla saat välittömästi käyttöösi yli 50 kaupan tuotetta, kuten yhdistelmiä, maailmoja, olemuspaketteja ja eeppisiä seikkailuja, ja uutta sisältöä lisätään kuukausittain. Sisältösi tallennetaan henkilökohtaiselle palvelimellesi. Se on käytettävissä millä tahansa alustalla, jolla voit käyttää Realmsia ja Minecraft-kauppaa. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti!	#
+store.realmsPlus.content.contentDescription=Hyödynnä upeaa Minecraft-sisältöä! Realms Plussalla saat välittömästi käyttöösi yli 100 kaupan tuotetta, kuten yhdistelmiä, maailmoja, olemuspaketteja ja eeppisiä seikkailuja, Uutta sisältöä lisätään kuukausittain. Sisältösi tallennetaan henkilökohtaiselle palvelimellesi. Se on käytettävissä millä tahansa alustalla, jolla voit käyttää Realmsia ja Minecraft-kauppaa. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti!	#
 
 
 store.realmsPlus.freeTrial=ALOITA 1 KUUKAUDEN ILMAINEN KOKEILU	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Vaihda käyttäjää	#
 
 lateJoinScreen.waitingForUserReady=Valmistellaan asioita	#
 
+hbui.AchievementDetails.anotherPlatform=Valmistunut toisella alustalla	#
 hbui.AchievementDetails.completed=Suoritettu	#
 hbui.AchievementDetails.gamerscore=Pelaajapisteet	#
 hbui.AchievementDetails.locked=Lukittu	#
+hbui.AchievementDetails.yes=Kyllä	#
 hbui.AchievementDetailsRoute.errorMessage=Saavutusta ei voitu ladata. Yritä uudelleen tai tarkista internetyhteytesi.	#
 hbui.AchievementDetailsRoute.narration.completed=suoritettu	#
 hbui.AchievementDetailsRoute.narration.gamerscore=pelaajapisteet	#

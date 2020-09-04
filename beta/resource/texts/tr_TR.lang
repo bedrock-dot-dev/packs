@@ -692,7 +692,6 @@ commands.clone.description=Blokları bir bölgeden diğerine kopyalar.	#
 commands.clone.failed=Hiçbir blok kopyalanmadı	#
 commands.clone.filtered.error=Filtreli kullanım, bir filtre bloğunun belirlenmesini gerektirir	#
 commands.clone.noOverlap=Kaynak ve hedef aynı olamaz	#
-commands.clone.outOfWorld=Dünya dışındaki bloklara erişilemiyor	#
 commands.clone.success=%1$d blok kopyalandı	#
 commands.clone.tooManyBlocks=Belirtilen alanda çok fazla blok var (%1$d > %2$d)	#
 commands.closechat.description=Açıksa yerel oyuncunun sohbet penceresini kapatır.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Varsa internet soketi bağlantısını kapat
 commands.code.description=Kod Oluşturucu'yu başlatır.	#
 commands.code.success=Kod Oluşturucu başlatıldı.	#
 commands.compare.failed=Kaynak ve hedef aynı değil	#
-commands.compare.outOfWorld=Dünya dışındaki bloklara erişilemiyor	#
 commands.compare.success=%1$d blok karşılaştırıldı	#
 commands.compare.tooManyBlocks=Belirtilen alanda çok fazla blok var (%1$d > %2$d)	#
 commands.corruptworld.description=Sunucuda yüklü olan dünyayı bozar.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Uygulanmadı	#
 commands.generic.num.invalid='%1$s' geçerli bir sayı değil	#
 commands.generic.num.tooBig=Girdiğiniz sayı (%1$d) çok büyük, bu sayı en fazla %2$d olmalıdır	#
 commands.generic.num.tooSmall=Girdiğiniz sayı (%1$d) çok küçük, bu sayı en az %2$d olmalıdır	#
+commands.generic.outOfWorld=Dünya dışındaki bloklara erişilemiyor	#
 commands.generic.parameter.invalid='%1$s' geçerli bir parametre değil	#
 commands.generic.permission.selector=<seçici genişletmesi için izinler yetersiz>	#
 commands.generic.player.notFound=Bu oyuncu bulunamadı	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Oyuncu %s için izin düzeyi %s ayarlanamadı.	#
 commands.permissions.set.success=Oyuncu %s için izin düzeyi %s başarıyla ayarlandı.	#
 commands.permissions.save.failed=Oyuncu %s için izin düzeyi %s kaydedilemedi.	#
 commands.permissions.save.success=Oyuncu %s için izin düzeyi %s başarıyla kaydedildi.	#
+commands.screenshake.description=Belirli bir yoğunluk ve süre ile oyuncuların kameralarına titreşim uygular.	#
+commands.screenshake.success=Kameralarının titremesi için şu oyunculara istek gönderildi: %s	#
 commands.spawnParticleEmitter.description=Bir parçacık yayıcı oluşturur	#
 commands.particle.description=Parçacık oluşturur.	#
 commands.particle.notFound=Bilinmeyen efekt adı (%1$s)	#
 commands.particle.success=%2$d süredir efekt %1$s oynanıyor	#
+commands.playanimation.description=Bir veya daha fazla varlığın tek seferlik animasyon oynatmasını sağlar. Tüm değişkenlerin doğru şekilde ayarlandığını varsayar.	#
+commands.playanimation.success=İşleme için istemcilere animasyon isteği gönderildi.	#
 commands.players.list=Çevrimiçi %1$d/%2$d oyuncu var:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Bir sesi çalar.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Yuva %d değiştirilemedi, %d ve %d arasında
 commands.replaceitem.success=%s yuva %d, %d * %s ile değiştirildi	#
 commands.replaceitem.success.entity=%s yuva %s'nin %d'si, %d * %s ile değiştirildi.	#
 commands.replaceitem.tagError=Veri etiketi çözümleme başarısız: %1$s	#
+commands.ride.description=Varlıkları diğer varlıkların üstüne bindirir, varlıkların binmesini durdurur, bineklerin binicileri indirmesini sağlar veya binekleri ya da binicileri çağırır.	#
+commands.ride.evictRiders.success=Binekler binicilerini başarılı bir şekilde indirdi: %1$s	#
+commands.ride.startRiding.failure=Binek koşullarını karşılamayan biniciler: %1$s	#
+commands.ride.startRiding.groupDoesntFit=Binici grubu bineğe sığmıyor.	#
+commands.ride.startRiding.notRideable=Seçili varlık binilebilir değil.	#
+commands.ride.startRiding.rideFull=Bu binek zaten dolu.	#
+commands.ride.startRiding.rideFullRidersLeft=Binek dolu, bu yüzden bazı biniciler eklenmedi.	#
+commands.ride.startRiding.success=Biniciler bineğe başarıyla eklendi: %1$s	#
+commands.ride.startRiding.tooManyRiders=Çok fazla binici belirtildi. Teleport_ride için aynı anda sadece bir tane belirtilebilir.	#
+commands.ride.startRiding.tooManyRides=Çok fazla binek belirtildi. Aynı anda sadece bir tane belirtilebilir.	#
+commands.ride.stopRiding.success=Binmeyi başarıyla bırakan biniciler: %1$s	#
+commands.ride.summonRide.failed=Binekler çağrıldı ancak bu biniciler onlara eklenemedi: %1$s	#
+commands.ride.summonRide.notRideable=Varlık çağrıldı ancak binilebilir değil.	#
+commands.ride.summonRide.success=Binek şu binicileri başarıyla çağırdı: %1$s	#
+commands.ride.summonRider.failed=Biniciler çağrıldı ancak bineklere eklenemedi: %1$s	#
+commands.ride.summonRider.fullRides=Bu binekler dolu olduğu için biniciler eklenemedi: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Şu varlıklar binilebilir değil: %1$s	#
+commands.ride.summonRider.success=Biniciler şu binekler için başarıyla çağrıldı: %1$s	#
 commands.save.description=Oyunun verileri diske nasıl kaydettiğini kontrol edin.	#
 commands.save.disabled=Dünya otomatik kaydetme kapatıldı	#
 commands.save.enabled=Dünya otomatik kaydetme açıldı	#
@@ -957,6 +978,9 @@ commands.save-on.description=Otomatik sunucu kaydetmeyi etkinleştirir.	#
 commands.save-on.success=Seviyedeki değişikliklere devam ediliyor.	#
 commands.save-state.description=Önceki bir tümünü kaydet işleminin tamamlanıp tamamlanmadığını kontrol eder ve ilgili dosyaları listeler.	#
 commands.say.description=Sohbette diğer oyunculara mesaj gönderir.	#
+commands.schedule.description=Bir alan yüklendikten sonra veya belirli bir süre sonra yürütülecek bir eylemi zamanlar.	#
+commands.schedule.functionQueued=İşlev sıraya alındı ve belirtilen alan tam olarak yüklendiğinde yürütülecek.	#
+commands.schedule.functionRan=%1$d işlev girişi %2$s işlevi içinde başarıyla yürütüldü.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Sunucu durduruluyor	#
 commands.stopsound.description=Bir sesi durdurur.	#
 commands.stopsound.success=%s sesi %s için durduruldu	#
 commands.stopsound.success.all=%s için bütün sesler durduruldu	#
+commands.structure.description=Dünyaya bir yapıyı kaydeder veya yükler.	#
+commands.structure.empty.load=Varlıklar ve bloklar olmadan yapı yüklenemez	#
+commands.structure.empty.save=Varlıklar ve bloklar olmadan yapı kaydedilemez	#
+commands.structure.invalid.integrity=Bütünlük 0 ila 100 aralığında olmalıdır	#
+commands.structure.invalid.name=Ad değeri, "ad" veya "adalanı:ad" biçiminde olmalıdır. Ad alanı belirtilmezse varsayılan bir ad alanı atanır.	#
+commands.structure.load.success=%s adlı bir yapı yüklendi	#
+commands.structure.notFound=%s yapısı bulunamıyor. Adın doğru yazıldığından emin olun ve yeniden deneyin.	#
+commands.structure.save.success=Bir yapı %s adıyla kaydedildi	#
+commands.structure.size.tooBig=Bir yapının büyüklüğü en fazla (%1$d, %2$d, %3$d) olabilir ancak (%4$d, %5$d, %6$d) büyüklüğündeydi	#
+commands.structure.size.tooSmall=Bir yapının büyüklüğü en az (%1$d, %2$d, %3$d) olabilir ancak (%4$d, %5$d, %6$d) büyüklüğündeydi	#
+commands.structure.unknown.action=Bilinmeyen yapı eylemi belirtildi	#
+commands.structure.y.tooHigh=Bloklar dünyanın dışına yerleştirilemez. <to: x y z> Y bileşeni için %d veya daha küçük bir değer deneyin.	#
+commands.structure.y.tooLow=Bloklar dünyanın dışına yerleştirilemez. <to: x y z> Y bileşeni için 0 veya daha büyük bir değer deneyin.	#
 commands.summon.description=Bir varlık çağırır.	#
 commands.summon.failed=Nesne çağırılamadı	#
 commands.summon.outOfWorld=Dünya dışındaki nesne çağırılamaz	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus Aboneliği Sona Erdi	#
 realmsPlus.popup.message=Realms Plus aboneliğiniz sona erdi. Realm'ınıza ve Realms Plus aboneliğinizden edindiğiniz paket veya dış görünüşlere yeniden erişim kazanmak için aboneliğinizi yenilemeniz gerekiyor. 	#
 
 realmsPlusUpgradeNotice.title=Realms Plus'a hoş geldiniz!	#
-realmsPlusUpgradeNotice.body=Realms aboneliğiniz Realms Plus'a yükseltildi. Artık ek bir maliyet olmadan marketteki 50'den fazla içerik paketine erişebileceksiniz. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki tüm abone içeriklerine erişebilir – hem de ücretsiz!	#
+realmsPlusUpgradeNotice.body=Realms aboneliğiniz Realms Plus'a yükseltildi. Artık ek bir maliyet olmadan marketteki 100'den fazla içerik paketine erişebileceksiniz. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki tüm abone içeriklerine erişebilir – hem de ücretsiz!	#
 realmsPlusUpgradeNotice.continue=Devam	#
 realmsPlusUpgradeNotice.viewpacks=Realms Plus Paketleri	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Yönet	#
 options.viewSubscriptions.renew=30 günde bir yenilenir	#
 options.viewSubscriptions.daysRemaining=%d gün kaldı	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus Aboneliği	#
-options.viewSubscriptions.realmsPlus.detail=50'den fazla içerik ve kendi Realm sunucunuz	#
+options.viewSubscriptions.realmsPlus.detail=100'den fazla içerik ve kendi Realm sunucunuz	#
 options.viewSubscriptions.realms.header=Ek Abonelikler	#
 options.viewSubscriptions.realms.detail=En fazla %d eşzamanlı oyuncunun oynayabildiği kendi Realm sunucunuza erişin	#
 options.viewSubscriptions.loadingSubscriptions=Aboneliklerin yükleniyor..	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=HATA: TEKLİF BULUNAMADI	#
 store.realmsPlus.manageSubscription=ABONELİĞİ YÖNET	#
 store.realmsPlus.viewAllPacksTitle=ÇOK DEĞERLİ - EN AZ 150§g$ (USD) DEĞERİNDE PAKETLER!§r	#
 
-store.realmsPlus.nowActive=Realms Plus bu cihaz için etkinleştirildi. Artık ek bir maliyet olmadan marketteki 50'den fazla içerik paketine erişebileceksiniz. Realms üzerinde aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki tüm abone içeriklerine erişebilir – hem de ücretsiz!	#
+store.realmsPlus.nowActive=Realms Plus bu cihaz için etkinleştirildi. Artık ek bir maliyet olmadan marketteki 100'den fazla içerik paketine erişebileceksiniz. Realms üzerinde aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki tüm abone içeriklerine erişebilir - hem de ücretsiz!	#
 
 store.realmsPlus.buyNow.buttonText=%s KARŞILIĞINDA AL	#
 store.realmsPlus.buyNow.viewTerms=HÜKÜM VE KOŞULLAR	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=GİZLİLİK İLKESİ	#
 
 store.realmsPlus.buyNow.title=Realms Plus Aboneliğinizi başlatın	#
 store.realmsPlus.startTrial.title=30 günlük ÜCRETSİZ denemeyi şimdi başlatın!	#
-store.realmsPlus.startTrial.description=Realm'ınız ve 50'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk ayınız ücretsizdir; sonrasında aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
-store.realmsPlus.noTrial.description=Realm'ınız ve 50'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s:minecoin: fiyat karşılığında kullanabilirsiniz.	#
-store.realmsPlus.noTrial.description.iap=Realm'ınız ve 50'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s fiyat karşılığında kullanabilirsiniz.	#
+store.realmsPlus.startTrial.description=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk ayınız ücretsizdir; sonrasında aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
+store.realmsPlus.noTrial.description=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s:minecoin: karşılığında kullanabilirsiniz.	#
+store.realmsPlus.noTrial.description.iap=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s karşılığında kullanabilirsiniz.	#
 store.realmsPlus.realmName.placeholder=%s Realm'ı		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm'ınız ve 50'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk ayınız ücretsizdir; sonrasında aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
-store.realmsPlus.recurring.withoutTrial=Realm'ınız ve 50'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
-store.realmsPlus.consumable.offerTrial=Realm'ınız ve 50'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk 30 gününüz ücretsizdir; sonrasında %s fiyat karşılığında 30 gün için daha yenileyebilirsiniz.	#
-store.realmsPlus.consumable.withoutTrial=Realm'ınız ve 50'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğiniz 30 gün boyunca %s fiyat karşılığında kullanılabilir.	#
+store.realmsPlus.recurring.offerTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk ayınız ücretsizdir; sonrasında aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
+store.realmsPlus.recurring.withoutTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
+store.realmsPlus.consumable.offerTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk 30 gününüz ücretsizdir; sonrasında %s karşılığında 30 gün için daha yenileyebilirsiniz.	#
+store.realmsPlus.consumable.withoutTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s karşılığında kullanabilirsiniz.	#
 
 store.realmsPlus.landing.header=Abonelik İçeriği:	#
 
-store.realmsPlus.landing.info1.line1=- 50'den fazla Market paketi içeren kataloğa erişim	#
+store.realmsPlus.landing.info1.line1=- 100'den fazla market paketi içeren kataloğa erişim	#
 store.realmsPlus.landing.info1.line2=- Kendi kişisel Realm sunucunuz	#
 store.realmsPlus.landing.info1.line3=- Arkadaşlarınız Realm'ınızda ücretsiz oynar	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Karışımlarda her şeyden biraz den
 
 store.realmsPlus.content.popularPacks=Realms Plus'taki Popüler Paketler:	#
 store.realmsPlus.content.viewAllPacks=TÜM PAKETLERİ GÖR	#
-store.realmsPlus.content.contentDescription=Harika Minecraft içeriklerinin kaynağına dalın! Realms Plus ile her ay yenisi eklenen karışımlar, dünyalar, dış görünüş paketleri ve muhteşem maceralar gibi 50'den fazla market öğesine anında erişim elde edersiniz. İçeriğiniz kişisel sunucunuzda depolanır ve Realms hem de Minecraft Market'i kullandığınız her platformda kullanılabilir. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir!	#
+store.realmsPlus.content.contentDescription=Harika Minecraft içeriklerinin kaynağına dalın! Realms Plus ile her ay yenisi eklenen karışımlar, dünyalar, dış görünüş paketleri ve muhteşem maceralar gibi 100'den fazla market öğesine anında erişim elde edersiniz. İçeriğiniz kişisel sunucunuzda depolanır ve hem Realms hem de Minecraft Market'i kullandığınız her platformda kullanılabilir. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir!	#
 
 
 store.realmsPlus.freeTrial=1 AYLIK ÜCRETSİZ DENEMEYİ BAŞLAT	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Kullanıcı Değiştir	#
 
 lateJoinScreen.waitingForUserReady=Hazırlıklar yapılıyor	#
 
+hbui.AchievementDetails.anotherPlatform=Başka bir platformda tamamlandı	#
 hbui.AchievementDetails.completed=Tamamlandı	#
 hbui.AchievementDetails.gamerscore=Oyuncu Puanı	#
 hbui.AchievementDetails.locked=Kilitli	#
+hbui.AchievementDetails.yes=Evet	#
 hbui.AchievementDetailsRoute.errorMessage=Başarı yüklenemedi. Lütfen tekrar dene veya internet bağlantını kontrol et.	#
 hbui.AchievementDetailsRoute.narration.completed=tamamlandı	#
 hbui.AchievementDetailsRoute.narration.gamerscore=oyuncu puanı	#

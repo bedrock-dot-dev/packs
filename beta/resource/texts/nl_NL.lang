@@ -692,7 +692,6 @@ commands.clone.description=Kloont blokken van de ene regio naar de andere.	#
 commands.clone.failed=Geen blokken gekloond	#
 commands.clone.filtered.error=Filtergebruik vereist dat er een filterblokkering is opgegeven	#
 commands.clone.noOverlap=Bron en bestemming mogen elkaar niet overlappen	#
-commands.clone.outOfWorld=Geen toegang mogelijk tot blokken buiten de wereld	#
 commands.clone.success=%1$d blokken gekloond	#
 commands.clone.tooManyBlocks=Te veel blokken in het opgegeven gebied (%1$d > %2$d)	#
 commands.closechat.description=Sluit het chatvenster van de lokale speler indien geopend.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Sluit websocket-verbinding indien aanwezig.	
 commands.code.description=Code Builder wordt gestart.	#
 commands.code.success=Code Builder is gestart.	#
 commands.compare.failed=Bron en bestemming zijn niet identiek	#
-commands.compare.outOfWorld=Geen toegang mogelijk tot blokken buiten de wereld	#
 commands.compare.success=%1$d blokken vergeleken	#
 commands.compare.tooManyBlocks=Te veel blokken in het opgegeven gebied (%1$d > %2$d)	#
 commands.corruptworld.description=Beschadigt de wereld die op de server is geladen.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Niet geïmplementeerd	#
 commands.generic.num.invalid='%1$s' is geen geldig getal	#
 commands.generic.num.tooBig=Het getal dat je hebt ingevoerd (%1$d) is te groot. Het mag maximaal %2$d zijn	#
 commands.generic.num.tooSmall=Het getal dat je hebt ingevoerd (%1$d) is te klein. Het moet minimaal %2$d zijn	#
+commands.generic.outOfWorld=Je hebt geen toegang tot blokken buiten de wereld	#
 commands.generic.parameter.invalid='%1$s' is geen geldige parameter	#
 commands.generic.permission.selector=<onvoldoende machtigingen voor selectoruitbreiding>	#
 commands.generic.player.notFound=Kan deze speler niet vinden	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Kan machtigingsniveau %s niet instellen voor spe
 commands.permissions.set.success=Machtigingsniveau %s ingesteld voor speler %s.	#
 commands.permissions.save.failed=Kan machtigingsniveau %s niet opslaan voor speler %s.	#
 commands.permissions.save.success=Machtigingsniveau %s opgeslagen voor speler %s.	#
+commands.screenshake.description=Hiermee kan de camera van de spelers schudden met een bepaalde intensiteit en duur.	#
+commands.screenshake.success=Er is een verzoek verzonden naar de volgende spelers om hun camera te laten schudden: %s	#
 commands.spawnParticleEmitter.description=Maakt een particle emitter	#
 commands.particle.description=Hiermee maak je deeltjes.	#
 commands.particle.notFound=Onbekende effectnaam (%1$s)	#
 commands.particle.success=Effect %1$s wordt %2$d keer gespeeld	#
+commands.playanimation.description=Hiermee laat je een of meer entiteiten eenmalig hun animatie afspelen. Alle variabelen moeten correct zijn ingesteld.	#
+commands.playanimation.success=Het animatieverzoek is verzonden naar de clients.	#
 commands.players.list=Er zijn %1$d/%2$d spelers online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Hiermee speel je een geluid af.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Kan slot %d niet vervangen. Moet een waarde z
 commands.replaceitem.success=%s slot %d vervangen door %d * %s	#
 commands.replaceitem.success.entity=%s slot %d van %s vervangen door %d * %s	#
 commands.replaceitem.tagError=Parseren van gegevenslabel is mislukt: %1$s	#
+commands.ride.description=Hiermee laat je entiteiten andere entiteiten berijden, laat je ze hiermee stoppen, laat je rijmiddelen hun berijders afzetten of roep je berijders of rijmiddelen op.	#
+commands.ride.evictRiders.success=Rijmiddelen die hun berijders hebben afgezet: %1$s	#
+commands.ride.startRiding.failure=Berijders die niet aan de rijomstandigheden voldoen: %1$s	#
+commands.ride.startRiding.groupDoesntFit=De groep berijders past niet op het rijmiddel.	#
+commands.ride.startRiding.notRideable=De geselecteerde entiteit is niet berijdbaar.	#
+commands.ride.startRiding.rideFull=Dit rijmiddel zit al vol.	#
+commands.ride.startRiding.rideFullRidersLeft=Het rijmiddel zit vol, waardoor sommige berijders niet zijn toegevoegd.	#
+commands.ride.startRiding.success=Berijders toegevoegd aan het rijmiddel: %1$s	#
+commands.ride.startRiding.tooManyRiders=Er zijn te veel berijders opgegeven. Er is momenteel slechts één toegestaan voor teleport_ride.	#
+commands.ride.startRiding.tooManyRides=Er zijn te veel rijmiddelen opgegeven. Er is momenteel slechts één toegestaan.	#
+commands.ride.stopRiding.success=Berijders die zijn gestopt met berijden: %1$s	#
+commands.ride.summonRide.failed=Rijmiddelen zijn opgeroepen, maar deze berijders kunnen er niet aan worden toegevoegd: %1$s	#
+commands.ride.summonRide.notRideable=Entiteit is opgeroepen maar is niet berijdbaar.	#
+commands.ride.summonRide.success=Rijmiddel is opgeroepen voor deze berijders: %1$s	#
+commands.ride.summonRider.failed=Berijders zijn opgeroepen, maar deze kunnen niet aan rijmiddelen worden toegevoegd: %1$s	#
+commands.ride.summonRider.fullRides=Berijders kunnen deze rijmiddelen niet berijden omdat deze vol zitten: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=De volgende entiteiten zijn niet berijdbaar: %1$s	#
+commands.ride.summonRider.success=Berijders zijn opgeroepen voor rijmiddelen: %1$s	#
 commands.save.description=Hiermee controleer je hoe het spel gegevens naar de schijf opslaat.	#
 commands.save.disabled=Automatisch opslaan van de wereld is uitgeschakeld	#
 commands.save.enabled=Automatisch opslaan van de wereld is ingeschakeld	#
@@ -957,6 +978,9 @@ commands.save-on.description=Schakelt automatische serveropslag in.	#
 commands.save-on.success=Wijzigingen in het niveau worden hervat.	#
 commands.save-state.description=Hiermee controleer je of een eerder proces van alles opslaan is voltooid en geef je alle betrokken bestanden weer.	#
 commands.say.description=Stuurt een bericht in de chat naar andere spelers.	#
+commands.schedule.description=Hiermee plan je een actie die moet worden uitgevoerd zodra een gebied is geladen of na een bepaalde tijd.	#
+commands.schedule.functionQueued=De functie is in de wachtrij geplaatst en wordt uitgevoerd wanneer het opgegeven gebied volledig is geladen.	#
+commands.schedule.functionRan=%1$d functie-items uitgevoerd in functie %2$s.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=De server wordt stopgezet	#
 commands.stopsound.description=Hiermee stop je een geluid.	#
 commands.stopsound.success=Geluid %s voor %s gestopt	#
 commands.stopsound.success.all=Alle geluiden voor %s gestopt	#
+commands.structure.description=Hiermee sla je een bouwwerk in de wereld op of laad je deze.	#
+commands.structure.empty.load=Een bouwwerk zonder entiteiten en blokken kan niet worden geladen	#
+commands.structure.empty.save=Een bouwwerk zonder entiteiten en blokken kan niet worden opgeslagen	#
+commands.structure.invalid.integrity=De integriteit moet tussen de 0 en 100 liggen	#
+commands.structure.invalid.name=De naam moet de indeling 'naam' of 'naamruimte:naam' hebben. Als er geen naamruimte wordt opgegeven, wordt de standaardwaarde toegewezen.	#
+commands.structure.load.success=Een bouwwerk met de naam %s is geladen	#
+commands.structure.notFound=Het bouwwerk %s kan niet worden gevonden. Zorg ervoor dat de naam correct is gespeld en probeer het opnieuw.	#
+commands.structure.save.success=Een bouwwerk met de naam %s is opgeslagen	#
+commands.structure.size.tooBig=De grootte van een bouwwerk mag niet groter zijn dan (%1$d, %2$d, %3$d). Dit was eerder (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=De grootte van een bouwwerk mag niet kleiner zijn dan (%1$d, %2$d, %3$d). Dit was eerder (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Onbekende bouwwerkactie opgegeven	#
+commands.structure.y.tooHigh=Je kunt geen blokken buiten de wereld plaatsen. Probeer een waarde van %d of lager voor de Y-component van <to: x y z>.	#
+commands.structure.y.tooLow=Je kunt geen blokken buiten de wereld plaatsen. Probeer een waarde hoger dan 0 voor de Y-component van <to: x y z>.	#
 commands.summon.description=Roept een entiteit op.	#
 commands.summon.failed=Kan het object niet oproepen	#
 commands.summon.outOfWorld=Kan het object niet buiten de wereld oproepen	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus-abonnement verlopen	#
 realmsPlus.popup.message=Je Realms Plus-abonnement is verlopen. Om weer toegang te krijgen tot je Realm en de pakketten of skins die je via Realms Plus hebt gekregen, moet je je abonnement verlengen. 	#
 
 realmsPlusUpgradeNotice.title=Welkom bij Realms Plus!	#
-realmsPlusUpgradeNotice.body=Je Realms-abonnement is bijgewerkt naar Realms Plus. Je hebt nu gratis toegang tot meer dan 50 contentpakketten in de Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook toegang tot alle abonnementscontent op je Realm – helemaal gratis!	#
+realmsPlusUpgradeNotice.body=Je Realms-abonnement is bijgewerkt naar Realms Plus. Je hebt nu gratis toegang tot meer dan 100 contentpakketten in de Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook toegang tot alle abonnementscontent op je Realm – helemaal gratis!	#
 realmsPlusUpgradeNotice.continue=Doorgaan	#
 realmsPlusUpgradeNotice.viewpacks=Realms Plus-pakketten bekijken	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Beheren	#
 options.viewSubscriptions.renew=Wordt om de 30 dagen vernieuwd	#
 options.viewSubscriptions.daysRemaining=Nog %d dagen	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus-abonnement	#
-options.viewSubscriptions.realmsPlus.detail=Meer dan 50 stukken content en je eigen Realm-server	#
+options.viewSubscriptions.realmsPlus.detail=Meer dan 100 stukken content en je eigen Realm-server	#
 options.viewSubscriptions.realms.header=Extra abonnementen	#
 options.viewSubscriptions.realms.detail=Toegang tot je eigen Realm-server met maximaal %d gelijktijdige spelers	#
 options.viewSubscriptions.loadingSubscriptions=Je abonnementen worden geladen...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=FOUT: GEEN AANBIEDING GEVONDEN	#
 store.realmsPlus.manageSubscription=ABONNEMENT BEHEREN	#
 store.realmsPlus.viewAllPacksTitle=VEEL WAAR VOOR JE GELD: PAKKETTEN TER WAARDE VAN RUIM §g$ 150 (USD)!§r	#
 
-store.realmsPlus.nowActive=Realms Plus is nu actief voor dit apparaat. Je hebt nu gratis toegang tot meer dan 50 contentpakketten in de Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen op je Realms en zij hebben ook toegang tot alle abonnementscontent op je Realm – helemaal gratis!	#
+store.realmsPlus.nowActive=Realms Plus is nu actief voor dit apparaat. Je hebt nu gratis toegang tot meer dan 100 contentpakketten in de Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen op je Realms en zij hebben ook toegang tot alle abonnementscontent op je Realm – helemaal gratis!	#
 
 store.realmsPlus.buyNow.buttonText=KOPEN VOOR %s	#
 store.realmsPlus.buyNow.viewTerms=VOORWAARDEN EN BEPALINGEN	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=PRIVACYBELEID	#
 
 store.realmsPlus.buyNow.title=Activeer je Realms Plus-abonnement	#
 store.realmsPlus.startTrial.title=Start nu je GRATIS proefabonnement van 30 dagen!	#
-store.realmsPlus.startTrial.description=Je Realm en meer dan 50 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste maand is gratis en daarna wordt %s per maand in rekening gebracht. Je kunt op elk moment annuleren.	#
-store.realmsPlus.noTrial.description=Je Realm en meer dan 50 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Je Realm en meer dan 50 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s.	#
+store.realmsPlus.startTrial.description=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste maand is gratis en daarna wordt %s per maand in rekening gebracht. Je kunt op elk moment annuleren.	#
+store.realmsPlus.noTrial.description=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s.	#
 store.realmsPlus.realmName.placeholder=Realm van %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Je Realm en meer dan 50 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste maand is gratis en daarna wordt %s per maand in rekening gebracht. Je kunt op elk moment annuleren.	#
-store.realmsPlus.recurring.withoutTrial=Je Realm en meer dan 50 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Er wordt %s per maand in rekening gebracht en je kunt op elk moment annuleren.	#
-store.realmsPlus.consumable.offerTrial=Je Realm en meer dan 50 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste 30 dagen zijn gratis en daarna kun je voor 30 dagen verlengen voor %s.	#
-store.realmsPlus.consumable.withoutTrial=Je Realm en meer dan 50 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s.	#
+store.realmsPlus.recurring.offerTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste maand is gratis en daarna wordt %s per maand in rekening gebracht. Je kunt op elk moment annuleren.	#
+store.realmsPlus.recurring.withoutTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Er wordt %s per maand in rekening gebracht en je kunt op elk moment annuleren.	#
+store.realmsPlus.consumable.offerTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste 30 dagen zijn gratis en daarna kun je voor 30 dagen verlengen voor %s.	#
+store.realmsPlus.consumable.withoutTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s.	#
 
 store.realmsPlus.landing.header=Abonnement bevat:	#
 
-store.realmsPlus.landing.info1.line1=- Toegang tot een catalogus van meer dan 50 Marketplace-pakketten	#
+store.realmsPlus.landing.info1.line1=- Toegang tot een catalogus van meer dan 100 Marketplace-pakketten	#
 store.realmsPlus.landing.info1.line2=- Je eigen Realm-server	#
 store.realmsPlus.landing.info1.line3=- Vrienden spelen gratis mee op je Realm	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Probeer een beetje van alles met mash
 
 store.realmsPlus.content.popularPacks=Populaire pakketten in Realm Plus:	#
 store.realmsPlus.content.viewAllPacks=ALLE PAKKETTEN BEKIJKEN	#
-store.realmsPlus.content.contentDescription=Profiteer van geweldige Minecraft-content! Met Realms Plus heb je direct toegang tot meer dan 50 Marketplace-voorwerpen, zoals mashups, werelden, skinpakketten en epische avonturen – met elke maand nieuwe toevoegingen. Je content wordt opgeslagen op je eigen persoonlijke server en is beschikbaar op elk platform waar je toegang hebt tot Realms en de Minecraft Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm!	#
+store.realmsPlus.content.contentDescription=Profiteer van geweldige Minecraft-content! Met Realms Plus heb je direct toegang tot meer dan 100 Marketplace-voorwerpen, zoals mashups, werelden, skinpakketten en epische avonturen – met elke maand nieuwe toevoegingen. Je content wordt opgeslagen op je eigen persoonlijke server en is beschikbaar op elk platform waar je toegang hebt tot Realms en de Minecraft Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm!	#
 
 
 store.realmsPlus.freeTrial=PROEFPERIODE VAN 1 MAAND STARTEN	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Gebruiker wijzigen	#
 
 lateJoinScreen.waitingForUserReady=Voorbereidingen treffen	#
 
+hbui.AchievementDetails.anotherPlatform=Voltooid op een ander platform	#
 hbui.AchievementDetails.completed=Voltooid	#
 hbui.AchievementDetails.gamerscore=Gamerscore	#
 hbui.AchievementDetails.locked=Vergrendeld	#
+hbui.AchievementDetails.yes=Ja	#
 hbui.AchievementDetailsRoute.errorMessage=Kan achievement niet laden. Probeer het opnieuw of controleer je internetverbinding.	#
 hbui.AchievementDetailsRoute.narration.completed=voltooid	#
 hbui.AchievementDetailsRoute.narration.gamerscore=gamerscore	#

@@ -692,7 +692,6 @@ commands.clone.description=Κλωνοποιεί κύβους από μία πε�
 commands.clone.failed=Δεν κλωνοποιήθηκαν κύβοι	#
 commands.clone.filtered.error=Η χρήση με φίλτρο απαιτεί προσδιορισμό κύβου φιλτραρίσματος	#
 commands.clone.noOverlap=Η προέλευση και ο προορισμός δεν μπορούν να συμπίπτουν	#
-commands.clone.outOfWorld=Δεν είναι δυνατή η πρόσβαση σε κύβους εκτός του κόσμου	#
 commands.clone.success=Κλωνοποιήθηκαν %1$d κύβοι	#
 commands.clone.tooManyBlocks=Υπερβολικά πολλοί κύβοι στην καθορισμένη περιοχή (%1$d > %2$d)	#
 commands.closechat.description=Κλείνει το παράθυρο συνομιλίας του τοπικού παίκτη αν είναι ανοικτό.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Κλείνει τη σύνδεση websocket
 commands.code.description=Εκκινεί το Code Builder.	#
 commands.code.success=Το Code Builder εκκινήθηκε.	#
 commands.compare.failed=Η προέλευση και ο προορισμός δεν είναι όμοια	#
-commands.compare.outOfWorld=Δεν είναι δυνατή η πρόσβαση σε κύβους εκτός του κόσμου	#
 commands.compare.success=Έγινε σύγκριση %1$d κύβων	#
 commands.compare.tooManyBlocks=Υπερβολικά πολλοί κύβοι στην καθορισμένη περιοχή (%1$d > %2$d)	#
 commands.corruptworld.description=Καταστρέφει τον κόσμο που έχει φορτωθεί στον διακομιστή.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Δεν εφαρμόστηκε	#
 commands.generic.num.invalid=Το '%1$s' δεν είναι έγκυρος αριθμός	#
 commands.generic.num.tooBig=Ο αριθμός που εισήγαγες (%1$d) είναι υπερβολικά μεγάλος. Η μέγιστη τιμή που μπορεί να έχει είναι %2$d	#
 commands.generic.num.tooSmall=Ο αριθμός που εισήγαγες (%1$d) είναι υπερβολικά μικρός. Η ελάχιστη τιμή που μπορεί να έχει είναι %2$d	#
+commands.generic.outOfWorld=Δεν είναι δυνατή η πρόσβαση σε κύβους εκτός του κόσμου	#
 commands.generic.parameter.invalid=Το '%1$s' δεν είναι έγκυρη παράμετρος	#
 commands.generic.permission.selector=<ανεπαρκή δικαιώματα για επέκταση επιλογέα>	#
 commands.generic.player.notFound=Ο παίκτης δεν μπορεί να βρεθεί	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Δεν ήταν δυνατή η ρύθμιση �
 commands.permissions.set.success=Επιτυχής ρύθμιση επιπέδου δικαιωμάτων %s για τον παίκτη %s.	#
 commands.permissions.save.failed=Δεν ήταν δυνατή η αποθήκευση του επιπέδου δικαιωμάτων %s για τον παίκτη %s.	#
 commands.permissions.save.success=Επιτυχής αποθήκευση επιπέδου δικαιωμάτων %s για τον παίκτη %s.	#
+commands.screenshake.description=Εφαρμόζει κίνηση στην κάμερα των παικτών με καθορισμένη ένταση και διάρκεια.	#
+commands.screenshake.success=Στάλθηκε αίτημα στους ακόλουθους παίκτες για κούνημα της κάμεράς τους: %s	#
 commands.spawnParticleEmitter.description=Δημιουργεί έναν πομπό σωματιδίων	#
 commands.particle.description=Δημιουργεί σωματίδια.	#
 commands.particle.notFound=Άγνωστο όνομα εφέ (%1$s)	#
 commands.particle.success=Αναπαραγωγή εφέ %1$s %2$d φορές	#
+commands.playanimation.description=Κάνε μία ή περισσότερες οντότητες να παίξουν ένα εφάπαξ εφέ κίνησης. Θεωρεί ότι όλες οι μεταβλητές έχουν ρυθμιστεί σωστά.	#
+commands.playanimation.success=Το αίτημα εφέ κίνησης στάλθηκε στους υπολογιστές-πελάτες για επεξεργασία.	#
 commands.players.list=Υπάρχουν %1$d/%2$d παίκτες online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Αναπαράγει ήχο.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Δεν ήταν δυνατή η αντικα�
 commands.replaceitem.success=Η υποδοχή %s %d αντικαταστάθηκε από %d * %s	#
 commands.replaceitem.success.entity=Η υποδοχή %s %d από %s αντικαταστάθηκε από %d * %s	#
 commands.replaceitem.tagError=Απέτυχε η ανάλυση της ετικέτας δεδομένων: %1$s	#
+commands.ride.description=Κάνει οντότητες να καβαλούν άλλες οντότητες, σταματά οντότητες να καβαλούν, κάνει οντότητες να πετούν τους αναβάτες τους ή καλεί οντότητες που μπορούν να καβαληθούν ή αναβάτες.	#
+commands.ride.evictRiders.success=Οντότητες που μπορούν να καβαληθούν που έχουν πετάξει με επιτυχία τους αναβάτες τους: %1$s	#
+commands.ride.startRiding.failure=Αναβάτες που δεν πληρούσαν τα κριτήρια ανάβασης. %1$s	#
+commands.ride.startRiding.groupDoesntFit=Η ομάδα των αναβατών δεν ταιριάζει στην οντότητα που μπορεί να καβαληθεί.	#
+commands.ride.startRiding.notRideable=Η επιλεγμένη οντότητα δεν μπορεί να καβαληθεί.	#
+commands.ride.startRiding.rideFull=Αυτή η οντότητα που μπορεί να καβαληθεί είναι ήδη πλήρης.	#
+commands.ride.startRiding.rideFullRidersLeft=Η οντότητα που μπορεί να καβαληθεί είναι πλήρης, επομένως, ορισμένοι αναβάτες δεν προστέθηκαν.	#
+commands.ride.startRiding.success=Αναβάτες που προστέθηκαν με επιτυχία στην οντότητα που μπορεί να καβαληθεί: %1$s	#
+commands.ride.startRiding.tooManyRiders=Καθορίστηκαν πάρα πολλοί αναβάτες. Επιτρέπεται μόνο ένας τη φορά για την οντότητα teleport_ride.	#
+commands.ride.startRiding.tooManyRides=Καθορίστηκαν πάρα πολλές οντότητες που μπορούν να καβαληθούν. Επιτρέπεται μόνο μία τη φορά.	#
+commands.ride.stopRiding.success=Αναβάτες που σταμάτησαν με επιτυχία την ανάβαση: %1$s	#
+commands.ride.summonRide.failed=Κλήθηκαν οντότητες που μπορούν να καβαληθούν, αλλά δεν ήταν δυνατή η προσθήκη αυτών των αναβατών σε αυτές: %1$s	#
+commands.ride.summonRide.notRideable=Κλήθηκε οντότητα, αλλά δεν μπορεί να καβαληθεί.	#
+commands.ride.summonRide.success=Κλήθηκε με επιτυχία οντότητα που μπορεί να καβαληθεί για αυτούς τους αναβάτες: %1$s	#
+commands.ride.summonRider.failed=Κλήθηκαν αναβάτες, αλλά δεν ήταν δυνατή η προσθήκη σε οντότητες που μπορούν να καβαληθούν: %1$s	#
+commands.ride.summonRider.fullRides=Οι αναβάτες δεν μπόρεσαν να καβαλήσουν αυτές τις οντότητες, επειδή είναι πλήρεις: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Οι ακόλουθες οντότητες δεν μπορούν να καβαληθούν: %1$s	#
+commands.ride.summonRider.success=Οι αναβάτες κάλεσαν με επιτυχία οντότητες που μπορούν να καβαληθούν: %1$s	#
 commands.save.description=Έλεγξε τον τρόπο με τον οποίο το παιχνίδι αποθηκεύει δεδομένα στο δίσκο.	#
 commands.save.disabled=Απενεργοποιήθηκε η αυτόματη αποθήκευση κόσμου	#
 commands.save.enabled=Ενεργοποιήθηκε η αυτόματη αποθήκευση κόσμου	#
@@ -957,6 +978,9 @@ commands.save-on.description=Επιτρέπει την αυτόματη αποθ
 commands.save-on.success=Γίνεται συνέχιση των αλλαγών στο επίπεδο.	#
 commands.save-state.description=Ελέγχει αν ολοκληρώθηκε μια προηγούμενη αποθήκευση όλων και παραθέτει τα σχετικά αρχεία.	#
 commands.say.description=Αποστέλλει ένα μήνυμα στη συνομιλία σε άλλους παίκτες.	#
+commands.schedule.description=Προγραμματίζει μια ενέργεια που θα εκτελεστεί μόλις φορτωθεί μια περιοχή ή μετά από ένα συγκεκριμένο χρονικό διάστημα.	#
+commands.schedule.functionQueued=Η συνάρτηση έχει προστεθεί στην ουρά και θα εκτελεστεί όταν φορτωθεί πλήρως η καθορισμένη περιοχή.	#
+commands.schedule.functionRan=Πραγματοποιήθηκε επιτυχής εκτέλεση %1$d καταχωρήσεων στη συνάρτηση %2$s.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Διακόπηκε η λειτουργία του διακο
 commands.stopsound.description=Διακόπτει έναν ήχο.	#
 commands.stopsound.success=Διακοπή ήχου %s για %s	#
 commands.stopsound.success.all=Διακοπή όλων των ήχων για %s	#
+commands.structure.description=Αποθηκεύει ή φορτώνει μια δομή στον κόσμο.	#
+commands.structure.empty.load=Δεν είναι δυνατή η φόρτωση μιας δομής χωρίς οντότητες και χωρίς κύβους	#
+commands.structure.empty.save=Δεν είναι δυνατή η αποθήκευση μιας δομής χωρίς οντότητες και χωρίς κύβους	#
+commands.structure.invalid.integrity=Η ακεραιότητα πρέπει να κυμαίνεται μεταξύ 0 και 100	#
+commands.structure.invalid.name=Το όνομα θα πρέπει να έχει μορφή "name" ή "namespace:name". Αν δεν παρασχεθεί χώρος ονομάτων, θα εκχωρηθεί ο προεπιλεγμένος.	#
+commands.structure.load.success=Φορτώθηκε μια δομή με όνομα %s	#
+commands.structure.notFound=Η δομή %s δεν μπορεί να βρεθεί. Βεβαιωθείτε ότι η ορθογραφία του ονόματος είναι σωστή και προσπαθήστε ξανά.	#
+commands.structure.save.success=Αποθηκεύτηκε μια δομή με όνομα %s	#
+commands.structure.size.tooBig=Το μέγεθος μιας δομής δεν μπορεί να είναι μεγαλύτερο από (%1$d, %2$d, %3$d), ήταν (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=Το μέγεθος μιας δομής δεν μπορεί να είναι μικρότερο από (%1$d, %2$d, %3$d), ήταν (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Παρασχέθηκε άγνωστη ενέργεια δομής	#
+commands.structure.y.tooHigh=Δεν είναι δυνατή η τοποθέτηση κύβων εκτός του κόσμου. Δοκιμάστε μια τιμή %d ή χαμηλότερη για το στοιχείο Y του <to: x y z>.	#
+commands.structure.y.tooLow=Δεν είναι δυνατή η τοποθέτηση κύβων εκτός του κόσμου. Δοκιμάστε μια τιμή μεγαλύτερη από το 0 για το στοιχείο Y του <to: x y z>.	#
 commands.summon.description=Καλεί μια οντότητα.	#
 commands.summon.failed=Δεν είναι δυνατή η κλήση αντικειμένου	#
 commands.summon.outOfWorld=Δεν είναι δυνατή η κλήση του αντικειμένου έξω από τον κόσμο	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Η συνδρομή του Realms Plus έληξε	#
 realmsPlus.popup.message=Η συνδρομή του Realms Plus έληξε. Για να αποκτήσεις ξανά πρόσβαση στο Realm και στα πακέτα ή τις εμφανίσεις που έλαβες από το Realms Plus πρέπει να ανανεώσεις τη συνδρομή σου. 	#
 
 realmsPlusUpgradeNotice.title=Καλώς όρισες στο Realms Plus!	#
-realmsPlusUpgradeNotice.body=Η συνδρομή του Realms αναβαθμίστηκε σε Realms Plus. Τώρα έχεις πρόσβαση σε 50+ πακέτα περιεχομένου από το Marketplace χωρίς επιπλέον κόστος. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση σε όλο το περιεχόμενο συνδρομής του Realm σου – δωρεάν!	#
+realmsPlusUpgradeNotice.body=Η συνδρομή του Realms αναβαθμίστηκε σε Realms Plus. Τώρα έχεις πρόσβαση σε 100+ πακέτα περιεχομένου από το Marketplace χωρίς επιπλέον κόστος. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση σε όλο το περιεχόμενο συνδρομής του Realm σου – δωρεάν!	#
 realmsPlusUpgradeNotice.continue=Συνέχεια	#
 realmsPlusUpgradeNotice.viewpacks=Προβολή πακέτων Realms Plus	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Διαχείριση	#
 options.viewSubscriptions.renew=Ανανεώνεται κάθε 30 ημέρες	#
 options.viewSubscriptions.daysRemaining=Απομένουν %d ημέρες	#
 options.viewSubscriptions.realmsPlus.header=Συνδρομή Realms Plus	#
-options.viewSubscriptions.realmsPlus.detail=Πάνω από 50 στοιχεία περιεχομένου και ο δικός σου διακομιστής Realm	#
+options.viewSubscriptions.realmsPlus.detail=Πάνω από 100 στοιχεία περιεχομένου και ο δικός σου διακομιστής Realm	#
 options.viewSubscriptions.realms.header=Πρόσθετες συνδρομές	#
 options.viewSubscriptions.realms.detail=Απόκτησε πρόσβαση στον δικό σου διακομιστή Realm με έως και %d παίκτες ταυτόχρονα	#
 options.viewSubscriptions.loadingSubscriptions=Φόρτωση συνδρομών...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=ΣΦΑΛΜΑ - ΔΕΝ ΒΡΕΘΗΚΕ ΠΡΟΣΦΟ�
 store.realmsPlus.manageSubscription=ΔΙΑΧΕΙΡΙΣΗ ΣΥΝΔΡΟΜΗΣ	#
 store.realmsPlus.viewAllPacksTitle=ΣΠΟΥΔΑΙΑ ΤΙΜΗ - ΠΑΚΕΤΑ ΑΞΙΑΣ ΑΝΩ ΤΩΝ §g150 δολαρίων (USD)!§r	#
 
-store.realmsPlus.nowActive=Η συνδρομή του Realms Plus είναι πλέον ενεργή για αυτή τη συσκευή. Τώρα έχεις πρόσβαση σε 50+ πακέτα περιεχομένου από το Marketplace χωρίς επιπλέον κόστος. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση σε όλο το περιεχόμενο συνδρομής του Realm σου - δωρεάν!	#
+store.realmsPlus.nowActive=Η συνδρομή του Realms Plus είναι πλέον ενεργή για αυτή τη συσκευή. Τώρα έχεις πρόσβαση σε 100+ πακέτα περιεχομένου από το Marketplace χωρίς επιπλέον κόστος. Στα Realms σου μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση σε όλο το περιεχόμενο συνδρομής του Realm σου - δωρεάν!	#
 
 store.realmsPlus.buyNow.buttonText=ΑΓΟΡΑ ΓΙΑ %s	#
 store.realmsPlus.buyNow.viewTerms=ΟΡΟΙ ΚΑΙ ΠΡΟΫΠΟΘΕΣΕΙΣ	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=ΠΟΛΙΤΙΚΗ ΠΡΟΣΤΑΣΙΑΣ 
 
 store.realmsPlus.buyNow.title=Ξεκίνησε τη συνδρομή σου Realms Plus	#
 store.realmsPlus.startTrial.title=Ξεκίνησε τώρα τη ΔΩΡΕΑΝ δοκιμαστική έκδοση 30 ημερών!	#
-store.realmsPlus.startTrial.description=Το Realm σου και 50+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Ο πρώτος μήνας σου θα είναι δωρεάν και κατόπιν θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
-store.realmsPlus.noTrial.description=Το Realm σου και 50+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Το Realm σου και 50+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s.	#
+store.realmsPlus.startTrial.description=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Ο πρώτος μήνας σου θα είναι δωρεάν και κατόπιν θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
+store.realmsPlus.noTrial.description=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s.	#
 store.realmsPlus.realmName.placeholder=Το Realm του παίκτη %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Το Realm σου και 50+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Ο πρώτος μήνας σου θα είναι δωρεάν και, έπειτα, θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
-store.realmsPlus.recurring.withoutTrial=Το Realm σου και 50+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
-store.realmsPlus.consumable.offerTrial=Το Realm σου και 50+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Οι πρώτες 30 ημέρες είναι δωρεάν και μπορείς, στη συνέχεια, να πραγματοποιήσεις ανανέωση για 30 ημέρες στην τιμή των %s.	#
-store.realmsPlus.consumable.withoutTrial=Το Realm σου και 50+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s.	#
+store.realmsPlus.recurring.offerTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Ο πρώτος μήνας σου θα είναι δωρεάν και κατόπιν θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
+store.realmsPlus.recurring.withoutTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
+store.realmsPlus.consumable.offerTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Οι πρώτες 30 ημέρες είναι δωρεάν και μπορείς, στη συνέχεια, να πραγματοποιήσεις ανανέωση για 30 ημέρες στην τιμή των %s.	#
+store.realmsPlus.consumable.withoutTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s.	#
 
 store.realmsPlus.landing.header=Η συνδρομή περιλαμβάνει:	#
 
-store.realmsPlus.landing.info1.line1=- Πρόσβαση σε κατάλογο 50+ πακέτων του Marketplace	#
+store.realmsPlus.landing.info1.line1=- Πρόσβαση σε κατάλογο 100+ πακέτων του Marketplace	#
 store.realmsPlus.landing.info1.line2=- Ο δικός σου προσωπικός διακομιστής Realm	#
 store.realmsPlus.landing.info1.line3=- Οι φίλοι παίζουν δωρεάν στο Realm σου	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Δοκίμασε λίγο από όλ
 
 store.realmsPlus.content.popularPacks=Δημοφιλή πακέτα στο Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=ΔΕΣ ΟΛΑ ΤΑ ΠΑΚΕΤΑ	#
-store.realmsPlus.content.contentDescription=Αξιοποίησε την πηγή του εκπληκτικού περιεχομένου στο Minecraft! Με το Realms Plus, αποκτάς άμεση πρόσβαση σε 50+ αντικείμενα του Marketplace, όπως συνδυαστικά πακέτα, κόσμους, πακέτα εμφανίσεων και επικές περιπέτειες – με νέες προσθήκες κάθε μήνα. Το περιεχόμενό σου αποθηκεύεται στον προσωπικό σου διακομιστή και είναι διαθέσιμο σε οποιαδήποτε πλατφόρμα απολαμβάνεις το Realms και το Minecraft Marketplace. Μπορούν να παίξουν έως και 10 παίκτες ταυτόχρονα, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν!	#
+store.realmsPlus.content.contentDescription=Αξιοποίησε την πηγή του εκπληκτικού περιεχομένου στο Minecraft! Με το Realms Plus, αποκτάς άμεση πρόσβαση σε 100+ αντικείμενα του Marketplace, όπως συνδυαστικά πακέτα, κόσμους, πακέτα εμφανίσεων και επικές περιπέτειες – με νέες προσθήκες κάθε μήνα. Το περιεχόμενό σου αποθηκεύεται στον προσωπικό σου διακομιστή και είναι διαθέσιμο σε οποιαδήποτε πλατφόρμα απολαμβάνεις το Realms και το Minecraft Marketplace. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν!	#
 
 
 store.realmsPlus.freeTrial=ΕΝΑΡΞΗ ΔΩΡΕΑΝ ΔΟΚΙΜΗΣ 1 ΜΗΝΑ	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Αλλαγή χρήστη	#
 
 lateJoinScreen.waitingForUserReady=Προετοιμασία	#
 
+hbui.AchievementDetails.anotherPlatform=Ολοκληρώθηκε σε άλλη πλατφόρμα	#
 hbui.AchievementDetails.completed=Ολοκληρώθηκε	#
 hbui.AchievementDetails.gamerscore=Βαθμολογία παίκτη	#
 hbui.AchievementDetails.locked=Κλειδωμένο	#
+hbui.AchievementDetails.yes=Ναι	#
 hbui.AchievementDetailsRoute.errorMessage=Δεν ήταν δυνατή η φόρτωση του επιτεύγματος. Προσπάθησε ξανά ή έλεγξε τη σύνδεσή σου στο Internet.	#
 hbui.AchievementDetailsRoute.narration.completed=ολοκληρώθηκε	#
 hbui.AchievementDetailsRoute.narration.gamerscore=βαθμολογία παίκτη	#

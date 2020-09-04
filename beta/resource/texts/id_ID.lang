@@ -692,7 +692,6 @@ commands.clone.description=Mengkloning blok dari satu wilayah ke wilayah lain.	#
 commands.clone.failed=Tidak ada blok yang dikloning	#
 commands.clone.filtered.error=Penggunaan yang difilter mengharuskan blok filter ditentukan	#
 commands.clone.noOverlap=Sumber dan tujuan tidak bisa ditumpang tindih	#
-commands.clone.outOfWorld=Tidak bisa mengakses blok di luar dunia	#
 commands.clone.success=%1$d blok dikloning	#
 commands.clone.tooManyBlocks=Terlalu banyak blok di area tertentu (%1$d > %2$d)	#
 commands.closechat.description=Menutup jendela obrolan pemain lokal jika terbuka.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Menutup sambungan websocket jika ada.	#
 commands.code.description=Meluncurkan Pembuat Kode.	#
 commands.code.success=Telah meluncurkan Pembuat Kode.	#
 commands.compare.failed=Sumber dan tujuan tidak identik	#
-commands.compare.outOfWorld=Tidak bisa mengakses blok di luar dunia	#
 commands.compare.success=%1$d blok dibandingkan	#
 commands.compare.tooManyBlocks=Terlalu banyak blok di area tertentu (%1$d > %2$d)	#
 commands.corruptworld.description=Merusak dunia yang dimuat di server.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Tidak diterapkan	#
 commands.generic.num.invalid='%1$s' bukan angka yang valid	#
 commands.generic.num.tooBig=Angka yang telah kamu masukkan (%1$d) terlalu besar, maksimum %2$d	#
 commands.generic.num.tooSmall=Angka yang telah kamu masukkan (%1$d) terlalu kecil, minimum %2$d	#
+commands.generic.outOfWorld=Tidak bisa mengakses blok di luar dunia	#
 commands.generic.parameter.invalid='%1$s' bukan parameter yang valid	#
 commands.generic.permission.selector=<izin tidak memadai untuk ekspansi pemilih>	#
 commands.generic.player.notFound=Pemain tersebut tidak bisa ditemukan	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Tidak dapat mengatur level izin %s untuk pemain 
 commands.permissions.set.success=Berhasil mengatur level izin %s untuk pemain %s.	#
 commands.permissions.save.failed=Tidak dapat menyimpan level izin %s untuk pemain %s.	#
 commands.permissions.save.success=Berhasil menyimpan level izin %s untuk pemain %s.	#
+commands.screenshake.description=Memberikan getaran pada kamera pemain dengan intensitas dan durasi tertentu.	#
+commands.screenshake.success=Mengirim permintaan guncangan kamera ke pemain berikut: %s	#
 commands.spawnParticleEmitter.description=Membuat pemancar partikel	#
 commands.particle.description=Membuat partikel.	#
 commands.particle.notFound=Nama efek tidak diketahui (%1$s)	#
 commands.particle.success=Efek bermain %1$s untuk %2$d kali	#
+commands.playanimation.description=Membuat satu atau beberapa entitas memainkan animasi satu kali. Mengasumsikan semua variabel diatur dengan benar.	#
+commands.playanimation.success=Permintaan animasi dikirim ke klien untuk diproses.	#
 commands.players.list=Ada %1$d/%2$d pemain online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Memutar suara.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Tidak bisa mengganti slot %d, harus nilai ant
 commands.replaceitem.success=Mengganti %s slot %d dengan %d * %s	#
 commands.replaceitem.success.entity=Mengganti %s slot %d dari %s dengan %d * %s	#
 commands.replaceitem.tagError=Penguraian tag data gagal: %1$s	#
+commands.ride.description=Membuat entitas menunggangi entitas lain, menghentikan entitas menunggang, membuat tunggangan mengusir penunggangnya, atau memanggil tunggangan atau penunggang.	#
+commands.ride.evictRiders.success=Tunggangan yang berhasil mengusir penunggangnya: %1$s	#
+commands.ride.startRiding.failure=Penunggang yang tidak memenuhi ketentuan tunggangan: %1$s	#
+commands.ride.startRiding.groupDoesntFit=Kelompok penunggang tidak muat pada tunggangan.	#
+commands.ride.startRiding.notRideable=Entitas yang dipilih tidak bisa ditunggangi.	#
+commands.ride.startRiding.rideFull=Tunggangan ini sudah penuh.	#
+commands.ride.startRiding.rideFullRidersLeft=Tunggangan penuh, beberapa pengendara tidak ditambahkan.	#
+commands.ride.startRiding.success=Penunggang yang berhasil ditambahkan ke tunggangan: %1$s	#
+commands.ride.startRiding.tooManyRiders=Terlalu banyak penunggang yang dipilih. Hanya satu yang diperbolehkan dalam satu waktu untuk teleport_ride.	#
+commands.ride.startRiding.tooManyRides=Terlalu banyak tunggangan yang dipilih. Hanya satu yang diperbolehkan dalam satu waktu.	#
+commands.ride.stopRiding.success=Penunggang yang berhasil berhenti menunggang: %1$s	#
+commands.ride.summonRide.failed=Tunggangan dipanggil, tetapi penunggang ini tidak bisa ditambahkan ke tunggangan: %1$s	#
+commands.ride.summonRide.notRideable=Entitas dipanggil, tetapi tidak bisa ditunggangi.	#
+commands.ride.summonRide.success=Tunggangan yang berhasil dipanggil untuk penunggang ini: %1$s	#
+commands.ride.summonRider.failed=Penunggang dipanggil, tetapi tidak bisa ditambahkan ke tunggangan: %1$s	#
+commands.ride.summonRider.fullRides=Penunggang tidak bisa naik tunggangan ini karena penuh: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Entitas berikut tidak bisa ditunggangi: %1$s	#
+commands.ride.summonRider.success=Pengendara yang berhasil memanggil tunggangan: %1$s	#
 commands.save.description=Mengontrol atau memeriksa cara permainan menyimpan data ke disk.	#
 commands.save.disabled=Menonaktifkan penyimpanan otomatis dunia	#
 commands.save.enabled=Mengaktifkan penyimpanan otomatis dunia	#
@@ -957,6 +978,9 @@ commands.save-on.description=Mengaktifkan penyimpanan server otomatis.	#
 commands.save-on.success=Perubahan ke level dilanjutkan.	#
 commands.save-state.description=Memeriksa apakah simpan semua sebelumnya telah selesai dan mencantumkan file yang tercakup.	#
 commands.say.description=Mengirim pesan dalam obrolan kepada pemain lain.	#
+commands.schedule.description=Menjadwalkan tindakan yang akan dijalankan setelah area dimuat atau setelah jangka waktu tertentu.	#
+commands.schedule.functionQueued=Fungsi telah diantrekan dan akan dijalankan ketika area yang ditentukan terisi penuh.	#
+commands.schedule.functionRan=Berhasil menjalankan %1$d entri fungsi dalam fungsi %2$s.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Menghentikan server	#
 commands.stopsound.description=Menghentikan suara.	#
 commands.stopsound.success=Menghentikan suara %s selama %s	#
 commands.stopsound.success.all=Menghentikan semua suara selama %s	#
+commands.structure.description=Menyimpan atau memuat struktur di dunia.	#
+commands.structure.empty.load=Tidak bisa memuat struktur tanpa entitas dan blok	#
+commands.structure.empty.save=Tidak bisa menyimpan struktur tanpa entitas dan blok	#
+commands.structure.invalid.integrity=Integritas harus berada dalam kisaran 0 sampai 100	#
+commands.structure.invalid.name=Nama harus dalam format "name" atau "namespace:name". Jika namespace tidak disediakan, default akan ditetapkan.	#
+commands.structure.load.success=Memuat struktur nama %s	#
+commands.structure.notFound=Struktur %s tidak bisa ditemukan. Pastikan ejaan nama sudah benar, lalu coba lagi.	#
+commands.structure.save.success=Menyimpan struktur dengan nama %s	#
+commands.structure.size.tooBig=Ukuran struktur tidak boleh lebih dari (%1$d, %2$d, %3$d), tadinya (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=Ukuran struktur tidak boleh kurang dari (%1$d, %2$d, %3$d), tadinya (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Tindakan struktur yang tidak dikenal diberikan	#
+commands.structure.y.tooHigh=Tidak bisa menempatkan blok di luar dunia. Cobalah nilai %d atau lebih rendah untuk komponen Y <to: x y z>.	#
+commands.structure.y.tooLow=Tidak bisa menempatkan blok di luar dunia. Cobalah nilai yang lebih besar dari 0 untuk komponen Y <to: x y z>.	#
 commands.summon.description=Memanggil entitas.	#
 commands.summon.failed=Tidak bisa memanggil objek	#
 commands.summon.outOfWorld=Tidak bisa memanggil objek dari dunia	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Langganan Realms Plus Berakhir	#
 realmsPlus.popup.message=Langganan Realms Plus kamu sudah berakhir. Untuk mendapatkan kembali akses ke Realm dan paket atau skin yang didapatkan dari Realms Plus, kamu harus memperpanjang langganan. 	#
 
 realmsPlusUpgradeNotice.title=Selamat datang di Realms Plus!	#
-realmsPlusUpgradeNotice.body=Langganan Realms kamu telah ditingkatkan menjadi Realms Plus. Sekarang kamu bisa mengakses 50+ paket konten dari marketplace tanpa biaya tambahan. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses semua konten pelanggan di Realm kamu – gratis!	#
+realmsPlusUpgradeNotice.body=Langganan Realms kamu telah ditingkatkan menjadi Realms Plus. Sekarang kamu bisa mengakses 100+ paket konten dari marketplace tanpa biaya tambahan. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses semua konten pelanggan di Realm kamu – gratis!	#
 realmsPlusUpgradeNotice.continue=Lanjutkan	#
 realmsPlusUpgradeNotice.viewpacks=Lihat Paket Realms Plus	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Kelola	#
 options.viewSubscriptions.renew=Diperbarui setiap 30 hari	#
 options.viewSubscriptions.daysRemaining=%d hari tersisa	#
 options.viewSubscriptions.realmsPlus.header=Langganan Realms Plus	#
-options.viewSubscriptions.realmsPlus.detail=Lebih dari 50 konten dan server Realm kamu sendiri	#
+options.viewSubscriptions.realmsPlus.detail=Lebih dari 100 konten dan server Realm kamu sendiri	#
 options.viewSubscriptions.realms.header=Langganan Tambahan	#
 options.viewSubscriptions.realms.detail=Akses ke server Realm kamu sendiri dengan maksimal %d pemain sekaligus	#
 options.viewSubscriptions.loadingSubscriptions=Memuat langgananmu..	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=KESALAHAN - PENAWARAN TIDAK DITEMUKAN	#
 store.realmsPlus.manageSubscription=KELOLA LANGGANAN	#
 store.realmsPlus.viewAllPacksTitle=SUPER HEMAT - PAKET SENILAI LEBIH DARI §g$150 (USD)!§r	#
 
-store.realmsPlus.nowActive=Realms Plus sudah aktif untuk perangkat ini. Sekarang kamu bisa mengakses 50+ paket konten dari marketplace tanpa biaya tambahan. Hingga 10 pemain bisa bermain bersamaan di Realms kamu dan mengakses semua konten pelanggan di Realm kamu - gratis!	#
+store.realmsPlus.nowActive=Realms Plus sudah aktif untuk perangkat ini. Sekarang kamu bisa mengakses 100+ paket konten dari marketplace tanpa biaya tambahan. Hingga 10 pemain bisa bermain bersamaan di Realms kamu dan mengakses semua konten pelanggan di Realm kamu - gratis!	#
 
 store.realmsPlus.buyNow.buttonText=BELI SEHARGA %s	#
 store.realmsPlus.buyNow.viewTerms=SYARAT & KETENTUAN	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=KEBIJAKAN PRIVASI	#
 
 store.realmsPlus.buyNow.title=Mulai Langganan Realms Plus	#
 store.realmsPlus.startTrial.title=Mulai uji coba GRATIS 30 hari sekarang juga!	#
-store.realmsPlus.startTrial.description=Realm kamu dan 50+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis! Biaya langganan bulan pertama gratis, dan kamu akan ditagih %s/bulan setelahnya, bisa dibatalkan kapan pun.	#
-store.realmsPlus.noTrial.description=Realm kamu dan 50+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Realm kamu dan 50+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
+store.realmsPlus.startTrial.description=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Biaya langganan bulan pertama gratis dan kamu akan ditagih %s/bulan setelahnya, bisa dibatalkan kapan pun.	#
+store.realmsPlus.noTrial.description=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
 store.realmsPlus.realmName.placeholder=Realm %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm kamu dan 50+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis! Biaya langganan bulan pertama gratis, dan kamu akan ditagih %s/bulan setelahnya, bisa dibatalkan kapan pun.	#
-store.realmsPlus.recurring.withoutTrial=Realm kamu dan 50+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis! Kamu akan ditagih %s/bulan dan bisa dibatalkan kapan pun.	#
-store.realmsPlus.consumable.offerTrial=Realm kamu dan 50+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu selama 30 hari pertama gratis dan kamu bisa memperpanjang selama 30 hari dengan harga %s setelahnya.	#
-store.realmsPlus.consumable.withoutTrial=Realm kamu dan 50+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
+store.realmsPlus.recurring.offerTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Biaya langganan bulan pertama gratis dan kamu akan ditagih %s/bulan setelahnya, bisa dibatalkan kapan pun.	#
+store.realmsPlus.recurring.withoutTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Kamu akan ditagih %s/bulan dan bisa dibatalkan kapan pun.	#
+store.realmsPlus.consumable.offerTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu selama 30 hari pertama gratis dan kamu bisa memperpanjang selama 30 hari dengan harga %s setelahnya.	#
+store.realmsPlus.consumable.withoutTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
 
 store.realmsPlus.landing.header=Langganan Mencakup:	#
 
-store.realmsPlus.landing.info1.line1=- Akses ke katalog berisi 50+ paket marketplace	#
+store.realmsPlus.landing.info1.line1=- Akses ke katalog berisi 100+ paket marketplace	#
 store.realmsPlus.landing.info1.line2=- Server Realm pribadi	#
 store.realmsPlus.landing.info1.line3=- Teman bisa main gratis di Realm milikmu	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Cobalah banyak hal di perpaduan!	#
 
 store.realmsPlus.content.popularPacks=Paket Populer di Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=LIHAT SEMUA PAKET	#
-store.realmsPlus.content.contentDescription=Lihatlah sumber konten Minecraft yang menakjubkan! Dengan Realms Plus, kamu mendapatkan akses instan ke 50+ item marketplace seperti perpaduan, dunia, paket skin, dan petualangan epik, dengan tambahan baru setiap bulannya. Kontenmu disimpan di server pribadimu sendiri, dan bisa diakses di platform apa pun tempat kamu menggunakan Realms dan Marketplace Minecraft. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses dunia di Realm kamu secara gratis!	#
+store.realmsPlus.content.contentDescription=Lihatlah sumber konten Minecraft yang menakjubkan! Dengan Realms Plus, kamu mendapatkan akses instan ke 100+ item marketplace seperti perpaduan, dunia, paket skin, dan petualangan epik, dengan tambahan baru setiap bulannya. Kontenmu disimpan di server pribadimu sendiri dan bisa diakses di platform apa pun tempat kamu menggunakan Realms dan Marketplace Minecraft. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis!	#
 
 
 store.realmsPlus.freeTrial=MULAI UJI COBA GRATIS 1 BULAN	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Ubah Pengguna	#
 
 lateJoinScreen.waitingForUserReady=Mempersiapkan	#
 
+hbui.AchievementDetails.anotherPlatform=Diselesaikan di platform lain	#
 hbui.AchievementDetails.completed=Selesai	#
 hbui.AchievementDetails.gamerscore=Gamerscore	#
 hbui.AchievementDetails.locked=Terkunci	#
+hbui.AchievementDetails.yes=Ya	#
 hbui.AchievementDetailsRoute.errorMessage=Prestasi tidak bisa dimuat. Silakan coba lagi atau periksa koneksi internet kamu.	#
 hbui.AchievementDetailsRoute.narration.completed=selesai	#
 hbui.AchievementDetailsRoute.narration.gamerscore=gamerscore	#

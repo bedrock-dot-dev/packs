@@ -692,7 +692,6 @@ commands.clone.description=Egyik régióból a másikba klónozással blokkokat 
 commands.clone.failed=Nem klónoztál egyetlen blokkot sem	#
 commands.clone.filtered.error=A felhasználásszűréshez meg kell adni a szűrőblokkot	#
 commands.clone.noOverlap=A forrás és a cél nem fedheti egymást	#
-commands.clone.outOfWorld=A világon kívüli blokkokhoz nem lehet hozzáférni	#
 commands.clone.success=%1$d blokkot klónoztál	#
 commands.clone.tooManyBlocks=Túl sok blokk van a megadott területen (%1$d > %2$d)	#
 commands.closechat.description=Bezárja a helyi játékos csevegőablakát, ha nyitva van.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Bezárja a websocket-kapcsolatot, ha nyitva 
 commands.code.description=Elindítja a Code Buildert.	#
 commands.code.success=Elindította a Code Buildert.	#
 commands.compare.failed=A forrás és a cél nem egyeznek	#
-commands.compare.outOfWorld=A világon kívüli blokkokhoz nem lehet hozzáférni	#
 commands.compare.success=Összehasonlítottál %1$d blokkot	#
 commands.compare.tooManyBlocks=Túl sok blokk van a megadott területen (%1$d > %2$d)	#
 commands.corruptworld.description=Tönkreteszi a kiszolgálóra betöltött világot.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Nincs implementálva	#
 commands.generic.num.invalid=A(z) „%1$s” nem érvényes szám	#
 commands.generic.num.tooBig=A megadott szám (%1$d) túl nagy, legfeljebb %2$d lehet	#
 commands.generic.num.tooSmall=A megadott szám (%1$d) túl kicsi, legalább ennyinek kell lennie: %2$d	#
+commands.generic.outOfWorld=A világon kívüli blokkokhoz nem lehet hozzáférni	#
 commands.generic.parameter.invalid=„%1$s” nem érvényes paraméter	#
 commands.generic.permission.selector=<elégtelen jogosultság a kiválasztóbővítményhez>	#
 commands.generic.player.notFound=A játékos nem található	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=A(z) %s. jogosultsági szint beállítása siker
 commands.permissions.set.success=A(z) %s. jogosultsági szint beállítása sikeres %s játékos részére.	#
 commands.permissions.save.failed=A(z) %s. jogosultsági szint elmentése sikertelen %s játékos részére.	#
 commands.permissions.save.success=A(z) %s. jogosultsági szint elmentése sikeres %s játékos részére.	#
+commands.screenshake.description=Adott intenzitású és időtartamú kamerarázkódást alkalmaz a játékos kameráján.	#
+commands.screenshake.success=A kamerarázkódási kérelem a következő játékosok számára lett elküldve: %s	#
 commands.spawnParticleEmitter.description=Részecskeforrást hoz létre.	#
 commands.particle.description=Részecskék létrehozása.	#
 commands.particle.notFound=Ismeretlen hatásnév (%1$s)	#
 commands.particle.success=%1$s hatás lejátszása %2$d alkalommal	#
+commands.playanimation.description=Egy vagy több entitás egyszeri animációját aktiválja. A rendszer azt feltételezi, hogy minden változó megfelelően van beállítva.	#
+commands.playanimation.success=A rendszer elküldte az animációs kérelmet az ügyfeleknek feldolgozásra.	#
 commands.players.list=%1$d/%2$d játékos van online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Hang lejátszása.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Nem sikerült kicserélni a tárgyat a(z) %d.
 commands.replaceitem.success=A(z) %s helyen található %d tárgyat erre cserélted: %d * %s	#
 commands.replaceitem.success.entity=A(z) %d. helyen található %s tárgyat (%s) erre cserélted: %d * %s	#
 commands.replaceitem.tagError=Nem sikerült elemezni az adatcímkét: %1$s	#
+commands.ride.description=Lehetővé teszi, illetve megakadályozza hogy entitások más entitásokon lovagoljanak, kényszeríti az entitásokat, hogy megszabaduljanak a lovasuktól, valamint hátasokat és lovasokat idéz.	#
+commands.ride.evictRiders.success=Hátasok, amelyek sikeresen megszabadultak a lovasuktól: %1$s	#
+commands.ride.startRiding.failure=Lovasok, amelyek nem feleltek meg a lovaglási feltételeknek: %1$s	#
+commands.ride.startRiding.groupDoesntFit=A lovascsoport nem tud felülni a hátasra, mert nem fér el rajta.	#
+commands.ride.startRiding.notRideable=A kijelölt entitáson nem lehet lovagolni.	#
+commands.ride.startRiding.rideFull=A hátasra nem tudnak többen felülni.	#
+commands.ride.startRiding.rideFullRidersLeft=A hátasra nem tudnak többen felülni, így egyes lovasok hozzáadása sikertelen volt.	#
+commands.ride.startRiding.success=Lovasok, amelyek sikeresen felültek a hátasra: %1$s	#
+commands.ride.startRiding.tooManyRiders=Túl sok lovas lett megadva. A teleport_ride műveltnél egyszerre csak egy lovas engedélyezett.	#
+commands.ride.startRiding.tooManyRides=Túl sok lovas lett megadva. Egyszerre csak egy lovas engedélyezett.	#
+commands.ride.stopRiding.success=Lovasok, amelyek sikeresen abbahagyták a lovaglást: %1$s	#
+commands.ride.summonRide.failed=A hátasok megidézése sikeres volt, de a lovasokat nem sikerült hozzájuk adni: %1$s	#
+commands.ride.summonRide.notRideable=Az entitás megidézése sikeres volt, de nem lehet rajta lovagolni.	#
+commands.ride.summonRide.success=A lovasok számára sikeresen megidézett hátasok: %1$s	#
+commands.ride.summonRider.failed=A lovasok megidézése sikeres volt, de nem sikerült hozzáadni őket a hátasokhoz: %1$s	#
+commands.ride.summonRider.fullRides=A lovasok nem tudják megülni ezeket a hátasokat, mert azokon nem férnek el többen: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=A következő entitásokat nem lehet meglovagolni: %1$s	#
+commands.ride.summonRider.success=A hátasokhoz sikeresen megidézett lovasok: %1$s	#
 commands.save.description=Vezérelheted vagy ellenőrizheted, hogy a játék miként menti az adatokat a lemezre.	#
 commands.save.disabled=Kikapcsoltad a világ automatikus mentését	#
 commands.save.enabled=Bekapcsoltad a világ automatikus mentését	#
@@ -957,6 +978,9 @@ commands.save-on.description=Bekapcsolja a kiszolgáló automatikus mentését.	
 commands.save-on.success=Folytatja a szint módosításait.	#
 commands.save-state.description=Ellenőrzi, hogy befejeződött-e egy korábbi save-all művelet, és felsorolja az érintett fájlokat.	#
 commands.say.description=A csevegővel üzenet küld más játékosoknak.	#
+commands.schedule.description=Egy terület betöltése után vagy bizonyos idő elteltével végrehajtandó műveletek ütemezésére szolgál.	#
+commands.schedule.functionQueued=A függvény várólistára került, és a megadott terület teljes betöltésekor kerül végrehajtásra.	#
+commands.schedule.functionRan=%1$d függvénybejegyzés sikeresen végrehajtva a(z) %2$s függvényben.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Kiszolgáló leállítása	#
 commands.stopsound.description=Hang leállítása.	#
 commands.stopsound.success=Elnémítottad a(z) %s hangot ennyi ideig: %s	#
 commands.stopsound.success.all=Elnémítottad az összes hangot ennyi ideig: %s	#
+commands.structure.description=Struktúrák mentésére vagy betöltésére szolgál a világban.	#
+commands.structure.empty.load=Entitások és blokkok nélküli struktúrát nem lehet betölteni	#
+commands.structure.empty.save=Entitások és blokkok nélküli struktúrát nem lehet menteni	#
+commands.structure.invalid.integrity=Az integritásnak 0 és 100 között kell lennie	#
+commands.structure.invalid.name=A névnek „név” vagy „névtér:név” formátumban kell szerepelnie. Ha nincs megadva névtér, az alapértelmezett lesz hozzárendelve.	#
+commands.structure.load.success=A(z) %s nevű struktúra betöltve	#
+commands.structure.notFound=A(z) %s struktúra nem található. Ellenőrizd, hogy helyesen írtad-e be a nevet, majd próbálkozz újra.	#
+commands.structure.save.success=A(z) %s nevű struktúra sikeresen mentve	#
+commands.structure.size.tooBig=A struktúra mérete nem lehet nagyobb, mint (%1$d, %2$d, %3$d), jelenlegi méret: (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=A struktúra mérete nem lehet kisebb, mint (%1$d, %2$d, %3$d), jelenlegi méret: (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Ismeretlen struktúraművelet lett megadva	#
+commands.structure.y.tooHigh=A világon kívül nem lehet blokkokat elhelyezni. Adjon meg %d vagy annál kisebb értéket a <to: x y z> Y komponenseként.	#
+commands.structure.y.tooLow=A világon kívül nem lehet blokkokat elhelyezni. Adjon meg 0-nál nagyobb értéket a <to: x y z> Y komponenseként.	#
 commands.summon.description=Megidéz egy entitást.	#
 commands.summon.failed=Nem sikerült megidézni az objektumot	#
 commands.summon.outOfWorld=Nem lehet a világon kívüli objektumot megidézni	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus előfizetésed lejárt	#
 realmsPlus.popup.message=Realms Plus előfizetésed lejárt. Hogy ismét hozzáférhess Realmedhez és a Realms Plushoz kapott csomagokhoz vagy felületekhez, meg kell újítanod előfizetésedet. 	#
 
 realmsPlusUpgradeNotice.title=Üdvözlünk a Realms Plusban!	#
-realmsPlusUpgradeNotice.body=Realms előfizetésedet Realms Plusra frissítettük. Mostantól több mint 50 tartalomcsomaghoz férsz hozzá a Piactéren, többletköltségek nélkül. Akár 10 játékos is játszhat egyszerre, és mindannyian hozzáférhetnek Realmed előfizetői tartalmaihoz – ingyenesen!	#
+realmsPlusUpgradeNotice.body=Realms-előfizetésedet Realms Plus-előfizetésre frissítettük. Mostantól több mint 100 tartalomcsomaghoz férsz hozzá a Piactéren további költségek nélkül. Akár 10 játékos is játszhat egyszerre, és mindannyian hozzáférhetnek Realmed előfizetői tartalmaihoz – ingyenesen!	#
 realmsPlusUpgradeNotice.continue=Folytatás	#
 realmsPlusUpgradeNotice.viewpacks=Realms Plus csomagjaid megtekintése	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Kezelés	#
 options.viewSubscriptions.renew=30 naponként megújul	#
 options.viewSubscriptions.daysRemaining=%d nap van hátra	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus előfizetés	#
-options.viewSubscriptions.realmsPlus.detail=Több mint 50 tartalomelem és saját Realm-kiszolgáló	#
+options.viewSubscriptions.realmsPlus.detail=Több mint 100 tartalomelem és saját Realm-kiszolgáló	#
 options.viewSubscriptions.realms.header=További előfizetések	#
 options.viewSubscriptions.realms.detail=Hozzáférés saját Realm-kiszolgálóhoz akár %d egyidejű játékossal	#
 options.viewSubscriptions.loadingSubscriptions=Előfizetések betöltése...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=HIBA: NEM TALÁLTUNK AJÁNLATOT	#
 store.realmsPlus.manageSubscription=ELŐFIZETÉS KEZELÉSE	#
 store.realmsPlus.viewAllPacksTitle=REMEK AJÁNLAT – A CSOMAGOK ÖSSZÉRTÉKE TÖBB MINT §g$150 (USD)!§r	#
 
-store.realmsPlus.nowActive=A Realms Plus mostantól aktív ezen az eszközön. Mostantól több mint 50 tartalomcsomaghoz férsz hozzá a Piactéren, többletköltségek nélkül. Akár 10 játékos is játszhat egyszerre a Realmeden, és mindannyian hozzáférhetnek a Realmed előfizetői tartalmaihoz – ingyen!	#
+store.realmsPlus.nowActive=A Realms Plus mostantól aktív ezen az eszközön. Mostantól több mint 100 tartalomcsomaghoz férsz hozzá a Piactéren további költségek nélkül. Akár 10 játékos is játszhat egyszerre a Realmeden, és mindannyian hozzáférhetnek a Realmed előfizetői tartalmaihoz – ingyen!	#
 
 store.realmsPlus.buyNow.buttonText=MEGVÁSÁRLÁS ENNYIÉRT: %s	#
 store.realmsPlus.buyNow.viewTerms=FELHASZNÁLÁSI FELTÉTELEK	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=ADATVÉDELMI IRÁNYELVEK	#
 
 store.realmsPlus.buyNow.title=Realms Plus-előfizetés indítása	#
 store.realmsPlus.startTrial.title=Kezdd el a 30 napos INGYENES próbát!	#
-store.realmsPlus.startTrial.description=Realmedhez és a több mint 50 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az első hónapod ingyenes lesz, azt követően pedig havi %s az ára, és bármikor lemondható.	#
-store.realmsPlus.noTrial.description=Realmedhez és a több mint 50 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az előfizetés 30 napig lesz elérhető %s:minecoin: díj ellenében.	#
-store.realmsPlus.noTrial.description.iap=Realmedhez és a több mint 50 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az előfizetés 30 napig lesz elérhető %s díj ellenében.	#
+store.realmsPlus.startTrial.description=Realmedhez és a több mint 100 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az első hónapod ingyenes lesz, azt követően pedig havi %s összeget kell fizetned, és bármikor lemondható.	#
+store.realmsPlus.noTrial.description=Realmedhez és a több mint 100 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az előfizetés 30 napig lesz elérhető %s:minecoin: díj ellenében.	#
+store.realmsPlus.noTrial.description.iap=Realmedhez és a több mint 100 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az előfizetés 30 napig lesz elérhető %s díj ellenében.	#
 store.realmsPlus.realmName.placeholder=%s Realmje		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realmedhez és a több mint 50 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az első hónapod ingyenes lesz, azt követően pedig havi %s az ára, és bármikor lemondható.	#
-store.realmsPlus.recurring.withoutTrial=Realmedhez és a több mint 50 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Havonta %s kerül számlázásra, és bármikor lemondható.	#
-store.realmsPlus.consumable.offerTrial=Realmedhez és a több mint 50 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az első 30 napod ingyenes lesz, azt követően pedig 30 naponta %s összegért újítható meg.	#
-store.realmsPlus.consumable.withoutTrial=Realmedhez és a több mint 50 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az előfizetés 30 napig lesz elérhető %s díj ellenében.	#
+store.realmsPlus.recurring.offerTrial=Realmedhez és a több mint 100 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az első hónapod ingyenes lesz, azt követően pedig havi %s összeget kell fizetned, és bármikor lemondható.	#
+store.realmsPlus.recurring.withoutTrial=Realmedhez és a több mint 100 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Havonta %s kerül számlázásra, és bármikor lemondható.	#
+store.realmsPlus.consumable.offerTrial=Realmedhez és a több mint 100 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az első 30 napod ingyenes lesz, azt követően pedig 30 naponta %s összegért újítható meg.	#
+store.realmsPlus.consumable.withoutTrial=Realmedhez és a több mint 100 piactéri csomaghoz azonnal hozzáférhetsz. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz! Az előfizetés 30 napig lesz elérhető %s díj ellenében.	#
 
 store.realmsPlus.landing.header=Az előfizetés tartalma:	#
 
-store.realmsPlus.landing.info1.line1=– Több mint 50 piactéri csomagot tartalmazó katalógusból válogathatsz.	#
+store.realmsPlus.landing.info1.line1=– Több mint 100 piactéri csomagot tartalmazó katalógusból válogathatsz.	#
 store.realmsPlus.landing.info1.line2=– Saját Realm-kiszolgálót biztosítunk neked	#
 store.realmsPlus.landing.info1.line3=– A barátaid ingyen játszhatnak a Realmeden	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=A mixekkel kipróbálhatsz mindenből
 
 store.realmsPlus.content.popularPacks=Népszerű csomagok a Realms Plus részeként:	#
 store.realmsPlus.content.viewAllPacks=AZ ÖSSZES CSOMAG MEGTEKINTÉSE	#
-store.realmsPlus.content.contentDescription=Tégy szert lenyűgöző Minecraft-tartalmakra! A Realms Plus azonnali hozzáférést biztosít több mint 50 piactéri tételhez: mixekhez, világokhoz, felületcsomagokhoz, epikus kalandokhoz – és a kínálat havonta bővül. Tartalmaid személyes kiszolgálódon találhatók, és bármely Minecraft Piactérrel és Realmekkel kompatibilis platformról elérhetők. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz!	#
+store.realmsPlus.content.contentDescription=Tégy szert lenyűgöző Minecraft-tartalmakra! A Realms Plus azonnali hozzáférést biztosít több mint 100 piactéri tételhez: mixekhez, világokhoz, felületcsomagokhoz, epikus kalandokhoz – és a kínálat havonta bővül. Tartalmaid személyes kiszolgálódon találhatók, és bármely Minecraft Piactérrel és Realmekkel kompatibilis platformról elérhetők. Akár 10 játékos is játszhat egyszerre, és mindannyian ingyen hozzáférhetnek a Realmed világaihoz!	#
 
 
 store.realmsPlus.freeTrial=1 HÓNAP INGYENES PRÓBAIDŐSZAK INDÍTÁSA	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Felhasználóváltás	#
 
 lateJoinScreen.waitingForUserReady=Előkészítés	#
 
+hbui.AchievementDetails.anotherPlatform=Egy másik platformon teljesítve	#
 hbui.AchievementDetails.completed=Teljesítve	#
 hbui.AchievementDetails.gamerscore=Játékos pontszáma	#
 hbui.AchievementDetails.locked=Zárolva	#
+hbui.AchievementDetails.yes=Igen	#
 hbui.AchievementDetailsRoute.errorMessage=A mérföldkő betöltése sikertelen. Ellenőrizd az internetkapcsolatot vagy próbálkozz újra később!	#
 hbui.AchievementDetailsRoute.narration.completed=teljesítve	#
 hbui.AchievementDetailsRoute.narration.gamerscore=játékos pontszáma	#

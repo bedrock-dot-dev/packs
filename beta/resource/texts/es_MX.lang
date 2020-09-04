@@ -692,7 +692,6 @@ commands.clone.description=Clona bloques de una región a otra.	#
 commands.clone.failed=Ningún bloque clonado	#
 commands.clone.filtered.error=El uso filtrado requiere especificar un bloque de filtro.	#
 commands.clone.noOverlap=El origen y el destino no se pueden superponer	#
-commands.clone.outOfWorld=No puedes acceder a bloques fuera del mundo	#
 commands.clone.success=%1$d bloques clonados	#
 commands.clone.tooManyBlocks=Demasiados bloques en el área especificada (%1$d > %2$d)	#
 commands.closechat.description=Cierra la ventana del chat del jugador local si está abierta.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Cierra la conexión con WebSocket si hay una
 commands.code.description=Abre el creador de código.	#
 commands.code.success=Creador de código abierto.	#
 commands.compare.failed=El origen y el destino no son idénticos	#
-commands.compare.outOfWorld=No puedes acceder a bloques fuera del mundo	#
 commands.compare.success=%1$d bloques comparados	#
 commands.compare.tooManyBlocks=Demasiados bloques en el área especificada (%1$d > %2$d)	#
 commands.corruptworld.description=Corrompe el mundo cargado en el servidor.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=No implementado	#
 commands.generic.num.invalid="%1$s" no es un número válido.	#
 commands.generic.num.tooBig=El número que escribiste (%1$d) es demasiado grande, tiene que ser, como máximo, %2$d.	#
 commands.generic.num.tooSmall=El número que escribiste (%1$d) es demasiado pequeño, tiene que ser, como mínimo, %2$d.	#
+commands.generic.outOfWorld=No puedes acceder a los bloques fuera del mundo	#
 commands.generic.parameter.invalid="%1$s" no es un parámetro válido.	#
 commands.generic.permission.selector=<permisos insuficientes para la expansión del selector>	#
 commands.generic.player.notFound=No se puede encontrar ese jugador	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Error al establecer el nivel de permiso %s para 
 commands.permissions.set.success=Se asignó con éxito el nivel de permiso %s para el jugador %s.	#
 commands.permissions.save.failed=Error al guardar el nivel de permiso %s para el jugador %s.	#
 commands.permissions.save.success=Se guardó con éxito el nivel de permiso %s para el jugador %s.	#
+commands.screenshake.description=Hace temblar la cámara de los jugadores con una intensidad y duración específicas.	#
+commands.screenshake.success=Se envió una solicitud para hacer temblar la cámara de los siguientes jugadores: %s	#
 commands.spawnParticleEmitter.description=Crea un emisor de partículas	#
 commands.particle.description=Crea partículas.	#
 commands.particle.notFound=Nombre del efecto desconocido (%1$s)	#
 commands.particle.success=Reproduciendo el efecto %1$s %2$d veces	#
+commands.playanimation.description=Hace que una o más entidades reproduzcan una animación individual. Supone que todas las variables están configuradas correctamente.	#
+commands.playanimation.success=La solicitud de animación se envió a los clientes para su procesamiento.	#
 commands.players.list=Hay %1$d/%2$d jugadores conectados:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Reproduce un sonido.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=No se pudo reemplazar el espacio %d, debe ser
 commands.replaceitem.success=Espacio %s %d reemplazado con %d * %s	#
 commands.replaceitem.success.entity=Espacio %s %d de %s reemplazado con %d * %s	#
 commands.replaceitem.tagError=Error al analizar la etiqueta de datos: %1$s	#
+commands.ride.description=Hace que las entidades monten a otras entidades, que dejen de montar, que las entidades montadas expulsen a sus jinetes, o invoca entidades para montar o jinetes.	#
+commands.ride.evictRiders.success=Entidades montadas que expulsaron correctamente a sus jinetes: %1$s	#
+commands.ride.startRiding.failure=Jinetes que no cumplieron las condiciones para montar: %1$s	#
+commands.ride.startRiding.groupDoesntFit=El grupo de jinetes no cabe en la entidad para montar.	#
+commands.ride.startRiding.notRideable=La entidad seleccionada no se puede montar.	#
+commands.ride.startRiding.rideFull=Esta entidad ya tiene el máximo de jinetes.	#
+commands.ride.startRiding.rideFullRidersLeft=La entidad ya tiene el máximo de jinetes, por lo que no se agregaron algunos jinetes.	#
+commands.ride.startRiding.success=Jinetes agregados correctamente a la entidad: %1$s	#
+commands.ride.startRiding.tooManyRiders=Se especificaron demasiados jinetes. Solo se permite uno a la vez para teleport_ride.	#
+commands.ride.startRiding.tooManyRides=Se especificaron demasiados jinetes. Solo se permite uno a la vez.	#
+commands.ride.stopRiding.success=Jinetes que dejaron de montar correctamente: %1$s	#
+commands.ride.summonRide.failed=Se invocaron entidades para montar, pero estos jinetes no se pudieron agregar a ellas: %1$s	#
+commands.ride.summonRide.notRideable=La entidad se invocó, pero no se puede montar.	#
+commands.ride.summonRide.success=Entidad invocada correctamente para estos jinetes: %1$s	#
+commands.ride.summonRider.failed=Se invocaron jinetes, pero no se pudieron agregar a las entidades para montar: %1$s	#
+commands.ride.summonRider.fullRides=Los jinetes no pudieron montar estas entidades porque ya están llenas: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=Las siguientes entidades no se pueden montar: %1$s	#
+commands.ride.summonRider.success=Jinetes invocados correctamente para las entidades: %1$s	#
 commands.save.description=Controla o revisa la forma en que el juego guarda datos en el disco.	#
 commands.save.disabled=Guardado automático del mundo desactivado	#
 commands.save.enabled=Guardado automático del mundo activado	#
@@ -957,6 +978,9 @@ commands.save-on.description=Habilita el guardado automático en el servidor.	#
 commands.save-on.success=Se reanudaron los cambios en el nivel.	#
 commands.save-state.description=Revisa si un intento anterior de guardar todo está completo y muestra los archivos involucrados.	#
 commands.say.description=Envía un mensaje en el chat a otros jugadores.	#
+commands.schedule.description=Programa una acción para ejecutarla cuando un área esté cargada o después de cierto tiempo.	#
+commands.schedule.functionQueued=La función se agregó a la lista y se ejecutará cuando se haya cargado completamente el área especificada.	#
+commands.schedule.functionRan=Se ejecutaron correctamente %1$d entradas en la función %2$s.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Deteniendo el servidor	#
 commands.stopsound.description=Detiene un sonido.	#
 commands.stopsound.success=Se detuvo el sonido de %s para %s.	#
 commands.stopsound.success.all=Se detuvieron todos los sonidos para %s.	#
+commands.structure.description=Guarda o carga una estructura en el mundo.	#
+commands.structure.empty.load=No se puede cargar una estructura que no tiene entidades ni bloques	#
+commands.structure.empty.save=No se puede guardar una estructura que no tiene entidades ni bloques	#
+commands.structure.invalid.integrity=La integridad debe estar en el rango de 0 a 100	#
+commands.structure.invalid.name=El nombre debe tener el siguiente formato: "nombre" o "espaciodenombre:nombre". Si no se proporciona ningún espacio de nombre, se asignará el predeterminado.	#
+commands.structure.load.success=Se cargó una estructura con el nombre %s	#
+commands.structure.notFound=No se puede encontrar la estructura %s. Asegúrate de que el nombre esté bien escrito y vuelve a intentarlo.	#
+commands.structure.save.success=Se guardó una estructura con el nombre %s	#
+commands.structure.size.tooBig=El tamaño de una estructura no puede ser mayor que (%1$d, %2$d, %3$d), y esta medía (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=El tamaño de una estructura no puede ser menor que (%1$d, %2$d, %3$d), y esta medía (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Se proporcionó una acción desconocida para la estructura	#
+commands.structure.y.tooHigh=No se pueden colocar bloques fuera del mundo. Intenta utilizar un valor de %d o menos para el componente Y de <to: x y z>.	#
+commands.structure.y.tooLow=No se pueden colocar bloques fuera del mundo. Intenta utilizar un valor mayor que 0 para el componente Y de <to: x y z>.	#
 commands.summon.description=Invoca una entidad.	#
 commands.summon.failed=No se pudo invocar el objeto	#
 commands.summon.outOfWorld=No se puede invocar el objeto fuera del mundo	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=La suscripción a Realms Plus está vencida	#
 realmsPlus.popup.message=Tu suscripción a Realms Plus está vencida. Deberás renovar tu suscripción para volver a tener acceso a tu realm y a los packs o aspectos que recibiste en Realms Plus. 	#
 
 realmsPlusUpgradeNotice.title=¡Te damos la bienvenida a Realms Plus!	#
-realmsPlusUpgradeNotice.body=Tu suscripción a los realms se actualizó a Realms Plus. Ahora tienes acceso a más de 50 packs de contenido del Mercado sin costo adicional. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a todo el contenido de suscriptor de tu realm de forma gratuita!	#
+realmsPlusUpgradeNotice.body=Tu suscripción a Realms se actualizó a Realms Plus. Ahora tienes acceso a más de 100 packs de contenido del Mercado sin costo adicional. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a todo el contenido de suscriptor de tu realm de forma gratuita!	#
 realmsPlusUpgradeNotice.continue=Continuar	#
 realmsPlusUpgradeNotice.viewpacks=Ver los packs de Realms Plus	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Admin.	#
 options.viewSubscriptions.renew=Se renueva cada 30 días	#
 options.viewSubscriptions.daysRemaining=Quedan %d días	#
 options.viewSubscriptions.realmsPlus.header=Suscripción a Realms Plus	#
-options.viewSubscriptions.realmsPlus.detail=Más de 50 piezas de contenido en tu propio servidor de Realms	#
+options.viewSubscriptions.realmsPlus.detail=Más de 100 piezas de contenido en tu propio servidor de Realms	#
 options.viewSubscriptions.realms.header=Suscripciones adicionales	#
 options.viewSubscriptions.realms.detail=Obtén acceso a tu propio servidor de Realms para hasta %d jugadores en simultáneo	#
 options.viewSubscriptions.loadingSubscriptions=Cargando tus suscripciones...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=ERROR: NO SE ENCONTRÓ NINGUNA OFERTA	#
 store.realmsPlus.manageSubscription=ADMINISTRAR SUSCRIPCIÓN	#
 store.realmsPlus.viewAllPacksTitle=GRAN OFERTA: ¡PACKS CON VALOR DE MÁS DE §g$150 (USD)!§r	#
 
-store.realmsPlus.nowActive=Realms Plus ya está activado en este dispositivo. Ahora tienes acceso a más de 50 packs de contenido del Mercado sin costo adicional. ¡Hasta 10 personas pueden jugar en tus realms al mismo tiempo y todos ellos tendrán acceso a todo el contenido de suscriptor de tu realm de forma gratuita!	#
+store.realmsPlus.nowActive=Realms Plus ya está activado en este dispositivo. Ahora tienes acceso a más de 100 packs de contenido del Mercado sin costo adicional. ¡Hasta 10 personas pueden jugar en tus realms al mismo tiempo y todos ellos tendrán acceso a todo el contenido de suscriptor de tu realm de forma gratuita!	#
 
 store.realmsPlus.buyNow.buttonText=COMPRAR POR %s	#
 store.realmsPlus.buyNow.viewTerms=TÉRMINOS Y CONDICIONES	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=POLÍTICA DE PRIVACIDAD	#
 
 store.realmsPlus.buyNow.title=Comienza tu suscripción a Realms Plus	#
 store.realmsPlus.startTrial.title=¡Empieza ahora mismo tu prueba GRATIS de 30 días!	#
-store.realmsPlus.startTrial.description=Tu realm y más de 50 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! El primer mes será gratis y luego se te cobrarán %s al mes. Podrás cancelar la suscripción en cualquier momento.	#
-store.realmsPlus.noTrial.description=Tu realm y más de 50 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Tu suscripción estará disponible durante 30 días por un costo de %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Tu realm y más de 50 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Tu suscripción estará disponible durante 30 días por un costo de %s.	#
+store.realmsPlus.startTrial.description=Tu realm y más de 100 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! El primer mes será gratis y luego se te cobrarán %s al mes. Podrás cancelar la suscripción en cualquier momento.	#
+store.realmsPlus.noTrial.description=Tu realm y más de 100 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Tu suscripción estará disponible durante 30 días por un costo de %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Tu realm y más de 100 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Tu suscripción estará disponible durante 30 días por un costo de %s.	#
 store.realmsPlus.realmName.placeholder=Realm de %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Tu realm y más de 50 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! El primer mes será gratis y luego se te cobrarán %s al mes. Podrás cancelar la suscripción en cualquier momento.	#
-store.realmsPlus.recurring.withoutTrial=Tu realm y más de 50 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Se te cobrarán %s al mes, y podrás cancelar la suscripción en cualquier momento.	#
-store.realmsPlus.consumable.offerTrial=Tu realm y más de 50 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Los primeros 30 días de tu suscripción serán gratis, y después podrás renovar por otros 30 días por un costo de %s.	#
-store.realmsPlus.consumable.withoutTrial=Tu realm y más de 50 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Tu suscripción estará disponible durante 30 días por un costo de %s.	#
+store.realmsPlus.recurring.offerTrial=Tu realm y más de 100 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! El primer mes será gratis y luego se te cobrarán %s al mes. Podrás cancelar la suscripción en cualquier momento.	#
+store.realmsPlus.recurring.withoutTrial=Tu realm y más de 100 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Se te cobrarán %s al mes, y podrás cancelar la suscripción en cualquier momento.	#
+store.realmsPlus.consumable.offerTrial=Tu realm y más de 100 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Los primeros 30 días de tu suscripción serán gratis, y después podrás renovar por otros 30 días por un costo de %s.	#
+store.realmsPlus.consumable.withoutTrial=Tu realm y más de 100 packs del Mercado estarán disponibles de inmediato. ¡Hasta 10 personas pueden jugar al mismo tiempo y todos ellos tendrán acceso a los mundos de tu realm de forma gratuita! Tu suscripción estará disponible durante 30 días por un costo de %s.	#
 
 store.realmsPlus.landing.header=La suscripción incluye:	#
 
-store.realmsPlus.landing.info1.line1=- Acceso al catálogo de más de 50 packs en el Mercado	#
+store.realmsPlus.landing.info1.line1=- Acceso al catálogo de más de 100 packs en el Mercado	#
 store.realmsPlus.landing.info1.line2=- Tu propio servidor de realm privado	#
 store.realmsPlus.landing.info1.line3=- Tus amigos juegan gratis en tu realm	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=¡Prueba un poco de todo con los popu
 
 store.realmsPlus.content.popularPacks=Packs populares en Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=VER TODOS LOS PACKS	#
-store.realmsPlus.content.contentDescription=¡Accede a una gran variedad de contenido fabuloso de Minecraft! Con Realms Plus, tendrás acceso instantáneo a más de 50 elementos del Mercado, como popurrís, mundos, packs de aspecto y aventuras épicas, y cada mes se agrega nuevo contenido. Tu contenido se almacena en tu propio servidor y está disponible en cualquier plataforma donde tengas Realms y el Mercado de Minecraft. ¡Hasta 10 personas pueden jugar a la vez, y todos ellos tienen acceso a los mundos de tu realm de forma gratuita!	#
+store.realmsPlus.content.contentDescription=¡Accede a una gran variedad de contenido fabuloso de Minecraft! Con Realms Plus, tendrás acceso instantáneo a más de 100 elementos del Mercado, como popurrís, mundos, packs de aspecto y aventuras épicas, y cada mes se agrega nuevo contenido. Tu contenido se almacena en tu propio servidor y está disponible en cualquier plataforma donde tengas Realms y el Mercado de Minecraft. ¡Hasta 10 personas pueden jugar a la vez, y todos ellos tienen acceso a los mundos de tu realm de forma gratuita!	#
 
 
 store.realmsPlus.freeTrial=EMPEZAR 1 MES DE PRUEBA GRATIS	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Cambiar usuario	#
 
 lateJoinScreen.waitingForUserReady=Preparando todo lo necesario	#
 
+hbui.AchievementDetails.anotherPlatform=Completado en otra plataforma	#
 hbui.AchievementDetails.completed=Completado	#
 hbui.AchievementDetails.gamerscore=Puntuación	#
 hbui.AchievementDetails.locked=Bloqueado	#
+hbui.AchievementDetails.yes=Sí	#
 hbui.AchievementDetailsRoute.errorMessage=No se pudo cargar el logro. Vuelve a intentarlo o revisa tu conexión a internet.	#
 hbui.AchievementDetailsRoute.narration.completed=completado	#
 hbui.AchievementDetailsRoute.narration.gamerscore=puntuación	#

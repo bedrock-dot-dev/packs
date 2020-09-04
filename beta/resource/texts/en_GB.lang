@@ -692,7 +692,6 @@ commands.clone.description=Clones blocks from one region to another.	#
 commands.clone.failed=No blocks cloned	#
 commands.clone.filtered.error=Filtered usage requires a filter block to be specified	#
 commands.clone.noOverlap=Source and destination can not overlap	#
-commands.clone.outOfWorld=Cannot access blocks outside of the world	#
 commands.clone.success=%1$d blocks cloned	#
 commands.clone.tooManyBlocks=Too many blocks in the specified area (%1$d > %2$d)	#
 commands.closechat.description=Closes the chat window of the local player if it is open.	#
@@ -702,7 +701,6 @@ commands.closewebsocket.description=Closes websocket connection if there is one.
 commands.code.description=Launches Code Builder.	#
 commands.code.success=Launched Code Builder.	#
 commands.compare.failed=Source and destination are not identical	#
-commands.compare.outOfWorld=Cannot access blocks outside of the world	#
 commands.compare.success=%1$d blocks compared	#
 commands.compare.tooManyBlocks=Too many blocks in the specified area (%1$d > %2$d)	#
 commands.corruptworld.description=Corrupts the world loaded on the server.	#
@@ -797,6 +795,7 @@ commands.generic.notimplemented=Not implemented	#
 commands.generic.num.invalid='%1$s' is not a valid number	#
 commands.generic.num.tooBig=The number you have entered (%1$d) is too big, it must be at most %2$d	#
 commands.generic.num.tooSmall=The number you have entered (%1$d) is too small, it must be at least %2$d	#
+commands.generic.outOfWorld=Cannot access blocks from outside the world	#
 commands.generic.parameter.invalid='%1$s' is not a valid parameter	#
 commands.generic.permission.selector=<insufficient permissions for selector expansion>	#
 commands.generic.player.notFound=That player cannot be found	#
@@ -918,10 +917,14 @@ commands.permissions.set.failed=Could not set permission level %s for player %s.
 commands.permissions.set.success=Succeeded in setting permission level %s for player %s.	#
 commands.permissions.save.failed=Could not save permission level %s for player %s.	#
 commands.permissions.save.success=Succeeded in saving permission level %s for player %s.	#
+commands.screenshake.description=Applies shaking to the players' camera with a specified intensity and duration.	#
+commands.screenshake.success=Sent a request to the following players for their camera to shake: %s	#
 commands.spawnParticleEmitter.description=Creates a particle emitter	#
 commands.particle.description=Creates particles.	#
 commands.particle.notFound=Unknown effect name (%1$s)	#
 commands.particle.success=Playing effect %1$s for %2$d times	#
+commands.playanimation.description=Makes one or more entities play a one-off animation. Assumes all variables are set up correctly.	#
+commands.playanimation.success=Animation request sent to clients for processing.	#
 commands.players.list=There are %1$d/%2$d players online:	#
 commands.players.list.names=%s	#
 commands.playsound.description=Plays a sound.	#
@@ -942,6 +945,24 @@ commands.replaceitem.badSlotNumber=Could not replace slot %d, must be a value be
 commands.replaceitem.success=Replaced %s slot %d with %d * %s	#
 commands.replaceitem.success.entity=Replaced %s slot %d of %s with %d * %s	#
 commands.replaceitem.tagError=Data tag parsing failed: %1$s	#
+commands.ride.description=Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders.	#
+commands.ride.evictRiders.success=Rides that have successfully evicted their riders: %1$s	#
+commands.ride.startRiding.failure=Riders that did not meet ride conditions: %1$s	#
+commands.ride.startRiding.groupDoesntFit=The group of riders does not fit on the ride.	#
+commands.ride.startRiding.notRideable=The selected entity is not rideable.	#
+commands.ride.startRiding.rideFull=This ride is already full.	#
+commands.ride.startRiding.rideFullRidersLeft=The ride is full, so some riders were not added.	#
+commands.ride.startRiding.success=Riders successfully added to ride: %1$s	#
+commands.ride.startRiding.tooManyRiders=Too many riders were specified. Only one is allowed at a time for teleport_ride.	#
+commands.ride.startRiding.tooManyRides=Too many rides were specified. Only one is allowed at a time.	#
+commands.ride.stopRiding.success=Riders that have successfully stopped riding: %1$s	#
+commands.ride.summonRide.failed=Rides were summoned, but these riders could not be added to them: %1$s	#
+commands.ride.summonRide.notRideable=Entity was summoned, but it is not rideable.	#
+commands.ride.summonRide.success=Ride successfully summoned for these riders: %1$s	#
+commands.ride.summonRider.failed=Riders were summoned, but could not be added to rides: %1$s	#
+commands.ride.summonRider.fullRides=Riders could not ride these rides because they are full: %1$s	#
+commands.ride.summonRider.ridesWithNoRideableComp=The following entities are not rideable: %1$s	#
+commands.ride.summonRider.success=Riders successfully summoned for rides: %1$s	#
 commands.save.description=Control or check how the game saves data to disk.	#
 commands.save.disabled=Turned off world auto-saving	#
 commands.save.enabled=Turned on world auto-saving	#
@@ -957,6 +978,9 @@ commands.save-on.description=Enables automatic server saves.	#
 commands.save-on.success=Changes to the level are resumed.	#
 commands.save-state.description=Checks if a previous save-all has finished and lists the files involved.	#
 commands.say.description=Sends a message in the chat to other players.	#
+commands.schedule.description=Schedules an action to be executed once an area is loaded, or after a certain amount of time.	#
+commands.schedule.functionQueued=Function has been queued and it will be executed when the specified area is fully loaded.	#
+commands.schedule.functionRan=Successfully executed %1$d function entries in function %2$s.	#
 
 ## Scoreboard is composed of several Objectives, which can be displayed to players in 3 different 'slots'	##
 ## An Objective holds the scores that each player has for the Objective. 									##
@@ -1080,6 +1104,19 @@ commands.stop.start=Stopping the server	#
 commands.stopsound.description=Stops a sound.	#
 commands.stopsound.success=Stopped sound %s for %s	#
 commands.stopsound.success.all=Stopped all sounds for %s	#
+commands.structure.description=Saves or loads a structure in the world.	#
+commands.structure.empty.load=Can't load a structure with no entities and no blocks	#
+commands.structure.empty.save=Can't save a structure with no entities and no blocks	#
+commands.structure.invalid.integrity=Integrity must be in the range of 0 to 100	#
+commands.structure.invalid.name=Name should be in the format of "name" or "namespace:name". If no namespace is provided, the default one will be assigned.	#
+commands.structure.load.success=Loaded a structure of name %s	#
+commands.structure.notFound=The structure %s can't be found. Make sure the name was spelled correctly and try again.	#
+commands.structure.save.success=Saved a structure with name %s	#
+commands.structure.size.tooBig=A structure's size cannot be larger than (%1$d, %2$d, %3$d), it was (%4$d, %5$d, %6$d)	#
+commands.structure.size.tooSmall=A structure's size cannot be smaller than (%1$d, %2$d, %3$d), it was (%4$d, %5$d, %6$d)	#
+commands.structure.unknown.action=Unknown structure action provided	#
+commands.structure.y.tooHigh=Cannot place blocks outside the world. Try a value of %d or lower for the Y component of <to: x y z>.	#
+commands.structure.y.tooLow=Cannot place blocks outside the world. Try a value greater than 0 for the Y component of <to: x y z>.	#
 commands.summon.description=Summons an entity.	#
 commands.summon.failed=Unable to summon object	#
 commands.summon.outOfWorld=Cannot summon the object out of the world	#
@@ -1788,7 +1825,7 @@ realmsPlus.popup.title=Realms Plus Subscription has Expired	#
 realmsPlus.popup.message=Your Realms Plus subscription has expired. To regain access to your Realm and the packs or skins you received from Realms Plus you need to renew your subscription. 	#
 
 realmsPlusUpgradeNotice.title=Welcome to Realms Plus!	#
-realmsPlusUpgradeNotice.body=Your Realms subscription has been upgraded to Realms Plus. You now have access to 50+ content packs from the marketplace at no additional cost. Up to 10 players can play at once, and they get access to all the subscriber content in your Realm – for free!	#
+realmsPlusUpgradeNotice.body=Your Realms subscription has been upgraded to Realms Plus. You now have access to 100+ content packs from the marketplace at no additional cost. Up to 10 players can play at one time and they get access to all the subscriber content in your Realm – for free!	#
 realmsPlusUpgradeNotice.continue=Continue	#
 realmsPlusUpgradeNotice.viewpacks=View Realms Plus Packs	#
 
@@ -5697,7 +5734,7 @@ options.viewSubscriptions.button.manage=Manage	#
 options.viewSubscriptions.renew=Renews every 30 days	#
 options.viewSubscriptions.daysRemaining=%d days remaining	#
 options.viewSubscriptions.realmsPlus.header=Realms Plus Subscription	#
-options.viewSubscriptions.realmsPlus.detail=Over 50+ pieces of content and your own Realm server	#
+options.viewSubscriptions.realmsPlus.detail=Over 100+ pieces of content and your own Realm server	#
 options.viewSubscriptions.realms.header=Additional Subscriptions	#
 options.viewSubscriptions.realms.detail=Access to your own Realm server with up to %d concurrent players	#
 options.viewSubscriptions.loadingSubscriptions=Loading your subscriptions...	#
@@ -6683,7 +6720,7 @@ store.realmsPlus.errorNoOffer=ERROR NO OFFER FOUND	#
 store.realmsPlus.manageSubscription=MANAGE SUBSCRIPTION	#
 store.realmsPlus.viewAllPacksTitle=A GREAT VALUE – PACKS WORTH OVER §g$150 (USD)!§r	#
 
-store.realmsPlus.nowActive=Realms Plus is now active for this device. You now have access to 50+ content packs from the marketplace at no additional cost. Up to 10 players can play on your Realms at one time, and get access to all the subscriber content in your Realm – for free!	#
+store.realmsPlus.nowActive=Realms Plus is now active for this device. You now have access to 100+ content packs from the marketplace at no additional cost. Up to 10 players can play on your Realms at one time and get access to all the subscriber content in your Realm - for free!	#
 
 store.realmsPlus.buyNow.buttonText=BUY FOR %s	#
 store.realmsPlus.buyNow.viewTerms=TERMS & CONDITIONS	#
@@ -6691,19 +6728,19 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=PRIVACY POLICY	#
 
 store.realmsPlus.buyNow.title=Start your Realms Plus Subscription	#
 store.realmsPlus.startTrial.title=Start your FREE 30-day trial now!	#
-store.realmsPlus.startTrial.description=Your Realm and 50+ marketplace packs will be immediately available. Up to 10 players can play at once, and they get access to the worlds in your Realm for free! Your first month will be free, and you'll be billed %s/month afterwards and can cancel at any time.	#
-store.realmsPlus.noTrial.description=Your Realm and 50+ marketplace packs will be immediately available. Up to 10 players can play at once, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s:minecoin:.	#
-store.realmsPlus.noTrial.description.iap=Your Realm and 50+ marketplace packs will be immediately available. Up to 10 players can play at once, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s.	#
+store.realmsPlus.startTrial.description=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your first month will be free, and you'll be billed %s/month afterwards and can cancel at any time.	#
+store.realmsPlus.noTrial.description=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s.	#
 store.realmsPlus.realmName.placeholder=%s's Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Your Realm and 50+ marketplace packs will be immediately available. Up to 10 players can play at once, and they get access to the worlds in your Realm for free! Your first month will be free, and you'll be billed %s/month afterwards and can cancel at any time.	#
-store.realmsPlus.recurring.withoutTrial=Your Realm and 50+ marketplace packs will be immediately available. Up to 10 players can play at once, and they get access to the worlds in your Realm for free! You'll be billed %s/month and can cancel at any time.	#
-store.realmsPlus.consumable.offerTrial=Your Realm and 50+ marketplace packs will be immediately available. Up to 10 players can play at once, and they get access to the worlds in your Realm for free! Your first 30 days will be free and you can renew for 30 days at the price of %s afterwards.	#
-store.realmsPlus.consumable.withoutTrial=Your Realm and 50+ marketplace packs will be immediately available. Up to 10 players can play at once, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s.	#
+store.realmsPlus.recurring.offerTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your first month will be free, and you'll be billed %s/month afterwards and can cancel at any time.	#
+store.realmsPlus.recurring.withoutTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! You'll be billed %s/month and can cancel at any time.	#
+store.realmsPlus.consumable.offerTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your first 30 days will be free and you can renew for 30 days at the price of %s afterwards.	#
+store.realmsPlus.consumable.withoutTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s.	#
 
 store.realmsPlus.landing.header=Subscription Includes:	#
 
-store.realmsPlus.landing.info1.line1=- Access to a catalogue of 50+ marketplace packs	#
+store.realmsPlus.landing.info1.line1=- Access to a catalog of 100+ marketplace packs	#
 store.realmsPlus.landing.info1.line2=- Your own personal Realm server	#
 store.realmsPlus.landing.info1.line3=- Friends play for free in your Realm	#
 
@@ -6750,7 +6787,7 @@ store.realmsPlus.content.mashupDescription=Try a bit of everything in mash-ups!	
 
 store.realmsPlus.content.popularPacks=Popular Packs in Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=VIEW ALL PACKS	#
-store.realmsPlus.content.contentDescription=Tap into the source of amazing Minecraft content! With Realms Plus, you get instant access to 50+ marketplace items like mash-ups, worlds, skin packs and epic adventures – with new additions each month. Your content is stored on your own personal server, and made available on any platform where you enjoy both Realms and the Minecraft Marketplace. Up to 10 players can play at once, and they get access to the worlds in your Realm for free!	#
+store.realmsPlus.content.contentDescription=Tap into the source of amazing Minecraft content! With Realms Plus, you get instant access to 100+ marketplace items like mash-ups, worlds, skin packs and epic adventures – with new additions each month. Your content is stored on your own personal server and made available on any platform where you enjoy both Realms and the Minecraft Marketplace. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free!	#
 
 
 store.realmsPlus.freeTrial=START 1 MONTH FREE TRIAL	#
@@ -8523,9 +8560,11 @@ usermanagement.changeUser=Change User	#
 
 lateJoinScreen.waitingForUserReady=Getting things ready	#
 
+hbui.AchievementDetails.anotherPlatform=Completed on another platform	#
 hbui.AchievementDetails.completed=Completed	#
 hbui.AchievementDetails.gamerscore=Gamerscore	#
 hbui.AchievementDetails.locked=Locked	#
+hbui.AchievementDetails.yes=Yes	#
 hbui.AchievementDetailsRoute.errorMessage=Achievement couldn't load. Please try again or check your Internet connection.	#
 hbui.AchievementDetailsRoute.narration.completed=completed	#
 hbui.AchievementDetailsRoute.narration.gamerscore=gamerscore	#
