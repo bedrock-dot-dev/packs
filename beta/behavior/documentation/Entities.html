@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.100.54</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.100.55</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -12404,6 +12404,55 @@ Specifies hunt celebration behaviour.</br><h3></h3>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h2><p id="minecraft:conditional_bandwidth_optimization">minecraft:conditional_bandwidth_optimization</p></h2>
+
+Defines the Conditional Spatial Update Bandwidth Optimizations of this entity.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">conditional_values</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">The object containing the conditional bandwidth optimization values.</br><h5><p id="conditional_values">conditional_values</p></h5>
+
+Conditions that must be met for these optimization values to be used.</br><a href="#Index">Back to top</a><br><br>
+
+<h5><p id="max_dropped_ticks">max_dropped_ticks</p></h5>
+
+In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.</br><a href="#Index">Back to top</a><br><br>
+
+<h5><p id="max_optimized_distance">max_optimized_distance</p></h5>
+
+The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.</br><a href="#Index">Back to top</a><br><br>
+
+<h5><p id="use_motion_prediction_hints">use_motion_prediction_hints</p></h5>
+
+When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.</br><a href="#Index">Back to top</a><br><br>
+
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">default_values</td>
+<td style="border-style:solid; border-width:2; padding:8px">JSON Object</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">The object containing the default bandwidth optimization values.</br><h5><p id="max_dropped_ticks">max_dropped_ticks</p></h5>
+
+In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.</br><a href="#Index">Back to top</a><br><br>
+
+<h5><p id="max_optimized_distance">max_optimized_distance</p></h5>
+
+The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.</br><a href="#Index">Back to top</a><br><br>
+
+<h5><p id="use_motion_prediction_hints">use_motion_prediction_hints</p></h5>
+
+When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities.</br><a href="#Index">Back to top</a><br><br>
+
+</td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
 <h2><p id="minecraft:custom_hit_test">minecraft:custom_hit_test</p></h2>
 
 List of hitboxes for melee and ranged hits against the entity.</br><h3></h3>
@@ -15655,26 +15704,6 @@ This section defines properties required to identify and construct the entity</b
 
 <br><br>
 
-<h2><p id="Entity Description Properties">Entity Description Properties</p></h2>
-
-<h3></h3>
-
-<h3><p id="is_experimental">is_experimental</p></h3>
-
-<h4></h4>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
-<tr> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
-<td style="border-style:solid; border-width:1; padding:9px">false</td>
-<td style="border-style:solid; border-width:1; padding:9px">Flag to mark this entity as being experimental or not.</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
-<br><br>
-
 <h2><p id="animations">animations</p></h2>
 
 Sets the mapping of internal animation references to actual animations.  This is a JSON Object of name/animation pairs</br><h3></h3>
@@ -16294,6 +16323,10 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:celebrate_hunt</td>
 <td style="border-style:solid; border-width:2; padding:8px">-789611239</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:conditional_bandwidth_optimization</td>
+<td style="border-style:solid; border-width:2; padding:8px">1333085468</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:custom_hit_test</td>
