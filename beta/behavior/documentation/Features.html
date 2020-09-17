@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.16.100.55</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.16.100.56</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -307,11 +307,11 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           {
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
-          block_reference "places_block" // Reference to the block to be placed.
           int "count"<1-*> // The number of blocks to be placed.
-          array "may_replace"[1,*] : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
+           "places_block" // Reference to the block to be placed.
+          array "may_replace"[1,*] : opt
           {
-              block_reference "<any array element>" : opt
+               "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
           }
       }
       object "minecraft:scatter_feature" : opt
@@ -398,57 +398,57 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           {
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
-          block_reference "places_block" // Reference to the block to be placed.
+           "places_block" // Reference to the block to be placed.
           bool "enforce_placement_rules" // If true, enforce the block's canPlace check.
           bool "enforce_survivability_rules" // If true, enforce the block's canSurvive check.
           object "may_attach_to" : opt
           {
               int "min_sides_must_attach"<1-4> : opt
               bool "auto_rotate" : opt // Automatically rotate the block to attach sensibly.
-              block_reference "top" : opt
+               "top" : opt
               array "top" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
-              block_reference "bottom" : opt
+               "bottom" : opt
               array "bottom" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
-              block_reference "north" : opt
+               "north" : opt
               array "north" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
-              block_reference "east" : opt
+               "east" : opt
               array "east" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
-              block_reference "south" : opt
+               "south" : opt
               array "south" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
-              block_reference "west" : opt
+               "west" : opt
               array "west" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
-              block_reference "all" : opt
+               "all" : opt
               array "all" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
-              block_reference "sides" : opt
+               "sides" : opt
               array "sides" : opt
               {
-                  block_reference "<any array element>"
+                   "<any array element>"
               }
           }
           array "may_replace" : opt
           {
-              block_reference "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
+               "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
           }
       }
       object "minecraft:structure_template_feature" : opt
@@ -466,9 +466,9 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               object "unburied" : opt // When specified, ensures the structure has air above it.
               object "block_intersection" : opt // When specified, ensures the structure only intersects with whitelisted blocks.
               {
-                  array "block_whitelist" // List of blocks the owning structure is allowed to intersect with.
+                  array "block_whitelist"
                   {
-                      block_reference "<any array element>" : opt
+                       "<any array element>" : opt // List of blocks the owning structure is allowed to intersect with.
                   }
               }
           }
@@ -479,31 +479,31 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           {
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
-          block_reference "base_block" : opt
+           "base_block" : opt
           array "base_block" : opt
           {
-              block_reference "<any array element>"
+               "<any array element>"
           }
           object "base_cluster" : opt
           {
               array "may_replace"
               {
-                  block_reference "<any array element>" : opt
+                   "<any array element>" : opt
               }
               int "num_clusters"<1-*>
               int "cluster_radius"<0-*>
           }
           array "may_grow_on" : opt
           {
-              block_reference "<any array element>"
+               "<any array element>"
           }
           array "may_replace" : opt
           {
-              block_reference "<any array element>"
+               "<any array element>"
           }
           array "may_grow_through" : opt
           {
-              block_reference "<any array element>"
+               "<any array element>"
           }
           object "acacia_trunk" : opt
           {
@@ -522,7 +522,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                    "lean_height"
                    "lean_steps"
               }
-              block_reference "trunk_block"
+               "trunk_block"
               object "branches" : opt
               {
                    "branch_length"
@@ -533,7 +533,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                       object "acacia_canopy" : opt
                       {
                           int "canopy_size"<1-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                           bool "simplify_canopy" : opt
                       }
                       object "canopy" : opt
@@ -554,11 +554,11 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           {
                               chance_information "<any array element>" : opt
                           }
-                          block_reference "leaf_block"
+                           "leaf_block"
                           object "canopy_decoration" : opt
                           {
                               chance_information "decoration_chance"
-                              block_reference "decoration_block" : opt
+                               "decoration_block" : opt
                               int "num_steps" : opt
                               enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
                           }
@@ -567,7 +567,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                       {
                           int "height"<1-*>
                           int "radius"<0-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "mega_canopy" : opt
                       {
@@ -575,7 +575,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           int "base_radius"<0-*>
                           int "core_width"<1-*> : opt
                           bool "simplify_canopy" : opt
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "mega_pine_canopy" : opt
                       {
@@ -583,13 +583,13 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           int "base_radius"<0-*>
                           float "radius_step_modifier"<0.000000-*>
                           int "core_width"<1-*> : opt
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "pine_canopy" : opt
                       {
                            "canopy_height"
                           int "base_radius"<1-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "roofed_canopy" : opt
                       {
@@ -597,21 +597,21 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           int "core_width"<1-*>
                           int "outer_radius"<0-*>
                           int "inner_radius"<0-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "spruce_canopy" : opt
                       {
                            "lower_offset"
                            "upper_offset"
                            "max_radius"
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                   }
               }
               object "trunk_decoration" : opt
               {
                   chance_information "decoration_chance"
-                  block_reference "decoration_block" : opt
+                   "decoration_block" : opt
                   int "num_steps" : opt
                   enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
               }
@@ -621,12 +621,12 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                "log_length"
                "stump_height" : opt
                "height_modifier" : opt
-              block_reference "trunk_block"
+               "trunk_block"
               feature_reference "log_decoration_feature" : opt
               object "trunk_decoration" : opt
               {
                   chance_information "decoration_chance"
-                  block_reference "decoration_block" : opt
+                   "decoration_block" : opt
                   int "num_steps" : opt
                   enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
               }
@@ -646,7 +646,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   float "density"
                   float "min_altitude_factor"<0.000000-1.000000>
               }
-              block_reference "trunk_block" : opt
+               "trunk_block"
               float "width_scale"<0.000000-*>
               float "foliage_altitude_factor"<0.000000-1.000000>
           }
@@ -661,11 +661,11 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                       int "<any array element>"<1-*> : opt
                   }
               }
-              block_reference "trunk_block"
+               "trunk_block"
               object "trunk_decoration" : opt
               {
                   chance_information "decoration_chance"
-                  block_reference "decoration_block" : opt
+                   "decoration_block" : opt
                   int "num_steps" : opt
                   enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
               }
@@ -684,7 +684,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                       object "acacia_canopy" : opt
                       {
                           int "canopy_size"<1-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                           bool "simplify_canopy" : opt
                       }
                       object "canopy" : opt
@@ -705,11 +705,11 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           {
                               chance_information "<any array element>" : opt
                           }
-                          block_reference "leaf_block"
+                           "leaf_block"
                           object "canopy_decoration" : opt
                           {
                               chance_information "decoration_chance"
-                              block_reference "decoration_block" : opt
+                               "decoration_block" : opt
                               int "num_steps" : opt
                               enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
                           }
@@ -718,7 +718,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                       {
                           int "height"<1-*>
                           int "radius"<0-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "mega_canopy" : opt
                       {
@@ -726,7 +726,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           int "base_radius"<0-*>
                           int "core_width"<1-*> : opt
                           bool "simplify_canopy" : opt
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "mega_pine_canopy" : opt
                       {
@@ -734,13 +734,13 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           int "base_radius"<0-*>
                           float "radius_step_modifier"<0.000000-*>
                           int "core_width"<1-*> : opt
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "pine_canopy" : opt
                       {
                            "canopy_height"
                           int "base_radius"<1-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "roofed_canopy" : opt
                       {
@@ -748,14 +748,14 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                           int "core_width"<1-*>
                           int "outer_radius"<0-*>
                           int "inner_radius"<0-*>
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                       object "spruce_canopy" : opt
                       {
                            "lower_offset"
                            "upper_offset"
                            "max_radius"
-                          block_reference "leaf_block"
+                           "leaf_block"
                       }
                   }
               }
@@ -769,11 +769,11 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   int "max_depth"<1-*>
               }
               bool "can_be_submerged" : opt
-              block_reference "trunk_block"
+               "trunk_block"
               object "trunk_decoration" : opt
               {
                   chance_information "decoration_chance"
-                  block_reference "decoration_block" : opt
+                   "decoration_block" : opt
                   int "num_steps" : opt
                   enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
               }
@@ -781,7 +781,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           object "acacia_canopy" : opt
           {
               int "canopy_size"<1-*>
-              block_reference "leaf_block"
+               "leaf_block"
               bool "simplify_canopy" : opt
           }
           object "canopy" : opt
@@ -802,11 +802,11 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               {
                   chance_information "<any array element>" : opt
               }
-              block_reference "leaf_block"
+               "leaf_block"
               object "canopy_decoration" : opt
               {
                   chance_information "decoration_chance"
-                  block_reference "decoration_block" : opt
+                   "decoration_block" : opt
                   int "num_steps" : opt
                   enumerated_value "step_direction"<"down", "up", "out", "away"> : opt
               }
@@ -815,7 +815,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           {
               int "height"<1-*>
               int "radius"<0-*>
-              block_reference "leaf_block"
+               "leaf_block"
           }
           object "mega_canopy" : opt
           {
@@ -823,7 +823,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               int "base_radius"<0-*>
               int "core_width"<1-*> : opt
               bool "simplify_canopy" : opt
-              block_reference "leaf_block"
+               "leaf_block"
           }
           object "mega_pine_canopy" : opt
           {
@@ -831,13 +831,13 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               int "base_radius"<0-*>
               float "radius_step_modifier"<0.000000-*>
               int "core_width"<1-*> : opt
-              block_reference "leaf_block"
+               "leaf_block"
           }
           object "pine_canopy" : opt
           {
                "canopy_height"
               int "base_radius"<1-*>
-              block_reference "leaf_block"
+               "leaf_block"
           }
           object "roofed_canopy" : opt
           {
@@ -845,14 +845,14 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               int "core_width"<1-*>
               int "outer_radius"<0-*>
               int "inner_radius"<0-*>
-              block_reference "leaf_block"
+               "leaf_block"
           }
           object "spruce_canopy" : opt
           {
                "lower_offset"
                "upper_offset"
                "max_radius"
-              block_reference "leaf_block"
+               "leaf_block"
           }
       }
       object "minecraft:weighted_random_feature" : opt

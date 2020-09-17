@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.16.100.55</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.16.100.56</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -701,12 +701,20 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">Only valid in an animation controller.  Returns 1.0 if all animations in the current animation controller state have played through at least once, else it returns 0.0</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.all_tags</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns if the item or block has all of the tags specified</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.anim_time</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the time in seconds since the current animation started, else 0.0 if not called within an animation</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.any_animation_finished</td>
 <td style="border-style:solid; border-width:3; padding:7px">Only valid in an animation controller.  Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.any_tag</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns if the item or block has any of the tags specified</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.approx_eq</td>
@@ -727,6 +735,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.average_frame_time</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the time in *seconds* of the average frame time over the last 'n' frames.  If an argument is passed, it is assumed to be the number of frames in the past that you wish to query.  `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one.  `query.average_frame_time(1)` will return the average frame time of the previous two frames.  Currently we store the history of the last 30 frames, although note that this may change in the future.  Asking for more frames will result in only sampling the number of frames stored.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.block_property</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the value of the associated Blocks Block State</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.blocking</td>
@@ -773,6 +785,14 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">returns value between 0.0 and 1.0 with 0.0 meaning cape is fully down and 1.0 is cape is fully up</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.cardinal_block_face_placed_on</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the block face that was placed on by the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.cardinal_player_facing</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.combine_entities</td>
 <td style="border-style:solid; border-width:3; padding:7px">Combines any valid entity references from all arguments into a single array.  Note that order is not preserved, and duplicates and invalid values are removed.</br></td>
 </tr>
@@ -811,6 +831,14 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.equipment_count</td>
 <td style="border-style:solid; border-width:3; padding:7px">returns the equipment count for an actor</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.equipped_item_all_tags</td>
+<td style="border-style:solid; border-width:3; padding:7px">takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 1 if all of the tags are on that equipped item, 0 otherwise</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.equipped_item_any_tag</td>
+<td style="border-style:solid; border-width:3; padding:7px">takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 0 if none of the tags are on that equipped item or 1 if at least 1 tag exists</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.eye_target_x_rotation</td>
@@ -859,6 +887,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.has_biome_tag</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns whether or not a Block Placement Target has a specific biome tag</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.has_block_property</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the associated block has the given block property or 0.0 if not</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.has_cape</td>
@@ -1293,6 +1325,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">Returns the entity's mark variant</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.max_durability</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the max durability an item can take</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.max_health</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the maximum health of the entity, or 0.0 if it doesn't make sense to call on this entity.</br></td>
 </tr>
@@ -1314,7 +1350,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.modified_distance_moved</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns the total distance the entity has moved horizontally in metres (since the entity was last loaded, not necessarily since it was originally created) modified along the way by status flags such as is_baby or on_fire</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the total distance the entity has moved horizontally in meters (since the entity was last loaded, not necessarily since it was originally created) modified along the way by status flags such as is_baby or on_fire</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.modified_move_speed</td>
@@ -1367,6 +1403,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.previous_squish_value</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.remaining_durability</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the how much durability an item has remaining</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.roll_counter</td>
@@ -1514,6 +1554,14 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.bone_orientation_matrix</td>
+<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) Takes the name of the bone as an argument.  Returns the bone orientation (as a matrix) of the desired bone provided it exists in the queryable geometry of the mob, else this returns 0.0 (as a float value) and throws a content error.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.bone_orientation_trs</td>
+<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) TRS stands for Translate/Rotate/Scale.  Takes the name of the bone as an argument.  Returns the bone orientation matrix decomposed into the component translation/rotation/scale parts of the desired bone provided it exists in the queryable geometry of the mob, else this returns 0.0 (as a float value) and throws a content error.  The returned value is returned as a variable of type 'struct' with members '.t', '.r', and '.s', each with members '.x', '.y', and '.z', and can be accessed as per the following example: v.my_variable = q.bone_orientation_trs('rightarm'); return v.my_variable.r.x;</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.client_input_type</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) Returns either 'mouse', 'touch', 'gamepad', or 'motion_controller' depending on the type of input used by the current client.</br></td>
 </tr>
@@ -1548,6 +1596,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.relative_block_has_any_tag</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.scoreboard</td>
+<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) Takes one argument - the name of the scoreboard entry for this entity.  Returns the specified scoreboard value for this entity.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.self</td>

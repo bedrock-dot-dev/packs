@@ -1,4 +1,4 @@
-<h1>BIOMES DOCUMENTATION </br>Version: 1.16.100.55</h1>
+<h1>BIOMES DOCUMENTATION </br>Version: 1.16.100.56</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -667,12 +667,12 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
       object "minecraft:ignore_automatic_features" : opt // No features will be automatically attached to this Biome, only features specified in the minecraft:forced_features component will appear.
       object "minecraft:surface_parameters"[0,6] : opt // Control the blocks used for the default Minecraft Overworld terrain generation.
       {
-          block_reference "top_material" // Controls the block type used for the surface of this biome.
-          block_reference "mid_material" // Controls the block type used in a layer below the surface of this biome.
-          block_reference "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-          block_reference "foundation_material" // Controls the block type used deep underground in this biome.
+           "top_material" // Controls the block type used for the surface of this biome.
+           "mid_material" // Controls the block type used in a layer below the surface of this biome.
+           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
+           "foundation_material" // Controls the block type used deep underground in this biome.
+           "sea_material" // Controls the block type used for the bodies of water in this biome.
           int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-          block_reference "sea_material" // Controls the block type used for the bodies of water in this biome.
       }
       object "minecraft:surface_material_adjustments"[0,1] : opt // Specify fine-detail changes to blocks used in terrain generation (based on a noise function)
       {
@@ -682,11 +682,11 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
               {
                   object "materials"
                   {
-                      block_reference "top_material" : opt // Controls the block type used for the surface of this biome when this adjustment is active.
-                      block_reference "mid_material" : opt // Controls the block type used in a layer below the surface of this biome when this adjustment is active.
-                      block_reference "sea_floor_material" : opt // Controls the block type used as a floor for bodies of water in this biome when this adjustment is active.
-                      block_reference "foundation_material" : opt // Controls the block type used deep underground in this biome when this adjustment is active.
-                      block_reference "sea_material" : opt // Controls the block type used in the bodies of water in this biome when this adjustment is active.
+                       "top_material" : opt // Controls the block type used for the surface of this biome when this adjustment is active.
+                       "mid_material" : opt // Controls the block type used in a layer below the surface of this biome when this adjustment is active.
+                       "sea_floor_material" : opt // Controls the block type used as a floor for bodies of water in this biome when this adjustment is active.
+                       "foundation_material" : opt // Controls the block type used deep underground in this biome when this adjustment is active.
+                       "sea_material" : opt // Controls the block type used in the bodies of water in this biome when this adjustment is active.
                   }
                   array "noise_range"[2] : opt // Defines a range of noise values [min, max) for which this adjustment should be applied.
                   {
@@ -704,32 +704,32 @@ Biomes are read from JSON files in the biomes subfolders of behavior packs. Load
       }
       object "minecraft:swamp_surface"[0,6] : opt // Similar to overworld_surface.  Adds swamp surface details.
       {
-          block_reference "top_material" // Controls the block type used for the surface of this biome.
-          block_reference "mid_material" // Controls the block type used in a layer below the surface of this biome.
-          block_reference "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-          block_reference "foundation_material" // Controls the block type used deep underground in this biome.
+           "top_material" // Controls the block type used for the surface of this biome.
+           "mid_material" // Controls the block type used in a layer below the surface of this biome.
+           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
+           "foundation_material" // Controls the block type used deep underground in this biome.
+           "sea_material" // Controls the block type used for the bodies of water in this biome.
           int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-          block_reference "sea_material" // Controls the block type used for the bodies of water in this biome.
       }
       object "minecraft:frozen_ocean_surface"[0,6] : opt // Similar to overworld_surface.  Adds icebergs.
       {
-          block_reference "top_material" // Controls the block type used for the surface of this biome.
-          block_reference "mid_material" // Controls the block type used in a layer below the surface of this biome.
-          block_reference "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-          block_reference "foundation_material" // Controls the block type used deep underground in this biome.
+           "top_material" // Controls the block type used for the surface of this biome.
+           "mid_material" // Controls the block type used in a layer below the surface of this biome.
+           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
+           "foundation_material" // Controls the block type used deep underground in this biome.
+           "sea_material" // Controls the block type used for the bodies of water in this biome.
           int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-          block_reference "sea_material" // Controls the block type used for the bodies of water in this biome.
       }
       object "minecraft:mesa_surface"[0,10] : opt // Similar to overworld_surface.  Adds colored strata and optional pillars.
       {
-          block_reference "top_material" // Controls the block type used for the surface of this biome.
-          block_reference "mid_material" // Controls the block type used in a layer below the surface of this biome.
-          block_reference "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-          block_reference "foundation_material" // Controls the block type used deep underground in this biome.
+           "top_material" // Controls the block type used for the surface of this biome.
+           "mid_material" // Controls the block type used in a layer below the surface of this biome.
+           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
+           "foundation_material" // Controls the block type used deep underground in this biome.
+           "sea_material" // Controls the block type used for the bodies of water in this biome.
           int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-          block_reference "sea_material" // Controls the block type used for the bodies of water in this biome.
-          block_reference "clay_material"
-          block_reference "hard_clay_material"
+           "clay_material"
+           "hard_clay_material"
           bool "bryce_pillars"
           bool "has_forest"
       }

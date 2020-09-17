@@ -1,18 +1,40 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.16.100.55</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.16.100.56</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Blocks">Blocks</a></th> </tr>
 <tr> <td> <a href="#Block Definition Properties"> Block Definition Properties</a> </tr> </td>
 <tr> <td> <a href="#Block Description Properties"> Block Description Properties</a> </tr> </td>
+<tr> <td> <a href="#minecraft:on_fall_on"> minecraft:on_fall_on</a> </tr> </td>
+<tr> <td> <a href="#minecraft:on_interact"> minecraft:on_interact</a> </tr> </td>
+<tr> <td> <a href="#minecraft:on_placed"> minecraft:on_placed</a> </tr> </td>
+<tr> <td> <a href="#minecraft:on_player_placing"> minecraft:on_player_placing</a> </tr> </td>
+<tr> <td> <a href="#minecraft:on_step_off"> minecraft:on_step_off</a> </tr> </td>
+<tr> <td> <a href="#minecraft:on_step_on"> minecraft:on_step_on</a> </tr> </td>
 <tr> <td> <a href="#minecraft:flammable"> minecraft:flammable</a> </tr> </td>
+<tr> <td> <a href="#minecraft:material_instances"> minecraft:material_instances</a> </tr> </td>
+<tr> <td> <a href="#minecraft:ticking"> minecraft:ticking</a> </tr> </td>
+<tr> <td> <a href="#minecraft:random_ticking"> minecraft:random_ticking</a> </tr> </td>
+<tr> <td> <a href="#minecraft:entity_collision"> minecraft:entity_collision</a> </tr> </td>
+<tr> <td> <a href="#minecraft:pick_collision"> minecraft:pick_collision</a> </tr> </td>
 <tr> <td> <a href="#minecraft:block_light_absorption"> minecraft:block_light_absorption</a> </tr> </td>
 <tr> <td> <a href="#minecraft:block_light_emission"> minecraft:block_light_emission</a> </tr> </td>
+<tr> <td> <a href="#minecraft:breakonpush"> minecraft:breakonpush</a> </tr> </td>
 <tr> <td> <a href="#minecraft:destroy_time"> minecraft:destroy_time</a> </tr> </td>
+<tr> <td> <a href="#minecraft:entity_collision"> minecraft:entity_collision</a> </tr> </td>
 <tr> <td> <a href="#minecraft:explosion_resistance"> minecraft:explosion_resistance</a> </tr> </td>
 <tr> <td> <a href="#minecraft:friction"> minecraft:friction</a> </tr> </td>
+<tr> <td> <a href="#minecraft:geometry"> minecraft:geometry</a> </tr> </td>
+<tr> <td> <a href="#minecraft:immovable"> minecraft:immovable</a> </tr> </td>
 <tr> <td> <a href="#minecraft:loot"> minecraft:loot</a> </tr> </td>
 <tr> <td> <a href="#minecraft:map_color"> minecraft:map_color</a> </tr> </td>
+<tr> <td> <a href="#minecraft:onlypistonpush"> minecraft:onlypistonpush</a> </tr> </td>
+<tr> <td> <a href="#minecraft:pick_collision"> minecraft:pick_collision</a> </tr> </td>
+<tr> <td> <a href="#minecraft:placement_filter"> minecraft:placement_filter</a> </tr> </td>
+<tr> <td> <a href="#minecraft:preventsjumping"> minecraft:preventsjumping</a> </tr> </td>
+<tr> <td> <a href="#minecraft:rotation"> minecraft:rotation</a> </tr> </td>
+<tr> <td> <a href="#minecraft:unit_cube"> minecraft:unit_cube</a> </tr> </td>
+<tr> <td> <a href="#minecraft:unwalkable"> minecraft:unwalkable</a> </tr> </td>
 </table>
 <a href="#Index">Back to top</a>
 <h1><p id="Blocks">Blocks</p></h1>
@@ -69,6 +91,174 @@ Example<br / ><textarea readonly="true" cols="66" rows="20">
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h1><p id="minecraft:on_fall_on">minecraft:on_fall_on</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">condition</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The condition of event to be executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">event</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The event executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">min_fall_distance</td>
+<td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The minimum distance in blocks that an actor needs to fall to trigger this event.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">target</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">The target of event executed on the block.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:on_interact">minecraft:on_interact</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">condition</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The condition of event to be executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">event</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The event executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">target</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">The target of event executed on the block.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:on_placed">minecraft:on_placed</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">condition</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The condition of event to be executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">event</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The event executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">target</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">The target of event executed on the block.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:on_player_placing">minecraft:on_player_placing</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">condition</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The condition of event to be executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">event</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The event executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">target</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">The target of event executed on the block.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:on_step_off">minecraft:on_step_off</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">condition</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The condition of event to be executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">event</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The event executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">target</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">The target of event executed on the block.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:on_step_on">minecraft:on_step_on</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">condition</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The condition of event to be executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">event</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The event executed on the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">target</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">self</td>
+<td style="border-style:solid; border-width:3; padding:7px">The target of event executed on the block.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
 <h1><p id="minecraft:flammable">minecraft:flammable</p></h1>
 
 <h2></h2>
@@ -90,6 +280,141 @@ Example<br / ><textarea readonly="true" cols="66" rows="20">
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h1><p id="minecraft:material_instances">minecraft:material_instances</p></h1>
+
+Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance</br><h2></h2>
+<br / ><textarea readonly="true" cols="39" rows="13">
+"minecraft:material_instances" : {
+    "*": {
+      "texture": "log",
+      "render_method" : "opaque"
+    },
+    "ends" : {
+      "texture": "log_top",
+      "render_method" : "opaque"
+    },
+    "up" : "ends",
+    "some_face_material_name" : "ends"
+  }
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:ticking">minecraft:ticking</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">Trigger</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">on_tick</br><h3><p id="condition">condition</p></h3>
+
+The condition of event to be executed on the block.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="event">event</p></h3>
+
+The type of event executed on the block.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="range">range</p></h3>
+
+The Range between which the component will trigger his event.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="target">target</p></h3>
+
+The target of event executed on the block.</br><a href="#Index">Back to top</a><br><br>
+
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">looping</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">Does the event loop</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">range</td>
+<td style="border-style:solid; border-width:3; padding:7px">Array</td>
+<td style="border-style:solid; border-width:3; padding:7px">[10, 10]</td>
+<td style="border-style:solid; border-width:3; padding:7px">The Range between which the component will trigger his event.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:random_ticking">minecraft:random_ticking</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">Trigger</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">on_tick</br><h3><p id="condition">condition</p></h3>
+
+The condition of event to be executed on the block.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="event">event</p></h3>
+
+The type of event executed on the block.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="range">range</p></h3>
+
+The Range between which the component will trigger his event.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="target">target</p></h3>
+
+The target of event executed on the block.</br><a href="#Index">Back to top</a><br><br>
+
+</td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:entity_collision">minecraft:entity_collision</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">origin</td>
+<td style="border-style:solid; border-width:3; padding:7px">Array</td>
+<td style="border-style:solid; border-width:3; padding:7px">[-8.0, 0.0, -8.0]</td>
+<td style="border-style:solid; border-width:3; padding:7px">Minimal position Bounds of the collision box</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">size</td>
+<td style="border-style:solid; border-width:3; padding:7px">Array</td>
+<td style="border-style:solid; border-width:3; padding:7px">[16.0, 16.0, 16.0]</td>
+<td style="border-style:solid; border-width:3; padding:7px">Size of each side of the box of the component</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:pick_collision">minecraft:pick_collision</p></h1>
+
+<h2></h2>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">origin</td>
+<td style="border-style:solid; border-width:3; padding:7px">Array</td>
+<td style="border-style:solid; border-width:3; padding:7px">[-8.0, 0.0, -8.0]</td>
+<td style="border-style:solid; border-width:3; padding:7px">Minimal position Bounds of the collision box</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">size</td>
+<td style="border-style:solid; border-width:3; padding:7px">Array</td>
+<td style="border-style:solid; border-width:3; padding:7px">[16.0, 16.0, 16.0]</td>
+<td style="border-style:solid; border-width:3; padding:7px">Size of each side of the box of the component</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
 <h1><p id="minecraft:block_light_absorption">minecraft:block_light_absorption</p></h1>
 
 The amount of light this block will absorb.</br><a href="#Index">Back to top</a><br><br>
@@ -98,9 +423,17 @@ The amount of light this block will absorb.</br><a href="#Index">Back to top</a>
 
 The amount of light this block will emit in a range [0.0, 1.0].</br><a href="#Index">Back to top</a><br><br>
 
+<h1><p id="minecraft:breakonpush">minecraft:breakonpush</p></h1>
+
+When pushed by a piston the block breaks</br><a href="#Index">Back to top</a><br><br>
+
 <h1><p id="minecraft:destroy_time">minecraft:destroy_time</p></h1>
 
 Sets the destroy time property for the block. Greater numbers result in greater mining times.</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:entity_collision">minecraft:entity_collision</p></h1>
+
+Can only be set to false, it disables the collision of the block with entities</br><a href="#Index">Back to top</a><br><br>
 
 <h1><p id="minecraft:explosion_resistance">minecraft:explosion_resistance</p></h1>
 
@@ -110,6 +443,14 @@ Sets the explosion resistance for this block.</br><a href="#Index">Back to top</
 
 Property describing the friction for this block. Friction effects an entities movements when it walks on the block.</br><a href="#Index">Back to top</a><br><br>
 
+<h1><p id="minecraft:geometry">minecraft:geometry</p></h1>
+
+The geometry definition name to use.</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:immovable">minecraft:immovable</p></h1>
+
+An Immovable block cannot be pushed by pistons</br><a href="#Index">Back to top</a><br><br>
+
 <h1><p id="minecraft:loot">minecraft:loot</p></h1>
 
 The path of the loot table that this component will use when the block is destroyed.</br><a href="#Index">Back to top</a><br><br>
@@ -117,6 +458,50 @@ The path of the loot table that this component will use when the block is destro
 <h1><p id="minecraft:map_color">minecraft:map_color</p></h1>
 
 A color represented as a hex value. This will be the color rendered to a map.</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:onlypistonpush">minecraft:onlypistonpush</p></h1>
+
+Blocks with those components won't stick to stickyPistons</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:pick_collision">minecraft:pick_collision</p></h1>
+
+Can only be set to false, it disables the collision of the block with entities</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:placement_filter">minecraft:placement_filter</p></h1>
+
+Sets rules for under what conditions the block can be placed/survive</br><h2></h2>
+
+<h2><p id="conditions">conditions</p></h2>
+
+List of conditions where the block can be placed/survive</br><h3></h3>
+
+<h3><p id="allowed_faces">allowed_faces</p></h3>
+
+List of any of the following strings: up, down, north, south, east, west, side, all</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="block_filter">block_filter</p></h3>
+
+List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction</br><a href="#Index">Back to top</a><br><br>
+
+<br><br>
+
+<br><br>
+
+<h1><p id="minecraft:preventsjumping">minecraft:preventsjumping</p></h1>
+
+this component makes it so actors can't jump when walking on this block</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:rotation">minecraft:rotation</p></h1>
+
+This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:unit_cube">minecraft:unit_cube</p></h1>
+
+Specifies that a unit cube is to be used with tessellation.</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:unwalkable">minecraft:unwalkable</p></h1>
+
+this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true</br><a href="#Index">Back to top</a><br><br>
 
 <br><br>
 

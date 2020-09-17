@@ -2999,7 +2999,7 @@
          "raid.horn" : {
             "pitch" : 1.0,
             "sound" : "raid.horn",
-            "volume" : 60.0
+            "volume" : 6.0
          },
          "random.anvil_use" : {
             "pitch" : 1.0,

@@ -4341,19 +4341,19 @@
         }
       },
       {
-        "automation_functional_blacklist_test_tags_text_box@settings_common.option_text_edit": {
-          "$option_label": "Functional Blacklist Test Tags",
+        "automation_broken_functional_test_tags_text_box@settings_common.option_text_edit": {
+          "$option_label": "Functional Broken Test Tags",
           "$max_text_edit_length": 2000,
-          "$text_box_name": "automation_functional_blacklist_test_tags",
-          "$option_binding_name": "#automation_functional_blacklist_test_tags"
+          "$text_box_name": "automation_broken_functional_test_tags",
+          "$option_binding_name": "#automation_broken_functional_test_tags"
         }
       },
       {
-        "automation_unit_blacklist_test_tags_text_box@settings_common.option_text_edit": {
-          "$option_label": "Unit Blacklist Test Tags",
+        "automation_broken_unit_test_tags_text_box@settings_common.option_text_edit": {
+          "$option_label": "Unit Broken Test Tags",
           "$max_text_edit_length": 2000,
-          "$text_box_name": "automation_unit_blacklist_test_tags",
-          "$option_binding_name": "#automation_unit_blacklist_test_tags"
+          "$text_box_name": "automation_broken_unit_test_tags",
+          "$option_binding_name": "#automation_broken_unit_test_tags"
         }
       },
       {
@@ -4990,17 +4990,6 @@
           "$dropdown_name": "dev_realms_environment_dropdown",
           "$options_dropdown_toggle_label_binding": "#dev_realms_environment_dropdown_toggle_label",
           "$option_enabled_binding_name": "#dev_realms_environment_dropdown_enabled",
-          "$dropdown_scroll_content_size": [ "100%", "200%" ]
-        }
-      },
-      {
-        "identity_env_dropdown@settings_common.option_dropdown": {
-          "$option_label": "options.dev_identity_environment",
-          "$dropdown_content": "general_section.dev_identity_environment_dropdown_content",
-          "$dropdown_area": "content_area",
-          "$dropdown_name": "dev_identity_env_dropdown",
-          "$options_dropdown_toggle_label_binding": "#dev_identity_env_dropdown_toggle_label",
-          "$option_enabled_binding_name": "#dev_identity_env_dropdown_dropdown_enabled",
           "$dropdown_scroll_content_size": [ "100%", "200%" ]
         }
       },
