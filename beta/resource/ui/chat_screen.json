@@ -121,6 +121,10 @@
       {
         "binding_name": "#keyboard_button_focus_override_down",
         "binding_name_override": "#focus_change_down"
+      },
+      {
+        "binding_name": "#keyboard_button_visible",
+        "binding_name_override": "#visible"
       }
     ]
   },

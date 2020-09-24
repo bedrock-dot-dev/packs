@@ -936,8 +936,8 @@
           ],
           "controls": [
             {
-              "action_button_0@settings_common.action_button": {
-                "ignored": "($is_windows_10_mobile)",
+              "change_gamertag_button@settings_common.action_button": {
+                "ignored": "($is_windows_10_mobile or $is_ios or $is_android)",
                 "size": [ "50% - 1px", 30 ],
                 "anchor_from": "top_left",
                 "anchor_to": "top_left",
@@ -946,12 +946,39 @@
               }
             },
             {
-              "action_button_1@settings_common.action_button": {
+              "change_gamertag_button_mobile@settings_common.link_button": {
+                "ignored": "(not ($is_windows_10_mobile or $is_ios or $is_android))",
+                "size": [ "50% - 1px", 30 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+
+                "$button_text": "options.changeGamertag",
+                "property_bag": {
+                  "#hyperlink": "https://social.xbox.com/changegamertag"
+                }
+              }
+            },
+            {
+              "manage_account_button@settings_common.action_button": {
+                "ignored": "($is_ios or $is_android)",
                 "size": "$manage_button_size",
                 "anchor_from": "top_right",
                 "anchor_to": "top_right",
                 "$pressed_button_name": "manage_account_button",
                 "$button_text": "options.manageAccount"
+              }
+            },
+            {
+              "manage_account_button_mobile@settings_common.link_button": {
+                "ignored": "(not ($is_ios or $is_android))",
+                "size": "$manage_button_size",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+
+                "$button_text": "options.manageAccount",
+                "property_bag": {
+                  "#hyperlink": "https://account.xbox.com/Settings"
+                }
               }
             },
             {
@@ -1438,6 +1465,15 @@
         }
       },
       {
+        "camera_shake_toggle@settings_common.option_toggle": {
+          "ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
+          "$option_label": "options.screenShake",
+          "$option_binding_name": "#camera_shake",
+          "$option_enabled_binding_name": "#camera_shake_enabled",
+          "$toggle_name": "camera_shake"
+        }
+      },
+      {
         "fancy_leaves_toggle@settings_common.option_toggle": {
           "ignored": "($pocket_edition or $education_ios or $is_holographic)",
           "$option_label": "options.transparentleaves",
@@ -1750,7 +1786,7 @@
       },
       {
         "vr_mirror_texture@settings_common.option_toggle": {
-          "ignored": "($gear_vr or not $is_holographic)",
+          "ignored": "($gear_vr or $psvr or not $is_holographic)",
           "$option_label": "options.vrMirrorTexture",
           "$option_binding_name": "#vr_mirror_texture",
           "$option_enabled_binding_name": "#vr_mirror_texture_enabled",
@@ -3055,6 +3091,15 @@
               "binding_name": "$option_label"
             }
           ]
+        }
+      },
+      {
+        "camera_shake_toggle@settings_common.option_toggle": {
+          "ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
+          "$option_label": "options.screenShake",
+          "$option_binding_name": "#camera_shake",
+          "$option_enabled_binding_name": "#camera_shake_enabled",
+          "$toggle_name": "camera_shake"
         }
       },
       {

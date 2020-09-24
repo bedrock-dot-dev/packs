@@ -4588,7 +4588,8 @@
   "common_panel": {
     "type": "panel",
     "$dialog_background|default": "common.dialog_background_opaque",
-    "$show_close_button|default": true,
+    "$enable_close_button|default": true,
+    "$close_button_visible_binding_name|default": "#close_button_visible",
     "$close_button_offset|default": [ 0, 0 ],
     "$close_button_layer|default": 2,
     "$use_compact_close_button|default": false,
@@ -4622,7 +4623,7 @@
       {
         "close_button_holder": {
           "type": "panel",
-          "ignored": "(not $show_close_button)",
+          "ignored": "(not $enable_close_button)",
           "controls": [
             {
               "close@common.close_button": {
@@ -4641,7 +4642,7 @@
           ],
           "bindings": [
             {
-              "binding_name": "#close_button_visible",
+              "binding_name": "$close_button_visible_binding_name",
               "binding_name_override": "#visible"
             }
           ]

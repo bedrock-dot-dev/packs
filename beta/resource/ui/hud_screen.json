@@ -1132,10 +1132,13 @@
     "size": [ "100%c + 12px", "100%c + 5px" ],
     "texture": "textures/ui/hud_tip_text_background",
     "alpha": "@hud.anim_item_name_background_alpha",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
     "controls": [
       {
         "item_text_label": {
           "type": "label",
+          "max_size": [ 200, "default" ],
           "anchor_from": "center",
           "anchor_to": "center",
           "text_alignment": "center",
@@ -1181,26 +1184,26 @@
   },
 
   "creative_item_name_text@hud.item_name_text": {
-    "offset": [ 0, -12 ]
+    "offset": [ 0, -20 ]
   },
 
   "survival_item_name_text@hud.item_name_text": {
-    "$offset|default": [ 0, -32 ],
+    "$offset|default": [ 0, -40 ],
     "variables": [
       {
         "requires": "$pocket_screen",
-        "$offset": [ 0, -10 ]
+        "$offset": [ 0, -18 ]
       }
     ],
     "offset": "$offset"
   },
 
   "creative_above_interact_button_item_text@hud.item_name_text": {
-    "offset": [ 0, -22 ]
+    "offset": [ 0, -30 ]
   },
 
   "survival_above_interact_button_item_text@hud.item_name_text": {
-    "offset": [ 0, -42 ]
+    "offset": [ 0, -50 ]
   },
 
   "creative_jukebox_popup_text@hud.jukebox_text": {

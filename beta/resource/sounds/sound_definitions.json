@@ -5776,6 +5776,17 @@
             "sounds/mob/phantom/death3"
          ]
       },
+      "mob.phantom.flap": {
+         "category": "hostile",
+         "sounds": [
+           "sounds/mob/phantom/flap1",
+           "sounds/mob/phantom/flap2",
+           "sounds/mob/phantom/flap3",
+           "sounds/mob/phantom/flap4",
+           "sounds/mob/phantom/flap5",
+           "sounds/mob/phantom/flap6"
+         ]
+       },
       "mob.phantom.hurt" : {
          "__use_legacy_max_distance" : "true",
          "category" : "hostile",
@@ -8033,7 +8044,8 @@
       },
       "raid.horn" : {
          "category" : "neutral",
-         "max_distance" : 96.0,
+         // Double the valid raid radius of 96
+         "max_distance" : 192.0,
          "sounds" : [
             {
                "load_on_low_memory" : true,

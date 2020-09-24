@@ -1,4 +1,4 @@
-<h1>ITEM DOCUMENTATION </br>Version: 1.16.100.56</h1>
+<h1>ITEM DOCUMENTATION </br>Version: 1.16.100.57</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -41,36 +41,6 @@ block:  Set the placement block name for the planter item.</br><a href="#Index">
 <h3><p id="use_on">use_on</p></h3>
 
 List of block descriptors that contain blocks that this item can be used on. If left empty, all blocks will be allowed.</br><a href="#Index">Back to top</a><br><br>
-
-</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:camera</td>
-<td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">The camera is a special item that can be used to take a picture or placed in the world as a camera tripod with a timer that takes your picture.</br><h3><p id="black_bars_duration">black_bars_duration</p></h3>
-
-How long in ticks, does it take for black bars to slide into view when holding down the use button. Default is 5.0.</br><a href="#Index">Back to top</a><br><br>
-
-<h3><p id="black_bars_screen_ratio">black_bars_screen_ratio</p></h3>
-
-How much screen space should the black bars take up in a 0-0.5 ratio. Default is 0.08.</br><a href="#Index">Back to top</a><br><br>
-
-<h3><p id="picture_duration">picture_duration</p></h3>
-
-How long in ticks to show the picture. Default 20.0.</br><a href="#Index">Back to top</a><br><br>
-
-<h3><p id="shutter_duration">shutter_duration</p></h3>
-
-How long in ticks to show the shutter. Default 3.33.</br><a href="#Index">Back to top</a><br><br>
-
-<h3><p id="shutter_screen_ratio">shutter_screen_ratio</p></h3>
-
-How much screen space should the shutter take up in a 0-0.5 ratio. Default is 0.5.</br><a href="#Index">Back to top</a><br><br>
-
-<h3><p id="slide_away_duration">slide_away_duration</p></h3>
-
-How much time in ticks it takes for the picture to slide away. Default is 5.0.</br><a href="#Index">Back to top</a><br><br>
 
 </td>
 </tr>
@@ -205,6 +175,16 @@ Amount of knockback resistance provided with the total maximum protection being 
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">The on_use item component allows you to receive an event when the item is used.</br><h3><p id="on_use">on_use</p></h3>
+
+Event trigger for when the item is used.</br><a href="#Index">Back to top</a><br><br>
+
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:on_use_on</td>
+<td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The on_use_on item component allows you to receive an event when the item is used on a block in the world.</br><h3><p id="on_use_on">on_use_on</p></h3>
 
 Event trigger for when the item is used.</br><a href="#Index">Back to top</a><br><br>
 

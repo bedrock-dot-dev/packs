@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.100.56</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.100.57</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -9724,21 +9724,6 @@ This filter group will pass only when the moon_intensity is greater than 0.5 AND
 </table>
 <a href="#Index">Back to top</a><br><br>
 
-<h2><p id="minecraft:behavior.move_towards_restriction">minecraft:behavior.move_towards_restriction</p></h2>
-
-<h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
 <h2><p id="minecraft:behavior.move_towards_target">minecraft:behavior.move_towards_target</p></h2>
 
 <h3></h3>
@@ -11008,6 +10993,12 @@ This filter group will pass only when the moon_intensity is greater than 0.5 AND
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">Total delay of the steps</td>
 <td style="border-style:solid; border-width:2; padding:8px">Time in seconds for the entire event sending process</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">look_at_target</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, the mob will face the entity it sends an event to</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">sequence</td>
@@ -13212,7 +13203,18 @@ Defines the interactions with this entity for healing it.</br><h3></h3>
 
 <h2><p id="minecraft:home">minecraft:home</p></h2>
 
-Saves a home pos for when the the entity is spawned.</br><a href="#Index">Back to top</a><br><br>
+Saves a home pos for when the the entity is spawned.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">restriction_radius</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">-1</td>
+<td style="border-style:solid; border-width:2; padding:8px">The radius that the entity will be restricted to in relation to its home</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
 
 <h2><p id="minecraft:hurt_on_condition">minecraft:hurt_on_condition</p></h2>
 
@@ -15977,10 +15979,6 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_to_water</td>
 <td style="border-style:solid; border-width:2; padding:8px">1886139445</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_towards_restriction</td>
-<td style="border-style:solid; border-width:2; padding:8px">1288087401</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_towards_target</td>

@@ -258,15 +258,15 @@
     "$focus_id": "offer_coin_purchase_button"
   },
 
-  "achievement_text_button@common_buttons.light_text_form_fitting_button": {
+  "achievement_text_button@common_buttons.light_text_button": {
     "$font_type": "MinecraftTen",
     "$focus_id": "offer_coin_purchase_button",
     "$persona_focus_precedence": 3,
-    
+
     "variables": [
       {
         "requires": "(not $is_low_memory_device)",
-        "$button_offset": [ 3, 1 ],
+        "$button_offset": [ 0, -3 ],
         "$button_pressed_offset": [ 3, 0 ]
       }
     ]
@@ -289,7 +289,7 @@
     "controls": [
       {
         "coin_purchase_panel@persona.purchase_button_panel": {
-          "size": [ "50% - 1px", "100%" ],
+          "size": [ "50% - 2px", "100%" ],
           "$purchase_panel_visible_binding": "#is_purchasable_item",
           "$purchase_button_control": "persona.offer_coin_purchase_button"
         }
@@ -297,7 +297,7 @@
       {
         "view_achievement_button@persona.view_achievement": {
           "ignored": "(not $supports_xbl_achievements)",
-          "size": [ "50% - 1px", "100%" ],
+          "size": [ "68% - 1px", "100%" ],
           "$focus_override_down": "FOCUS_OVERRIDE_STOP",
           "bindings": [
             {
@@ -315,7 +315,7 @@
       },
       {
         "collect_achievement_button@persona.collect_achievement": {
-          "size": [ "50% - 1px", "100%" ],
+          "size": [ "32% - 1px", "100%" ],
           "$focus_override_down": "FOCUS_OVERRIDE_STOP",
           "bindings": [
             {
@@ -715,7 +715,7 @@
     "anchor_from": "top_left",
     "controls": [
       {
-        "discription_panel": {
+        "description_panel": {
           "type": "stack_panel",
           "size": [ "100%", "fill" ],
           "orientation": "vertical",
@@ -744,6 +744,12 @@
                       "$label_text_bindings": [
                         {
                           "binding_name": "$single_line_label_text"
+                        }
+                      ],
+                      "bindings": [
+                        {
+                          "binding_name": "(not #emotes_active)",
+                          "binding_name_override": "#enabled"
                         }
                       ]
                     }
@@ -3535,27 +3541,6 @@
     "$dressing_room_tab_image": "textures/ui/dressing_room_capes"
   },
 
-  "persona_tabs_no_cape": {
-    "type": "stack_panel",
-    "orientation": "horizontal",
-    "size": [ "100%", "100%" ],
-    "controls": [
-      { "customization_tab@persona.customization_tab": {} },
-      { "skins_tab@persona.skins_tab": {} },
-      {
-        "emotes_tab@persona.emotes_tab": {
-          "$is_right_most_tab": true
-        }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_name": "(not #has_capes)",
-        "binding_name_override": "#visible"
-      }
-    ]
-  },
-
   "persona_tabs_with_cape": {
     "type": "stack_panel",
     "orientation": "horizontal",
@@ -3568,12 +3553,6 @@
         "cape_tab@persona.capes_tab": {
           "$is_right_most_tab": true
         }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_name": "#has_capes",
-        "binding_name_override": "#visible"
       }
     ]
   },
@@ -3610,7 +3589,6 @@
     "size": [ "100%", 36 ],
     "controls": [
       { "persona_tabs_cape@persona.persona_tabs_with_cape": {} },
-      { "persona_tabs@persona.persona_tabs_no_cape": {} },
       { "persona_tabs_gamepad_helper@persona.persona_tabs_gamepad_helper": {} }
     ],
     "bindings": [
@@ -5612,7 +5590,7 @@
       {
         "play_again@common_buttons.light_text_button": {
           "$button_offset": [ 0, -3 ],
-          "size": [ "50% - 6px", "100%" ],
+          "size": [ "30%", "100%" ],
           "anchor_from": "bottom_right",
           "anchor_to": "bottom_right",
           "$pressed_button_name": "button.play_emote_again",

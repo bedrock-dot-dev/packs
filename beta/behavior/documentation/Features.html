@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.16.100.56</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.16.100.57</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -201,7 +201,7 @@ Example use: Attaching apples to a tree canopy<br / ><textarea readonly="true" c
 
 <h1><p id="minecraft:single_block_feature">minecraft:single_block_feature</p></h1>
 
-'minecraft:single_block_feature' places a single block in the world. The 'may_place_on' and 'may_replace' fields are whitelists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The block's internal survivability and placement rules can optionally be enforced with the 'enforce_survivability_rules' and 'enforce_placement_rules' fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.</br>Succeeds if: The block is successfully placed in the world.</br>Fails if: The block fails to be placed.</br><h2></h2>
+'minecraft:single_block_feature' places a single block in the world. The 'may_place_on' and 'may_replace' fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The block's internal survivability and placement rules can optionally be enforced with the 'enforce_survivability_rules' and 'enforce_placement_rules' fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.</br>Succeeds if: The block is successfully placed in the world.</br>Fails if: The block fails to be placed.</br><h2></h2>
 Example use: Placing a single pumpkin block.<br / ><textarea readonly="true" cols="53" rows="18">
 {
   "format_version": 1.13.0,
