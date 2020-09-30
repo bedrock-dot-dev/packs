@@ -6806,7 +6806,7 @@ store.realmsPlus.landing.info2.line4=- Free 1 month trial
 
 store.realmsPlus.faq.header=FREQUENTLY ASKED QUESTIONS
 store.realmsPlus.faq.question1=What is Realms Plus?
-store.realmsPlus.faq.answer1=For one low monthly price, enjoy unlimited access to over fifty great Minecraft worlds, texture packs, skin packs, and mash-ups, a personal Realms server supporting up to 10 simultaneous players, and cloud storage for your worlds.
+store.realmsPlus.faq.answer1=For one low monthly price, enjoy unlimited access to over one hundred great Minecraft worlds, texture packs, skin packs, and mash-ups, a personal Realms server supporting up to 10 simultaneous players, and cloud storage for your worlds.
 store.realmsPlus.faq.question2=Can I use my Realms Plus packs offline?
 store.realmsPlus.faq.answer2=You don’t need to be online to enjoy Realms Plus. Packs included in the subscription can either be played online on your personal Realm or played on a local device. You just need to come online once every 30 days to validate that your subscription is active.
 store.realmsPlus.faq.question3=Do my friends need to have Realms Plus to play on my Realm?
@@ -6818,7 +6818,7 @@ store.realmsPlus.faq.answer5=%s per month. That’s the same price as before Rea
 store.realmsPlus.faq.question6=How often are new packs added to Realms Plus?
 store.realmsPlus.faq.answer6=New packs are added to Realms Plus once every month.
 store.realmsPlus.faq.question7=How long do I have access to Packs within Realms Plus?
-store.realmsPlus.faq.answer7=Realms Plus members enjoy unlimited access to over 50 great Minecraft worlds, texture packs, skin packs, and mash-ups, until either the subscription expires, or a pack leaves the catalog.
+store.realmsPlus.faq.answer7=Realms Plus members enjoy unlimited access to over 100 great Minecraft worlds, texture packs, skin packs, and mash-ups, until either the subscription expires, or a pack leaves the catalog.
 store.realmsPlus.faq.question8=Where do these packs come from?
 store.realmsPlus.faq.answer8=The different packs in Realms Plus are created by a combination of our great community of creators like yourself, and us here at Mojang.
 store.realmsPlus.faq.question9=Which editions of Minecraft support Realms Plus?
@@ -8602,6 +8602,7 @@ tips.game.58=Shear a Beehive or nest to get Honeycomb, use a Bottle to get honey
 tips.game.59=Place a Campfire under a Beehive or nest to harvest honey peacefully. Your bees will thank you.
 tips.game.60=Respawning in the Nether requires a charged Respawn Anchor.
 tips.game.61=You can charge a Respawn Anchor with Glowstone.
+tips.game.62=You can breed Hoglins with Crimson Fungus, but it is dangerous!
 
 splitscreen.joinPrompt=Join as Player %s
 splitscreen.unavailable.toastHeader=Split Screen Is Unavailable

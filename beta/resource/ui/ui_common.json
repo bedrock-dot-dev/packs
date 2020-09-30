@@ -5796,6 +5796,10 @@
                 "$tts_override_control_value|default": "$tooltip_text_binding_name",
                 "text": "$tooltip_text_binding_name",
                 "tts_override_control_value": "$tts_override_control_value",
+                "$tooltip_text_font_type|default": "default",
+                "font_type": "$tooltip_text_font_type",
+                "$tooltip_text_font_scale|default": 1,
+                "font_scale_factor": "$tooltip_text_font_scale",
                 "$tooltip_text_color|default": "$f_color_format",
                 "color": "$tooltip_text_color",
                 "bindings": [

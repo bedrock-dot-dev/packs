@@ -143,6 +143,7 @@
     "ui/storage_management.json",
     "ui/storage_management_popup.json",
     "ui/store_common.json",
+    "ui/store_gift_promotion_screen.json",
     "ui/store_data_driven_screen.json",
     "ui/store_filter_menu_screen.json",
     "ui/store_inventory_screen.json",
