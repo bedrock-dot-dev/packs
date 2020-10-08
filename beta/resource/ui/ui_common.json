@@ -4588,7 +4588,7 @@
   "common_panel": {
     "type": "panel",
     "$dialog_background|default": "common.dialog_background_opaque",
-    "$enable_close_button|default": true,
+    "$show_close_button|default": true,
     "$close_button_visible_binding_name|default": "#close_button_visible",
     "$close_button_offset|default": [ 0, 0 ],
     "$close_button_layer|default": 2,
@@ -4623,7 +4623,7 @@
       {
         "close_button_holder": {
           "type": "panel",
-          "ignored": "(not $enable_close_button)",
+          "ignored": "(not $show_close_button)",
           "controls": [
             {
               "close@common.close_button": {

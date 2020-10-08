@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.16.100.58</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.16.100.59</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -47,6 +47,12 @@ This is documentation for a beta release of Minecraft. New features, components,
 <td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
 <td style="border-style:solid; border-width:3; padding:7px">0.0</td>
 <td style="border-style:solid; border-width:3; padding:7px">Sets the destroy time property for the block. Greater numbers result in greater mining times.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:display_name</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">Specifies the display name id for the block.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:entity_collision</td>
@@ -645,6 +651,21 @@ Event responses for block trigger components.</br><h2></h2>
 <td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
 <td style="border-style:solid; border-width:2; padding:8px">self</td>
 <td style="border-style:solid; border-width:2; padding:8px">The target context to execute against.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">transform_item</td>
+<td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">Transforms item into another item.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">transform</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Name of the item it should transform into</br></td>
 </tr>
 </table>
 </td>

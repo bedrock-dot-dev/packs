@@ -2122,6 +2122,62 @@
     ]
   },
 
+  "consumable_not_extendable": {
+    "type": "panel",
+    "size": [ "100%", "100%cm" ],
+    "$realm_collection_name|default": "",
+    "controls": [
+      {
+        "panel_content": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", "100%cm" ],
+          "controls": [
+            {
+              "padded_icon_0@common.empty_panel": {
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "limited_status_image": {
+                "type": "image",
+                "size": [ 15, 19 ],
+                "bilinear": true,
+                "texture": "textures/ui/infobulb",
+                "layer": 1
+              }
+            },
+            {
+              "padded_icon_1@common.empty_panel": {
+                "size": [ 3, 0 ]
+              }
+            },
+            {
+              "label_panel": {
+                "type": "panel",
+                "size": [ "fill", "100%c" ],
+                "controls": [
+                  {
+                    "name_label2": {
+                      "type": "label",
+                      "color": "$main_header_text_color",
+                      "font_type": "smooth",
+                      "size": [ "100%", "default" ],
+                      "$warning_text|default": "options.viewSubscriptions.consumableToSubscriptionTransitionInfo",
+                      "$text_bindings|default": [],
+                      "text": "$warning_text",
+                      "bindings": "$text_bindings"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "possible_store_mismatch": {
     "type": "panel",
     "size": [ "100%", "100%cm" ],
@@ -2368,6 +2424,52 @@
         }
       },
       {
+        "lower_panel": {
+          "type": "panel",
+          "size": [ "100%", "100%cm" ],
+          "controls": [
+            {
+              "black_background@general_section.background": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "size": [ "100%", "100%sm" ]
+              }
+            },
+            {
+              "consumable_not_extendable@general_section.consumable_not_extendable": {
+                "layer": 3,
+                "$tooltip_button_collection_name": "$realm_collection_name",
+                "$warning_text": "options.viewSubscriptions.consumableToSubscriptionTransitionInfo"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#consumable_not_extendable_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$realm_collection_name",
+              "binding_condition": "once"
+            }
+          ]
+        }
+      },
+      {
+        "pad_3": {
+          "type": "panel",
+          "size": [ "100%", 6 ],
+          "bindings": [
+            {
+              "binding_name": "#consumable_not_extendable_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$realm_collection_name",
+              "binding_condition": "once"
+            }
+          ]
+        }
+      },
+      {
         "bottom_panel": {
           "type": "panel",
           "size": [ "100%", "100%cm" ],
@@ -2406,7 +2508,7 @@
         }
       },
       {
-        "pad_3": {
+        "pad_4": {
           "type": "panel",
           "size": [ "100%", 6 ],
           "bindings": [

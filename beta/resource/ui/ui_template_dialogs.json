@@ -207,7 +207,6 @@
     "$text_name|default": "",
     "$panel_indent_size|default": [ "100% - 16px", "100% - 31px" ],
     "$custom_background|default": "dialog_background_hollow_3",
-    "$enable_close_button|default": true,
     "controls": [
       {
         "common_panel@common.common_panel": { "$dialog_background": "$custom_background" }

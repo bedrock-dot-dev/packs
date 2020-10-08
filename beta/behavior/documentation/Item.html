@@ -1,4 +1,4 @@
-<h1>ITEM DOCUMENTATION </br>Version: 1.16.100.58</h1>
+<h1>ITEM DOCUMENTATION </br>Version: 1.16.100.59</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -66,6 +66,10 @@ The duration of time this item will spend cooling down before becoming usable ag
 
 Destroy speed per block.</br><a href="#Index">Back to top</a><br><br>
 
+<h3><p id="on_dig">on_dig</p></h3>
+
+Trigger for when you dig a block that isn't listed in destroy_speeds</br><a href="#Index">Back to top</a><br><br>
+
 <h3><p id="use_efficiency">use_efficiency</p></h3>
 
 Use efficiency? Default is set to false.</br><a href="#Index">Back to top</a><br><br>
@@ -90,9 +94,9 @@ Set the display name for an item.</br><a href="#Index">Back to top</a><br><br>
 
 Damage chance.</br><a href="#Index">Back to top</a><br><br>
 
-<h3><p id="max_damage">max_damage</p></h3>
+<h3><p id="max_durability">max_durability</p></h3>
 
-Max damage is the amount of damage that this item can take before breaking.</br><a href="#Index">Back to top</a><br><br>
+Max durability is the amount of damage that this item can take before breaking.</br><a href="#Index">Back to top</a><br><br>
 
 </td>
 </tr>
@@ -161,6 +165,24 @@ How long in seconds will this fuel cook items for.</br><a href="#Index">Back to 
 </td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:icon</td>
+<td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">The icon item componenent determines the icon to represent the item in the UI and elsewhere.</br><h3><p id="frame">frame</p></h3>
+
+An index or expression for which frame of the icon to display.  Default resolves to 0.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="legacy_id">legacy_id</p></h3>
+
+Legacy texture id for older item icons</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="texture">texture</p></h3>
+
+The key from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file Example: blaze_powder</br><a href="#Index">Back to top</a><br><br>
+
+</td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:knockback_resistance</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
@@ -208,7 +230,11 @@ The entity to be fired as a projectile.</br><a href="#Index">Back to top</a><br>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:repairable</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Repairable item component: how much damage can this item repair, what items can repair it.</br><h3><p id="repair_items">repair_items</p></h3>
+<td style="border-style:solid; border-width:3; padding:7px">Repairable item component: how much damage can this item repair, what items can repair it.</br><h3><p id="on_repaired">on_repaired</p></h3>
+
+Event that is called when this item has been repaired.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="repair_items">repair_items</p></h3>
 
 Repair item entries.</br><a href="#Index">Back to top</a><br><br>
 
@@ -278,9 +304,17 @@ Whether or not the power of the throw increases with duration charged. Default i
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:weapon</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Weapon Item Component. Added to every weapon item such as axe, sword, trident, bow, crossbow.</br><h3><p id="on_hurt">on_hurt</p></h3>
+<td style="border-style:solid; border-width:3; padding:7px">Weapon Item Component. Added to every weapon item such as axe, sword, trident, bow, crossbow.</br><h3><p id="on_hit_block">on_hit_block</p></h3>
+
+Trigger for letting you know when this item is used to hit a block</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="on_hurt_entity">on_hurt_entity</p></h3>
 
 Trigger for letting you know when this item is used to hurt another mob</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="on_not_hurt_entity">on_not_hurt_entity</p></h3>
+
+Trigger for letting you know when this item hit another actor, but didn't do damage</br><a href="#Index">Back to top</a><br><br>
 
 </td>
 </tr>
