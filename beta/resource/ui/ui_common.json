@@ -4952,6 +4952,7 @@
   "base_screen": {
     "type": "screen",
     "vr_mode": "$is_holographic",
+    "should_steal_mouse":  "$is_holographic",
     "$screen_content|default": "common.base_screen_empty_panel",
     "$screen_bg_content|default": "common.base_screen_empty_panel",
     "$screen_animations|default": [
