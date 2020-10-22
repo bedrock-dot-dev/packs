@@ -7273,6 +7273,7 @@ tile.acacia_fence_gate.name=아카시아나무 울타리 문	#
 tile.activator_rail.name=작동기 레일	#
 tile.allow.name=허용	#
 tile.air.name=공기	#
+tile.unknown.name=알 수 없음	#
 tile.deny.name=거부	#
 tile.border_block.name=경계	#
 tile.anvil.intact.name=모루	#

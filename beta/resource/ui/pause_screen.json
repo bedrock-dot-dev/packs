@@ -259,7 +259,11 @@
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
           "controls": [
-            { "viewer_panel@pause.skin_viewer_panel": {} }
+            {
+              "viewer_panel@pause.skin_viewer_panel": {
+                "tts_ignore_count": true
+              }
+            }
           ]
         }
       },
@@ -546,7 +550,8 @@
       {
         "pause_logo_panel@common_art.pause_logo_panel": {
           "anchor_from": "top_middle",
-          "anchor_to": "top_middle"
+          "anchor_to": "top_middle",
+          "tts_ignore_count": true
         }
       },
       { "the_rest_panel@pause.the_rest_panel": {} }

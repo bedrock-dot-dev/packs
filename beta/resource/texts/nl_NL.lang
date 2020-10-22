@@ -7273,6 +7273,7 @@ tile.acacia_fence_gate.name=Acacia poortje	#
 tile.activator_rail.name=Activatiespoor	#
 tile.allow.name=Toestaan	#
 tile.air.name=Lucht	#
+tile.unknown.name=Onbekend	#
 tile.deny.name=Weigeren	#
 tile.border_block.name=Grens	#
 tile.anvil.intact.name=Aambeeld	#
