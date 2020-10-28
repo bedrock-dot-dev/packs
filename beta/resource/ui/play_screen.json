@@ -6119,7 +6119,7 @@
               "$count_text_color": "$secondary_text_color"
             },
             {
-              "requires": "(not $is_checked_state)",
+              "requires": "($is_hover_state or not $is_checked_state)",
               "$count_background_image": "textures/ui/numberBGBack",
               "$count_text_color": "$text_color"
             }

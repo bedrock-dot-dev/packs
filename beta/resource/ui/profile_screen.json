@@ -380,6 +380,13 @@
               "to_button_id": "$select_preset_to_button_id",
               "mapping_type": "focused"
             }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#enable_edit_appearance",
+              "binding_name_override": "#enabled",
+              "binding_condition": "always"
+            }
           ]
         }
       },
@@ -545,11 +552,6 @@
           "bindings": [
             {
               "binding_name": "#center_preset_size",
-              "binding_condition": "always"
-            },
-            {
-              "binding_name": "#enable_edit_appearance",
-              "binding_name_override": "#enabled",
               "binding_condition": "always"
             }
           ]
@@ -718,7 +720,14 @@
     "$button_font_scale_factor": 1.0,
     "$new_ui_label_offset": [ 0, 2 ],
     "$button_text_size": [ "100%", "100%" ],
-    "$button_text_max_size": [ "100%", "100%" ]
+    "$button_text_max_size": [ "100%", "100%" ],
+    "bindings": [
+      {
+        "binding_name": "#enable_achievement_button",
+        "binding_name_override": "#enabled",
+        "binding_condition": "always"
+      }
+    ]
   },
 
   /////////////////////////

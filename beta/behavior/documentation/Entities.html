@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.200.51</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.200.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -12233,6 +12233,18 @@ How many blocks radius from the mob's center to search in for the required block
 <td style="border-style:solid; border-width:2; padding:8px">The filters to run when attempting to fall in love.</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">max_number_of_children</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">The maximum number of children the mob will breed</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">min_number_of_children</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">The minimum number of children the mob will breed</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">mutation_factor</td>
 <td style="border-style:solid; border-width:2; padding:8px">JSON Object</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
@@ -12497,6 +12509,12 @@ Defines what events to call when this entity is damaged by specific entities or 
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">none</td>
 <td style="border-style:solid; border-width:1; padding:9px">Type of damage that triggers the events.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">damage_modifier</td>
+<td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:9px">0.0</td>
+<td style="border-style:solid; border-width:1; padding:9px">A modifier that adds to/removes from the base damage from the damage cause. It does not reduce damage to less than 0.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">damage_multiplier</td>
@@ -13791,6 +13809,12 @@ Allows this entity to generate paths that include vertical walls like the vanill
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -13870,6 +13894,12 @@ Allows this entity to generate paths by flying around the air like the regular G
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
@@ -13953,6 +13983,12 @@ Allows this entity to generate paths in the air like the vanilla Parrots do.</br
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -14032,6 +14068,12 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
@@ -14115,6 +14157,12 @@ Allows this entity to generate paths in the air like the vanilla Bees do. Keeps 
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -14196,6 +14244,12 @@ Allows this entity to generate paths that include water.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -14275,6 +14329,12 @@ Allows this entity to generate paths by walking around and jumping up and down a
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>

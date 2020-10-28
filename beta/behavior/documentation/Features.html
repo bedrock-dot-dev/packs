@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.16.200.51</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.16.200.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -239,7 +239,7 @@ Example use: Place a hot air balloon structure that "floats" in the air.<br / ><
     "constraints": {
       "unburied": {},
       "block_intersection": {
-        "block_whitelist": [
+        "block_allowlist": [
           "example:air"
         ]
       }
@@ -464,9 +464,9 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           {
               object "grounded" : opt // When specified, ensures the structure is on the ground.
               object "unburied" : opt // When specified, ensures the structure has air above it.
-              object "block_intersection" : opt // When specified, ensures the structure only intersects with whitelisted blocks.
+              object "block_intersection" : opt // When specified, ensures the structure only intersects with allowlisted blocks.
               {
-                  array "block_whitelist"
+                  array "block_allowlist|block_whitelist"
                   {
                        "<any array element>" : opt // List of blocks the owning structure is allowed to intersect with.
                   }

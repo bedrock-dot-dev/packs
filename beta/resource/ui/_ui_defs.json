@@ -117,7 +117,7 @@
     "ui/realms_create.json",
     "ui/realms_pending_invitations.json",
     "ui/realms_settings_screen.json",
-    "ui/realms_whitelist.json",
+    "ui/realms_allowlist.json",
     "ui/realmsplus_upgrade_notice_screen.json",
     "ui/redstone_screen.json",
     "ui/resource_packs_screen.json",

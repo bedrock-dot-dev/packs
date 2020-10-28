@@ -518,6 +518,12 @@
                 "size": [ "100%c", 0 ],
                 "anchor_from": "top_right",
                 "anchor_to": "top_right",
+                "bindings": [
+                  {
+                    "binding_name": "#close_button_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ],
                 "controls": [
                   {
                     "close@common.close_button": {

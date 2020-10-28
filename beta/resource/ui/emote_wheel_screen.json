@@ -86,7 +86,19 @@
       {
         "top_padding": {
           "type": "panel",
-          "size": [ "100%", "fill" ]
+          "size": [ "100%", "fill" ],
+          "controls": [
+            {
+              "screen_header": {
+                "type": "label",
+                "size": [ "50%", "50%" ],
+                "color": "$generic_button_text_color",
+                "text_alignment": "center",
+                "text": "emotes.header_text",
+                "shadow": true
+              }
+            }
+          ]
         }
       },
       {
@@ -445,11 +457,11 @@
     "button_name": "$button_name",
     "iterate_left_button_name": "$iterate_left_button_name",
     "iterate_right_button_name": "$iterate_right_button_name",
-
+    "initial_button_slice": 0,
     "$button_focus_precedence|default": 0,
     "default_focus_precedence": "$button_focus_precedence",
 
-    "$button_tts_name|default": "accessibility.button.tts.title",
+    "$button_tts_name|default": "#emote_button_tts",
     "$button_tts_header|default": "",
     "$tts_section_header|default": "",
     "$button_tts_control_type_order_priority|default": 100,
@@ -535,9 +547,14 @@
       }
     ],
     "property_bag": {
-      "#hover_slice": -1
+      "#hover_slice": 0
     },
-    "$selection_wheel_bindings|default": [],
+    "$selection_wheel_bindings|default": [
+      {
+        "binding_name": "#emote_button_tts",
+        "binding_condition": "always"
+      }
+    ],
     "bindings": "$selection_wheel_bindings"
   }
 }

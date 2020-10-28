@@ -8,6 +8,9 @@ accessibility.enableTTS=Text To Speech enabled
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Press the %s to go back
+accessibility.chat.tts.gamepad.exitChat=Press the %s to exit chat
+accessibility.chat.tts.gamepad.sendMessage=Press the %s to send message
 accessibility.chat.tts.says=%s says %s
 accessibility.chat.tts.hideChat=Hide chat
 accessibility.chat.tts.keyboard=Keyboard
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Game Settings Screen
 accessibility.screenName.skinPicker=Choose Skin Screen
 accessibility.screenName.start=Main Menu
 accessibility.screenName.vrAlignment=VR Alignment Screen 
+accessibility.screenName.emoteWheel=Emotes Screen
 
 accessibility.settings.reset=reset
 accessibility.settings.chooseSeed=Choose Seed
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Left Bumper
 accessibility.keyboard.leftBracket=Left square bracket key		## left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Right square bracket key	## right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s button %d
+accessibility.emotes.buttonName=Emote
+accessibility.emotes.assigned=The %s emote assigned
+accessibility.emotes.unassigned=Unassigned
+accessibility.emotes.playSuccess=Play emote
+accessibility.emotes.playFailed=No emote assigned to this button, press down arrow to access the Change Emotes button
+accessibility.emotes.instruction.keyboard=Press right or left to cycle through emote buttons. Press the down arrow to access the Change Emotes button.
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Confirm Purchase
 authentication.store.intro=Your trial of Minecraft: Education Edition is complete. To continue playing Minecraft: Education Edition, you will need to purchase a license.
 authentication.store.popup.purchaseFailed.title=Something Went Wrong
 authentication.store.popup.purchaseFailed.msg=Sorry, we were unable to complete your purchase. Maybe check your internet connection?
-authentication.store.purchase.info1=The payment will be charged to your iTunes account at confirmation of purchase and the subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Your account will be charged for renewal within 24-hours prior to the end of the current period, at the subscription price option you have previously selected. 
-authentication.store.purchase.info2=You can manage your subscription and turn off auto-renewal by accessing your iTunes Account settings after purchase. If you cancel after your subscription has activated, you won't be refunded for the remaining active period of the subscription. Your iTunes account will be linked to your O365 Education Account for this subscription, so you will not be eligible to purchase additional Minecraft: Education Edition licenses with this iTunes account.
 authentication.store.purchase.button=Purchase license (%s/year)
 authentication.store.terms=Terms of Use
 authentication.store.viewTermsAndConditions=Terms and Conditions
@@ -1225,6 +1234,7 @@ commands.time.stop=Time %1$s
 commands.title.description=Controls screen titles.
 commands.title.success=Title command successfully executed
 commands.titleraw.description=Controls screen titles with JSON messages.
+commands.titleraw.success=Titleraw command successfully executed
 commands.toggledownfall.description=Toggles the weather.
 commands.tp.description=Teleports entities (players, mobs, etc.).
 commands.tp.notSameDimension=Unable to teleport because players are not in the same dimension
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Prev
 realmsSettingsScreen.dev_next_page_label=Next
 realmsSettingsScreen.uploadConfirmationMessage=This will remove your current world from your Realm and let you replace it with a new one.  Your Realm members won't have access to your current world anymore. Do you want to continue?
 realmsSettingsScreen.uploadConfirmationTitle=Replace World?
-realmsSettingsScreen.whitelist_invite=Invite
+realmsSettingsScreen.allowlist_invite=Invite
 realmsSettingsScreen.searchBox=Search...
 realmsSettingsScreen.unknownPackName=Unknown Name
 realmsSettingsScreen.viewSubscriptionsButton=View Subscriptions
@@ -7584,7 +7594,7 @@ tile.furnace.name=Furnace
 tile.glass.name=Glass
 tile.golden_rail.name=Powered Rail
 tile.grass.name=Grass Block
-tile.grass_path.name=Grass Path
+tile.grass_path.name=Dirt Path
 tile.gravel.name=Gravel
 tile.hay_block.name=Hay Bale
 tile.netherrack.name=Netherrack
@@ -8954,6 +8964,7 @@ dr.color.warm_bisque=Warm Bisque
 
 emotes.change_emotes=Change Emotes
 emotes.execute=Execute
+emotes.header_text=Emotes
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

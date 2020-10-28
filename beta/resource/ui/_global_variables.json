@@ -39,11 +39,12 @@
   "$sub_header_text_color": [ 1.0, 1.0, 1.0 ],
 
   "$tab_unchecked_text_color": [ 0.8784, 0.8784, 0.8784 ],
-  "$tab_unchecked_hover_text_color": [ 0.8784, 0.8784, 0.8784 ],
+  "$tab_unchecked_hover_text_color": [ 1.0, 1.0, 1.0 ],
   "$tab_unchecked_locked_text_color": [ 0.8784, 0.8784, 0.8784 ],
   "$tab_unchecked_locked_hover_text_color": [ 0.8784, 0.8784, 0.8784 ],
+
   "$tab_checked_text_color": [ 0.3, 0.3, 0.3 ],
-  "$tab_checked_hover_text_color": [ 0.3, 0.3, 0.3 ],
+  "$tab_checked_hover_text_color": [ 1.0, 1.0, 1.0 ],
   "$tab_checked_locked_text_color": [ 0.3, 0.3, 0.3 ],
   "$tab_checked_locked_hover_text_color": [ 0.3, 0.3, 0.3 ],
 
