@@ -2478,6 +2478,37 @@
     ]
   },
 
+  "rtx_label": {
+    "type": "panel",
+    "size": [ "100%", "20%" ],
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "controls": [
+      {
+        "banner": {
+          "type": "image",
+          "$banner_size|default": [ 20, 14 ],
+          "size": "$banner_size",
+          "texture": "textures/ui/RTX_Label",
+          "layer": 2,
+          "controls": [
+            {
+              "icon": {
+                "type": "image",
+                "layer": 3,
+                "size": [ "default", "default" ],
+                "offset": [ -3, 0 ],
+                "max_size": [ "70%", "70%" ],
+                "texture": "textures/ui/RTX_Sparkle"
+              }
+            }
+          ]
+        }
+      }
+    ]
+
+  },
+
   "store_offer_grid_panel": {
     "type": "stack_panel",
     "orientation": "vertical",
@@ -2903,6 +2934,28 @@
       {
         "featured_key_art@common_store.featured_key_art": {
           "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "rtx_label@common_store.rtx_label": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "size": [ 20, 15 ],
+          "offset": [1,0],
+          "layer": 6,
+          "bindings": [
+            {
+              "binding_type": "$store_factory_collection_details",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_collection_prefix": "$store_factory_collection_prefix"
+            },
+            {
+              "binding_type": "$hero_offer_binding_type",
+              "binding_collection_name": "$hero_offer_collection_name",
+              "binding_name": "#rtx_label_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
         }
       },
       {
@@ -4696,6 +4749,24 @@
                         }
                       ],
                       "controls": [
+                        {
+                          "rtx_label@common_store.rtx_label": {
+                            "size": [ 20, 14 ],
+                            "bindings": [
+                              {
+                                "binding_type": "$store_factory_collection_details",
+                                "binding_collection_name": "$store_factory_collection_name",
+                                "binding_collection_prefix": "$store_factory_collection_prefix"
+                              },
+                              {
+                                "binding_type": "$offer_binding_type",
+                                "binding_collection_name": "$offer_collection_name",
+                                "binding_name": "#rtx_label_visible",
+                                "binding_name_override": "#visible"
+                              }
+                            ]
+                          }
+                        },
                         {
                           "realms_plus_panel": {
                             "type": "panel",

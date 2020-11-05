@@ -240,6 +240,7 @@
     "$top_button_press|default": "",
     "$top_button_text|default": "",
     "$button_size": [ "100%", 30 ],
+    "$has_second_line|default": false,
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
@@ -320,6 +321,16 @@
                             "size": [ "100%", "default" ],
                             "color": "$body_text_color",
                             "text": "$description_text"
+                          }
+                        },
+                        {
+                          "description2": {
+                            "layer": 101,
+                            "type": "label",
+                            "size": [ "100%", "default" ],
+                            "color": "$body_text_color",
+                            "text": "$description_text2",
+                            "ignored": "(not $has_second_line)"
                           }
                         },
                         {
@@ -442,6 +453,32 @@
   "texture_pack_required@progress.simple_popup_dialog_base": {
     "$title_text": "progressScreen.dialog.title.resourcePack",
     "$description_text": "progressScreen.dialog.message.resourcePackRequired",
+
+    "$top_button_text": "#empty_binding",
+    "$middle_button_press": "button.join_and_download_all",
+    "$middle_button_text": "#join_and_download",
+    "$bottom_button_press": "button.leave",
+    "$bottom_button_text": "progressScreen.dialog.button.leave"
+  },
+
+  "texture_pack_raytracing_optional@progress.simple_popup_dialog_base": {
+    "$title_text": "progressScreen.dialog.title.resourcePack",
+    "$description_text": "progressScreen.dialog.message.resourcePackOptional.rayTracing.line1",
+    "$description_text2": "progressScreen.dialog.message.resourcePackOptional.rayTracing.line2",
+    "$has_second_line": true,
+
+    "$top_button_text": "#empty_binding",
+    "$middle_button_press": "button.join_and_download_all",
+    "$middle_button_text": "#join_and_download",
+    "$bottom_button_press": "button.join",
+    "$bottom_button_text": "progressScreen.dialog.button.join"
+  },
+
+  "texture_pack_raytracing_required@progress.simple_popup_dialog_base": {
+    "$title_text": "progressScreen.dialog.title.resourcePack",
+    "$description_text": "progressScreen.dialog.message.resourcePackRequired.rayTracing.line1",
+    "$description_text2": "progressScreen.dialog.message.resourcePackRequired.rayTracing.line2",
+    "$has_second_line": true,
 
     "$top_button_text": "#empty_binding",
     "$middle_button_press": "button.join_and_download_all",
@@ -905,7 +942,9 @@
       "add_on_with_optional_texture_pack": "add_on_only@progress.add_on_with_optional_texture_pack",
       "add_on_with_texture_pack": "add_on_only@progress.add_on_with_texture_pack",
       "texture_pack_optional": "add_on_only@progress.texture_pack_optional",
-      "texture_pack_required": "add_on_only@progress.texture_pack_required"
+      "texture_pack_required": "add_on_only@progress.texture_pack_required",
+      "texture_pack_raytracing_optional": "add_on_only@progress.texture_pack_raytracing_optional",
+      "texture_pack_raytracing_required": "add_on_only@progress.texture_pack_raytracing_required"
     }
   },
 

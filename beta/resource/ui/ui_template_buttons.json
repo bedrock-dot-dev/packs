@@ -821,6 +821,14 @@
     ]
   },
 
+  "deactivated_light_content_button@common_buttons.light_content_button": {
+    "$default_button_texture": "textures/ui/disabledButtonNoBorder",
+    "$hover_button_texture": "textures/ui/disabledButtonNoBorder",
+    "$pressed_button_texture": "textures/ui/disabledButtonNoBorder",
+    "$locked_button_texture": "textures/ui/disabledButtonNoBorder"
+
+  },
+
   "dark_content_button@dark_button_assets": {
 
     "$button_offset|default": [ 0, 0 ],

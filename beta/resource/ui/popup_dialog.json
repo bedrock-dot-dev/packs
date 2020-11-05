@@ -340,6 +340,7 @@
     "$popup_dialog_left_button_name|default": "popup_dialog.left_button",
     "$popup_dialog_middle_button_name|default": "popup_dialog.middle_button",
     "$popup_dialog_rightcancel_button_name|default": "popup_dialog.rightcancel_button",
+    "ttsSectionContainer": true,
     "button_mappings": [
       {
         "from_button_id": "button.menu_select",

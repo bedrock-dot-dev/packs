@@ -461,7 +461,7 @@
     "$button_focus_precedence|default": 0,
     "default_focus_precedence": "$button_focus_precedence",
 
-    "$button_tts_name|default": "#emote_button_tts",
+    "$button_tts_name|default": "",
     "$button_tts_header|default": "",
     "$tts_section_header|default": "",
     "$button_tts_control_type_order_priority|default": 100,
@@ -470,6 +470,7 @@
     "tts_control_header": "$button_tts_header",
     "tts_section_header": "$tts_section_header",
     "tts_control_type_order_priority": "$button_tts_control_type_order_priority",
+    "tts_skip_message": true,
 
     "layer": 1,
     "sound_name": "random.click",
@@ -549,12 +550,7 @@
     "property_bag": {
       "#hover_slice": 0
     },
-    "$selection_wheel_bindings|default": [
-      {
-        "binding_name": "#emote_button_tts",
-        "binding_condition": "always"
-      }
-    ],
+    "$selection_wheel_bindings|default": [],
     "bindings": "$selection_wheel_bindings"
   }
 }

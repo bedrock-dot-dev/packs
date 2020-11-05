@@ -1654,9 +1654,14 @@
   "no_xbox_live_friends_frame_label@invite.frame_label": {
     "size": [ "default", 30 ],
     "max_size": [ "100% - 14px", 30 ],
-    "text": "invite.noFriends",
+    "text": "#no_xbox_live_friends_text",
     "anchor_from": "bottom_middle",
-    "anchor_to": "bottom_middle"
+    "anchor_to": "bottom_middle",
+    "bindings": [
+      {
+        "binding_name": "#no_xbox_live_friends_text"
+      }
+    ]
   },
 
   "no_platform_friends_frame_label@invite.frame_label": {
