@@ -8,6 +8,9 @@ accessibility.enableTTS=Převod textu na řeč povolen	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Stisknutím %s se vrátíte zpět.	#
+accessibility.chat.tts.gamepad.exitChat=Stisknutím %s ukončíte chat.	#
+accessibility.chat.tts.gamepad.sendMessage=Stisknutím %s odešlete zprávu.	#
 accessibility.chat.tts.says=%s říká %s	#
 accessibility.chat.tts.hideChat=Skrýt chat	#
 accessibility.chat.tts.keyboard=Klávesnice	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Obrazovka s herními nastaveními	#
 accessibility.screenName.skinPicker=Obrazovka s výběrem skinu	#
 accessibility.screenName.start=Hlavní nabídka	#
 accessibility.screenName.vrAlignment=Obrazovka se zarovnáním VR	#
+accessibility.screenName.emoteWheel=Obrazovka s emotikonami	#
 
 accessibility.settings.reset=resetovat	#
 accessibility.settings.chooseSeed=Zvolit počáteční hodnotu	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Levé tlačítko	#
 accessibility.keyboard.leftBracket=Klávesa levá hranatá závorka			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Klávesa pravá hranatá závorka		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s tlačítko %d	#
+accessibility.emotes.buttonName=Emotikona	#
+accessibility.emotes.assigned=Přiřazená emotikona %s	#
+accessibility.emotes.unassigned=Nepřiřazena	#
+accessibility.emotes.playSuccess=Přehrát emotikonu	#
+accessibility.emotes.playFailed=K tomuto tlačítku není přiřazena žádná emotikona. Po stisknutí šipky dolů se zobrazí tlačítko Změnit emotikony.	#
+accessibility.emotes.instruction.keyboard=Stisknutím tlačítka vpravo nebo vlevo můžete procházet tlačítka emotikon. Po stisknutí šipky dolů se zobrazí tlačítko Změnit emotikony.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Potvrdit nákup	#
 authentication.store.intro=Vaše zkušební verze hry Minecraft: Education Edition skončila. Chcete-li dále hrát hru Minecraft: Education Edition, musíte zakoupit licenci.	#
 authentication.store.popup.purchaseFailed.title=Něco se nepovedlo	#
 authentication.store.popup.purchaseFailed.msg=Je nám líto, váš nákup jsme nemohli dokončit. Můžete si zkontrolovat připojení k internetu?	#
-authentication.store.purchase.info1=Platba bude stržena z vašeho účtu iTunes při potvrzení nákupu a předplatné se bude automaticky obnovovat, pokud nevypnete funkci automatického obnovování alespoň 24 hodin před koncem aktuálního období. Za obnovení bude platba stržena z vašeho účtu během 24 hodin před koncem aktuálního období. Cena odpovídá variantě předplatného, kterou jste vybrali dříve.	#
-authentication.store.purchase.info2=Předplatné můžete spravovat a automatické obnovování vypnout po nákupu v Nastaveních účtu iTunes. Pokud předplatné zrušíte po jeho aktivaci, nebudou vám vráceny peníze za zbývající aktivní období předplatného. Váš účet iTunes bude v rámci tohoto předplatného propojen s vaším účtem O365 Education, takže nebudete mít nárok na zakoupení dalších licencí na hru Minecraft: Education Edition pomocí tohoto účtu iTunes.	#
 authentication.store.purchase.button=Zakoupit licenci (%s/rok)	#
 authentication.store.terms=Podmínky použití	#
 authentication.store.viewTermsAndConditions=Podmínky a ujednání	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Čas %1$s	#
 commands.title.description=Ovládá titulky na obrazovce.	#
 commands.title.success=Příkaz názvu byl úspěšně proveden	#
 commands.titleraw.description=Řídí názvy obrazovek pomocí zpráv JSON.	#
+commands.titleraw.success=Příkaz titleraw byl úspěšně proveden.	#
 commands.toggledownfall.description=Přepíná počasí.	#
 commands.tp.description=Teleportuje entity (hráče, stvoření atd.).	#
 commands.tp.notSameDimension=Teleportace není možná, protože hráči nejsou ve stejné dimenzi	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Předchozí	#
 realmsSettingsScreen.dev_next_page_label=Další	#
 realmsSettingsScreen.uploadConfirmationMessage=Tím odeberete aktuální svět z vaší říše a nahradíte ho novým. Členové vaší říše již nebudou mít k aktuálnímu světu přístup. Chcete pokračovat?	#
 realmsSettingsScreen.uploadConfirmationTitle=Nahradit svět?	#
-realmsSettingsScreen.whitelist_invite=Pozvat	#
+realmsSettingsScreen.allowlist_invite=Pozvat	#
 realmsSettingsScreen.searchBox=Hledat...	#
 realmsSettingsScreen.unknownPackName=Neznámý název	#
 realmsSettingsScreen.viewSubscriptionsButton=Zobrazit předplatná	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Nemůžete se připojit ke světu, p
 disconnectionScreen.incompatiblePack.graphics.raytracing=Nemůžete se připojit ke světu, protože vaše zařízení nemá kompatibilní hardware podporující technologii sledování paprsku.	#
 disconnectionScreen.worldCorruption.message=Zkuste svět znovu otevřít nebo ho obnovit z předchozí zálohy.	#
 disconnectionScreen.worldCorruption=Odpojeno z důvodu poškození světa	#
+disconnectionScreen.hostSuspended=Odpojeno z důvodu nedostupnosti serveru	#
 
 storageSpaceWarningScreen.frontend=Datové úložiště je téměř plné! Minecraft omezil přístup k této funkci, dokud neuvolníte místo na úložišti.	#
 storageSpaceWarningScreen.lowduringgameplay=Na vašem zařízení téměř došlo místo, které Minecraft potřebuje k ukládání světů a nastavení. Doporučujeme smazat některé nepoužívané soubory, aby vzniklo místo pro ty nové.	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Odeslat pozvánky	#
 invite.title=Pozvat přátele do vaší hry	#
 invite.error.message=Odeslání některých vašich pozvánek se zřejmě nezdařilo.	#
 invite.noFriends=Na seznam svých přátel jste nikoho nepřidali!	#
+invite.noRealmFriends=Do své říše jste nikoho nepřidali!	#
 invite.OnlineFriends=Přátelé online	#
 invite.OfflineFriends=Přátelé offline	#
 invite.SuggestedFriends=Navrhovaní přátelé	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Rozdělené ovládání	#
 options.viewSubscriptions=Předplatná	#
 options.viewSubscriptions.button.info=Informace	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/MĚSÍC	#
 options.viewSubscriptions.button.manage=Správa	#
 options.viewSubscriptions.renew=Obnovuje se každých 30 dní	#
 options.viewSubscriptions.daysRemaining=Zbývá dní: %d	#
@@ -6690,11 +6704,11 @@ skins.store.equipped=Použili jste skin %s.	#
 soundCategory.ambient=Okolí/prostředí	#
 soundCategory.block=Bloky	#
 soundCategory.hostile=Nepřátelské bytosti	#
-soundCategory.master=Hlavní hlasitost	#
+soundCategory.master=Hlavní	#
 soundCategory.music=Hudba	#
 soundCategory.neutral=Přátelské bytosti	#
 soundCategory.player=Hráči	#
-soundCategory.record=Hrací skříň / bloky s notami	#
+soundCategory.record=Hrací skříň / notové bloky	#
 soundCategory.weather=Počasí	#
 
 stat.animalsBred=Narozená zvířata	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=Obsah	#
 store.realmsPlus.faq=Časté dotazy	#
 store.realmsPlus.buyFor=KOUPIT ZA %s	#
 store.realmsPlus.buyNow=KOUPIT	#
+store.realmsPlus.buyNowPerMonth=Koupit za %s/MĚSÍC	#
+store.realmsPlus.buyNowTrialPerMonth=ZAČNĚTE BEZPLATNÉ ZKUŠEBNÍ OBDOBÍ (POTÉ %s/MĚSÍC)	#
 store.realmsPlus.errorNoOffer=CHYBA, NEBYLA NALEZENA ŽÁDNÁ NABÍDKA	#
 store.realmsPlus.manageSubscription=SPRAVOVAT PŘEDPLATNÉ	#
 store.realmsPlus.viewAllPacksTitle=VÝHODNÁ NABÍDKA – BALÍČKY V HODNOTĚ PŘES §g$150 (USD)!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Vaše Realm a více než 100 balíčků z o
 store.realmsPlus.noTrial.description.iap=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
 store.realmsPlus.realmName.placeholder=Říše uživatele %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! První měsíc budete mít zdarma a pak vám budeme účtovat %s/měsíc, přičemž předplatné můžete kdykoli zrušit.	#
-store.realmsPlus.recurring.withoutTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Budeme vám účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus je průběžné předplatné s opakovaným poplatkem, který se účtuje automaticky každý měsíc, dokud nebude předplatné zrušeno.%sOkamžitě získáte přístup k vaší říši a více než 100 balíčkům v obchodě Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! Prvních 30 dní je zdarma, pak vám budeme účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus je průběžné předplatné s opakovaným poplatkem, který se účtuje automaticky každý měsíc, dokud nebude předplatné zrušeno.%sOkamžitě získáte přístup k vaší říši a více než 100 balíčkům v obchodě Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! Budeme vám účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
 store.realmsPlus.consumable.offerTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Prvních 30 dní budete mít zdarma a pak budete moct předplatné obnovit na dalších 30 dní za cenu %s.	#
 store.realmsPlus.consumable.withoutTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=– Přátelé hrají ve vaší říši zda
 store.realmsPlus.landing.info2.line1=– Zabezpečené cloudové úložiště	#
 store.realmsPlus.landing.info2.line2=– Hrajte na jakémkoli zařízení se službou Realms a obchodem Minecraft Marketplace	#
 store.realmsPlus.landing.info2.line3=- Podpora komunity Minecraft	#
-store.realmsPlus.landing.info2.line4=– Bezplatná zkušební verze na 1 měsíc	#
+store.realmsPlus.landing.info2.line4=- Bezplatné 30denní zkušební období, poté %s měsíčně	#
+store.realmsPlus.landing.info2.line5=- %s měsíčně	#
 
 store.realmsPlus.faq.header=ČASTÉ DOTAZY	#
 store.realmsPlus.faq.question1=Co je služba Realms Plus?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=ZOBRAZIT VŠECHNY BALÍČKY	#
 store.realmsPlus.content.contentDescription=Využívejte zdroj úžasného obsahu pro Minecraft! S předplatným Realms Plus získáte okamžitý přístup k více než 100 položkám v obchodě Marketplace, mezi které patří mash-upy, světy, sady skinů a epická dobrodružství – každý měsíc přibývají další. Váš obsah se ukládá na váš osobní server a je přístupný na všech platformách, kde je možné využívat službu Realms i obchod Minecraft Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma!	#
 
 
-store.realmsPlus.freeTrial=ZAHÁJIT MĚSÍČNÍ BEZPLATNÉ ZKUŠEBNÍ OBDOBÍ	#
+store.realmsPlus.freeTrial=ZAČNĚTE BEZPLATNÉ ZKUŠEBNÍ OBDOBÍ (POTÉ %s/MĚSÍC)	#
 
 store.inventory.button=Inventář	#
 store.inventory.title=Inventář	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Teplá sušenková	#
 
 emotes.change_emotes=Změnit emoce	#
 emotes.execute=Provést	#
+emotes.header_text=Emotikony	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

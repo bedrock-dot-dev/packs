@@ -8,6 +8,9 @@ accessibility.enableTTS=Κείμενο σε ομιλία ενεργοποιημ�
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Πάτησε το %s για επιστροφή	#
+accessibility.chat.tts.gamepad.exitChat=Πάτησε το %s για έξοδο από τη συνομιλία	#
+accessibility.chat.tts.gamepad.sendMessage=Πάτησε το %s για να στείλεις μήνυμα	#
 accessibility.chat.tts.says=Ο χρήστης %s λέει %s	#
 accessibility.chat.tts.hideChat=Απόκρυψη συνομιλίας	#
 accessibility.chat.tts.keyboard=Πληκτρολόγιο	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Οθόνη ρυθμίσεων παιχνιδι
 accessibility.screenName.skinPicker=Οθόνη επιλογής εμφάνισης	#
 accessibility.screenName.start=Κύριο μενού	#
 accessibility.screenName.vrAlignment=Οθόνη ευθυγράμμισης VR 	#
+accessibility.screenName.emoteWheel=Οθόνη Emote	#
 
 accessibility.settings.reset=επαναφορά	#
 accessibility.settings.chooseSeed=Επιλογή Φύτρου	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Αριστερό μπροστινό κουμπ
 accessibility.keyboard.leftBracket=Πλήκτρο αριστερής αγκύλης			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Πλήκτρο δεξιάς αγκύλης		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, κουμπί %s %d	#
+accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.assigned=Το emote %s έχει εκχωρηθεί	#
+accessibility.emotes.unassigned=Μη εκχωρημένο	#
+accessibility.emotes.playSuccess=Αναπαραγωγή emote	#
+accessibility.emotes.playFailed=Δεν έχει εκχωρηθεί κανένα emote σε αυτό το κουμπί, πάτησε το κάτω βέλος για πρόσβαση στο κουμπί "Αλλαγή emote"	#
+accessibility.emotes.instruction.keyboard=Πάτησε δεξιά ή αριστερά για να μετακινηθείς στα κουμπιά emote. Πάτησε το κάτω βέλος για πρόσβαση στο κουμπί "Αλλαγή emote".	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Επιβεβαίωση αγοράς	#
 authentication.store.intro=Η δοκιμαστική έκδοση του Minecraft: Education Edition έχει ολοκληρωθεί. Για να συνεχίσεις να παίζεις Minecraft: Education Edition, θα πρέπει να αγοράσεις μια άδεια χρήσης.	#
 authentication.store.popup.purchaseFailed.title=Κάτι πήγε στραβά	#
 authentication.store.popup.purchaseFailed.msg=Δυστυχώς δεν μπορέσαμε να ολοκληρώσουμε την αγορά σου. Έλεγξε τη σύνδεσή σου στο Internet.	#
-authentication.store.purchase.info1=Η πληρωμή θα χρεωθεί στον λογαριασμό σου στο iTunes μετά την επιβεβαίωση της αγοράς και η συνδρομή ανανεώνεται αυτόματα εκτός εάν απενεργοποιηθεί η αυτόματη ανανέωση τουλάχιστον 24 ώρες πριν τη λήξη της τρέχουσας περιόδου. Ο λογαριασμός σου θα χρεωθεί για την ανανέωση εντός 24 ωρών πριν από το τέλος της τρέχουσας περιόδου και το ποσό της χρέωσης θα είναι η τιμή συνδρομής που είχες επιλέξει νωρίτερα. 	#
-authentication.store.purchase.info2=Μπορείς να διαχειριστείς τη συνδρομή σου και να απενεργοποιήσεις την αυτόματη ανανέωση από τις ρυθμίσεις του λογαριασμού iTunes μετά την αγορά. Εάν κάνεις ακύρωση μετά την ενεργοποίηση της συνδρομής σου, δεν θα σου επιστραφεί το ποσό για την ενεργή περίοδο της συνδρομής που απομένει. Ο λογαριασμός iTunes θα συνδεθεί με τον λογαριασμό O365 για εκπαιδευτικά ιδρύματα για αυτήν τη συνδρομή, επομένως δεν θα μπορείς να αγοράσεις πρόσθετες άδειες χρήσης του Minecraft: Education Edition με αυτόν τον λογαριασμό iTunes.	#
 authentication.store.purchase.button=Αγορά άδειας χρήσης (%s/χρόνο)	#
 authentication.store.terms=Όροι χρήσης	#
 authentication.store.viewTermsAndConditions=Όροι και προϋποθέσεις	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Χρόνος %1$s	#
 commands.title.description=Ελέγχει τους τίτλους της οθόνης.	#
 commands.title.success=Η εντολή τίτλου εκτελέστηκε με επιτυχία	#
 commands.titleraw.description=Ελέγχει τους τίτλους οθόνης με μηνύματα JSON.	#
+commands.titleraw.success=Η εντολή titleraw εκτελέστηκε με επιτυχία	#
 commands.toggledownfall.description=Αλλάζει τον καιρό.	#
 commands.tp.description=Τηλεμεταφέρει οντότητες (παίκτες, πλάσματα, κ.λπ.).	#
 commands.tp.notSameDimension=Δεν είναι δυνατή η τηλεμεταφορά επειδή οι παίκτες δεν είναι στην ίδια διάσταση	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Προηγούμενο	#
 realmsSettingsScreen.dev_next_page_label=Επόμενο	#
 realmsSettingsScreen.uploadConfirmationMessage=Θα διαγραφεί ο τρέχον κόσμος από το realm σου και θα μπορείς να τον αντικαταστήσεις με έναν νέο.  Τα μέλη του realm σου δεν θα έχουν πρόσβαση στον τρέχοντα κόσμο πλέον. Θέλεις να συνεχίσεις;	#
 realmsSettingsScreen.uploadConfirmationTitle=Αντικατάσταση κόσμου;	#
-realmsSettingsScreen.whitelist_invite=Πρόσκληση	#
+realmsSettingsScreen.allowlist_invite=Πρόσκληση	#
 realmsSettingsScreen.searchBox=Αναζήτηση...	#
 realmsSettingsScreen.unknownPackName=Άγνωστο όνομα	#
 realmsSettingsScreen.viewSubscriptionsButton=Προβολή συνδρομών	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Δεν είναι δυνατή η σ
 disconnectionScreen.incompatiblePack.graphics.raytracing=Δεν μπορείς να συμμετάσχεις στον κόσμο, γιατί η συσκευή σου δεν έχει συμβατό υλικό που να υποστηρίζει τεχνολογία ray tracing	#
 disconnectionScreen.worldCorruption.message=Δοκίμασε να ανοίξεις ξανά τον κόσμο ή να τον ανακτήσεις από ένα προηγούμενο αντίγραφο ασφαλείας	#
 disconnectionScreen.worldCorruption=Αποσυνδέθηκε λόγω καταστροφής κόσμου	#
+disconnectionScreen.hostSuspended=Αποσυνδέθηκες επειδή ο διακομιστής δεν είναι διαθέσιμος	#
 
 storageSpaceWarningScreen.frontend=Ο χώρος αποθήκευσης δεδομένων είναι σχεδόν πλήρης! Το Minecraft έχει περιορισμένη πρόσβαση σε αυτήν τη δυνατότητα μέχρι να αδειάσεις τον χώρο αποθήκευσης.	#
 storageSpaceWarningScreen.lowduringgameplay=Ο χώρος αποθήκευσης της συσκευής σου που μπορεί να χρησιμοποιήσει το Minecraft για να σώσει κόσμους και ρυθμίσεις σε αυτή τη συσκευή είναι σχεδόν πλήρης. Γιατί δεν διαγράφεις πράγματα που δεν χρειάζεσαι, ώστε να συνεχίσεις να αποθηκεύεις νέα στοιχεία;	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Αποστολή προσκλήσεων	#
 invite.title=Προσκάλεσε φίλους στο παιχνίδι σου	#
 invite.error.message=Ορισμένες από τις προσκλήσεις σου μπορεί να μην εστάλησαν.	#
 invite.noFriends=Δεν έχεις προσθέσει κανέναν στη λίστα φίλων σου!	#
+invite.noRealmFriends=Δεν έχεις προσθέσει κανέναν στο δικό σου Realm!	#
 invite.OnlineFriends=Φίλοι online	#
 invite.OfflineFriends=Φίλοι εκτός σύνδεσης	#
 invite.SuggestedFriends=Προτεινόμενοι φίλοι	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Τσέπης	#
 options.usetouchpad=Διαχωρισμένα χειριστήρια	#
 options.viewSubscriptions=Συνδρομές	#
 options.viewSubscriptions.button.info=Πληροφορίες	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/ΜΗΝΑ	#
 options.viewSubscriptions.button.manage=Διαχείριση	#
 options.viewSubscriptions.renew=Ανανεώνεται κάθε 30 ημέρες	#
 options.viewSubscriptions.daysRemaining=Απομένουν %d ημέρες	#
@@ -6690,11 +6704,11 @@ skins.store.equipped=Έχεις φορέσει την εμφάνιση %s.	#
 soundCategory.ambient=Ατμόσφαιρα/Περιβάλλον	#
 soundCategory.block=Κύβοι	#
 soundCategory.hostile=Εχθρικά πλάσματα	#
-soundCategory.master=Κεντρική ένταση ήχου	#
+soundCategory.master=Κύριο	#
 soundCategory.music=Μουσική	#
 soundCategory.neutral=Φιλικά πλάσματα	#
 soundCategory.player=Παίκτες	#
-soundCategory.record=Τζουκ μποξ/Κύβοι νότες	#
+soundCategory.record=Τζουκ μποξ/Κύβοι νότας	#
 soundCategory.weather=Καιρός	#
 
 stat.animalsBred=Ζώα που έχουν εκτραφεί	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=Περιεχόμενο	#
 store.realmsPlus.faq=Συνήθεις ερωτήσεις	#
 store.realmsPlus.buyFor=ΑΓΟΡΑ ΓΙΑ %s	#
 store.realmsPlus.buyNow=ΑΜΕΣΗ ΑΓΟΡΑ	#
+store.realmsPlus.buyNowPerMonth=Αγορά για %s/ΜΗΝΑ	#
+store.realmsPlus.buyNowTrialPerMonth=ΕΝΑΡΞΗ ΔΩΡΕΑΝ ΔΟΚΙΜΗΣ (ΣΤΗ ΣΥΝΕΧΕΙΑ %s/ΜΗΝΑ)	#
 store.realmsPlus.errorNoOffer=ΣΦΑΛΜΑ - ΔΕΝ ΒΡΕΘΗΚΕ ΠΡΟΣΦΟΡΑ	#
 store.realmsPlus.manageSubscription=ΔΙΑΧΕΙΡΙΣΗ ΣΥΝΔΡΟΜΗΣ	#
 store.realmsPlus.viewAllPacksTitle=ΣΠΟΥΔΑΙΑ ΤΙΜΗ - ΠΑΚΕΤΑ ΑΞΙΑΣ ΑΝΩ ΤΩΝ §g150 δολαρίων (USD)!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Το Realm σου και 100+ πακέτα 
 store.realmsPlus.noTrial.description.iap=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s.	#
 store.realmsPlus.realmName.placeholder=Το Realm του παίκτη %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Ο πρώτος μήνας σου θα είναι δωρεάν και κατόπιν θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
-store.realmsPlus.recurring.withoutTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Θα χρεώνεσαι %s/μήνα. Μπορείς να ακυρώσεις τη συνδρομή σου ανά πάσα στιγμή.	#
+store.realmsPlus.recurring.offerTrial=Το Realms Plus είναι μια συνδρομή σε εξέλιξη με επαναλαμβανόμενη χρέωση συνδρομής η οποία επιβάλλεται αυτόματα κάθε μήνα έως ότου ακυρωθεί η συνδρομή.%sΤο δικό σου Realm και 100+ πακέτα από το Marketplace θα είναι αμέσως διαθέσιμα. Έως και 10 παίκτες μπορούν να παίξουν ταυτόχρονα και έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Οι πρώτες 30 ημέρες θα είναι δωρεάν και, στη συνέχεια, θα χρεώνεσαι %s/μήνα και μπορείς να πραγματοποιήσεις ακύρωση ανά πάσα στιγμή.	#
+store.realmsPlus.recurring.withoutTrial=Το Realms Plus είναι μια συνδρομή σε εξέλιξη με επαναλαμβανόμενη χρέωση συνδρομής η οποία επιβάλλεται αυτόματα κάθε μήνα έως ότου ακυρωθεί η συνδρομή.%sΤο δικό σου Realm και 100+ πακέτα από το Marketplace θα είναι αμέσως διαθέσιμα. Έως και 10 παίκτες μπορούν να παίξουν ταυτόχρονα και έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Θα χρεώνεσαι %s/μήνα και μπορείς να πραγματοποιήσεις ακύρωση ανά πάσα στιγμή.	#
 store.realmsPlus.consumable.offerTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Οι πρώτες 30 ημέρες είναι δωρεάν και μπορείς, στη συνέχεια, να πραγματοποιήσεις ανανέωση για 30 ημέρες στην τιμή των %s.	#
 store.realmsPlus.consumable.withoutTrial=Το Realm σου και 100+ πακέτα του Marketplace θα είναι αμέσως διαθέσιμα. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν! Η συνδρομή σου θα είναι διαθέσιμη για 30 ημέρες στην τιμή των %s.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Οι φίλοι παίζουν δωρεά
 store.realmsPlus.landing.info2.line1=- Χώρος αποθήκευσης στο cloud	#
 store.realmsPlus.landing.info2.line2=- Παιχνίδι σε οποιαδήποτε συσκευή με Realms και με το Minecraft Marketplace	#
 store.realmsPlus.landing.info2.line3=- Υποστήριξε την κοινότητα του Minecraft	#
-store.realmsPlus.landing.info2.line4=- Δωρεάν δοκιμαστική έκδοση 1 μήνα	#
+store.realmsPlus.landing.info2.line4=- Δωρεάν δοκιμή 30 ημερών, στη συνέχεια, %s τον μήνα	#
+store.realmsPlus.landing.info2.line5=- %s τον μήνα	#
 
 store.realmsPlus.faq.header=ΣΥΝΗΘΕΙΣ ΕΡΩΤΗΣΕΙΣ	#
 store.realmsPlus.faq.question1=Τι είναι το Realms Plus;	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=ΔΕΣ ΟΛΑ ΤΑ ΠΑΚΕΤΑ	#
 store.realmsPlus.content.contentDescription=Αξιοποίησε την πηγή του εκπληκτικού περιεχομένου στο Minecraft! Με το Realms Plus, αποκτάς άμεση πρόσβαση σε 100+ αντικείμενα του Marketplace, όπως συνδυαστικά πακέτα, κόσμους, πακέτα εμφανίσεων και επικές περιπέτειες – με νέες προσθήκες κάθε μήνα. Το περιεχόμενό σου αποθηκεύεται στον προσωπικό σου διακομιστή και είναι διαθέσιμο σε οποιαδήποτε πλατφόρμα απολαμβάνεις το Realms και το Minecraft Marketplace. Μπορούν να παίζουν ταυτόχρονα έως και 10 παίκτες, οι οποίοι έχουν πρόσβαση στους κόσμους στο Realm σου δωρεάν!	#
 
 
-store.realmsPlus.freeTrial=ΕΝΑΡΞΗ ΔΩΡΕΑΝ ΔΟΚΙΜΗΣ 1 ΜΗΝΑ	#
+store.realmsPlus.freeTrial=ΕΝΑΡΞΗ ΔΩΡΕΑΝ ΔΟΚΙΜΗΣ (ΣΤΗ ΣΥΝΕΧΕΙΑ %s/ΜΗΝΑ)	#
 
 store.inventory.button=Αποθέματα	#
 store.inventory.title=Αποθέματα	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Ζεστό ροδακινί	#
 
 emotes.change_emotes=Αλλαγή emote	#
 emotes.execute=Εκτέλεση	#
+emotes.header_text=Emote	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

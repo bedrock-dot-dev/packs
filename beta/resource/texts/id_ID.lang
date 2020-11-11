@@ -8,6 +8,9 @@ accessibility.enableTTS=Teks untuk Ucapan diaktifkan	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Tekan %s untuk kembali	#
+accessibility.chat.tts.gamepad.exitChat=Tekan %s untuk keluar dari obrolan	#
+accessibility.chat.tts.gamepad.sendMessage=Tekan %s untuk mengirim pesan	#
 accessibility.chat.tts.says=%s berkata %s	#
 accessibility.chat.tts.hideChat=Sembunyikan obrolan	#
 accessibility.chat.tts.keyboard=Keyboard	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Layar Pengaturan Permainan	#
 accessibility.screenName.skinPicker=Layar Pilih Skin	#
 accessibility.screenName.start=Menu Utama	#
 accessibility.screenName.vrAlignment=Layar Penyelarasan VR 	#
+accessibility.screenName.emoteWheel=Layar Emosi	#
 
 accessibility.settings.reset=atur ulang	#
 accessibility.settings.chooseSeed=Pilih Benih	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Bumper Kiri	#
 accessibility.keyboard.leftBracket=Tombol kurung siku kiri			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tombol kurung siku kanan		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s tombol %d	#
+accessibility.emotes.buttonName=Emosi	#
+accessibility.emotes.assigned=Emosi %s ditetapkan	#
+accessibility.emotes.unassigned=Belum ditetapkan	#
+accessibility.emotes.playSuccess=Mainkan emosi	#
+accessibility.emotes.playFailed=Tidak ada emosi yang ditetapkan ke tombol ini, tekan panah bawah untuk mengakses tombol Ubah Emosi	#
+accessibility.emotes.instruction.keyboard=Tekan kanan atau kiri untuk beralih pada tombol emosi. Tekan panah bawah untuk mengakses tombol Ubah Emosi.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Konfirmasi Pembelian	#
 authentication.store.intro=Uji coba Minecraft: Education Edition-mu sudah selesai. Untuk terus memainkan Minecraft: Education Edition, kamu perlu membeli lisensi.	#
 authentication.store.popup.purchaseFailed.title=Terjadi Kesalahan	#
 authentication.store.popup.purchaseFailed.msg=Maaf, kami tidak bisa menyelesaikan pembelian kamu. Coba periksa sambungan internet kamu?	#
-authentication.store.purchase.info1=Pembayaran akan ditagihkan ke akun iTunes pada saat konfirmasi pembelian dan langganan secara otomatis diperpanjang kecuali jika perpanjangan otomatis dinonaktifkan setidaknya 24 jam sebelum akhir periode saat ini. Akunmu akan dikenakan biaya untuk perpanjangan dalam waktu 24 jam sebelum akhir periode saat ini, dengan opsi harga langganan yang sebelumnya telah dipilih.	#
-authentication.store.purchase.info2=Kamu bisa mengelola langganan dan menonaktifkan perpanjangan otomatis dengan mengakses pengaturan Akun iTunes setelah pembelian. Jika kamu membatalkan setelah langganan diaktifkan, kamu tidak akan menerima pengembalian dana atas sisa periode langganan aktif. Akun iTunes-mu akan terhubung ke Akun O365 Education untuk langganan ini, sehingga kamu tidak memenuhi syarat untuk membeli lisensi Minecraft: Education Edition tambahan dengan akun iTunes ini.	#
 authentication.store.purchase.button=Beli lisensi (%s/tahun)	#
 authentication.store.terms=Syarat Penggunaan	#
 authentication.store.viewTermsAndConditions=Syarat dan Ketentuan	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Waktu %1$s	#
 commands.title.description=Mengontrol judul layar.	#
 commands.title.success=Perintah judul berhasil dijalankan	#
 commands.titleraw.description=Mengendalikan judul layar dengan pesan JSON.	#
+commands.titleraw.success=Perintah titleraw berhasil dijalankan	#
 commands.toggledownfall.description=Mengalihkan cuaca.	#
 commands.tp.description=Menteleportasi entitas (pemain, mob, dll.).	#
 commands.tp.notSameDimension=Tidak bisa menteleportasi karena pemain tidak berada dalam dimensi yang sama	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Sebelumnya	#
 realmsSettingsScreen.dev_next_page_label=Berikutnya	#
 realmsSettingsScreen.uploadConfirmationMessage=Tindakan ini akan menghapus dunia saat ini dari Realm kamu dan menggantinya dengan yang baru. Anggota Realm kamu tidak akan memiliki akses ke duniamu saat ini lagi. Kamu ingin melanjutkan?	#
 realmsSettingsScreen.uploadConfirmationTitle=Ganti Dunia?	#
-realmsSettingsScreen.whitelist_invite=Undang	#
+realmsSettingsScreen.allowlist_invite=Undang	#
 realmsSettingsScreen.searchBox=Cari...	#
 realmsSettingsScreen.unknownPackName=Nama Tidak Diketahui	#
 realmsSettingsScreen.viewSubscriptionsButton=Lihat Langganan	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Kamu tidak bisa bergabung ke dunia k
 disconnectionScreen.incompatiblePack.graphics.raytracing=Kamu tidak bisa bergabung ke dunia karena perangkatmu tidak memiliki perangkat keras yang kompatibel untuk mendukung penelusuran jejak cahaya	#
 disconnectionScreen.worldCorruption.message=Coba buka dunia lagi atau pulihkan dari cadangan sebelumnya	#
 disconnectionScreen.worldCorruption=Sambungan terputus karena dunia rusak	#
+disconnectionScreen.hostSuspended=Terputus karena server tidak tersedia	#
 
 storageSpaceWarningScreen.frontend=Ruang penyimpanan datamu hampir habis! Minecraft telah membatasi akses ke fitur ini hingga kamu mengosongkan ruang penyimpanan tambahan.	#
 storageSpaceWarningScreen.lowduringgameplay=Ruang penyimpanan yang bisa digunakan Minecraft untuk menyimpan dunia dan pengaturan di perangkat ini hampir habis.  Ingin coba menghapus beberapa konten yang tidak kamu perlukan agar bisa menyimpan konten baru?	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Kirim Undangan	#
 invite.title=Undang Teman ke Permainanmu	#
 invite.error.message=Beberapa undanganmu mungkin gagal dikirim.	#
 invite.noFriends=Kamu belum menambahkan siapa pun ke daftar temanmu!	#
+invite.noRealmFriends=Kamu belum menambahkan siapa pun ke Realm milikmu!	#
 invite.OnlineFriends=Teman Online	#
 invite.OfflineFriends=Teman Offline	#
 invite.SuggestedFriends=Teman yang Disarankan	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Saku	#
 options.usetouchpad=Kontrol Terpisah	#
 options.viewSubscriptions=Langganan	#
 options.viewSubscriptions.button.info=Info	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/BULAN	#
 options.viewSubscriptions.button.manage=Kelola	#
 options.viewSubscriptions.renew=Diperbarui setiap 30 hari	#
 options.viewSubscriptions.daysRemaining=%d hari tersisa	#
@@ -6690,11 +6704,11 @@ skins.store.equipped=Kamu telah melengkapi skin %s.	#
 soundCategory.ambient=Ambien/Lingkungan	#
 soundCategory.block=Blok	#
 soundCategory.hostile=Makhluk Jahat	#
-soundCategory.master=Volume Utama	#
+soundCategory.master=Utama	#
 soundCategory.music=Musik	#
 soundCategory.neutral=Makhluk Baik Hati	#
 soundCategory.player=Pemain	#
-soundCategory.record=Jukebox/Blok Not	#
+soundCategory.record=Blok Jukebox/Blok Not	#
 soundCategory.weather=Cuaca	#
 
 stat.animalsBred=Binatang Dikembangbiakkan	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=Konten	#
 store.realmsPlus.faq=Pertanyaan Umum	#
 store.realmsPlus.buyFor=BELI SEHARGA %s	#
 store.realmsPlus.buyNow=BELI SEKARANG	#
+store.realmsPlus.buyNowPerMonth=Beli seharga %s/BULAN	#
+store.realmsPlus.buyNowTrialPerMonth=START UJI COBA GRATIS (%s/BULAN SESUDAHNYA)	#
 store.realmsPlus.errorNoOffer=KESALAHAN - PENAWARAN TIDAK DITEMUKAN	#
 store.realmsPlus.manageSubscription=KELOLA LANGGANAN	#
 store.realmsPlus.viewAllPacksTitle=SUPER HEMAT - PAKET SENILAI LEBIH DARI §g$150 (USD)!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realm kamu dan 100+ paket marketplace akan 
 store.realmsPlus.noTrial.description.iap=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
 store.realmsPlus.realmName.placeholder=Realm %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Biaya langganan bulan pertama gratis dan kamu akan ditagih %s/bulan setelahnya, bisa dibatalkan kapan pun.	#
-store.realmsPlus.recurring.withoutTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Kamu akan ditagih %s/bulan dan bisa dibatalkan kapan pun.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus adalah langganan berkelanjutan dengan biaya berlangganan berulang yang dibebankan secara otomatis setiap bulan sampai langganan dibatalkan. %sRealm Anda dan 100+ paket marketplace akan segera tersedia. Hingga 10 pemain dapat bermain pada satu waktu, dan mereka mendapatkan akses ke dunia di Realm Anda secara gratis! 30 hari pertama Anda akan gratis, dan Anda akan ditagih %s/ bulan setelahnya dan dapat membatalkan kapan saja.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus adalah langganan berkelanjutan dengan biaya langganan berulang yang dibebankan secara otomatis setiap bulan sampai langganan dibatalkan. %sRealm Anda dan 100+ paket marketplace akan segera tersedia. Hingga 10 pemain dapat bermain pada satu waktu, dan mereka mendapatkan akses ke dunia di Realm Anda secara gratis! Anda akan ditagih %s/bulan dan dapat membatalkan kapan saja.	#
 store.realmsPlus.consumable.offerTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu selama 30 hari pertama gratis dan kamu bisa memperpanjang selama 30 hari dengan harga %s setelahnya.	#
 store.realmsPlus.consumable.withoutTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Teman bisa main gratis di Realm milikmu	#
 store.realmsPlus.landing.info2.line1=- Penyimpanan cloud aman	#
 store.realmsPlus.landing.info2.line2=- Bermain di perangkat apa pun dengan Realms dan Marketplace Minecraft	#
 store.realmsPlus.landing.info2.line3=- Dukungan Komunitas Minecraft	#
-store.realmsPlus.landing.info2.line4=- Uji coba gratis 1 bulan	#
+store.realmsPlus.landing.info2.line4=- Uji coba gratis 30 hari, lalu %s per bulan	#
+store.realmsPlus.landing.info2.line5=- %s per bulan	#
 
 store.realmsPlus.faq.header=PERTANYAAN	#
 store.realmsPlus.faq.question1=Apa itu Realms Plus?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=LIHAT SEMUA PAKET	#
 store.realmsPlus.content.contentDescription=Lihatlah sumber konten Minecraft yang menakjubkan! Dengan Realms Plus, kamu mendapatkan akses instan ke 100+ item marketplace seperti perpaduan, dunia, paket skin, dan petualangan epik, dengan tambahan baru setiap bulannya. Kontenmu disimpan di server pribadimu sendiri dan bisa diakses di platform apa pun tempat kamu menggunakan Realms dan Marketplace Minecraft. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis!	#
 
 
-store.realmsPlus.freeTrial=MULAI UJI COBA GRATIS 1 BULAN	#
+store.realmsPlus.freeTrial=START UJI COBA GRATIS (%s/ BULAN SESUDAHNYA)	#
 
 store.inventory.button=Persediaan	#
 store.inventory.title=Persediaan	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Cokelat Terang Hangat	#
 
 emotes.change_emotes=Ubah Emosi	#
 emotes.execute=Jalankan	#
+emotes.header_text=Emosi	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

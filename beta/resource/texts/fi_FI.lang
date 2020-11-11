@@ -8,6 +8,9 @@ accessibility.enableTTS=Teksti puheeksi käytössä	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Palaa takaisin painamalla %s	#
+accessibility.chat.tts.gamepad.exitChat=Poistu chatista painamalla %s	#
+accessibility.chat.tts.gamepad.sendMessage=Lähetä viesti painamalla %s	#
 accessibility.chat.tts.says=%s sanoo %s	#
 accessibility.chat.tts.hideChat=Piilota chatti	#
 accessibility.chat.tts.keyboard=Näppäimistö	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Peliasetusten näyttö	#
 accessibility.screenName.skinPicker=Olemuksen valintanäyttö	#
 accessibility.screenName.start=Päävalikko	#
 accessibility.screenName.vrAlignment=VR-tasauksen näyttö 	#
+accessibility.screenName.emoteWheel=Elenäyttö	#
 
 accessibility.settings.reset=nollaa	#
 accessibility.settings.chooseSeed=Valitse siemen	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Vasen olkapainike	#
 accessibility.keyboard.leftBracket=Vasen hakasulkupainike			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Oikea hakasulkupainike		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s näppäin %d	#
+accessibility.emotes.buttonName=Näytä ele	#
+accessibility.emotes.assigned=Ele %s valittuna	#
+accessibility.emotes.unassigned=Ei valittu	#
+accessibility.emotes.playSuccess=Toista ele	#
+accessibility.emotes.playFailed=Tälle näppäimelle ei ole määritetty elettä, käytä Vaihda eleitä -painiketta alanuolen avulla	#
+accessibility.emotes.instruction.keyboard=Selaa elepainikkeita vasemmalla tai oikealla nuolella. Käytä Vaihda eleitä -painiketta alanuolen avulla.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Vahvista ostos	#
 authentication.store.intro=Minecraft: Education Edition kokeilupakettisi on päättynyt. Voit jatkaa Minecraft: Education Editionin pelaamista ostamalla käyttöoikeuden.	#
 authentication.store.popup.purchaseFailed.title=Jokin meni pieleen	#
 authentication.store.popup.purchaseFailed.msg=Pahoittelut, emme saaneet ostostasi valmiiksi. Onkohan internet-yhteytesi kunnossa?	#
-authentication.store.purchase.info1=Maksu veloitetaan iTunes-tililtäsi oston vahvistuksen yhteydessä, ja tilaus uusiutuu automaattisesti, jos tilauksen automaattista uusimista ei kytketä pois käytöstä vähintään 24 tuntia ennen tilausjakson päättymistä. Veloitus tehdään tililtäsi 24 tunnin sisällä ennen tilausjakson päättymistä, ja tilaus jatkuu samassa muodossa. 	#
-authentication.store.purchase.info2=Voit hallita tilaustasi ja poistaa sen automaattisen uusimisen käytöstä iTunes-asetuksista oston jälkeen. Jos perut tilauksen sen aktivoimisen jälkeen, sinulle ei korvata tilauksen jäljelle jäänyttä aikaa. iTunes-tilisi liitetään O365 Education -tiliisi tätä tilausta varten, joten et voi ostaa lisää Minecraft: Education Editionin käyttöoikeuksia tällä iTunes-tilillä.	#
 authentication.store.purchase.button=Osta käyttöoikeus (%s/vuosi)	#
 authentication.store.terms=Käyttöehdot	#
 authentication.store.viewTermsAndConditions=Käyttöehdot	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Aika: %1$s	#
 commands.title.description=Hallitsee näytön otsikoita.	#
 commands.title.success=Otsikkokomento suoritettu onnistuneesti	#
 commands.titleraw.description=Hallitsee JSON-sanomia sisältäviä ruutuotsikko.	#
+commands.titleraw.success=Titleraw-komento suoritettu onnistuneesti	#
 commands.toggledownfall.description=Muuttaa säätä.	#
 commands.tp.description=Kaukosiirtää kohteita (pelaajia, hirviöitä jne.).	#
 commands.tp.notSameDimension=Kaukosiirtyminen ei onnistu, koska pelaajat eivät ole samassa ulottuvuudessa	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Edellinen	#
 realmsSettingsScreen.dev_next_page_label=Seuraava	#
 realmsSettingsScreen.uploadConfirmationMessage=Tämä poistaa nykyisen maailman valtakunnistasi, jolloin voit korvata sen uudella. Valtakuntasi jäsenillä ei silloin ole enää pääsyä nykyiseen maailmaasi. Haluatko jatkaa?	#
 realmsSettingsScreen.uploadConfirmationTitle=Korvaa maailma?	#
-realmsSettingsScreen.whitelist_invite=Kutsu	#
+realmsSettingsScreen.allowlist_invite=Kutsu	#
 realmsSettingsScreen.searchBox=Hae...	#
 realmsSettingsScreen.unknownPackName=Tuntematon nimi	#
 realmsSettingsScreen.viewSubscriptionsButton=Tarkastele tilauksia	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Et voi liittyä maailmaan, koska lai
 disconnectionScreen.incompatiblePack.graphics.raytracing=Et voi liittyä maailmaan, koska laitteessasi ei ole säteenseurantaa tukevaa laitteistoa	#
 disconnectionScreen.worldCorruption.message=Kokeile maailman uudelleenavaamista tai sen palauttamista aiemmasta varmuuskopiosta	#
 disconnectionScreen.worldCorruption=Yhteys katkaistu maailman vahingoittumisen vuoksi	#
+disconnectionScreen.hostSuspended=Yhteys katkesi, koska palvelin ei ole käytettävissä	#
 
 storageSpaceWarningScreen.frontend=Tallennustilasi on melkein lopussa! Minecraftilla on rajoitettu pääsy tähän ominaisuuteen, kunnes olet tyhjentänyt tallennustilaa.	#
 storageSpaceWarningScreen.lowduringgameplay=Laitteesi tallennustila, johon Minecraft voi tallentaa maailmoja ja asetuksia, on melkein lopussa. Kannattaa poistaa vanhoja juttuja, jota et enää tarvitse, jotta voit jatkaa uusien juttujen tallentamista!	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Lähetä kutsuja	#
 invite.title=Kutsu ystäviä peliisi	#
 invite.error.message=Osa kutsuistasi saattoi epäonnistua.	#
 invite.noFriends=Et ole lisännyt ketään ystäväluetteloosi!	#
+invite.noRealmFriends=Et ole lisännyt ketään realmiisi!	#
 invite.OnlineFriends=Online-tilassa olevat ystävät	#
 invite.OfflineFriends=Offline-tilassa olevat ystävät	#
 invite.SuggestedFriends=Ehdotetut ystävät	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Jaetut ohjauskomennot	#
 options.viewSubscriptions=Tilaukset	#
 options.viewSubscriptions.button.info=Tiedot	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/KUUKAUSI	#
 options.viewSubscriptions.button.manage=Hallitse	#
 options.viewSubscriptions.renew=Uusiutuu 30 päivän välein	#
 options.viewSubscriptions.daysRemaining=%d päivää jäljellä	#
@@ -6690,11 +6704,11 @@ skins.store.equipped=Sinulla on käytössä olemus %s.	#
 soundCategory.ambient=Tunnelma/ympäristö	#
 soundCategory.block=Kuutiot	#
 soundCategory.hostile=Vihamieliset olennot	#
-soundCategory.master=Pää-äänenvoimakkuus	#
+soundCategory.master=Päätaso	#
 soundCategory.music=Musiikki	#
 soundCategory.neutral=Ystävälliset olennot	#
 soundCategory.player=Pelaajat	#
-soundCategory.record=Jukeboksi/nuottipalikat	#
+soundCategory.record=Jukeboksi/nuottikuutiot	#
 soundCategory.weather=Sää	#
 
 stat.animalsBred=Kasvatetut eläimet	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=Sisältö	#
 store.realmsPlus.faq=UKK	#
 store.realmsPlus.buyFor=OSTA HINTAAN %s	#
 store.realmsPlus.buyNow=OSTA NYT	#
+store.realmsPlus.buyNowPerMonth=Osta hinnalla %s/KK	#
+store.realmsPlus.buyNowTrialPerMonth=ALOITA MAKSUTON KOKEILU (SEN JÄLKEEN %s/KK)	#
 store.realmsPlus.errorNoOffer=VIRHE, TARJOUSTA EI LÖYTYNYT	#
 store.realmsPlus.manageSubscription=HALLITSE TILAUSTA	#
 store.realmsPlus.viewAllPacksTitle=VASTINETTA RAHOILLE – PAKETTEJA YLI §g150 EURON ARVOSTA!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realms-tilauksesi on päivitetty Realms Plu
 store.realmsPlus.noTrial.description.iap=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
 store.realmsPlus.realmName.placeholder=Pelaajan %s valtakunta		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäinen kuukautesi on maksuton, minkä jälkeen sinulta veloitetaan %s kuukaudessa. Voit perua tilauksen milloin tahansa.	#
-store.realmsPlus.recurring.withoutTrial=Realmisi ja yli 100 kaupan pakettia ovat käytettävissä välittömästi. Jopa 10 pelaajaa voi pelata samanaikaisesti ja he kaikki saavat maksuttomasti käyttöönsä Realmisi maailmat! Sinulta veloitetaan %s/kk, ja voit perua tilauksen milloin tahansa.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus on jatkuva tilaus. Siinä on säännöllinen tilausmaksu, joka veloitetaan automaattisesti kuukausittain, kunnes tilaus perutaan.%sRealmisi ja yli 100 kaupan pakettia ovat välittömästi käytettävissä. Jopa 10 pelaajaa voi pelata samanaikaisesti ja käyttää realmisi maailmoja maksutta! Ensimmäiset 30 päivääsi ovat maksuttomia, minkä jälkeen sinulta veloitetaan kuukausittain %s. Voit peruuttaa tilauksen milloin tahansa.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus on jatkuva tilaus. Siinä on säännöllinen tilausmaksu, joka veloitetaan automaattisesti kuukausittain, kunnes tilaus perutaan.%sRealmisi ja yli 100 kaupan pakettia ovat välittömästi käytettävissä. Jopa 10 pelaajaa voi pelata samanaikaisesti ja käyttää realmisi maailmoja maksutta! Sinulta veloitetaan kuukausittain %s, ja voit peruuttaa tilauksen milloin tahansa.	#
 store.realmsPlus.consumable.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäiset 30 päivääsi ovat maksuttomia ja voit uusia tilauksen sen jälkeen hintaan %s.	#
 store.realmsPlus.consumable.withoutTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Ystävät pelaavat maksutta Realmissasi	#
 store.realmsPlus.landing.info2.line1=- Turvallinen pilvitallennus	#
 store.realmsPlus.landing.info2.line2=- Pelaa millä tahansa laitteella, jolla Realms ja Minecraft-kauppa ovat käytettävissä	#
 store.realmsPlus.landing.info2.line3=- Tue Minecraft-yhteisöä	#
-store.realmsPlus.landing.info2.line4=- Maksuton 1 kuukauden kokeilu	#
+store.realmsPlus.landing.info2.line4=- Maksuton 30 päivän kokeilujakso, sitten %s kuukaudessa	#
+store.realmsPlus.landing.info2.line5=- %s kuukaudessa	#
 
 store.realmsPlus.faq.header=USEIN KYSYTYT KYSYMYKSET	#
 store.realmsPlus.faq.question1=Mikä on Realms Plus?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=NÄYTÄ KAIKKI PAKETIT	#
 store.realmsPlus.content.contentDescription=Hyödynnä upeaa Minecraft-sisältöä! Realms Plussalla saat välittömästi käyttöösi yli 100 kaupan tuotetta, kuten yhdistelmiä, maailmoja, olemuspaketteja ja eeppisiä seikkailuja, Uutta sisältöä lisätään kuukausittain. Sisältösi tallennetaan henkilökohtaiselle palvelimellesi. Se on käytettävissä millä tahansa alustalla, jolla voit käyttää Realmsia ja Minecraft-kauppaa. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti!	#
 
 
-store.realmsPlus.freeTrial=ALOITA 1 KUUKAUDEN ILMAINEN KOKEILU	#
+store.realmsPlus.freeTrial=ALOITA MAKSUTON KOKEILU (SEN JÄLKEEN %s/KK)	#
 
 store.inventory.button=Tavaraluettelo	#
 store.inventory.title=Tavaraluettelo	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Lämmin äyriäiskeitto	#
 
 emotes.change_emotes=Muuta eleitä	#
 emotes.execute=Suorita	#
+emotes.header_text=Eleet	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

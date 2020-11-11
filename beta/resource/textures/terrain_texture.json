@@ -191,20 +191,11 @@
             "textures/blocks/blast_furnace_top"
          ]
       },
-      "soul_fire_0" : {
-         "textures" : "textures/blocks/soul_fire_0"
-      },
-      "soul_fire_1" : {
-         "textures" : "textures/blocks/soul_fire_1"
-      },
       "blue_glazed_terracotta" : {
          "textures" : "textures/blocks/glazed_terracotta_blue"
       },
       "blue_ice" : {
          "textures" : "textures/blocks/blue_ice"
-      },
-      "warped_wart_block" : {
-         "textures" : [ "textures/blocks/warped_wart_block" ]
       },
       "bone_block_side" : {
          "textures" : "textures/blocks/bone_block_side"
@@ -2175,6 +2166,12 @@
       "soul_campfire_log_lit" : {
          "textures" : "textures/blocks/soul_campfire_log_lit"
       },
+      "soul_fire_0" : {
+         "textures" : "textures/blocks/soul_fire_0"
+      },
+      "soul_fire_1" : {
+         "textures" : "textures/blocks/soul_fire_1"
+      },
       "soul_lantern" : {
          "textures" : "textures/blocks/soul_lantern"
       },
@@ -2655,6 +2652,9 @@
       },
       "warped_trapdoor" : {
          "textures" : "textures/blocks/huge_fungus/warped_trapdoor"
+      },
+      "warped_wart_block" : {
+         "textures" : [ "textures/blocks/warped_wart_block" ]
       },
       "waterlily" : {
          "textures" : [

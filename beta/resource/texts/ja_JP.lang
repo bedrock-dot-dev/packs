@@ -8,6 +8,9 @@ accessibility.enableTTS=テキスト読み上げ有効	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=%s を押して戻る	#
+accessibility.chat.tts.gamepad.exitChat=%s を押してチャットを終了する	#
+accessibility.chat.tts.gamepad.sendMessage=%s を押してメッセージを送信する	#
 accessibility.chat.tts.says=%s の発言: %s	#
 accessibility.chat.tts.hideChat=チャットを非表示	#
 accessibility.chat.tts.keyboard=キーボード	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=ゲーム設定画面	#
 accessibility.screenName.skinPicker=スキン選択画面	#
 accessibility.screenName.start=メイン メニュー	#
 accessibility.screenName.vrAlignment=VR 調整画面 	#
+accessibility.screenName.emoteWheel=エモート画面	#
 
 accessibility.settings.reset=リセット	#
 accessibility.settings.chooseSeed=シードを選択	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=L ボタン	#
 accessibility.keyboard.leftBracket=左角かっこキー			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右角かっこキー		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s、%s ボタン %d	#
+accessibility.emotes.buttonName=エモート	#
+accessibility.emotes.assigned=登録された %s エモート	#
+accessibility.emotes.unassigned=未登録	#
+accessibility.emotes.playSuccess=エモートで遊ぶ	#
+accessibility.emotes.playFailed=このボタンにエモートが登録されていない場合は、下向き矢印を押して [エモートを変更] ボタンにアクセスしてください。	#
+accessibility.emotes.instruction.keyboard=右または左を押して、エモートボタンを切り替えてください。下向き矢印を押すと、[エモートを変更] ボタンにアクセスできます。	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=購入を確定	#
 authentication.store.intro=Minecraft: Education Edition の試用版はこれ以上プレイできません。Minecraft: Education Edition のプレイを続けるには、ライセンスを購入する必要があります。	#
 authentication.store.popup.purchaseFailed.title=問題が発生しました	#
 authentication.store.popup.purchaseFailed.msg=購入が行えませんでした。インターネット接続を確認してください	#
-authentication.store.purchase.info1=購入を確定した時点で、料金はお使いの iTunes アカウントに請求され、現在の期間が終了する 24 時間以上前に自動更新をオフにしない限り、サブスクリプションは自動で更新されます。更新の際は、現在の期間の終了時期から逆算して 24 時間以内に、前回選択したサブスクリプションと同じ価格が、お使いのアカウントに請求されます。	#
-authentication.store.purchase.info2=サブスクリプションはユーザーが管理することが可能で、購入後に iTunes のアカウント設定から自動更新をオフにすることができます。サブスクリプションが有効になった後にキャンセルした場合、そのサブスクリプションの残りの有効期間に対する返金を受けることはできません。このサブスクリプションについて、お使いの iTunes アカウントは Office 365 Education アカウントに紐付けされるため、お使いの iTunes アカウントで Minecraft: Education Edition ライセンスを追加購入することはできなくなります。	#
 authentication.store.purchase.button=ライセンスの購入 (%s/年)	#
 authentication.store.terms=使用条件	#
 authentication.store.viewTermsAndConditions=利用条件	#
@@ -1225,6 +1234,7 @@ commands.time.stop=時間 %1$s	#
 commands.title.description=画面のタイトルを操作する。	#
 commands.title.success=titleコマンドは正常に実行されました	#
 commands.titleraw.description=JSON メッセージを使用して画面のタイトルを調整します。	#
+commands.titleraw.success=Titleraw コマンドが正常に実行されました	#
 commands.toggledownfall.description=天気を切り替える。	#
 commands.tp.description=エンティティ (プレイヤー、モブなど) をテレポートさせる。	#
 commands.tp.notSameDimension=プレイヤーが同じ世界にいないためテレポートすることができません	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=前へ	#
 realmsSettingsScreen.dev_next_page_label=次へ	#
 realmsSettingsScreen.uploadConfirmationMessage=これを行うと現在の世界をあなたの Realm から削除して、新たな世界と置き換えます。あなたの Realm のメンバーは現在の世界にアクセスできなくなります。本当に続けてもいいですか?	#
 realmsSettingsScreen.uploadConfirmationTitle=世界を置き換えますか?	#
-realmsSettingsScreen.whitelist_invite=招待	#
+realmsSettingsScreen.allowlist_invite=招待	#
 realmsSettingsScreen.searchBox=検索中...	#
 realmsSettingsScreen.unknownPackName=不明な名前	#
 realmsSettingsScreen.viewSubscriptionsButton=サブスクリプションの確認	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=お使いのデバイスには以下
 disconnectionScreen.incompatiblePack.graphics.raytracing=お使いのデバイスにはレイ トレーシングをサポートする互換性のあるハードウェアがないため、この世界に参加できません	#
 disconnectionScreen.worldCorruption.message=世界を再度開くか、過去のバックアップから復元してください	#
 disconnectionScreen.worldCorruption=世界が破損しているため切断されました	#
+disconnectionScreen.hostSuspended=サーバーが現在使用できないため、接続が中断されました	#
 
 storageSpaceWarningScreen.frontend=容量に十分な空きがありません。十分な空き容量が確保されるまで、この機能へのアクセスは制限されます。	#
 storageSpaceWarningScreen.lowduringgameplay=お使いのデバイスには、Minecraft が世界や設定を保存するための十分な空き容量がありません。新しいデータを今後も保存できるよう、不要な古いデータをいくつか削除することをお勧めします。	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=招待を送信する	#
 invite.title=ゲームにフレンドを招待	#
 invite.error.message=一部の招待の送信に失敗した可能性があります。	#
 invite.noFriends=フレンド リストに誰もいません!	#
+invite.noRealmFriends=Realm にまだ誰も追加していません!	#
 invite.OnlineFriends=オンラインのフレンド	#
 invite.OfflineFriends=オフラインのフレンド	#
 invite.SuggestedFriends=おすすめのフレンド	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=操作の分割	#
 options.viewSubscriptions=サブスクリプション	#
 options.viewSubscriptions.button.info=情報	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/月	#
 options.viewSubscriptions.button.manage=管理	#
 options.viewSubscriptions.renew=30 日ごとに更新	#
 options.viewSubscriptions.daysRemaining=残り %d 日	#
@@ -6690,11 +6704,11 @@ skins.store.equipped=%s スキンを装備しました。	#
 soundCategory.ambient=環境音	#
 soundCategory.block=ブロック	#
 soundCategory.hostile=敵対的生物	#
-soundCategory.master=主音量	#
+soundCategory.master=メイン	#
 soundCategory.music=BGM	#
 soundCategory.neutral=友好的生物	#
 soundCategory.player=プレイヤー	#
-soundCategory.record=ジュークボックス/音ブロック	#
+soundCategory.record=ジュークボックス/音符ブロック	#
 soundCategory.weather=天候	#
 
 stat.animalsBred=動物を繁殖させた回数	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=コンテンツ	#
 store.realmsPlus.faq=FAQ	#
 store.realmsPlus.buyFor=%s で購入	#
 store.realmsPlus.buyNow=今すぐ購入	#
+store.realmsPlus.buyNowPerMonth=%s/月で利用	#
+store.realmsPlus.buyNowTrialPerMonth=無料試用版を開始 (期間終了後 %s/月)	#
 store.realmsPlus.errorNoOffer=エラー: セールが見つかりません	#
 store.realmsPlus.manageSubscription=サブスクリプションの管理	#
 store.realmsPlus.viewAllPacksTitle=超お得 - §g$150 (USD)!§r 以上の価値があるパック	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realm と 100 種類以上のマーケッ�
 store.realmsPlus.noTrial.description.iap=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! サブスクリプションは %s の価格で30日間利用できます。	#
 store.realmsPlus.realmName.placeholder=%s の Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 1 か月は無料で利用でき、その後は月額 %s でお楽しみいただけます。サブスクリプションのキャンセルはいつでも可能です。	#
-store.realmsPlus.recurring.withoutTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 料金は月額 %s です。サブスクリプションのキャンセルはいつでも可能です。	#
+store.realmsPlus.recurring.offerTrial=Realms Plus は、月額利用料が毎月自動的に課金される定期サービスです。キャンセルしない限り、毎月定額で利用できます。%s Realm を始め、100 種類以上のマーケットプレイス パックをすぐに楽しめます。最大 10 人まで同時プレイすることができ、友達は無料であなたの Realm の世界にアクセスできます! 最初の 30 日間は無料。無料試用版の期間終了後は月額 %s 円。いつでもキャンセルできます。	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus は、月額利用料が毎月自動的に課金される定期サービスです。%s Realm を始め、100 種類以上のマーケットプレイス パックをすぐに楽しめます。最大 10 人まで同時プレイすることができ、友達は無料であなたの Realm の世界にアクセスできます! 月額 %s 円。いつでもキャンセルできます。	#
 store.realmsPlus.consumable.offerTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の30日間は無料で、その後は %s の価格で30日間更新できます。	#
 store.realmsPlus.consumable.withoutTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! サブスクリプションは %s の価格で30日間利用できます。	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- フレンドはあなたの Realm を無�
 store.realmsPlus.landing.info2.line1=- 安全なクラウド ストレージ	#
 store.realmsPlus.landing.info2.line2=- Realms と Minecraft マーケットプレイスが利用可能なあらゆるデバイスでプレイ可能	#
 store.realmsPlus.landing.info2.line3=- Minecraft コミュニティのサポート	#
-store.realmsPlus.landing.info2.line4=- 1 か月間の無料トライアル	#
+store.realmsPlus.landing.info2.line4=- 30 日間無料で体験できる試用版。期間終了後は %s/月	#
+store.realmsPlus.landing.info2.line5=- %s/月	#
 
 store.realmsPlus.faq.header=よくある質問	#
 store.realmsPlus.faq.question1=Realms Plus とは?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=すべてのパックを見る	#
 store.realmsPlus.content.contentDescription=魅力的な Minecraft コンテンツの源がここに! Realms Plus に加入すると、マッシュアップ、世界、スキン パックなどのマーケットプレイス コンテンツ 100 種類以上を利用して冒険をお楽しみいただけます。また、コンテンツは毎月新しく追加されます。入手したコンテンツはプライベート サーバーに保存され、Realms および Minecraft マーケットプレイスの両方にアクセス可能なすべてのプラットフォームでお楽しみいただけます。 また、最大 10 人までの同時接続が可能になり、接続中の全プレーヤーはあなたの Realm にある世界を無料でプレイできます!	#
 
 
-store.realmsPlus.freeTrial=1 か月の無料トライアルを始める	#
+store.realmsPlus.freeTrial=無料試用版を開始 (期間終了後 %s/月)	#
 
 store.inventory.button=持ち物	#
 store.inventory.title=持ち物	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=ウォーム ビスク	#
 
 emotes.change_emotes=エモートの変更	#
 emotes.execute=実行	#
+emotes.header_text=エモート	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

@@ -304,6 +304,7 @@
     "shadow": true,
     "color": "$dark_button_default_text_color",
     "font_type": "MinecraftTen",
+    "tts_skip_message": true,
     "bindings": [
       {
         "binding_name": "#is_touch_mode",

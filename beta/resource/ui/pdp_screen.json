@@ -417,6 +417,17 @@
     "orientation": "vertical",
     "$button_action|default": "button.defaultNoAction",
     "$interact_button_id|default": "interact_button",
+    "visible": false,
+    "bindings": [
+      {
+        "binding_name": "#buttons_panel_visible",
+        "binding_name_override": "#visible"
+      },
+      {
+        "binding_name": "#buttons_panel_visible",
+        "binding_name_override": "#enabled"
+      }
+    ],
     "controls": [
       {
         "purchase_buttons_panel@pdp.smooth_purchase_buttons_panel": {

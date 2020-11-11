@@ -8,6 +8,9 @@ accessibility.enableTTS=Conversão de texto em voz ativada	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Pressiona %s para voltar	#
+accessibility.chat.tts.gamepad.exitChat=Pressiona %s para sair do chat	#
+accessibility.chat.tts.gamepad.sendMessage=Pressiona %s para enviar mensagem	#
 accessibility.chat.tts.says=%s diz %s	#
 accessibility.chat.tts.hideChat=Ocultar chat	#
 accessibility.chat.tts.keyboard=Teclado	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Ecrã de Definições do Jogo	#
 accessibility.screenName.skinPicker=Ecrã de Seleção de Skin	#
 accessibility.screenName.start=Menu Principal	#
 accessibility.screenName.vrAlignment=Ecrã de Orientação de RV 	#
+accessibility.screenName.emoteWheel=Ecrã de Emotes	#
 
 accessibility.settings.reset=reiniciar	#
 accessibility.settings.chooseSeed=Escolher Semente	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Botão Superior Esquerdo	#
 accessibility.keyboard.leftBracket=Tecla de parenteses reto esquerdo			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tecla de parenteses reto direito		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %d botão %s	#
+accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.assigned=Emote %s atribuído	#
+accessibility.emotes.unassigned=Não atribuído	#
+accessibility.emotes.playSuccess=Jogar emote	#
+accessibility.emotes.playFailed=Nenhum emote atribuído a este botão, pressiona a seta para baixo para aceder ao botão Alterar Emotes	#
+accessibility.emotes.instruction.keyboard=Pressiona para a direita ou para a esquerda para navegar pelos botões emote. Pressiona a seta para baixo para aceder ao botão Alterar Emotes.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Confirmar Compra	#
 authentication.store.intro=Esta versão de avaliação de Minecraft: Education Edition expirou. Para continuar a jogar Minecraft: Education Edition tens de comprar uma licença.	#
 authentication.store.popup.purchaseFailed.title=Algo Correu Mal	#
 authentication.store.popup.purchaseFailed.msg=Não foi possível finalizar a tua compra. Verifica a tua ligação à Internet.	#
-authentication.store.purchase.info1=O pagamento será debitado da tua conta iTunes no momento da confirmação da compra, e a subscrição renova-se automaticamente, a não ser que a autorrenovação seja desligada pelo menos 24 horas antes do final do período atual. O custo da renovação ser-te-á debitado da conta no espaço de 24 horas antes do fim do período atual, pela opção de preço de subscrição que escolheste anteriormente. 	#
-authentication.store.purchase.info2=Podes gerir a tua subscrição e desligar a renovação automática acedendo às definições da Conta iTunes após a compra. Se cancelares depois da tua subscrição ter sido ativada não serás reembolsado pelo restante período ativo da subscrição. A tua conta iTunes será ligada à tua Conta O365 Educação para esta subscrição, por isso não serás elegível para comprar licenças do Minecraft: Education Edition adicionais com esta conta iTunes.	#
 authentication.store.purchase.button=Comprar licença (%s/ano)	#
 authentication.store.terms=Termos de Utilização	#
 authentication.store.viewTermsAndConditions=Termos e Condições	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Tempo %1$s	#
 commands.title.description=Controla os títulos do ecrã.	#
 commands.title.success=Comando de título executado com sucesso	#
 commands.titleraw.description=Controla os títulos de ecrã com mensagens JSON.	#
+commands.titleraw.success=Comando titleraw executado com sucesso	#
 commands.toggledownfall.description=Ativa ou desativa o clima.	#
 commands.tp.description=Teletransporta entidades (jogadores, criaturas, etc.).	#
 commands.tp.notSameDimension=Não foi possível teletransportar porque os jogadores não estão na mesma dimensão	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Anterior	#
 realmsSettingsScreen.dev_next_page_label=Seguinte	#
 realmsSettingsScreen.uploadConfirmationMessage=Isto vai remover o teu mundo atual do teu Realm e permitir que o substituas por um novo. Os membros do teu Realm vão deixar de ter acesso ao teu mundo atual. Queres continuar?	#
 realmsSettingsScreen.uploadConfirmationTitle=Substituir mundo?	#
-realmsSettingsScreen.whitelist_invite=Convidar	#
+realmsSettingsScreen.allowlist_invite=Convidar	#
 realmsSettingsScreen.searchBox=Pesquisar...	#
 realmsSettingsScreen.unknownPackName=Nome Desconhecido	#
 realmsSettingsScreen.viewSubscriptionsButton=Ver Subscrições	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Não podes juntar-te ao mundo porque
 disconnectionScreen.incompatiblePack.graphics.raytracing=Não podes juntar-te ao mundo porque o teu dispositivo não tem hardware compatível para suportar o traçado de raios	#
 disconnectionScreen.worldCorruption.message=Tenta voltar a abrir o mundo ou repõe-no a partir de uma cópia de segurança anterior	#
 disconnectionScreen.worldCorruption=Desligado devida a corrupção do mundo	#
+disconnectionScreen.hostSuspended=Desligado devido à indisponibilidade do servidor	#
 
 storageSpaceWarningScreen.frontend=Estás quase sem espaço de armazenamento de dados! O Minecraft restringiu o acesso a esta funcionalidade até que limpes o espaço de armazenamento adicional.	#
 storageSpaceWarningScreen.lowduringgameplay=O teu dispositivo está quase sem espaço para que o Minecraft possa guardar mundos e definições neste dispositivo.  Porque não eliminar algumas coisas antigas que não precisas para poderes continuar a guardar coisas novas?	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Enviar Convites	#
 invite.title=Convidar Amigos Para o Teu Jogo	#
 invite.error.message=Alguns dos teus convites podem não ter sido enviados.	#
 invite.noFriends=Não adicionaste ninguém à tua lista de amigos!	#
+invite.noRealmFriends=Não adicionaste ninguém ao teu Realm!	#
 invite.OnlineFriends=Amigos Online	#
 invite.OfflineFriends=Amigos Offline	#
 invite.SuggestedFriends=Amigos Sugeridos	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Controlos Divididos	#
 options.viewSubscriptions=Subscrições	#
 options.viewSubscriptions.button.info=Inform.	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/MÊS	#
 options.viewSubscriptions.button.manage=Gerir	#
 options.viewSubscriptions.renew=Renova-se a cada 30 dias	#
 options.viewSubscriptions.daysRemaining=%d dias restantes	#
@@ -6690,11 +6704,11 @@ skins.store.equipped=Equipaste a skin %s.	#
 soundCategory.ambient=Ambiente/Meio Ambiental	#
 soundCategory.block=Blocos	#
 soundCategory.hostile=Criaturas Hostis	#
-soundCategory.master=Volume Geral	#
+soundCategory.master=Principal	#
 soundCategory.music=Música	#
 soundCategory.neutral=Criaturas Amigáveis	#
 soundCategory.player=Jogadores	#
-soundCategory.record=Jukebox/Blocos Musicais	#
+soundCategory.record=Blocos de Notas/Jukebox	#
 soundCategory.weather=Clima	#
 
 stat.animalsBred=Animais Tratados	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=Conteúdo	#
 store.realmsPlus.faq=FAQ	#
 store.realmsPlus.buyFor=COMPRAR POR %s	#
 store.realmsPlus.buyNow=COMPRAR AGORA	#
+store.realmsPlus.buyNowPerMonth=Comprar por %s/MÊS	#
+store.realmsPlus.buyNowTrialPerMonth=INICIAR AVALIAÇÃO GRATUITA (%s/MÊS SEGUINTE)	#
 store.realmsPlus.errorNoOffer=ERRO, OFERTA NÃO ENCONTRADA	#
 store.realmsPlus.manageSubscription=GERIR SUBSCRIÇÃO	#
 store.realmsPlus.viewAllPacksTitle=VALOR EXCELENTE – PACKS COM VALOR SUPERIOR A §g$150 (USD)!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=O teu Realm e 100+ packs do marketplace vã
 store.realmsPlus.noTrial.description.iap=O teu Realm e 100+ packs do marketplace vão ficar disponíveis imediatamente. Podem jogar até dez jogadores ao mesmo tempo e têm acesso aos mundos no teu Realm, gratuitamente! A primeira subscrição estará disponível durante 30 dias por %s.	#
 store.realmsPlus.realmName.placeholder=Realm de %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=O teu Realm e 100+ packs do marketplace vão ficar disponíveis imediatamente. Podem jogar até dez jogadores ao mesmo tempo e têm acesso aos mundos no teu Realm, gratuitamente! O primeiro mês é gratuito e, depois, ser-te-á cobrado %s/mês e podes cancelar em qualquer momento.	#
-store.realmsPlus.recurring.withoutTrial=O teu Realm e 100+ packs do marketplace vão ficar disponíveis imediatamente. Podem jogar até dez jogadores ao mesmo tempo e têm acesso aos mundos no teu Realm, gratuitamente! Ser-te-á cobrado %s/mês e podes cancelar em qualquer momento.	#
+store.realmsPlus.recurring.offerTrial=O Realms Plus é uma subscrição contínua com uma taxa de subscrição recorrente que é cobrada automaticamente todos os meses até que a subscrição seja cancelada.%sOs teus packs do marketplace e mais de 100 estarão imediatamente disponíveis. Podem jogar até 10 jogadores de uma vez e ganhando acesso aos mundos do teu Realms gratuitamente! Os teus primeiros 30 dias vão ser gratuitos e serão cobrados %s/mês depois desse mês inicial, sendo possível cancelar a qualquer momento.	#
+store.realmsPlus.recurring.withoutTrial=O Realms Plus é uma subscrição contínua com uma taxa de subscrição recorrente que é cobrada automaticamente todos os meses até que a subscrição seja cancelada.%sOs teus packs do marketplace e mais de 100 estarão imediatamente disponíveis. Podem jogar até 10 jogadores de uma vez e ganhando acesso aos mundos do teu Realms gratuitamente! Serão cobrados %s/mês, sendo possível cancelar a qualquer momento.	#
 store.realmsPlus.consumable.offerTrial=O teu Realm e 100+ packs do marketplace vão ficar disponíveis imediatamente. Podem jogar até dez jogadores ao mesmo tempo e têm acesso aos mundos no teu Realm, gratuitamente! Os teus primeiros 30 dias são gratuitos e, depois, podes renovar durante 30 dias por %s.	#
 store.realmsPlus.consumable.withoutTrial=O teu Realm e 100+ packs do marketplace vão ficar disponíveis imediatamente. Podem jogar até dez jogadores ao mesmo tempo e têm acesso aos mundos no teu Realm, gratuitamente! A primeira subscrição estará disponível durante 30 dias por %s.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Os teus amigos jogam grátis no teu Realm
 store.realmsPlus.landing.info2.line1=- Armazenamento na nuvem seguro	#
 store.realmsPlus.landing.info2.line2=- Joga em qualquer dispositivo com Realms e o Marketplace do Minecraft	#
 store.realmsPlus.landing.info2.line3=- Apoia a Comunidade Minecraft	#
-store.realmsPlus.landing.info2.line4=- Versão de avaliação gratuita durante um mês	#
+store.realmsPlus.landing.info2.line4=- Avaliação gratuita de 30 dias, depois %s por mês	#
+store.realmsPlus.landing.info2.line5=- %s por mês	#
 
 store.realmsPlus.faq.header=PERGUNTAS MAIS COMUNS	#
 store.realmsPlus.faq.question1=O que são os Realms Plus?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=VER TODOS OS PACKS	#
 store.realmsPlus.content.contentDescription=Explora a origem dos fantásticos recursos do Minecraft! Com os Realms Plus, consegues acesso instantâneo a 100+ itens do marketplace como mash-ups, mundos, packs de skins e aventuras épicas – com novidades a cada mês. Os conteúdos são armazenados no teu servidor pessoal e estão disponíveis em qualquer plataforma onde possas desfrutar dos Realms e do Marketplace do Minecraft. Podem jogar até dez jogadores de cada vez e estes têm acesso aos mundos no teu Realm, de forma gratuita!	#
 
 
-store.realmsPlus.freeTrial=INICIAR VERSÃO DE AVALIAÇÃO GRATUITA DE UM MÊS	#
+store.realmsPlus.freeTrial=INICIAR AVALIAÇÃO GRATUITA (%s/MÊS SEGUINTE)	#
 
 store.inventory.button=Inventário	#
 store.inventory.title=Inventário	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Cru	#
 
 emotes.change_emotes=Alterar Emoções	#
 emotes.execute=Executar	#
+emotes.header_text=Emotes	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

@@ -8,6 +8,9 @@ accessibility.enableTTS=텍스트 음성 변환 활성화됨	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=%s 키를 눌러 돌아가기	#
+accessibility.chat.tts.gamepad.exitChat=%s 키를 눌러 채팅 종료	#
+accessibility.chat.tts.gamepad.sendMessage=%s 키를 눌러 메시지 보내기	#
 accessibility.chat.tts.says=%s 님의 말: %s	#
 accessibility.chat.tts.hideChat=채팅 숨기기	#
 accessibility.chat.tts.keyboard=키보드	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=게임 설정 화면	#
 accessibility.screenName.skinPicker=스킨 선택 화면	#
 accessibility.screenName.start=주 메뉴	#
 accessibility.screenName.vrAlignment=VR 정렬 화면 	#
+accessibility.screenName.emoteWheel=이모티콘 화면	#
 
 accessibility.settings.reset=초기화	#
 accessibility.settings.chooseSeed=시드 선택	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=왼쪽 범퍼	#
 accessibility.keyboard.leftBracket=왼쪽 대괄호 키			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=오른쪽 대괄호 키		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s 버튼 %d	#
+accessibility.emotes.buttonName=이모티콘	#
+accessibility.emotes.assigned=%s 이모티콘 할당됨	#
+accessibility.emotes.unassigned=할당 안됨	#
+accessibility.emotes.playSuccess=이모티콘 재생	#
+accessibility.emotes.playFailed=이 버튼에 할당된 이모티콘이 없으며, 아래쪽 화살표를 눌러 이모티콘 변경 버튼에 액세스합니다.	#
+accessibility.emotes.instruction.keyboard=이모티콘 버튼을 차례로 돌려 보려면 오른쪽 또는 왼쪽을 누릅니다. 아래쪽 화살표를 눌러 이모티콘 변경 버튼에 액세스합니다.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=구매 확정	#
 authentication.store.intro=Minecraft: Education Edition 체험판이 만료되었습니다. Minecraft: Education Edition을 계속 플레이하려면 라이선스를 구입해야 합니다.	#
 authentication.store.popup.purchaseFailed.title=오류가 발생했습니다.	#
 authentication.store.popup.purchaseFailed.msg=구매를 완료할 수 없습니다. 인터넷 연결 상태를 확인해주세요.	#
-authentication.store.purchase.info1=구매가 확인되면 iTunes 계정으로 결제대금이 청구되며 현재 사용 기간 종료일로부터 24시간 전에 자동 갱신 옵션을 끄지 않으면 구독은 자동으로 갱신됩니다. 현재 사용 기간 종료일로부터 24시간 내로 갱신에 대한 비용이 기존에 선택한 옵션과 동일하게 계정으로 청구됩니다.	#
-authentication.store.purchase.info2=구독 및 자동 갱신 옵션 관리는 구매 후 iTunes 계정 설정에서 할 수 있습니다. 구독이 활성화된 후 취소를 하면, 남아있는 활성화된 구독 기간에 대해서 환불받을 수 없습니다. iTunes 계정은 해당 구독에 대하여 Office 365 Education 계정과 연동되어, 이 iTunes 계정으로는 추가 Minecraft: Education Edition 라이선스를 구입할 수 없습니다.	#
 authentication.store.purchase.button=구매 라이선스(%s/연)	#
 authentication.store.terms=사용 약관	#
 authentication.store.viewTermsAndConditions=약관 및 조건	#
@@ -1225,6 +1234,7 @@ commands.time.stop=시간: %1$s	#
 commands.title.description=화면 타이틀을 제어합니다.	#
 commands.title.success=Title 명령어가 성공적으로 실행되었습니다	#
 commands.titleraw.description=JSON 메시지로 화면 타이틀을 제어합니다.	#
+commands.titleraw.success=TitleRaw 명령어가 성공적으로 실행되었습니다	#
 commands.toggledownfall.description=날씨를 전환합니다.	#
 commands.tp.description=엔티티(플레이어, 몹 등)를 순간이동합니다.	#
 commands.tp.notSameDimension=플레이어가 다른 차원에 있어 순간이동을 할 수 없습니다	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=이전	#
 realmsSettingsScreen.dev_next_page_label=다음	#
 realmsSettingsScreen.uploadConfirmationMessage=이렇게 하면 현재 월드는 Realm에서 제거되며 새로운 월드로 대체합니다. Realm 멤버들은 더 이상 현재 월드에 접속할 수 없게 됩니다. 계속하시겠습니까?	#
 realmsSettingsScreen.uploadConfirmationTitle=월드를 교체할까요?	#
-realmsSettingsScreen.whitelist_invite=초대	#
+realmsSettingsScreen.allowlist_invite=초대	#
 realmsSettingsScreen.searchBox=검색 중...	#
 realmsSettingsScreen.unknownPackName=알 수 없는 이름	#
 realmsSettingsScreen.viewSubscriptionsButton=구독 보기	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=장치 메모리가 부족하여 월
 disconnectionScreen.incompatiblePack.graphics.raytracing=장치에 광선 추적을 지원하는 호환 하드웨어가 없기 때문에 월드에 참여할 수 없습니다.	#
 disconnectionScreen.worldCorruption.message=월드를 다시 열거나 이전 백업 버전으로 복원해 보세요	#
 disconnectionScreen.worldCorruption=월드 손상으로 인해 연결이 끊김	#
+disconnectionScreen.hostSuspended=서버를 사용할 수 없어 연결이 끊어졌습니다	#
 
 storageSpaceWarningScreen.frontend=데이터 저장 공간이 거의 가득 찼습니다! Minecraft에서 이 기능에 대한 접근을 제한했습니다. 기능을 이용하려면 추가 저장 공간을 확보해야 합니다.	#
 storageSpaceWarningScreen.lowduringgameplay=장치에 공간이 부족하여 Minecraft가 월드 및 설정을 저장할 수 없습니다. 필요 없는 기존 저장들을 삭제하고 새로 저장할 공간을 확보하세요.	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=초대장 보내기	#
 invite.title=친구를 게임에 초대하기	#
 invite.error.message=일부 사용자에게 초대장을 보내지 못했습니다.	#
 invite.noFriends=친구 목록에 아무도 추가하지 않았습니다!	#
+invite.noRealmFriends=Realm에 아무도 추가하지 않았습니다!	#
 invite.OnlineFriends=온라인 친구	#
 invite.OfflineFriends=오프라인 친구	#
 invite.SuggestedFriends=추천 친구	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=스플릿 컨트롤	#
 options.viewSubscriptions=구독	#
 options.viewSubscriptions.button.info=정보	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/월	#
 options.viewSubscriptions.button.manage=관리	#
 options.viewSubscriptions.renew=30일마다 갱신	#
 options.viewSubscriptions.daysRemaining=%d일 남음	#
@@ -6690,7 +6704,7 @@ skins.store.equipped=%s 스킨을 장착했습니다.	#
 soundCategory.ambient=배경음/환경	#
 soundCategory.block=블록	#
 soundCategory.hostile=적대적 생명체	#
-soundCategory.master=주 음량	#
+soundCategory.master=메인	#
 soundCategory.music=음악	#
 soundCategory.neutral=친화적 생명체	#
 soundCategory.player=플레이어	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=콘텐츠	#
 store.realmsPlus.faq=질문과 답변	#
 store.realmsPlus.buyFor=%s에 구매	#
 store.realmsPlus.buyNow=지금 구매	#
+store.realmsPlus.buyNowPerMonth=%s/월 구매	#
+store.realmsPlus.buyNowTrialPerMonth=무료 체험판 시작(이후 매월 %s)	#
 store.realmsPlus.errorNoOffer=오류. 할인 발견되지 않음	#
 store.realmsPlus.manageSubscription=구독 관리	#
 store.realmsPlus.viewAllPacksTitle=최고의 가치 - §g$150(USD)§r 이상의 가치를 가진 팩!	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realm과 100개 이상의 마켓플레이�
 store.realmsPlus.noTrial.description.iap=Realm과 100개 이상의 마켓플레이스 팩을 즉시 이용할 수 있습니다. 최대 10명의 플레이어가 동시에 플레이할 수 있으며, 해당 플레이어들은 여러분의 Realm의 모든 구독 콘텐츠에 무료로 접속할 수 있습니다! 30일간 %s의 가격으로 정기 서비스를 이용하실 수 있습니다.	#
 store.realmsPlus.realmName.placeholder=%s님의 Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm과 100개 이상의 마켓플레이스 팩을 바로 이용할 수 있습니다. 최대 10명의 플레이어가 동시에 플레이하고 무료로 내 Realm의 월드를 이용할 수 있습니다! 첫 달은 무료이며 이후 매월 %s의 요금이 청구되며 언제든지 취소할 수 있습니다.	#
-store.realmsPlus.recurring.withoutTrial=Realm과 100개 이상의 마켓플레이스 팩을 즉시 이용할 수 있습니다. 여러분의 Realm에서는 최대 10명의 플레이어가 동시에 플레이를 할 수 있고 여러분의 Realm의 모든 월드에 무료로 접속할 수 있습니다! 매월 %s이 청구될 예정이며 언제든 취소할 수 있습니다.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus는 구독을 취소할 때까지 매월 구독료가 자동 청구되는 구독 상품입니다.%s귀하의 Realm과 100개 이상의 마켓플레이스 팩을 즉시 사용할 수 있게 됩니다. 또한 최대 10 명의 플레이어가 동시에 플레이를 할 수 있으며, 귀하의 Realm 월드에 무료로 액세스할 수도 있습니다! 첫 30일은 무료고 그 후 매월 %s의 요금이 청구되며, 언제든지 취소할 수 있습니다.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus는 구독을 취소할 때까지 매월 구독료가 자동 청구되는 구독 상품입니다.%s귀하의 Realm과 100개 이상의 마켓플레이스 팩을 즉시 사용할 수 있게 됩니다. 또한 최대 10 명의 플레이어가 동시에 플레이를 할 수 있으며, 귀하의 Realm 월드에 무료로 액세스할 수도 있습니다! 매월 %s 요금이 청구되며 언제든지 취소할 수 있습니다.	#
 store.realmsPlus.consumable.offerTrial=Realm과 100개 이상의 마켓플레이스 팩을 즉시 이용할 수 있습니다. 최대 10명의 플레이어가 동시에 플레이할 수 있으며, 해당 플레이어들은 여러분의 Realm의 모든 구독 콘텐츠에 무료로 접속할 수 있습니다! 첫 30일은 무료이며, 이후에는 30일마다 %s의 가격으로 갱신할 수 있습니다.	#
 store.realmsPlus.consumable.withoutTrial=Realm과 100개 이상의 마켓플레이스 팩을 즉시 이용할 수 있습니다. 최대 10명의 플레이어가 동시에 플레이할 수 있으며, 해당 플레이어들은 여러분의 Realm의 모든 구독 콘텐츠에 무료로 접속할 수 있습니다! 30일간 %s의 가격으로 정기 서비스를 이용하실 수 있습니다.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- 친구들이 Realm에서 무료로 플레
 store.realmsPlus.landing.info2.line1=- 클라우드 저장 공간 확보	#
 store.realmsPlus.landing.info2.line2=- Realms와 Minecraft 마켓플레이스로 모든 장치에서 플레이	#
 store.realmsPlus.landing.info2.line3=- Minecraft 커뮤니티 지원	#
-store.realmsPlus.landing.info2.line4=- 1개월 무료 체험판	#
+store.realmsPlus.landing.info2.line4=- 체험판 무료 30일, 이후 매월 %s	#
+store.realmsPlus.landing.info2.line5=- 매월 %s	#
 
 store.realmsPlus.faq.header=자주 묻는 질문	#
 store.realmsPlus.faq.question1=Realms Plus는 무엇인가요?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=모든 팩 보기	#
 store.realmsPlus.content.contentDescription=놀라운 Minecraft 콘텐츠 소스를 활용하세요! Realms Plus로 매시업, 월드, 스킨 팩, 에픽 모험 등 100가지 이상의 마켓플레이스 아이템을 바로 이용할 수 있습니다. 또한 매월 새로운 아이템이 추가됩니다. 여러분의 콘텐츠는 개인 서버에 저장되며, Realms와 Minecraft 마켓플레이스를 이용하는 모든 플랫폼에서 사용할 수 있습니다. 최대 10명의 플레이어가 동시에 플레이하고 무료로 내 Realm의 월드를 이용할 수 있습니다!	#
 
 
-store.realmsPlus.freeTrial=1개월 무료 체험 시작	#
+store.realmsPlus.freeTrial=무료 체험판 시작(이후 매월 %s)	#
 
 store.inventory.button=소지품	#
 store.inventory.title=소지품	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=웜 비스크	#
 
 emotes.change_emotes=이모티콘 변경	#
 emotes.execute=실행	#
+emotes.header_text=이모티콘	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

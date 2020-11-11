@@ -8,6 +8,9 @@ accessibility.enableTTS=Tekst-naar-spraak ingeschakeld	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Druk op de %s om terug te gaan	#
+accessibility.chat.tts.gamepad.exitChat=Druk op de %s om de chat af te sluiten	#
+accessibility.chat.tts.gamepad.sendMessage=Druk op de %s om het bericht te verzenden	#
 accessibility.chat.tts.says=%s zegt %s	#
 accessibility.chat.tts.hideChat=Chat verbergen	#
 accessibility.chat.tts.keyboard=Toetsenbord	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Scherm Spelinstellingen	#
 accessibility.screenName.skinPicker=Scherm Skin kiezen	#
 accessibility.screenName.start=Hoofdmenu	#
 accessibility.screenName.vrAlignment=Scherm VR-uitlijning 	#
+accessibility.screenName.emoteWheel=Scherm Emotes	#
 
 accessibility.settings.reset=opnieuw instellen	#
 accessibility.settings.chooseSeed=Seed kiezen	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Linker-bumper	#
 accessibility.keyboard.leftBracket=Toets vierkante haak links			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Toets vierkante haak rechts		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s knop %d	#
+accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.assigned=De emote %s is toegewezen	#
+accessibility.emotes.unassigned=Niet-toegewezen	#
+accessibility.emotes.playSuccess=Emote afspelen	#
+accessibility.emotes.playFailed=Geen emote toegewezen aan deze knop. Druk op pijl-omlaag om toegang te krijgen tot de knop Emotes wijzigen	#
+accessibility.emotes.instruction.keyboard=Druk op rechts of links om door Emote-knoppen te wisselen. Druk op de pijl-omlaag om toegang te krijgen tot de knop Emotes wijzigen.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Aankoop bevestigen	#
 authentication.store.intro=Je proefversie van Minecraft: Education Edition is beëindigd. Je moet een licentie aanschaffen om Minecraft: Education Edition te kunnen blijven spelen.	#
 authentication.store.popup.purchaseFailed.title=Er is iets misgegaan	#
 authentication.store.popup.purchaseFailed.msg=We kunnen je aankoop helaas niet voltooien. Heb je wel verbinding met internet?	#
-authentication.store.purchase.info1=Je betaling wordt in rekening gebracht via je iTunes-account en het abonnement wordt automatisch verlengd tenzij de automatische verlenging ten minste 24 uur voor het einde van de huidige periode uitgeschakeld wordt. Je account zal binnen 24 uur voor het einde van de huidige periode belast worden met de betaling voor de verlenging tegen de abonnementsprijsoptie die je eerder geselecteerd hebt. 	#
-authentication.store.purchase.info2=Je kunt na aankoop je abonnement beheren en automatisch verlengen uitschakelen via je iTunes-accountinstellingen. Indien je je abonnement annuleert nadat je abonnement is geactiveerd, ontvang je geen restitutie voor de resterende actieve periode van het abonnement. Je iTunes-account wordt voor dit abonnement aan je O365 Education-account gekoppeld, waardoor je met dit iTunes-account geen extra Minecraft: Education Edition-licenties kunt aanschaffen.	#
 authentication.store.purchase.button=Licentie kopen (%s/jaar)	#
 authentication.store.terms=Gebruiksrechtovereenkomst	#
 authentication.store.viewTermsAndConditions=Voorwaarden en bepalingen	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Tijd %1$s	#
 commands.title.description=Bepaalt schermtitels.	#
 commands.title.success=Title-commando is uitgevoerd	#
 commands.titleraw.description=Bepaalt schermtitels met JSON-berichten.	#
+commands.titleraw.success=Titleraw-opdracht is uitgevoerd	#
 commands.toggledownfall.description=Schakelt het weer in en uit.	#
 commands.tp.description=Teleporteert entiteiten (spelers, mobs, etc.).	#
 commands.tp.notSameDimension=Kan niet teleporteren omdat spelers zich niet in dezelfde dimensie bevinden	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Vorige	#
 realmsSettingsScreen.dev_next_page_label=Volgende	#
 realmsSettingsScreen.uploadConfirmationMessage=Hiermee wordt je huidige wereld uit je realm verwijderd en kun je deze vervangen door een nieuwe wereld. Je realmleden hebben geen toegang meer tot jouw huidige wereld. Wil je doorgaan?	#
 realmsSettingsScreen.uploadConfirmationTitle=Wereld vervangen?	#
-realmsSettingsScreen.whitelist_invite=Uitnodigen	#
+realmsSettingsScreen.allowlist_invite=Uitnodigen	#
 realmsSettingsScreen.searchBox=Zoeken...	#
 realmsSettingsScreen.unknownPackName=Onbekende naam	#
 realmsSettingsScreen.viewSubscriptionsButton=Abonnementen bekijken	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Je kunt je niet bij deze wereld aans
 disconnectionScreen.incompatiblePack.graphics.raytracing=Je kunt je niet bij deze wereld aansluiten omdat je apparaat niet de compatibele hardware voor raytracing heeft	#
 disconnectionScreen.worldCorruption.message=Probeer de wereld opnieuw te openen of te herstellen vanuit een eerdere back-up	#
 disconnectionScreen.worldCorruption=Verbinding verbroken vanwege beschadiging aan wereld	#
+disconnectionScreen.hostSuspended=De verbinding is verbroken omdat de server niet beschikbaar is	#
 
 storageSpaceWarningScreen.frontend=Je hebt bijna geen opslagruimte meer! Minecraft heeft de toegang tot deze functie beperkt totdat je extra opslagruimte vrijmaakt.	#
 storageSpaceWarningScreen.lowduringgameplay=Je apparaat heeft bijna geen opslagruimte meer die Minecraft nodig heeft om werelden en instellingen op dit apparaat op te slaan. Probeer wat oude bestanden te verwijderen die je niet meer nodig hebt om nieuwe dingen te kunnen blijven opslaan.	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Uitnodigingen sturen	#
 invite.title=Vrienden uitnodigen voor je game	#
 invite.error.message=Sommige uitnodigingen zijn misschien niet verstuurd.	#
 invite.noFriends=Je hebt niemand toegevoegd aan de vriendenlijst!	#
+invite.noRealmFriends=Je hebt niemand toegevoegd aan je Realm.	#
 invite.OnlineFriends=Online vrienden	#
 invite.OfflineFriends=Offline vrienden	#
 invite.SuggestedFriends=Aanbevolen vrienden	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Gedeelde besturing	#
 options.viewSubscriptions=Abonnementen	#
 options.viewSubscriptions.button.info=Info	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/MAAND	#
 options.viewSubscriptions.button.manage=Beheren	#
 options.viewSubscriptions.renew=Wordt om de 30 dagen vernieuwd	#
 options.viewSubscriptions.daysRemaining=Nog %d dagen	#
@@ -6690,7 +6704,7 @@ skins.store.equipped=Je hebt de skin %s aangetrokken.	#
 soundCategory.ambient=Omgeving	#
 soundCategory.block=Blokken	#
 soundCategory.hostile=Vijandelijke wezens	#
-soundCategory.master=Hoofdvolume	#
+soundCategory.master=Hoofd	#
 soundCategory.music=Muziek	#
 soundCategory.neutral=Vriendelijke wezens	#
 soundCategory.player=Spelers	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=Content	#
 store.realmsPlus.faq=FAQ	#
 store.realmsPlus.buyFor=KOPEN VOOR %s	#
 store.realmsPlus.buyNow=NU KOPEN	#
+store.realmsPlus.buyNowPerMonth=Kopen voor %s/MAAND	#
+store.realmsPlus.buyNowTrialPerMonth=GRATIS PROEFPERIODE STARTEN (DAARNA %s/MAAND)	#
 store.realmsPlus.errorNoOffer=FOUT: GEEN AANBIEDING GEVONDEN	#
 store.realmsPlus.manageSubscription=ABONNEMENT BEHEREN	#
 store.realmsPlus.viewAllPacksTitle=VEEL WAAR VOOR JE GELD: PAKKETTEN TER WAARDE VAN RUIM §g$ 150 (USD)!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Je Realm en meer dan 100 Marketplace-pakket
 store.realmsPlus.noTrial.description.iap=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s.	#
 store.realmsPlus.realmName.placeholder=Realm van %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste maand is gratis en daarna wordt %s per maand in rekening gebracht. Je kunt op elk moment annuleren.	#
-store.realmsPlus.recurring.withoutTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Er wordt %s per maand in rekening gebracht en je kunt op elk moment annuleren.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus is een doorlopend abonnement met terugkerende abonnementskosten die elke maand automatisch in rekening worden gebracht totdat het abonnement is opgezegd.%sJouw Realm en meer dan 100 Marketplace-pakketten zijn onmiddellijk beschikbaar. Tot 10 spelers kunnen tegelijkertijd spelen en krijgen gratis toegang tot de werelden in je Realm! Je eerste 30 dagen zijn gratis en daarna wordt %s/maand in rekening gebracht. Je kunt op elk gewenst moment annuleren.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus is een doorlopend abonnement met terugkerende abonnementskosten die elke maand automatisch in rekening worden gebracht totdat het abonnement is opgezegd.%sJouw Realm en meer dan 100 Marketplace-pakketten zijn onmiddellijk beschikbaar. Tot 10 spelers kunnen tegelijkertijd spelen en krijgen gratis toegang tot de werelden in je Realm! Er wordt %s/maand in rekening gebracht en je kunt op elk gewenst moment annuleren.	#
 store.realmsPlus.consumable.offerTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! De eerste 30 dagen zijn gratis en daarna kun je voor 30 dagen verlengen voor %s.	#
 store.realmsPlus.consumable.withoutTrial=Je Realm en meer dan 100 Marketplace-pakketten zijn direct beschikbaar. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm! Je abonnement is 30 dagen geldig voor %s.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Vrienden spelen gratis mee op je Realm	#
 store.realmsPlus.landing.info2.line1=- Veilige opslag in de cloud	#
 store.realmsPlus.landing.info2.line2=- Speel op al je apparaten met Realms en de Minecraft Marketplace	#
 store.realmsPlus.landing.info2.line3=- Steun de Minecraft-community	#
-store.realmsPlus.landing.info2.line4=- Gratis proefperiode van 1 maand	#
+store.realmsPlus.landing.info2.line4=- Gratis proefperiode van 30 dagen, daarna %s per maand	#
+store.realmsPlus.landing.info2.line5=- %s per maand	#
 
 store.realmsPlus.faq.header=VEELGESTELDE VRAGEN	#
 store.realmsPlus.faq.question1=Wat is Realms Plus?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=ALLE PAKKETTEN BEKIJKEN	#
 store.realmsPlus.content.contentDescription=Profiteer van geweldige Minecraft-content! Met Realms Plus heb je direct toegang tot meer dan 100 Marketplace-voorwerpen, zoals mashups, werelden, skinpakketten en epische avonturen – met elke maand nieuwe toevoegingen. Je content wordt opgeslagen op je eigen persoonlijke server en is beschikbaar op elk platform waar je toegang hebt tot Realms en de Minecraft Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen en zij hebben ook gratis toegang tot werelden op jouw Realm!	#
 
 
-store.realmsPlus.freeTrial=PROEFPERIODE VAN 1 MAAND STARTEN	#
+store.realmsPlus.freeTrial=GRATIS PROEFPERIODE STARTEN (DAARNA %s/MAAND)	#
 
 store.inventory.button=Inventaris	#
 store.inventory.title=Inventaris	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Roodoranje	#
 
 emotes.change_emotes=Emotes wijzigen	#
 emotes.execute=Uitvoeren	#
+emotes.header_text=Emotes	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

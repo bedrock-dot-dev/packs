@@ -8,6 +8,9 @@ accessibility.enableTTS=Konuşma Metni etkin	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Geri dönmek için %s tuşuna bas	#
+accessibility.chat.tts.gamepad.exitChat=Sohbetten çıkmak için %s tuşuna bas	#
+accessibility.chat.tts.gamepad.sendMessage=Mesaj göndermek için %s tuşuna bas	#
 accessibility.chat.tts.says=%s %s diyor	#
 accessibility.chat.tts.hideChat=Sohbeti gizle	#
 accessibility.chat.tts.keyboard=Klavye	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Oyun Ayarları Ekranı	#
 accessibility.screenName.skinPicker=Dış Görünüş Seç Ekranı	#
 accessibility.screenName.start=Ana Menü	#
 accessibility.screenName.vrAlignment=VR Hizalama Ekranı	#
+accessibility.screenName.emoteWheel=İfadeler Ekranı	#
 
 accessibility.settings.reset=sıfırla	#
 accessibility.settings.chooseSeed=Tohum Seç	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Sol Yassı Düğme	#
 accessibility.keyboard.leftBracket=Sol köşeli ayraç tuşu			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Sağ köşeli ayraç tuşu		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s düğmesi %d	#
+accessibility.emotes.buttonName=İfade	#
+accessibility.emotes.assigned=%s ifadesi atandı	#
+accessibility.emotes.unassigned=Atama kaldırıldı	#
+accessibility.emotes.playSuccess=İfadeyi oynat	#
+accessibility.emotes.playFailed=Bu düğmeye atanmış ifade yok, İfadeleri Değiştir düğmesine erişmek için aşağı ok tuşuna bas	#
+accessibility.emotes.instruction.keyboard=İfade düğmeleri arasında gezinmek için sağ veya sol düğmesine bas. İfadeleri Değiştir düğmesine erişmek için aşağı oka bas.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Satın Almayı Onayla	#
 authentication.store.intro=Minecraft: Education Edition denemeniz sona erdi. Minecraft: Education Edition oynamaya devam edebilmeniz için bir lisans satın almanız gerekiyor.	#
 authentication.store.popup.purchaseFailed.title=Bir Sorun Oluştu	#
 authentication.store.popup.purchaseFailed.msg=Üzgünüz, satın alma işleminizi tamamlayamadık. İnternet bağlantınızı kontrol edebilir misiniz?	#
-authentication.store.purchase.info1=Satın alımın onaylanmasının ardından ödeme, iTunes hesabınızdan tahsil edilecek ve mevcut dönemin sonundan en az 24 saat öncesine kadar otomatik yenilenme özelliği kapatılmadığı sürece abonelik otomatik olarak yenilenecektir. Mevcut dönemin sona ermesinden 24 saat önce, daha önce seçtiğiniz abonelik fiyatı seçeneğine göre hesabınızdan yenileme ücreti tahsil edilecektir.	#
-authentication.store.purchase.info2=Satın alma sonrasında iTunes Hesabı ayarlarınıza erişerek aboneliğinizi yönetebilir ve otomatik yenilemeyi kapatabilirsiniz. Aboneliğiniz etkinleştirildikten sonra işlemi iptal ederseniz, aboneliğin geri kalan etkin dönemi için para iadesi alamazsınız. iTunes hesabınız bu abonelik için O365 Eğitim Hesabınıza bağlanacak, böylece bu iTunes hesabı ile ek Minecraft: Education Edition lisansları satın alamayacaksınız.	#
 authentication.store.purchase.button=Lisans satın al (%s/yıl)	#
 authentication.store.terms=Kullanım Koşulları	#
 authentication.store.viewTermsAndConditions=Hüküm ve Koşullar	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Saat %1$s	#
 commands.title.description=Ekran başlıklarını denetler.	#
 commands.title.success=Başlık komutu başarıyla gerçekleştirildi	#
 commands.titleraw.description=JSON iletileri içeren ekran başlıklarını denetler.	#
+commands.titleraw.success=Titleraw komutu başarıyla yürütüldü	#
 commands.toggledownfall.description=Hava durumunu değiştirir.	#
 commands.tp.description=Varlıkları (oyuncular, moblar gibi) ışınlar.	#
 commands.tp.notSameDimension=Oyuncular aynı boyutta olmadığından ışınlama yapılamadı	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Geri	#
 realmsSettingsScreen.dev_next_page_label=İleri	#
 realmsSettingsScreen.uploadConfirmationMessage=Bu işlem Realm'ınızdan şu anki dünyanızı silecek ve yerine yeni bir dünya eklemenize izin verecektir.  Realm üyeleriniz artık şu anki dünyanıza erişemeyecektir. Devam etmek istiyor musunuz?	#
 realmsSettingsScreen.uploadConfirmationTitle=Dünyayı değiştir?	#
-realmsSettingsScreen.whitelist_invite=Davet Et	#
+realmsSettingsScreen.allowlist_invite=Davet Et	#
 realmsSettingsScreen.searchBox=Ara...	#
 realmsSettingsScreen.unknownPackName=Bilinmeyen Ad	#
 realmsSettingsScreen.viewSubscriptionsButton=Abonelikleri Görüntüle	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Cihazınızın şu paketler için ye
 disconnectionScreen.incompatiblePack.graphics.raytracing=Dünyaya katılamıyorsun çünkü cihazın ışın izlemeyi desteklemek için uyumlu donanıma sahip değil	#
 disconnectionScreen.worldCorruption.message=Dünyayı yeniden açmayı veya önceki bir yedekten geri yüklemeyi deneyin	#
 disconnectionScreen.worldCorruption=Dünya bozulduğu için bağlantı kesildi	#
+disconnectionScreen.hostSuspended=Sunucuya ulaşılamadığı için bağlantı kesildi	#
 
 storageSpaceWarningScreen.frontend=Veri depolama alanınız dolmak üzere! Ek depolama alanı açana kadar Minecraft bu özelliğe erişiminizi kısıtladı.	#
 storageSpaceWarningScreen.lowduringgameplay=Cihazınızda Minecraft'ın dünyaları ve ayarları bu cihaza kaydetmek için kullanabileceği alan neredeyse bitti. Yeni öğeleri kaydetmeye devam edebilmek için ihtiyaç duymadığınız öğeleri silmek istemez misiniz?	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Davet Gönder	#
 invite.title=Oyununuza Arkadaşlarınızı davet edin	#
 invite.error.message=Davetiyelerinizden bazıları gönderilememiş olabilir.	#
 invite.noFriends=Arkadaş listenize henüz kimseyi eklenemediniz!	#
+invite.noRealmFriends=Realm'ına hiç kimseyi eklemedin!	#
 invite.OnlineFriends=Çevrimiçi Arkadaşlar	#
 invite.OfflineFriends=Çevrimdışı Arkadaşlar	#
 invite.SuggestedFriends=Önerilen Arkadaşlar	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Cep	#
 options.usetouchpad=Kumanda Kontrolleri	#
 options.viewSubscriptions=Abonelikler	#
 options.viewSubscriptions.button.info=Bilgi	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/AY	#
 options.viewSubscriptions.button.manage=Yönet	#
 options.viewSubscriptions.renew=30 günde bir yenilenir	#
 options.viewSubscriptions.daysRemaining=%d gün kaldı	#
@@ -6690,7 +6704,7 @@ skins.store.equipped=%s dış görünüşünü kullanıyorsunuz.	#
 soundCategory.ambient=Ortam/Çevre	#
 soundCategory.block=Bloklar	#
 soundCategory.hostile=Düşman Yaratıklar	#
-soundCategory.master=En Yüksek Ses	#
+soundCategory.master=Ana	#
 soundCategory.music=Müzik	#
 soundCategory.neutral=Dost Yaratıklar	#
 soundCategory.player=Oyuncular	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=İçerik	#
 store.realmsPlus.faq=SSS	#
 store.realmsPlus.buyFor=%s KARŞILIĞINDA AL	#
 store.realmsPlus.buyNow=ŞİMDİ AL	#
+store.realmsPlus.buyNowPerMonth=%s/AY için satın al	#
+store.realmsPlus.buyNowTrialPerMonth=ÜCRETSİZ DENEME BAŞLAT (SONRASINDA %s/AY)	#
 store.realmsPlus.errorNoOffer=HATA: TEKLİF BULUNAMADI	#
 store.realmsPlus.manageSubscription=ABONELİĞİ YÖNET	#
 store.realmsPlus.viewAllPacksTitle=ÇOK DEĞERLİ - EN AZ 150§g$ (USD) DEĞERİNDE PAKETLER!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realm'ınız ve 100'den fazla market paketi
 store.realmsPlus.noTrial.description.iap=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s karşılığında kullanabilirsiniz.	#
 store.realmsPlus.realmName.placeholder=%s Realm'ı		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk ayınız ücretsizdir; sonrasında aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
-store.realmsPlus.recurring.withoutTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus, abonelik iptal edilene kadar her ay otomatik olarak tahsil edilen düzenli abonelik ücretine sahip sürekli bir aboneliktir.%sRealm'ın ve 100'den fazla market paketin hemen kullanıma açılır. Aynı anda 10 oyuncuya kadar oynayabilir ve Realm'ındaki dünyalara ücretsiz olarak erişebilir! İlk 30 gün ücretsizdir, sonrasında %s/ay ücret fatura edilir ve dilediğin zaman iptal edebilirsin.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus, abonelik iptal edilene kadar her ay otomatik olarak tahsil edilen düzenli abonelik ücretine sahip sürekli bir aboneliktir.%sRealm'ın ve 100'den fazla market paketin hemen kullanıma açılır. Aynı anda 10 oyuncuya kadar oynayabilir ve Realm'ındaki dünyalara ücretsiz olarak erişebilir! %s/ay ücret fatura edilir ve dilediğin zaman iptal edebilirsin.	#
 store.realmsPlus.consumable.offerTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk 30 gününüz ücretsizdir; sonrasında %s karşılığında 30 gün için daha yenileyebilirsiniz.	#
 store.realmsPlus.consumable.withoutTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s karşılığında kullanabilirsiniz.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Arkadaşlarınız Realm'ınızda ücretsi
 store.realmsPlus.landing.info2.line1=- Güvenli bulut depolama alanı	#
 store.realmsPlus.landing.info2.line2=- Realms ve Minecraft Market ile herhangi bir cihazda oynayın	#
 store.realmsPlus.landing.info2.line3=- Minecraft Topluluğuna Destek Verin	#
-store.realmsPlus.landing.info2.line4=- Ücretsiz 1 aylık deneme	#
+store.realmsPlus.landing.info2.line4=- Ücretsiz 30 günlük deneme, sonra ayda %s	#
+store.realmsPlus.landing.info2.line5=- ayda %s	#
 
 store.realmsPlus.faq.header=SIK SORULAN SORULAR	#
 store.realmsPlus.faq.question1=Realms Plus nedir?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=TÜM PAKETLERİ GÖR	#
 store.realmsPlus.content.contentDescription=Harika Minecraft içeriklerinin kaynağına dalın! Realms Plus ile her ay yenisi eklenen karışımlar, dünyalar, dış görünüş paketleri ve muhteşem maceralar gibi 100'den fazla market öğesine anında erişim elde edersiniz. İçeriğiniz kişisel sunucunuzda depolanır ve hem Realms hem de Minecraft Market'i kullandığınız her platformda kullanılabilir. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir!	#
 
 
-store.realmsPlus.freeTrial=1 AYLIK ÜCRETSİZ DENEMEYİ BAŞLAT	#
+store.realmsPlus.freeTrial=ÜCRETSİZ DENEME BAŞLAT (SONRASINDA %s/AY)	#
 
 store.inventory.button=Envanter	#
 store.inventory.title=Envanter	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Sıcak Bisküvi	#
 
 emotes.change_emotes=Duyguları Değiştir	#
 emotes.execute=Yürüt	#
+emotes.header_text=İfadeler	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

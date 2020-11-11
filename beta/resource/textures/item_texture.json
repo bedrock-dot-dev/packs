@@ -503,8 +503,8 @@
       "nautilus_shell" : {
          "textures" : "textures/items/nautilus"
       },
-      "nether_sprouts": {
-         "textures": "textures/items/nether_sprouts"
+      "nether_sprouts" : {
+         "textures" : "textures/items/nether_sprouts"
       },
       "nether_star" : {
          "textures" : "textures/items/nether_star"
@@ -854,6 +854,9 @@
             "textures/items/egg_null",
             "textures/items/egg_mask"
          ]
+      },
+      "spawn_egg_bee" : {
+         "textures" : "textures/items/egg_bee"
       },
       "spawn_egg_wandering_trader" : {
          "textures" : "textures/items/egg_wanderingtrader"

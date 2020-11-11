@@ -8,6 +8,9 @@ accessibility.enableTTS=Tekst til tale er aktivert	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Trykk på %s for å gå tilbake	#
+accessibility.chat.tts.gamepad.exitChat=Trykk på %s for å avslutte chatten	#
+accessibility.chat.tts.gamepad.sendMessage=Trykk på %s for å sende melding	#
 accessibility.chat.tts.says=%s sier %s	#
 accessibility.chat.tts.hideChat=Skjul chat	#
 accessibility.chat.tts.keyboard=Tastatur	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Spillinnstillinger	#
 accessibility.screenName.skinPicker=Velg skall	#
 accessibility.screenName.start=Hovedmeny	#
 accessibility.screenName.vrAlignment=VR-justering	#
+accessibility.screenName.emoteWheel=Følelser-skjermbildet	#
 
 accessibility.settings.reset=tilbakestill	#
 accessibility.settings.chooseSeed=Velg seed	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Venstre skulderknapp / LB	#
 accessibility.keyboard.leftBracket=Tast for venstre hakeparentes			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tast for høyre hakeparentes		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s-knappen %d	#
+accessibility.emotes.buttonName=Følelse	#
+accessibility.emotes.assigned=Følelsen %s er tilordnet	#
+accessibility.emotes.unassigned=Ikke tilordnet	#
+accessibility.emotes.playSuccess=Spillfølelse	#
+accessibility.emotes.playFailed=Ingen følelse er tilordnet denne knappen. Trykk på pil ned for å få tilgang til Endre følelser-knappen	#
+accessibility.emotes.instruction.keyboard=Trykk på høyre eller venstre for å bla gjennom knappene for følelser. Trykk på pil ned for å få tilgang til Endre følelser-knappen.	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Bekreft kjøp	#
 authentication.store.intro=Du kan ikke prøve Minecraft: Education Edition flere ganger. Du må kjøpe en lisens for å fortsette å spille Minecraft: Education Edition.	#
 authentication.store.popup.purchaseFailed.title=Noe gikk galt	#
 authentication.store.popup.purchaseFailed.msg=Beklager, men vi kunne ikke fullføre kjøpet ditt. Kan du kontrollere Internett-tilkoblingen din?	#
-authentication.store.purchase.info1=Betalingen trekkes fra iTunes-kontoen din når kjøpet bekreftes, og abonnementet fornyes automatisk med mindre automatisk fornying slås av minst 24 timer før utløpet av inneværende periode. Ved fornying trekkes den tidligere valgte abonnementsprisen fra kontoen din om lag 24 timer før utløpet av den inneværende perioden. 	#
-authentication.store.purchase.info2=Du kan administrere abonnementet ditt og slå av automatisk fornying ved å gå til innstillingene for iTunes-kontoen etter kjøpet. Hvis du kansellerer etter at abonnementet ditt er aktivert, får du ikke refusjon for den resterende aktive perioden. I forbindelse med dette abonnementet knyttes iTunes-kontoen din til O365 Education-kontoen din, så du kan ikke bruke denne iTunes-kontoen til å kjøpe flere lisenser for Minecraft: Education Edition.	#
 authentication.store.purchase.button=Kjøp lisens (%s i året)	#
 authentication.store.terms=Vilkår for bruk	#
 authentication.store.viewTermsAndConditions=Vilkår og betingelser	#
@@ -1225,6 +1234,7 @@ commands.time.stop=Tid: %1$s	#
 commands.title.description=Kontrollerer skjermtitler.	#
 commands.title.success=Tittelkommandoen ble kjørt uten feil	#
 commands.titleraw.description=Kontrollerer skjermtitler med JSON-meldinger.	#
+commands.titleraw.success=Titleraw-kommandoen ble utført	#
 commands.toggledownfall.description=Aktiverer eller deaktiverer været.	#
 commands.tp.description=Teleporterer enheter (spillere, vesener osv.).	#
 commands.tp.notSameDimension=Kan ikke teleportere fordi spillerne ikke er i samme dimensjon	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Forrige	#
 realmsSettingsScreen.dev_next_page_label=Neste	#
 realmsSettingsScreen.uploadConfirmationMessage=Dette fjerner den nåværende verdenen fra realmen din og lar deg erstatte den med en ny. Medlemmene av realmen din får ikke lenger tilgang til den nåværende verdenen. Vil du fortsette?	#
 realmsSettingsScreen.uploadConfirmationTitle=Erstatte verdenen?	#
-realmsSettingsScreen.whitelist_invite=Inviter	#
+realmsSettingsScreen.allowlist_invite=Inviter	#
 realmsSettingsScreen.searchBox=Søk …	#
 realmsSettingsScreen.unknownPackName=Ukjent navn	#
 realmsSettingsScreen.viewSubscriptionsButton=Vis abonnement	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Du kan ikke bli med i verdenen fordi
 disconnectionScreen.incompatiblePack.graphics.raytracing=Du kan ikke bli med i verdenen fordi enheten din ikke har maskinvare som er kompatibel med strålesporing	#
 disconnectionScreen.worldCorruption.message=Prøv å åpne verdenen på nytt eller å gjenopprette den fra en tidligere sikkerhetskopi	#
 disconnectionScreen.worldCorruption=Frakoblet på grunn av ødelagt verden	#
+disconnectionScreen.hostSuspended=Frakoblet fordi serveren ikke er tilgjengelig	#
 
 storageSpaceWarningScreen.frontend=Du har nesten ikke mer datalagringsplass igjen! Minecraft har begrenset tilgangen til denne funksjonen frem til du frigjør mer plass.	#
 storageSpaceWarningScreen.lowduringgameplay=Du har nesten ikke mer datalagringsplass igjen som Minecraft trenger for å lagre verdener og innstillinger på denne enheten.  Hvorfor ikke slette noe gammelt du ikke trenger så du kan fortsette med å lagre nye ting?	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=Send invitasjoner	#
 invite.title=Inviter venner til spillet ditt	#
 invite.error.message=Det kan være at noen av invitasjonene ikke ble sendt.	#
 invite.noFriends=Du har ikke lagt til noen i vennelisten din!	#
+invite.noRealmFriends=Du har ikke lagt til noen i realmen din!	#
 invite.OnlineFriends=Tilkoblede venner	#
 invite.OfflineFriends=Frakoblede venner	#
 invite.SuggestedFriends=Foreslåtte venner	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Del opp kontroller	#
 options.viewSubscriptions=Abonnementer	#
 options.viewSubscriptions.button.info=Info	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s PER MÅNED	#
 options.viewSubscriptions.button.manage=Administrer	#
 options.viewSubscriptions.renew=Fornyes hver 30. dag	#
 options.viewSubscriptions.daysRemaining=%d dager igjen	#
@@ -6690,7 +6704,7 @@ skins.store.equipped=Du har tatt på deg skallet %s.	#
 soundCategory.ambient=Omgivelser/miljø	#
 soundCategory.block=Blokker	#
 soundCategory.hostile=Fiendtlige skapninger	#
-soundCategory.master=Hovedvolum	#
+soundCategory.master=Hoved	#
 soundCategory.music=Musikk	#
 soundCategory.neutral=Vennlige skapninger	#
 soundCategory.player=Spillere	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=Innhold	#
 store.realmsPlus.faq=Vanlige spørsmål	#
 store.realmsPlus.buyFor=KJØP FOR %s	#
 store.realmsPlus.buyNow=KJØP NÅ	#
+store.realmsPlus.buyNowPerMonth=Kjøp for %s per MÅNED	#
+store.realmsPlus.buyNowTrialPerMonth=START GRATIS PRØVE (DERETTER %s PER MÅNED)	#
 store.realmsPlus.errorNoOffer=FEIL – INGEN TILBUD FUNNET	#
 store.realmsPlus.manageSubscription=ADMINISTRER ABONNEMENT	#
 store.realmsPlus.viewAllPacksTitle=MYE FOR PENGENE – PAKKER VERDT OVER 150 DOLLAR!§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=Du får tilgang til realmen din og over 100
 store.realmsPlus.noTrial.description.iap=Du får tilgang til realmen din og over 100 pakker fra markedsplassen umiddelbart. Opptil ti spillere kan spille samtidig, og de får tilgang til verdenene på realmen din helt gratis! Et abonnement på 30 dager koster %s.	#
 store.realmsPlus.realmName.placeholder=Realmen til %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Du får tilgang til realmen din og over 100 pakker fra markedsplassen umiddelbart. Opptil ti spillere kan spille samtidig, og de får tilgang til verdenene på realmen din helt gratis! Den første måneden er gratis. Deretter faktureres du %s hver måned, og du kan kansellere når som helst.	#
-store.realmsPlus.recurring.withoutTrial=Du får tilgang til realmen din og over 100 pakker fra markedsplassen umiddelbart. Opptil ti spillere kan spille samtidig, og de får tilgang til verdenene på realmen din helt gratis! Du faktureres %s hver måned, og du kan kansellere når som helst.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus er et løpende abonnement med et regelmessig abonnementsgebyr som belastes automatisk hver måned til abonnementet avsluttes.%sRealmen og over 100 innholdspakker fra markedsplassen er tilgjengelige umiddelbart. Opptil 10 spillere kan spille samtidig, og de får gratis tilgang til verdener i realmen din! Dine første 30 dager er gratis, og deretter blir du fakturert %s per måned. Abonnementet kan avsluttes når som helst.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus er et løpende abonnement med et regelmessig abonnementsgebyr som belastes automatisk hver måned til abonnementet avsluttes.%sRealmen og over 100 innholdspakker fra markedsplassen er tilgjengelige umiddelbart. Opptil 10 spillere kan spille samtidig, og de får gratis tilgang til verdener i realmen din! Du blir fakturert %s per måned, og abonnementet kan avsluttes når som helst.	#
 store.realmsPlus.consumable.offerTrial=Du får tilgang til realmen din og over 100 pakker fra markedsplassen umiddelbart. Opptil ti spillere kan spille samtidig, og de får tilgang til verdenene på realmen din helt gratis! De første 30 dagene er gratis, og deretter kan du få nye 30 dager for %s.	#
 store.realmsPlus.consumable.withoutTrial=Du får tilgang til realmen din og over 100 pakker fra markedsplassen umiddelbart. Opptil ti spillere kan spille samtidig, og de får tilgang til verdenene på realmen din helt gratis! Et abonnement på 30 dager koster %s.	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=– Venner spiller gratis på realmen din	#
 store.realmsPlus.landing.info2.line1=– Sikker skylagring	#
 store.realmsPlus.landing.info2.line2=– Spill på alle enheter med Realms og Minecraft Markedsplass	#
 store.realmsPlus.landing.info2.line3=– Støtt Minecraft-fellesskapet	#
-store.realmsPlus.landing.info2.line4=– Prøv gratis i 1 måned	#
+store.realmsPlus.landing.info2.line4=– 30 dagers gratis prøve, deretter %s per måned	#
+store.realmsPlus.landing.info2.line5=– %s per måned	#
 
 store.realmsPlus.faq.header=VANLIGE SPØRSMÅL	#
 store.realmsPlus.faq.question1=Hva er Realms Plus?	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=SE ALLE PAKKER	#
 store.realmsPlus.content.contentDescription=Få tilgang til utrolig Minecraft-innhold! Med Realms Plus får du umiddelbar tilgang til over 100 innholdselementer fra Markedsplass, for eksempel mash-up-pakker, verdener, skallpakker og episke eventyr – og det kommer nye hver måned. Innholdet lagres på din egen personlige server, og du har tilgang til det på alle plattformer med både Realms og Minecraft Markedsplass. Opptil ti spillere kan spille samtidig, og de får tilgang til verdenene på realmen din helt gratis!	#
 
 
-store.realmsPlus.freeTrial=START GRATIS PRØVEPERIODE PÅ ÉN MÅNED	#
+store.realmsPlus.freeTrial=START GRATIS PRØVE (DERETTER %s PER MÅNED)	#
 
 store.inventory.button=Inventar	#
 store.inventory.title=Inventar	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=Varm bisque	#
 
 emotes.change_emotes=Endre følelser	#
 emotes.execute=Kjør	#
+emotes.header_text=Følelser	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

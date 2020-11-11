@@ -8,6 +8,9 @@ accessibility.enableTTS=文本转语音已启用	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=按下 %s 返回	#
+accessibility.chat.tts.gamepad.exitChat=按下 %s 退出聊天	#
+accessibility.chat.tts.gamepad.sendMessage=按下 %s 发送消息	#
 accessibility.chat.tts.says=%s 说 %s	#
 accessibility.chat.tts.hideChat=隐藏聊天	#
 accessibility.chat.tts.keyboard=键盘	#
@@ -100,6 +103,7 @@ accessibility.screenName.settings=游戏设置屏幕	#
 accessibility.screenName.skinPicker=皮肤选择屏幕	#
 accessibility.screenName.start=主菜单	#
 accessibility.screenName.vrAlignment=VR 对齐屏幕	#
+accessibility.screenName.emoteWheel=表情屏幕	#
 
 accessibility.settings.reset=重置	#
 accessibility.settings.chooseSeed=选择种子	#
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=左杆	#
 accessibility.keyboard.leftBracket=左方框键			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右方框键		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s，%s 按钮 %d	#
+accessibility.emotes.buttonName=表情	#
+accessibility.emotes.assigned=已指派 %s 表情	#
+accessibility.emotes.unassigned=未指派	#
+accessibility.emotes.playSuccess=播放表情	#
+accessibility.emotes.playFailed=此按钮没有指派的表情，按下箭头以访问更改表情按钮	#
+accessibility.emotes.instruction.keyboard=按右或左键在表情按钮之间切换。按下箭头以访问更改表情按钮。	#
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=确认购买	#
 authentication.store.intro=您的 Minecraft: Education Edition 试用机会已用完。您需要购买许可，才能继续使用 Minecraft: Education Edition。	#
 authentication.store.popup.purchaseFailed.title=出错了	#
 authentication.store.popup.purchaseFailed.msg=抱歉，无法完成购买。请检查网络连接？	#
-authentication.store.purchase.info1=付款会在确认购买后向您的 iTunes 账户收取，除非在当前订阅期结束前至少 24 小时关闭自动更新，否则订阅会自动更新。在当前订阅期结束之前 24 小时内，更新费用会根据您此前选择的订阅价格选项，向您的账户收取。	#
-authentication.store.purchase.info2=购买之后您可以访问 iTunes 账户，管理您的订阅，关闭自动更新。如果您在订阅激活后取消，订阅剩余有效期间将不予退款。此订阅会让您的 iTunes 账户将与您的 Office 365 教育版账户关联，因此您将失去资格，无法使用此 iTunes 账户购买额外的 Minecraft: Education Edition 许可。	#
 authentication.store.purchase.button=购买许可（%s/年）	#
 authentication.store.terms=使用条款	#
 authentication.store.viewTermsAndConditions=条款和条件	#
@@ -1225,6 +1234,7 @@ commands.time.stop=时间 %1$s	#
 commands.title.description=控制屏幕标题。	#
 commands.title.success=标题命令执行成功	#
 commands.titleraw.description=使用 JSON 消息控制屏幕标题。	#
+commands.titleraw.success=Titleraw 命令执行成功	#
 commands.toggledownfall.description=切换天气。	#
 commands.tp.description=传送实体（玩家、生物等）。	#
 commands.tp.notSameDimension=无法传送，因为目标玩家不存在于同一个维度	#
@@ -2041,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=上一个	#
 realmsSettingsScreen.dev_next_page_label=下一个	#
 realmsSettingsScreen.uploadConfirmationMessage=本操作将从你的领域中移除当前的世界，并允许你替换上一个新的世界。你领域的成员将无法再进入当前的世界。想要继续吗？	#
 realmsSettingsScreen.uploadConfirmationTitle=替换世界吗？	#
-realmsSettingsScreen.whitelist_invite=邀请	#
+realmsSettingsScreen.allowlist_invite=邀请	#
 realmsSettingsScreen.searchBox=搜索...	#
 realmsSettingsScreen.unknownPackName=未知名称	#
 realmsSettingsScreen.viewSubscriptionsButton=查看订阅	#
@@ -2327,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=您无法加入此世界，因为您
 disconnectionScreen.incompatiblePack.graphics.raytracing=您无法加入此世界，因为您的设备没有支持光线追踪的兼容硬件	#
 disconnectionScreen.worldCorruption.message=尝试重新打开世界或从之前的备份还原它	#
 disconnectionScreen.worldCorruption=由于世界遭到破坏，所以连接断开	#
+disconnectionScreen.hostSuspended=服务器不可用，已断开连接	#
 
 storageSpaceWarningScreen.frontend=您的存储空间即将不足！《我的世界》已限制您访问该功能，直至您清理出额外的存储空间为止。	#
 storageSpaceWarningScreen.lowduringgameplay=您的设备空间不足，《我的世界》无法在此设备上存储世界和设置。为什么不删除一些您不需要的旧东西，便于您保存新内容？	#
@@ -3658,6 +3669,7 @@ invite.sendUnnumbered=发送邀请	#
 invite.title=邀请好友加入您的游戏	#
 invite.error.message=你的部分邀请函可能发送失败。	#
 invite.noFriends=您尚未添加任何人到您的好友列表中！	#
+invite.noRealmFriends=您尚未添加任何人到您的 Realm 中！	#
 invite.OnlineFriends=在线好友	#
 invite.OfflineFriends=离线好友	#
 invite.SuggestedFriends=推荐好友	#
@@ -5786,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=分离控制	#
 options.viewSubscriptions=订阅	#
 options.viewSubscriptions.button.info=信息	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/月	#
 options.viewSubscriptions.button.manage=管理	#
 options.viewSubscriptions.renew=每 30 天续订一次	#
 options.viewSubscriptions.daysRemaining=剩余 %d 天	#
@@ -6690,7 +6704,7 @@ skins.store.equipped=您已配备 %s 皮肤。	#
 soundCategory.ambient=环境	#
 soundCategory.block=方块	#
 soundCategory.hostile=敌对生物	#
-soundCategory.master=主音量	#
+soundCategory.master=主要	#
 soundCategory.music=音乐	#
 soundCategory.neutral=友好生物	#
 soundCategory.player=玩家	#
@@ -6782,6 +6796,8 @@ store.realmsPlus.content=内容	#
 store.realmsPlus.faq=常见问题解答	#
 store.realmsPlus.buyFor=为%s购买	#
 store.realmsPlus.buyNow=立即购买	#
+store.realmsPlus.buyNowPerMonth=以 %s/月的价格购买	#
+store.realmsPlus.buyNowTrialPerMonth=开始免费试用（之后 %s/月）	#
 store.realmsPlus.errorNoOffer=错误：未发现优惠	#
 store.realmsPlus.manageSubscription=管理订阅	#
 store.realmsPlus.viewAllPacksTitle=超值 - 包价值超过 §g$150 美元！§r	#
@@ -6799,8 +6815,8 @@ store.realmsPlus.noTrial.description=您的 Realm 和 100 多个市场包将立�
 store.realmsPlus.noTrial.description.iap=您的 Realm 和 100 多个市场包将立即可用。至多 10 名玩家可以同时玩，并且他们可以免费访问您的 Realm 内的世界！您的定期服务期为 30 天，价格为 %s。	#
 store.realmsPlus.realmName.placeholder=%s的 Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=您的 Realm 和 100 多个市场包将立即可用。至多 10 名玩家可以同时玩，并且他们可以免费访问您的 Realm 内的世界！首月是免费的，之后您将被收取 %s/月的费用，并且您可以随时取消。	#
-store.realmsPlus.recurring.withoutTrial=您的 Realm 和 100 多个市场包将立即可用。至多 10 名玩家可以同时玩，并且他们可以免费访问您的 Realm 内的世界！您将被收取 %s/月的费用，并且您可以随时取消。	#
+store.realmsPlus.recurring.offerTrial=Realms Plus 是一项持续订阅，每月自动收取续订费，直到订阅取消为止。%s 您的 Realm 和 100 多个市场包将立即可用。至多 10 名用户可以同时探索，并且他们可以免费访问您的 Realm 内的世界！前 30 天是免费的，之后将按 %s/月的价格收费，您可以随时取消。	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus 是一项持续订阅，每月自动收取续订费，直到订阅取消为止。%s 您的 Realm 和 100 多个市场包将立即可用。至多 10 名用户可以同时探索，并且他们可以免费访问您的 Realm 内的世界！按 %s/月的价格收费，您可以随时取消。	#
 store.realmsPlus.consumable.offerTrial=您的 Realm 和 100 多个市场包将立即可用。至多 10 名玩家可以同时玩，并且他们可以免费访问您的 Realm 内的世界！前 30 天是免费的，之后您可以按 %s 的价格续费 30 天。	#
 store.realmsPlus.consumable.withoutTrial=您的 Realm 和 100 多个市场包将立即可用。至多 10 名玩家可以同时玩，并且他们可以免费访问您的 Realm 内的世界！您的定期服务期为 30 天，价格为 %s。	#
 
@@ -6813,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- 好友可以在您的 Realm 中免费玩	
 store.realmsPlus.landing.info2.line1=- 安全云存储	#
 store.realmsPlus.landing.info2.line2=- 在任何带有 Realms 和《我的世界》市场的设备上玩	#
 store.realmsPlus.landing.info2.line3=- 支持《我的世界》社区	#
-store.realmsPlus.landing.info2.line4=- 为期 1 个月的免费试用	#
+store.realmsPlus.landing.info2.line4=- 免费试用 30 天，之后 %s 每月	#
+store.realmsPlus.landing.info2.line5=- %s 每月	#
 
 store.realmsPlus.faq.header=常见问题	#
 store.realmsPlus.faq.question1=什么是 Realms Plus？	#
@@ -6856,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=查看所有的包	#
 store.realmsPlus.content.contentDescription=畅享精彩的《我的世界》内容！有了 Realms Plus，您可以立即访问 100 多个市场物品，例如混搭包、世界、皮肤包和史诗级冒险——而且每个月都会添加新的内容。您的内容将存储在您专属的个人服务器上，并且可以在任何您享有 Realms 和《我的世界》市场的平台上进行使用。至多 10 名玩家可以同时玩，并且他们可以免费访问您的 Realm 内的世界！	#
 
 
-store.realmsPlus.freeTrial=开始为期一个月的免费试用	#
+store.realmsPlus.freeTrial=开始免费试用（之后 %s/月）	#
 
 store.inventory.button=物品栏	#
 store.inventory.title=物品栏	#
@@ -8954,6 +8971,7 @@ dr.color.warm_bisque=暖调橘黄色	#
 
 emotes.change_emotes=更改表情	#
 emotes.execute=执行	#
+emotes.header_text=表情	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification
