@@ -237,17 +237,6 @@
          "west" : "blast_furnace_side"
       }
    },
-   "soul_fire" : {
-      "sound" : "stone",
-      "textures" : {
-         "down" : "soul_fire_1",
-         "east" : "soul_fire_0",
-         "north" : "soul_fire_0",
-         "south" : "soul_fire_0",
-         "up" : "soul_fire_0",
-         "west" : "soul_fire_0"
-      }
-   },
    "blue_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "blue_glazed_terracotta"
@@ -255,10 +244,6 @@
    "blue_ice" : {
       "sound" : "glass",
       "textures" : "blue_ice"
-   },
-   "warped_wart_block" : {
-      "sound" : "nether_wart",
-      "textures" : "warped_wart_block"
    },
    "bone_block" : {
       "sound" : "bone_block",
@@ -631,7 +616,7 @@
       }
    },
    "crimson_planks" : {
-      "sound" : "stem",
+      "sound" : "wood",
       "textures" : "crimson_planks"
    },
    "crimson_pressure_plate" : {
@@ -1530,8 +1515,8 @@
       "textures" : "nether_sprouts"
    },
    "nether_wart" : {
-      "textures" : "nether_wart",
-      "sound" : "nether_wart"
+      "sound" : "nether_wart",
+      "textures" : "nether_wart"
    },
    "nether_wart_block" : {
       "sound" : "nether_wart",
@@ -2039,6 +2024,17 @@
          "up" : "soul_campfire_fire"
       }
    },
+   "soul_fire" : {
+      "sound" : "stone",
+      "textures" : {
+         "down" : "soul_fire_1",
+         "east" : "soul_fire_0",
+         "north" : "soul_fire_0",
+         "south" : "soul_fire_0",
+         "up" : "soul_fire_0",
+         "west" : "soul_fire_0"
+      }
+   },
    "soul_lantern" : {
       "carried_textures" : "soul_lantern_carried",
       "sound" : "lantern",
@@ -2487,7 +2483,7 @@
       }
    },
    "warped_planks" : {
-      "sound" : "stem",
+      "sound" : "wood",
       "textures" : "warped_planks"
    },
    "warped_pressure_plate" : {
@@ -2535,6 +2531,10 @@
    "warped_wall_sign" : {
       "sound" : "wood",
       "textures" : "warped_sign"
+   },
+   "warped_wart_block" : {
+      "sound" : "nether_wart",
+      "textures" : "warped_wart_block"
    },
    "water" : {
       "textures" : {

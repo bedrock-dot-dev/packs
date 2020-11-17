@@ -125,7 +125,14 @@
   "edit_appearance_preset_button@common_buttons.light_text_button": {
     "size": [ "100%", 23 ],
     "$pressed_button_name": "button.edit_appearance_preset",
-    "$button_text": "gui.edit"
+    "$button_text": "gui.edit",
+    "bindings": [
+      {
+        "binding_name": "#enable_edit_appearance",
+        "binding_name_override": "#enabled",
+        "binding_condition": "always"
+      }
+    ]
   },
 
   "delete_appearance_preset_button@common_buttons.light_text_button": {
@@ -538,6 +545,11 @@
           "bindings": [
             {
               "binding_name": "#center_preset_size",
+              "binding_condition": "always"
+            },
+            {
+              "binding_name": "#enable_edit_appearance",
+              "binding_name_override": "#enabled",
               "binding_condition": "always"
             }
           ]

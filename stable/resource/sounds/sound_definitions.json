@@ -118,15 +118,6 @@
             "sounds/ambient/weather/thunder3"
          ]
       },
-      "armor.equip_netherite": {
-         "category": "neutral",
-         "sounds": [
-            "sounds/armor/equip_netherite1",
-            "sounds/armor/equip_netherite2",
-            "sounds/armor/equip_netherite3",
-            "sounds/armor/equip_netherite4"
-         ]
-      },
       "armor.equip_chain" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -197,6 +188,15 @@
             "sounds/armor/equip_leather4",
             "sounds/armor/equip_leather5",
             "sounds/armor/equip_leather6"
+         ]
+      },
+      "armor.equip_netherite" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/armor/equip_netherite1",
+            "sounds/armor/equip_netherite2",
+            "sounds/armor/equip_netherite3",
+            "sounds/armor/equip_netherite4"
          ]
       },
       "beacon.activate" : {
@@ -1538,18 +1538,18 @@
             "sounds/dig/bone_block5"
          ]
       },
-      "dig.chain": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/dig/chain1",
-             "load_on_low_memory": true
-           },
-           "sounds/dig/chain2",
-           "sounds/dig/chain3",
-           "sounds/dig/chain4"
+      "dig.chain" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/dig/chain1"
+            },
+            "sounds/dig/chain2",
+            "sounds/dig/chain3",
+            "sounds/dig/chain4"
          ]
-       },
+      },
       "dig.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -1626,6 +1626,18 @@
             "sounds/dig/honey_block3",
             "sounds/dig/honey_block4",
             "sounds/dig/honey_block5"
+         ]
+      },
+      "dig.lodestone" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/dig/lodestone1"
+            },
+            "sounds/dig/lodestone2",
+            "sounds/dig/lodestone3",
+            "sounds/dig/lodestone4"
          ]
       },
       "dig.nether_brick" : {
@@ -1831,20 +1843,20 @@
             "sounds/dig/stone4"
          ]
       },
-      "dig.vines": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/dig/vines1",
-             "load_on_low_memory": true
-           },
-           "sounds/dig/vines2",
-           "sounds/dig/vines3",
-           "sounds/dig/vines4",
-           "sounds/dig/vines5",
-           "sounds/dig/vines6"
+      "dig.vines" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/dig/vines1"
+            },
+            "sounds/dig/vines2",
+            "sounds/dig/vines3",
+            "sounds/dig/vines4",
+            "sounds/dig/vines5",
+            "sounds/dig/vines6"
          ]
-       },
+      },
       "dig.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -1903,17 +1915,17 @@
             "sounds/step/bone_block5"
          ]
       },
-      "fall.chain": {
-         "category": "neutral",
-         "sounds": [
-           "sounds/step/chain1",
-           "sounds/step/chain2",
-           "sounds/step/chain3",
-           "sounds/step/chain4",
-           "sounds/step/chain5",
-           "sounds/step/chain6"
+      "fall.chain" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/chain1",
+            "sounds/step/chain2",
+            "sounds/step/chain3",
+            "sounds/step/chain4",
+            "sounds/step/chain5",
+            "sounds/step/chain6"
          ]
-       },
+      },
       "fall.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -2158,16 +2170,16 @@
             "sounds/step/stone6"
          ]
       },
-      "fall.vines": {
-         "category": "neutral",
-         "sounds": [
-           "sounds/step/vines1",
-           "sounds/step/vines2",
-           "sounds/step/vines3",
-           "sounds/step/vines4",
-           "sounds/step/vines5"
+      "fall.vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
-       },
+      },
       "fall.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -2346,20 +2358,20 @@
             "sounds/step/bone_block5"
          ]
       },
-      "hit.chain": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/step/chain1",
-             "load_on_low_memory": true
-           },
-           "sounds/step/chain2",
-           "sounds/step/chain3",
-           "sounds/step/chain4",
-           "sounds/step/chain5",
-           "sounds/step/chain6"
+      "hit.chain" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/chain1"
+            },
+            "sounds/step/chain2",
+            "sounds/step/chain3",
+            "sounds/step/chain4",
+            "sounds/step/chain5",
+            "sounds/step/chain6"
          ]
-       },
+      },
       "hit.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -2654,19 +2666,19 @@
             "sounds/step/stone6"
          ]
       },
-      "hit.vines": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/step/vines1",
-             "load_on_low_memory": true
-           },
-           "sounds/step/vines2",
-           "sounds/step/vines3",
-           "sounds/step/vines4",
-           "sounds/step/vines5"
+      "hit.vines" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/vines1"
+            },
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
-       },
+      },
       "hit.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -2923,20 +2935,20 @@
             "sounds/step/bone_block5"
          ]
       },
-      "jump.chain": {
-         "category": "neutral",
-         "sounds": [
-           "sounds/step/chain1",
-           {
-             "name": "sounds/step/chain2",
-             "load_on_low_memory": true
-           },
-           "sounds/step/chain3",
-           "sounds/step/chain4",
-           "sounds/step/chain5",
-           "sounds/step/chain6"
+      "jump.chain" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/chain1",
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/chain2"
+            },
+            "sounds/step/chain3",
+            "sounds/step/chain4",
+            "sounds/step/chain5",
+            "sounds/step/chain6"
          ]
-       },
+      },
       "jump.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -3191,15 +3203,15 @@
       "jump.stem" : {
          "category" : "neutral",
          "sounds" : [
-            "sounds/jump/stem1",
+            "sounds/step/stem1",
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/jump/stem2"
+               "name" : "sounds/step/stem2"
             },
-            "sounds/jump/stem3",
-            "sounds/jump/stem4",
-            "sounds/jump/stem5",
-            "sounds/jump/stem6"
+            "sounds/step/stem3",
+            "sounds/step/stem4",
+            "sounds/step/stem5",
+            "sounds/step/stem6"
          ]
       },
       "jump.stone" : {
@@ -3215,19 +3227,19 @@
             "sounds/jump/stone4"
          ]
       },
-      "jump.vines": {
-         "category": "neutral",
-         "sounds": [
-           "sounds/step/vines1",
-           {
-             "name": "sounds/step/vines2",
-             "load_on_low_memory": true
-           },
-           "sounds/step/vines3",
-           "sounds/step/vines4",
-           "sounds/step/vines5"
+      "jump.vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/vines1",
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/vines2"
+            },
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
-       },
+      },
       "jump.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -3272,17 +3284,17 @@
             "sounds/step/bone_block5"
          ]
       },
-      "land.chain": {
-         "category": "neutral",
-         "sounds": [
-           "sounds/step/chain1",
-           "sounds/step/chain2",
-           "sounds/step/chain3",
-           "sounds/step/chain4",
-           "sounds/step/chain5",
-           "sounds/step/chain6"
+      "land.chain" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/chain1",
+            "sounds/step/chain2",
+            "sounds/step/chain3",
+            "sounds/step/chain4",
+            "sounds/step/chain5",
+            "sounds/step/chain6"
          ]
-       },
+      },
       "land.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -3501,16 +3513,16 @@
             "sounds/jump/stone4"
          ]
       },
-      "land.vines": {
-         "category": "neutral",
-         "sounds": [
-           "sounds/step/vines1",
-           "sounds/step/vines2",
-           "sounds/step/vines3",
-           "sounds/step/vines4",
-           "sounds/step/vines5"
+      "land.vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
-       },
+      },
       "land.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -3559,26 +3571,11 @@
          "category" : "block",
          "sounds" : [ "sounds/liquid/water" ]
       },
-      "lodestone_compass.link_compass_to_lodestone": {
-         "category": "block",
-         "max_distance": 7.0,
-         "sounds": [
-           "sounds/item/lock_compass1",
-           "sounds/item/lock_compass2"
-         ]
-       },
-       "dig.lodestone": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/dig/lodestone1",
-             "load_on_low_memory": true
-           },
-           "sounds/dig/lodestone2",
-           "sounds/dig/lodestone3",
-           "sounds/dig/lodestone4"
-         ]
-       },
+      "lodestone_compass.link_compass_to_lodestone" : {
+         "category" : "block",
+         "max_distance" : 7.0,
+         "sounds" : [ "sounds/item/lock_compass1", "sounds/item/lock_compass2" ]
+      },
       "minecart.base" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -5776,6 +5773,17 @@
             "sounds/mob/phantom/death3"
          ]
       },
+      "mob.phantom.flap" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/phantom/flap1",
+            "sounds/mob/phantom/flap2",
+            "sounds/mob/phantom/flap3",
+            "sounds/mob/phantom/flap4",
+            "sounds/mob/phantom/flap5",
+            "sounds/mob/phantom/flap6"
+         ]
+      },
       "mob.phantom.hurt" : {
          "__use_legacy_max_distance" : "true",
          "category" : "hostile",
@@ -6065,130 +6073,130 @@
          ],
          "subtitle" : "subtitles.mob.piglin.step"
       },
-      "mob.piglin_brute.ambient": {
-         "sounds": [
-           {
-               "load_on_low_memory": true,
-               "name": "sounds/mob/piglin_brute/idle1",
-               "volume": 0.8
-           },
-           {
-               "name": "sounds/mob/piglin_brute/idle2",
-               "volume": 0.75
-           },
-           {
-               "name": "sounds/mob/piglin_brute/idle3",
-               "volume": 0.8
-           },
-           {
-               "name": "sounds/mob/piglin_brute/idle4",
-               "volume": 0.8
-           },
-           {
-               "name": "sounds/mob/piglin_brute/idle5",
-               "volume": 0.8
-           }
+      "mob.piglin_brute.ambient" : {
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/piglin_brute/idle1",
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/idle2",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/idle3",
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/idle4",
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/idle5",
+               "volume" : 0.80
+            }
          ],
-         "subtitle": "subtitles.mob.piglin_brute.ambient"
-       },
-       "mob.piglin_brute.angry": {
-         "sounds": [
-           {
-               "load_on_low_memory": true,
-               "name": "sounds/mob/piglin_brute/angry1",
-               "volume": 0.7
-           },
-           {
-               "name": "sounds/mob/piglin_brute/angry2",
-               "volume": 0.7
-           },
-           {
-               "name": "sounds/mob/piglin_brute/angry3",
-               "volume": 0.7
-           },
-           {
-               "name": "sounds/mob/piglin_brute/angry4",
-               "volume": 0.7
-           }
+         "subtitle" : "subtitles.mob.piglin_brute.ambient"
+      },
+      "mob.piglin_brute.angry" : {
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/piglin_brute/angry1",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/angry2",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/angry3",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/angry4",
+               "volume" : 0.70
+            }
          ],
-         "subtitle": "subtitles.mob.piglin_brute.angry"
-       },
-       "mob.piglin_brute.converted_to_zombified": {
-         "sounds": [
-           {
-               "load_on_low_memory": true,
-               "name": "sounds/mob/piglin/converted1",
-               "volume": 1
-           },
-           {
-               "name": "sounds/mob/piglin/converted2",
-               "volume": 1
-           }
+         "subtitle" : "subtitles.mob.piglin_brute.angry"
+      },
+      "mob.piglin_brute.converted_to_zombified" : {
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/piglin/converted1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/mob/piglin/converted2",
+               "volume" : 1
+            }
          ],
-         "subtitle": "subtitles.mob.piglin_brute.converted_to_zombified"
-       },
-       "mob.piglin_brute.hurt": {
-         "sounds": [
-           {
-               "load_on_low_memory": true,
-               "name": "sounds/mob/piglin_brute/hurt1",
-               "volume": 0.7
-           },
-           {
-               "name": "sounds/mob/piglin_brute/hurt2",
-               "volume": 0.7
-           },
-           {
-               "name": "sounds/mob/piglin_brute/hurt3",
-               "volume": 0.7
-           }
+         "subtitle" : "subtitles.mob.piglin_brute.converted_to_zombified"
+      },
+      "mob.piglin_brute.death" : {
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/piglin_brute/death1",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/death2",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/death3",
+               "volume" : 0.80
+            }
          ],
-         "subtitle": "subtitles.mob.piglin_brute.hurt"
-       },
-       "mob.piglin_brute.death": {
-         "sounds": [
-           {
-               "load_on_low_memory": true,
-               "name": "sounds/mob/piglin_brute/death1",
-               "volume": 0.7
-           },
-           {
-               "name": "sounds/mob/piglin_brute/death2",
-               "volume": 0.7
-           },
-           {
-               "name": "sounds/mob/piglin_brute/death3",
-               "volume": 0.8
-           }
+         "subtitle" : "subtitles.mob.piglin_brute.death"
+      },
+      "mob.piglin_brute.hurt" : {
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/piglin_brute/hurt1",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/hurt2",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/hurt3",
+               "volume" : 0.70
+            }
          ],
-         "subtitle": "subtitles.mob.piglin_brute.death"
-       },
-       "mob.piglin_brute.step": {
-         "sounds": [
-           {
-               "load_on_low_memory": true,
-               "name": "sounds/mob/piglin_brute/step1",
-               "volume": 0.75
-           },
-           {
-               "name": "sounds/mob/piglin_brute/step2",
-               "volume": 0.75
-           },
-           {
-               "name": "sounds/mob/piglin_brute/step3",
-               "volume": 0.75
-           },
-           {
-               "name": "sounds/mob/piglin_brute/step4",
-               "volume": 0.75
-           },
-           {
-               "name": "sounds/mob/piglin_brute/step5",
-               "volume": 0.75
-           }
+         "subtitle" : "subtitles.mob.piglin_brute.hurt"
+      },
+      "mob.piglin_brute.step" : {
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/piglin_brute/step1",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/step2",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/step3",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/step4",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/mob/piglin_brute/step5",
+               "volume" : 0.750
+            }
          ],
-         "subtitle": "subtitles.mob.piglin_brute.step"
-       },
+         "subtitle" : "subtitles.mob.piglin_brute.step"
+      },
       "mob.pillager.celebrate" : {
          "__use_legacy_max_distance" : "true",
          "sounds" : [
@@ -7349,12 +7357,27 @@
             "sounds/mob/zoglin/angry3"
          ]
       },
+      "mob.zoglin.attack" : {
+         "category" : "neutral",
+         "sounds" : [ "sounds/mob/zoglin/attack1", "sounds/mob/zoglin/attack2" ]
+      },
       "mob.zoglin.death" : {
          "category" : "neutral",
          "sounds" : [
             "sounds/mob/zoglin/death1",
             "sounds/mob/zoglin/death2",
             "sounds/mob/zoglin/death3"
+         ]
+      },
+      "mob.zoglin.hurt" : {
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/zoglin/hurt1"
+            },
+            "sounds/mob/zoglin/hurt2",
+            "sounds/mob/zoglin/hurt3"
          ]
       },
       "mob.zoglin.idle" : {
@@ -7371,17 +7394,6 @@
             "sounds/mob/zoglin/idle6"
          ]
       },
-      "mob.zoglin.hurt": {
-         "category": "neutral",
-         "sounds": [
-           {
-               "load_on_low_memory": true,  
-               "name": "sounds/mob/zoglin/hurt1"
-           },
-           "sounds/mob/zoglin/hurt2",
-           "sounds/mob/zoglin/hurt3"
-         ]
-       },
       "mob.zoglin.step" : {
          "category" : "neutral",
          "sounds" : [
@@ -7392,13 +7404,6 @@
             "sounds/mob/zoglin/step5"
          ]
       },
-      "mob.zoglin.attack": {
-         "category": "neutral",
-         "sounds": [
-            "sounds/mob/zoglin/attack1",
-            "sounds/mob/zoglin/attack2"
-         ]
-       },
       "mob.zombie.death" : {
          "__use_legacy_max_distance" : "true",
          "category" : "hostile",
@@ -8034,24 +8039,24 @@
       "raid.horn" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
-         "max_distance" : 128.0,
+         "max_distance" : 192.0,
          "sounds" : [
             {
                "load_on_low_memory" : true,
                "name" : "sounds/event/raid/raidhorn_01",
-               "volume" : 10.0
+               "volume" : 1.0
             },
             {
                "name" : "sounds/event/raid/raidhorn_02",
-               "volume" : 10.0
+               "volume" : 1.0
             },
             {
                "name" : "sounds/event/raid/raidhorn_03",
-               "volume" : 10.0
+               "volume" : 1.0
             },
             {
                "name" : "sounds/event/raid/raidhorn_04",
-               "volume" : 10.0
+               "volume" : 1.0
             }
          ]
       },
@@ -8533,15 +8538,15 @@
             "sounds/block/respawn_anchor/set_spawn3"
          ]
       },
-      "smithing_table.use": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/random/smithing_table1",
-             "load_on_low_memory": true
-           },
-           "sounds/random/smithing_table2",
-           "sounds/random/smithing_table3"
+      "smithing_table.use" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/random/smithing_table1"
+            },
+            "sounds/random/smithing_table2",
+            "sounds/random/smithing_table3"
          ]
       },
       "step.ancient_debris" : {
@@ -8584,6 +8589,20 @@
             "sounds/step/bone_block5"
          ]
       },
+      "step.chain" : {
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/chain3"
+            },
+            "sounds/step/chain1",
+            "sounds/step/chain2",
+            "sounds/step/chain4",
+            "sounds/step/chain5",
+            "sounds/step/chain6"
+         ]
+      },
       "step.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -8597,21 +8616,6 @@
             "sounds/step/cloth4"
          ]
       },
-      "step.chain": {
-         "category": "neutral",
-         "sounds": [
-           {
-             "name": "sounds/step/chain3",
-             "load_on_low_memory": true
-           },
-           "sounds/step/chain1",
-           "sounds/step/chain2",
-           "sounds/step/chain4",
-           "sounds/step/chain5",
-           "sounds/step/chain6"
-   
-         ]
-       },
       "step.coral" : {
          "category" : "neutral",
          "sounds" : [
@@ -8906,20 +8910,19 @@
             "sounds/step/stone6"
          ]
       },
-      "step.vines": {
-         "category": "neutral",
-         "sounds": [
-           {
-             "name": "sounds/step/vines3",
-             "load_on_low_memory": true
-           },
-           "sounds/step/vines1",
-           "sounds/step/vines2",
-           "sounds/step/vines4",
-           "sounds/step/vines5"
-   
+      "step.vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/vines3"
+            },
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
-       },
+      },
       "step.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -9083,20 +9086,20 @@
             "sounds/step/bone_block5"
          ]
       },
-      "use.chain": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/step/chain1",
-             "load_on_low_memory": true
-           },
-           "sounds/step/chain2",
-           "sounds/step/chain3",
-           "sounds/step/chain4",
-           "sounds/step/chain5",
-           "sounds/step/chain6"
+      "use.chain" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/chain1"
+            },
+            "sounds/step/chain2",
+            "sounds/step/chain3",
+            "sounds/step/chain4",
+            "sounds/step/chain5",
+            "sounds/step/chain6"
          ]
-       },
+      },
       "use.cloth" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -9373,19 +9376,19 @@
             "sounds/step/stone6"
          ]
       },
-      "use.vines": {
-         "category": "block",
-         "sounds": [
-           {
-             "name": "sounds/step/vines1",
-             "load_on_low_memory": true
-           },
-           "sounds/step/vines2",
-           "sounds/step/vines3",
-           "sounds/step/vines4",
-           "sounds/step/vines5"
+      "use.vines" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/step/vines1"
+            },
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
-       },
+      },
       "use.wood" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",

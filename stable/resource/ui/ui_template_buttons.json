@@ -510,6 +510,8 @@
   "underline_button@common.button": {
     "size": [ "100%c", "100%c" ],
     "pressed_control": "hover",
+
+    "$underline_button_size|default": [ "100%c", "100%c" ],
     "$single_label_size": [ "default", 8 ],
     "$single_line_font_scale_factor": 0.8,
     "$pressed_button_name|default": "",
@@ -519,7 +521,7 @@
       {
         "default": {
           "type": "panel",
-          "size": [ "100%c", 10 ],
+          "size": "$underline_button_size",
           "controls": [
             {
               "label_default@common.single_line_label": {
@@ -537,7 +539,7 @@
       {
         "hover": {
           "type": "panel",
-          "size": [ "100%c", 10 ],
+          "size": "$underline_button_size",
           "controls": [
             {
               "label_hover@common.single_line_label": {
