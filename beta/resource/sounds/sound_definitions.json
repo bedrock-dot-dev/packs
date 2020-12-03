@@ -10,6 +10,196 @@
             "sounds/ambient/nether/nether_wastes/mood4"
          ]
       },
+      "ambient.basalt_deltas.loop": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/ambience",
+           "stream": true,
+           "is3D": false,
+           "volume": 4.0
+           }
+         ]
+      },
+      "ambient.basalt_deltas.additions": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/basaltground1",
+           "is3D": false,
+           "weight": 10,
+           "volume": 0.55
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/basaltground2",
+           "is3D": false,
+           "weight": 10,
+           "volume": 0.55
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/basaltground3",
+           "is3D": false,
+           "weight": 10,
+           "volume": 0.55
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click1",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.19
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click2",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.19
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click3",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.19
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click4",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click5",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click6",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.01
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click7",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.01
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/click8",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.01
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/debris1",
+           "is3D": false,
+           "weight": 40,
+           "volume": 0.35
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/debris2",
+           "is3D": false,
+           "weight": 40,
+           "volume": 0.35
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/debris3",
+           "is3D": false,
+           "weight": 40,
+           "volume": 0.35
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/heavy_click1",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/heavy_click2",
+           "is3D": false,
+           "weight": 20,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/long_debris1",
+           "is3D": false,
+           "weight": 40,
+           "volume": 0.35
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/long_debris2",
+           "is3D": false,
+           "weight": 40,
+           "volume": 0.35
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/plode1",
+           "is3D": false,
+           "weight": 10,
+           "volume": 0.5
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/plode2",
+           "is3D": false,
+           "weight": 10,
+           "volume": 0.5
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/plode3",
+           "is3D": false,
+           "weight": 10,
+           "volume": 0.5
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/twist1",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.66
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/twist2",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.66
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/twist3",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.77
+           },
+           {
+           "name": "sounds/ambient/nether/basalt_deltas/twist4",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.66
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind1",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind2",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind3",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind4",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.3
+           }
+         ]
+      },
       "ambient.cave" : {
          "category" : "ambient",
          "sounds" : [
@@ -43,6 +233,129 @@
             "sounds/ambient/nether/crimson_forest/mood4"
          ]
       },
+      "ambient.crimson_forest.loop": {
+         "category": "ambient",
+         "sounds": [
+           {
+            "name": "sounds/ambient/nether/crimson_forest/ambience",
+            "stream": true,
+            "is3D": false,
+            "volume": 4.0
+           }
+         ]
+      },
+      "ambient.crimson_forest.additions": {
+         "category": "ambient",
+         "sounds": [
+            {
+            "name": "sounds/ambient/nether/crimson_forest/addition1",
+            "is3D": false,
+            "volume": 0.4,
+            "weight": 3
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/addition2",
+            "is3D": false,
+            "volume": 0.5,
+            "weight": 3
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/addition3",
+            "is3D": false,
+            "volume": 0.32,
+            "weight": 3
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/particles1",
+            "is3D": false,
+            "volume": 0.4,
+            "weight": 35
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/particles2",
+            "is3D": false,
+            "volume": 0.4,
+            "weight": 35
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/particles3",
+            "is3D": false,
+            "volume": 0.4,
+            "weight": 35
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/shine1",
+            "is3D": false,
+            "volume": 0.1,
+            "pitch": 0.5,
+            "weight": 6
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/shine2",
+            "is3D": false,
+            "volume": 0.1,
+            "pitch": 0.5,
+            "weight": 6
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/shine3",
+            "is3D": false,
+            "volume": 0.1,
+            "pitch": 0.5,
+            "weight": 6
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/shroom1",
+            "is3D": false,
+            "volume": 0.25,
+            "weight": 2
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/shroom2",
+            "is3D": false,
+            "volume": 0.25,
+            "weight": 2
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/shroom3",
+            "is3D": false,
+            "volume": 0.25,
+            "weight": 2
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/twang1",
+            "is3D": false,
+            "volume": 0.25,
+            "weight": 2
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/voom1",
+            "is3D": false,
+            "volume": 0.7,
+            "weight": 4
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/voom1",
+            "is3D": false,
+            "volume": 0.7,
+            "pitch": 0.8,
+            "weight": 4
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/voom2",
+            "is3D": false,
+            "volume": 0.7,
+            "weight": 4
+           },
+           {
+            "name": "sounds/ambient/nether/crimson_forest/voom2",
+            "is3D": false,
+            "volume": 0.7,
+            "pitch": 0.8,
+            "weight": 4
+           }
+         ]
+      },
       "ambient.nether_wastes.mood" : {
          "category" : "ambient",
          "sounds" : [
@@ -50,6 +363,106 @@
             "sounds/ambient/nether/nether_wastes/mood2",
             "sounds/ambient/nether/nether_wastes/mood3",
             "sounds/ambient/nether/nether_wastes/mood4"
+         ]
+      },
+      "ambient.nether_wastes.loop": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/nether_wastes/ambience",
+           "stream": true,
+           "is3D": false,
+           "volume": 4.0
+           }
+         ]
+      },
+       "ambient.nether_wastes.additions": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition1",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition2",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition3",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.1
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition4",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.67
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition5",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition6",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition7",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/addition8",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.67
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/dark1",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/dark2",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/ground1",
+           "is3D": false,
+           "weight": 3,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/ground2",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.4
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/ground3",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.4
+           },
+           {
+           "name": "sounds/ambient/nether/nether_wastes/ground4",
+           "is3D": false,
+           "weight": 1,
+           "volume": 0.4
+           }
          ]
       },
       "ambient.soulsand_valley.mood" : {
@@ -61,6 +474,183 @@
             "sounds/ambient/nether/soulsand_valley/mood4"
          ]
       },
+      "ambient.soulsand_valley.loop": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/ambience",
+           "stream": true,
+           "is3D": false,
+           "volume": 4.0 
+           }
+         ]
+       },
+       "ambient.soulsand_valley.additions": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/sand1",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.2
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/sand2",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.2
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/sand3",
+           "is3D": false,
+           "weight": 2,
+           "volume": 0.4
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/voices1",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.4
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/voices2",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.4
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/voices3",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.4
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/voices4",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.8
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/voices5",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.4
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/voices5",
+           "is3D": false,
+           "weight": 5,
+           "pitch": 0.7,
+           "volume": 0.15
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper1",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper2",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper3",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper4",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper5",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper6",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper7",
+           "is3D": false,
+           "weight": 5,
+           "volume": 0.9
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/whisper8",
+           "is3D": false,
+           "weight": 5,
+           "volume": 1
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind1",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind1",
+           "is3D": false,
+           "weight": 25,
+           "pitch": 0.75,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind2",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind2",
+           "is3D": false,
+           "weight": 25,
+           "pitch": 0.75,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind3",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.25
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind3",
+           "is3D": false,
+           "weight": 25,
+           "pitch": 0.75,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind4",
+           "is3D": false,
+           "weight": 25,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/wind4",
+           "is3D": false,
+           "weight": 25,
+           "pitch": 0.75,
+           "volume": 0.3
+           },
+           {
+           "name": "sounds/ambient/nether/soulsand_valley/with1",
+           "is3D": false,
+           "weight": 4,
+           "volume": 0.6
+           }
+         ]
+      },
       "ambient.warped_forest.mood" : {
          "category" : "ambient",
          "sounds" : [
@@ -68,6 +658,153 @@
             "sounds/ambient/nether/warped_forest/mood2",
             "sounds/ambient/nether/warped_forest/mood3",
             "sounds/ambient/nether/warped_forest/mood4"
+         ]
+      },
+      "ambient.warped_forest.loop": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/warped_forest/ambience",
+           "stream": true,
+           "is3D": false,
+           "volume": 4.0
+           }
+         ]
+      },
+       "ambient.warped_forest.additions": {
+         "category": "ambient",
+         "sounds": [
+           {
+           "name": "sounds/ambient/nether/warped_forest/addition1",
+           "is3D": false,
+           "volume": 0.06,
+           "pitch": 0.8,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/addition2",
+           "is3D": false,
+           "volume": 0.06,
+           "pitch": 0.7,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/addition3",
+           "is3D": false,
+           "volume": 0.06,
+           "pitch": 0.1,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/addition4",
+           "is3D": false,
+           "volume": 0.07,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/addition5",
+           "is3D": false,
+           "volume": 0.07,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/addition6",
+           "is3D": false,
+           "volume": 0.15,
+           "weight": 1
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/enish1",
+           "is3D": false,
+           "volume": 0.1,
+           "pitch": 0.2,
+           "weight": 10
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/enish2",
+           "is3D": false,
+           "volume": 0.1,
+           "pitch": 0.2,
+           "weight": 6
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/enish3",
+           "is3D": false,
+           "volume": 0.07,
+           "pitch": 0.2,
+           "weight": 6
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/help1",
+           "is3D": false,
+           "volume": 0.2,
+           "weight": 1
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/help2",
+           "is3D": false,
+           "volume": 0.2,
+           "weight": 1
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/here1",
+           "is3D": false,
+           "volume": 0.1,
+           "weight": 2
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/here1",
+           "is3D": false,
+           "volume": 0.1,
+           "pitch": 0.7,
+           "weight": 2
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/here2",
+           "is3D": false,
+           "volume": 0.2,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/here2",
+           "is3D": false,
+           "volume": 0.2,
+           "pitch": 0.7,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/warped_forest/here3",
+           "is3D": false,
+           "volume": 0.2,
+           "weight": 3
+           },
+           {
+           "name": "sounds/ambient/nether/crimson_forest/addition1",
+           "is3D": false,
+           "volume": 0.3,
+           "weight": 1
+           },
+           {
+           "name": "sounds/ambient/nether/crimson_forest/particles1",
+           "is3D": false,
+           "volume": 0.4,
+           "pitch": 0.8,
+           "weight": 40
+           },
+           {
+           "name": "sounds/ambient/nether/crimson_forest/particles2",
+           "is3D": false,
+           "volume": 0.3,
+           "pitch": 0.8,
+           "weight": 40
+           },
+           {
+           "name": "sounds/ambient/nether/crimson_forest/particles3",
+           "is3D": false,
+           "volume": 0.3,
+           "pitch": 0.8,
+           "weight": 40
+           }
          ]
       },
       "ambient.weather.lightning.impact" : {

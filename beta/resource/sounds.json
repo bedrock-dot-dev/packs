@@ -2987,6 +2987,16 @@
             "sound" : "ambient.basalt_deltas.mood",
             "volume" : 0.80
          },
+         "ambient.basalt_deltas.loop": {
+            "sound": "ambient.basalt_deltas.loop", 
+            "volume":0.58,
+            "pitch": 1.0
+         },
+         "ambient.basalt_deltas.additions": {
+            "sound": "ambient.basalt_deltas.additions", 
+            "volume":1, 
+            "pitch": [1, 1.1]
+         },
          "ambient.cave" : {
             "pitch" : [ 0.80, 1.0 ],
             "sound" : "ambient.cave",
@@ -2997,20 +3007,60 @@
             "sound" : "ambient.crimson_forest.mood",
             "volume" : 0.80
          },
+         "ambient.crimson_forest.loop": {
+            "sound": "ambient.crimson_forest.loop",
+            "volume": 0.9,
+            "pitch": 1.0
+         },
+         "ambient.crimson_forest.additions": {
+            "sound": "ambient.crimson_forest.additions", 
+            "volume":1, 
+            "pitch": [1, 1.1]
+         },
          "ambient.nether_wastes.mood" : {
             "pitch" : [ 0.50, 1.20 ],
             "sound" : "ambient.nether_wastes.mood",
             "volume" : 0.80
+         },
+         "ambient.nether_wastes.loop": {
+            "sound": "ambient.nether_wastes.loop", 
+            "volume": 0.9,
+            "pitch": 1.0
+         },
+         "ambient.nether_wastes.additions": {
+            "sound": "ambient.nether_wastes.additions", 
+            "volume":1, 
+            "pitch": [1, 1.1]
          },
          "ambient.soulsand_valley.mood" : {
             "pitch" : [ 0.50, 1.20 ],
             "sound" : "ambient.soulsand_valley.mood",
             "volume" : 0.80
          },
+         "ambient.soulsand_valley.loop": {
+            "sound": "ambient.soulsand_valley.loop", 
+            "volume": 0.95,
+            "pitch": 1.0
+         },
+         "ambient.soulsand_valley.additions": {
+            "sound": "ambient.soulsand_valley.additions", 
+            "volume":1, 
+            "pitch": [1, 1.1]
+         },
          "ambient.warped_forest.mood" : {
             "pitch" : [ 0.50, 1.20 ],
             "sound" : "ambient.warped_forest.mood",
             "volume" : 0.80
+         },
+         "ambient.warped_forest.loop": {
+            "sound": "ambient.warped_forest.loop", 
+            "volume": 0.9,
+            "pitch": 1.0
+         },
+         "ambient.warped_forest.additions": {
+            "sound": "ambient.warped_forest.additions", 
+            "volume":1, 
+            "pitch": [1, 1.1]
          },
          "armor.equip_chain" : {
             "pitch" : 1.0,

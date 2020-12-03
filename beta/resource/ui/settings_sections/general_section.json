@@ -4697,12 +4697,12 @@
         }
       },
       {
-        "automation_stress_test_run_count_text_box@settings_common.option_text_edit": {
+        "automation_soak_test_duration_minutes_text_box@settings_common.option_text_edit": {
           "$text_edit_box_text_type": "NumberChars",
-          "$option_label": "Stress Test Run Count",
+          "$option_label": "Soak Test Duration (Minutes)",
           "$max_text_edit_length": 20,
-          "$text_box_name": "automation_stress_test_run_count",
-          "$option_binding_name": "#automation_stress_test_run_count"
+          "$text_box_name": "automation_soak_test_duration_minutes",
+          "$option_binding_name": "#automation_soak_test_duration_minutes"
         }
       },
       {
@@ -4855,6 +4855,14 @@
               "binding_name_override": "#visible"
             }
           ]
+        }
+      },
+      {
+        "option_toggle_remote_imgui@settings_common.option_toggle": {
+          "$option_label": "options.remote_imgui_toggle",
+          "$option_binding_name": "#remote_imgui",
+          "$option_enabled_binding_name": "#remote_imgui_enabled",
+          "$toggle_name": "remote_imgui"
         }
       },
       {
