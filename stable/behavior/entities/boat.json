@@ -281,14 +281,6 @@
             "minecraft:above_bubble_column_up"
           ]
         }
-      },
-      "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": [
-            "minecraft:floating",
-            "minecraft:can_ride"
-          ]
-        }
       }
     }
   }

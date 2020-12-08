@@ -8,12 +8,17 @@ accessibility.enableTTS=Texto a voz activado	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Pulsa %s para volver	#
+accessibility.chat.tts.gamepad.exitChat=Pulsa %s para salir del chat	#
+accessibility.chat.tts.gamepad.sendMessage=Pulsa %s para enviar un mensaje	#
 accessibility.chat.tts.says=%s dice %s	#
 accessibility.chat.tts.hideChat=Ocultar chat	#
 accessibility.chat.tts.keyboard=Teclado	#
 accessibility.chat.tts.muteChatToggle=Silenciar todo	#
 accessibility.chat.tts.sendChatMessage=Enviar	#
 accessibility.chat.tts.textboxTitle=Chat	#
+
+accessibility.game.playerView=Vista de jugador	#
 
 accessibility.loading.done=Listo	#
 accessibility.saving.done=Listo	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=Pulsa %s para usar el tabulador a la derecha	#
 accessibility.play.legacyWorldsDelete=Borrar mundo heredado	#
 
 accessibility.pause.permissions=Permisos	#
+accessibility.pause.profile=Elegir perfil	#
 
 accessibility.start.buttonHelper=%s: %s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=Pantalla Logros	#
 accessibility.screenName.chat=Pantalla Chat	#
 accessibility.screenName.createNew=Pantalla Crear nuevo	#
 accessibility.screenName.createWorld=Pantalla Crear los ajustes del mundo	#
+accessibility.screenName.editCharacter=Pantalla de edición de personaje	#
 accessibility.screenName.editWorldSettings=Pantalla Editar los ajustes del mundo	#
 accessibility.screenName.error=Pantalla de error	#
 accessibility.screenName.howToPlay=Pantalla Cómo se juega	#
+accessibility.screenName.inviteToGame=Invitar a la pantalla de juego	#
 accessibility.screenName.modalDialog=Cuadro de diálogo emergente	#
 accessibility.screenName.patchNotes=Pantalla Notas de parche	#
-accessibility.screenName.pauase=Pantalla de pausa	#
+accessibility.screenName.pause=Pantalla de pausa	#
 accessibility.screenName.play=Pantalla de reproducción	#
+accessibility.screenName.profile=Pantalla de perfil	#
 accessibility.screenName.realmSettings=Pantalla Ajustes de Realm	#
 accessibility.screenName.settings=Pantalla Ajustes del juego	#
 accessibility.screenName.skinPicker=Pantalla Seleccionar aspecto	#
 accessibility.screenName.start=Menú principal	#
 accessibility.screenName.vrAlignment=Pantalla Alineamiento de la realidad virtual 	#
+accessibility.screenName.emoteWheel=Pantalla de gestos	#
 
 accessibility.settings.reset=restablecer	#
 accessibility.settings.chooseSeed=Elegir semilla	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=Botón superior izquierdo	#
 accessibility.keyboard.leftBracket=Tecla corchete de apertura			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tecla corchete de cierre		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, botón %s %d	#
+accessibility.emotes.buttonName=Gesto	#
+accessibility.emotes.assigned=Gesto asignado: %s	#
+accessibility.emotes.unassigned=No asignado	#
+accessibility.emotes.playSuccess=Reproducir gesto	#
+accessibility.emotes.playFailed=No se ha asignado ningún gesto a este botón. Pulsa la flecha hacia abajo para acceder al botón de Cambiar gestos.	#
+accessibility.emotes.instruction.keyboard=Pulsa derecha o izquierda para pasar por los botones de gestos. Pulsa la flecha hacia abajo para acceder al botón de Cambiar gestos.	#
 
 ## End of audible phrases section
 
@@ -287,7 +304,7 @@ action.hint.exit.llama=Toca Agachar para desmontar.	#
 action.hint.exit.skeleton_horse=Toca Agachar para desmontar.	#
 action.interact.creeper=Prender	#
 action.interact.edit=Editar	#
-action.interact.exit.boat=Bajar	#
+action.interact.exit.boat=Abandonar barco	#
 action.interact.feed=Alimentar	#
 action.interact.fishing=Pescar	#
 action.interact.milk=Leche	#
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=Confirmar compra	#
 authentication.store.intro=Has completado tu periodo de prueba de Minecraft: Education Edition. Tienes que comprar una licencia para seguir jugando a Minecraft: Education Edition.	#
 authentication.store.popup.purchaseFailed.title=Algo salió mal	#
 authentication.store.popup.purchaseFailed.msg=No se ha podido finalizar la compra. Comprueba tu conexión a Internet.	#
-authentication.store.purchase.info1=El pago se cargará a tu cuenta de iTunes al confirmar la compra y la suscripción se renovará automáticamente salvo que se cancele con al menos 24 horas de antelación al final del periodo. La renovación de tu cuenta se cobrará durante las 24 horas previas al final del periodo y en función del precio de suscripción que hayas seleccionado. 	#
-authentication.store.purchase.info2=Puedes administrar tu suscripción y anular la renovación automática accediendo a los ajustes de tu cuenta de iTunes tras adquirirla. Si cancelas tu suscripción una vez activada, no se te reembolsará por el resto del periodo activo de la misma. Tu cuenta de iTunes estará vinculada a tu cuenta de O365 Educación para esta suscripción, por lo que no podrás adquirir otras licencias de Minecraft: Education Edition con esta cuenta de iTunes.	#
 authentication.store.purchase.button=Adquirir licencia (%s/año)	#
 authentication.store.terms=Términos de uso	#
 authentication.store.viewTermsAndConditions=Términos y condiciones	#
@@ -1219,6 +1234,7 @@ commands.time.stop=Hora %1$s	#
 commands.title.description=Controla los títulos de la pantalla.	#
 commands.title.success=El comando /title se ha ejecutado correctamente	#
 commands.titleraw.description=Controla los títulos de la pantalla con mensajes JSON.	#
+commands.titleraw.success=El comando /titleraw se ha ejecutado correctamente	#
 commands.toggledownfall.description=Activa o desactiva el tiempo atmosférico.	#
 commands.tp.description=Teletransporta entidades (jugadores, criaturas, etc.).	#
 commands.tp.notSameDimension=No puedes teletransportarse porque los jugadores no están en la misma dimensión	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Anterior	#
 realmsSettingsScreen.dev_next_page_label=Siguiente	#
 realmsSettingsScreen.uploadConfirmationMessage=Esto eliminará el mundo actual en tu Realm y te permitirá reemplazarlo con uno nuevo. Los miembros de tu Realm ya no tendrán acceso a tu mundo actual. ¿Quieres continuar?	#
 realmsSettingsScreen.uploadConfirmationTitle=¿Reemplazar mundo?	#
-realmsSettingsScreen.whitelist_invite=Invitar	#
+realmsSettingsScreen.allowlist_invite=Invitar	#
 realmsSettingsScreen.searchBox=Buscar...	#
 realmsSettingsScreen.unknownPackName=Nombre desconocido	#
 realmsSettingsScreen.viewSubscriptionsButton=Ver suscripciones	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=Número de error	#
 xbl.transferEntitlements.error.error2=Número de identificación	#
 
 playfab.account.banned.title=Bloqueado	#
-playfab.account.banned.body=Se te ha bloqueado en Minecraft online. No podrás jugar en servidores, unirte a Realms, crear partidas multijugador o unirte a ellas ni usar el Marketplace. Si tienes una suscripción a Realms, tendrás que cancelarla en la tienda donde la compraste.	#
+playfab.account.banned.body=Se te ha bloqueado en Minecraft. Mientras dure este bloqueo, no podrás jugar en tus mundos (en ciertas plataformas), jugar en servidores, unirte a Realms, crear partidas multijugador o unirte a ellas ni usar el Marketplace. Si tienes una suscripción a Realms, tendrás que cancelarla en la tienda donde la compraste.	#
 playfab.account.banned.body.button=Más información	#
 
 store.sign_in_warning.no_xbl_and_local_content=¡Importante! Has comprado packs o Minecoins que solo están disponibles en este dispositivo y que se podrían perder si el dispositivo se estropea, se pierde o si desinstalas Minecraft. Inicia sesión con una cuenta de Microsoft (gratuita) y transfiere los packs de tu propiedad y tus Minecoins a esa cuenta para protegerlos y poder acceder a ellos en cualquier dispositivo en el que inicies sesión.	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=Omitir por ahora	#
 death.attack.anvil=Un yunque ha aplastado a %1$s.	#
 death.attack.arrow=%2$s ha disparado a %1$s.	#
 death.attack.arrow.item=%2$s ha disparado a %1$s con %3$s.	#
+death.attack.bullet=%2$s ha abatido a %1$s.	#
 death.attack.cactus=%1$s se ha pinchado hasta morir.	#
 death.attack.cactus.player=%1$s ha tropezado con un cactus mientras intentaba escapar de %2$s.	#
 death.attack.drown=%1$s se ha ahogado.	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=%1$s ha acabado cual tostada chamuscada mientras luch
 death.attack.outOfWorld=%1$s se ha caído del mundo.	#
 death.attack.player=%2$s ha asesinado a %1$s.	#
 death.attack.player.item=%2$s ha asesinado a %1$s con %3$s.	#
+death.attack.spit=%2$s ha escupido a %1$s.	#
 death.attack.starve=%1$s se ha muerto de hambre.	#
 death.attack.thorns=%1$s ha muerto intentando herir a %2$s.	#
 death.attack.thrown=%2$s ha apaleado a %1$s.	#
 death.attack.thrown.item=%2$s ha apaleado a %1$s con %3$s.	#
+death.attack.trident=%2$s ha ensartado a %1$s.	#
 death.attack.wither=%1$s ha sufrido los efectos del Wither.	#
 death.fell.accident.generic=%1$s se ha caído de un lugar alto.	#
 death.fell.accident.ladder=%1$s se ha caído de una escalera de mano.	#
@@ -2318,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=No puedes unirte al mundo porque tu 
 disconnectionScreen.incompatiblePack.graphics.raytracing=No puedes unirte al mundo porque tu dispositivo no tiene hardware compatible con el trazado de rayos	#
 disconnectionScreen.worldCorruption.message=Intenta volver a abrir el mundo o restaurarlo a partir de una copia de seguridad anterior	#
 disconnectionScreen.worldCorruption=Desconectado debido a corrupción del mundo	#
+disconnectionScreen.hostSuspended=Desconexión. El servidor no está disponible.	#
 
 storageSpaceWarningScreen.frontend=¡Ya casi no te queda espacio de almacenamiento de datos! Minecraft ha restringido el acceso a esta función hasta que liberes más espacio de almacenamiento.	#
 storageSpaceWarningScreen.lowduringgameplay=Casi no queda espacio en tu dispositivo para que Minecraft guarde mundos y configuración. ¿Por qué no borras datos que no necesites para poder seguir guardando cosas?	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=Fallo en la importación del nivel: form
 invite.clear=Anular selección	#
 invite.send=Enviar %d invitaciones	#
 invite.sendOne=Mandar 1 invitación.	#
+invite.sendUnnumbered=Enviar invitaciones	#
 invite.title=Invitar a amigos a tu partida	#
 invite.error.message=El envío de alguna de tus invitaciones puede haber fallado.	#
 invite.noFriends=¡No has añadido a nadie a tu lista de amigos!	#
+invite.noRealmFriends=¡No has añadido a nadie a tu Realm!	#
 invite.OnlineFriends=Amigos en línea	#
 invite.OfflineFriends=Amigos desconectados	#
 invite.SuggestedFriends=Amigos sugeridos	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Controles divididos	#
 options.viewSubscriptions=Suscripciones	#
 options.viewSubscriptions.button.info=Inf.	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/MES	#
 options.viewSubscriptions.button.manage=Admin.	#
 options.viewSubscriptions.renew=Se renueva cada 30 días	#
 options.viewSubscriptions.daysRemaining=%d días restantes	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=Para administrar los ajustes de privacidad, visita https:/
 options.unlink_msa.button=Desvincular cuenta de Microsoft	#
 options.unlink_msa.confirm.title=¿Desvincular cuenta de Microsoft?	#
 options.unlink_msa.confirm.warning=ADVERTENCIA: Después de desvincularte, ya no podrás almacenar el progreso ni las compras que realices en tu sistema "PlayStation 4" en tu cuenta %s.	#
+options.unlink_msa.confirm.warning.2=Desvincular tu cuenta de Microsoft desde dentro de este juego afectará a todos los juegos de Minecraft en esta plataforma que hayan usado esta cuenta de Microsoft.	#
 options.unlink_msa.confirm.checkbox1=Ya no podré acceder a ningún contenido de la Tienda del juego cuando juegue en otras plataformas.	#
 options.unlink_msa.confirm.checkbox2=Ya no podré jugar a juegos multiplataforma con mis amigos en otras plataformas.	#
 options.unlink_msa.confirm.checkbox3=Ya no podré acceder a Realms, incluidas las suscripciones a Realms que están activas actualmente.	#
@@ -5995,7 +6020,7 @@ hudScreen.tooltip.removeBook=Eliminar libro	#
 hudScreen.tooltip.shear=Trasquilar	#
 hudScreen.tooltip.carve=Tallar	#
 hudScreen.tooltip.grow=Crecer	#
-hudScreen.tooltip.boatExit=Bajar	#
+hudScreen.tooltip.boatExit=Abandonar barco	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -6679,7 +6704,7 @@ skins.store.equipped=Has equipado el aspecto %s.	#
 soundCategory.ambient=Ambiente/Entorno	#
 soundCategory.block=Bloques	#
 soundCategory.hostile=Criaturas hostiles	#
-soundCategory.master=Volumen general	#
+soundCategory.master=General	#
 soundCategory.music=Música	#
 soundCategory.neutral=Criaturas amigables	#
 soundCategory.player=Jugadores	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=Contenido	#
 store.realmsPlus.faq=FAQ	#
 store.realmsPlus.buyFor=COMPRAR POR %s	#
 store.realmsPlus.buyNow=COMPRAR AHORA	#
+store.realmsPlus.buyNowPerMonth=Comprar por %s/MES	#
+store.realmsPlus.buyNowTrialPerMonth=INICIAR PRUEBA GRATUITA (DESPUÉS %s/MES)	#
 store.realmsPlus.errorNoOffer=ERROR: OFERTA NO ENCONTRADA	#
 store.realmsPlus.manageSubscription=ADMINISTRAR SUSCRIPCIÓN	#
 store.realmsPlus.viewAllPacksTitle=UN CHOLLO: ¡PACKS CON UN VALOR SUPERIOR A §g$150 (USD)!§r	#
@@ -6788,8 +6815,8 @@ store.realmsPlus.noTrial.description=Tu Realm y más de 100 packs del Marketplac
 store.realmsPlus.noTrial.description.iap=Tu Realm y más de 100 packs del Marketplace estarán disponibles de inmediato. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a tu Realm... ¡gratis! La suscripción estará disponible durante 30 días a un precio de %s.	#
 store.realmsPlus.realmName.placeholder=Realm de %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Tu Realm y más de 100 packs del Marketplace estarán disponibles de inmediato. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a los mundos de tu Realm... ¡gratis! El primer mes es gratis, por lo que te cobraremos %s al mes a partir del siguiente mes. Puedes cancelar la suscripción en cualquier momento.	#
-store.realmsPlus.recurring.withoutTrial=Tu Realm y más de 100 packs del Marketplace estarán disponibles de inmediato. Pueden jugar al mismo tiempo hasta 10 jugadores, ¡quienes disfrutarán de acceso a tus mundos del Realm gratis! Te cobraremos %s al mes. Puedes cancelar la suscripción en cualquier momento.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus es una suscripción continua con una cuota recurrente. Esta cuota se carga automáticamente cada mes hasta que se cancela la suscripción.%sTu Realm y más de 100 packs del Marketplace estarán disponibles de inmediato. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a los mundos de tu Realm... ¡gratis! Los primeros 30 días son gratis, por lo que te cobraremos %s al mes a partir del siguiente mes. Puedes cancelar la suscripción en cualquier momento.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus es una suscripción continua con una cuota recurrente. Esta cuota se carga automáticamente cada mes hasta que se cancela la suscripción.%sTu Realm y más de 100 packs del Marketplace estarán disponibles de inmediato. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a los mundos de tu Realm... ¡gratis! Se te cobrará %s al mes y puedes cancelar la suscripción en cualquier momento.	#
 store.realmsPlus.consumable.offerTrial=Tu Realm y más de 100 packs del Marketplace estarán disponibles de inmediato. Pueden jugar al mismo tiempo hasta 10 jugadores, ¡quienes disfrutarán de acceso a tus mundos del Realm gratis! Los primeros 30 días serán gratis; después, puedes renovar la suscripción durante 30 días a un precio de %s.	#
 store.realmsPlus.consumable.withoutTrial=Tu Realm y más de 100 packs del Marketplace estarán disponibles de inmediato. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a tu Realm... ¡gratis! La suscripción estará disponible durante 30 días a un precio de %s.	#
 
@@ -6802,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Tus amigos juegan gratis en tu Realm	#
 store.realmsPlus.landing.info2.line1=- Almacenamiento seguro en la nube	#
 store.realmsPlus.landing.info2.line2=- Juega en cualquier dispositivo con Realms y el Marketplace de Minecraft	#
 store.realmsPlus.landing.info2.line3=- Apoya a la comunidad de Minecraft	#
-store.realmsPlus.landing.info2.line4=- 1 mes de prueba gratis	#
+store.realmsPlus.landing.info2.line4=- Prueba gratuita de 30 días. Después, %s al mes	#
+store.realmsPlus.landing.info2.line5=- %s al mes	#
 
 store.realmsPlus.faq.header=PREGUNTAS FRECUENTES	#
 store.realmsPlus.faq.question1=¿Qué es Realms Plus?	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=VER TODOS LOS PACKS	#
 store.realmsPlus.content.contentDescription=¡Disfruta del impresionante contenido de Minecraft! Con Realms Plus, tendrás acceso instantáneo a más de 100 objetos del Marketplace, como popurrís, mundos, packs de aspectos y aventuras épicas, y cada mes se añaden muchos otros nuevos. Tu contenido se guarda en tu propio servidor personal y está disponible en cualquier plataforma en la que disfrutes de Realms y del Marketplace de Minecraft. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a los mundos de tu Realm... ¡gratis!	#
 
 
-store.realmsPlus.freeTrial=INICIAR LA PRUEBA GRATUITA DE 1 MES	#
+store.realmsPlus.freeTrial=INICIAR PRUEBA GRATUITA (DESPUÉS %s/MES)	#
 
 store.inventory.button=Inventario	#
 store.inventory.title=Inventario	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=Error de desbloqueo del juego	#
 store.popup.trialUpgradeFail.msg=Parece que has iniciado sesión con una cuenta Microsoft diferente a la que utilizaste para descargar la versión de prueba de Minecraft por primera vez. Vuelve a intentarlo después de iniciar sesión con esa cuenta.	#
 store.popup.downloaded.unOwnedTemplate.title=¿Comprar plantilla de mundo?	#
 store.popup.downloaded.unOwnedTemplate.msg=No eres el propietario de esta plantilla, por lo que debes comprarla para desbloquearla. ¿Te gustaría comprar la plantilla?	#
+store.popup.rtx.title=¿Descargar packs con trazado de rayos?	#
+store.popup.rtx.msg=Este mundo tiene packs de recursos que cuentan con trazado de rayos. Tu dispositivo no es compatible con las funciones avanzadas de luz y textura, así que verás el mundo sin efectos avanzados. ¿Quieres descargarlo y unirte?	#
 store.purchase.success=Acabas de comprar: %s.	#
 store.purchase.bundle=¿Desbloquear %d de %d packs?	#
 store.purchase.bundle.confirm=¡Desbloquea ya!	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=Horno	#
 tile.glass.name=Cristal	#
 tile.golden_rail.name=Raíl propulsado	#
 tile.grass.name=Bloque de hierba	#
-tile.grass_path.name=Sendero de hierba	#
+tile.grass_path.name=Camino de tierra	#
 tile.gravel.name=Grava	#
 tile.hay_block.name=Fardo de heno	#
 tile.netherrack.name=Infiedra	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=Steve	#
 dr.default.steve.top=Camisa de Steve	#
 dr.emotes.slot=Emoji %d	#
 
+gfxDriverOutdated.title=¡Controladores anticuados!	#
+gfxDriverOutdated.message=Hay una actualización disponible para los controladores gráficos de tu ordenador. Si no los actualizas, puede que haya errores o problemas en los mundos. Instala la actualización para disfrutar al máximo de Minecraft. Aquí tienes más información: http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.doNotShowAgain=No volver a mostrar este mensaje	#
+gfxDriverOutdated.close=Cerrar	#
+
 onlinePlay.notRated=El juego en línea no está calificado	#
 onlinePlay.message=Mientras juegas en línea, puede que te expongas a mensajes de chat o a otro tipo de contenido generado por usuarios que no ha sido calificado. Este contendido puede no ser adecuado para todas las edades.	#
 onlinePlay.doNotShowAgain=No volver a mostrar esta pantalla	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=Bizcocho caliente	#
 
 emotes.change_emotes=Cambiar emoticonos	#
 emotes.execute=Ejecutar	#
+emotes.header_text=Gestos	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

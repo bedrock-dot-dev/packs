@@ -77,7 +77,6 @@
         "first_person_attack_controller": "controller.animation.player.first_person_attack",
         "first_person_attack_rotation": "animation.player.first_person.attack_rotation",
         "first_person_vr_attack_rotation": "animation.player.first_person.vr_attack_rotation",
-        "first_person_walk": "animation.player.first_person.walk",
         "first_person_map_controller": "controller.animation.player.first_person_map",
         "first_person_map_hold": "animation.player.first_person.map_hold",
         "first_person_map_hold_attack": "animation.player.first_person.map_hold_attack",

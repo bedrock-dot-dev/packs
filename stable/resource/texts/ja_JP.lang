@@ -8,12 +8,17 @@ accessibility.enableTTS=テキスト読み上げ有効	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=%s を押して戻る	#
+accessibility.chat.tts.gamepad.exitChat=%s を押してチャットを終了する	#
+accessibility.chat.tts.gamepad.sendMessage=%s を押してメッセージを送信する	#
 accessibility.chat.tts.says=%s の発言: %s	#
 accessibility.chat.tts.hideChat=チャットを非表示	#
 accessibility.chat.tts.keyboard=キーボード	#
 accessibility.chat.tts.muteChatToggle=すべてミュート	#
 accessibility.chat.tts.sendChatMessage=送信	#
 accessibility.chat.tts.textboxTitle=チャット	#
+
+accessibility.game.playerView=プレイヤー視点	#
 
 accessibility.loading.done=完了	#
 accessibility.saving.done=完了	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=%s を押して右にタブ移動	#
 accessibility.play.legacyWorldsDelete=レガシーの世界を削除	#
 
 accessibility.pause.permissions=アクセス許可	#
+accessibility.pause.profile=プロフィールの選択	#
 
 accessibility.start.buttonHelper=%s : %s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=実績画面	#
 accessibility.screenName.chat=チャット画面	#
 accessibility.screenName.createNew=新しい画面を作成	#
 accessibility.screenName.createWorld=世界の設定画面を作成	#
+accessibility.screenName.editCharacter=キャラクター編集画面	#
 accessibility.screenName.editWorldSettings=世界の設定画面を編集	#
 accessibility.screenName.error=エラー画面	#
 accessibility.screenName.howToPlay=遊び方画面	#
+accessibility.screenName.inviteToGame=ゲーム画面へ招待する	#
 accessibility.screenName.modalDialog=ポップアップ ダイアログ	#
 accessibility.screenName.patchNotes=パッチ ノート画面	#
-accessibility.screenName.pauase=一時停止画面	#
+accessibility.screenName.pause=画面を一時停止する	#
 accessibility.screenName.play=プレイ画面	#
+accessibility.screenName.profile=プロフィール画面	#
 accessibility.screenName.realmSettings=Realm の設定画面	#
 accessibility.screenName.settings=ゲーム設定画面	#
 accessibility.screenName.skinPicker=スキン選択画面	#
 accessibility.screenName.start=メイン メニュー	#
 accessibility.screenName.vrAlignment=VR 調整画面 	#
+accessibility.screenName.emoteWheel=エモート画面	#
 
 accessibility.settings.reset=リセット	#
 accessibility.settings.chooseSeed=シードを選択	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=L ボタン	#
 accessibility.keyboard.leftBracket=左角かっこキー			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右角かっこキー		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s、%s ボタン %d	#
+accessibility.emotes.buttonName=エモート	#
+accessibility.emotes.assigned=登録された %s エモート	#
+accessibility.emotes.unassigned=未登録	#
+accessibility.emotes.playSuccess=エモートで遊ぶ	#
+accessibility.emotes.playFailed=このボタンにエモートが登録されていない場合は、下向き矢印を押して [エモートを変更] ボタンにアクセスしてください。	#
+accessibility.emotes.instruction.keyboard=右または左を押して、エモートボタンを切り替えてください。下向き矢印を押すと、[エモートを変更] ボタンにアクセスできます。	#
 
 ## End of audible phrases section
 
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=購入を確定	#
 authentication.store.intro=Minecraft: Education Edition の試用版はこれ以上プレイできません。Minecraft: Education Edition のプレイを続けるには、ライセンスを購入する必要があります。	#
 authentication.store.popup.purchaseFailed.title=問題が発生しました	#
 authentication.store.popup.purchaseFailed.msg=購入が行えませんでした。インターネット接続を確認してください	#
-authentication.store.purchase.info1=購入を確定した時点で、料金はお使いの iTunes アカウントに請求され、現在の期間が終了する 24 時間以上前に自動更新をオフにしない限り、サブスクリプションは自動で更新されます。更新の際は、現在の期間の終了時期から逆算して 24 時間以内に、前回選択したサブスクリプションと同じ価格が、お使いのアカウントに請求されます。	#
-authentication.store.purchase.info2=サブスクリプションはユーザーが管理することが可能で、購入後に iTunes のアカウント設定から自動更新をオフにすることができます。サブスクリプションが有効になった後にキャンセルした場合、そのサブスクリプションの残りの有効期間に対する返金を受けることはできません。このサブスクリプションについて、お使いの iTunes アカウントは Office 365 Education アカウントに紐付けされるため、お使いの iTunes アカウントで Minecraft: Education Edition ライセンスを追加購入することはできなくなります。	#
 authentication.store.purchase.button=ライセンスの購入 (%s/年)	#
 authentication.store.terms=使用条件	#
 authentication.store.viewTermsAndConditions=利用条件	#
@@ -1096,7 +1111,7 @@ commands.setfixedinvslot.success=固定の持ち物スロット %1$d が %2$s �
 commands.globalpause.description=全プレイヤーのゲームのポーズ状態を設定または取得する。	#
 commands.globalpause.success=ポーズ状態の設定または取得完了	#
 commands.setmaxplayers.description=このゲーム セッションでのプレイヤーの最大人数を設定します。	#
-commands.setmaxplayers.success=プレイヤーの最大人数を %1$d に設定します。	#
+commands.setmaxplayers.success=プレイヤーの最大人数を %1$d に設定します。 	#
 commands.setmaxplayers.success.upperbound=(許可されている最大接続数にバインド済み)	#
 commands.setmaxplayers.success.lowerbound=(現在のプレイヤー数にバインド済み)	#
 commands.setworldspawn.description=世界の生成を設定する。	#
@@ -1219,6 +1234,7 @@ commands.time.stop=時間 %1$s	#
 commands.title.description=画面のタイトルを操作する。	#
 commands.title.success=titleコマンドは正常に実行されました	#
 commands.titleraw.description=JSON メッセージを使用して画面のタイトルを調整します。	#
+commands.titleraw.success=Titleraw コマンドが正常に実行されました	#
 commands.toggledownfall.description=天気を切り替える。	#
 commands.tp.description=エンティティ (プレイヤー、モブなど) をテレポートさせる。	#
 commands.tp.notSameDimension=プレイヤーが同じ世界にいないためテレポートすることができません	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=前へ	#
 realmsSettingsScreen.dev_next_page_label=次へ	#
 realmsSettingsScreen.uploadConfirmationMessage=これを行うと現在の世界をあなたの Realm から削除して、新たな世界と置き換えます。あなたの Realm のメンバーは現在の世界にアクセスできなくなります。本当に続けてもいいですか?	#
 realmsSettingsScreen.uploadConfirmationTitle=世界を置き換えますか?	#
-realmsSettingsScreen.whitelist_invite=招待	#
+realmsSettingsScreen.allowlist_invite=招待	#
 realmsSettingsScreen.searchBox=検索中...	#
 realmsSettingsScreen.unknownPackName=不明な名前	#
 realmsSettingsScreen.viewSubscriptionsButton=サブスクリプションの確認	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=エラー番号	#
 xbl.transferEntitlements.error.error2=ID 番号	#
 
 playfab.account.banned.title=アクセス禁止	#
-playfab.account.banned.body=Minecraft オンラインから禁止されています。サーバーでのプレイや realms への参加、マルチプレイヤー ゲームのホストおよび参加、マーケットプレイスの利用ができません。Realm への支払いが生じている場合は、購入したストアにてサブスクリプションをキャンセルしてください。	#
+playfab.account.banned.body=あなたは Minecraft から禁止されています。禁止期間中は、世界 (特定のプラットフォーム) でプレイしたり、サーバーでプレイしたり、Realmsに参加したり、マルチプレイヤー ゲームをホストまたは参加したり、マーケットプレイスを使用したりすることはできません。Realm の料金が発生する場合は、購入した店舗を通じて定額サービスをキャンセルする必要があります。	#
 playfab.account.banned.body.button=さらに詳しく	#
 
 store.sign_in_warning.no_xbl_and_local_content=重要なお知らせです! ご購入いただいたパックまたはコインは、現在ご利用のデバイスでのみ使用可能となっています。デバイスの不良、紛失または Minecraft をアンインストールすると購入されたものが失われてしまう場合があります! Microsoft アカウント (無料) でサインインし、パックの利用資格と Minecoin をアカウントに移動して保護してください。そうすることで他のデバイスでサインインする場合でも利用できるようになります。	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=スキップ	#
 death.attack.anvil=%1$s は落下した金床に潰された	#
 death.attack.arrow=%1$s は %2$s に射抜かれた	#
 death.attack.arrow.item=%1$s は %2$s の %3$s で射抜かれた	#
+death.attack.bullet=%1$sは%2$sに狙撃された	#
 death.attack.cactus=%1$s は刺されて力尽きた	#
 death.attack.cactus.player=%1$s は %2$s から逃げようとするうちにサボテンに足を踏み入れた	#
 death.attack.drown=%1$s は溺れて力尽きた	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=%1$s は %2$s と戦ううちにカリカリに焼か
 death.attack.outOfWorld=%1$s は世界の外へ落ちた	#
 death.attack.player=%1$s は %2$s に倒された	#
 death.attack.player.item=%1$s は %2$s の %3$s により倒された	#
+death.attack.spit=%1$sは%2$sに丸めてポイされた	#
 death.attack.starve=%1$s は飢えて力尽きた	#
 death.attack.thorns=%2$s に損害を与えようとした %1$s が倒された	#
 death.attack.thrown=%1$s は %2$s に叩き潰された	#
 death.attack.thrown.item=%1$s は %2$s に %3$s で打倒された	#
+death.attack.trident=%1$sは%2$sに刺殺された	#
 death.attack.wither=%1$s は弱り果てた	#
 death.fell.accident.generic=%1$s は高い所から落ちた	#
 death.fell.accident.ladder=%1$s ははしごから落ちた	#
@@ -2312,12 +2331,13 @@ disconnectionScreen.invalidTenant=世界に接続できませんでした。あ�
 disconnectionScreen.resourcePack=リソース パックをダウンロードまたは適用中に問題が発生しました。	#
 disconnectionScreen.badPacket=サーバーが壊れたパケットを送信しました。	#
 disconnectionScreen.realmsDisabled=Realms は使用不可です。	#
-disconnectionScreen.realmsDisabledBeta=ベータ版では Realms を利用できません。	#
+disconnectionScreen.realmsDisabledBeta=ベータ版では Realms を利用できません。 	#
 disconnectionScreen.incompatiblePack=次のパックは互換性がないため、この世界に参加できません: %s	#
 disconnectionScreen.incompatiblePack.memory=お使いのデバイスには以下のパックを使用するための十分なメモリがないため、この世界に参加できません: %s	#
 disconnectionScreen.incompatiblePack.graphics.raytracing=お使いのデバイスにはレイ トレーシングをサポートする互換性のあるハードウェアがないため、この世界に参加できません	#
 disconnectionScreen.worldCorruption.message=世界を再度開くか、過去のバックアップから復元してください	#
 disconnectionScreen.worldCorruption=世界が破損しているため切断されました	#
+disconnectionScreen.hostSuspended=サーバーが現在使用できないため、接続が中断されました	#
 
 storageSpaceWarningScreen.frontend=容量に十分な空きがありません。十分な空き容量が確保されるまで、この機能へのアクセスは制限されます。	#
 storageSpaceWarningScreen.lowduringgameplay=お使いのデバイスには、Minecraft が世界や設定を保存するための十分な空き容量がありません。新しいデータを今後も保存できるよう、不要な古いデータをいくつか削除することをお勧めします。	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=レベル インポート失敗: 対応�
 invite.clear=選択を解除	#
 invite.send=%d 個の招待を送信	#
 invite.sendOne=1 個の招待を送信	#
+invite.sendUnnumbered=招待を送信する	#
 invite.title=ゲームにフレンドを招待	#
 invite.error.message=一部の招待の送信に失敗した可能性があります。	#
 invite.noFriends=フレンド リストに誰もいません!	#
+invite.noRealmFriends=Realm にまだ誰も追加していません!	#
 invite.OnlineFriends=オンラインのフレンド	#
 invite.OfflineFriends=オフラインのフレンド	#
 invite.SuggestedFriends=おすすめのフレンド	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=操作の分割	#
 options.viewSubscriptions=サブスクリプション	#
 options.viewSubscriptions.button.info=情報	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/月	#
 options.viewSubscriptions.button.manage=管理	#
 options.viewSubscriptions.renew=30 日ごとに更新	#
 options.viewSubscriptions.daysRemaining=残り %d 日	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=プライバシーの設定を管理するには、Web ブ
 options.unlink_msa.button=Microsoft アカウントの紐づけ解除	#
 options.unlink_msa.confirm.title=Microsoft アカウントの紐づけを解除しますか?	#
 options.unlink_msa.confirm.warning=警告: 紐づけを解除すると、今後はアカウント %s の進行状況や購入情報を 「PlayStation 4」本体に保存できなくなります。	#
+options.unlink_msa.confirm.warning.2=このゲーム内から Microsoft アカウントのリンクを解除すると、このプラットフォーム上で、この Microsoft アカウントを使用しているすべての Minecraft ゲームに影響します。	#
 options.unlink_msa.confirm.checkbox1=他のプラットフォームでプレイする際、ゲーム内ストアのコンテンツにアクセスできなくなります。	#
 options.unlink_msa.confirm.checkbox2=他のプラットフォームのフレンドとクロスプラットフォーム ゲームをプレイできなくなります。	#
 options.unlink_msa.confirm.checkbox3=現在アクティブな Realms のサブスクリプションを含む、Realms へのアクセスを失います。	#
@@ -5909,7 +5934,7 @@ sunsetting.banner.play.serverTab.pending=お使いのバージョンは、もう
 
 sunsetting.banner.play.worldTab=お使いのバージョンは、マルチプレイヤーへ接続できなくなります	#
 sunsetting.banner.play.friendsTab=お使いのバージョンは、マルチプレイヤーへ接続できなくなります	#
-sunsetting.banner.play.serverTab=お使いのバージョンは、マルチプレイヤーへ接続できなくなります	#
+sunsetting.banner.play.serverTab=お使いのバージョンは、マルチプレイヤーへ接続できません	#
 
 sunsetting.store.incompatible=互換性がありません	#
 sunsetting.store.incompatiblePopup=このコンテンツは、お使いのデバイスと互換性がありません。 https://aka.ms/MinecraftSunsetting をご確認ください	#
@@ -5931,8 +5956,8 @@ pauseScreen.xboxLiveDisconnect=お使いの Microsoft アカウントから切�
 pauseScreen.joinCode.Label=参加コード	#
 pauseScreen.joinCode.Icon=%3 参加コード アイコン (%1/%2)	# Example: Apple join code icon, 2 of 5	#
 
-permissionsScreen.kick=プレーヤーを追放	#
-permissionsScreen.ban=プレーヤーをブロック	#
+permissionsScreen.kick=プレイヤーを追放	#
+permissionsScreen.ban=プレイヤーをブロック	#
 
 feedbackScreen.button=フィードバック	#
 feedbackScreen.title=フィードバックがありますか?	#
@@ -6679,11 +6704,11 @@ skins.store.equipped=%s スキンを装備しました。	#
 soundCategory.ambient=環境音	#
 soundCategory.block=ブロック	#
 soundCategory.hostile=敵対的生物	#
-soundCategory.master=主音量	#
+soundCategory.master=メイン	#
 soundCategory.music=BGM	#
 soundCategory.neutral=友好的生物	#
 soundCategory.player=プレイヤー	#
-soundCategory.record=ジュークボックス/音ブロック	#
+soundCategory.record=ジュークボックス/音符ブロック	#
 soundCategory.weather=天候	#
 
 stat.animalsBred=動物を繁殖させた回数	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=コンテンツ	#
 store.realmsPlus.faq=FAQ	#
 store.realmsPlus.buyFor=%s で購入	#
 store.realmsPlus.buyNow=今すぐ購入	#
+store.realmsPlus.buyNowPerMonth=%s/月で利用	#
+store.realmsPlus.buyNowTrialPerMonth=無料試用版を開始 (期間終了後 %s/月)	#
 store.realmsPlus.errorNoOffer=エラー: セールが見つかりません	#
 store.realmsPlus.manageSubscription=サブスクリプションの管理	#
 store.realmsPlus.viewAllPacksTitle=超お得 - §g$150 (USD)!§r 以上の価値があるパック	#
@@ -6788,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realm と 100 種類以上のマーケッ�
 store.realmsPlus.noTrial.description.iap=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! サブスクリプションは %s の価格で30日間利用できます。	#
 store.realmsPlus.realmName.placeholder=%s の Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の 1 か月は無料で利用でき、その後は月額 %s でお楽しみいただけます。サブスクリプションのキャンセルはいつでも可能です。	#
-store.realmsPlus.recurring.withoutTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 料金は月額 %s です。サブスクリプションのキャンセルはいつでも可能です。	#
+store.realmsPlus.recurring.offerTrial=Realms Plus は、月額利用料が毎月自動的に課金される定期サービスです。キャンセルしない限り、毎月定額で利用できます。%s Realm を始め、100 種類以上のマーケットプレイス パックをすぐに楽しめます。最大 10 人まで同時プレイすることができ、友達は無料であなたの Realm の世界にアクセスできます! 最初の 30 日間は無料。無料試用版の期間終了後は月額 %s 円。いつでもキャンセルできます。	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus は、月額利用料が毎月自動的に課金される定期サービスです。%s Realm を始め、100 種類以上のマーケットプレイス パックをすぐに楽しめます。最大 10 人まで同時プレイすることができ、友達は無料であなたの Realm の世界にアクセスできます! 月額 %s 円。いつでもキャンセルできます。	#
 store.realmsPlus.consumable.offerTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! 最初の30日間は無料で、その後は %s の価格で30日間更新できます。	#
 store.realmsPlus.consumable.withoutTrial=Realm と 100 種類以上のマーケットプレイス パックがすぐに利用可能になり、また、最大 10 人までの同時接続が可能になります。さらに、接続している全プレーヤーはあなたの Realm にある世界を無料でプレイできます! サブスクリプションは %s の価格で30日間利用できます。	#
 
@@ -6802,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- フレンドはあなたの Realm を無�
 store.realmsPlus.landing.info2.line1=- 安全なクラウド ストレージ	#
 store.realmsPlus.landing.info2.line2=- Realms と Minecraft マーケットプレイスが利用可能なあらゆるデバイスでプレイ可能	#
 store.realmsPlus.landing.info2.line3=- Minecraft コミュニティのサポート	#
-store.realmsPlus.landing.info2.line4=- 1 か月間の無料トライアル	#
+store.realmsPlus.landing.info2.line4=- 30 日間無料で体験できる試用版。期間終了後は %s/月	#
+store.realmsPlus.landing.info2.line5=- %s/月	#
 
 store.realmsPlus.faq.header=よくある質問	#
 store.realmsPlus.faq.question1=Realms Plus とは?	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=すべてのパックを見る	#
 store.realmsPlus.content.contentDescription=魅力的な Minecraft コンテンツの源がここに! Realms Plus に加入すると、マッシュアップ、世界、スキン パックなどのマーケットプレイス コンテンツ 100 種類以上を利用して冒険をお楽しみいただけます。また、コンテンツは毎月新しく追加されます。入手したコンテンツはプライベート サーバーに保存され、Realms および Minecraft マーケットプレイスの両方にアクセス可能なすべてのプラットフォームでお楽しみいただけます。 また、最大 10 人までの同時接続が可能になり、接続中の全プレーヤーはあなたの Realm にある世界を無料でプレイできます!	#
 
 
-store.realmsPlus.freeTrial=1 か月の無料トライアルを始める	#
+store.realmsPlus.freeTrial=無料試用版を開始 (期間終了後 %s/月)	#
 
 store.inventory.button=持ち物	#
 store.inventory.title=持ち物	#
@@ -6884,7 +6912,7 @@ store.popup.download.title.MB=コンテンツをダウンロードしますか? 
 store.popup.download.msg=%s をお使いのデバイスにダウンロードします。	#
 store.popup.downloadCell.title.KB=携帯ネットワークからダウンロードしますか? - %s KB	#
 store.popup.downloadCell.title.MB=携帯ネットワークからダウンロードしますか? - %s MB	#
-store.popup.downloadCell.msg=Wi-Fi に接続されていません。%s を携帯ネットワークからダウンロードしますか?	#
+store.popup.downloadCell.msg=Wi-Fi に接続されていません。%s を携帯ネットワークからダウンロードしますか? 	#
 store.popup.download.button1=ダウンロード	#
 store.popup.download.button2=スキップ	#
 store.popup.download.back=戻る	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=ゲーム購入エラー	#
 store.popup.trialUpgradeFail.msg=Minecraft 試用版を初めてダウンロードしたときとは異なる Microsoft アカウントにサインインしているようです。試用版をダウンロードしたアカウントにサインインした状態で、もう一度やり直してください。	#
 store.popup.downloaded.unOwnedTemplate.title=世界テンプレートを購入しますか?	#
 store.popup.downloaded.unOwnedTemplate.msg=このテンプレートを所有していません。テンプレートを解除するには購入する必要があります。購入しますか?	#
+store.popup.rtx.title=レイ トレーシング パックをダウンロードしますか?	#
+store.popup.rtx.msg=この世界には、レイ トレーシングが有効になっているリソース パックが適用されています。お使いのデバイスは、高度な照明やテクスチャ機能と互換性がありませんので、世界には高度なエフェクトが適用されません。ダウンロードして参加しますか?	#
 store.purchase.success=%s を購入しました	#
 store.purchase.bundle=パック (%d/%d) を購入しますか?	#
 store.purchase.bundle.confirm=今すぐ購入!	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=かまど	#
 tile.glass.name=ガラス	#
 tile.golden_rail.name=加速レール	#
 tile.grass.name=草ブロック	#
-tile.grass_path.name=草の道	#
+tile.grass_path.name=未舗装路	#
 tile.gravel.name=砂利	#
 tile.hay_block.name=干し草の俵	#
 tile.netherrack.name=ネザーレック	#
@@ -7797,7 +7827,7 @@ tile.stone_slab2.prismarine.rough.name=海晶ブロックのハーフブロッ�
 tile.stone_slab2.prismarine.dark.name=暗海晶ブロックのハーフブロック	#
 tile.stone_slab2.prismarine.bricks.name=海晶レンガのハーフブロック	#
 tile.stone_slab2.mossy_cobblestone.name=苔の生えた丸石ハーフブロック	#
-tile.stone_slab2.red_nether_brick.name=赤い暗黒界レンガ ハーフブロック	#
+tile.stone_slab2.red_nether_brick.name=赤い暗黒界レンガのハーフブロック	#
 tile.stone_slab2.sandstone.smooth.name=なめらかな砂岩ハーフブロック	#
 tile.stone_slab3.end_brick.name=エンドストーンレンガ ハーフブロック	#
 tile.stone_slab3.red_sandstone.smooth.name=なめらかな赤砂岩ハーフブロック	#
@@ -7997,12 +8027,12 @@ tile.wood.birch.name=樺の木	#
 tile.wood.jungle.name=ジャングルの木	#
 tile.wood.acacia.name=アカシアの原木	#
 tile.wood.dark_oak.name=黒樫の木	#
-tile.wood.stripped.oak.name=樹皮をはいだ樫の木	#
-tile.wood.stripped.spruce.name=樹皮をはいだトウヒの木	#
-tile.wood.stripped.birch.name=樹皮をはいだ樺の木	#
-tile.wood.stripped.jungle.name=樹皮をはいだジャングルの木	#
-tile.wood.stripped.acacia.name=樹皮をはいだアカシアの原木	#
-tile.wood.stripped.dark_oak.name=樹皮をはいだ黒樫の木	#
+tile.wood.stripped.oak.name=皮のはがれた樫の木	#
+tile.wood.stripped.spruce.name=皮のはがれたトウヒの木	#
+tile.wood.stripped.birch.name=皮のはがれた樺の木	#
+tile.wood.stripped.jungle.name=皮のはがれたジャングルの木	#
+tile.wood.stripped.acacia.name=皮のはがれたアカシアの原木	#
+tile.wood.stripped.dark_oak.name=皮のはがれた黒樫の木	#
 
 tile.netherite_block.name=ネザライトのブロック	#
 tile.ancient_debris.name=古代のがれき	#
@@ -8276,7 +8306,7 @@ autosave.info.desktop=このアイコンの表示中はゲームをオートセ�
 
 ## Xbox Live Strings
 xbox.signin.error=フレンドとプレイしたり、ゲーマースコアや実績を獲得したりするには、Microsoft アカウントでサインインしてください。	#
-xbox.signin.error.pocket.line1=Realms をテストしていただきありがとうございます! この機能は開発中であり、不具合が発生する可能性があります。フィードバックをお聞かせください! お待ちしております。	#
+xbox.signin.error.pocket.line1=Realms をテストしていただきありがとうございます! この機能は開発中であり、不具合が発生する可能性があります。フィードバックをお聞かせください! お待ちしております。 	#
 xbox.signin.error.pocket.line2=	#
 xbox.signin.error.pocket.line3=このテスト中は、招待の送信を受けて Realm に追加されることを可能にするため、全員が Microsoft アカウントでサインインする必要があります。	#
 xbox.connection.error=Microsoft アカウントにサインインしていません	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=スティーブ	#
 dr.default.steve.top=スティーブのシャツ	#
 dr.emotes.slot=エモート %d	#
 
+gfxDriverOutdated.title=ドライバーが期限切れです!	#
+gfxDriverOutdated.message=コンピュータのグラフィックス ドライバに新しい更新プログラムが用意されています。更新プログラムを適応しない場合、世界には問題やバグが発生する可能性があります。Minecraft を最大限に楽しむためにインストールしてください。詳細は http://aka.ms/ray-tracing-FAQ をご確認ください。	#
+gfxDriverOutdated.doNotShowAgain=このメッセージを再度表示しない	#
+gfxDriverOutdated.close=閉じる	#
+
 onlinePlay.notRated=オンラインプレイは評価されていません	#
 onlinePlay.message=オンラインプレイ中はチャット メッセージやユーザーが生成した未評価のコンテンツが表示される場合があり、一部の年齢層には不適切な場合があります。	#
 onlinePlay.doNotShowAgain=この画面を再度表示しない	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=ウォーム ビスク	#
 
 emotes.change_emotes=エモートの変更	#
 emotes.execute=実行	#
+emotes.header_text=エモート	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

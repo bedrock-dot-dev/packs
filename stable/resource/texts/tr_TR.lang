@@ -8,12 +8,17 @@ accessibility.enableTTS=Konuşma Metni etkin	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Geri dönmek için %s tuşuna bas	#
+accessibility.chat.tts.gamepad.exitChat=Sohbetten çıkmak için %s tuşuna bas	#
+accessibility.chat.tts.gamepad.sendMessage=Mesaj göndermek için %s tuşuna bas	#
 accessibility.chat.tts.says=%s %s diyor	#
 accessibility.chat.tts.hideChat=Sohbeti gizle	#
 accessibility.chat.tts.keyboard=Klavye	#
 accessibility.chat.tts.muteChatToggle=Tümü Sessiz	#
 accessibility.chat.tts.sendChatMessage=Gönder	#
 accessibility.chat.tts.textboxTitle=Sohbet	#
+
+accessibility.game.playerView=Oyuncu görünümü	#
 
 accessibility.loading.done=Bitti	#
 accessibility.saving.done=Bitti	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=Sağa bir sekme ilerletmek için %s düğmesine bas�
 accessibility.play.legacyWorldsDelete=Eski Dünyayı Sil	#
 
 accessibility.pause.permissions=İzinler	#
+accessibility.pause.profile=Profil Seç	#
 
 accessibility.start.buttonHelper=%s : %s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=Başarılar Ekranı	#
 accessibility.screenName.chat=Sohbet Ekranı	#
 accessibility.screenName.createNew=Yeni Ekran Oluştur	#
 accessibility.screenName.createWorld=Dünya Oluşturma Ayarları Ekranı	#
+accessibility.screenName.editCharacter=Karakter Ekranını Düzenle	#
 accessibility.screenName.editWorldSettings=Dünya Düzenleme Ayarları Ekranı	#
 accessibility.screenName.error=Hata Ekranı	#
 accessibility.screenName.howToPlay=Nasıl Oynanır Ekranı	#
+accessibility.screenName.inviteToGame=Oyun Davet Et Ekranı	#
 accessibility.screenName.modalDialog=Açılır iletişim kutusu	#
 accessibility.screenName.patchNotes=Yama Notları Ekranı	#
-accessibility.screenName.pauase=Duraklat Ekranı	#
+accessibility.screenName.pause=Duraklat Ekranı	#
 accessibility.screenName.play=Oyna Ekranı	#
+accessibility.screenName.profile=Profil Ekranı	#
 accessibility.screenName.realmSettings=Bölge Ayarları Ekranı	#
 accessibility.screenName.settings=Oyun Ayarları Ekranı	#
 accessibility.screenName.skinPicker=Dış Görünüş Seç Ekranı	#
 accessibility.screenName.start=Ana Menü	#
 accessibility.screenName.vrAlignment=VR Hizalama Ekranı	#
+accessibility.screenName.emoteWheel=İfadeler Ekranı	#
 
 accessibility.settings.reset=sıfırla	#
 accessibility.settings.chooseSeed=Tohum Seç	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=Sol Yassı Düğme	#
 accessibility.keyboard.leftBracket=Sol köşeli ayraç tuşu			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Sağ köşeli ayraç tuşu		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s düğmesi %d	#
+accessibility.emotes.buttonName=İfade	#
+accessibility.emotes.assigned=%s ifadesi atandı	#
+accessibility.emotes.unassigned=Atama kaldırıldı	#
+accessibility.emotes.playSuccess=İfadeyi oynat	#
+accessibility.emotes.playFailed=Bu düğmeye atanmış ifade yok, İfadeleri Değiştir düğmesine erişmek için aşağı ok tuşuna bas	#
+accessibility.emotes.instruction.keyboard=İfade düğmeleri arasında gezinmek için sağ veya sol düğmesine bas. İfadeleri Değiştir düğmesine erişmek için aşağı oka bas.	#
 
 ## End of audible phrases section
 
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=Satın Almayı Onayla	#
 authentication.store.intro=Minecraft: Education Edition denemeniz sona erdi. Minecraft: Education Edition oynamaya devam edebilmeniz için bir lisans satın almanız gerekiyor.	#
 authentication.store.popup.purchaseFailed.title=Bir Sorun Oluştu	#
 authentication.store.popup.purchaseFailed.msg=Üzgünüz, satın alma işleminizi tamamlayamadık. İnternet bağlantınızı kontrol edebilir misiniz?	#
-authentication.store.purchase.info1=Satın alımın onaylanmasının ardından ödeme, iTunes hesabınızdan tahsil edilecek ve mevcut dönemin sonundan en az 24 saat öncesine kadar otomatik yenilenme özelliği kapatılmadığı sürece abonelik otomatik olarak yenilenecektir. Mevcut dönemin sona ermesinden 24 saat önce, daha önce seçtiğiniz abonelik fiyatı seçeneğine göre hesabınızdan yenileme ücreti tahsil edilecektir.	#
-authentication.store.purchase.info2=Satın alma sonrasında iTunes Hesabı ayarlarınıza erişerek aboneliğinizi yönetebilir ve otomatik yenilemeyi kapatabilirsiniz. Aboneliğiniz etkinleştirildikten sonra işlemi iptal ederseniz, aboneliğin geri kalan etkin dönemi için para iadesi alamazsınız. iTunes hesabınız bu abonelik için O365 Eğitim Hesabınıza bağlanacak, böylece bu iTunes hesabı ile ek Minecraft: Education Edition lisansları satın alamayacaksınız.	#
 authentication.store.purchase.button=Lisans satın al (%s/yıl)	#
 authentication.store.terms=Kullanım Koşulları	#
 authentication.store.viewTermsAndConditions=Hüküm ve Koşullar	#
@@ -1107,9 +1122,9 @@ commands.spawnpoint.description=Bir oyuncu için doğma noktasını ayarlar.	#
 commands.spawnpoint.success.multiple.specific=%1$s için doğma noktasını (%2$d, %3$d, %4$d) olarak ayarla	#
 commands.spawnpoint.success.multiple.generic=%1$s için doğma noktasını ayarla	#
 commands.spawnpoint.wrongDimension=Doğma noktası bu boyutta ayarlanamıyor	#
-commands.clearspawnpoint.success.single=%1$s adlı oyuncunun oluşum noktası kaldırıldı	#
-commands.clearspawnpoint.description=Bir oyuncunun oluşum noktasını kaldırır.	#
-commands.clearspawnpoint.success.multiple=%1$s için oluşum noktaları kaldırıldı	#
+commands.clearspawnpoint.success.single=%1$s adlı oyuncunun doğma noktası kaldırıldı	#
+commands.clearspawnpoint.description=Bir oyuncunun doğma noktasını kaldırır.	#
+commands.clearspawnpoint.success.multiple=%1$s için doğma noktaları kaldırıldı	#
 commands.spreadplayers.description=Varlıkları rastgele yerlere ışınlar.	#
 commands.spreadplayers.failure.players=%1$s oyuncu %2$s,%3$s etrafına dağıtılamadı (bu alan için çok fazla oyuncu var, en fazla %4$s tane dağıtmayı deneyin)	#
 commands.spreadplayers.failure.teams=%1$s takım %2$s,%3$s etrafına dağıtılamadı (bu alan için çok fazla oyuncu var, en fazla %4$s tane dağıtmayı deneyin)	#
@@ -1219,6 +1234,7 @@ commands.time.stop=Saat %1$s	#
 commands.title.description=Ekran başlıklarını denetler.	#
 commands.title.success=Başlık komutu başarıyla gerçekleştirildi	#
 commands.titleraw.description=JSON iletileri içeren ekran başlıklarını denetler.	#
+commands.titleraw.success=Titleraw komutu başarıyla yürütüldü	#
 commands.toggledownfall.description=Hava durumunu değiştirir.	#
 commands.tp.description=Varlıkları (oyuncular, moblar gibi) ışınlar.	#
 commands.tp.notSameDimension=Oyuncular aynı boyutta olmadığından ışınlama yapılamadı	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Geri	#
 realmsSettingsScreen.dev_next_page_label=İleri	#
 realmsSettingsScreen.uploadConfirmationMessage=Bu işlem Realm'ınızdan şu anki dünyanızı silecek ve yerine yeni bir dünya eklemenize izin verecektir.  Realm üyeleriniz artık şu anki dünyanıza erişemeyecektir. Devam etmek istiyor musunuz?	#
 realmsSettingsScreen.uploadConfirmationTitle=Dünyayı değiştir?	#
-realmsSettingsScreen.whitelist_invite=Davet Et	#
+realmsSettingsScreen.allowlist_invite=Davet Et	#
 realmsSettingsScreen.searchBox=Ara...	#
 realmsSettingsScreen.unknownPackName=Bilinmeyen Ad	#
 realmsSettingsScreen.viewSubscriptionsButton=Abonelikleri Görüntüle	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=Hata Numarası	#
 xbl.transferEntitlements.error.error2=Kimlik Numarası	#
 
 playfab.account.banned.title=Yasaklandı	#
-playfab.account.banned.body=Minecraft'ta çevrimiçi oynamanız yasaklandı. Sunucularda oynayamaz, realms'a katılamaz, çok oyunculu oyunlar kuramaz veya katılamaz ya da marketi kullanamazsınız. Bir Realm için ödeme yapıyorsanız Realm'ı satın aldığınız mağazadan aboneliğinizi iptal etmeniz gerekir.	#
+playfab.account.banned.body=Minecraft'ta oynamanız yasaklandı. Yasağınız boyunca dünyalarınızda (belirli platformlarda) oynayamayacak, sunucularda oynayamayacak, Realms'a katılamayacak, çok oyunculu oyunların kurucusu veya katılımcısı olamayacak veya Market'i kullanamayacaksınız. Bir Realm için ödeme yapıyorsanız, aboneliğinizi satın aldığınız mağazadan iptal etmeniz gerekir.	#
 playfab.account.banned.body.button=Daha Fazla Bilgi	#
 
 store.sign_in_warning.no_xbl_and_local_content=Önemli! Satın aldığınız paketler ve/veya Minecoin'ler yalnızca bu cihazda kullanılabilir ve bir cihaz arızası, kaybı ya da Minecraft oyununun kaldırılması sonucunda kaybedilebilir! Bir Microsoft Hesabı (ücretsiz) ile oturum açın ve paket haklarınız ile Minecoin'lerinizi korumak ve oturum açtığınız herhangi bir cihazdan erişebilmek için o hesaba aktarın.	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=Şimdilik Atla	#
 death.attack.anvil=%1$s düşen bir örsün altında ezildi	#
 death.attack.arrow=%1$s, %2$s tarafından vuruldu	#
 death.attack.arrow.item=%1$s, %2$s tarafından %3$s ile vuruldu	#
+death.attack.bullet=%1$s adlı oyuncuya %2$s tarafından ateş edildi	#
 death.attack.cactus=%1$s sivri bir şey saplanarak öldü	#
 death.attack.cactus.player=%1$s, %2$s'den kaçmaya çalışırken bir kaktüse girdi	#
 death.attack.drown=%1$s boğuldu	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=%1$s, %2$s ile savaşırken yanarak kül oldu	#
 death.attack.outOfWorld=%1$s dünyanın dışına düştü	#
 death.attack.player=%1$s, %2$s tarafından katledildi	#
 death.attack.player.item=%1$s, %2$s tarafından %3$s ile katledildi	#
+death.attack.spit=%1$s adlı oyuncuya %2$s tarafından tükürük topu atıldı	#
 death.attack.starve=%1$s açlıktan öldü	#
 death.attack.thorns=%1$s, %2$s'a zarar vermeye çalışırken öldürüldü	#
 death.attack.thrown=%1$s, %2$s tarafından dövüldü	#
 death.attack.thrown.item=%1$s, %2$s tarafından %3$s ile dövüldü	#
+death.attack.trident=%1$s, %2$s tarafından kazığa oturtuldu	#
 death.attack.wither=%1$s yok olup gitti	#
 death.fell.accident.generic=%1$s yüksek bir yerden düştü	#
 death.fell.accident.ladder=%1$s merdivenden düştü	#
@@ -2318,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Cihazınızın şu paketler için ye
 disconnectionScreen.incompatiblePack.graphics.raytracing=Dünyaya katılamıyorsun çünkü cihazın ışın izlemeyi desteklemek için uyumlu donanıma sahip değil	#
 disconnectionScreen.worldCorruption.message=Dünyayı yeniden açmayı veya önceki bir yedekten geri yüklemeyi deneyin	#
 disconnectionScreen.worldCorruption=Dünya bozulduğu için bağlantı kesildi	#
+disconnectionScreen.hostSuspended=Sunucuya ulaşılamadığı için bağlantı kesildi	#
 
 storageSpaceWarningScreen.frontend=Veri depolama alanınız dolmak üzere! Ek depolama alanı açana kadar Minecraft bu özelliğe erişiminizi kısıtladı.	#
 storageSpaceWarningScreen.lowduringgameplay=Cihazınızda Minecraft'ın dünyaları ve ayarları bu cihaza kaydetmek için kullanabileceği alan neredeyse bitti. Yeni öğeleri kaydetmeye devam edebilmek için ihtiyaç duymadığınız öğeleri silmek istemez misiniz?	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=Seviye içe aktarılamadı: Desteklenmey
 invite.clear=Seçimi Sil	#
 invite.send=%d Davet Gönderin	#
 invite.sendOne=1 Davet Gönderin	#
+invite.sendUnnumbered=Davet Gönder	#
 invite.title=Oyununuza Arkadaşlarınızı davet edin	#
 invite.error.message=Davetiyelerinizden bazıları gönderilememiş olabilir.	#
 invite.noFriends=Arkadaş listenize henüz kimseyi eklenemediniz!	#
+invite.noRealmFriends=Realm'ına hiç kimseyi eklemedin!	#
 invite.OnlineFriends=Çevrimiçi Arkadaşlar	#
 invite.OfflineFriends=Çevrimdışı Arkadaşlar	#
 invite.SuggestedFriends=Önerilen Arkadaşlar	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Cep	#
 options.usetouchpad=Kumanda Kontrolleri	#
 options.viewSubscriptions=Abonelikler	#
 options.viewSubscriptions.button.info=Bilgi	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/AY	#
 options.viewSubscriptions.button.manage=Yönet	#
 options.viewSubscriptions.renew=30 günde bir yenilenir	#
 options.viewSubscriptions.daysRemaining=%d gün kaldı	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=Gizlilik ayarlarını yönetmek için lütfen herhangi bir
 options.unlink_msa.button=Microsoft Hesabının Bağlantısını Kaldır	#
 options.unlink_msa.confirm.title=Microsoft Hesabının bağlantısı kaldırılsın mı?	#
 options.unlink_msa.confirm.warning=UYARI: Bağlantıyı kaldırdıktan sonra ilerleme durumunuzu veya "PlayStation 4" Sisteminde satın aldığınız içerikleri %s hesabınıza kaydedemeyeceksiniz.	#
+options.unlink_msa.confirm.warning.2=Bu oyun içinden Microsoft Hesabınızın bağlantısını kesmek, bu platformda bu Microsoft Hesabını kullanan tüm Minecraft oyunlarını etkileyecektir.	#
 options.unlink_msa.confirm.checkbox1=Bundan sonra diğer platformlarda oynadığımda oyun içi Mağaza içeriklerine erişemeyeceğim.	#
 options.unlink_msa.confirm.checkbox2=Bundan sonra diğer platformlardaki arkadaşlarımla platformlar arası oyunlar oynayamayacağım.	#
 options.unlink_msa.confirm.checkbox3=Bundan sonra, şu anda etkin olan Realms abonelikleri de dahil olmak üzere Realms'a erişemeyeceğim.	#
@@ -6679,7 +6704,7 @@ skins.store.equipped=%s dış görünüşünü kullanıyorsunuz.	#
 soundCategory.ambient=Ortam/Çevre	#
 soundCategory.block=Bloklar	#
 soundCategory.hostile=Düşman Yaratıklar	#
-soundCategory.master=En Yüksek Ses	#
+soundCategory.master=Ana	#
 soundCategory.music=Müzik	#
 soundCategory.neutral=Dost Yaratıklar	#
 soundCategory.player=Oyuncular	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=İçerik	#
 store.realmsPlus.faq=SSS	#
 store.realmsPlus.buyFor=%s KARŞILIĞINDA AL	#
 store.realmsPlus.buyNow=ŞİMDİ AL	#
+store.realmsPlus.buyNowPerMonth=%s/AY için satın al	#
+store.realmsPlus.buyNowTrialPerMonth=ÜCRETSİZ DENEME BAŞLAT (SONRASINDA %s/AY)	#
 store.realmsPlus.errorNoOffer=HATA: TEKLİF BULUNAMADI	#
 store.realmsPlus.manageSubscription=ABONELİĞİ YÖNET	#
 store.realmsPlus.viewAllPacksTitle=ÇOK DEĞERLİ - EN AZ 150§g$ (USD) DEĞERİNDE PAKETLER!§r	#
@@ -6788,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realm'ınız ve 100'den fazla market paketi
 store.realmsPlus.noTrial.description.iap=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s karşılığında kullanabilirsiniz.	#
 store.realmsPlus.realmName.placeholder=%s Realm'ı		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk ayınız ücretsizdir; sonrasında aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
-store.realmsPlus.recurring.withoutTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aylık %s ücret fatura edilecektir ve dilediğiniz zaman iptal edilebilir.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus, abonelik iptal edilene kadar her ay otomatik olarak tahsil edilen düzenli abonelik ücretine sahip sürekli bir aboneliktir.%sRealm'ın ve 100'den fazla market paketin hemen kullanıma açılır. Aynı anda 10 oyuncuya kadar oynayabilir ve Realm'ındaki dünyalara ücretsiz olarak erişebilir! İlk 30 gün ücretsizdir, sonrasında %s/ay ücret fatura edilir ve dilediğin zaman iptal edebilirsin.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus, abonelik iptal edilene kadar her ay otomatik olarak tahsil edilen düzenli abonelik ücretine sahip sürekli bir aboneliktir.%sRealm'ın ve 100'den fazla market paketin hemen kullanıma açılır. Aynı anda 10 oyuncuya kadar oynayabilir ve Realm'ındaki dünyalara ücretsiz olarak erişebilir! %s/ay ücret fatura edilir ve dilediğin zaman iptal edebilirsin.	#
 store.realmsPlus.consumable.offerTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! İlk 30 gününüz ücretsizdir; sonrasında %s karşılığında 30 gün için daha yenileyebilirsiniz.	#
 store.realmsPlus.consumable.withoutTrial=Realm'ınız ve 100'den fazla market paketi hemen kullanılabilir olacak. Aynı anda en fazla 10 oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir! Aboneliğinizi ilk 30 gün için %s karşılığında kullanabilirsiniz.	#
 
@@ -6802,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Arkadaşlarınız Realm'ınızda ücretsi
 store.realmsPlus.landing.info2.line1=- Güvenli bulut depolama alanı	#
 store.realmsPlus.landing.info2.line2=- Realms ve Minecraft Market ile herhangi bir cihazda oynayın	#
 store.realmsPlus.landing.info2.line3=- Minecraft Topluluğuna Destek Verin	#
-store.realmsPlus.landing.info2.line4=- Ücretsiz 1 aylık deneme	#
+store.realmsPlus.landing.info2.line4=- Ücretsiz 30 günlük deneme, sonra ayda %s	#
+store.realmsPlus.landing.info2.line5=- ayda %s	#
 
 store.realmsPlus.faq.header=SIK SORULAN SORULAR	#
 store.realmsPlus.faq.question1=Realms Plus nedir?	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=TÜM PAKETLERİ GÖR	#
 store.realmsPlus.content.contentDescription=Harika Minecraft içeriklerinin kaynağına dalın! Realms Plus ile her ay yenisi eklenen karışımlar, dünyalar, dış görünüş paketleri ve muhteşem maceralar gibi 100'den fazla market öğesine anında erişim elde edersiniz. İçeriğiniz kişisel sunucunuzda depolanır ve hem Realms hem de Minecraft Market'i kullandığınız her platformda kullanılabilir. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki dünyalara ücretsiz olarak erişebilir!	#
 
 
-store.realmsPlus.freeTrial=1 AYLIK ÜCRETSİZ DENEMEYİ BAŞLAT	#
+store.realmsPlus.freeTrial=ÜCRETSİZ DENEME BAŞLAT (SONRASINDA %s/AY)	#
 
 store.inventory.button=Envanter	#
 store.inventory.title=Envanter	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=Oyun Kilidi Açma Hatası	#
 store.popup.trialUpgradeFail.msg=Görünüşe göre Minecraft Deneme sürümünü ilk kez indiren Microsoft Hesabından farklı bir hesapla oturum açtınız. İlk hesapla oturum açtıktan sonra tekrar deneyin.	#
 store.popup.downloaded.unOwnedTemplate.title=Dünya Şablonu Satın Alınsın mı?	#
 store.popup.downloaded.unOwnedTemplate.msg=Bu şablona sahip değilsiniz ve kilidini açmak için satın almanız gerekiyor. Şablonu satın almak ister misiniz?	#
+store.popup.rtx.title=Işın İzleme Paketleri İndirilsin mi?	#
+store.popup.rtx.msg=Bu dünyaya uygulanmış ışın izleme özellikli Kaynak Paketleri var. Cihazınız gelişmiş aydınlatma ve doku özellikleriyle uyumlu değil, bu nedenle dünyayı gelişmiş efektler olmadan göreceksiniz. İndirip katılmak istiyor musunuz?	#
 store.purchase.success=Az önce şunu satın aldınız: %s	#
 store.purchase.bundle=%d/%d Paketin kilidi açılsın mı?	#
 store.purchase.bundle.confirm=Şimdi kilidi aç!	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=Ocak	#
 tile.glass.name=Cam	#
 tile.golden_rail.name=Elektrikli Ray	#
 tile.grass.name=Çim Blok	#
-tile.grass_path.name=Çim Patika	#
+tile.grass_path.name=Toprak Yol	#
 tile.gravel.name=Çakıl	#
 tile.hay_block.name=Saman Balyası	#
 tile.netherrack.name=Nether Taşı	#
@@ -8601,8 +8631,8 @@ tips.game.56=Düz yukarı doğru kazarken, üzerinize düşebilecek kum veya ça
 tips.game.57=Piglinler ile takas yapabilirsin.	#
 tips.game.58=Petek almak için bir Arı Kovanı veya yuvayı kes, bal almak için bir Şişe kullan.	#
 tips.game.59=Balı sakin bir şekilde toplamak için Arı Kovanının altında Kamp Ateşi yak. Arıların sana teşekkür edecek.	#
-tips.game.60=Nether'de yeniden oluşmak için şarj edilmiş bir Yeniden Oluşum Çapası gerekir.	#
-tips.game.61=Yeniden Oluşum Çapasını bir Işık Taşı ile şarj edebilirsin.	#
+tips.game.60=Nether'de yeniden doğmak için şarj edilmiş bir Yeniden Doğma Çapası gerekir.	#
+tips.game.61=Yeniden Doğma Çapasını bir Işık Taşı ile şarj edebilirsin.	#
 tips.game.62=Hoglinleri Kızıl Mantar ile besleyebilirsin ama tehlikelidir!	#
 
 splitscreen.joinPrompt=Oyuncu %s Olarak Katıl	#
@@ -8618,7 +8648,7 @@ lateJoinScreen.waitingForUserReady=Hazırlıklar yapılıyor	#
 
 hbui.AchievementDetails.anotherPlatform=Başka bir platformda tamamlandı	#
 hbui.AchievementDetails.completed=Tamamlandı	#
-hbui.AchievementDetails.gamerscore=Oyuncu puanı	#
+hbui.AchievementDetails.gamerscore=Oyuncu Puanı	#
 hbui.AchievementDetails.locked=Kilitli	#
 hbui.AchievementDetails.yes=Evet	#
 hbui.AchievementDetailsRoute.errorMessage=Başarı yüklenemedi. Lütfen tekrar dene veya internet bağlantını kontrol et.	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=Steve	#
 dr.default.steve.top=Steve'in Gömleği	#
 dr.emotes.slot=İfade %d	#
 
+gfxDriverOutdated.title=Sürücüler eskimiş!	#
+gfxDriverOutdated.message=Bilgisayarınızın ekran sürücüleri için yeni bir güncelleştirme var. Güncelleştirme olmadan dünyalarda bazı sorunlar veya hatalar olabilir. Minecraft'ın keyfini tam olarak çıkarmak için lütfen yükleyin. http://aka.ms/ray-tracing-FAQ adresinden daha fazla bilgi edinin	#
+gfxDriverOutdated.doNotShowAgain=Bu iletiyi bir daha gösterme	#
+gfxDriverOutdated.close=Kapat	#
+
 onlinePlay.notRated=Çevrimiçi oyun derecelendirilmedi	#
 onlinePlay.message=Çevrimiçi oyun sırasında her yaşa uygun olmayabilecek sohbet mesajlarıyla veya kullanıcı tarafından oluşturulan diğer derecelendirilmemiş içerik türleriyle karşılaşabilirsiniz.	#
 onlinePlay.doNotShowAgain=Bu ekranı bir daha gösterme	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=Sıcak Bisküvi	#
 
 emotes.change_emotes=Duyguları Değiştir	#
 emotes.execute=Yürüt	#
+emotes.header_text=İfadeler	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

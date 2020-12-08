@@ -8,12 +8,17 @@ accessibility.enableTTS=Převod textu na řeč povolen	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Stisknutím %s se vrátíte zpět.	#
+accessibility.chat.tts.gamepad.exitChat=Stisknutím %s ukončíte chat.	#
+accessibility.chat.tts.gamepad.sendMessage=Stisknutím %s odešlete zprávu.	#
 accessibility.chat.tts.says=%s říká %s	#
 accessibility.chat.tts.hideChat=Skrýt chat	#
 accessibility.chat.tts.keyboard=Klávesnice	#
 accessibility.chat.tts.muteChatToggle=Ztlumit vše	#
 accessibility.chat.tts.sendChatMessage=Odeslat	#
 accessibility.chat.tts.textboxTitle=Chat	#
+
+accessibility.game.playerView=Pohled hráče	#
 
 accessibility.loading.done=Hotovo	#
 accessibility.saving.done=Hotovo	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=Pro pravý tabulátor stiskněte %s	#
 accessibility.play.legacyWorldsDelete=Odstranit starší svět	#
 
 accessibility.pause.permissions=Oprávnění	#
+accessibility.pause.profile=Vybrat profil	#
 
 accessibility.start.buttonHelper=%s : %s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=Obrazovka s herními úspěchy	#
 accessibility.screenName.chat=Obrazovka s chatem	#
 accessibility.screenName.createNew=Vytvořit novou obrazovku	#
 accessibility.screenName.createWorld=Obrazovka s nastaveními vytvoření světa	#
+accessibility.screenName.editCharacter=Obrazovka Upravit postavu	#
 accessibility.screenName.editWorldSettings=Obrazovka s nastaveními úpravy světa	#
 accessibility.screenName.error=Chybová obrazovka	#
 accessibility.screenName.howToPlay=Obrazovka s pravidly hry	#
+accessibility.screenName.inviteToGame=Obrazovka Pozvat do hry	#
 accessibility.screenName.modalDialog=Místní dialogové okno	#
 accessibility.screenName.patchNotes=Obrazovka s poznámkami k opravě	#
-accessibility.screenName.pauase=Obrazovka při pozastavení	#
+accessibility.screenName.pause=Obrazovka Pozastavení	#
 accessibility.screenName.play=Herní obrazovka	#
+accessibility.screenName.profile=Obrazovka Profil	#
 accessibility.screenName.realmSettings=Obrazovka s nastaveními říše	#
 accessibility.screenName.settings=Obrazovka s herními nastaveními	#
 accessibility.screenName.skinPicker=Obrazovka s výběrem skinu	#
 accessibility.screenName.start=Hlavní nabídka	#
 accessibility.screenName.vrAlignment=Obrazovka se zarovnáním VR	#
+accessibility.screenName.emoteWheel=Obrazovka s emotikonami	#
 
 accessibility.settings.reset=resetovat	#
 accessibility.settings.chooseSeed=Zvolit počáteční hodnotu	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=Levé tlačítko	#
 accessibility.keyboard.leftBracket=Klávesa levá hranatá závorka			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Klávesa pravá hranatá závorka		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s tlačítko %d	#
+accessibility.emotes.buttonName=Emotikona	#
+accessibility.emotes.assigned=Přiřazená emotikona %s	#
+accessibility.emotes.unassigned=Nepřiřazena	#
+accessibility.emotes.playSuccess=Přehrát emotikonu	#
+accessibility.emotes.playFailed=K tomuto tlačítku není přiřazena žádná emotikona. Po stisknutí šipky dolů se zobrazí tlačítko Změnit emotikony.	#
+accessibility.emotes.instruction.keyboard=Stisknutím tlačítka vpravo nebo vlevo můžete procházet tlačítka emotikon. Po stisknutí šipky dolů se zobrazí tlačítko Změnit emotikony.	#
 
 ## End of audible phrases section
 
@@ -220,7 +237,7 @@ achievement.cookFish.desc=Chyťte rybu a uvařte si ji!	#
 achievement.diamonds=DIAMANTY!	#
 achievement.diamonds.desc=Získejte diamanty pomocí železných nástrojů.	#
 achievement.diamondsToYou=Diamanty na tebe!	#
-achievement.diamondsToYou.desc=Hoďte diamanty na jiného hráče.	#
+achievement.diamondsToYou.desc=Hoďte diamanty na jiného hráče. 	#
 achievement.enchantments=Zaklínač	#
 achievement.enchantments.desc=Vyrobte zaklínací stůl pomocí knihy, obsidiánu a diamantů.	#
 achievement.exploreAllBiomes=Cestovatel	#
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=Potvrdit nákup	#
 authentication.store.intro=Vaše zkušební verze hry Minecraft: Education Edition skončila. Chcete-li dále hrát hru Minecraft: Education Edition, musíte zakoupit licenci.	#
 authentication.store.popup.purchaseFailed.title=Něco se nepovedlo	#
 authentication.store.popup.purchaseFailed.msg=Je nám líto, váš nákup jsme nemohli dokončit. Můžete si zkontrolovat připojení k internetu?	#
-authentication.store.purchase.info1=Platba bude stržena z vašeho účtu iTunes při potvrzení nákupu a předplatné se bude automaticky obnovovat, pokud nevypnete funkci automatického obnovování alespoň 24 hodin před koncem aktuálního období. Za obnovení bude platba stržena z vašeho účtu během 24 hodin před koncem aktuálního období. Cena odpovídá variantě předplatného, kterou jste vybrali dříve.	#
-authentication.store.purchase.info2=Předplatné můžete spravovat a automatické obnovování vypnout po nákupu v Nastaveních účtu iTunes. Pokud předplatné zrušíte po jeho aktivaci, nebudou vám vráceny peníze za zbývající aktivní období předplatného. Váš účet iTunes bude v rámci tohoto předplatného propojen s vaším účtem O365 Education, takže nebudete mít nárok na zakoupení dalších licencí na hru Minecraft: Education Edition pomocí tohoto účtu iTunes.	#
 authentication.store.purchase.button=Zakoupit licenci (%s/rok)	#
 authentication.store.terms=Podmínky použití	#
 authentication.store.viewTermsAndConditions=Podmínky a ujednání	#
@@ -1219,6 +1234,7 @@ commands.time.stop=Čas %1$s	#
 commands.title.description=Ovládá titulky na obrazovce.	#
 commands.title.success=Příkaz názvu byl úspěšně proveden	#
 commands.titleraw.description=Řídí názvy obrazovek pomocí zpráv JSON.	#
+commands.titleraw.success=Příkaz titleraw byl úspěšně proveden.	#
 commands.toggledownfall.description=Přepíná počasí.	#
 commands.tp.description=Teleportuje entity (hráče, stvoření atd.).	#
 commands.tp.notSameDimension=Teleportace není možná, protože hráči nejsou ve stejné dimenzi	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Předchozí	#
 realmsSettingsScreen.dev_next_page_label=Další	#
 realmsSettingsScreen.uploadConfirmationMessage=Tím odeberete aktuální svět z vaší říše a nahradíte ho novým. Členové vaší říše již nebudou mít k aktuálnímu světu přístup. Chcete pokračovat?	#
 realmsSettingsScreen.uploadConfirmationTitle=Nahradit svět?	#
-realmsSettingsScreen.whitelist_invite=Pozvat	#
+realmsSettingsScreen.allowlist_invite=Pozvat	#
 realmsSettingsScreen.searchBox=Hledat...	#
 realmsSettingsScreen.unknownPackName=Neznámý název	#
 realmsSettingsScreen.viewSubscriptionsButton=Zobrazit předplatná	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=Číslo chyby	#
 xbl.transferEntitlements.error.error2=Identifikační číslo	#
 
 playfab.account.banned.title=Zakázáno	#
-playfab.account.banned.body=Bylo vám zakázáno hrát Minecraft online. Nebudete moct hrát na serverech, připojovat se ke službě Realms, hostit ani se připojovat k hrám pro více hráčů či používat obchod Marketplace. Pokud si platíte říši, musíte předplatné zrušit v obchodě, ve kterém jste ho zakoupili.	#
+playfab.account.banned.body=Bylo vám zakázáno hrát Minecraft. Po dobu trvání zákazu nebudete moct hrát ve svých světech (určité platformy), na serverech, připojovat se ke službě Realms, zakládat ani připojovat se k hrám pro více hráčů či používat obchod Marketplace. Pokud si platíte říši, musíte předplatné zrušit v obchodě, ve kterém jste ho zakoupili.	#
 playfab.account.banned.body.button=Další informace	#
 
 store.sign_in_warning.no_xbl_and_local_content=Důležité! Zakoupili jste balíčky a mince, které jsou dostupné pouze na tomto zařízení a o které můžete přijít v případě poruchy nebo ztráty zařízení nebo při odinstalování Minecraftu. Přihlaste se pomocí (bezplatného) účtu Microsoft a přeneste svá oprávnění k balíčkům i s mincemi na tento účet, kde budou v bezpečí a vy k nim budete mít přístup z libovolného zařízení, na kterém se přihlásíte.	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=Nyní přeskočit	#
 death.attack.anvil=Hráč %1$s byl rozmačkán padající kovadlinou	#
 death.attack.arrow=Hráč %1$s byl zastřelen %2$s	#
 death.attack.arrow.item=Hráč %1$s byl zastřelen %2$s pomocí %3$s	#
+death.attack.bullet=Hráče %1$s odstřelil hráč %2$s	#
 death.attack.cactus=Hráč %1$s byl ubodán	#
 death.attack.cactus.player=Hráč %1$s stoupl na kaktus, když se snažil utéci před %2$s	#
 death.attack.drown=Hráč %1$s se utopil	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=Hráč %1$s shořel na prach při boji s %2$s	#
 death.attack.outOfWorld=Hráč %1$s vypadl ze světa	#
 death.attack.player=Hráč %1$s byl zabit %2$s	#
 death.attack.player.item=Hráč %1$s byl zabit %2$s pomocí %3$s	#
+death.attack.spit=Hráče %1$s zastřelil flusačkou hráč %2$s	#
 death.attack.starve=Hráč %1$s umřel hladem	#
 death.attack.thorns=Hráč %1$s byl zabit, když se snažil zranit %2$s	#
 death.attack.thrown=Hráč %1$s byl umlácen %2$s	#
 death.attack.thrown.item=Hráč %1$s byl umlácen %2$s pomocí %3$s	#
+death.attack.trident=Hráče %1$s ubodal k smrti hráč %2$s	#
 death.attack.wither=Hráče %1$s zabila pakostnice	#
 death.fell.accident.generic=Hráč %1$s spadl z velké výšky	#
 death.fell.accident.ladder=Hráč %1$s spadl ze žebříku	#
@@ -2318,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Nemůžete se připojit ke světu, p
 disconnectionScreen.incompatiblePack.graphics.raytracing=Nemůžete se připojit ke světu, protože vaše zařízení nemá kompatibilní hardware podporující technologii sledování paprsku.	#
 disconnectionScreen.worldCorruption.message=Zkuste svět znovu otevřít nebo ho obnovit z předchozí zálohy.	#
 disconnectionScreen.worldCorruption=Odpojeno z důvodu poškození světa	#
+disconnectionScreen.hostSuspended=Odpojeno z důvodu nedostupnosti serveru	#
 
 storageSpaceWarningScreen.frontend=Datové úložiště je téměř plné! Minecraft omezil přístup k této funkci, dokud neuvolníte místo na úložišti.	#
 storageSpaceWarningScreen.lowduringgameplay=Na vašem zařízení téměř došlo místo, které Minecraft potřebuje k ukládání světů a nastavení. Doporučujeme smazat některé nepoužívané soubory, aby vzniklo místo pro ty nové.	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=Import úrovně se nezdařil: nepodporov
 invite.clear=Vymazat výběr	#
 invite.send=Odeslat %d pozvánek	#
 invite.sendOne=Odeslat 1 pozvánku	#
+invite.sendUnnumbered=Odeslat pozvánky	#
 invite.title=Pozvat přátele do vaší hry	#
 invite.error.message=Odeslání některých vašich pozvánek se zřejmě nezdařilo.	#
 invite.noFriends=Na seznam svých přátel jste nikoho nepřidali!	#
+invite.noRealmFriends=Do své říše jste nikoho nepřidali!	#
 invite.OnlineFriends=Přátelé online	#
 invite.OfflineFriends=Přátelé offline	#
 invite.SuggestedFriends=Navrhovaní přátelé	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Rozdělené ovládání	#
 options.viewSubscriptions=Předplatná	#
 options.viewSubscriptions.button.info=Informace	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/MĚSÍC	#
 options.viewSubscriptions.button.manage=Správa	#
 options.viewSubscriptions.renew=Obnovuje se každých 30 dní	#
 options.viewSubscriptions.daysRemaining=Zbývá dní: %d	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=Nastavení soukromí můžete spravovat na adrese https://
 options.unlink_msa.button=Zrušit propojení účtu Microsoft	#
 options.unlink_msa.confirm.title=Zrušit propojení účtu Microsoft?	#
 options.unlink_msa.confirm.warning=VAROVÁNÍ: Po zrušení propojení už ve svém účtu %s nebudete moci ukládat svůj postup ani nákupy provedené v systému „PlayStation 4“.	#
+options.unlink_msa.confirm.warning.2=Zrušení propojení účtu Microsoft s touto hrou bude mít vliv na všechny hry Minecraft na této platformě, které tento účet Microsoft používaly.	#
 options.unlink_msa.confirm.checkbox1=Při hře na jiných platformách už nebudu mít přístup k obsahu herního obchodu.	#
 options.unlink_msa.confirm.checkbox2=Už nebudu moct hrát s přáteli na jiných platformách.	#
 options.unlink_msa.confirm.checkbox3=Už nebudu mít přístup ke službě Realms včetně momentálně aktivních předplatných služby Realms.	#
@@ -6679,11 +6704,11 @@ skins.store.equipped=Použili jste skin %s.	#
 soundCategory.ambient=Okolí/prostředí	#
 soundCategory.block=Bloky	#
 soundCategory.hostile=Nepřátelské bytosti	#
-soundCategory.master=Hlavní hlasitost	#
+soundCategory.master=Hlavní	#
 soundCategory.music=Hudba	#
 soundCategory.neutral=Přátelské bytosti	#
 soundCategory.player=Hráči	#
-soundCategory.record=Hrací skříň / bloky s notami	#
+soundCategory.record=Hrací skříň / notové bloky	#
 soundCategory.weather=Počasí	#
 
 stat.animalsBred=Narozená zvířata	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=Obsah	#
 store.realmsPlus.faq=Časté dotazy	#
 store.realmsPlus.buyFor=KOUPIT ZA %s	#
 store.realmsPlus.buyNow=KOUPIT	#
+store.realmsPlus.buyNowPerMonth=Koupit za %s/MĚSÍC	#
+store.realmsPlus.buyNowTrialPerMonth=ZAČNĚTE BEZPLATNÉ ZKUŠEBNÍ OBDOBÍ (POTÉ %s/MĚSÍC)	#
 store.realmsPlus.errorNoOffer=CHYBA, NEBYLA NALEZENA ŽÁDNÁ NABÍDKA	#
 store.realmsPlus.manageSubscription=SPRAVOVAT PŘEDPLATNÉ	#
 store.realmsPlus.viewAllPacksTitle=VÝHODNÁ NABÍDKA – BALÍČKY V HODNOTĚ PŘES §g$150 (USD)!§r	#
@@ -6788,21 +6815,22 @@ store.realmsPlus.noTrial.description=Vaše Realm a více než 100 balíčků z o
 store.realmsPlus.noTrial.description.iap=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
 store.realmsPlus.realmName.placeholder=Říše uživatele %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! První měsíc budete mít zdarma a pak vám budeme účtovat %s/měsíc, přičemž předplatné můžete kdykoli zrušit.	#
-store.realmsPlus.recurring.withoutTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Budeme vám účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus je průběžné předplatné s opakovaným poplatkem, který se účtuje automaticky každý měsíc, dokud nebude předplatné zrušeno.%sOkamžitě získáte přístup k vaší říši a více než 100 balíčkům v obchodě Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! Prvních 30 dní je zdarma, pak vám budeme účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus je průběžné předplatné s opakovaným poplatkem, který se účtuje automaticky každý měsíc, dokud nebude předplatné zrušeno.%sOkamžitě získáte přístup k vaší říši a více než 100 balíčkům v obchodě Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma! Budeme vám účtovat %s/měsíc a předplatné můžete kdykoli zrušit.	#
 store.realmsPlus.consumable.offerTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Prvních 30 dní budete mít zdarma a pak budete moct předplatné obnovit na dalších 30 dní za cenu %s.	#
 store.realmsPlus.consumable.withoutTrial=Vaše Realm a více než 100 balíčků z obchodu Marketplace bude ihned k dispozici. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší Realm zdarma! Předplatné vám bude k dispozici po dobu 30 dní za cenu %s.	#
 
 store.realmsPlus.landing.header=Předplatné zahrnuje:	#
 
-store.realmsPlus.landing.info1.line1=- Přístup ke katalogu s více než 100 balíčky z obchodu Marketplace	#
+store.realmsPlus.landing.info1.line1=– Přístup ke katalogu s více než 100 balíčky z obchodu Marketplace	#
 store.realmsPlus.landing.info1.line2=– Váš vlastní server služby Realms	#
 store.realmsPlus.landing.info1.line3=– Přátelé hrají ve vaší říši zdarma	#
 
 store.realmsPlus.landing.info2.line1=– Zabezpečené cloudové úložiště	#
-store.realmsPlus.landing.info2.line2=- Hrajte na jakémkoli zařízení se službou Realms a obchodem Minecraft Marketplace	#
+store.realmsPlus.landing.info2.line2=– Hrajte na jakémkoli zařízení se službou Realms a obchodem Minecraft Marketplace	#
 store.realmsPlus.landing.info2.line3=- Podpora komunity Minecraft	#
-store.realmsPlus.landing.info2.line4=– Bezplatná zkušební verze na 1 měsíc	#
+store.realmsPlus.landing.info2.line4=- Bezplatné 30denní zkušební období, poté %s měsíčně	#
+store.realmsPlus.landing.info2.line5=- %s měsíčně	#
 
 store.realmsPlus.faq.header=ČASTÉ DOTAZY	#
 store.realmsPlus.faq.question1=Co je služba Realms Plus?	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=ZOBRAZIT VŠECHNY BALÍČKY	#
 store.realmsPlus.content.contentDescription=Využívejte zdroj úžasného obsahu pro Minecraft! S předplatným Realms Plus získáte okamžitý přístup k více než 100 položkám v obchodě Marketplace, mezi které patří mash-upy, světy, sady skinů a epická dobrodružství – každý měsíc přibývají další. Váš obsah se ukládá na váš osobní server a je přístupný na všech platformách, kde je možné využívat službu Realms i obchod Minecraft Marketplace. Najednou může hrát až 10 hráčů, kteří získají přístup ke světům ve vaší říši zdarma!	#
 
 
-store.realmsPlus.freeTrial=ZAHÁJIT MĚSÍČNÍ BEZPLATNÉ ZKUŠEBNÍ OBDOBÍ	#
+store.realmsPlus.freeTrial=ZAČNĚTE BEZPLATNÉ ZKUŠEBNÍ OBDOBÍ (POTÉ %s/MĚSÍC)	#
 
 store.inventory.button=Inventář	#
 store.inventory.title=Inventář	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=Chyba při odemykání hry	#
 store.popup.trialUpgradeFail.msg=Zdá se, že jste přihlášeni k jinému účtu Microsoft, než který jste použili k prvnímu stažení zkušební verze Minecraftu. Přihlaste se k tomuto účtu a zkuste to znovu.	#
 store.popup.downloaded.unOwnedTemplate.title=Zakoupit šablonu světa?	#
 store.popup.downloaded.unOwnedTemplate.msg=Tuto šablonu nevlastníte, a pokud ji chcete odemknout, je třeba ji zakoupit. Chcete šablonu zakoupit?	#
+store.popup.rtx.title=Stáhnout balíčky podporující technologii sledování paprsku?	#
+store.popup.rtx.msg=V tomto světě jsou používány balíčky zdrojů, u nichž je povolena technologie sledování paprsku. Vaše zařízení není kompatibilní s pokročilými funkcemi osvětlení a textur, takže se vám svět zobrazí bez těchto pokročilých efektů. Chcete si je stáhnout a připojit se?	#
 store.purchase.success=Právě zakoupeno: %s	#
 store.purchase.bundle=Odemknout %d z %d balíčků?	#
 store.purchase.bundle.confirm=Odemknout!	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=Pec	#
 tile.glass.name=Sklo	#
 tile.golden_rail.name=Napájená kolejnice	#
 tile.grass.name=Blok trávy	#
-tile.grass_path.name=Travnatá cesta	#
+tile.grass_path.name=Hliněná cesta	#
 tile.gravel.name=Štěrk	#
 tile.hay_block.name=Balík sena	#
 tile.netherrack.name=Netherrack	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=Steve	#
 dr.default.steve.top=Stevova košile	#
 dr.emotes.slot=Emoce %d	#
 
+gfxDriverOutdated.title=Zastaralé ovladače!	#
+gfxDriverOutdated.message=Pro grafické ovladače počítače je k dispozici nová aktualizace. Bez ní mohou světy fungovat problematicky nebo obsahovat chyby. Nainstalujte ji, abyste si mohli Minecraft užívat naplno. Více se dozvíte na stránce http://aka.ms/ray-tracing-FAQ.	#
+gfxDriverOutdated.doNotShowAgain=Tuto zprávu znovu nezobrazovat	#
+gfxDriverOutdated.close=Zavřít	#
+
 onlinePlay.notRated=Online hraní se nehodnotí	#
 onlinePlay.message=Během online hraní se můžete setkat s chatovými zprávami nebo jiným druhem uživatelského obsahu, který nebyl hodnocen a nemusí tedy být vhodný pro všechny věkové kategorie.	#
 onlinePlay.doNotShowAgain=Tuto obrazovku znovu nezobrazovat	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=Teplá sušenková	#
 
 emotes.change_emotes=Změnit emoce	#
 emotes.execute=Provést	#
+emotes.header_text=Emotikony	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

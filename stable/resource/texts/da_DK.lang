@@ -8,12 +8,17 @@ accessibility.enableTTS=Tekst til tale er aktiveret	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Tryk på %s for at gå tilbage	#
+accessibility.chat.tts.gamepad.exitChat=Tryk på %s for at afslutte chat	#
+accessibility.chat.tts.gamepad.sendMessage=Tryk på %s for at sende din besked	#
 accessibility.chat.tts.says=%s siger %s	#
 accessibility.chat.tts.hideChat=Skjul chat	#
 accessibility.chat.tts.keyboard=Tastatur	#
 accessibility.chat.tts.muteChatToggle=Deaktiver alle	#
 accessibility.chat.tts.sendChatMessage=Send	#
 accessibility.chat.tts.textboxTitle=Chat	#
+
+accessibility.game.playerView=Spillervisning	#
 
 accessibility.loading.done=Afslut	#
 accessibility.saving.done=Afslut	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=Tryk på %s for at gå til højre	#
 accessibility.play.legacyWorldsDelete=Slet arvegodsverden	#
 
 accessibility.pause.permissions=Tilladelser	#
+accessibility.pause.profile=Vælg profil	#
 
 accessibility.start.buttonHelper=%s: %s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=Gennemførelsesskærm	#
 accessibility.screenName.chat=Chatskærm	#
 accessibility.screenName.createNew=Opret ny skærm	#
 accessibility.screenName.createWorld=Opret skærm med verdensindstillinger	#
+accessibility.screenName.editCharacter=Skærmen Rediger karakter	#
 accessibility.screenName.editWorldSettings=Rediger skærm med verdensindstillinger	#
 accessibility.screenName.error=Fejlskærm	#
 accessibility.screenName.howToPlay=Sådan spiller du skærm	#
+accessibility.screenName.inviteToGame=Skærmen Inviter til spil	#
 accessibility.screenName.modalDialog=Popop-dialogboks	#
 accessibility.screenName.patchNotes=Skærm med rettelsesnoter	#
-accessibility.screenName.pauase=Pauseskærm	#
+accessibility.screenName.pause=Pauseskærm	#
 accessibility.screenName.play=Spilskærm	#
+accessibility.screenName.profile=Profilskærm	#
 accessibility.screenName.realmSettings=Skærm med realm-indstillinger	#
 accessibility.screenName.settings=Skærm med spilindstillinger	#
 accessibility.screenName.skinPicker=Vælg skærm med skins	#
 accessibility.screenName.start=Hovedmenu	#
 accessibility.screenName.vrAlignment=Skærm til VR-justering	#
+accessibility.screenName.emoteWheel=Skærm med emotes	#
 
 accessibility.settings.reset=nulstil	#
 accessibility.settings.chooseSeed=Vælg frø	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=Venstre kantknap (LB)	#
 accessibility.keyboard.leftBracket=Kantet venstreparentes			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Kantet højreparentes		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s knap %d	#
+accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.assigned=Den tildelte %s emote	#
+accessibility.emotes.unassigned=Ikke tildelt	#
+accessibility.emotes.playSuccess=Afspil emote	#
+accessibility.emotes.playFailed=Knappen har ikke fået tildelt en emote. Tryk på pil ned for at få adgang til Skift emotes-knappen	#
+accessibility.emotes.instruction.keyboard=Tryk til højre eller venstre for at bladre gennem emote-knapperne. Tryk på pil ned for at få adgang til Skift emotes-knappen.	#
 
 ## End of audible phrases section
 
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=Bekræft køb	#
 authentication.store.intro=Din prøveperiode på Minecraft: Education Edition er udløbet. Hvis du vil fortsætte med at bruge Minecraft: Education Edition, er du nødt til at købe en licens.	#
 authentication.store.popup.purchaseFailed.title=Der gik noget galt	#
 authentication.store.popup.purchaseFailed.msg=Vi kunne ikke gennemføre dit køb. Måske skulle du tjekke din internetforbindelse?	#
-authentication.store.purchase.info1=Betalingen opkræves via din iTunes-konto, når du bekræfter købet. Abonnementet fornyes automatisk, medmindre automatisk fornyelse deaktiveres senest 24 timer inden afslutningen af den igangværende periode. Fornyelsesprisen svarer til den valgte abonnementstype og opkræves på din konto inden for de sidste 24 timer af den igangværende abonnementsperiode.	#
-authentication.store.purchase.info2=Du kan administrere dit abonnement og deaktivere automatisk fornyelse i indstillingerne for din iTunes-konto efter købet. Hvis du opsiger abonnementet efter aktiveringen, refunderes du ikke for den resterende aktive periode af abonnementet. Din iTunes-konto linkes til din O365 Education-konto for abonnementet, så du vil ikke kunne købe yderligere licenser til Minecraft: Education Edition med den aktuelle iTunes-konto.	#
 authentication.store.purchase.button=Køb licens (%s/år)	#
 authentication.store.terms=Vilkår for anvendelse	#
 authentication.store.viewTermsAndConditions=Vilkår og betingelser	#
@@ -1219,6 +1234,7 @@ commands.time.stop=Tid %1$s	#
 commands.title.description=Styrer skærmtitler.	#
 commands.title.success=Titelkommandoen er udført	#
 commands.titleraw.description=Styrer skærmtitler med JSON-meddelelser.	#
+commands.titleraw.success=Titleraw-kommandoen er udført	#
 commands.toggledownfall.description=Slår vejret til og fra.	#
 commands.tp.description=Teleporterer enheder (spillere, væsner etc.).	#
 commands.tp.notSameDimension=Teleportering er ikke muligt, fordi spillerne befinder sig i forskellige dimensioner	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Forrige	#
 realmsSettingsScreen.dev_next_page_label=Næste	#
 realmsSettingsScreen.uploadConfirmationMessage=Dette fjerner din aktuelle verden fra dit realm, så du kan erstatte den med en ny. Medlemmerne af dit realm vil ikke længere have adgang til din aktuelle verden. Vil du fortsætte?	#
 realmsSettingsScreen.uploadConfirmationTitle=Vil du erstatte verden?	#
-realmsSettingsScreen.whitelist_invite=Invitation	#
+realmsSettingsScreen.allowlist_invite=Inviter	#
 realmsSettingsScreen.searchBox=Søg ...	#
 realmsSettingsScreen.unknownPackName=Ukendt navn	#
 realmsSettingsScreen.viewSubscriptionsButton=Vis abonnementer	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=Fejlnummer	#
 xbl.transferEntitlements.error.error2=ID-nummer	#
 
 playfab.account.banned.title=Udelukket	#
-playfab.account.banned.body=Du er blevet udelukket fra Minecraft online. Du vil ikke kunne spille på servere, gå ind i realms, hoste eller deltage i multiplayerspil eller bruge markedspladsen. Hvis du betaler for et realm, er du nødt til at opsige dit abonnement via den butik, hvor det blev købt.	#
+playfab.account.banned.body=Du er blevet udelukket fra Minecraft. Du vil ikke kunne spille i dine verdener (visse platforme), spille på servere, gå ind i realms, hoste multiplayerspil, deltage i multiplayerspil eller bruge markedspladsen. Hvis du betaler for et realm, er du nødt til at opsige dit abonnement via den butik, hvor det er købt.	#
 playfab.account.banned.body.button=Mere info	#
 
 store.sign_in_warning.no_xbl_and_local_content=Vigtigt! Du har kun gemt dine indkøbte pakker og/eller Minecoins på den aktuelle enhed, og de kan derfor gå tabt, hvis enheden går i stykker, bliver væk eller får afinstalleret Minecraft! Log på med en (gratis) Microsoft-konto, og overfør alle pakker og Minecoins til den, så du har adgang til dem, uanset hvilken enhed du logger på med.	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=Spring over	#
 death.attack.anvil=%1$s blev mast af en faldende ambolt	#
 death.attack.arrow=%1$s blev skudt af %2$s	#
 death.attack.arrow.item=%1$s blev skudt af %2$s med %3$s	#
+death.attack.bullet=%1$s blev finskudt af %2$s	#
 death.attack.cactus=%1$s blev prikket ihjel	#
 death.attack.cactus.player=%1$s gik ind i en kaktus i forsøget på at undslippe %2$s	#
 death.attack.drown=%1$s druknede	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=%1$s blev brændt til aske i kampen mod %2$s	#
 death.attack.outOfWorld=%1$s faldt ud af verdenen	#
 death.attack.player=%1$s blev slået ihjel af %2$s	#
 death.attack.player.item=%1$s blev slået ihjel af %2$s med %3$s	#
+death.attack.spit=%1$s blev spyttet ihjel af %2$s	#
 death.attack.starve=%1$s sultede ihjel	#
 death.attack.thorns=%1$s blev dræbt i forsøget på at skade %2$s	#
 death.attack.thrown=%1$s blev tævet ihjel af %2$s	#
 death.attack.thrown.item=%1$s blev tævet ihjel af %2$s med %3$s	#
+death.attack.trident=%1$s blev spiddet af %2$s	#
 death.attack.wither=%1$s visnede bort	#
 death.fell.accident.generic=%1$s faldt fra et højt sted	#
 death.fell.accident.ladder=%1$s faldt ned fra en stige	#
@@ -2318,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Du kan ikke træde ind i verdenen, f
 disconnectionScreen.incompatiblePack.graphics.raytracing=Du kan ikke blive medlem af verdenen, fordi din enhed ikke har kompatibel hardware, der kan understøtte ray tracing	#
 disconnectionScreen.worldCorruption.message=Prøv at genåbne verdenen eller gendanne den fra en tidligere backup	#
 disconnectionScreen.worldCorruption=Verdenen er ødelagt	#
+disconnectionScreen.hostSuspended=Afbrudt, fordi der ikke er adgang til serveren	#
 
 storageSpaceWarningScreen.frontend=Du er næsten løbet tør for dataplads! Minecraft har begrænset adgang til funktionen, indtil du får frigjort mere lagerplads.	#
 storageSpaceWarningScreen.lowduringgameplay=Du er næsten løbet tør for den plads, Minecraft bruger til at gemme verdener og indstillinger på enheden.  Måske kan du slette noget, du ikke bruger, så du kan gemme det nye.	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=Niveauet kunne ikke importeres. Filforma
 invite.clear=Ryd valg	#
 invite.send=Send %d invitationer	#
 invite.sendOne=Send 1 invitation	#
+invite.sendUnnumbered=Send invitationer	#
 invite.title=Inviter dine venner til dit spil	#
 invite.error.message=Nogle af dine invitationer blev måske ikke sendt.	#
 invite.noFriends=Du har ikke skrevet nogen på din venneliste!	#
+invite.noRealmFriends=Du har ikke tilføjet nogen i dit realm!	#
 invite.OnlineFriends=Onlinevenner	#
 invite.OfflineFriends=Offlinevenner	#
 invite.SuggestedFriends=Foreslåede venner	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Opdel styring	#
 options.viewSubscriptions=Abonnementer	#
 options.viewSubscriptions.button.info=Info	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/MÅNED	#
 options.viewSubscriptions.button.manage=Administrer	#
 options.viewSubscriptions.renew=Fornyes hver 30. dag	#
 options.viewSubscriptions.daysRemaining=%d dage tilbage	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=Du kan administrere dine indstillinger for beskyttelse af 
 options.unlink_msa.button=Fjern tilknyttet Microsoft-konto	#
 options.unlink_msa.confirm.title=Vil du fjerne den tilknyttede Microsoft-konto?	#
 options.unlink_msa.confirm.warning=ADVARSEL: Hvis du fjerner tilknytningen, vil du ikke længere kunne gemme fremskridt og køb fra din "PlayStation 4" på kontoen %s.	#
+options.unlink_msa.confirm.warning.2=Hvis du fjerner din tilknyttede Microsoft-konto fra spillet, påvirker det alle Minecraft-spil på platformen, der har brugt Microsoft-kontoen.	#
 options.unlink_msa.confirm.checkbox1=Jeg vil ikke længere have adgang til indhold købt i butikken, når jeg spiller på andre platforme.	#
 options.unlink_msa.confirm.checkbox2=Jeg vil ikke længere kunne spille på tværs af platforme med mine venner.	#
 options.unlink_msa.confirm.checkbox3=Jeg vil ikke længere have adgang til Realms, herunder allerede aktive Realms-abonnementer.	#
@@ -5932,7 +5957,7 @@ pauseScreen.joinCode.Label=DELTAGERKODE	#
 pauseScreen.joinCode.Icon=%3 ikon for deltagerkode, %1 af %2	# Example: Apple join code icon, 2 of 5	#
 
 permissionsScreen.kick=Smid spiller ud	#
-permissionsScreen.ban=Udeluk spiller	#
+permissionsScreen.ban=Forbyd spiller	#
 
 feedbackScreen.button=Feedback	#
 feedbackScreen.title=Har du feedback?	#
@@ -6679,7 +6704,7 @@ skins.store.equipped=Du anvender nu skinnet %s.	#
 soundCategory.ambient=Omgivelser/miljø	#
 soundCategory.block=Blokke	#
 soundCategory.hostile=Fjendtligsindede væsner	#
-soundCategory.master=Overordnet lydstyrke	#
+soundCategory.master=Primær	#
 soundCategory.music=Musik	#
 soundCategory.neutral=Venlige væsner	#
 soundCategory.player=Spillere	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=Indhold	#
 store.realmsPlus.faq=FAQ	#
 store.realmsPlus.buyFor=KØB FOR %s	#
 store.realmsPlus.buyNow=KØB NU	#
+store.realmsPlus.buyNowPerMonth=Køb for %s/MÅNED	#
+store.realmsPlus.buyNowTrialPerMonth=START GRATIS PRØVEPERIODE (HEREFTER %s/MÅNED)	#
 store.realmsPlus.errorNoOffer=FEJL INTET TILBUD BLEV FUNDET	#
 store.realmsPlus.manageSubscription=ADMINISTRER ABONNEMENT	#
 store.realmsPlus.viewAllPacksTitle=GODT KØB – PAKKER FOR OVER §g$150 (USD)!§r	#
@@ -6788,8 +6815,8 @@ store.realmsPlus.noTrial.description=Du får adgang til dit realm og over 100 pa
 store.realmsPlus.noTrial.description.iap=Du får adgang til dit realm og over 100 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Du får abonnementet i 30 dage for %s.	#
 store.realmsPlus.realmName.placeholder=%ss Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Du får adgang til dit realm og over 100 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Din første måned er gratis, hvorefter prisen er %s/måned. Abonnementet kan opsiges, når du vil.	#
-store.realmsPlus.recurring.withoutTrial=Du får adgang til dit realm og over 100 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Prisen er %s/måned, og abonnementet kan opsiges, når du vil.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus er et løbende abonnement med et tilbagevendende abonnementsgebyr, som opkræves automatisk hver måned, indtil abonnementet opsiges.%sDu får adgang til dit realm og over 100 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Dine første 30 dage er gratis. Herefter koster det %s/måned, men du kan til enhver tid opsige dit abonnement.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus er et løbende abonnement med et tilbagevendende abonnementsgebyr, som opkræves automatisk hver måned, indtil abonnementet opsiges.%sDu får adgang til dit realm og over 100 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Det koster %s/måned, men du kan til enhver tid opsige dit abonnement.	#
 store.realmsPlus.consumable.offerTrial=Du får adgang til dit realm og over 100 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Dine første 30 dage er gratis, hvorefter du kan forlænge med yderligere 30 dage for %s.	#
 store.realmsPlus.consumable.withoutTrial=Du får adgang til dit realm og over 100 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Du får abonnementet i 30 dage for %s.	#
 
@@ -6802,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Venner spiller gratis i dit realm	#
 store.realmsPlus.landing.info2.line1=- Sikkert cloudlager	#
 store.realmsPlus.landing.info2.line2=- Spil på alle enheder med Realms og Minecraft-markedsplads	#
 store.realmsPlus.landing.info2.line3=- Støt Minecraft-communityet	#
-store.realmsPlus.landing.info2.line4=- 1 måneds gratis prøveperiode	#
+store.realmsPlus.landing.info2.line4=- Gratis 30-dages prøveperiode, herefter %s pr. måned	#
+store.realmsPlus.landing.info2.line5=- %s pr. måned	#
 
 store.realmsPlus.faq.header=OFTE STILLEDE SPØRGSMÅL	#
 store.realmsPlus.faq.question1=Hvad er Realms Plus?	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=VIS ALLE PAKKER	#
 store.realmsPlus.content.contentDescription=Stik sugerøret direkte i kilden til forrygende Minecraft-indhold! Med Realms Plus får du øjeblikkelig adgang til over 100 mashups, verdener, skinpakker og episke eventyr fra markedspladsen – og der kommer nye til hver eneste måned. Dit indhold gemmes på din personlige server og kan benyttes på alle platforme med Realms og Minecraft-markedsplads! Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis!	#
 
 
-store.realmsPlus.freeTrial=START 1 MÅNEDS GRATIS PRØVEPERIODE	#
+store.realmsPlus.freeTrial=START GRATIS PRØVEPERIODE (HEREFTER %s/MÅNED)	#
 
 store.inventory.button=Lager	#
 store.inventory.title=Lager	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=Fejl i oplåsning af spil	#
 store.popup.trialUpgradeFail.msg=Vi kan se, at du har logget på en anden Microsoft-konto end den, du brugte, da du hentede prøveversionen af Minecraft. Prøv igen, når du har logget på med dén konto.	#
 store.popup.downloaded.unOwnedTemplate.title=Vil du købe verdensskabelonen?	#
 store.popup.downloaded.unOwnedTemplate.msg=Du ejer ikke skabelonen. Du kan kun låse den op, hvis du køber den. Vil du købe skabelonen?	#
+store.popup.rtx.title=Download ray tracing-pakker?	#
+store.popup.rtx.msg=Denne verden anvender ressourcepakker med ray tracing. Din enhed er ikke kompatibel med avancerede lys- og teksturfunktioner, og du vil derfor se verdenen uden de avancerede effekter. Vil du downloade og spille?	#
 store.purchase.success=Du har lige købt: %s	#
 store.purchase.bundle=Vil du låse op for %d af %d pakker?	#
 store.purchase.bundle.confirm=Lås op nu!	#
@@ -7528,7 +7558,7 @@ tile.dirt.name=Jord	#
 tile.podzol.name=Podsol	#
 tile.purpur_block.default.name=Purpur-blok	#
 tile.purpur_block.lines.name=Purpur-søjle	#
-tile.purpur_block.chiseled.name=Mejslet purpur	#
+tile.purpur_block.chiseled.name=Udmejslet purpur	#
 tile.dispenser.name=Automat	#
 tile.iron_door.name=Jerndør	#
 tile.doorWood.name=Trædør	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=Ovn	#
 tile.glass.name=Glas	#
 tile.golden_rail.name=Strømskinne	#
 tile.grass.name=Græsblok	#
-tile.grass_path.name=Græssti	#
+tile.grass_path.name=Jordsti	#
 tile.gravel.name=Grus	#
 tile.hay_block.name=Halmballe	#
 tile.netherrack.name=Netherrack	#
@@ -7764,7 +7794,7 @@ tile.stone.graniteSmooth.name=Poleret granit	#
 tile.stone.stone.name=Sten	#
 tile.cobblestone.name=Brosten	#
 tile.stonebrick.chiseled.name=Mejslede mursten	#
-tile.stonebrick.cracked.name=Revnede mursten	#
+tile.stonebrick.cracked.name=Revnede stenmursten	#
 tile.stonebrick.default.name=Stenmursten	#
 tile.stonebrick.mossy.name=Mosbegroede mursten	#
 tile.stonebrick.name=Stenmursten	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=Steve	#
 dr.default.steve.top=Steves trøje	#
 dr.emotes.slot=Emote %d	#
 
+gfxDriverOutdated.title=Forældede drivere!	#
+gfxDriverOutdated.message=Der er en opdatering til din computers grafikdrivere. Uden opdateringen kan der opstå problemer og fejl i verdener. Installer opdateringen, så du kan få det fulde udbytte af Minecraft. Læs mere på http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.doNotShowAgain=Vis ikke igen	#
+gfxDriverOutdated.close=Luk	#
+
 onlinePlay.notRated=Onlinespil er ikke klassificeret	#
 onlinePlay.message=Under onlinespil kan du blive udsat for chatbeskeder eller andre typer brugergenereret indhold, der ikke er blevet klassificeret, og som ikke nødvendigvis er egnet for alle.	#
 onlinePlay.doNotShowAgain=Vis ikke igen	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=Varm bisque	#
 
 emotes.change_emotes=Skift emotes	#
 emotes.execute=Udfør	#
+emotes.header_text=Emotes	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification
@@ -8945,11 +8981,11 @@ dynamicPackage.download.android.state_fetchingUrl=Leder efter ressourcer...	#
 dynamicPackage.download.android.state_connecting=Opretter forbindelse	#
 dynamicPackage.download.android.state_downloading=Opdaterer	#
 dynamicPackage.download.android.state_completed=Opdateringen er fuldført!	#
-dynamicPackage.download.android.state_paused_networkUnavailable=Pause – intet netværk	#
+dynamicPackage.download.android.state_paused_networkUnavailable=Sat på pause – der er ikke noget tilgængeligt netværk	#
 dynamicPackage.download.android.state_paused_networkSetupFailure=Sat på pause – der er ikke noget tilgængeligt netværk	#
 dynamicPackage.download.android.state_paused_byRequest=Sat på pause	#
 dynamicPackage.download.android.state_paused_wifiUnavailable=Sat på pause – Der er ingen wi-fi tilgængelig	#
-dynamicPackage.download.android.state_paused_wifiDisabled=Pause – ingen Wi-Fi	#
+dynamicPackage.download.android.state_paused_wifiDisabled=Sat på pause – Der er ingen wi-fi tilgængelig	#
 dynamicPackage.download.android.state_paused_roaming=Midlertidigt afbrudt – kontrollér roamingindstillinger	#
 dynamicPackage.download.android.state_paused_sdcardUnavailable=Midlertidigt afbrudt – lageret er ikke tilgængeligt	#
 dynamicPackage.download.android.state_failed_unlicensed=Mislykkedes – app uden licens	#

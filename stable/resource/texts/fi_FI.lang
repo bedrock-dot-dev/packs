@@ -8,12 +8,17 @@ accessibility.enableTTS=Teksti puheeksi käytössä	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Palaa takaisin painamalla %s	#
+accessibility.chat.tts.gamepad.exitChat=Poistu chatista painamalla %s	#
+accessibility.chat.tts.gamepad.sendMessage=Lähetä viesti painamalla %s	#
 accessibility.chat.tts.says=%s sanoo %s	#
 accessibility.chat.tts.hideChat=Piilota chatti	#
 accessibility.chat.tts.keyboard=Näppäimistö	#
 accessibility.chat.tts.muteChatToggle=Vaimenna kaikki	#
 accessibility.chat.tts.sendChatMessage=Lähetä	#
 accessibility.chat.tts.textboxTitle=Chatti	#
+
+accessibility.game.playerView=Pelaajanäkymä	#
 
 accessibility.loading.done=Valmis	#
 accessibility.saving.done=Valmis	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=Siirry oikealle painamalla %s	#
 accessibility.play.legacyWorldsDelete=Poista vanha maailma	#
 
 accessibility.pause.permissions=Luvat	#
+accessibility.pause.profile=Valitse profiili	#
 
 accessibility.start.buttonHelper=%s : %s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=Saavutusnäyttö	#
 accessibility.screenName.chat=Chattinäyttö	#
 accessibility.screenName.createNew=Luo uusi näyttö	#
 accessibility.screenName.createWorld=Luo maailma-asetusten näyttö	#
+accessibility.screenName.editCharacter=Muokkaa hahmonäyttöä	#
 accessibility.screenName.editWorldSettings=Muokkaa maailma-asetusten näyttöä	#
 accessibility.screenName.error=Virhenäyttö	#
 accessibility.screenName.howToPlay=Peliohjenäyttö	#
+accessibility.screenName.inviteToGame=Kutsu peliin -näyttö	#
 accessibility.screenName.modalDialog=Ponnahdusvalintaikkuna	#
 accessibility.screenName.patchNotes=Korjaustiedostojen tietonäyttö	#
-accessibility.screenName.pauase=Taukonäyttö	#
+accessibility.screenName.pause=Taukonäyttö	#
 accessibility.screenName.play=Pelinäyttö	#
+accessibility.screenName.profile=Profiilinäyttö	#
 accessibility.screenName.realmSettings=Valtakunta-asetusten näyttö	#
 accessibility.screenName.settings=Peliasetusten näyttö	#
 accessibility.screenName.skinPicker=Olemuksen valintanäyttö	#
 accessibility.screenName.start=Päävalikko	#
 accessibility.screenName.vrAlignment=VR-tasauksen näyttö 	#
+accessibility.screenName.emoteWheel=Elenäyttö	#
 
 accessibility.settings.reset=nollaa	#
 accessibility.settings.chooseSeed=Valitse siemen	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=Vasen olkapainike	#
 accessibility.keyboard.leftBracket=Vasen hakasulkupainike			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Oikea hakasulkupainike		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s näppäin %d	#
+accessibility.emotes.buttonName=Näytä ele	#
+accessibility.emotes.assigned=Ele %s valittuna	#
+accessibility.emotes.unassigned=Ei valittu	#
+accessibility.emotes.playSuccess=Toista ele	#
+accessibility.emotes.playFailed=Tälle näppäimelle ei ole määritetty elettä, käytä Vaihda eleitä -painiketta alanuolen avulla	#
+accessibility.emotes.instruction.keyboard=Selaa elepainikkeita vasemmalla tai oikealla nuolella. Käytä Vaihda eleitä -painiketta alanuolen avulla.	#
 
 ## End of audible phrases section
 
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=Vahvista ostos	#
 authentication.store.intro=Minecraft: Education Edition kokeilupakettisi on päättynyt. Voit jatkaa Minecraft: Education Editionin pelaamista ostamalla käyttöoikeuden.	#
 authentication.store.popup.purchaseFailed.title=Jokin meni pieleen	#
 authentication.store.popup.purchaseFailed.msg=Pahoittelut, emme saaneet ostostasi valmiiksi. Onkohan internet-yhteytesi kunnossa?	#
-authentication.store.purchase.info1=Maksu veloitetaan iTunes-tililtäsi oston vahvistuksen yhteydessä, ja tilaus uusiutuu automaattisesti, jos tilauksen automaattista uusimista ei kytketä pois käytöstä vähintään 24 tuntia ennen tilausjakson päättymistä. Veloitus tehdään tililtäsi 24 tunnin sisällä ennen tilausjakson päättymistä, ja tilaus jatkuu samassa muodossa. 	#
-authentication.store.purchase.info2=Voit hallita tilaustasi ja poistaa sen automaattisen uusimisen käytöstä iTunes-asetuksista oston jälkeen. Jos perut tilauksen sen aktivoimisen jälkeen, sinulle ei korvata tilauksen jäljelle jäänyttä aikaa. iTunes-tilisi liitetään O365 Education -tiliisi tätä tilausta varten, joten et voi ostaa lisää Minecraft: Education Editionin käyttöoikeuksia tällä iTunes-tilillä.	#
 authentication.store.purchase.button=Osta käyttöoikeus (%s/vuosi)	#
 authentication.store.terms=Käyttöehdot	#
 authentication.store.viewTermsAndConditions=Käyttöehdot	#
@@ -1219,6 +1234,7 @@ commands.time.stop=Aika: %1$s	#
 commands.title.description=Hallitsee näytön otsikoita.	#
 commands.title.success=Otsikkokomento suoritettu onnistuneesti	#
 commands.titleraw.description=Hallitsee JSON-sanomia sisältäviä ruutuotsikko.	#
+commands.titleraw.success=Titleraw-komento suoritettu onnistuneesti	#
 commands.toggledownfall.description=Muuttaa säätä.	#
 commands.tp.description=Kaukosiirtää kohteita (pelaajia, hirviöitä jne.).	#
 commands.tp.notSameDimension=Kaukosiirtyminen ei onnistu, koska pelaajat eivät ole samassa ulottuvuudessa	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Edellinen	#
 realmsSettingsScreen.dev_next_page_label=Seuraava	#
 realmsSettingsScreen.uploadConfirmationMessage=Tämä poistaa nykyisen maailman valtakunnistasi, jolloin voit korvata sen uudella. Valtakuntasi jäsenillä ei silloin ole enää pääsyä nykyiseen maailmaasi. Haluatko jatkaa?	#
 realmsSettingsScreen.uploadConfirmationTitle=Korvaa maailma?	#
-realmsSettingsScreen.whitelist_invite=Kutsu	#
+realmsSettingsScreen.allowlist_invite=Kutsu	#
 realmsSettingsScreen.searchBox=Hae...	#
 realmsSettingsScreen.unknownPackName=Tuntematon nimi	#
 realmsSettingsScreen.viewSubscriptionsButton=Tarkastele tilauksia	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=Virhenumero	#
 xbl.transferEntitlements.error.error2=Tunnusnumero	#
 
 playfab.account.banned.title=Estetty	#
-playfab.account.banned.body=Sinut on estetty Minecraft-onlinesta. Et voi pelata palvelimilla, liittyä realmeihin, isännöidä moninpeleihin tai liittyä sellaisiin tai käyttää kauppaa. Jos maksat realmista, sinun on peruttava tilauksesi siinä kaupassa, josta se on ostettu.	#
+playfab.account.banned.body=Sinut on estetty Minecraftissa. Estosi ajan et voi pelata maailmoissasi (tietyt alustat), pelata palvelimilla, liittyä realmeihin, isännöidä moninpelejä tai liittyä niihin tai käyttää kauppaa. Jos maksat realmista, sinun on peruttava tilauksesi siinä kaupassa, josta se on ostettu.	#
 playfab.account.banned.body.button=Lisätietoja	#
 
 store.sign_in_warning.no_xbl_and_local_content=Tärkeää! Olet ostanut paketteja ja/tai kolikoita, jotka ovat käytettävissä vain tällä laitteella, joten saatat menettää ne laitteen vian, katoamisen tai Minecraftin asennuksen poistamisen vuoksi! Kirjaudu (maksuttomalla) Microsoft-tilillä ja siirrä omistamasi paketit ja kolikot tilisi alaisuuteen, niin voit suojata ne ja käyttää niitä kaikilla laitteilla, joilla kirjaudut sisään.	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=Ohita nyt	#
 death.attack.anvil=%1$s joutui putoavan alasimen murskaamaksi	#
 death.attack.arrow=%2$s ampui pelaajan %1$s	#
 death.attack.arrow.item=%1$s joutui pelaajan %2$s ampumaksi aseella %3$s	#
+death.attack.bullet=%1$s tiputti pelaajan %2$s	#
 death.attack.cactus=%1$s tunsi piston sydämessään ja kuoli	#
 death.attack.cactus.player=%1$s käveli päin kaktusta, koska %2$s ahdisti	#
 death.attack.drown=%1$s hukkui	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=%1$s paloi poroksi, kun hän ja %2$s taistelivat	#
 death.attack.outOfWorld=%1$s tipahti maailman laidalta	#
 death.attack.player=%1$s joutui pelaajan %2$s teurastamaksi	#
 death.attack.player.item=%2$s teurasti pelaajan %1$s apunaan %3$s	#
+death.attack.spit=%1$s sai köniinsä pelaajalta %2$s	#
 death.attack.starve=%1$s nääntyi nälkään	#
 death.attack.thorns=%1$s kuoli yrittäessään vahingoittaa pelaajaa %2$s	#
 death.attack.thrown=%1$s sai köniinsä pelaajalta %2$s	#
 death.attack.thrown.item=%2$s antoi köniin pelaajalle %1$s apunaan %3$s	#
+death.attack.trident=%1$s seivästi kuoliaaksi pelaajan %2$s	#
 death.attack.wither=%1$s näivettyi hengiltä	#
 death.fell.accident.generic=%1$s putosi korkealta	#
 death.fell.accident.ladder=%1$s putosi tikkailta	#
@@ -2318,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Et voi liittyä maailmaan, koska lai
 disconnectionScreen.incompatiblePack.graphics.raytracing=Et voi liittyä maailmaan, koska laitteessasi ei ole säteenseurantaa tukevaa laitteistoa	#
 disconnectionScreen.worldCorruption.message=Kokeile maailman uudelleenavaamista tai sen palauttamista aiemmasta varmuuskopiosta	#
 disconnectionScreen.worldCorruption=Yhteys katkaistu maailman vahingoittumisen vuoksi	#
+disconnectionScreen.hostSuspended=Yhteys katkesi, koska palvelin ei ole käytettävissä	#
 
 storageSpaceWarningScreen.frontend=Tallennustilasi on melkein lopussa! Minecraftilla on rajoitettu pääsy tähän ominaisuuteen, kunnes olet tyhjentänyt tallennustilaa.	#
 storageSpaceWarningScreen.lowduringgameplay=Laitteesi tallennustila, johon Minecraft voi tallentaa maailmoja ja asetuksia, on melkein lopussa. Kannattaa poistaa vanhoja juttuja, jota et enää tarvitse, jotta voit jatkaa uusien juttujen tallentamista!	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=Tason tuonti epäonnistui: tiedostomuoto
 invite.clear=Tyhjennä valinnat	#
 invite.send=Lähetä %d kutsua	#
 invite.sendOne=Lähetä 1 kutsu	#
+invite.sendUnnumbered=Lähetä kutsuja	#
 invite.title=Kutsu ystäviä peliisi	#
 invite.error.message=Osa kutsuistasi saattoi epäonnistua.	#
 invite.noFriends=Et ole lisännyt ketään ystäväluetteloosi!	#
+invite.noRealmFriends=Et ole lisännyt ketään realmiisi!	#
 invite.OnlineFriends=Online-tilassa olevat ystävät	#
 invite.OfflineFriends=Offline-tilassa olevat ystävät	#
 invite.SuggestedFriends=Ehdotetut ystävät	#
@@ -4867,7 +4889,7 @@ jigsaw.title.target=Kohteen nimi:	#
 jigsaw.title.final_block=Muuttuu muotoon:	#
 jigsaw.title.joint_type=Yhteinen tyyppi:	#
 jigsaw.title.joint_type.aligned=Linjassa	#
-jigsaw.joint_type.aligned=Kohdistettu	#
+jigsaw.joint_type.aligned=Linjassa	#
 jigsaw.joint_type.rollable=Kierivä	#
 jigsaw.exit.done=Valmis	#
 jigsaw.exit.cancel=Peruuta	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=Jaetut ohjauskomennot	#
 options.viewSubscriptions=Tilaukset	#
 options.viewSubscriptions.button.info=Tiedot	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/KUUKAUSI	#
 options.viewSubscriptions.button.manage=Hallitse	#
 options.viewSubscriptions.renew=Uusiutuu 30 päivän välein	#
 options.viewSubscriptions.daysRemaining=%d päivää jäljellä	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=Hallitse tietosuoja-asetuksia osoitteessa https://account.
 options.unlink_msa.button=Peru Microsoft-tilin linkitys	#
 options.unlink_msa.confirm.title=Perutaanko Microsoft-tilin linkitys?	#
 options.unlink_msa.confirm.warning=VAROITUS: Et voi enää tallentaa edistymistä tai ostoksia, jotka on tehty "PlayStation 4" -järjestelmälläsi ja tililläsi %s linkityksen perumisen jälkeen.	#
+options.unlink_msa.confirm.warning.2=Microsoft-tilisi linkityksen poistaminen tämän pelin sisältä vaikuttaa kaikkiin tämän alustan Minecraft-peleihin, joissa on käytetty tätä Microsoft-tiliä.	#
 options.unlink_msa.confirm.checkbox1=Et voi enää käyttää pelin sisäisen kaupan sisältöä, kun pelaan muilla alustoilla.	#
 options.unlink_msa.confirm.checkbox2=En voi enää pelata alustojen välisiä pelejä muita alustoja käyttävien ystävieni kanssa.	#
 options.unlink_msa.confirm.checkbox3=En voi enää käyttää Realmsia, mukaan lukien tällä hetkellä aktiivisia Realms-tilauksia.	#
@@ -6679,11 +6704,11 @@ skins.store.equipped=Sinulla on käytössä olemus %s.	#
 soundCategory.ambient=Tunnelma/ympäristö	#
 soundCategory.block=Kuutiot	#
 soundCategory.hostile=Vihamieliset olennot	#
-soundCategory.master=Pää-äänenvoimakkuus	#
+soundCategory.master=Päätaso	#
 soundCategory.music=Musiikki	#
 soundCategory.neutral=Ystävälliset olennot	#
 soundCategory.player=Pelaajat	#
-soundCategory.record=Jukeboksi/nuottipalikat	#
+soundCategory.record=Jukeboksi/nuottikuutiot	#
 soundCategory.weather=Sää	#
 
 stat.animalsBred=Kasvatetut eläimet	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=Sisältö	#
 store.realmsPlus.faq=UKK	#
 store.realmsPlus.buyFor=OSTA HINTAAN %s	#
 store.realmsPlus.buyNow=OSTA NYT	#
+store.realmsPlus.buyNowPerMonth=Osta hinnalla %s/KK	#
+store.realmsPlus.buyNowTrialPerMonth=ALOITA MAKSUTON KOKEILU (SEN JÄLKEEN %s/KK)	#
 store.realmsPlus.errorNoOffer=VIRHE, TARJOUSTA EI LÖYTYNYT	#
 store.realmsPlus.manageSubscription=HALLITSE TILAUSTA	#
 store.realmsPlus.viewAllPacksTitle=VASTINETTA RAHOILLE – PAKETTEJA YLI §g150 EURON ARVOSTA!§r	#
@@ -6788,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realms-tilauksesi on päivitetty Realms Plu
 store.realmsPlus.noTrial.description.iap=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
 store.realmsPlus.realmName.placeholder=Pelaajan %s valtakunta		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäinen kuukautesi on maksuton, minkä jälkeen sinulta veloitetaan %s kuukaudessa. Voit perua tilauksen milloin tahansa.	#
-store.realmsPlus.recurring.withoutTrial=Realmisi ja yli 100 kaupan pakettia ovat käytettävissä välittömästi. Jopa 10 pelaajaa voi pelata samanaikaisesti ja he kaikki saavat maksuttomasti käyttöönsä Realmisi maailmat! Sinulta veloitetaan %s/kk, ja voit perua tilauksen milloin tahansa.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus on jatkuva tilaus. Siinä on säännöllinen tilausmaksu, joka veloitetaan automaattisesti kuukausittain, kunnes tilaus perutaan.%sRealmisi ja yli 100 kaupan pakettia ovat välittömästi käytettävissä. Jopa 10 pelaajaa voi pelata samanaikaisesti ja käyttää realmisi maailmoja maksutta! Ensimmäiset 30 päivääsi ovat maksuttomia, minkä jälkeen sinulta veloitetaan kuukausittain %s. Voit peruuttaa tilauksen milloin tahansa.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus on jatkuva tilaus. Siinä on säännöllinen tilausmaksu, joka veloitetaan automaattisesti kuukausittain, kunnes tilaus perutaan.%sRealmisi ja yli 100 kaupan pakettia ovat välittömästi käytettävissä. Jopa 10 pelaajaa voi pelata samanaikaisesti ja käyttää realmisi maailmoja maksutta! Sinulta veloitetaan kuukausittain %s, ja voit peruuttaa tilauksen milloin tahansa.	#
 store.realmsPlus.consumable.offerTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Ensimmäiset 30 päivääsi ovat maksuttomia ja voit uusia tilauksen sen jälkeen hintaan %s.	#
 store.realmsPlus.consumable.withoutTrial=Realms-tilauksesi on päivitetty Realms Plus -tilaukseksi. Saat nyt käyttöösi yli 100 sisältöpakettia kaupasta ilman lisäkuluja. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti! Tilauksesi on käytettävissä 30 päivän ajan hintaan %s.	#
 
@@ -6802,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Ystävät pelaavat maksutta Realmissasi	#
 store.realmsPlus.landing.info2.line1=- Turvallinen pilvitallennus	#
 store.realmsPlus.landing.info2.line2=- Pelaa millä tahansa laitteella, jolla Realms ja Minecraft-kauppa ovat käytettävissä	#
 store.realmsPlus.landing.info2.line3=- Tue Minecraft-yhteisöä	#
-store.realmsPlus.landing.info2.line4=- Maksuton 1 kuukauden kokeilu	#
+store.realmsPlus.landing.info2.line4=- Maksuton 30 päivän kokeilujakso, sitten %s kuukaudessa	#
+store.realmsPlus.landing.info2.line5=- %s kuukaudessa	#
 
 store.realmsPlus.faq.header=USEIN KYSYTYT KYSYMYKSET	#
 store.realmsPlus.faq.question1=Mikä on Realms Plus?	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=NÄYTÄ KAIKKI PAKETIT	#
 store.realmsPlus.content.contentDescription=Hyödynnä upeaa Minecraft-sisältöä! Realms Plussalla saat välittömästi käyttöösi yli 100 kaupan tuotetta, kuten yhdistelmiä, maailmoja, olemuspaketteja ja eeppisiä seikkailuja, Uutta sisältöä lisätään kuukausittain. Sisältösi tallennetaan henkilökohtaiselle palvelimellesi. Se on käytettävissä millä tahansa alustalla, jolla voit käyttää Realmsia ja Minecraft-kauppaa. Jopa 10 pelaaja voi pelata samanaikaisesti ja saada käyttöönsä Realmisi maailmat maksuttomasti!	#
 
 
-store.realmsPlus.freeTrial=ALOITA 1 KUUKAUDEN ILMAINEN KOKEILU	#
+store.realmsPlus.freeTrial=ALOITA MAKSUTON KOKEILU (SEN JÄLKEEN %s/KK)	#
 
 store.inventory.button=Tavaraluettelo	#
 store.inventory.title=Tavaraluettelo	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=Pelin avausvirhe	#
 store.popup.trialUpgradeFail.msg=Vaikuttaa siltä, että olet kirjautunut eri Microsoft-tilille kuin sille, jolla latasit Minecraftin kokeilupaketin ensimmäisen kerran. Yritä uudelleen, kun olet kirjautunut alkuperäiselle tilille.	#
 store.popup.downloaded.unOwnedTemplate.title=Osta maailmamalli?	#
 store.popup.downloaded.unOwnedTemplate.msg=Et omista tätä mallia. Voit avata sen ostamalla sen. Haluatko osta mallin?	#
+store.popup.rtx.title=Lataa säteenseurantapaketit?	#
+store.popup.rtx.msg=Tässä maailmassa käytetään säteenseurannan mahdollistavia resurssipaketteja. Laitteesi ei ole yhteensopiva edistyneiden valaistus- ja tekstuuriominaisuuksien kanssa, joten näet maailman ilman edistyneitä tehosteita. Haluatko ladata ne ja liittyä?	#
 store.purchase.success=Ostit juuri: %s	#
 store.purchase.bundle=Avaa %d/%d pakettia?	#
 store.purchase.bundle.confirm=Avaa nyt!	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=Masuuni	#
 tile.glass.name=Lasi	#
 tile.golden_rail.name=Sähkökisko	#
 tile.grass.name=Ruohokuutio	#
-tile.grass_path.name=Ruohopolku	#
+tile.grass_path.name=Hiekkapolku	#
 tile.gravel.name=Sora	#
 tile.hay_block.name=Heinäpaali	#
 tile.netherrack.name=Tulikivi	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=Steve	#
 dr.default.steve.top=Steven paita	#
 dr.emotes.slot=Käytä elettä %d	#
 
+gfxDriverOutdated.title=Ajurit vanhentuneita!	#
+gfxDriverOutdated.message=Tietokoneesi näyttöajureihin on saatavilla uusi päivitys. Maailmoissa voi olla ongelmia tai virheitä ilman päivitystä. Asenna se, jotta voit nauttia Minecraftista täysin. Lue lisää osoitteesta http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.doNotShowAgain=Älä näytä tätä viestiä enää	#
+gfxDriverOutdated.close=Sulje	#
+
 onlinePlay.notRated=Verkkopelaamista ei ole luokiteltu	#
 onlinePlay.message=Verkkopelaamisen aikana voit altistua luokittelemattomille chattiviesteille tai muille käyttäjien luomalle sisällöille, jotka eivät välttämättä sovi kaikille ikäryhmille.	#
 onlinePlay.doNotShowAgain=Älä näytä tätä ruutua uudelleen	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=Lämmin äyriäiskeitto	#
 
 emotes.change_emotes=Muuta eleitä	#
 emotes.execute=Suorita	#
+emotes.header_text=Eleet	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification

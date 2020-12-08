@@ -385,6 +385,9 @@
                     "minecraft:double_plant:5"  // Peony
                 ]
             },
+            "minecraft:behavior.move_towards_home_restriction": {
+              "priority": 9
+            },
             "minecraft:behavior.random_hover": {
                 "priority": 12,
                 "xz_dist": 8,
@@ -418,7 +421,13 @@
             },
             "minecraft:conditional_bandwidth_optimization": {
             },
-            "minecraft:home": {},
+            "minecraft:home": {
+                "restriction_radius": 22,
+                "home_block_list": [
+                    "minecraft:bee_nest",
+                    "minecraft:beehive"
+                ]
+            },
             "minecraft:follow_range": {
                 "value": 1024
             },

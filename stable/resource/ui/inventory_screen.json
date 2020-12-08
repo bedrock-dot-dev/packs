@@ -1550,7 +1550,8 @@
       { "cell_invert@crafting.cell_image_invert": {} },
       { "cell_red@crafting.cell_image_red": {} },
       { "cell_selected@crafting.cell_image_selected": {} },
-      { "cell_hint@game_tip.cell_image_classic_hint": {} }
+      { "cell_hint@game_tip.cell_image_classic_hint": {} },
+      { "cell_darkgrey@crafting.cell_image_darkgrey": {}}
     ],
     "bindings": [
       {
@@ -1641,6 +1642,21 @@
         "source_control_name": "$background_image_control_name",
         "resolve_sibling_scope": true,
         "source_property_name": "(#container_item_background = 4)",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+  "cell_image_darkgrey@crafting.cell_image": {
+    "texture": "textures/ui/cell_image_darkgrey",
+    "$cell_image_size|default": [ "default", "default" ],
+    "size": "$cell_image_size",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$background_image_control_name",
+        "resolve_sibling_scope": true,
+        "source_property_name": "(#container_item_background = 7)",
         "target_property_name": "#visible"
       }
     ]

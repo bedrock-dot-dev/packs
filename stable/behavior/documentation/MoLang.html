@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.16.100.4</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.16.200.2</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Why Does MoLang Exist?">Why Does MoLang Exist?</a></th> </tr>
@@ -736,6 +736,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">Returns the time in *seconds* of the average frame time over the last 'n' frames.  If an argument is passed, it is assumed to be the number of frames in the past that you wish to query.  `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one.  `query.average_frame_time(1)` will return the average frame time of the previous two frames.  Currently we store the history of the last 30 frames, although note that this may change in the future.  Asking for more frames will result in only sampling the number of frames stored.</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.block_face</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.block_property</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the value of the associated Blocks Block State</br></td>
 </tr>
@@ -785,7 +789,15 @@ Query Functions are boolean expressions that allow you to query for values owned
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.cardinal_block_face_placed_on</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns the block face that was placed on by the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">DEPRECATED (please use query.block_face instead) Returns the block face for this (only valid for on_placed_by_player trigger) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.cardinal_facing</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.cardinal_facing_2d</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the current facing of the player ignoring up/down part of the direction (North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.cardinal_player_facing</td>
@@ -1158,6 +1170,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_pregnant</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is pregnant, else it returns 0.0</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.is_ram_attacking</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is using a ram attack, else it returns 0.0</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_resting</td>

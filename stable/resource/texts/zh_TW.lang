@@ -8,12 +8,17 @@ accessibility.enableTTS=文字轉換語音已啟用	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=按 %s 返回	#
+accessibility.chat.tts.gamepad.exitChat=按 %s 退出聊天	#
+accessibility.chat.tts.gamepad.sendMessage=按 %s 發送消息	#
 accessibility.chat.tts.says=%s 說 %s	#
 accessibility.chat.tts.hideChat=隱藏聊天	#
 accessibility.chat.tts.keyboard=鍵盤	#
 accessibility.chat.tts.muteChatToggle=全部靜音	#
 accessibility.chat.tts.sendChatMessage=傳送	#
 accessibility.chat.tts.textboxTitle=聊天	#
+
+accessibility.game.playerView=玩家視野	#
 
 accessibility.loading.done=完成	#
 accessibility.saving.done=完成	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=按 %s 以選取右標籤	#
 accessibility.play.legacyWorldsDelete=刪除舊版世界	#
 
 accessibility.pause.permissions=權限	#
+accessibility.pause.profile=選擇設定檔	#
 
 accessibility.start.buttonHelper=%s：%s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=成就畫面	#
 accessibility.screenName.chat=聊天畫面	#
 accessibility.screenName.createNew=建立新畫面	#
 accessibility.screenName.createWorld=建立世界設定畫面	#
+accessibility.screenName.editCharacter=編輯角色畫面	#
 accessibility.screenName.editWorldSettings=編輯世界設定畫面	#
 accessibility.screenName.error=錯誤畫面	#
 accessibility.screenName.howToPlay=遊戲說明畫面	#
+accessibility.screenName.inviteToGame=邀請至遊戲畫面	#
 accessibility.screenName.modalDialog=彈出式對話	#
 accessibility.screenName.patchNotes=修補說明畫面	#
-accessibility.screenName.pauase=暫停畫面	#
+accessibility.screenName.pause=暫停畫面	#
 accessibility.screenName.play=遊戲畫面	#
+accessibility.screenName.profile=設定檔畫面	#
 accessibility.screenName.realmSettings=Realm 設定畫面	#
 accessibility.screenName.settings=遊戲設定畫面	#
 accessibility.screenName.skinPicker=選擇外觀畫面	#
 accessibility.screenName.start=主選單	#
 accessibility.screenName.vrAlignment=VR 對齊畫面 	#
+accessibility.screenName.emoteWheel=表情畫面	#
 
 accessibility.settings.reset=重置	#
 accessibility.settings.chooseSeed=選擇種子	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=LB 鍵	#
 accessibility.keyboard.leftBracket=左方括號鍵			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右方括號鍵		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s、%s 按鈕 %d	#
+accessibility.emotes.buttonName=表情	#
+accessibility.emotes.assigned=已分配 %s 表情	#
+accessibility.emotes.unassigned=未分配	#
+accessibility.emotes.playSuccess=播放表情	#
+accessibility.emotes.playFailed=沒有分配給此按鈕的表情，請按向下鍵存取「變更表情」按鈕	#
+accessibility.emotes.instruction.keyboard=按向右鍵或向左鍵旋轉查看表情按鈕。請按向下鍵存取「變更表情」按鈕。	#
 
 ## End of audible phrases section
 
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=確認購買	#
 authentication.store.intro=您的《Minecraft: Education Edition》已試用完畢。若要繼續玩《Minecraft: Education Edition》，您必須購買授權。	#
 authentication.store.popup.purchaseFailed.title=有地方出錯	#
 authentication.store.popup.purchaseFailed.msg=抱歉，我們無法為您完成購買程序，能否請您確認目前的網際網路連線狀態？	#
-authentication.store.purchase.info1=款項於您確認購買時自您的 iTunes 帳戶計收，除非於距離當期結束至少 24 小時前關閉自動續約，否則將自動續訂。當期結束前 24 小時內會依您先前所選取的訂用價格選項，自您的帳戶收取續訂費用。 	#
-authentication.store.purchase.info2=購買後，您可以存取自己的 iTunes 帳戶設定以管理自己的訂閱和關閉自動續訂功能。如果您在訂閱啟用後取消，您將無法獲得剩餘訂閱有效期的退款。您的 iTunes 帳戶將於此訂閱中與您的 O365 教育版帳戶連結，因此您不符合使用此 iTunes 帳戶購買額外《Minecraft: Education Edition》授權的資格。	#
 authentication.store.purchase.button=購買授權 (每年 %s)	#
 authentication.store.terms=使用規定	#
 authentication.store.viewTermsAndConditions=條款與條件	#
@@ -1219,6 +1234,7 @@ commands.time.stop=時間 %1$s	#
 commands.title.description=控制畫面標題。	#
 commands.title.success=Title command successfully executed	#
 commands.titleraw.description=使用 JSON 訊息控制畫面標題。	#
+commands.titleraw.success=標題列指令已成功執行	#
 commands.toggledownfall.description=切換天氣。	#
 commands.tp.description=傳送實體 (玩家、生物等)。	#
 commands.tp.notSameDimension=因玩家處在不同世界而無法傳送	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=上一個	#
 realmsSettingsScreen.dev_next_page_label=下一個	#
 realmsSettingsScreen.uploadConfirmationMessage=這樣會將您目前的世界從您的 Realm 移除，讓您取代為新的世界。您的 Realm 成員將再也無法存取您目前的世界。是否要繼續？	#
 realmsSettingsScreen.uploadConfirmationTitle=是否要置換世界？	#
-realmsSettingsScreen.whitelist_invite=邀請	#
+realmsSettingsScreen.allowlist_invite=邀請	#
 realmsSettingsScreen.searchBox=搜尋…	#
 realmsSettingsScreen.unknownPackName=未知名稱	#
 realmsSettingsScreen.viewSubscriptionsButton=檢視訂閱	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=錯誤編號	#
 xbl.transferEntitlements.error.error2=ID 編號	#
 
 playfab.account.banned.title=已封鎖	#
-playfab.account.banned.body=您已被禁止在線上遊玩 Minecraft。您將無法在伺服器上玩遊戲、加入 Realm、主辦或加入多人遊戲，或使用市集。如果您已付費購買 Realm，則需透過原購買商店取消定期服務。	#
+playfab.account.banned.body=Minecraft 已禁止你進入。在禁止期間，你將無法在你的世界 (某些平台)、在伺服器上遊玩、加入 Realms、主持或加入多人遊戲，或是使用市集。如果你正在購買 Realm，則必須透過購買該 Realm 的商店取消訂閱。	#
 playfab.account.banned.body.button=更多資訊	#
 
 store.sign_in_warning.no_xbl_and_local_content=重要！您已購買僅此裝置可用的套件和/或 Minecoin，而且可能因裝置故障、遺失或解除安裝 Minecraft 而遺失！使用 Microsoft 帳戶 (免費) 登入，並將您的套件使用權限和 Minecoin 轉移至該帳戶，以保護並使用任何已經登入帳戶的裝置存取。	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=暫時略過	#
 death.attack.anvil=%1$s 被墜落下來的鐵砧壓扁了	#
 death.attack.arrow=%1$s 被 %2$s 射殺了	#
 death.attack.arrow.item=%1$s 被 %2$s 用 %3$s 射殺	#
+death.attack.bullet=%1$s 被 %2$s 狙擊了	#
 death.attack.cactus=%1$s 被刺死了	#
 death.attack.cactus.player=%1$s 要逃開 %2$s 時，被仙人掌刺了	#
 death.attack.drown=%1$s 溺水了	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=%1$s 在和 %2$s 戰鬥時被火焰燒成灰燼	#
 death.attack.outOfWorld=%1$s 掉到世界外面了	#
 death.attack.player=%1$s 被 %2$s 殺死了	#
 death.attack.player.item=%1$s 被 %2$s 用 %3$s 殺死	#
+death.attack.spit=%1$s 被 %2$s 口水紙球扔中了	#
 death.attack.starve=%1$s 餓死了	#
 death.attack.thorns=%1$s 試圖襲擊 %2$s 而身亡	#
 death.attack.thrown=%1$s 被 %2$s 揍	#
 death.attack.thrown.item=%1$s 被 %2$s 用 %3$s 揍	#
+death.attack.trident=%1$s 被 %2$s 刺死了	#
 death.attack.wither=%1$s 凋零至死了	#
 death.fell.accident.generic=%1$s 從高處跌落	#
 death.fell.accident.ladder=%1$s 從梯子上摔了下來	#
@@ -2318,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=您無法加入世界，因為您的
 disconnectionScreen.incompatiblePack.graphics.raytracing=您無法加入世界，因為您的裝置沒有相容硬體可支援光線追蹤	#
 disconnectionScreen.worldCorruption.message=嘗試重新開啟世界，或使用之前的備份還原	#
 disconnectionScreen.worldCorruption=因世界損毀而中斷連接	#
+disconnectionScreen.hostSuspended=由於伺服器無法使用，連結已中斷	#
 
 storageSpaceWarningScreen.frontend=您的資料儲存空間即將用罄！《Minecraft》已限制此功能的存取，直到您清出額外的儲存空間為止。	#
 storageSpaceWarningScreen.lowduringgameplay=您的裝置可供 Minecraft 在此裝置中儲存世界和設定使用的儲存空間即將用磬。建議刪除您不需要的舊資料，以繼續儲存新資料。	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=等級匯入失敗：不支援的檔案�
 invite.clear=清除選擇	#
 invite.send=送出 %d 份邀請	#
 invite.sendOne=送出 1 份邀請	#
+invite.sendUnnumbered=送出邀請	#
 invite.title=邀請好友加入您的遊戲	#
 invite.error.message=您可能有一些邀請傳送失敗。	#
 invite.noFriends=您還沒有將任何人加入好友名單！	#
+invite.noRealmFriends=你還沒有將任何人加入 Realm！	#
 invite.OnlineFriends=線上好友	#
 invite.OfflineFriends=離線好友	#
 invite.SuggestedFriends=推薦好友	#
@@ -4671,7 +4693,7 @@ item.spawn_egg.entity.phantom.name=增生幻影	#
 item.spawn_egg.entity.panda.name=增生熊貓	#
 item.spawn_egg.entity.pillager.name=增生劫掠者	#
 item.spawn_egg.entity.piglin_brute.name=增生 Piglin 野獸	#
-item.spawn_egg.entity.piglin.name=增生Piglin	#
+item.spawn_egg.entity.piglin.name=增生 Piglin	#
 item.spawn_egg.entity.fox.name=增生狐狸	#
 item.spawn_egg.entity.unknown.name=增生	#
 item.spawn_egg.entity.wandering_trader.name=增生流浪商人	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Pocket	#
 options.usetouchpad=分離控制	#
 options.viewSubscriptions=訂閱	#
 options.viewSubscriptions.button.info=資訊	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/月	#
 options.viewSubscriptions.button.manage=管理	#
 options.viewSubscriptions.renew=每 30 天續訂	#
 options.viewSubscriptions.daysRemaining=剩下 %d 天	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=若要管理隱私設定，請使用任何網路瀏覽器�
 options.unlink_msa.button=取消連結 Microsoft 帳戶	#
 options.unlink_msa.confirm.title=是否取消連結 Microsoft 帳戶？	#
 options.unlink_msa.confirm.warning=警告：取消連結後，您將無法在於您的帳戶 %s 中儲存您在「PlayStation 4」主機中的進度或購買的內容。	#
+options.unlink_msa.confirm.warning.2=從此遊戲中取消連結您的 Microsoft 帳戶將影響此平台上使用此 Microsoft 帳戶的所有 Minecraft 遊戲。	#
 options.unlink_msa.confirm.checkbox1=我在其他平台中玩遊戲時，將無法再存取任何遊戲內的商店內容。	#
 options.unlink_msa.confirm.checkbox2=我將無法在其他平台中與我的好友一起玩跨平台遊戲。	#
 options.unlink_msa.confirm.checkbox3=我將無法再存取 Realms，包括目前已經啟用的 Realms 訂閱。	#
@@ -6669,7 +6694,7 @@ skins.picker.recent=最近使用	#
 skins.picker.no.cross.platform=平台限制外觀套件	#
 skins.picker.no.multiplayer=多人遊戲限制外觀套件	#
 skins.picker.expanded.back=「%s」中的外觀	#
-skins.store.upsell.buy.button=解鎖全部 %s 外觀：%s:minecoin:	#
+skins.store.upsell.buy.button= 解鎖全部 %s 外觀：%s:minecoin:	#
 skins.store.upsell.equip.button=配備此外觀	#
 skins.store.upsell.info=您需要解鎖此組合包以配備所選的外觀。	#
 skins.store.upsell.seePack=在市集中查看套件	#
@@ -6679,11 +6704,11 @@ skins.store.equipped=您已裝備 %s 外觀。	#
 soundCategory.ambient=環境音效/環境	#
 soundCategory.block=方塊	#
 soundCategory.hostile=敵對生物	#
-soundCategory.master=主音量	#
+soundCategory.master=主要	#
 soundCategory.music=音樂	#
 soundCategory.neutral=友好生物	#
 soundCategory.player=玩家	#
-soundCategory.record=點唱機/音符盒	#
+soundCategory.record=點唱機/音符塊	#
 soundCategory.weather=天氣	#
 
 stat.animalsBred=養殖的動物	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=內容	#
 store.realmsPlus.faq=常見問題	#
 store.realmsPlus.buyFor=以 %s 購買	#
 store.realmsPlus.buyNow=立即購買	#
+store.realmsPlus.buyNowPerMonth=以 %s/月購買	#
+store.realmsPlus.buyNowTrialPerMonth=開始免費試用 (之後 %s/月)	#
 store.realmsPlus.errorNoOffer=錯誤，沒有任何優惠	#
 store.realmsPlus.manageSubscription=管理訂閱	#
 store.realmsPlus.viewAllPacksTitle=超值優惠 - 價值超過 §g150 美元§r的套件！	#
@@ -6788,8 +6815,8 @@ store.realmsPlus.noTrial.description=您的 Realm 和超過 100 種以上的市�
 store.realmsPlus.noTrial.description.iap=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的訂閱將以 %s 的價格提供使用 30 天。	#
 store.realmsPlus.realmName.placeholder=%s 的 Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的第一個月將無須付費，之後將每月支付 %s，隨時都可取消。	#
-store.realmsPlus.recurring.withoutTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您將每月支付 %s，隨時都可取消。	#
+store.realmsPlus.recurring.offerTrial=Realms Plus 是一項持續訂閱服務，每月會自動向您收取續訂費直到訂閱取消。 %s您將能立即使用 Realm 和 100 多款市場套件。一次最多 10 名玩家可同時遊玩，他們可以免費進入您 Realm 中的世界！前 30 天免費使用，30 天後系統將向您收取 %s/月的費用，可以隨時取消。	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus 是一項持續訂閱服務，每月會自動向您收取續訂費直到訂閱取消。 %s您將能立即使用 Realm 和 100 多款市場套件。一次最多 10 名玩家可同時遊玩，他們可以免費進入您 Realm 中的世界！系統將向您收取 %s/月的費用，可以隨時取消。	#
 store.realmsPlus.consumable.offerTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的前 30 天將無須付費，之後可以 %s 的價格續訂 30 天。	#
 store.realmsPlus.consumable.withoutTrial=您的 Realm 和超過 100 種以上的市集套件馬上便能使用。一次最多可有 10 名玩家一同遊玩，而且他們可以免費存取您 Realm 中的世界！您的訂閱將以 %s 的價格提供使用 30 天。	#
 
@@ -6802,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- 好友可免費在您的 Realm 中遊玩	
 store.realmsPlus.landing.info2.line1=- 安全的雲端儲存空間	#
 store.realmsPlus.landing.info2.line2=- 在任何有 Realms 和 Minecraft 市集的裝置上玩	#
 store.realmsPlus.landing.info2.line3=- 支援 Minecraft 社群	#
-store.realmsPlus.landing.info2.line4=- 免費 1 個月試玩	#
+store.realmsPlus.landing.info2.line4=- 免費試用 30 天，30 天後每月 %s	#
+store.realmsPlus.landing.info2.line5=- 每月 %s	#
 
 store.realmsPlus.faq.header=常見問題	#
 store.realmsPlus.faq.question1=什麼是 Realms Plus？	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=檢視所有套件	#
 store.realmsPlus.content.contentDescription=妥善利用豐富的 Minecraft 資源！有了 Realms Plus，您就能立即存取超過 100 種以上的市集內容，例如：混搭、世界、外觀套件和史詩冒險，而且每月都會加入新內容。您的內容會儲存在個人伺服器中，只要透過 Realms 和 Minecraft 市集，無論在何種平台都能使用。一次最多可供 10 名玩家一起遊玩，而且他們可以免費存取您 Realm 中的世界！	#
 
 
-store.realmsPlus.freeTrial=開始免費試用一個月	#
+store.realmsPlus.freeTrial=開始免費試用 (之後 %s/月)	#
 
 store.inventory.button=物品欄	#
 store.inventory.title=物品欄	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=遊戲解除鎖定發生錯誤	#
 store.popup.trialUpgradeFail.msg=您登入的 Microsoft 帳戶似乎與首次下載 Minecraft 試用版使用的帳戶不同。請以下載試用版使用的帳戶登入然後再試一次。	#
 store.popup.downloaded.unOwnedTemplate.title=要購買世界範本嗎？	#
 store.popup.downloaded.unOwnedTemplate.msg=您沒有此範本，必須購買才能解鎖。您是否要購買範本？	#
+store.popup.rtx.title=是否要下載光線追蹤套件？	#
+store.popup.rtx.msg=此世界已套用了啟用光線追蹤的資源包。您的裝置與進階照明和材質功能不相容，因此您看到世界將沒有任何進階效果。您要下載並加入嗎？	#
 store.purchase.success=你購買了：%s	#
 store.purchase.bundle=是否解鎖 %d 個套件 (共 %d 個)？	#
 store.purchase.bundle.confirm=立即解鎖！	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=熔爐	#
 tile.glass.name=玻璃	#
 tile.golden_rail.name=動力軌道	#
 tile.grass.name=青草方塊	#
-tile.grass_path.name=草徑	#
+tile.grass_path.name=泥巴路	#
 tile.gravel.name=礫石	#
 tile.hay_block.name=乾草捆	#
 tile.netherrack.name=地獄石	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=史提夫	#
 dr.default.steve.top=史提夫的上衣	#
 dr.emotes.slot=表情符號 %d	#
 
+gfxDriverOutdated.title=驅動程式過期了！	#
+gfxDriverOutdated.message=您的電腦圖形驅動程式有新的更新可用。在沒有更新的情況下，世界可能會有一些問題或錯誤。請安裝更新才能盡情享受 Minecraft。更多相關內容，請閱讀 http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.doNotShowAgain=不要再顯示此訊息。	#
+gfxDriverOutdated.close=關閉	#
+
 onlinePlay.notRated=線上遊玩未分級	#
 onlinePlay.message=在線上遊玩期間，你可能會接觸到聊天訊息或其他由使用者生成的內容，這些內容未經分級，可能不適合所有年齡層的玩家。	#
 onlinePlay.doNotShowAgain=不再顯示此畫面	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=暖淡黃色	#
 
 emotes.change_emotes=改變表情	#
 emotes.execute=表演	#
+emotes.header_text=表情	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification
@@ -8949,7 +8985,7 @@ dynamicPackage.download.android.state_paused_networkUnavailable=已暫停 – �
 dynamicPackage.download.android.state_paused_networkSetupFailure=已暫停 – 無可用網路	#
 dynamicPackage.download.android.state_paused_byRequest=已暫停	#
 dynamicPackage.download.android.state_paused_wifiUnavailable=已暫停 – 無 Wi-Fi 可用	#
-dynamicPackage.download.android.state_paused_wifiDisabled=已暫停 – 無可用 Wi-Fi	#
+dynamicPackage.download.android.state_paused_wifiDisabled=已暫停 – 無 Wi-Fi 可用	#
 dynamicPackage.download.android.state_paused_roaming=已暫停 – 檢查漫遊設定	#
 dynamicPackage.download.android.state_paused_sdcardUnavailable=已暫停 – 儲存空間不可用	#
 dynamicPackage.download.android.state_failed_unlicensed=已失敗 – 未授權應用程式	#

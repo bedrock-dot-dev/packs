@@ -8,12 +8,17 @@ accessibility.enableTTS=Teks untuk Ucapan diaktifkan	#
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Tekan %s untuk kembali	#
+accessibility.chat.tts.gamepad.exitChat=Tekan %s untuk keluar dari obrolan	#
+accessibility.chat.tts.gamepad.sendMessage=Tekan %s untuk mengirim pesan	#
 accessibility.chat.tts.says=%s berkata %s	#
 accessibility.chat.tts.hideChat=Sembunyikan obrolan	#
 accessibility.chat.tts.keyboard=Keyboard	#
 accessibility.chat.tts.muteChatToggle=Matikan Suara	#
 accessibility.chat.tts.sendChatMessage=Kirim	#
 accessibility.chat.tts.textboxTitle=Obrolan	#
+
+accessibility.game.playerView=Tampilan pemain	#
 
 accessibility.loading.done=Selesai	#
 accessibility.saving.done=Selesai	#
@@ -75,6 +80,7 @@ accessibility.play.tabRight=Tekan %s untuk berpindah tab ke kanan	#
 accessibility.play.legacyWorldsDelete=Hapus Dunia Lama	#
 
 accessibility.pause.permissions=Izin	#
+accessibility.pause.profile=Pilih Profil	#
 
 accessibility.start.buttonHelper=%s: %s		### Used for on-screen gamepad helpers (eg. "Y Button : Change User")
 
@@ -82,18 +88,22 @@ accessibility.screenName.achievements=Layar Prestasi	#
 accessibility.screenName.chat=Layar Obrolan	#
 accessibility.screenName.createNew=Layar Buat Baru	#
 accessibility.screenName.createWorld=Layar Pengaturan Buat Dunia	#
+accessibility.screenName.editCharacter=Layar Edit Karakter	#
 accessibility.screenName.editWorldSettings=Layar Pengaturan Edit Dunia	#
 accessibility.screenName.error=Layar Kesalahan	#
 accessibility.screenName.howToPlay=Layar Cara Main	#
+accessibility.screenName.inviteToGame=Layar Undang ke Permainan	#
 accessibility.screenName.modalDialog=Dialog pop-up	#
 accessibility.screenName.patchNotes=Layar Catatan Patch	#
-accessibility.screenName.pauase=Layar Jeda	#
+accessibility.screenName.pause=Layar Jeda	#
 accessibility.screenName.play=Layar Main	#
+accessibility.screenName.profile=Layar Profil	#
 accessibility.screenName.realmSettings=Layar Pengaturan Realm	#
 accessibility.screenName.settings=Layar Pengaturan Permainan	#
 accessibility.screenName.skinPicker=Layar Pilih Skin	#
 accessibility.screenName.start=Menu Utama	#
 accessibility.screenName.vrAlignment=Layar Penyelarasan VR 	#
+accessibility.screenName.emoteWheel=Layar Emosi	#
 
 accessibility.settings.reset=atur ulang	#
 accessibility.settings.chooseSeed=Pilih Benih	#
@@ -183,6 +193,13 @@ accessibility.gamepad.bumper.left=Bumper Kiri	#
 accessibility.keyboard.leftBracket=Tombol kurung siku kiri			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tombol kurung siku kanan		### right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s tombol %d	#
+accessibility.emotes.buttonName=Emosi	#
+accessibility.emotes.assigned=Emosi %s ditetapkan	#
+accessibility.emotes.unassigned=Belum ditetapkan	#
+accessibility.emotes.playSuccess=Mainkan emosi	#
+accessibility.emotes.playFailed=Tidak ada emosi yang ditetapkan ke tombol ini, tekan panah bawah untuk mengakses tombol Ubah Emosi	#
+accessibility.emotes.instruction.keyboard=Tekan kanan atau kiri untuk beralih pada tombol emosi. Tekan panah bawah untuk mengakses tombol Ubah Emosi.	#
 
 ## End of audible phrases section
 
@@ -401,8 +418,6 @@ authentication.store.confirmPurchase=Konfirmasi Pembelian	#
 authentication.store.intro=Uji coba Minecraft: Education Edition-mu sudah selesai. Untuk terus memainkan Minecraft: Education Edition, kamu perlu membeli lisensi.	#
 authentication.store.popup.purchaseFailed.title=Terjadi Kesalahan	#
 authentication.store.popup.purchaseFailed.msg=Maaf, kami tidak bisa menyelesaikan pembelian kamu. Coba periksa sambungan internet kamu?	#
-authentication.store.purchase.info1=Pembayaran akan ditagihkan ke akun iTunes pada saat konfirmasi pembelian dan langganan secara otomatis diperpanjang kecuali jika perpanjangan otomatis dinonaktifkan setidaknya 24 jam sebelum akhir periode saat ini. Akunmu akan dikenakan biaya untuk perpanjangan dalam waktu 24 jam sebelum akhir periode saat ini, dengan opsi harga langganan yang sebelumnya telah dipilih.	#
-authentication.store.purchase.info2=Kamu bisa mengelola langganan dan menonaktifkan perpanjangan otomatis dengan mengakses pengaturan Akun iTunes setelah pembelian. Jika kamu membatalkan setelah langganan diaktifkan, kamu tidak akan menerima pengembalian dana atas sisa periode langganan aktif. Akun iTunes-mu akan terhubung ke Akun O365 Education untuk langganan ini, sehingga kamu tidak memenuhi syarat untuk membeli lisensi Minecraft: Education Edition tambahan dengan akun iTunes ini.	#
 authentication.store.purchase.button=Beli lisensi (%s/tahun)	#
 authentication.store.terms=Syarat Penggunaan	#
 authentication.store.viewTermsAndConditions=Syarat dan Ketentuan	#
@@ -1219,6 +1234,7 @@ commands.time.stop=Waktu %1$s	#
 commands.title.description=Mengontrol judul layar.	#
 commands.title.success=Perintah judul berhasil dijalankan	#
 commands.titleraw.description=Mengendalikan judul layar dengan pesan JSON.	#
+commands.titleraw.success=Perintah titleraw berhasil dijalankan	#
 commands.toggledownfall.description=Mengalihkan cuaca.	#
 commands.tp.description=Menteleportasi entitas (pemain, mob, dll.).	#
 commands.tp.notSameDimension=Tidak bisa menteleportasi karena pemain tidak berada dalam dimensi yang sama	#
@@ -1254,15 +1270,15 @@ commands.weather.query.rain=hujan	#
 commands.weather.query.thunder=guntur	#
 commands.weather.rain=Mengubah ke cuaca hujan	#
 commands.weather.thunder=Mengubah ke hujan dan guntur	#
-commands.whitelist.add.failed=Tidak bisa menambahkan %1$s ke daftar yang diperbolehkan	#
-commands.whitelist.add.success=Menambahkan %1$s ke daftar yang diperbolehkan	#
-commands.whitelist.description=Mengelola daftar yang diperbolehkan server.	#
-commands.whitelist.disabled=Menonaktifkan daftar yang diperbolehkan	#
-commands.whitelist.enabled=Mengaktifkan daftar yang diperbolehkan	#
+commands.whitelist.add.failed=Tidak bisa menambahkan %1$s ke daftar putih	#
+commands.whitelist.add.success=Menambahkan %1$s ke daftar putih	#
+commands.whitelist.description=Mengelola daftar putih server.	#
+commands.whitelist.disabled=Menonaktifkan daftar putih	#
+commands.whitelist.enabled=Mengaktifkan daftar putih	#
 commands.whitelist.list=Ada %1$d (dari %2$d yang terlihat) pemain yang didaftarputihkan:	#
-commands.whitelist.reloaded=Daftar yang diperbolehkan dimuat ulang dari file.	#
-commands.whitelist.remove.failed=Tidak bisa menghapus %1$s dari daftar yang diperbolehkan	#
-commands.whitelist.remove.success=Menghapus %1$s dari daftar yang diperbolehkan	#
+commands.whitelist.reloaded=Daftar putih dimuat ulang dari file.	#
+commands.whitelist.remove.failed=Tidak bisa menghapus %1$s dari daftar putih	#
+commands.whitelist.remove.success=Menghapus %1$s dari daftar putih	#
 commands.world_age.description=Mengubah atau meminta info tentang umur dunia (waktu sejak pembuatan).	#
 commands.world_age.added=Menambahkan %1$d ke umur dunia	#
 commands.world_age.query=Umur dunia adalah %d	#
@@ -2035,7 +2051,7 @@ realmsSettingsScreen.dev_prev_page_label=Sebelumnya	#
 realmsSettingsScreen.dev_next_page_label=Berikutnya	#
 realmsSettingsScreen.uploadConfirmationMessage=Tindakan ini akan menghapus dunia saat ini dari Realm kamu dan menggantinya dengan yang baru. Anggota Realm kamu tidak akan memiliki akses ke duniamu saat ini lagi. Kamu ingin melanjutkan?	#
 realmsSettingsScreen.uploadConfirmationTitle=Ganti Dunia?	#
-realmsSettingsScreen.whitelist_invite=Undang	#
+realmsSettingsScreen.allowlist_invite=Undang	#
 realmsSettingsScreen.searchBox=Cari...	#
 realmsSettingsScreen.unknownPackName=Nama Tidak Diketahui	#
 realmsSettingsScreen.viewSubscriptionsButton=Lihat Langganan	#
@@ -2080,7 +2096,7 @@ xbl.transferEntitlements.error.error1=Nomor Kesalahan	#
 xbl.transferEntitlements.error.error2=Nomor ID	#
 
 playfab.account.banned.title=Dilarang	#
-playfab.account.banned.body=Aksesmu ke Minecraft online telah diblokir. Kamu tidak akan bisa bermain di server, bergabung dengan realm, menghosting atau bergabung dalam permainan multipemain, atau menggunakan marketplace. Jika telah membeli Realm, kamu perlu membatalkan langganan melalui toko tempat kamu membelinya.	#
+playfab.account.banned.body=Aksesmu ke Minecraft telah diblokir. Selama masa pemblokiran, kamu tidak akan bisa bermain di duniamu (platform tertentu), bermain di server, bergabung dengan Realms, menghosting atau bergabung dalam permainan multipemain, atau menggunakan Marketplace. Jika telah membeli Realm, kamu perlu membatalkan langganan melalui toko tempat kamu membelinya.	#
 playfab.account.banned.body.button=Info Lainnya	#
 
 store.sign_in_warning.no_xbl_and_local_content=Penting! Kamu telah membeli paket dan/atau Minecoins yang hanya tersedia pada perangkat ini dan bisa hilang akibat gangguan fungsi atau kehilangan perangkat atau penghapusan instalan Minecraft! Masuk dengan Akun Microsoft (gratis) dan transfer hak paket serta Minecoins-mu ke akun tersebut untuk melindungi dan mengaksesnya pada perangkat apa pun yang kamu gunakan untuk masuk.	#
@@ -2146,6 +2162,7 @@ dayOneExperience.world_picker_skip=Lewati untuk Sekarang	#
 death.attack.anvil=%1$s terhimpit oleh paron yang jatuh	#
 death.attack.arrow=%1$s ditembak oleh %2$s	#
 death.attack.arrow.item=%1$s ditembak oleh %2$s menggunakan %3$s	#
+death.attack.bullet=%1$s ditembak oleh %2$s	#
 death.attack.cactus=%1$s ditusuk hingga mati	#
 death.attack.cactus.player=%1$s menginjak kaktus saat mencoba melarikan diri dari %2$s	#
 death.attack.drown=%1$s tenggelam	#
@@ -2176,10 +2193,12 @@ death.attack.onFire.player=%1$s dibakar habis saat melawan %2$s	#
 death.attack.outOfWorld=%1$s jatuh dari dunia	#
 death.attack.player=%1$s dibunuh oleh %2$s	#
 death.attack.player.item=%1$s dibunuh oleh %2$s menggunakan %3$s	#
+death.attack.spit=%1$s terkena bola ludah oleh %2$s	#
 death.attack.starve=%1$s mati kelaparan	#
 death.attack.thorns=%1$s dibunuh karena mencoba melukai %2$s	#
 death.attack.thrown=%1$s dipukuli oleh %2$s	#
 death.attack.thrown.item=%1$s dipukuli oleh %2$s menggunakan %3$s	#
+death.attack.trident=%1$s tertusuk hingga mati oleh %2$s	#
 death.attack.wither=%1$s layu	#
 death.fell.accident.generic=%1$s jatuh dari ketinggian	#
 death.fell.accident.ladder=%1$s jatuh dari tangga	#
@@ -2318,6 +2337,7 @@ disconnectionScreen.incompatiblePack.memory=Kamu tidak bisa bergabung ke dunia k
 disconnectionScreen.incompatiblePack.graphics.raytracing=Kamu tidak bisa bergabung ke dunia karena perangkatmu tidak memiliki perangkat keras yang kompatibel untuk mendukung penelusuran jejak cahaya	#
 disconnectionScreen.worldCorruption.message=Coba buka dunia lagi atau pulihkan dari cadangan sebelumnya	#
 disconnectionScreen.worldCorruption=Sambungan terputus karena dunia rusak	#
+disconnectionScreen.hostSuspended=Terputus karena server tidak tersedia	#
 
 storageSpaceWarningScreen.frontend=Ruang penyimpanan datamu hampir habis! Minecraft telah membatasi akses ke fitur ini hingga kamu mengosongkan ruang penyimpanan tambahan.	#
 storageSpaceWarningScreen.lowduringgameplay=Ruang penyimpanan yang bisa digunakan Minecraft untuk menyimpan dunia dan pengaturan di perangkat ini hampir habis.  Ingin coba menghapus beberapa konten yang tidak kamu perlukan agar bisa menyimpan konten baru?	#
@@ -3645,9 +3665,11 @@ level.import.failed.incompatibleEdition=Impor level gagal: Format file tidak did
 invite.clear=Hapus Pilihan	#
 invite.send=Kirim %d Undangan	#
 invite.sendOne=Kirim 1 Undangan	#
+invite.sendUnnumbered=Kirim Undangan	#
 invite.title=Undang Teman ke Permainanmu	#
 invite.error.message=Beberapa undanganmu mungkin gagal dikirim.	#
 invite.noFriends=Kamu belum menambahkan siapa pun ke daftar temanmu!	#
+invite.noRealmFriends=Kamu belum menambahkan siapa pun ke Realm milikmu!	#
 invite.OnlineFriends=Teman Online	#
 invite.OfflineFriends=Teman Offline	#
 invite.SuggestedFriends=Teman yang Disarankan	#
@@ -5776,6 +5798,8 @@ options.uiprofile.pocket=Saku	#
 options.usetouchpad=Kontrol Terpisah	#
 options.viewSubscriptions=Langganan	#
 options.viewSubscriptions.button.info=Info	#
+options.viewSubscriptions.button.price=%s	#
+options.viewSubscriptions.button.pricePerMonth=%s/BULAN	#
 options.viewSubscriptions.button.manage=Kelola	#
 options.viewSubscriptions.renew=Diperbarui setiap 30 hari	#
 options.viewSubscriptions.daysRemaining=%d hari tersisa	#
@@ -5871,6 +5895,7 @@ options.managePrivacy=Untuk mengelola pengaturan privasi, kunjungi https://accou
 options.unlink_msa.button=Hapus Tautan Akun Microsoft	#
 options.unlink_msa.confirm.title=Hapus Tautan Akun Microsoft?	#
 options.unlink_msa.confirm.warning=PERINGATAN: Kamu tidak akan bisa menyimpan kemajuan atau pembelian yang dilakukan di Sistem "PlayStation 4" di akun %s setelah menghapus tautan.	#
+options.unlink_msa.confirm.warning.2=Membatalkan tautan Akun Microsoft kamu dari dalam permainan ini akan memengaruhi semua permainan Minecraft di platform ini yang telah menggunakan Akun Microsoft ini.	#
 options.unlink_msa.confirm.checkbox1=Saya tidak akan bisa mengakses segala konten Toko dalam permainan saat bermain di platform lain.	#
 options.unlink_msa.confirm.checkbox2=Saya tidak akan bisa memainkan permainan lintas-platform dengan teman di platform lain.	#
 options.unlink_msa.confirm.checkbox3=Saya tidak akan bisa mengakses Realms, termasuk langganan Realms yang saat ini aktif.	#
@@ -5931,7 +5956,7 @@ pauseScreen.xboxLiveDisconnect=Ups! Akun Microsoft kamu terputus. Untuk mengunda
 pauseScreen.joinCode.Label=KODE BERGABUNG	#
 pauseScreen.joinCode.Icon=ikon kode bergabung %3, %1 dari %2	# Example: Apple join code icon, 2 of 5	#
 
-permissionsScreen.kick=Keluarkan Pemain	#
+permissionsScreen.kick=Tendangan Pemain	#
 permissionsScreen.ban=Cekal Pemain	#
 
 feedbackScreen.button=Umpan Balik	#
@@ -6389,7 +6414,7 @@ storageManager.contentType.resourcePacks=Paket Sumber Daya	#
 storageManager.contentType.behaviorPacks=Paket Perilaku	#
 storageManager.contentType.skinPacks=Paket Skin	#
 
-storageManager.baseWorld=Dunia Dasar	#
+storageManager.baseWorld=Dunia Dasar 	#
 
 storageManager.mainSizeLabel=%s - 1 Item	#
 storageManager.mainSizeLabelPlural=%s - %s Item	#
@@ -6679,11 +6704,11 @@ skins.store.equipped=Kamu telah melengkapi skin %s.	#
 soundCategory.ambient=Ambien/Lingkungan	#
 soundCategory.block=Blok	#
 soundCategory.hostile=Makhluk Jahat	#
-soundCategory.master=Volume Utama	#
+soundCategory.master=Utama	#
 soundCategory.music=Musik	#
 soundCategory.neutral=Makhluk Baik Hati	#
 soundCategory.player=Pemain	#
-soundCategory.record=Jukebox/Blok Not	#
+soundCategory.record=Blok Jukebox/Blok Not	#
 soundCategory.weather=Cuaca	#
 
 stat.animalsBred=Binatang Dikembangbiakkan	#
@@ -6771,6 +6796,8 @@ store.realmsPlus.content=Konten	#
 store.realmsPlus.faq=Pertanyaan Umum	#
 store.realmsPlus.buyFor=BELI SEHARGA %s	#
 store.realmsPlus.buyNow=BELI SEKARANG	#
+store.realmsPlus.buyNowPerMonth=Beli seharga %s/BULAN	#
+store.realmsPlus.buyNowTrialPerMonth=START UJI COBA GRATIS (%s/BULAN SESUDAHNYA)	#
 store.realmsPlus.errorNoOffer=KESALAHAN - PENAWARAN TIDAK DITEMUKAN	#
 store.realmsPlus.manageSubscription=KELOLA LANGGANAN	#
 store.realmsPlus.viewAllPacksTitle=SUPER HEMAT - PAKET SENILAI LEBIH DARI §g$150 (USD)!§r	#
@@ -6788,8 +6815,8 @@ store.realmsPlus.noTrial.description=Realm kamu dan 100+ paket marketplace akan 
 store.realmsPlus.noTrial.description.iap=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
 store.realmsPlus.realmName.placeholder=Realm %s		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
 
-store.realmsPlus.recurring.offerTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Biaya langganan bulan pertama gratis dan kamu akan ditagih %s/bulan setelahnya, bisa dibatalkan kapan pun.	#
-store.realmsPlus.recurring.withoutTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Kamu akan ditagih %s/bulan dan bisa dibatalkan kapan pun.	#
+store.realmsPlus.recurring.offerTrial=Realms Plus adalah langganan berkelanjutan dengan biaya berlangganan berulang yang dibebankan secara otomatis setiap bulan sampai langganan dibatalkan. %sRealm Anda dan 100+ paket marketplace akan segera tersedia. Hingga 10 pemain dapat bermain pada satu waktu, dan mereka mendapatkan akses ke dunia di Realm Anda secara gratis! 30 hari pertama Anda akan gratis, dan Anda akan ditagih %s/ bulan setelahnya dan dapat membatalkan kapan saja.	#
+store.realmsPlus.recurring.withoutTrial=Realms Plus adalah langganan berkelanjutan dengan biaya langganan berulang yang dibebankan secara otomatis setiap bulan sampai langganan dibatalkan. %sRealm Anda dan 100+ paket marketplace akan segera tersedia. Hingga 10 pemain dapat bermain pada satu waktu, dan mereka mendapatkan akses ke dunia di Realm Anda secara gratis! Anda akan ditagih %s/bulan dan dapat membatalkan kapan saja.	#
 store.realmsPlus.consumable.offerTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu selama 30 hari pertama gratis dan kamu bisa memperpanjang selama 30 hari dengan harga %s setelahnya.	#
 store.realmsPlus.consumable.withoutTrial=Realm kamu dan 100+ paket marketplace akan langsung tersedia. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis! Langgananmu akan tersedia selama 30 hari dengan harga %s.	#
 
@@ -6802,7 +6829,8 @@ store.realmsPlus.landing.info1.line3=- Teman bisa main gratis di Realm milikmu	#
 store.realmsPlus.landing.info2.line1=- Penyimpanan cloud aman	#
 store.realmsPlus.landing.info2.line2=- Bermain di perangkat apa pun dengan Realms dan Marketplace Minecraft	#
 store.realmsPlus.landing.info2.line3=- Dukungan Komunitas Minecraft	#
-store.realmsPlus.landing.info2.line4=- Uji coba gratis 1 bulan	#
+store.realmsPlus.landing.info2.line4=- Uji coba gratis 30 hari, lalu %s per bulan	#
+store.realmsPlus.landing.info2.line5=- %s per bulan	#
 
 store.realmsPlus.faq.header=PERTANYAAN	#
 store.realmsPlus.faq.question1=Apa itu Realms Plus?	#
@@ -6845,7 +6873,7 @@ store.realmsPlus.content.viewAllPacks=LIHAT SEMUA PAKET	#
 store.realmsPlus.content.contentDescription=Lihatlah sumber konten Minecraft yang menakjubkan! Dengan Realms Plus, kamu mendapatkan akses instan ke 100+ item marketplace seperti perpaduan, dunia, paket skin, dan petualangan epik, dengan tambahan baru setiap bulannya. Kontenmu disimpan di server pribadimu sendiri dan bisa diakses di platform apa pun tempat kamu menggunakan Realms dan Marketplace Minecraft. Hingga 10 pemain bisa bermain sekaligus dan mereka bisa mengakses dunia di Realm kamu secara gratis!	#
 
 
-store.realmsPlus.freeTrial=MULAI UJI COBA GRATIS 1 BULAN	#
+store.realmsPlus.freeTrial=START UJI COBA GRATIS (%s/ BULAN SESUDAHNYA)	#
 
 store.inventory.button=Persediaan	#
 store.inventory.title=Persediaan	#
@@ -6929,6 +6957,8 @@ store.popup.trialUpgradeFail.title=Kesalahan Pembukaan Kunci Permainan	#
 store.popup.trialUpgradeFail.msg=Sepertinya kamu masuk ke Akun Microsoft yang berbeda dari yang digunakan untuk mengunduh Uji Coba Minecraft. Coba lagi setelah masuk dengan akun tersebut.	#
 store.popup.downloaded.unOwnedTemplate.title=Beli Template Dunia?	#
 store.popup.downloaded.unOwnedTemplate.msg=Kamu tidak punya template ini, dan harus membelinya agar dapat membuka kuncinya. Apakah kamu ingin membeli template?	#
+store.popup.rtx.title=Unduh Paket Penelusuran Jejak Cahaya?	#
+store.popup.rtx.msg=Dunia ini menerapkan Paket Sumber Daya yang mendukung penelusuran jejak cahaya. Perangkatmu tidak kompatibel dengan fitur pencahayaan dan tekstur canggih sehingga kamu akan melihat dunia tanpa efek canggih. Apakah kamu ingin mengunduh dan bergabung?	#
 store.purchase.success=Kamu baru saja membeli: %s	#
 store.purchase.bundle=Buka %d dari %d Paket?	#
 store.purchase.bundle.confirm=Buka sekarang!	#
@@ -7571,7 +7601,7 @@ tile.furnace.name=Tungku	#
 tile.glass.name=Kaca	#
 tile.golden_rail.name=Rel Berdaya	#
 tile.grass.name=Blok Rumput	#
-tile.grass_path.name=Jalur Rumput	#
+tile.grass_path.name=Jalur Tanah	#
 tile.gravel.name=Kerikil	#
 tile.hay_block.name=Gulungan Jerami	#
 tile.netherrack.name=Netherrack	#
@@ -8857,6 +8887,11 @@ dr.default.steve.skin=Steve	#
 dr.default.steve.top=Kemeja Steve	#
 dr.emotes.slot=Emosi %d	#
 
+gfxDriverOutdated.title=Driver usang!	#
+gfxDriverOutdated.message=Tersedia pembaruan terkini untuk driver grafis komputermu. Mungkin terdapat beberapa masalah atau bug pada dunia jika pembaruan tidak diinstal. Harap instal untuk menikmati Minecraft secara maksimal. Baca selengkapnya di http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.doNotShowAgain=Jangan tampilkan pesan ini lagi	#
+gfxDriverOutdated.close=Tutup	#
+
 onlinePlay.notRated=Permainan online tidak diperingkat	#
 onlinePlay.message=Saat bermain online, kamu mungkin menerima pesan obrolan atau konten buatan pengguna jenis lainnya yang belum diperingkat, dan mungkin tidak cocok untuk segala usia.	#
 onlinePlay.doNotShowAgain=Jangan tampilkan layar ini lagi	#
@@ -8936,6 +8971,7 @@ dr.color.warm_bisque=Cokelat Terang Hangat	#
 
 emotes.change_emotes=Ubah Emosi	#
 emotes.execute=Jalankan	#
+emotes.header_text=Emosi	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification
