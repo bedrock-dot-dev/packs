@@ -6249,7 +6249,7 @@
                   {
                     "results_close_centering_panel": {
                       "type": "panel",
-                      "size": [ 20, 24 ],
+                      "size": [ 20, 20 ],
                       "inherit_max_sibling_height": true,
                       "controls": [
                         {

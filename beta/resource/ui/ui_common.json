@@ -5018,6 +5018,8 @@
               "$mob_effect_screen_size": [ "90%", "90%" ], // Mob Effect Screen
               "$purchase_coin_screen_size": [ "90%", "17%x + 82px" ], //Coin Purchase Screen
               "$purchase_coin_screen_size_extended": [ "90%", "17%x + 117px" ], //Coin Purchase Screen, with FAQ
+              "$purchase_coin_screen_size_not_enough": [ "90%", "17%x + 97px" ], //Coin Purchase Screen, when not enough coins for current purchase
+              "$purchase_coin_screen_size_extended_not_enough": [ "90%", "17%x + 132px" ], //Coin Purchase Screen, when not enough coins for current purchase, with FAQ
               "$choose_realm_screen_size": [ "70%", "85%" ], //Choose Realm Screen
               "$custom_templates_screen_size": [ "70%", "85%" ], //Custom Templates Screen
               "$world_modal_screen_size": [ 290, 100 ], // world convert and world loading modal progress screens
@@ -5062,6 +5064,8 @@
               "$mob_effect_screen_size": [ "90%", "90%" ], // Mob Effect Screen
               "$purchase_coin_screen_size": [ "90%", "17%x + 82px" ], //Coin Purchase Screen
               "$purchase_coin_screen_size_extended": [ "90%", "17%x + 117px" ], //Coin Purchase Screen, with FAQ
+              "$purchase_coin_screen_size_not_enough": [ "90%", "17%x + 97px" ], //Coin Purchase Screen, when not enough coins for current purchase
+              "$purchase_coin_screen_size_extended_not_enough": [ "90%", "17%x + 132px" ], //Coin Purchase Screen, when not enough coins for current purchase, with FAQ
               "$choose_realm_screen_size": [ "70%", "85%" ], //Choose Realm Screen
               "$custom_templates_screen_size": [ "70%", "85%" ], //Custom Templates Screen
               "$world_modal_screen_size": [ 290, 100 ], // world convert and world loading modal progress screens

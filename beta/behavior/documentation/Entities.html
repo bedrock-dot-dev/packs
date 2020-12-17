@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.210.51</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.210.53</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -827,7 +827,11 @@ Example Spawn Rules for the zombie<br / ><textarea readonly="true" cols="72" row
 
 Filters allow data objects to specify test criteria which allows their use.</br></br>For example, a model that includes a filter will only be used when the filter criteria is true.</br></br></br></br>A typical filter consists of four parameters:</br></br> name: the name of the test to apply.</br></br> domain: the domain the test should be performed in. An armor slot, for example. This parameter is only used by a few tests.</br></br> operator: the comparison to apply with the value, such as 'equal' or 'greater'.</br></br> value: the value being compared with the test.</br></br></br></br>A typical filter looks like the following:</br></br> { "test" : "moon_intensity", "subject" : "self", "operator" : "greater", "value" : "0.5" } </br></br>Which results in the calling entity (self) calculating the moon_intensity at its location and returning true if the result is greater than 0.5.</br></br></br></br>Tests can be combined into groups using the collections 'all_of', 'any_of', or 'none_of'.</br></br> All tests in an 'all_of' group must pass in order for the group to pass.</br></br> One or more tests in an 'any_of' group must pass in order for the group to pass.</br></br> All tests in a 'none_of' group must fail in order for the group to pass.</br></br><h1><p id="clock_time">clock_time</p></h1>
 
-Compares the current time with a float value in the range (0.0, 1.0).0.0= Noon0.25= Sunset0.5= Midnight0.75= Sunrise</br><h2></h2>
+Compares the current time with a float value in the range (0.0, 1.0).
+0.0= Noon
+0.25= Sunset
+0.5= Midnight
+0.75= Sunrise</br><h2></h2>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
@@ -13803,12 +13807,6 @@ Allows this entity to generate paths that include vertical walls like the vanill
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -13819,6 +13817,12 @@ Allows this entity to generate paths that include vertical walls like the vanill
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid water when creating a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blocks_to_avoid</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder which blocks to avoid when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">can_break_doors</td>
@@ -13890,12 +13894,6 @@ Allows this entity to generate paths by flying around the air like the regular G
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -13906,6 +13904,12 @@ Allows this entity to generate paths by flying around the air like the regular G
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid water when creating a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blocks_to_avoid</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder which blocks to avoid when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">can_break_doors</td>
@@ -13977,12 +13981,6 @@ Allows this entity to generate paths in the air like the vanilla Parrots do.</br
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -13993,6 +13991,12 @@ Allows this entity to generate paths in the air like the vanilla Parrots do.</br
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid water when creating a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blocks_to_avoid</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder which blocks to avoid when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">can_break_doors</td>
@@ -14064,12 +14068,6 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -14080,6 +14078,12 @@ Allows this entity to generate paths by walking, swimming, flying and/or climbin
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid water when creating a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blocks_to_avoid</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder which blocks to avoid when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">can_break_doors</td>
@@ -14151,12 +14155,6 @@ Allows this entity to generate paths in the air like the vanilla Bees do. Keeps 
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -14167,6 +14165,12 @@ Allows this entity to generate paths in the air like the vanilla Bees do. Keeps 
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid water when creating a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blocks_to_avoid</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder which blocks to avoid when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">can_break_doors</td>
@@ -14238,12 +14242,6 @@ Allows this entity to generate paths that include water.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -14254,6 +14252,12 @@ Allows this entity to generate paths that include water.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid water when creating a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blocks_to_avoid</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder which blocks to avoid when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">can_break_doors</td>
@@ -14325,12 +14329,6 @@ Allows this entity to generate paths by walking around and jumping up and down a
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid portals (like nether portals) when finding a path</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">avoid_powder_snow</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid powder snow blocks when creating a path</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">avoid_sun</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -14341,6 +14339,12 @@ Allows this entity to generate paths by walking around and jumping up and down a
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder to avoid water when creating a path</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">blocks_to_avoid</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the pathfinder which blocks to avoid when creating a path</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">can_break_doors</td>

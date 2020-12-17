@@ -2540,7 +2540,7 @@
     "$section_bg_alpha": 0.5,
     "$grid_size": [ "100%", "100%" ],
     "$skins_grid_size": [ "100% - 40px", "100% - 2px" ],
-    "$skins_grid_item_size": [ "20%", "100%" ],
+    "$skins_grid_item_size": [ "19.9%", "100%" ],
     "$skin_model_size": [ "100%", "100%" ],
     "$skin_model_offset": [ 0, -15 ],
     "$skin_model_anchor_from": "top_middle",
