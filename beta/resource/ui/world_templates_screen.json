@@ -789,59 +789,17 @@
   // SCREEN CONTENT
   //---------------------------------------------------------------------------
 
-  "world_template_screen_content_stack_panel": {
+  "world_list_grids_stack": {
     "type": "stack_panel",
     "orientation": "vertical",
     "size": [ "100%", "100%c" ],
+    "bindings": [
+      {
+        "binding_name": "#are_world_list_grids_ready",
+        "binding_name_override": "#visible"
+      }
+    ],
     "controls": [
-      {
-        "padding_0": {
-          "type": "panel",
-          "size": [ "100%", 2 ]
-        }
-      },
-      {
-        "crossplatform_disabled_panel@world_templates.label_background": {
-          "size": [ "100%", "100%c + 8px" ],
-          "bindings": [
-            {
-              "binding_name": "(not #generate_random_button_enabled)",
-              "binding_name_override": "#visible"
-            }
-          ],
-          "controls": [
-            {
-              "disable_text": {
-                "type": "label",
-                "color": "$dark_button_default_text_color",
-                "size": [ "100% - 8px", "default" ],
-                "layer": 1,
-                "shadow": false,
-                "text": "crossPlatformToggle.crossPlatformDisabled.realms"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "crossplatform_disable_spacer": {
-          "type": "panel",
-          "size": [ "100%", 5 ],
-          "bindings": [
-            {
-              "binding_name": "(not #generate_random_button_enabled)",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      { "generate_random_panel@world_templates.generate_random_button": {} },
-      {
-        "generate_random_button_bottom_padding": {
-          "type": "panel",
-          "size": [ "100%", 2 ]
-        }
-      },
       {
         "template_list_panel": {
           "type": "stack_panel",
@@ -1080,6 +1038,81 @@
           ]
         }
       }
+    ]
+  },
+
+  "world_list_grid_content": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "world_list_grids_stack@world_templates.world_list_grids_stack": {}
+      },
+      {
+        "loading_panel@common_store.progress_loading": {
+          "size": [ "100%", 200],
+          "$source_control_name": "world_list_grids_stack",
+          "$source_property_name": "(not #visible)",
+          "$use_sibling_scope": true
+        }
+      }
+    ]
+  },
+
+  "world_template_screen_content_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "padding_0": {
+          "type": "panel",
+          "size": [ "100%", 2 ]
+        }
+      },
+      {
+        "crossplatform_disabled_panel@world_templates.label_background": {
+          "size": [ "100%", "100%c + 8px" ],
+          "bindings": [
+            {
+              "binding_name": "(not #generate_random_button_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "disable_text": {
+                "type": "label",
+                "color": "$dark_button_default_text_color",
+                "size": [ "100% - 8px", "default" ],
+                "layer": 1,
+                "shadow": false,
+                "text": "crossPlatformToggle.crossPlatformDisabled.realms"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "crossplatform_disable_spacer": {
+          "type": "panel",
+          "size": [ "100%", 5 ],
+          "bindings": [
+            {
+              "binding_name": "(not #generate_random_button_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      { "generate_random_panel@world_templates.generate_random_button": {} },
+      {
+        "generate_random_button_bottom_padding": {
+          "type": "panel",
+          "size": [ "100%", 2 ]
+        }
+      },
+      { "world_list_grid_content@world_templates.world_list_grid_content": {} }
     ]
   },
 
