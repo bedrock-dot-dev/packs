@@ -310,7 +310,7 @@
           "texture": "textures/ui/Banners",
           "controls": [
             {
-              "loading_anim@pdp.progress_loading_anim": {}
+              "loading_anim@pdp.progress_loading_anim": {} //Looks like this is just super imposed on top
             }
           ]
         }

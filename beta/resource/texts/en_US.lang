@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Left Bumper
 accessibility.keyboard.leftBracket=Left square bracket key		## left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Right square bracket key	## right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s button %d, %d of %d
-accessibility.emotes.buttonName=Emote
+accessibility.emotes.hovered=%s, emote button %d, %d of %d
 accessibility.emotes.assigned=The %s emote assigned
 accessibility.emotes.unassigned=Unassigned
 accessibility.emotes.playSuccess=Play emote
-accessibility.emotes.playFailed=No emote assigned to this button, press down arrow to access the Change Emotes button
+accessibility.emotes.playFailed=No emote assigned to this button, press %s the Change Emotes button
+accessibility.emotes.changeEmotesInstruction.button=the %s to access
+accessibility.emotes.keyboard.arrow=arrow
+
 accessibility.emotes.instruction.keyboard=Press right or left to cycle through emote buttons. Press the down arrow to access the Change Emotes button.
 
 ## End of audible phrases section
@@ -1424,7 +1426,7 @@ controllerLayoutScreen.save=Save
 controllerLayoutScreen.saveAndExit=Save & Exit
 controllerLayoutScreen.trigger=Trigger
 controllerLayoutScreen.unassigned=Unassigned
-controllerLayoutScreen.toggleLivingroom=Toggle Perspective
+controllerLayoutScreen.toggleLivingroom=Toggle Immersion
 controls.reset=Reset
 controls.resetAll=Reset Keys
 controls.title=Controls
@@ -5034,7 +5036,7 @@ key.moveForward=Move Forward
 key.moveLeft=Move Left
 key.moveRight=Move Right
 key.pause=Pause
-key.toggleLivingroom=Toggle Perspective
+key.toggleLivingroom=Toggle Immersion
 
 keyboard.keyName.backspace=BACK
 keyboard.keyName.tab=TAB
@@ -5205,11 +5207,11 @@ library.item.teams.msgTxt=Check out this world, %1, in Minecraft: Education Edit
 licensed_content.goBack=Go Back
 licensed_content.viewLicensedContent=To view licensed content, please visit https://minecraft.net/licensed-content/ in any web browser.
 
-livingroom.hint.tap_touchpad_for_immersive=Tap the touchpad to toggle Perspective
-livingroom.hint.tap_view_for_immersive=Press the F5 key to toggle Perspective
-livingroom.hint.tap_view_for_immersive_gamepad=Press D-Pad Up to toggle Perspective
-livingroom.hint.tap_view_for_immersive_oculustouch=Press Y to toggle Perspective
-livingroom.hint.tap_view_for_immersive_windowsmr=Press Left Thumbstick to toggle Perspective
+livingroom.hint.tap_touchpad_for_immersive=Tap the touchpad to toggle Immersion
+livingroom.hint.tap_view_for_immersive=Press the F5 key to toggle Immersion
+livingroom.hint.tap_view_for_immersive_gamepad=Press D-Pad Up to toggle Immersion
+livingroom.hint.tap_view_for_immersive_oculustouch=Press Y to toggle Immersion
+livingroom.hint.tap_view_for_immersive_windowsmr=Press Left Thumbstick to toggle Immersion
 
 map.toolTip.displayMarkers=Display Markers
 map.toolTip.scaling=Scaling at 1:%s
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Your accounts have been unlinked.
 options.unlink_msa.failure.title=Something Went Wrong
 options.unlink_msa.failure.body=Your accounts were not able to be unlinked. Maybe check your internet connection?
 
+patchNotes.loading=Loading Patch Notes
 patchNotes.continue=Continue
 patchNotes.unlock=Unlock
 patchNotes.error.noInternet.title=Disconnected from the Internet
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steve's Shirt
 dr.emotes.slot=Emote %d
 
 gfxDriverOutdated.title=Drivers outdated!
-gfxDriverOutdated.message=Your computer's graphics drivers have a new update available. Worlds may have some issues or bugs without the update. Please install it to enjoy Minecraft at its fullest. Read more on http://aka.ms/ray-tracing-FAQ
+gfxDriverOutdated.message=Your computer's graphics drivers have a new update available. Worlds may have some issues or bugs without the update. Please install it to enjoy Minecraft at its fullest. Read more on http://aka.ms/mcupdatedrivers
 gfxDriverOutdated.doNotShowAgain=Don't show this message again
 gfxDriverOutdated.close=Close
 
