@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Lewy bumper	#
 accessibility.keyboard.leftBracket=Klawisz: otwierający nawias kwadratowy			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Klawisz: zamykający nawias kwadratowy		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s przycisk %d, %d z %d	#
-accessibility.emotes.buttonName=Emotka	#
+accessibility.emotes.hovered=%s, przycisk emotki %d, %d z %d	#
 accessibility.emotes.assigned=Przypisano emotkę: %s	#
 accessibility.emotes.unassigned=Nieprzypisana	#
 accessibility.emotes.playSuccess=Odtwórz emotkę	#
-accessibility.emotes.playFailed=Brak emotki przypisanej do tego przycisku, naciśnij strzałkę w dół, aby uzyskać dostęp do przycisku Zmień emotikony	#
+accessibility.emotes.playFailed=Brak emotki przypisanej do tego przycisku, naciśnij %s, aby uzyskać dostęp do przycisku Zmień emotikony	#
+accessibility.emotes.changeEmotesInstruction.button=%s do dostępu do	#
+accessibility.emotes.keyboard.arrow=strzała	#
+
 accessibility.emotes.instruction.keyboard=Naciśnij w prawo lub w lewo, aby przełączać się między przyciskami emotek. Naciśnij strzałkę w dół, aby uzyskać dostęp do przycisku Zmień emotikony.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Twoje konta zostały odłączone.	#
 options.unlink_msa.failure.title=Coś poszło nie tak	#
 options.unlink_msa.failure.body=Nie udało się odłączyć twoich kont. Może warto sprawdzić połączenie z Internetem?	#
 
+patchNotes.loading=Ładowanie informacji o poprawkach	#
 patchNotes.continue=Kontynuuj	#
 patchNotes.unlock=Odblokuj	#
 patchNotes.error.noInternet.title=Brak połączenia z Internetem	#
@@ -8652,7 +8655,7 @@ tips.game.58=Użyj nożyc na pszczelim gnieździe lub ulu, aby uzyskać plaster 
 tips.game.59=Rozpal ognisko pod pszczelim gniazdem lub ulem, aby móc spokojnie zbierać miód. Twoje pszczoły będą ci wdzięczne.	#
 tips.game.60=Odrodzenie w Netherze wymaga naładowanej kotwicy odrodzenia.	#
 tips.game.61=Kotwicę odrodzenia można naładować przy użyciu jasnogłazu.	#
-tips.game.62=Hogliny można rozmnażać za pomocą karmazynowych grzybów, ale jest to niebezpieczne!	#
+tips.game.62=Grasz w systemie iOS, Android lub FireOS? Pobierz z rynku bezpłatny pakiet muzyczny Minecraft Original Music Pack, aby uzyskać pełnię wrażeń w grze Minecraft.	#
 
 splitscreen.joinPrompt=Dołącz jako gracz %s	#
 splitscreen.unavailable.toastHeader=Ekran dzielony jest niedostępny	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Koszula Steve'a	#
 dr.emotes.slot=Wyraź emocję %d	#
 
 gfxDriverOutdated.title=Nieaktualne sterowniki!	#
-gfxDriverOutdated.message=Dostępna jest aktualizacja sterowników karty graficznej twojego komputera. Bez jej przeprowadzenia w światach mogą występować problemy lub błędy. Zainstaluj ją, aby móc w pełni cieszyć się grą Minecraft. Więcej informacji znajdziesz pod adresem http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Dostępna jest aktualizacja sterowników karty graficznej twojego komputera. Bez jej przeprowadzenia w światach mogą występować problemy lub błędy. Zainstaluj ją, aby móc w pełni cieszyć się grą Minecraft. Więcej informacji znajdziesz pod adresem http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Nie pokazuj więcej tego komunikatu	#
 gfxDriverOutdated.close=Zamknij	#
 

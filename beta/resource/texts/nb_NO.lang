@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Venstre skulderknapp / LB	#
 accessibility.keyboard.leftBracket=Tast for venstre hakeparentes			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tast for høyre hakeparentes		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s-knappen %d, %d av %d	#
-accessibility.emotes.buttonName=Følelse	#
+accessibility.emotes.hovered=%s, følelsesknapp %d, %d av %d	#
 accessibility.emotes.assigned=Følelsen %s er tilordnet	#
 accessibility.emotes.unassigned=Ikke tilordnet	#
 accessibility.emotes.playSuccess=Spillfølelse	#
-accessibility.emotes.playFailed=Ingen følelse er tilordnet denne knappen. Trykk på pil ned for å få tilgang til Endre følelser-knappen	#
+accessibility.emotes.playFailed=Ingen følelse er tilordnet denne knappen. Trykk på %s knappen Endre følelser.	#
+accessibility.emotes.changeEmotesInstruction.button=%s for å få tilgang til	#
+accessibility.emotes.keyboard.arrow=pil	#
+
 accessibility.emotes.instruction.keyboard=Trykk på høyre eller venstre for å bla gjennom knappene for følelser. Trykk på pil ned for å få tilgang til Endre følelser-knappen.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Kontoene dine har blitt frakoblet.	#
 options.unlink_msa.failure.title=Noe gikk galt	#
 options.unlink_msa.failure.body=Kontoene dine kunne ikke frakobles. Kan du sjekke Internett-tilkoblingen?	#
 
+patchNotes.loading=Laster inn oppdateringsmerknader	#
 patchNotes.continue=Fortsett	#
 patchNotes.unlock=Lås opp	#
 patchNotes.error.noInternet.title=Frakoblet Internett	#
@@ -8652,7 +8655,7 @@ tips.game.58=Klipp en bikube eller et reir for å få en bikake, bruk en flaske 
 tips.game.59=Plasser et leirbål under en bikube eller et bol for å høste honning i ro og mak. Biene dine vil takke deg.	#
 tips.game.60=Regenerering i underverdenen krever et ladet regenereringsanker.	#
 tips.game.61=Du kan lade et regenereringsanker med glødestein.	#
-tips.game.62=Du kan ale opp hogliner med høyrød sopp, men det er farlig!	#
+tips.game.62=Spiller du på iOS, Android eller FireOS? Skaff deg den gratis pakken med originalmusikk fra Minecraft på Markedsplass for å få den komplette Minecraft-opplevelsen.	#
 
 splitscreen.joinPrompt=Bli med som spiller %s	#
 splitscreen.unavailable.toastHeader=Delt skjerm er ikke tilgjengelig	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steves skjorte	#
 dr.emotes.slot=Uttrykk %d	#
 
 gfxDriverOutdated.title=Drivere er utdaterte!	#
-gfxDriverOutdated.message=En ny oppdatering er tilgjengelig for datamaskinens grafikkdrivere. Uten oppdateringen kan det oppstå problemer eller feil i verdener. Installer den for å nyte Minecraft på sitt beste. Les mer på http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=En ny oppdatering er tilgjengelig for datamaskinens grafikkdrivere. Uten oppdateringen kan det oppstå problemer eller feil i verdener. Installer den for å nyte Minecraft på sitt beste. Les mer på http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Ikke vis denne meldingen igjen	#
 gfxDriverOutdated.close=Lukk	#
 

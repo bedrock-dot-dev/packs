@@ -97,7 +97,6 @@
     "ui/pack_settings_screen.json",
     "ui/panorama_screen.json",
     "ui/patch_notes_screen.json",
-    "ui/gfx_driver_outdated_screen.json",
     "ui/pause_screen.json",
     "ui/pdp_screen.json",
     "ui/pdp_screenshots_section.json",

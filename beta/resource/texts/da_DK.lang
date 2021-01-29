@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Venstre kantknap (LB)	#
 accessibility.keyboard.leftBracket=Kantet venstreparentes			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Kantet højreparentes		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s knap %d, %d af %d	#
-accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.hovered=%s, emoteknap %d, %d af %d	#
 accessibility.emotes.assigned=Den tildelte %s emote	#
 accessibility.emotes.unassigned=Ikke tildelt	#
 accessibility.emotes.playSuccess=Afspil emote	#
-accessibility.emotes.playFailed=Knappen har ikke fået tildelt en emote. Tryk på pil ned for at få adgang til Skift emotes-knappen	#
+accessibility.emotes.playFailed=Knappen har ikke fået tildelt en emote. Tryk på %s Skift emotes-knappen	#
+accessibility.emotes.changeEmotesInstruction.button=%s for at få adgang til	#
+accessibility.emotes.keyboard.arrow=pil	#
+
 accessibility.emotes.instruction.keyboard=Tryk til højre eller venstre for at bladre gennem emote-knapperne. Tryk på pil ned for at få adgang til Skift emotes-knappen.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Dine konti er ikke længere knyttet til hinanden
 options.unlink_msa.failure.title=Der gik noget galt	#
 options.unlink_msa.failure.body=Tilknytningsforholdet mellem dine konti kunne ikke fjernes. Måske du skulle tjekke din internetforbindelse?	#
 
+patchNotes.loading=Indlæser rettelsesnoter	#
 patchNotes.continue=Fortsæt	#
 patchNotes.unlock=Lås op	#
 patchNotes.error.noInternet.title=Internetforbindelsen er afbrudt	#
@@ -8652,7 +8655,7 @@ tips.game.58=Du kan klippe bikager ud af bistader og bikuber eller hælde honnin
 tips.game.59=Placer et lejrbål under bistadet eller bikuben for at berolige bierne, når du høster honning.	#
 tips.game.60=Respawning i Nether kræver et opladet respawn-anker.	#
 tips.game.61=Du kan oplade et respawn-anker med glødesten.	#
-tips.game.62=Du kan avle hoglins med blodrøde svampe, men det er farligt!	#
+tips.game.62=Spiller du i iOS, Android eller FireOS? Hent den originale Minecraft-musik gratis på markedspladsen for at få den fulde Minecraft-oplevelse.	#
 
 splitscreen.joinPrompt=Deltag som spiller %s	#
 splitscreen.unavailable.toastHeader=Delt skærm kan ikke anvendes	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steves trøje	#
 dr.emotes.slot=Emote %d	#
 
 gfxDriverOutdated.title=Forældede drivere!	#
-gfxDriverOutdated.message=Der er en opdatering til din computers grafikdrivere. Uden opdateringen kan der opstå problemer og fejl i verdener. Installer opdateringen, så du kan få det fulde udbytte af Minecraft. Læs mere på http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Der er en opdatering til din computers grafikdrivere. Uden opdateringen kan der opstå problemer og fejl i verdener. Installer opdateringen, så du kan få det fulde udbytte af Minecraft. Læs mere på http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Vis ikke igen	#
 gfxDriverOutdated.close=Luk	#
 

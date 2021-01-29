@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=左杆	#
 accessibility.keyboard.leftBracket=左方框键			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右方框键		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s，%s 按钮 %d，%d 的 %d	#
-accessibility.emotes.buttonName=表情	#
+accessibility.emotes.hovered=%s，表情按钮 %d，%d 的 %d	#
 accessibility.emotes.assigned=已指派 %s 表情	#
 accessibility.emotes.unassigned=未指派	#
 accessibility.emotes.playSuccess=播放表情	#
-accessibility.emotes.playFailed=此按钮没有指派的表情，按下箭头以访问更改表情按钮	#
+accessibility.emotes.playFailed=此按钮没有指派的表情，按 %s 以访问更改表情按钮	#
+accessibility.emotes.changeEmotesInstruction.button=%s 以访问	#
+accessibility.emotes.keyboard.arrow=箭	#
+
 accessibility.emotes.instruction.keyboard=按右或左键在表情按钮之间切换。按下箭头以访问更改表情按钮。	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=您的账户已取消链接。	#
 options.unlink_msa.failure.title=出错了	#
 options.unlink_msa.failure.body=您的账户无法取消链接。是否查看一下您的互联网连接？	#
 
+patchNotes.loading=正在加载补丁说明	#
 patchNotes.continue=继续	#
 patchNotes.unlock=解锁	#
 patchNotes.error.noInternet.title=已从互联网断开连接	#
@@ -8652,7 +8655,7 @@ tips.game.58=修剪蜂箱或蜂巢以获得蜜脾，并使用瓶子获取蜂蜜	
 tips.game.59=将营火放置在蜂箱或蜂巢下，以和平的方式收获蜂蜜。蜜蜂们会感谢你的。	#
 tips.game.60=在下界重生需要充能的重生锚	#
 tips.game.61=你可以使用荧石为重生锚充能	#
-tips.game.62=你可以使用绯红真菌饲养疣猪兽，但绯红真菌很危险！	#
+tips.game.62=在 iOS、Android 或 FireOS 上游玩？快去市场获取免费的《我的世界》原创音乐包，享受完整的《我的世界》体验吧。	#
 
 splitscreen.joinPrompt=以玩家 %s 身份加入	#
 splitscreen.unavailable.toastHeader=拆分屏幕不可用	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=史蒂夫的衬衫	#
 dr.emotes.slot=表情 %d	#
 
 gfxDriverOutdated.title=驱动已过时！	#
-gfxDriverOutdated.message=您的电脑图形驱动程序有新的更新可用。在未更新的情况下，世界可能出现一些问题或错误。请安装更新，以充分享受《我的世界》。更多内容请参考 http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=您的电脑图形驱动程序有新的更新可用。在未更新的情况下，世界可能出现一些问题或错误。请安装更新，以充分享受《我的世界》。更多内容请参考 http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=不再显示此消息	#
 gfxDriverOutdated.close=关闭	#
 

@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Vasen olkapainike	#
 accessibility.keyboard.leftBracket=Vasen hakasulkupainike			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Oikea hakasulkupainike		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s-painike %d, %d/%d	#
-accessibility.emotes.buttonName=Näytä ele	#
+accessibility.emotes.hovered=%s, %d-elepainike, %d/%d	#
 accessibility.emotes.assigned=Ele %s valittuna	#
 accessibility.emotes.unassigned=Ei valittu	#
 accessibility.emotes.playSuccess=Toista ele	#
-accessibility.emotes.playFailed=Tälle näppäimelle ei ole määritetty elettä, käytä Vaihda eleitä -painiketta alanuolen avulla	#
+accessibility.emotes.playFailed=Tälle näppäimelle ei ole määritetty elettä, käytä Vaihda eleitä -painiketta %s	#
+accessibility.emotes.changeEmotesInstruction.button=%s saadaksesi pääsyn	#
+accessibility.emotes.keyboard.arrow=nuoli	#
+
 accessibility.emotes.instruction.keyboard=Selaa elepainikkeita vasemmalla tai oikealla nuolella. Käytä Vaihda eleitä -painiketta alanuolen avulla.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Tiliesi linkitys on peruttu.	#
 options.unlink_msa.failure.title=Jokin meni pieleen	#
 options.unlink_msa.failure.body=Tiliesi linkityksiä ei voitu perua. Onkohan Internet-yhteytesi kunnossa?	#
 
+patchNotes.loading=Ladataan korjaustiedoston tietoja	#
 patchNotes.continue=Jatka	#
 patchNotes.unlock=Avaa	#
 patchNotes.error.noInternet.title=Internet-yhteys katkennut	#
@@ -8652,7 +8655,7 @@ tips.game.58=Keritsemällä mehiläispesän saat hunajakennon, pulloa käyttäm�
 tips.game.59=Voit kerätä hunajaa rauhassa, jos asetat nuotion mehiläispesän alle. Mehiläisesi ovat silloin sinulle kiitollisia.	#
 tips.game.60=Maailmaanpaluu Hornassa vaatii ladatun paluukohta-ankkurin.	#
 tips.game.61=Voit ladata paluukohta-ankkurin loistekivellä.	#
-tips.game.62=Voit saada hoglinit lisääntymään purppuranpunaisten sienten avulla, mutta se on vaarallista!	#
+tips.game.62=Pelaatko iOS:llä, Androidilla tai FireOS:llä? Hanki Kaupasta ilmainen Minecraft Original Music Pack -paketti saadaksesi täyden Minecraft-kokemuksen.	#
 
 splitscreen.joinPrompt=Liity pelaajana %s	#
 splitscreen.unavailable.toastHeader=Jaettu ruutu ei ole käytettävissä	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steven paita	#
 dr.emotes.slot=Käytä elettä %d	#
 
 gfxDriverOutdated.title=Ajurit vanhentuneita!	#
-gfxDriverOutdated.message=Tietokoneesi näyttöajureihin on saatavilla uusi päivitys. Maailmoissa voi olla ongelmia tai virheitä ilman päivitystä. Asenna se, jotta voit nauttia Minecraftista täysin. Lue lisää osoitteesta http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Tietokoneesi näyttöajureihin on saatavilla uusi päivitys. Maailmoissa voi olla ongelmia tai virheitä ilman päivitystä. Asenna se, jotta voit nauttia Minecraftista täysin. Lue lisää osoitteesta http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Älä näytä tätä viestiä enää	#
 gfxDriverOutdated.close=Sulje	#
 

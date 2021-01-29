@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Bumper Kiri	#
 accessibility.keyboard.leftBracket=Tombol kurung siku kiri			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tombol kurung siku kanan		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s tombol %d, %d dari %d	#
-accessibility.emotes.buttonName=Emosi	#
+accessibility.emotes.hovered=%s, tombol emosi %d, %d dari %d	#
 accessibility.emotes.assigned=Emosi %s ditetapkan	#
 accessibility.emotes.unassigned=Belum ditetapkan	#
 accessibility.emotes.playSuccess=Mainkan emosi	#
-accessibility.emotes.playFailed=Tidak ada emosi yang ditetapkan ke tombol ini, tekan panah bawah untuk mengakses tombol Ubah Emosi	#
+accessibility.emotes.playFailed=Tidak ada emosi yang ditetapkan ke tombol ini, tekan %s tombol Ubah Emosi	#
+accessibility.emotes.changeEmotesInstruction.button=%s untuk mengakses	#
+accessibility.emotes.keyboard.arrow=panah	#
+
 accessibility.emotes.instruction.keyboard=Tekan kanan atau kiri untuk beralih pada tombol emosi. Tekan panah bawah untuk mengakses tombol Ubah Emosi.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Tautan akunmu telah dihapus.	#
 options.unlink_msa.failure.title=Terjadi Kesalahan	#
 options.unlink_msa.failure.body=Tautan akunmu tidak bisa dihapus. Mungkin periksa sambungan internetmu?	#
 
+patchNotes.loading=Memuat Catatan Patch	#
 patchNotes.continue=Lanjutkan	#
 patchNotes.unlock=Buka	#
 patchNotes.error.noInternet.title=Terputus dari Internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Gunting Rumah Lebah atau sarang lebah untuk mendapatkan Sarang Madu
 tips.game.59=Tempatkan Api Unggun di bawah Rumah Lebah atau sarang lebah untuk memanen madu dengan tenang. Lebahmu akan berterima kasih.	#
 tips.game.60=Kemunculan berulang di Nether memerlukan Jangkar bermuatan yang Muncul Kembali.	#
 tips.game.61=Kamu bisa mengisi Jangkar yang Muncul Kembali dengan Batu Bersinar.	#
-tips.game.62=Kamu bisa mengembangbiakkan Hoglin dengan Jamur Crimson, tapi itu berbahaya!	#
+tips.game.62=Bermain di iOS, Android, atau FireOS? Dapatkan Paket Musik Minecraft Original gratis dari Marketplace untuk pengalaman Minecraft menyeluruh.	#
 
 splitscreen.joinPrompt=Bergabung sebagai Pemain %s	#
 splitscreen.unavailable.toastHeader=Layar Terbagi Tidak Tersedia	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Kemeja Steve	#
 dr.emotes.slot=Emosi %d	#
 
 gfxDriverOutdated.title=Driver usang!	#
-gfxDriverOutdated.message=Tersedia pembaruan terkini untuk driver grafis komputermu. Mungkin terdapat beberapa masalah atau bug pada dunia jika pembaruan tidak diinstal. Harap instal untuk menikmati Minecraft secara maksimal. Baca selengkapnya di http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Tersedia pembaruan terkini untuk driver grafis komputermu. Mungkin terdapat beberapa masalah atau bug pada dunia jika pembaruan tidak diinstal. Harap instal untuk menikmati Minecraft secara maksimal. Baca selengkapnya di http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Jangan tampilkan pesan ini lagi	#
 gfxDriverOutdated.close=Tutup	#
 

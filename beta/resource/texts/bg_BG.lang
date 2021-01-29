@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Ляв бъмпер бутон	#
 accessibility.keyboard.leftBracket=Клавиш за лява квадратна скоба			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Клавиш за дясна квадратна скоба		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s бутон %d, %d от %d	#
-accessibility.emotes.buttonName=Изразяване на емоция	#
+accessibility.emotes.hovered=%s, бутон за емотикон %d, %d от %d	#
 accessibility.emotes.assigned=Зададен емотикон %s	#
 accessibility.emotes.unassigned=Незададен	#
 accessibility.emotes.playSuccess=Изпълняване на емотикон	#
-accessibility.emotes.playFailed=Няма зададен емотикон за този бутон, натиснете стрелка надолу, за да отворите бутона „Промяна на емотикони“	#
+accessibility.emotes.playFailed=Няма зададен емотикон за този бутон, натиснете %s бутона „Промяна на емотикони“	#
+accessibility.emotes.changeEmotesInstruction.button=%s за достъп	#
+accessibility.emotes.keyboard.arrow=стрелка	#
+
 accessibility.emotes.instruction.keyboard=Натиснете надясно или наляво, за да преминете през бутоните за емотикони. Натиснете стрелка надолу, за да отворите бутона „Промяна на емотикони“.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Връзката на акаунтите ви е
 options.unlink_msa.failure.title=Възникна грешка	#
 options.unlink_msa.failure.body=Неуспешно прекратяване на връзката на акаунтите. Проверете интернет връзката.	#
 
+patchNotes.loading=Зареждане на бележките за корекцията	#
 patchNotes.continue=Напред	#
 patchNotes.unlock=Отключи	#
 patchNotes.error.noInternet.title=Връзката с интернет е прекъсната	#
@@ -8652,7 +8655,7 @@ tips.game.58=Срежете кошер или гнездо, за да вземе
 tips.game.59=Поставете лагерен огън под кошер или гнездо, за да съберете мед по мирен начин. Вашите пчели ще ви благодарят.	#
 tips.game.60=Повторното появяване в пъкъла изисква заредена котва за повторно появяване.	#
 tips.game.61=Можете да заредите котва за повторно появяване със светлинен камък.	#
-tips.game.62=Можете да размножавате Hoglins с пурпурни гъби, но е опасно!	#
+tips.game.62=Играете на iOS, Android или FireOS? Вземете безплатния оригинален музикален пакет на Minecraft от пазара за пълноценна игра на Minecraft.	#
 
 splitscreen.joinPrompt=Присъединяване като играч %s	#
 splitscreen.unavailable.toastHeader=Опцията за разделен екран е недостъпна	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Блузата на Стийв	#
 dr.emotes.slot=Емотикон %d	#
 
 gfxDriverOutdated.title=Драйверите са остарели!	#
-gfxDriverOutdated.message=Графичните драйвери на вашия компютър имат налична нова актуализация. В световете може да има някои проблеми или програмни грешки без актуализацията. Инсталирайте я, за да се насладите максимално на Minecraft. Прочетете повече на http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Има налична нова актуализация за графичните драйвери на вашия компютър. В световете може да има някои проблеми или програмни грешки без актуализацията. Инсталирайте я, за да се насладите максимално на Minecraft. Прочетете повече на http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Не показвай това съобщение повече	#
 gfxDriverOutdated.close=Затваряне	#
 

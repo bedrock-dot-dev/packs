@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Pulsante dorsale sinistro	#
 accessibility.keyboard.leftBracket=Tasto parentesi quadra aperta			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tasto parentesi quadra chiusa		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s pulsante %d, %d di %d	#
-accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.hovered=%s, pulsante emote %d, %d di %d	#
 accessibility.emotes.assigned=Emote %s assegnata	#
 accessibility.emotes.unassigned=Non assegnata	#
 accessibility.emotes.playSuccess=Riproduci emote	#
-accessibility.emotes.playFailed=Nessuna emote assegnata a questo pulsante, premi la freccia giù per accedere al pulsante Cambia emote	#
+accessibility.emotes.playFailed=Nessuna emote assegnata a questo pulsante, premi %s per accedere al pulsante Cambia emote	#
+accessibility.emotes.changeEmotesInstruction.button=%s per accedere	#
+accessibility.emotes.keyboard.arrow=freccia	#
+
 accessibility.emotes.instruction.keyboard=Premi a destra o a sinistra per scorrere i pulsanti di emote. Premi la freccia giù per accedere al pulsante Cambia emote.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=I tuoi account sono stati scollegati.	#
 options.unlink_msa.failure.title=Si è verificato un errore	#
 options.unlink_msa.failure.body=Non è stato possibile scollegare i tuoi account. Prova a verificare che la tua connessione sia stabile.	#
 
+patchNotes.loading=Caricamento delle note sull'aggiornamento	#
 patchNotes.continue=Continua	#
 patchNotes.unlock=Sblocca	#
 patchNotes.error.noInternet.title=Non connesso a Internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Taglia un alveare o un nido per ottenere un favo, utilizza un'ampol
 tips.game.59=Posiziona un falò sotto un alveare o un nido per raccogliere il miele senza problemi. Le tue api ti ringrazieranno.	#
 tips.game.60=La rigenerazione nel Nether richiede un'ancora di rigenerazione carica.	#
 tips.game.61=Puoi caricare un'ancora di rigenerazione con la luminite.	#
-tips.game.62=Puoi allevare hoglin con il fungo cremisi, ma è pericoloso!	#
+tips.game.62=Giochi su iOS, Android o FireOS? Ottieni il pacchetto musicale originale Minecraft gratuito dal Marketplace per vivere l'esperienza Minecraft completa.	#
 
 splitscreen.joinPrompt=Entra come giocatore n. %s	#
 splitscreen.unavailable.toastHeader=Schermo condiviso non disponibile	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Camicia di Steve	#
 dr.emotes.slot=Emote %d	#
 
 gfxDriverOutdated.title=Driver obsoleti!	#
-gfxDriverOutdated.message=C'è un nuovo aggiornamento disponibile per i driver di grafica del tuo computer. Senza l'aggiornamento, i mondi potrebbero presentare problemi o bug. Ti preghiamo di installarlo per divertirti al massimo con Minecraft. Ulteriori informazioni all'indirizzo http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=C'è un nuovo aggiornamento disponibile per i driver di grafica del tuo computer. Senza l'aggiornamento, i mondi potrebbero presentare problemi o bug. Ti preghiamo di installarlo per divertirti al massimo con Minecraft. Ulteriori informazioni all'indirizzo http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Non mostrare più questo messaggio	#
 gfxDriverOutdated.close=Chiudi	#
 

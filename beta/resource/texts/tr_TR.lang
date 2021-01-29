@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Sol Yassı Düğme	#
 accessibility.keyboard.leftBracket=Sol köşeli ayraç tuşu			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Sağ köşeli ayraç tuşu		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s düğmesi %d, %d/%d	#
-accessibility.emotes.buttonName=İfade	#
+accessibility.emotes.hovered=%s, ifade düğmesi %d, %d/%d	#
 accessibility.emotes.assigned=%s ifadesi atandı	#
 accessibility.emotes.unassigned=Atama kaldırıldı	#
 accessibility.emotes.playSuccess=İfadeyi oynat	#
-accessibility.emotes.playFailed=Bu düğmeye atanmış ifade yok, İfadeleri Değiştir düğmesine erişmek için aşağı ok tuşuna bas	#
+accessibility.emotes.playFailed=Bu düğmeye atanmış ifade yok, %s İfadeleri Değiştir düğmesine bas	#
+accessibility.emotes.changeEmotesInstruction.button=erişmek için %s	#
+accessibility.emotes.keyboard.arrow=ok	#
+
 accessibility.emotes.instruction.keyboard=İfade düğmeleri arasında gezinmek için sağ veya sol düğmesine bas. İfadeleri Değiştir düğmesine erişmek için aşağı oka bas.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Hesaplarınızın bağlantısı kaldırıldı.	#
 options.unlink_msa.failure.title=Bir Sorun Oluştu	#
 options.unlink_msa.failure.body=Hesaplarınızın bağlantısı kaldırılamadı. İnternet bağlantınızı kontrol eder misiniz?	#
 
+patchNotes.loading=Yama Notları Yükleniyor	#
 patchNotes.continue=Devam Et	#
 patchNotes.unlock=Kilidi Aç	#
 patchNotes.error.noInternet.title=İnternet bağlantısı kesildi	#
@@ -8652,7 +8655,7 @@ tips.game.58=Petek almak için bir Arı Kovanı veya yuvayı kes, bal almak içi
 tips.game.59=Balı sakin bir şekilde toplamak için Arı Kovanının altında Kamp Ateşi yak. Arıların sana teşekkür edecek.	#
 tips.game.60=Nether'de yeniden doğmak için şarj edilmiş bir Yeniden Doğma Çapası gerekir.	#
 tips.game.61=Yeniden Doğma Çapasını bir Işık Taşı ile şarj edebilirsin.	#
-tips.game.62=Hoglinleri Kızıl Mantar ile besleyebilirsin ama tehlikelidir!	#
+tips.game.62=iOS, Android veya FireOS'ta mı oynuyorsunuz? Tam Minecraft deneyimi için Market'ten ücretsiz Minecraft Orijinal Müzik Paketini alın.	#
 
 splitscreen.joinPrompt=Oyuncu %s Olarak Katıl	#
 splitscreen.unavailable.toastHeader=Bölünmüş Ekran Kullanılamıyor	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steve'in Gömleği	#
 dr.emotes.slot=İfade %d	#
 
 gfxDriverOutdated.title=Sürücüler eskimiş!	#
-gfxDriverOutdated.message=Bilgisayarınızın ekran sürücüleri için yeni bir güncelleştirme var. Güncelleştirme olmadan dünyalarda bazı sorunlar veya hatalar olabilir. Minecraft'ın keyfini tam olarak çıkarmak için lütfen yükleyin. http://aka.ms/ray-tracing-FAQ adresinden daha fazla bilgi edinin	#
+gfxDriverOutdated.message=Bilgisayarınızın ekran sürücüleri için yeni bir güncelleştirme var. Güncelleştirme olmadan dünyalarda bazı sorunlar veya hatalar olabilir. Minecraft'ın keyfini tam olarak çıkarmak için lütfen yükleyin. http://aka.ms/mcupdatedrivers adresinden daha fazla bilgi edinin	#
 gfxDriverOutdated.doNotShowAgain=Bu iletiyi bir daha gösterme	#
 gfxDriverOutdated.close=Kapat	#
 

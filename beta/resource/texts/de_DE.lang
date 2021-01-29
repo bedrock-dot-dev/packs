@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Linker Bumper	#
 accessibility.keyboard.leftBracket=Eckige Klammer links			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Eckige Klammer rechts		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s-Taste %d, %d von %d	#
-accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.hovered=%s, Emote-Taste %d, %d von %d	#
 accessibility.emotes.assigned=%s Emote ist zugewiesen	#
 accessibility.emotes.unassigned=Nicht zugewiesen	#
 accessibility.emotes.playSuccess=Emote abspielen	#
-accessibility.emotes.playFailed=Dieser Taste wurde kein Emote zugewiesen. Drücke Pfeil nach unten, um auf die Emote-Taste zuzugreifen.	#
+accessibility.emotes.playFailed=Dieser Taste wurde kein Emote zugewiesen. Drücke %s für „Emotes ändern“	#
+accessibility.emotes.changeEmotesInstruction.button=%s für den Zugriff	#
+accessibility.emotes.keyboard.arrow=Pfeil	#
+
 accessibility.emotes.instruction.keyboard=Drücke rechts oder links, um zwischen den Emote-Tasten zu wählen. Drücke Pfeil nach unten, um auf die Emote-Taste zuzugreifen.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Deine Kontoverknüpfungen wurden aufgehoben.	#
 options.unlink_msa.failure.title=Etwas ist schiefgelaufen	#
 options.unlink_msa.failure.body=Deine Kontoverknüpfungen konnten nicht aufgehoben werden. Überprüfe bitte deine Internetverbindung.	#
 
+patchNotes.loading=Patch-Hinweise werden geladen	#
 patchNotes.continue=Weiter	#
 patchNotes.unlock=Freischalten	#
 patchNotes.error.noInternet.title=Nicht mit dem Internet verbunden	#
@@ -8652,7 +8655,7 @@ tips.game.58=Schere einen Bienenstock oder ein Nest, um Honigwaben zu erhalten. 
 tips.game.59=Platziere ein Lagerfeuer unter einem Bienenstock oder ein Nest, um ohne Eingriff in den Stock Honig zu sammeln. Deine Bienen werden es dir danken.	#
 tips.game.60=Um im Nether neu zu spawnen, benötigst du einen aufgeladenen Respawn-Anker.	#
 tips.game.61=Mit Glowstone kannst du einen Respawn-Anker aufladen.	#
-tips.game.62=Mit Karmesinpilz kannst du Hoglins züchten, aber es ist ziemlich gefährlich!	#
+tips.game.62=Spielst du auf iOS, Android oder FireOS? Dann hol dir das kostenlose Minecraft Original Music Pack vom Marketplace für das vollständige Minecraft-Spielerlebnis!	#
 
 splitscreen.joinPrompt=Als Spieler %s beitreten	#
 splitscreen.unavailable.toastHeader=Geteilter Bildschirm nicht verfügbar	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steves T-Shirt	#
 dr.emotes.slot=Emote %d	#
 
 gfxDriverOutdated.title=Treiber nicht aktuell!	#
-gfxDriverOutdated.message=Für die Grafiktreiber deines Computers ist ein neues Update verfügbar. Ohne dieses Update kann es in den Welten zu Fehlern oder Problemen kommen. Bitte installiere es, um Minecraft bestmöglich genießen zu können. Weitere Infos unter http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Für die Grafiktreiber deines Computers ist ein neues Update verfügbar. Ohne dieses Update kann es in den Welten zu Fehlern oder Problemen kommen. Bitte installiere es, um Minecraft bestmöglich genießen zu können. Weitere Infos unter http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Diese Nachricht nicht mehr anzeigen	#
 gfxDriverOutdated.close=Schließen	#
 

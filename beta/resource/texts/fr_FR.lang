@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Gâchette haute gauche	#
 accessibility.keyboard.leftBracket=Touche crochet gauche			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Touche crochet droit		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s bouton %d, %d de %d	#
-accessibility.emotes.buttonName=Émote	#
+accessibility.emotes.hovered=%s, bouton d'émote %d, %d de %d	#
 accessibility.emotes.assigned=L'émote %s est assignée	#
 accessibility.emotes.unassigned=Non assignée	#
 accessibility.emotes.playSuccess=Jouer l'émote	#
-accessibility.emotes.playFailed=Pas d'émote attribuée à ce bouton, appuyez sur la flèche vers le bas pour accéder au bouton Modifier les émotes.	#
+accessibility.emotes.playFailed=Pas d'émote attribuée à ce bouton, appuyez sur %s pour accéder au bouton Modifier les émotes.	#
+accessibility.emotes.changeEmotesInstruction.button=la %s pour accéder	#
+accessibility.emotes.keyboard.arrow=flèche	#
+
 accessibility.emotes.instruction.keyboard=Appuyez à droite ou à gauche pour faire défiler les boutons d'émotes. Appuyez sur la flèche vers le bas pour accéder au bouton Modifier les émotes.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Vos comptes sont désormais dissociés.	#
 options.unlink_msa.failure.title=Une erreur s'est produite	#
 options.unlink_msa.failure.body=Impossible de dissocier vos comptes. Vérifiez votre connexion à Internet.	#
 
+patchNotes.loading=Chargement des notes de version	#
 patchNotes.continue=Continuer	#
 patchNotes.unlock=Déverrouiller	#
 patchNotes.error.noInternet.title=Vous n'êtes plus connecté à Internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Utilisez les cisailles sur une ruche ou un nid pour obtenir un rayo
 tips.game.59=Placez un feu de camp sous une ruche ou un nid pour récolter le miel tranquillement. Vos abeilles vous remercieront.	#
 tips.game.60=Pour réapparaître dans le Nether, vous avez besoin d'une ancre de réapparition chargée.	#
 tips.game.61=Rechargez votre ancre de réapparition avec de la pierre lumineuse.	#
-tips.game.62=Vous pouvez faire se reproduire des hoglins avec un champignon carmin, mais c'est dangereux !	#
+tips.game.62=Vous jouez sur iOS, Android ou FireOS ? Obtenez gratuitement le pack de musique Minecraft original depuis le magasin pour vivre l'expérience Minecraft à fond.	#
 
 splitscreen.joinPrompt=Rejoindre en tant que joueur %s	#
 splitscreen.unavailable.toastHeader=L'écran partagé n'est pas disponible	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Chemise de Steve	#
 dr.emotes.slot=Émote %d	#
 
 gfxDriverOutdated.title=Pilotes non à jour !	#
-gfxDriverOutdated.message=Une nouvelle mise à jour est disponible pour les pilotes graphiques de votre ordinateur. Sans celle-ci, les mondes peuvent rencontrer quelques problèmes ou bugs. Veuillez l'installer pour profiter de Minecraft à son maximum. Apprenez-en plus sur http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Une nouvelle mise à jour est disponible pour les pilotes graphiques de votre ordinateur. Sans celle-ci, les mondes peuvent rencontrer quelques problèmes ou bugs. Veuillez l'installer pour profiter de Minecraft à son maximum. Apprenez-en plus sur http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Ne plus afficher ce message	#
 gfxDriverOutdated.close=Fermer	#
 

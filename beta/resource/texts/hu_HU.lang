@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Bal ütköző	#
 accessibility.keyboard.leftBracket=Bal szögletes zárójel gomb			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Jobb szögletes zárójel gomb		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s gomb %d, %d / %d	#
-accessibility.emotes.buttonName=Hangulat kifejezése	#
+accessibility.emotes.hovered=%s, %d hangulatjel, %d. ennyiből: %d	#
 accessibility.emotes.assigned=A(z) %s hangulatjel hozzárendelve	#
 accessibility.emotes.unassigned=Nem hozzárendelt	#
 accessibility.emotes.playSuccess=Hangulatjel lejátszása	#
-accessibility.emotes.playFailed=Ehhez a gombhoz nincs hangulatjel hozzárendelve, a Hangulatjelek módosítása gomb eléréséhez nyomd meg a lefelé mutató nyilat	#
+accessibility.emotes.playFailed=Ehhez a gombhoz nincs hangulatjel hozzárendelve, a Hangulatjelek módosítása gomb eléréséhez nyomd meg a %s gombot	#
+accessibility.emotes.changeEmotesInstruction.button=hozzáférés: %s	#
+accessibility.emotes.keyboard.arrow=nyíl	#
+
 accessibility.emotes.instruction.keyboard=A hangulatjelek között a jobb és bal gomb megnyomásával lépkedhetsz. A Hangulatjelek módosítása gomb eléréséhez nyomd meg a lefelé mutató nyilat.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Fiókjaid társításának törlése megtörtén
 options.unlink_msa.failure.title=Valami hiba történt	#
 options.unlink_msa.failure.body=Fiókjaid társítását nem sikerült törölni. Ellenőrizd az internetkapcsolatot!	#
 
+patchNotes.loading=Javítócsomag megjegyzéseinek betöltése	#
 patchNotes.continue=Folytatás	#
 patchNotes.unlock=Feloldás	#
 patchNotes.error.noInternet.title=Megszakadt az internetkapcsolat	#
@@ -8652,7 +8655,7 @@ tips.game.58=Nyírj meg egy kaptárt vagy fészket, hogy méhsejthez juss, egy p
 tips.game.59=Építs tábortüzet egy kaptár vagy fészek alá, hogy békésen takaríthasd be a mézet. A méhek hálásak lesznek.	#
 tips.game.60=Az alvilágban való feltámadáshoz feltöltött újjászületési pont szükséges.	#
 tips.game.61=Újjászületési pontot izzókővel tölthetsz fel.	#
-tips.game.62=Szaporíthatod a Hoglinokat Karmazsin gombával, de ez veszélyes!	#
+tips.game.62=iOS, Android vagy FireOS rendszeren játszol? Szerezd meg ingyen a Minecraft Eredeti Zenecsomagot a Piactérről, hogy teljes legyen a Minecraft-élmény!	#
 
 splitscreen.joinPrompt=Csatlakozás a(z) %s. játékosként	#
 splitscreen.unavailable.toastHeader=Felosztott kép nem haszn.	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steve inge	#
 dr.emotes.slot=Gesztus %d	#
 
 gfxDriverOutdated.title=Az illesztőprogramok elavultak!	#
-gfxDriverOutdated.message=A számítógép videokártyájának illesztőprogramjaihoz új frissítés áll rendelkezésre. A frissítés nélkül egyes világoknál problémák és hibák fordulhatnak elő. Kérjük, telepítsd a frissítést, hogy a Minecraft összes funkcióját élvezni tudjad. További információkért lásd: http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=A számítógép videokártyájának illesztőprogramjaihoz új frissítés áll rendelkezésre. A frissítés nélkül egyes világoknál problémák és hibák fordulhatnak elő. Kérjük, telepítsd a frissítést, hogy a Minecraft összes funkcióját élvezni tudjad. További információkért lásd: http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Ne jelenjen meg többé	#
 gfxDriverOutdated.close=Bezárás	#
 

@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Linker-bumper	#
 accessibility.keyboard.leftBracket=Toets vierkante haak links			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Toets vierkante haak rechts		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s knop %d, %d van %d	#
-accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.hovered=%s, emoteknop %d, %d van %d	#
 accessibility.emotes.assigned=De emote %s is toegewezen	#
 accessibility.emotes.unassigned=Niet-toegewezen	#
 accessibility.emotes.playSuccess=Emote afspelen	#
-accessibility.emotes.playFailed=Geen emote toegewezen aan deze knop. Druk op pijl-omlaag om toegang te krijgen tot de knop Emotes wijzigen	#
+accessibility.emotes.playFailed=Geen emote toegewezen aan deze knop. Druk op %s voor de knop Emotes wijzigen	#
+accessibility.emotes.changeEmotesInstruction.button=de %s om toegang te krijgen	#
+accessibility.emotes.keyboard.arrow=pijl	#
+
 accessibility.emotes.instruction.keyboard=Druk op rechts of links om door Emote-knoppen te wisselen. Druk op de pijl-omlaag om toegang te krijgen tot de knop Emotes wijzigen.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Je accounts zijn ontkoppeld.	#
 options.unlink_msa.failure.title=Er is iets misgegaan	#
 options.unlink_msa.failure.body=Je accounts kunnen niet worden ontkoppeld. Controleer je internetverbinding eens.	#
 
+patchNotes.loading=Patch-notities laden	#
 patchNotes.continue=Doorgaan	#
 patchNotes.unlock=Ontgrendelen	#
 patchNotes.error.noInternet.title=Verbinding met internet verbroken	#
@@ -8652,7 +8655,7 @@ tips.game.58=Scheer een bijenkorf of nest om honingraat te krijgen of gebruik ee
 tips.game.59=Plaats een kampvuur onder een bijenkorf of nest om rustig honing te oogsten. Je bijen zullen je dankbaar zijn.	#
 tips.game.60=Om in de Nether opnieuw te spawnen, heb je een opgeladen respawnanker nodig.	#
 tips.game.61=Je kunt een respawnanker opladen met gloeisteen.	#
-tips.game.62=Je kunt Hoglins fokken met karmijnrode zwammen, maar dit is wel gevaarlijk!	#
+tips.game.62=Speel je op iOS, Android of FireOS? Haal dan het gratis origineel Minecraft-muziekpakket op uit de Marketplace voor de volledige Minecraft-ervaring.	#
 
 splitscreen.joinPrompt=Aansluiten als speler %s	#
 splitscreen.unavailable.toastHeader=Gesplitst scherm is niet beschikbaar	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Shirt van Steve	#
 dr.emotes.slot=Emote %d	#
 
 gfxDriverOutdated.title=Drivers verouderd.	#
-gfxDriverOutdated.message=Er is een nieuwe update beschikbaar voor de grafische drivers van je computer. Zonder deze update te installeren, kunnen werelden een aantal problemen of fouten vertonen. Installeer de update om Minecraft op zijn best te beleven. Meer informatie op http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Er is een nieuwe update beschikbaar voor de grafische drivers van je computer. Zonder deze update te installeren, kunnen werelden een aantal problemen of fouten vertonen. Installeer de update om Minecraft op zijn best te beleven. Meer informatie op http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Dit bericht niet opnieuw weergeven	#
 gfxDriverOutdated.close=Sluiten	#
 

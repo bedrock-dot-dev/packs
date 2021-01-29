@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Levé tlačítko	#
 accessibility.keyboard.leftBracket=Klávesa levá hranatá závorka			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Klávesa pravá hranatá závorka		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s tlačítko %d, %d z %d	#
-accessibility.emotes.buttonName=Emotikona	#
+accessibility.emotes.hovered=%s, tlačítko emotikony %d, %d z %d	#
 accessibility.emotes.assigned=Přiřazená emotikona %s	#
 accessibility.emotes.unassigned=Nepřiřazena	#
 accessibility.emotes.playSuccess=Přehrát emotikonu	#
-accessibility.emotes.playFailed=K tomuto tlačítku není přiřazena žádná emotikona. Po stisknutí šipky dolů se zobrazí tlačítko Změnit emotikony.	#
+accessibility.emotes.playFailed=K tomuto tlačítku není přiřazena žádná emotikona, stiskněte %s tlačítka Změnit emotikony.	#
+accessibility.emotes.changeEmotesInstruction.button=%s pro zobrazení	#
+accessibility.emotes.keyboard.arrow=šipka	#
+
 accessibility.emotes.instruction.keyboard=Stisknutím tlačítka vpravo nebo vlevo můžete procházet tlačítka emotikon. Po stisknutí šipky dolů se zobrazí tlačítko Změnit emotikony.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Bylo zrušeno propojení vašich účtů.	#
 options.unlink_msa.failure.title=Něco se nepovedlo	#
 options.unlink_msa.failure.body=Nemohlo být zrušeno propojení vašich účtů. Zkuste zkontrolovat připojení k internetu.	#
 
+patchNotes.loading=Načítání poznámek k opravě	#
 patchNotes.continue=Pokračovat	#
 patchNotes.unlock=Odemknout	#
 patchNotes.error.noInternet.title=Odpojeno od internetu	#
@@ -8652,7 +8655,7 @@ tips.game.58=Když ostříháte včelí úl nebo hnízdo, získáte medovou plá
 tips.game.59=Umístěte táborák pod včelí úl nebo hnízdo a můžete v klidu sklízet med. Včely vám poděkují.	#
 tips.game.60=Znovuzrození v Netheru vyžaduje nabitou kotvu pro znovuzrození.	#
 tips.game.61=Kotvu znovuzrození nabijete zářivým kamenem.	#
-tips.game.62=Můžete zkřížit hoglina s karmínovým hřibem, ale je to nebezpečné!	#
+tips.game.62=Hrajete na zařízení se systémem iOS, Android nebo FireOS? Získejte zdarma originální hudební balíček z Minecraftu v obchodě Marketplace pro komplexní zážitek z Minecraftu.	#
 
 splitscreen.joinPrompt=Připojit se jako hráč %s	#
 splitscreen.unavailable.toastHeader=Rozdělená obrazovka není k dispozici	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Stevova košile	#
 dr.emotes.slot=Emoce %d	#
 
 gfxDriverOutdated.title=Zastaralé ovladače!	#
-gfxDriverOutdated.message=Pro grafické ovladače počítače je k dispozici nová aktualizace. Bez ní mohou světy fungovat problematicky nebo obsahovat chyby. Nainstalujte ji, abyste si mohli Minecraft užívat naplno. Více se dozvíte na stránce http://aka.ms/ray-tracing-FAQ.	#
+gfxDriverOutdated.message=Pro grafické ovladače počítače je k dispozici nová aktualizace. Bez ní mohou světy fungovat problematicky nebo obsahovat chyby. Nainstalujte ji, abyste si mohli Minecraft užívat naplno. Více se dozvíte na stránce http://aka.ms/mcupdatedrivers.	#
 gfxDriverOutdated.doNotShowAgain=Tuto zprávu znovu nezobrazovat	#
 gfxDriverOutdated.close=Zavřít	#
 

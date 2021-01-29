@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Vänster kantknapp	#
 accessibility.keyboard.leftBracket=Vänster hakparentes			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Höger hakparentes		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s-knapp %d, %d av %d	#
-accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.hovered=%s, emote-knapp %d, %d av %d	#
 accessibility.emotes.assigned=Den %s-emote som tilldelats	#
 accessibility.emotes.unassigned=Otilldelad	#
 accessibility.emotes.playSuccess=Spela emote	#
-accessibility.emotes.playFailed=Ingen emote har tilldelats den här knappen, tryck på nedåtpilen för att komma åt knappen Ändra emotes	#
+accessibility.emotes.playFailed=Ingen emote har tilldelats den här knappen, tryck på %s knappen Ändra emotes	#
+accessibility.emotes.changeEmotesInstruction.button=%s för att få tillgång	#
+accessibility.emotes.keyboard.arrow=pil	#
+
 accessibility.emotes.instruction.keyboard=Tryck åt höger eller vänster för att bläddra mellan emote-knappar. Tryck på nedpilen för att komma åt knappen Ändra emotes.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Dina konton har kopplats ifrån.	#
 options.unlink_msa.failure.title=Någonting gick fel	#
 options.unlink_msa.failure.body=Dina konton kunde inte kopplas ifrån. Har du kontrollerat din internetanslutning?	#
 
+patchNotes.loading=Laddar patchinformation	#
 patchNotes.continue=Fortsätt	#
 patchNotes.unlock=Lås upp	#
 patchNotes.error.noInternet.title=Nedkopplad från internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Klipp upp en bikupa eller ett bo för att få honungskaka, använd 
 tips.game.59=Placera en lägereld under en bikupa eller ett bo för att fredligt skörda honung. Dina bin kommer att tacka dig.	#
 tips.game.60=För att respawna i Nether behöver du ett laddat respawnankare.	#
 tips.game.61=Du kan ladda ett respawnankare med glödsten.	#
-tips.game.62=Du kan föda upp vildsvinsmän med blodröda svampar, men det är farligt!	#
+tips.game.62=Spelar du på iOS, Android eller FireOS? Skaffa det kostnadsfria Minecraft Original Music Pack från marknaden för en fullständig Minecraft-upplevelse.	#
 
 splitscreen.joinPrompt=Anslut som spelare %s	#
 splitscreen.unavailable.toastHeader=Det går inte att spela med delad skärm	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steves tröja	#
 dr.emotes.slot=Emote %d	#
 
 gfxDriverOutdated.title=Gamla drivrutiner!	#
-gfxDriverOutdated.message=Datorns grafikdrivrutiner har en ny uppdatering tillgänglig. Världar kan ha vissa problem eller buggar utan uppdateringen. Installera den för att njuta av Minecraft till fullo. Läs mer på http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Datorns grafikdrivrutiner har en ny uppdatering tillgänglig. Världar kan ha vissa problem eller buggar utan uppdateringen. Installera den för att njuta av Minecraft till fullo. Läs mer på http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Visa inte det här meddelandet igen	#
 gfxDriverOutdated.close=Stäng	#
 

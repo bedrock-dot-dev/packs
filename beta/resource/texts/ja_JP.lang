@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=L ボタン	#
 accessibility.keyboard.leftBracket=左角かっこキー			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右角かっこキー		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s、%s ボタン %d、%d の %d	#
-accessibility.emotes.buttonName=エモート	#
+accessibility.emotes.hovered=%s、エモート ボタン、%d、%d の %d	#
 accessibility.emotes.assigned=登録された %s エモート	#
 accessibility.emotes.unassigned=未登録	#
 accessibility.emotes.playSuccess=エモートで遊ぶ	#
-accessibility.emotes.playFailed=このボタンにエモートが登録されていない場合は、下向き矢印を押して [エモートを変更] ボタンにアクセスしてください。	#
+accessibility.emotes.playFailed=このボタンにエモートが登録されていない場合は、[%s エモートを変更] ボタンを押してください。	#
+accessibility.emotes.changeEmotesInstruction.button=アクセスする %s	#
+accessibility.emotes.keyboard.arrow=矢	#
+
 accessibility.emotes.instruction.keyboard=右または左を押して、エモートボタンを切り替えてください。下向き矢印を押すと、[エモートを変更] ボタンにアクセスできます。	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=お使いのアカウントの紐づけを解除
 options.unlink_msa.failure.title=問題が発生しました	#
 options.unlink_msa.failure.body=お使いのアカウントの紐づけを解除できません。インターネット接続を確認してください。	#
 
+patchNotes.loading=パッチノートの読み込み	#
 patchNotes.continue=続ける	#
 patchNotes.unlock=アンロック	#
 patchNotes.error.noInternet.title=インターネット接続なし	#
@@ -8652,7 +8655,7 @@ tips.game.58=ハチの巣箱や巣を破壊してハニカムを手に入れ、�
 tips.game.59=ハチの巣箱や巣の下にたき火を置けば、安心してハチミツを収集できます。ミツバチにきっと感謝されるでしょう。	#
 tips.game.60=暗黒界でリスポーンするには、チャージされたリスポーン アンカーが必要です。	#
 tips.game.61=グロウストーンでリスポーン アンカーをチャージできます。	#
-tips.game.62=キノコ (クリムゾン) で Hoglin を繁殖させることができますが、危険です!	#
+tips.game.62=iOS、Android、または FireOS でプレイしてみませんか? マーケットプレイスから Minecraft のオリジナル ミュージックを手に入れて、Minecraft を思う存分体験してみましょう。	#
 
 splitscreen.joinPrompt=プレイヤー %s として参加	#
 splitscreen.unavailable.toastHeader=分割画面は使用できません	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=スティーブのシャツ	#
 dr.emotes.slot=エモート %d	#
 
 gfxDriverOutdated.title=ドライバーが期限切れです!	#
-gfxDriverOutdated.message=コンピューターのグラフィック ドライバーに新しい更新プログラムが用意されています。更新プログラムを適応しない場合、世界に問題やバグが発生する可能性があります。Minecraft を最大限に楽しむためにインストールしてください。詳細は http://aka.ms/ray-tracing-FAQ をご確認ください。	#
+gfxDriverOutdated.message=コンピューターのグラフィック ドライバーに新しい更新プログラムが用意されています。更新プログラムを適用しない場合、世界に問題やバグが発生する可能性があります。インストールして、Minecraft を最大限に楽しんでください。詳細は、http://aka.ms/mcupdatedrivers をご確認ください。	#
 gfxDriverOutdated.doNotShowAgain=このメッセージを再度表示しない	#
 gfxDriverOutdated.close=閉じる	#
 

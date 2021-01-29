@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=LB 鍵	#
 accessibility.keyboard.leftBracket=左方括號鍵			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=右方括號鍵		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s，%s 鍵 %d，%d/%d	#
-accessibility.emotes.buttonName=表情	#
+accessibility.emotes.hovered=%s、表情符號按鈕 %d、%d/%d	#
 accessibility.emotes.assigned=已分配 %s 表情	#
 accessibility.emotes.unassigned=未分配	#
 accessibility.emotes.playSuccess=播放表情	#
-accessibility.emotes.playFailed=沒有分配給此按鈕的表情，請按向下鍵存取「變更表情」按鈕	#
+accessibility.emotes.playFailed=沒有分配給此按鈕的表情符號，請按 %s「變更表情符號」按鈕	#
+accessibility.emotes.changeEmotesInstruction.button=%s 以存取	#
+accessibility.emotes.keyboard.arrow=方向鍵	#
+
 accessibility.emotes.instruction.keyboard=按向右鍵或向左鍵旋轉查看表情按鈕。請按向下鍵存取「變更表情」按鈕。	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=您的帳戶已取消連結。	#
 options.unlink_msa.failure.title=有地方出錯	#
 options.unlink_msa.failure.body=您的帳戶無法取消連結，能否請您檢查自己的網際網路連線？	#
 
+patchNotes.loading=載入補丁說明	#
 patchNotes.continue=繼續	#
 patchNotes.unlock=解鎖	#
 patchNotes.error.noInternet.title=中斷與網際網路的連線	#
@@ -8652,7 +8655,7 @@ tips.game.58=剪下蜂窩或巢穴獲得蜂巢，用瓶子獲取蜂蜜。	#
 tips.game.59=在蜂窩或巢穴下點把營火，和平地採收蜂蜜。你的蜜蜂會感謝你的。	#
 tips.game.60=在地獄重生得先讓重生錨充飽能量。	#
 tips.game.61=你可以使用閃石替重生錨補充能量。	#
-tips.game.62=你可以用深紅蕈菇餵食繁殖疣豬獸，但牠非常危險！	#
+tips.game.62=在 iOS、Android 或 FireOS 上遊玩嗎？從市集取得免費的 Minecraft 原創音樂套件，取得完整的 Minecraft 體驗。	#
 
 splitscreen.joinPrompt=以玩家 %s 身分加入	#
 splitscreen.unavailable.toastHeader=分割畫面無法提供使用	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=史提夫的上衣	#
 dr.emotes.slot=表情符號 %d	#
 
 gfxDriverOutdated.title=驅動程式過期了！	#
-gfxDriverOutdated.message=您的電腦圖形驅動程式有新的更新可用。在沒有更新的情況下，世界可能會有一些問題或錯誤。請安裝更新才能盡情享受 Minecraft。更多相關內容，請閱讀 http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=您的電腦圖形驅動程式有新的更新可用。在沒有更新的情況下，世界可能會有一些問題或錯誤。請安裝更新才能盡情享受 Minecraft。更多相關內容，請閱讀 http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=不要再顯示此訊息。	#
 gfxDriverOutdated.close=關閉	#
 

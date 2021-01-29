@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Ľavé predné tlačidlo	#
 accessibility.keyboard.leftBracket=Kláves ľavej hranatej zátvorky			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Kláves pravej hranatej zátvorky		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s tlačidlo %d, %d z %d	#
-accessibility.emotes.buttonName=Emócia	#
+accessibility.emotes.hovered=%s, tlačidlo emócie %d, %d z %d	#
 accessibility.emotes.assigned=Emócia %s sa priradila	#
 accessibility.emotes.unassigned=Nepriradené	#
 accessibility.emotes.playSuccess=Prehrať emóciu	#
-accessibility.emotes.playFailed=K tomuto tlačidlu nie je priradená žiadna emócia. Stlačením šípky nadol získate prístup k tlačidlu Zmeniť emócie.	#
+accessibility.emotes.playFailed=K tomuto tlačidlu nie je priradená žiadna emócia. Stlačte %s tlačidlo Zmeniť emócie.	#
+accessibility.emotes.changeEmotesInstruction.button=%s na prístup	#
+accessibility.emotes.keyboard.arrow=šípka	#
+
 accessibility.emotes.instruction.keyboard=Stláčaním doprava alebo doľava prechádzajte tlačidlami emócií. Stlačením šípky nadol získate prístup k tlačidlu Zmeniť emócie.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Kontá sa odpojili.	#
 options.unlink_msa.failure.title=Vyskytla sa chyba	#
 options.unlink_msa.failure.body=Kontá sa nepodarilo odpojiť. Mohli by ste skontrolovať pripojenie na internet?	#
 
+patchNotes.loading=Načítavanie poznámok k oprave	#
 patchNotes.continue=Pokračovať	#
 patchNotes.unlock=Odomknúť	#
 patchNotes.error.noInternet.title=Odpojené od internetu	#
@@ -8652,7 +8655,7 @@ tips.game.58=Ostrihaním úľa alebo hniezda získate včelí plást. Použitím
 tips.game.59=Umiestnite táborák pod úľ alebo hniezdo, aby ste med pozbierali pokojne. Včely sa vám poďakujú.	#
 tips.game.60=Znovuzrodenie v Netheri si vyžaduje nabitú kotvu znovuzrodenia.	#
 tips.game.61=Kotvu znovuzrodenia môžete nabiť pomocou žiarivého kameňa.	#
-tips.game.62=Hoglinov môžete rozmnožovať pomocou karmínovej huby, ale je to nebezpečné!	#
+tips.game.62=Hráte na systéme iOS, Android alebo FireOS? Bezplatný balík Minecraft Original Music z Trhoviska vám prinesie plnohodnotný zážitok z Minecraftu.	#
 
 splitscreen.joinPrompt=Pridať sa ako hráč %s	#
 splitscreen.unavailable.toastHeader=Rozdelená obrazovka nie je k dispozícii	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steveova košeľa	#
 dr.emotes.slot=Emócie %d	#
 
 gfxDriverOutdated.title=Ovládače sú zastarané!	#
-gfxDriverOutdated.message=Pre grafické ovládače počítača je k dispozícii nová aktualizácia. Vo svetoch sa môžu bez aktualizácie vyskytovať problémy alebo chyby. Nainštalujte si ju, aby ste si mohli Minecraft vychutnať naplno. Viac sa dozviete na adrese http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Pre grafické ovládače vo vašom počítači je k dispozícii nová aktualizácia. Vo svetoch sa môžu bez aktualizácie vyskytovať problémy alebo chyby. Nainštalujte si ju, aby ste si mohli Minecraft vychutnať naplno. Viac sa dozviete na adrese http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Nabudúce túto správu nezobrazovať	#
 gfxDriverOutdated.close=Zavrieť	#
 

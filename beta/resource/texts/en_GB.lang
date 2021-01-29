@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Left Bumper	#
 accessibility.keyboard.leftBracket=Left square bracket key			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Right square bracket key		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s button %d, %d of %d	#
-accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.hovered=%s, emote button %d, %d of %d	#
 accessibility.emotes.assigned=The %s emote assigned	#
 accessibility.emotes.unassigned=Unassigned	#
 accessibility.emotes.playSuccess=Play emote	#
-accessibility.emotes.playFailed=No emote assigned to this button, press the down arrow to access the Change Emotes button	#
+accessibility.emotes.playFailed=No emote assigned to this button, press %s the Change Emotes button	#
+accessibility.emotes.changeEmotesInstruction.button=the %s to access	#
+accessibility.emotes.keyboard.arrow=arrow	#
+
 accessibility.emotes.instruction.keyboard=Press right or left to cycle through emote buttons. Press the down arrow to access the Change Emotes button.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Your accounts have been unlinked.	#
 options.unlink_msa.failure.title=Something Went Wrong	#
 options.unlink_msa.failure.body=Your accounts were not able to be unlinked. Try checking your Internet connection.	#
 
+patchNotes.loading=Loading Patch Notes	#
 patchNotes.continue=Continue	#
 patchNotes.unlock=Unlock	#
 patchNotes.error.noInternet.title=Disconnected from the Internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Shear a Beehive or nest to get Honeycomb, use a Bottle to get honey
 tips.game.59=Place a Campfire under a Beehive or nest to harvest honey peacefully. Your bees will thank you.	#
 tips.game.60=Respawning in the Nether requires a charged Respawn Anchor.	#
 tips.game.61=You can charge a Respawn Anchor with Glowstone.	#
-tips.game.62=You can breed Hoglins with Crimson Fungus, but it is dangerous!	#
+tips.game.62=Playing on iOS, Android or FireOS? Get the free Minecraft Original Music Pack from the Marketplace for the full Minecraft experience.	#
 
 splitscreen.joinPrompt=Join as Player %s	#
 splitscreen.unavailable.toastHeader=Split Screen Is Unavailable	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Steve's Shirt	#
 dr.emotes.slot=Emote %d	#
 
 gfxDriverOutdated.title=Drivers outdated!	#
-gfxDriverOutdated.message=Your computer's graphics drivers have a new update available. Worlds may have some issues or bugs without the update. Please install it to enjoy Minecraft at its fullest. Read more on http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Your computer's graphics drivers have a new update available. Worlds may have some issues or bugs without the update. Please install it to enjoy Minecraft at its fullest. Read more on http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Don't show this message again	#
 gfxDriverOutdated.close=Close	#
 

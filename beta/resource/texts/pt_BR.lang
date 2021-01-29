@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Bumper esquerdo	#
 accessibility.keyboard.leftBracket=Tecla de colchete esquerdo			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tecla de colchete direito		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s botão %d, %d de %d	#
-accessibility.emotes.buttonName=Emote	#
+accessibility.emotes.hovered=%s, botão de emote %d, %d de %d	#
 accessibility.emotes.assigned=O emote %s atribuído	#
 accessibility.emotes.unassigned=Não atribuído	#
 accessibility.emotes.playSuccess=Usar emote	#
-accessibility.emotes.playFailed=Nenhum emote atribuído a este botão, pressione a seta para baixo para acessar o botão Alterar Emotes	#
+accessibility.emotes.playFailed=Nenhum emote atribuído a este botão, pressione %s para acessar o botão Alterar Emotes	#
+accessibility.emotes.changeEmotesInstruction.button=a %s para acessar	#
+accessibility.emotes.keyboard.arrow=seta	#
+
 accessibility.emotes.instruction.keyboard=Pressione para a direita ou para a esquerda para passar pelos botões de emote. Pressione a seta para baixo para acessar o botão Alterar Emotes.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Suas contas foram desvinculadas.	#
 options.unlink_msa.failure.title=Ocorreu Um Erro	#
 options.unlink_msa.failure.body=Não foi possível desvincular suas contas. Talvez você possa verificar sua conexão com a Internet?	#
 
+patchNotes.loading=Carregando Notas de Atualização	#
 patchNotes.continue=Continuar	#
 patchNotes.unlock=Desbloquear	#
 patchNotes.error.noInternet.title=Desconectado da Internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Corte uma Colmeia ou ninho para obter Favo de Mel, use uma Garrafa 
 tips.game.59=Coloque uma Fogueira sob uma Colmeia ou ninho para colher mel pacificamente. Suas abelhas te agradecerão.	#
 tips.game.60=Renascer no Nether requer uma Âncora de Renascimento carregada.	#
 tips.game.61=Você pode carregar uma Âncora de Renascimento com Pedra Luminosa.	#
-tips.game.62=Você pode criar Hoglins com Fungos Carmesim, mas é perigoso!	#
+tips.game.62=Jogando no iOS, Android ou FireOS? Obtenha gratuitamente o Minecraft Original Music Pack do Marketplace para ter a experiência completa do Minecraft.	#
 
 splitscreen.joinPrompt=Entrar como o jogador %s	#
 splitscreen.unavailable.toastHeader=Recurso de Tela Dividida Indisponível	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Camisa do Steve	#
 dr.emotes.slot=Emote %d	#
 
 gfxDriverOutdated.title=Drivers desatualizados!	#
-gfxDriverOutdated.message=Os drivers gráficos do seu computador têm uma nova atualização disponível. Sem a atualização, os mundos podem ter alguns problemas ou bugs. Instale-a para aproveitar Minecraft ao máximo. Leia mais em http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Os drivers gráficos do seu computador têm uma nova atualização disponível. Sem a atualização, os mundos podem ter alguns problemas ou bugs. Instale-a para aproveitar Minecraft ao máximo. Leia mais em http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=Não mostre esta mensagem novamente	#
 gfxDriverOutdated.close=Fechar	#
 

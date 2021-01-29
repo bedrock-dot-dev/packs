@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Gâchette de gauche	#
 accessibility.keyboard.leftBracket=Touche crochet ouvrant			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Touche crochet fermant		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, %s bouton %d, %d de %d	#
-accessibility.emotes.buttonName=Émote	#
+accessibility.emotes.hovered=%s, bouton émote %d, %d de %d	#
 accessibility.emotes.assigned=Émote %s assignée	#
 accessibility.emotes.unassigned=Non assignées	#
 accessibility.emotes.playSuccess=Jouer l’émote	#
-accessibility.emotes.playFailed=Aucune émote n'est affectée à ce bouton, appuyez sur la flèche vers le bas pour accéder au bouton Modifier les émotes.	#
+accessibility.emotes.playFailed=Aucune émote n'est affectée à ce bouton, appuyez sur %s pour accéder au bouton Modifier les émotes.	#
+accessibility.emotes.changeEmotesInstruction.button=le %s pour accéder	#
+accessibility.emotes.keyboard.arrow=flèche	#
+
 accessibility.emotes.instruction.keyboard=Appuyez à droite ou à gauche pour parcourir les boutons d’émotes. Appuyez sur la flèche vers le bas pour accéder au bouton Modifier les émotes.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Vos comptes ont été dissociés.	#
 options.unlink_msa.failure.title=Une erreur s'est produite	#
 options.unlink_msa.failure.body=Nous n'avons pu dissocier vos comptes. Avez-vous vérifié votre connexion Internet?	#
 
+patchNotes.loading=Chargement des notes de version	#
 patchNotes.continue=Continuer	#
 patchNotes.unlock=Déverrouiller	#
 patchNotes.error.noInternet.title=Non connecté à Internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Cisaillez une ruche ou un nid pour obtenir un rayon de miel; utilis
 tips.game.59=Placez un feu de camp sous une ruche ou un nid pour récolter le miel en toute tranquillité. Vos abeilles vous en seront reconnaissantes.	#
 tips.game.60=Pour réapparaître dans le Nether, vous avez besoin d’une ancre de réapparition chargée.	#
 tips.game.61=Vous pouvez charger une ancre de réapparition à l’aide d’une pierre lumineuse.	#
-tips.game.62=Vous pouvez élever des hoglins en utilisant des champignons carmin, mais c'est dangereux!	#
+tips.game.62=Vous jouez sur iOS, Android ou FireOS? Obtenez gratuitement le pack de musique originale Minecraft au marché pour profiter d'une expérience Minecraft complète.	#
 
 splitscreen.joinPrompt=Rejoindre en tant que joueur %s	#
 splitscreen.unavailable.toastHeader=L'écran partagé n'est pas disponible	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Chemise de Steve	#
 dr.emotes.slot=Expression de sentiment %d	#
 
 gfxDriverOutdated.title=Pilotes obsolètes!	#
-gfxDriverOutdated.message=Les pilotes graphiques de votre ordinateur peuvent être mis à jour. Sans cette mise à jour, vos mondes pourraient rencontrer des problèmes ou des bogues. Veuillez procéder à l'installation afin de profiter pleinement de Minecraft. Apprenez-en plus sur http://aka.ms/ray-tracing-FAQ.	#
+gfxDriverOutdated.message=Les pilotes graphiques de votre ordinateur peuvent être mis à jour. Sans cette mise à jour, vos mondes pourraient éprouver des problèmes ou des bogues. Veuillez procéder à l'installation afin de profiter pleinement de Minecraft. Apprenez-en plus sur http://aka.ms/mcupdatedrivers.	#
 gfxDriverOutdated.doNotShowAgain=Ne plus afficher ce message	#
 gfxDriverOutdated.close=Fermer	#
 

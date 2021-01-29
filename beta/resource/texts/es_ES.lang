@@ -194,12 +194,14 @@ accessibility.gamepad.bumper.left=Botón superior izquierdo	#
 accessibility.keyboard.leftBracket=Tecla corchete de apertura			### left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Tecla corchete de cierre		### right square bracket means ']' on the english keyboard
 
-accessibility.emotes.hovered=%s, botón %s %d, %d de %d	#
-accessibility.emotes.buttonName=Gesto	#
+accessibility.emotes.hovered=%s, botón de gesto %d, %d de %d	#
 accessibility.emotes.assigned=Gesto asignado: %s	#
 accessibility.emotes.unassigned=No asignado	#
 accessibility.emotes.playSuccess=Reproducir gesto	#
-accessibility.emotes.playFailed=No se ha asignado ningún gesto a este botón. Pulsa la flecha hacia abajo para acceder al botón de Cambiar gestos.	#
+accessibility.emotes.playFailed=No se ha asignado ningún gesto a este botón. Pulsa %s para acceder al botón de Cambiar gestos.	#
+accessibility.emotes.changeEmotesInstruction.button=%s para acceder	#
+accessibility.emotes.keyboard.arrow=flecha	#
+
 accessibility.emotes.instruction.keyboard=Pulsa derecha o izquierda para pasar por los botones de gestos. Pulsa la flecha hacia abajo para acceder al botón de Cambiar gestos.	#
 
 ## End of audible phrases section
@@ -5929,6 +5931,7 @@ options.unlink_msa.success.body=Tus cuentas se han desvinculado.	#
 options.unlink_msa.failure.title=Algo salió mal	#
 options.unlink_msa.failure.body=Tus cuentas no pudieron desvincularse. ¿Y si compruebas tu conexión a Internet?	#
 
+patchNotes.loading=Cargando notas del parche	#
 patchNotes.continue=Continuar	#
 patchNotes.unlock=Desbloquear	#
 patchNotes.error.noInternet.title=Sin conexión a internet	#
@@ -8652,7 +8655,7 @@ tips.game.58=Trasquila una colmena o un nido para conseguir un panal. Usa una bo
 tips.game.59=Coloca una fogata debajo de una colmena o un nido para obtener miel pacíficamente. Tus abejas te lo agradecerán.	#
 tips.game.60=Para regenerarte en el Inframundo, hace falta un ancla de regeneración cargada.	#
 tips.game.61=Puedes cargar un ancla de regeneración con piedra brillante.	#
-tips.game.62=Puedes criar hoglins con hongos carmesíes, ¡pero es peligroso!	#
+tips.game.62=¿Juegas en iOS, Android o FireOS? Obtén el pack de música origina del Minecraft en el Marketplace para disfrutar de Minecraft al máximo.	#
 
 splitscreen.joinPrompt=Unirse como jugador %s	#
 splitscreen.unavailable.toastHeader=La pantalla partida no está disponible	#
@@ -8907,7 +8910,7 @@ dr.default.steve.top=Camisa de Steve	#
 dr.emotes.slot=Emoji %d	#
 
 gfxDriverOutdated.title=¡Controladores anticuados!	#
-gfxDriverOutdated.message=Hay una actualización disponible para los controladores gráficos de tu ordenador. Si no los actualizas, puede que haya errores o problemas en los mundos. Instala la actualización para disfrutar al máximo de Minecraft. Aquí tienes más información: http://aka.ms/ray-tracing-FAQ	#
+gfxDriverOutdated.message=Hay una actualización disponible para los controladores gráficos de tu ordenador. Si no los actualizas, puede que haya errores o problemas en los mundos. Instala la actualización para disfrutar al máximo de Minecraft. Aquí tienes más información: http://aka.ms/mcupdatedrivers	#
 gfxDriverOutdated.doNotShowAgain=No volver a mostrar este mensaje	#
 gfxDriverOutdated.close=Cerrar	#
 
