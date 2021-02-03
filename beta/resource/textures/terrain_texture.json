@@ -525,6 +525,17 @@
       "conduit" : {
          "textures" : "textures/blocks/conduit_base"
       },
+      "copper_block" : {
+         "textures" : [
+            "textures/blocks/copper_block",
+            "textures/blocks/lightly_weathered_copper_block",
+            "textures/blocks/semi_weathered_copper_block",
+            "textures/blocks/weathered_copper_block"
+         ]
+      },
+      "copper_ore" : {
+         "textures" : "textures/blocks/copper_ore"
+      },
       "coral" : {
          "textures" : [
             "textures/blocks/coral_plant_blue",
@@ -648,6 +659,14 @@
       },
       "crying_obsidian" : {
          "textures" : "textures/blocks/crying_obsidian"
+      },
+      "cut_copper_block" : {
+         "textures" : [
+            "textures/blocks/cut_copper",
+            "textures/blocks/lightly_weathered_cut_copper",
+            "textures/blocks/semi_weathered_cut_copper",
+            "textures/blocks/weathered_cut_copper"
+         ]
       },
       "cyan_glazed_terracotta" : {
          "textures" : "textures/blocks/glazed_terracotta_cyan"
@@ -1295,6 +1314,9 @@
       "light_blue_glazed_terracotta" : {
          "textures" : "textures/blocks/glazed_terracotta_light_blue"
       },
+      "lightning_rod" : {
+         "textures" : "textures/blocks/lightning_rod"
+      },
       "lime_glazed_terracotta" : {
          "textures" : "textures/blocks/glazed_terracotta_lime"
       },
@@ -1736,6 +1758,36 @@
             "textures/blocks/planks_big_oak"
          ]
       },
+      "pointed_dripstone_base" : {
+         "textures" : [
+            "textures/blocks/pointed_dripstone_down_base",
+            "textures/blocks/pointed_dripstone_up_base"
+         ]
+      },
+      "pointed_dripstone_frustum" : {
+         "textures" : [
+            "textures/blocks/pointed_dripstone_down_frustum",
+            "textures/blocks/pointed_dripstone_up_frustum"
+         ]
+      },
+      "pointed_dripstone_merge" : {
+         "textures" : [
+            "textures/blocks/pointed_dripstone_down_merge",
+            "textures/blocks/pointed_dripstone_up_merge"
+         ]
+      },
+      "pointed_dripstone_middle" : {
+         "textures" : [
+            "textures/blocks/pointed_dripstone_down_middle",
+            "textures/blocks/pointed_dripstone_up_middle"
+         ]
+      },
+      "pointed_dripstone_tip" : {
+         "textures" : [
+            "textures/blocks/pointed_dripstone_down_tip",
+            "textures/blocks/pointed_dripstone_up_tip"
+         ]
+      },
       "polished_andesite" : {
          "textures" : "textures/blocks/stone_andesite_smooth"
       },
@@ -1767,6 +1819,9 @@
             "textures/blocks/potatoes_stage_2",
             "textures/blocks/potatoes_stage_3"
          ]
+      },
+      "powder_snow" : {
+         "textures" : "textures/blocks/powder_snow"
       },
       "prismarine" : {
          "textures" : [
@@ -2049,6 +2104,21 @@
       },
       "scaffolding_top" : {
          "textures" : "textures/blocks/scaffolding_top"
+      },
+      "sculk_sensor_bottom" : {
+         "textures" : "textures/blocks/sculk_sensor_bottom"
+      },
+      "sculk_sensor_side" : {
+         "textures" : "textures/blocks/sculk_sensor_side"
+      },
+      "sculk_sensor_tendril_active" : {
+         "textures" : "textures/blocks/sculk_sensor_tendril_active"
+      },
+      "sculk_sensor_tendril_inactive" : {
+         "textures" : "textures/blocks/sculk_sensor_tendril_inactive"
+      },
+      "sculk_sensor_top" : {
+         "textures" : "textures/blocks/sculk_sensor_top"
       },
       "sea_lantern" : {
          "textures" : "textures/blocks/sea_lantern"

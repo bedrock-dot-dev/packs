@@ -139,7 +139,8 @@
             "textures/items/bucket_cod",
             "textures/items/bucket_salmon",
             "textures/items/bucket_tropical",
-            "textures/items/bucket_pufferfish"
+            "textures/items/bucket_pufferfish",
+            "textures/items/bucket_powder_snow"
          ]
       },
       "cake" : {
@@ -224,6 +225,9 @@
       },
       "cookie" : {
          "textures" : "textures/items/cookie"
+      },
+      "copper_ingot" : {
+         "textures" : "textures/items/copper_ingot"
       },
       "crimson_door" : {
          "textures" : "textures/items/crimson_door"
@@ -356,6 +360,9 @@
       },
       "glowstone_dust" : {
          "textures" : "textures/items/glowstone_dust"
+      },
+      "goat_horn" : {
+         "textures" : "textures/items/goat_horn"
       },
       "gold_horse_armor" : {
          "textures" : "textures/items/gold_horse_armor"

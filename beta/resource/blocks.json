@@ -488,6 +488,16 @@
       "sound" : "stone",
       "textures" : "conduit"
    },
+   "copper_block" : {
+      "isotropic" : false,
+      "sound" : "copper",
+      "textures" : "copper_block"
+   },
+   "copper_ore" : {
+      "isotropic" : true,
+      "sound" : "stone",
+      "textures" : "copper_ore"
+   },
    "coral" : {
       "carried_textures" : "coral",
       "sound" : "stone",
@@ -671,6 +681,21 @@
       "sound" : "stone",
       "textures" : "crying_obsidian"
    },
+   "cut_copper_block" : {
+      "isotropic" : false,
+      "sound" : "copper",
+      "textures" : "cut_copper_block"
+   },
+   "cut_copper_slab" : {
+      "isotropic" : false,
+      "sound" : "copper",
+      "textures" : "cut_copper_block"
+   },
+   "cut_copper_stairs" : {
+      "isotropic" : false,
+      "sound" : "copper",
+      "textures" : "cut_copper_block"
+   },
    "cyan_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "cyan_glazed_terracotta"
@@ -782,6 +807,11 @@
          "up" : "dispenser_top",
          "west" : "dispenser_side"
       }
+   },
+   "double_cut_copper_slab" : {
+      "isotropic" : false,
+      "sound" : "copper",
+      "textures" : "cut_copper_block"
    },
    "double_plant" : {
       "carried_textures" : "double_plant_carried",
@@ -1344,6 +1374,11 @@
       "sound" : "metal",
       "textures" : "gold_block"
    },
+   "lightning_rod" : {
+      "isotropic" : false,
+      "sound" : "copper",
+      "textures" : "lightning_rod"
+   },
    "lime_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "lime_glazed_terracotta"
@@ -1608,6 +1643,17 @@
          "up" : "dirt_podzol_top"
       }
    },
+   "pointed_dripstone" : {
+      "sound" : "vines",
+      "textures" : {
+         "down" : "pointed_dripstone_tip",
+         "east" : "pointed_dripstone_base",
+         "north" : "pointed_dripstone_frustum",
+         "south" : "pointed_dripstone_middle",
+         "up" : "pointed_dripstone_base",
+         "west" : "pointed_dripstone_merge"
+      }
+   },
    "polished_andesite_stairs" : {
       "sound" : "stone",
       "textures" : "polished_andesite"
@@ -1683,6 +1729,11 @@
    "potatoes" : {
       "sound" : "grass",
       "textures" : "potatoes"
+   },
+   "powder_snow" : {
+      "isotropic" : true,
+      "sound" : "powder_snow",
+      "textures" : "powder_snow"
    },
    "powered_comparator" : {
       "sound" : "wood",
@@ -1923,6 +1974,19 @@
          "down" : "scaffolding_bottom",
          "side" : "scaffolding_side",
          "up" : "scaffolding_top"
+      }
+   },
+   "sculk_sensor" : {
+      "carried_textures" : {
+         "down" : "sculk_sensor_tendril_inactive",
+         "side" : "sculk_sensor_tendril_active",
+         "up" : "sculk_sensor_tendril_inactive"
+      },
+      "sound" : "sculk_sensor",
+      "textures" : {
+         "down" : "sculk_sensor_bottom",
+         "side" : "sculk_sensor_side",
+         "up" : "sculk_sensor_top"
       }
    },
    "seaLantern" : {

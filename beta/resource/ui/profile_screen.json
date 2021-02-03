@@ -718,6 +718,7 @@
     "$button_binding_condition": "always",
     "$button_text_size": [ "100%", "100%" ],
     "$button_text_max_size": [ "100%", "100%" ],
+    "tts_play_on_unchanged_focus_control": true,
     "bindings": [
       {
         "binding_name": "#enable_edit_appearance",
@@ -746,6 +747,8 @@
     "$button_content": "profile.profile_button_image_content",
     "$button_image_content_size": [ 13, 14 ],
     "$profile_button_image": "textures/ui/icon_trash",
+    "tts_control_header": "profileScreen.delete_button",
+    "tts_play_on_unchanged_focus_control": true,
     "bindings": [
       {
         "binding_name": "#delete_button_enabled",
@@ -776,6 +779,7 @@
     "$new_ui_label_offset": [ 0, 2 ],
     "$button_text_size": [ "100%", "100%" ],
     "$button_text_max_size": [ "100%", "100%" ],
+    "tts_play_on_unchanged_focus_control": true,
     "bindings": [
       {
         "binding_name": "#enable_achievement_button",
@@ -792,7 +796,9 @@
     "$pressed_button_name": "button.settings",
     "$button_content": "profile.profile_button_image_content",
     "$button_image_content_size": [ 14, 14 ],
-    "$profile_button_image": "textures/ui/icon_setting"
+    "$profile_button_image": "textures/ui/icon_setting",
+    "tts_control_header": "profileScreen.settings_button",
+    "tts_play_on_unchanged_focus_control": true
   },
 
   /////////////////////////////

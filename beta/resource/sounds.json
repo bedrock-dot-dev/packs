@@ -272,6 +272,40 @@
          "pitch" : 1.0,
          "volume" : 1.0
       },
+      "copper" : {
+         "events" : {
+            "break" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "dig.copper",
+               "volume" : 1.0
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 0.50,
+               "sound" : "hit.copper",
+               "volume" : 0.30
+            },
+            "item.use.on" : {
+               "pitch" : 0.80,
+               "sound" : "use.copper"
+            },
+            "place" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "dig.copper",
+               "volume" : 1.0
+            },
+            "power.off" : {
+               "pitch" : 0.50,
+               "sound" : "random.click"
+            },
+            "power.on" : {
+               "pitch" : 0.60,
+               "sound" : "random.click"
+            }
+         },
+         "pitch" : 1.0,
+         "volume" : 1.0
+      },
       "coral" : {
          "events" : {
             "break" : {
@@ -918,6 +952,40 @@
          "pitch" : 1.0,
          "volume" : 1.0
       },
+      "powder_snow" : {
+         "events" : {
+            "break" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "dig.powder_snow",
+               "volume" : 1.0
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 0.50,
+               "sound" : "hit.powder_snow",
+               "volume" : 0.30
+            },
+            "item.use.on" : {
+               "pitch" : 0.80,
+               "sound" : "use.powder_snow"
+            },
+            "place" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "dig.powder_snow",
+               "volume" : 1.0
+            },
+            "power.off" : {
+               "pitch" : 0.50,
+               "sound" : "random.click"
+            },
+            "power.on" : {
+               "pitch" : 0.60,
+               "sound" : "random.click"
+            }
+         },
+         "pitch" : 1.0,
+         "volume" : 1.0
+      },
       "roots" : {
          "events" : {
             "break" : {
@@ -1006,6 +1074,40 @@
             "place" : {
                "pitch" : [ 0.80, 0.90 ],
                "sound" : "block.scaffolding.place",
+               "volume" : 1.0
+            },
+            "power.off" : {
+               "pitch" : 0.50,
+               "sound" : "random.click"
+            },
+            "power.on" : {
+               "pitch" : 0.60,
+               "sound" : "random.click"
+            }
+         },
+         "pitch" : 1.0,
+         "volume" : 1.0
+      },
+      "sculk_sensor" : {
+         "events" : {
+            "break" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "break.sculk_sensor",
+               "volume" : 1.0
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 0.50,
+               "sound" : "hit.sculk_sensor",
+               "volume" : 0.350
+            },
+            "item.use.on" : {
+               "pitch" : 0.80,
+               "sound" : "use.sculk_sensor"
+            },
+            "place" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "place.sculk_sensor",
                "volume" : 1.0
             },
             "power.off" : {
@@ -1791,6 +1893,13 @@
             },
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 600.0
+         },
+         "goat" : {
+            "events" : {
+               "charge" : "mob.goat.charge"
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
          },
          "guardian" : {
             "events" : {
@@ -3347,6 +3456,11 @@
             "sound" : "bucket.empty_lava",
             "volume" : 1.0
          },
+         "bucket.empty.powder_snow" : {
+            "pitch" : 1.0,
+            "sound" : "bucket.empty_powder_snow",
+            "volume" : 1.0
+         },
          "bucket.empty.water" : {
             "pitch" : 1.0,
             "sound" : "bucket.empty_water",
@@ -3360,6 +3474,11 @@
          "bucket.fill.lava" : {
             "pitch" : 1.0,
             "sound" : "bucket.fill_lava",
+            "volume" : 1.0
+         },
+         "bucket.fill.powder_snow" : {
+            "pitch" : 1.0,
+            "sound" : "bucket.fill_powder_snow",
             "volume" : 1.0
          },
          "bucket.fill.water" : {
@@ -3705,9 +3824,19 @@
             "sound" : "random.click",
             "volume" : 1.0
          },
+         "power.off.sculk_sensor" : {
+            "pitch" : [ 0.80, 1.20 ],
+            "sound" : "power.off.sculk_sensor",
+            "volume" : 1.0
+         },
          "power.on" : {
             "pitch" : 0.60,
             "sound" : "random.click",
+            "volume" : 1.0
+         },
+         "power.on.sculk_sensor" : {
+            "pitch" : [ 0.80, 1.20 ],
+            "sound" : "power.on.sculk_sensor",
             "volume" : 1.0
          },
          "raid.horn" : {
@@ -4034,6 +4163,29 @@
                },
                "step" : {
                   "sound" : "step.cloth",
+                  "volume" : 0.30
+               }
+            },
+            "pitch" : 1.0,
+            "volume" : 1.0
+         },
+         "copper" : {
+            "events" : {
+               "default" : "",
+               "fall" : {
+                  "sounds" : "fall.copper",
+                  "volume" : 0.40
+               },
+               "jump" : {
+                  "sound" : "step.copper",
+                  "volume" : 0.120
+               },
+               "land" : {
+                  "sound" : "step.copper",
+                  "volume" : 0.220
+               },
+               "step" : {
+                  "sound" : "step.copper",
                   "volume" : 0.30
                }
             },
@@ -4455,6 +4607,29 @@
             "pitch" : 1.0,
             "volume" : 1.0
          },
+         "powder_snow" : {
+            "events" : {
+               "default" : "",
+               "fall" : {
+                  "sounds" : "fall.powder_snow",
+                  "volume" : 0.40
+               },
+               "jump" : {
+                  "sound" : "step.powder_snow",
+                  "volume" : 0.120
+               },
+               "land" : {
+                  "sound" : "step.powder_snow",
+                  "volume" : 0.220
+               },
+               "step" : {
+                  "sound" : "step.powder_snow",
+                  "volume" : 0.30
+               }
+            },
+            "pitch" : 1.0,
+            "volume" : 1.0
+         },
          "roots" : {
             "events" : {
                "default" : "",
@@ -4519,6 +4694,29 @@
                "step" : {
                   "sound" : "block.scaffolding.step",
                   "volume" : 0.30
+               }
+            },
+            "pitch" : 1.0,
+            "volume" : 1.0
+         },
+         "sculk_sensor" : {
+            "events" : {
+               "default" : "",
+               "fall" : {
+                  "sounds" : "fall.sculk_sensor",
+                  "volume" : 0.40
+               },
+               "jump" : {
+                  "sound" : "jump.sculk_sensor",
+                  "volume" : 0.120
+               },
+               "land" : {
+                  "sound" : "land.sculk_sensor",
+                  "volume" : 0.140
+               },
+               "step" : {
+                  "sound" : "step.sculk_sensor",
+                  "volume" : 0.170
                }
             },
             "pitch" : 1.0,

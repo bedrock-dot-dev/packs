@@ -5138,14 +5138,6 @@
         }
       },
       {
-        "option_toggle_dev_mixer_interactive@settings_common.option_toggle": {
-          "$option_label": "options.dev_enableMixerInteractive",
-          "$option_binding_name": "#dev_enable_mixer_interactive",
-          "$option_enabled_binding_name": "#dev_enable_mixer_interactive_enabled",
-          "$toggle_name": "dev_enable_mixer_interactive"
-        }
-      },
-      {
         "option_toggle_dev_show_tcui_replacement@settings_common.option_toggle": {
           "$option_label": "options.dev_show_tcui_replacement",
           "$option_binding_name": "#dev_show_tcui_replacement",
@@ -5706,112 +5698,6 @@
               "override_progressions_panel@general_section.debug_override_progressions_panel": {}
             }
           ]
-        }
-      }
-    ]
-  },
-
-  "broadcast_button@settings_common.section_toggle_base": {
-    "ignored": "(not $can_support_broadcast)",
-    "$toggle_view_binding_name": "broadcast_button_toggle",
-    "$glyph_texture": "textures/ui/broadcast_glyph",
-    "$glyph_color_texture": "textures/ui/broadcast_glyph_color",
-    "$glyph_size": [ 18, 19 ],
-    "$button_text": "options.broadcast",
-    "$toggle_property_bag": {
-      "#panel_title": "options.broadcast"
-    }
-  },
-
-  "broadcast_section": {
-    "ignored": "(not $can_support_broadcast)",
-    "type": "stack_panel",
-    "size": [ "100%", "100%c" ],
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "broadcast_button_toggle",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ],
-    "controls": [
-      {
-        "create_mixer_description": {
-          "type": "panel",
-          "size": [ "100%", "100%c" ],
-          "controls": [
-            {
-              "create_mixer_description_text": {
-                "type": "label",
-                "color": "$main_header_text_color",
-                "size": [ "100%", "default" ],
-                "layer": 1,
-                "text": "options.broadcast.mixerCreatePrompt"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "padding0": {
-          "type": "panel",
-          "size": [ "100%", 2 ]
-        }
-      },
-      {
-        "get_create_mixer_button@settings_common.action_button": {
-          "$pressed_button_name": "button.get_mixer_create",
-          "$button_text": "options.broadcast.mixerCreate.get",
-          "ignored": "$mixer_create_installed"
-        }
-      },
-      {
-        "launch_mixer_create_button@settings_common.action_button": {
-          "$pressed_button_name": "button.launch_mixer_create",
-          "$button_text": "options.broadcast.mixerCreate.launch",
-          "ignored": "(not $mixer_create_installed)"
-        }
-      },
-      {
-        "padding1": {
-          "ignored": "(not $is_ios)",
-          "type": "panel",
-          "size": [ "100%", 8 ]
-        }
-      },
-      {
-        "start_broadcast_text": {
-          "ignored": "(not $is_ios)",
-          "type": "panel",
-          "size": [ "100%", "100%c" ],
-          "controls": [
-            {
-              "create_mixer_label": {
-                "type": "label",
-                "color": "$main_header_text_color",
-                "size": [ "100%", "default" ],
-                "layer": 1,
-                "text": "options.broadcast.startPrompt"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "padding2": {
-          "ignored": "(not $is_ios)",
-          "type": "panel",
-          "size": [ "100%", 2 ]
-        }
-      },
-      {
-        "start_broadcast_button@settings_common.action_button": {
-          "ignored": "(not $is_ios)",
-          "$pressed_button_name": "button.start_broadcast",
-          "$button_text": "options.broadcast.start"
         }
       }
     ]

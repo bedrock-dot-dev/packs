@@ -249,13 +249,6 @@
                 "$toggle_group_forced_index": "$automation_forced_index",
                 "$tts_section_header": "$general_section_header"
               }
-            },
-            {
-              "broadcast_button@general_section.broadcast_button": {
-                "ignored": "(not $can_support_broadcast or $education_edition)",
-                "$toggle_group_forced_index": "$broadcast_forced_index",
-                "$tts_section_header": "$general_section_header"
-              }
             }
           ]
         }
@@ -377,12 +370,6 @@
             {
               "automation_section@general_section.automation_section": {
                 "ignored": "($is_publish or $test_infrastructure_disabled)",
-                "visible": false
-              }
-            },
-            {
-              "broadcast_section@general_section.broadcast_section": {
-                "ignored": "(not $can_support_broadcast or $education_edition)",
                 "visible": false
               }
             },
