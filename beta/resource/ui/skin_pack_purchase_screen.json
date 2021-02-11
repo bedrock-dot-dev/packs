@@ -54,11 +54,12 @@
   "skin_model": {
     "type": "panel",
     "size": "$skin_model_size",
-    "offset": "$skin_model_offset",
+    "clips_children": true,
     "controls": [
       {
         "paper_doll": {
           "type": "custom",
+          "offset": "$skin_model_offset",
           "renderer": "paper_doll_renderer",
           "layer": 5,
 
@@ -208,13 +209,6 @@
               "binding_collection_name": "skins_collection",
               "binding_name": "#grid_button_override_right",
               "binding_name_override": "#focus_change_right"
-            },
-            {
-              "binding_condition": "once",
-              "binding_type": "collection",
-              "binding_collection_name": "skins_collection",
-              "binding_name": "#grid_button_override_up",
-              "binding_name_override": "#focus_change_up"
             }
           ],
           "button_mappings": [
@@ -410,7 +404,7 @@
             {
               "binding_type": "view",
               "source_control_name": "gamepad",
-              "source_property_name": "(not #skin_button_game_pad_visible)",
+              "source_property_name": "(not #visible)",
               "target_property_name": "#visible",
               "resolve_sibling_scope": true
             }
@@ -545,7 +539,6 @@
             },
             {
               "sg@skin_pack_purchase.skins_grid": {
-                "clips_children": true,
                 "size": "$skins_grid_size",
                 "anchor_from": "center",
                 "anchor_to": "center"
@@ -557,8 +550,57 @@
               }
             },
             {
-              "progress_loading@common_store.progress_loading": {
-                "layer": 1000,
+              "progress_loading_panel": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "progress_loading@common_store.progress_loading": {
+                      "layer": 10,
+                      "bindings": []
+                    }
+                  },
+                  {
+                    "progress_loading_outline": {
+                      "type": "button",
+                      "layer": 12,
+
+                      "focus_enabled": true,
+
+                      "hover_control": "hover",
+
+                      "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+                      "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+
+                      "bindings": [
+                        {
+                          "binding_type": "$store_factory_collection_details",
+                          "binding_collection_name": "$store_factory_collection_name",
+                          "binding_collection_prefix": "$store_factory_collection_prefix"
+                        },
+                        {
+                          "binding_type": "$store_factory_collection_details",
+                          "binding_collection_name": "$store_factory_collection_name",
+                          "binding_name": "#is_loading_outline_visible",
+                          "binding_name_override": "#visible"
+                        }
+                      ],
+                      "button_mappings": [
+                        {
+                          "to_button_id": "button.loading_outline_unhovered",
+                          "mapping_type": "pressed"
+                        }
+                      ],
+                      "controls": [
+                        {
+                          "hover@common.focus_border_white": {
+                            "size": [ "100% - 1px", "100%" ],
+                            "layer": 12
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
                 "bindings": [
                   {
                     "binding_type": "$store_factory_binding_type",
