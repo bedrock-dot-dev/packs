@@ -4868,6 +4868,20 @@
         }
       },
       {
+        "feature_toggles_label": {
+          "type": "label",
+          "text": "Feature Toggles (governed by FeatureToggles.cpp)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color"
+        }
+      },
+      {
+        "feature_toggles_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
         "feature_toggles": {
           "type": "stack_panel",
           "orientation": "vertical",
@@ -4886,6 +4900,20 @@
           ]
         }
       },
+      {
+        "end_of_feature_toggles_label": {
+          "type": "label",
+          "text": "Other Options (not governed by FeatureToggles.cpp)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color"
+        }
+      },
+      {
+        "end_of_feature_toggles_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
       /*{// Uncomment when the debug UI option is added
         "option_toggle_0_0@settings_common.option_toggle": {
           "$option_label": "options.dev_enableDebugUI",
@@ -4894,21 +4922,6 @@
           "$toggle_name": "dev_enable_debug_ui"
         }
       },*/
-      {
-        "option_toggle_default_font_override@settings_common.option_toggle": {
-          "$option_label": "options.dev_toggle_default_font_overrides",
-          "$option_binding_name": "#dev_toggle_default_font_overrides",
-          "$toggle_name": "dev_toggle_default_font_overrides",
-          "$show_option_label": "#dev_toggle_default_font_overrides_visible",
-          "bindings": [
-            {
-              "binding_name": "#dev_toggle_default_font_overrides_visible",
-              "binding_condition": "always",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
       {
         "option_toggle_remote_imgui@settings_common.option_toggle": {
           "$option_label": "options.remote_imgui_toggle",
@@ -5135,14 +5148,6 @@
               "binding_name": "$option_label"
             }
           ]
-        }
-      },
-      {
-        "option_toggle_dev_show_tcui_replacement@settings_common.option_toggle": {
-          "$option_label": "options.dev_show_tcui_replacement",
-          "$option_binding_name": "#dev_show_tcui_replacement",
-          "$option_enabled_binding_name": "#dev_show_tcui_replacement_enabled",
-          "$toggle_name": "dev_show_tcui_replacement"
         }
       },
       {
@@ -5533,40 +5538,6 @@
         }
       },
       {
-        "padding_core_ui": {
-          "type": "panel",
-          "size": [ "100%", 3 ]
-        }
-      },
-      {
-        "open_core_ui_tests@settings_common.action_button": {
-          "$pressed_button_name": "button.open_core_ui_tests",
-          "$button_text": "#dev_open_core_ui_tests_button_text",
-          "$button_text_binding_type": "global",
-          "$button_binding_condition": "visible",
-          "bindings": [
-            {
-              "binding_name": "#show_core_ui_shortcuts",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "open_core_ui_docs@settings_common.action_button": {
-          "$pressed_button_name": "button.open_core_ui_docs",
-          "$button_text": "#dev_open_core_ui_docs_button_text",
-          "$button_text_binding_type": "global",
-          "$button_binding_condition": "visible",
-          "bindings": [
-            {
-              "binding_name": "#show_core_ui_shortcuts",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
         "option_text_edit_0@settings_common.option_text_edit": {
           "$option_label": "options.dev_realmsEndpoint",
           "$text_box_name": "dev_realms_endpoint",
@@ -5635,6 +5606,289 @@
     ]
   },
 
+  "ui_debug_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "ui_debug_button_toggle",
+    "$glyph_texture": "textures/ui/focus_border_white",
+    "$glyph_color_texture": "textures/ui/right_split_panel_default",
+    "$glyph_size": [ 15, 15 ],
+    "$button_text": "UI Debug",
+    "$toggle_property_bag": {
+      "#panel_title": "UI Debug"
+    }
+  },
+
+  "ui_feature_toggle@settings_common.option_toggle": {
+    "$line_size": [ "100%", "100%c - 9px" ],
+    "$option_label": "#text",
+    "$toggle_tts_header_binding_type": "collection",
+    "$toggle_tts_header_binding_collection_name": "ui_feature_toggles",
+    "$toggle_name": "ui_feature_toggle",
+    "$toggle_state_binding_name": "#feature_toggle_state",
+    "$option_binding_name": "#feature_toggle_state",
+    "$toggle_binding_type": "collection",
+    "$toggle_grid_collection_name": "ui_feature_toggles",
+    "$toggle_collection_details_type": "collection_details",
+    "$toggle_collection_detail_name": "ui_feature_toggles",
+    "bindings": [
+      {
+        "binding_name": "#feature_toggle_enabled",
+        "binding_type": "collection",
+        "binding_name_override": "#enabled",
+        "binding_collection_name": "ui_feature_toggles"
+      }
+    ],
+    "$label_bindings": [
+      {
+        "binding_name": "#feature_toggle_text",
+        "binding_name_override": "#text",
+        "binding_type": "collection",
+        "binding_collection_name": "ui_feature_toggles"
+      }
+    ]
+  },
+  "new_achievements_grid_item@settings_common.radio_with_label": {
+    "$toggle_state_binding_name": "#initial_selected",
+    "$radio_label_text": "#description",
+    "$radio_label_bindings": [
+      {
+        "binding_name": "#description",
+        "binding_type": "collection",
+        "binding_condition": "once",
+        "binding_collection_name": "dev_new_achievements_screens_radio"
+      }
+    ],
+    "$radio_toggle_group": true,
+    "$toggle_binding_type": "collection",
+    "$toggle_name": "dev_new_achievements_screens_radio",
+    "$toggle_grid_collection_name": "dev_new_achievements_screens_radio",
+    "$option_enabled_binding_name": "",
+    "bindings": [
+      {
+        "binding_name": "#default_focus_precedence",
+        "binding_type": "collection",
+        "binding_condition": "visible",
+        "binding_collection_name": "dev_new_achievements_screens_radio"
+      }
+    ]
+  },
+
+  "ui_debug_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "ui_debug_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "ui_feature_toggles_label": {
+          "type": "label",
+          "text": "UI-related Feature Toggles (governed by FeatureToggles.cpp)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color"
+        }
+      },
+      {
+        "ui_feature_toggles_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "ui_feature_toggles": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [ "100%", "100%c" ],
+          "factory": {
+            "name": "ui_feature_toggle_factory",
+            "control_name": "general_section.ui_feature_toggle"
+          },
+          "collection_name": "ui_feature_toggles",
+          "bindings": [
+            {
+              "binding_name": "#ui_feature_toggle_count",
+              "binding_name_override": "#collection_length"
+            }
+          ]
+        }
+      },
+      {
+        "end_of_ui_feature_toggles_label": {
+          "type": "label",
+          "text": "Other Options (not governed by FeatureToggles.cpp)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color"
+        }
+      },
+      {
+        "end_of_ui_feature_toggles_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "new_achievements_screens_radio_label": {
+          "type": "label",
+          "text": "New Achievements Screens (requires the infrastructure)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "bindings": [
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "new_achievements_screens_radio_label_disabled": {
+          "type": "label",
+          "text": "New Achievements Screens (requires the infrastructure)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "alpha": 0.5,
+          "bindings": [
+            {
+              "binding_name": "(not #core_ui_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "new_achievements_screens_radio_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "new_achievements_screens_radio_button": {
+          "type": "grid",
+          "size": [ "100%", "100%c" ],
+          "grid_item_template": "general_section.new_achievements_grid_item",
+          "grid_dimension_binding": "#dev_new_achievements_screens_radio_dimension",
+          "collection_name": "dev_new_achievements_screens_radio",
+          "bindings": [
+            {
+              "binding_name": "#dev_new_achievements_screens_radio_dimension",
+              "binding_condition": "visible"
+            },
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "new_achievements_screens_radio_button_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "option_toggle_default_font_override@settings_common.option_toggle": {
+          "$option_label": "Enable Default Font Overrides (requires loading from font_metadata.json)",
+          "$option_binding_name": "#dev_toggle_default_font_overrides",
+          "$toggle_name": "dev_toggle_default_font_overrides",
+          "$show_option_label": "#dev_toggle_default_font_overrides_visible",
+          "bindings": [
+            {
+              "binding_name": "#dev_toggle_default_font_overrides_visible",
+              "binding_condition": "always",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "option_toggle_dev_show_tcui_replacement@settings_common.option_toggle": {
+          "$option_label": "Show TCUI replacement",
+          "$option_binding_name": "#dev_show_tcui_replacement",
+          "$option_enabled_binding_name": "#dev_show_tcui_replacement_enabled",
+          "$toggle_name": "dev_show_tcui_replacement"
+        }
+      },
+      {
+        "ui_feature_toggles_spacer": {
+          "type": "panel",
+          "size": [ "100%", 7 ]
+        }
+      },
+      {
+        "open_core_ui_label": {
+          "type": "label",
+          "text": "Core UI developer pages",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "bindings": [
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "open_core_ui_label_disabled": {
+          "type": "label",
+          "text": "Core UI developer pages",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "alpha": 0.5,
+          "bindings": [
+            {
+              "binding_name": "(not #core_ui_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "open_core_ui_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ],
+          "bindings": [
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "open_core_ui_docs@settings_common.action_button": {
+          "$pressed_button_name": "button.open_core_ui_docs",
+          "$button_text": "Open Core UI Docs",
+          "bindings": [
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "open_core_ui_tests@settings_common.action_button": {
+          "$pressed_button_name": "button.open_core_ui_tests",
+          "$button_text": "Open Core UI Tests",
+          "bindings": [
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "flighting_debug_button@settings_common.section_toggle_base": {
     "$toggle_view_binding_name": "flighting_debug_button_toggle",
     "$glyph_texture": "textures/ui/local_only_storage",
@@ -5642,7 +5896,7 @@
     "$glyph_size": [ 15, 15 ],
     "$button_text": "options.flighting_debug",
     "$toggle_property_bag": {
-      "#panel_title": "options.debugTitle"
+      "#panel_title": "options.flighting_debug"
     }
   },
 
@@ -6052,6 +6306,12 @@
         "sunsetting_tier1@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#sunsetting_tier1",
           "$radio_label_text": "options.dev_sunsetting_tier.one"
+        }
+      },
+      {
+        "sunsetting_tier2@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#sunsetting_tier2",
+          "$radio_label_text": "options.dev_sunsetting_tier.two"
         }
       },
       {

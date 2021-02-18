@@ -237,6 +237,13 @@
               }
             },
             {
+              "ui_debug_button@general_section.ui_debug_button": {
+                "ignored": "$is_publish",
+                "$toggle_group_forced_index": "$ui_debug_forced_index",
+                "$tts_section_header": "$general_section_header"
+              }
+            },
+            {
               "flighting_debug_button@general_section.flighting_debug_button": {
                 "ignored": "$is_publish",
                 "$toggle_group_forced_index": "$flighting_debug_forced_index",
@@ -341,7 +348,12 @@
               }
             },
             { "video_section@general_section.video_section": { "visible": false } },
-            { "view_subscriptions_section@general_section.view_subscriptions_section": { "ignored": "$education_edition", "visible": false } },
+            {
+              "view_subscriptions_section@general_section.view_subscriptions_section": {
+                "ignored": "$education_edition",
+                "visible": false
+              }
+            },
             {
               "vr_section@general_section.vr_section": {
                 "ignored": "(not $is_holographic)",
@@ -357,6 +369,12 @@
             },
             {
               "debug_section@general_section.debug_section": {
+                "ignored": "$is_publish",
+                "visible": false
+              }
+            },
+            {
+              "ui_debug_section@general_section.ui_debug_section": {
                 "ignored": "$is_publish",
                 "visible": false
               }
