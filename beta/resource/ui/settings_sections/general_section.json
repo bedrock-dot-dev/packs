@@ -6315,6 +6315,12 @@
         }
       },
       {
+        "sunsetting_tier2@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#sunsetting_tier3",
+          "$radio_label_text": "options.dev_sunsetting_tier.three"
+        }
+      },
+      {
         "sunsetting_not_pending@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#sunsetting_not_pending",
           "$radio_label_text": "options.dev_sunsetting_tier.not_pending"
