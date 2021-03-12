@@ -3251,36 +3251,6 @@
         "paragraph_17@how_to_play_common.paragraph": {
           "$text": "howtoplay.gameSettings.text.17"
         }
-      },
-      { "padding_17@how_to_play_common.padding": {} },
-      {
-        "paragraph_18@how_to_play_common.paragraph": {
-          "$text": "howtoplay.gameSettings.text.18"
-        }
-      },
-      { "padding_18@how_to_play_common.padding": {} },
-      {
-        "paragraph_19@how_to_play_common.paragraph": {
-          "$text": "howtoplay.gameSettings.text.19"
-        }
-      },
-      { "padding_19@how_to_play_common.padding": {} },
-      {
-        "paragraph_20@how_to_play_common.paragraph": {
-          "$text": "howtoplay.gameSettings.text.20"
-        }
-      },
-      { "padding_20@how_to_play_common.padding": {} },
-      {
-        "paragraph_21@how_to_play_common.paragraph": {
-          "$text": "howtoplay.gameSettings.text.21"
-        }
-      },
-      { "padding_21@how_to_play_common.padding": {} },
-      {
-        "paragraph_22@how_to_play_common.paragraph": {
-          "$text": "howtoplay.gameSettings.text.22"
-        }
       }
     ]
   },
