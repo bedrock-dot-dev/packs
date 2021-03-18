@@ -36,8 +36,7 @@
               "action_button@how_to_play_common.action_button": {
                 "ignored": "($education_edition or $trial)",
                 "$pressed_button_name": "patch_notes_button",
-                "$button_text": "howtoplay.whatsNew",
-                "$focus_override_up": "FOCUS_OVERRIDE_STOP"
+                "$button_text": "howtoplay.whatsNew"
               }
             },
             {

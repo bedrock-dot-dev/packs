@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.16.220.51</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.16.220.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -9,11 +9,13 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:aggregate_feature"> minecraft:aggregate_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:sequence_feature"> minecraft:sequence_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:cave_carver_feature"> minecraft:cave_carver_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:growing_plant_feature"> minecraft:growing_plant_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:hell_cave_carver_feature"> minecraft:hell_cave_carver_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:ore_feature"> minecraft:ore_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:scatter_feature"> minecraft:scatter_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:search_feature"> minecraft:search_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:single_block_feature"> minecraft:single_block_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:snap_to_surface_feature"> minecraft:snap_to_surface_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:structure_template_feature"> minecraft:structure_template_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:underwater_cave_carver_feature"> minecraft:underwater_cave_carver_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:tree_feature"> minecraft:tree_feature</a> </tr> </td>
@@ -109,6 +111,36 @@ Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" row
           "width_modifier": 0.0
         }
       }
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:growing_plant_feature">minecraft:growing_plant_feature</p></h1>
+
+'minecraft:growing_plant_feature' places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction.</br>The growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remainder blocks.</br>This feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.</br><h2></h2>
+Example use: Defining a growing plant feature with variable body and head blocks and height distribution.<br / ><textarea readonly="true" cols="53" rows="24">
+{
+  "format_version": "1.16.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "minecraft:cave_vine_feature"
+    },
+    "height_distribution":  [
+      ["math.random_integer(1, 12)", 2],
+      [1, 3],
+      ["math.random_integer(1, 6)", 10]
+    ],
+    "growth_direction": "DOWN",
+    "age" : "math.random_integer(17, 25)",
+    "body_blocks" : [
+      ["minecraft:cave_vines", 4],
+      ["minecraft:cave_vines_body_with_berries", 1 ]
+    ],
+    "head_blocks" : [
+      ["minecraft:cave_vines", 4],
+      ["minecraft:cave_vines_head_with_berries", 1 ]
+    ]
+  }
+}
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
@@ -221,6 +253,24 @@ Example use: Placing a single pumpkin block.<br / ><textarea readonly="true" col
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
+<h1><p id="minecraft:snap_to_surface_feature">minecraft:snap_to_surface_feature</p></h1>
+
+'minecraft:snap_to_surface_feature' snaps the y-value of a feature placement pos to the floor or the ceiling within the provided 'vertical_search_range'. The placement biome is preserved. If the snap position goes outside of the placement biome, placement will fail.</br><h2></h2>
+Example use: Define a feature that snaps the 'cave_vine_feature' to the ceiling.<br / ><textarea readonly="true" cols="69" rows="12">
+{
+  "format_version": "1.16.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "minecraft:cave_vine_snapped_to_ceiling_feature"
+    },
+    "feature_to_snap":  "minecraft:cave_vine_feature",
+    "vertical_search_range":  12,
+    "surface": "ceiling"
+  }
+}
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
 <h1><p id="minecraft:structure_template_feature">minecraft:structure_template_feature</p></h1>
 
 'minecraft:structure_template_feature' places a structure in the world. The structure must be stored as a .mcstructure file in the "structures" subdirectory of a behavior pack. It is possible to reference structures that are part of other behavior packs, they do not need to come from the same behavior pack as this feature. Constraints can be defined to specify where the structure is allowed to be placed. During placement, the feature will search for a position within the 'adjustment_radius' that satisfies all constraints. If none are found, the structure will not be placed.</br>Succeeds if: The structure is placed in the world.</br>Fails if: The structure fails to be placed within the world.</br><h2></h2>
@@ -325,6 +375,39 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+      }
+      object "minecraft:growing_plant_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          array "height_distribution"[1,*]
+          {
+              array "<any array element>"[2] // Collection of weighted heights that placement will select from.
+              {
+                  molang "[0..0]" // Plant height.
+                  float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
+              }
+          }
+          string "growth_direction" // Direction that the plant grows towards. Valid values: UP and DOWN
+          molang "age" // Age of the head of the plant.
+          array "body_blocks"[1,*]
+          {
+              array "<any array element>"[2] // Collection of weighted block descriptor that placement will select from for the body of the plant.
+              {
+                   "[0..0]" // Plant body block.
+                  float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
+              }
+          }
+          array "head_blocks"[1,*]
+          {
+              array "<any array element>"[2] // Collection of weighted block descriptor that placement will select from for the head of the plant.
+              {
+                   "[0..0]" // Plant head block.
+                  float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
+              }
+          }
       }
       object "minecraft:hell_cave_carver_feature" : opt
       {
@@ -485,6 +568,16 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
           }
       }
+      object "minecraft:snap_to_surface_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          feature_reference "feature_to_snap" // Named reference of feature to be snapped
+          int "vertical_search_range" // Range to search for a floor or ceiling for snaping the feature.
+          string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling' and 'floor'
+      }
       object "minecraft:structure_template_feature" : opt
       {
           object "description"
@@ -559,12 +652,14 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   {
                       int "<any array element>"<1-*> : opt
                   }
+                  int "min_height_for_canopy"<1-*> : opt
               }
               object "trunk_lean"
               {
                   bool "allow_diagonal_growth"
                    "lean_height"
                    "lean_steps"
+                   "lean_length" : opt
               }
                "trunk_block"
               object "branches" : opt
@@ -897,6 +992,20 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                "upper_offset"
                "max_radius"
                "leaf_block"
+          }
+          object "random_spread_canopy" : opt
+          {
+               "canopy_height"
+               "canopy_radius"
+              int "leaf_placement_attempts"<1-*>
+              array "leaf_blocks"
+              {
+                  array "<any array element>"[2]
+                  {
+                       "[0..0]"
+                      float "[1..1]"
+                  }
+              }
           }
       }
       object "minecraft:weighted_random_feature" : opt
