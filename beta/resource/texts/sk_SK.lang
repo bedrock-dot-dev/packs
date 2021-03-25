@@ -5192,7 +5192,7 @@ library.item.sharepopup.shareLink=Zdieľať prepojenie	#
 library.item.sharepopup.body=Zdieľajte prepojenie na tento svet.	#
 library.item.sharepopup.copy=KOPÍROVAŤ	#
 library.item.sharepopup.copyButton=Kopírovať prepojenie	#
-library.item.sharepopup.shareButton=Zdieľať tímom	#
+library.item.sharepopup.shareButton=Zdieľať do Teams	#
 library.item.share.toast.title=Prepojenie sa skopírovalo do schránky.	#
 library.item.teams.msgTxt=Pozrite si tento svet, %1, vo vydaní Minecraft: Education Edition.	#
 
@@ -8934,7 +8934,9 @@ dr.default.steve.mouth=Steveove ústa	#
 dr.default.steve.shoes=Steveove topánky	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Steveova košeľa	#
-dr.emotes.slot=Emócie %d	#
+dr.emotes.slot=Emócia %d	#
+dr.deep_link_fail.profile=Hlboké prepojenie zlyhalo: nemožno načítať profil	#
+dr.deep_link_fail.dressing_room=Hlboké prepojenie zlyhalo: nemožno otvoriť ponuku	#
 
 onlinePlay.notRated=Hra online nie je hodnotená	#
 onlinePlay.message=Počas hry online môžete byť vystavení chatovým správam alebo iným typom obsahu vytvoreného používateľmi, ktorý nebol hodnotený a nemusí byť vhodný pre všetky vekové kategórie.	#

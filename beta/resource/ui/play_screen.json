@@ -2163,6 +2163,20 @@
               }
             },
             {
+              "view_offers_button@common_buttons.light_text_button": {
+                "$pressed_button_name": "button.view_third_party_server_offers",
+                "$button_text": "networkWorld.view_offers",
+                "$focus_override_left": "left_panel",
+                "size": [ "100%", 20 ],
+                "bindings": [
+                  {
+                    "binding_name": "#view_offers_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
               "padding_5": {
                 "type": "panel",
                 "size": [ "100%", 2 ]

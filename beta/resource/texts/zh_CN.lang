@@ -5732,7 +5732,7 @@ options.sensitivity=鼠标灵敏度	#
 options.sensitivity.max=超高速！！！	#
 options.sensitivity.min=*哈欠*	#
 options.multiplayergame=多人游戏	#
-options.servervisible=广播到局域网内玩家	#
+options.servervisible=对局域网内玩家可见	#
 options.ShowComfortSelectScreen=显示舒适度选择屏幕	#
 options.sliderLabelFormat=%s：%s	#
 options.smoothRotationSpeed=平滑旋转速度	#
@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=史蒂夫的鞋子	#
 dr.default.steve.skin=史蒂夫	#
 dr.default.steve.top=史蒂夫的衬衫	#
 dr.emotes.slot=表情 %d	#
+dr.deep_link_fail.profile=深层链接失败：无法加载档案	#
+dr.deep_link_fail.dressing_room=深层链接失败：无法打开优惠	#
 
 onlinePlay.notRated=线上游戏未分级	#
 onlinePlay.message=线上游戏可能会含有聊天消息或其他用户创作的内容，这些内容未经评级，可能并不适合所有年龄段。	#

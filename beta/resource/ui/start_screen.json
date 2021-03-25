@@ -681,6 +681,7 @@
         "marketplace_button_label": {
           "type": "label",
           "text": "menu.store",
+          "layer":  1,
           "color": "$light_button_locked_text_color"
         }
       }
@@ -911,6 +912,7 @@
                   },
                   {
                     "update_icon@start.update_prompt_icon": {
+                      "ignored": "$store_disabled",
                       "size": [ "52.38%y", 15 ],
                       "offset": [ -16, -6 ],
                       "bindings": [
@@ -924,6 +926,7 @@
                   },
                   {
                     "new_offers_icon@start.new_offers_icon": {
+                      "ignored": "$store_disabled",
                       "offset": [ 8, -6 ],
                       "anchor_from": "top_right",
                       "anchor_to": "top_right",

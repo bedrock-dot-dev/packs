@@ -5192,7 +5192,7 @@ library.item.sharepopup.shareLink=Een koppeling delen	#
 library.item.sharepopup.body=Deel een koppeling naar deze wereld.	#
 library.item.sharepopup.copy=KOPIËREN	#
 library.item.sharepopup.copyButton=Koppeling kopiëren	#
-library.item.sharepopup.shareButton=Delen met teams	#
+library.item.sharepopup.shareButton=Delen met Teams	#
 library.item.share.toast.title=Koppeling naar het klembord gekopieerd.	#
 library.item.teams.msgTxt=Bekijk deze wereld, %1, in Minecraft: Education Edition.	#
 
@@ -6188,7 +6188,7 @@ potion.slowFalling.postfix=Drankje van Langzaam vallen	#
 potion.moveSpeed=Snelheid	#
 potion.moveSpeed.postfix=Drankje van Vlotheid	#
 potion.nightVision=Nachtzicht	#
-potion.nightVision.postfix=Drankje der Nachtzien	#
+potion.nightVision.postfix=Drankje der Nachtzicht	#
 potion.poison=Vergif	#
 potion.poison.postfix=Drankje van Vergif	#
 potion.potency.0=	#
@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=Schoenen van Steve	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Shirt van Steve	#
 dr.emotes.slot=Emote %d	#
+dr.deep_link_fail.profile=Deep linking mislukt: kan profiel niet laden	#
+dr.deep_link_fail.dressing_room=Deep linking mislukt: kan aanbieding niet openen	#
 
 onlinePlay.notRated=Er is geen classificatie voor online spelen	#
 onlinePlay.message=Tijdens online spelen word je mogelijk blootgesteld aan chatberichten of andere soorten door gebruikers gegenereerde content die niet is beoordeeld en die mogelijk niet geschikt zijn voor alle leeftijden.	#

@@ -1655,7 +1655,7 @@ createWorldScreen.playerdamage=Spielerschaden	#
 createWorldScreen.immutableworld=Unveränderliche Welt	#
 createWorldScreen.pvpdamage=Spieler gegen Spieler-Schaden	#
 createWorldScreen.randomtickspeed=Zufällige Tick-Geschwindigkeit	#
-createWorldScreen.randomtickspeed.reset=Zufällige Tick-Geschwindigkeit zurücksetzen	#
+createWorldScreen.randomtickspeed.reset=Tick zurücksetzen	#
 createWorldScreen.serverSimDistance=Simulationsdistanz	#
 createWorldScreen.serverSimDistanceFormat=%s Chunks	#
 createWorldScreen.check_internet_connection=Du bist nicht mit dem Internet verbunden. Deshalb können deine Freunde sich dir in deiner Mehrspielerwelt nicht anschließen. Melde dich bei deinem Microsoft-Konto an, um mit deinen Freunden zu spielen.	#
@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=Steves Schuhe	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Steves T-Shirt	#
 dr.emotes.slot=Emote %d	#
+dr.deep_link_fail.profile=Deep Linking fehlgeschlagen: Profil kann nicht geladen werden.	#
+dr.deep_link_fail.dressing_room=Deep Linking fehlgeschlagen: Angebot konnte nicht geöffnet werden.	#
 
 onlinePlay.notRated=Online-Spiel ist nicht bewertet.	#
 onlinePlay.message=Beim Online-Spiel können Textnachrichten oder andere Formen nutzererstellter Inhalte angezeigt werden, die nicht bewertet wurden und nicht für alle Altersklassen geeignet sind.	#

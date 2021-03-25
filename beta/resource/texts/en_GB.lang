@@ -8581,7 +8581,7 @@ tips.edu.23=Press I on your keyboard or touch the Immersive Reader icon to read 
 
 tips.game.1=Use seagrass to attract and breed turtles.	#
 tips.game.2=Protect baby turtles from hostile mobs!	#
-tips.game.3=Baby turtles will drop scutes when they grow – these can be crafted into turtle shells.	#
+tips.game.3=Baby turtles will drop scutes when they grow - these can be crafted into turtle shells.	#
 tips.game.4=Use a bed to set your respawn point during the day.	#
 tips.game.5=Brew some water-breathing potions for underwater exploration!	#
 tips.game.6=Dolphins can lead you to shipwrecks and underwater ruins, feed them cod and follow their trail!	#
@@ -8590,7 +8590,7 @@ tips.game.8=Use phantom membranes to repair your elytra.	#
 tips.game.9=There are 3,587 types of tropical fish!	#
 tips.game.10=Sea pickles can be smelted into lime green dye.	#
 tips.game.11=Use hay bales to breed Llamas!	#
-tips.game.12=Compasses always point to a Lodestone or the world spawn – craft one to find your way!	#
+tips.game.12=Compasses always point to a Lodestone or the world spawn - craft one to find your way!	#
 tips.game.13=Trade with villagers to obtain food, tools and even treasure maps!	#
 tips.game.14=Did you know you can hold a map in your off-hand?	#
 tips.game.15=Leads can be used on boats.	#
@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=Steve's Shoes	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Steve's Shirt	#
 dr.emotes.slot=Emote %d	#
+dr.deep_link_fail.profile=Deep Linking Failed: Unable to load profile	#
+dr.deep_link_fail.dressing_room=Deep Linking Failed: Unable to open offer	#
 
 onlinePlay.notRated=Online play is not rated	#
 onlinePlay.message=During online play you may be exposed to chat messages or other types of user-generated content that has not been rated, and may not be suitable for all ages.	#

@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=Zapatos de Steve	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Camisa de Steve	#
 dr.emotes.slot=Emote %d	#
+dr.deep_link_fail.profile=Error de enlace profundo: No se pudo cargar el perfil	#
+dr.deep_link_fail.dressing_room=Error de enlace profundo: No se pudo abrir la oferta	#
 
 onlinePlay.notRated=El juego en línea no está clasificado	#
 onlinePlay.message=Durante el juego en línea, es posible que veas mensajes en el chat o algún otro tipo de contenido generado por los usuarios que no esté clasificado y pueda no ser apto para todas las edades.	#

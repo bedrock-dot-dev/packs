@@ -1007,6 +1007,7 @@ commands.schedule.delay.negativeTime=Time cannot be negative.
 commands.schedule.description=Schedules an action to be executed once an area is loaded, or after a certain amount of time.
 commands.schedule.functionQueued=Function has been queued and it will be executed when the specified area is fully loaded.
 commands.schedule.functionRan=Successfully executed %1$d function entries in function %2$s.
+commands.schedule.invalidOrigin=The origin needed to execute this function was invalid.
 commands.schedule.name.empty=Ticking area name cannot be empty.
 commands.schedule.too.many.areas=More than one ticking areas were found with the name %s. Please use a single area.
 
@@ -1266,15 +1267,15 @@ commands.weather.query.rain=rain
 commands.weather.query.thunder=thunder
 commands.weather.rain=Changing to rainy weather
 commands.weather.thunder=Changing to rain and thunder
-commands.whitelist.add.failed=Could not add %1$s to the whitelist
-commands.whitelist.add.success=Added %1$s to the whitelist
-commands.whitelist.description=Manages the server whitelist.
-commands.whitelist.disabled=Turned off the whitelist
-commands.whitelist.enabled=Turned on the whitelist
-commands.whitelist.list=There are %1$d (out of %2$d seen) whitelisted players:
-commands.whitelist.reloaded=Whitelist reloaded from file.
-commands.whitelist.remove.failed=Could not remove %1$s from the whitelist
-commands.whitelist.remove.success=Removed %1$s from the whitelist
+commands.allowlist.add.failed=Could not add %1$s to the allowlist
+commands.allowlist.add.success=Added %1$s to the allowlist
+commands.allowlist.description=Manages the server allowlist.
+commands.allowlist.disabled=Turned off the allowlist
+commands.allowlist.enabled=Turned on the allowlist
+commands.allowlist.list=There are %1$d (out of %2$d seen) allowlisted players:
+commands.allowlist.reloaded=Allowlist reloaded from file.
+commands.allowlist.remove.failed=Could not remove %1$s from the allowlist
+commands.allowlist.remove.success=Removed %1$s from the allowlist
 commands.world_age.description=Changes or queries the world's age (time since creation).
 commands.world_age.added=Added %1$d to the world's age
 commands.world_age.query=World age is %d
@@ -1922,6 +1923,7 @@ networkWold.joinByCodeHelpText=If you have received a Realm Invite Link, enter t
 networkWorld.highPingWarning.title=Join Server?
 networkWorld.highPingWarning.line1=You don't currently have a strong connection to the chosen server. Your experience may be impacted.
 networkWorld.highPingWarning.line2=Would you like to join this server anyway?
+networkWorld.view_offers=View Offers
 
 ## The following text is placed on in-game signs, which have a 4-line, 15-character-per-line limit.
 ## The intent of the message is to convey to the reader that the sign author's chat permissions are
@@ -6809,6 +6811,7 @@ store.allStores=All Stores
 store.menu.home=Home
 store.itemDetail.back=Details
 store.coin.bonus=Bonus!
+store.disabledOnBeta=This feature is currently disabled in Beta.
 
 store.realmsPlus=Realms Plus
 store.realmsPlus.content=Content

@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=Stevovy boty	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Stevova košile	#
 dr.emotes.slot=Emoce %d	#
+dr.deep_link_fail.profile=Přímé odkazování se nezdařilo: Profil nelze načíst.	#
+dr.deep_link_fail.dressing_room=Přímé odkazování se nezdařilo: Nabídku nelze otevřít.	#
 
 onlinePlay.notRated=Online hraní se nehodnotí	#
 onlinePlay.message=Během online hraní se můžete setkat s chatovými zprávami nebo jiným druhem uživatelského obsahu, který nebyl hodnocen a nemusí tedy být vhodný pro všechny věkové kategorie.	#

@@ -1077,7 +1077,7 @@
     "$available_grid_dimensions": "#available_grid_dimensions_global",
     "$realms_grid_dimensions": "#realms_grid_dimensions_global",
     "$unowned_grid_dimensions": "#unowned_grid_dimensions_global",
-    "$unowned_visible": true,
+    "$unowned_visible": "#unowned_visible_global",
     "$button.selected_pack": "button.selected_pack_global",
     "$button.deselected_pack": "button.deselected_pack_global",
     "$button.available_pack": "button.available_pack_global",

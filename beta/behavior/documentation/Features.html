@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.16.220.52</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.16.230.50</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -11,6 +11,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:cave_carver_feature"> minecraft:cave_carver_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:growing_plant_feature"> minecraft:growing_plant_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:hell_cave_carver_feature"> minecraft:hell_cave_carver_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:multiface_feature"> minecraft:multiface_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:ore_feature"> minecraft:ore_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:scatter_feature"> minecraft:scatter_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:search_feature"> minecraft:search_feature</a> </tr> </td>
@@ -158,6 +159,30 @@ Example use: Carve nether caves normally.<br / ><textarea readonly="true" cols="
           "width_modifier": 0.0
         }
       }
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:multiface_feature">minecraft:multiface_feature</p></h1>
+
+'minecraft:multiface_feature' places one or a few multiface blocks on floors/walls/ceilings. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if this feature can be placed on them based on the list provided in the 'can_place_on' field. If no 'can_replace_on' field is specified, the 'place_block' block can be placed on any existing block.</br>This feature will also try to spread the 'place_block' block around the location in world the feature is placed.</br>Succeeds if: At least one block is successfully placed.</br>Fails if: All block placements fail.</br><h2></h2>
+Example use: Blue vines in caves.<br / ><textarea readonly="true" cols="49" rows="18">
+{
+  "format_version": 1.13.0,
+  "minecraft:multiface_feature": {
+    "description": {
+      "identifier": "example:blue_vines_feature"
+    },
+    "places_block": "example:blue_vine",
+    "search_range": 64,
+  "can_place_on_floor": true,
+  "can_place_on_ceiling": true,
+  "can_place_on_wall": true,
+  "chance_of_spreading": 0.5,
+    "can_place_on": [
+      "minecraft:stone"
+    ]
+  }
+}
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
@@ -417,6 +442,23 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+      }
+      object "minecraft:multiface_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+           "places_block" // Reference to the block to be placed.
+          int "search_range"<1-64> // How far, in blocks, this feature can search for a valid position to place.
+          bool "can_place_on_floor" // Can this feature be placed on the ground (top face of a block)?
+          bool "can_place_on_ceiling" // Can this feature be placed on the ceiling (bottom face of a block)?
+          bool "can_place_on_wall" // Can this feature be placed on the wall (side faces of a block)?
+          float "chance_of_spreading"<0.000000-1.000000> // For each block placed by this feature, how likely will that block spread to another?
+          array "can_place_on"[1,*] : opt
+          {
+               "<any array element>" : opt // A list of blocks that the block in this feature can be placed on. Omit this field to allow any block to be placed on.
+          }
       }
       object "minecraft:ore_feature" : opt
       {

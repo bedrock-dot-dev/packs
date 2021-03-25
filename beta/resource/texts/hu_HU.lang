@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=Steve cipője	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Steve inge	#
 dr.emotes.slot=Gesztus %d	#
+dr.deep_link_fail.profile=Sikertelen mélyhivatkozás: A profil betöltése nem sikerült	#
+dr.deep_link_fail.dressing_room=Sikertelen mélyhivatkozás: Az ajánlat megnyitása nem sikerült	#
 
 onlinePlay.notRated=Az online játék korkategóriája nincs meghatározva	#
 onlinePlay.message=Online játék során találkozhatsz olyan csevegőüzenekkel vagy egyéb felhasználók által létrehozott tartalommal, amely nem ellenőrzött, így nem garantálható, hogy minden korosztálynak megfelel.	#

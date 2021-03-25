@@ -5435,7 +5435,7 @@ options.dev_enableDebugHudOverlay=Attiva interfaccia debug	#
 options.dev_enableDebugHudOverlay.off=No	#
 options.dev_enableDebugHudOverlay.basic=Base	#
 options.dev_enableDebugHudOverlay.imgui=ImGui	#
-options.dev_enableDebugHudOverlay.renderchunks=Blocchi di renderizzazione	#
+options.dev_enableDebugHudOverlay.renderchunks=Chunk di renderizzazione	#
 options.dev_enableDebugHudOverlay.workerthreads=Thread processi di lavoro	#
 options.dev_enableDebugHudOverlay.debugtextures=Debug texture	#
 options.dev_enableDebugHudOverlay.profiler=Profiler	#
@@ -8935,6 +8935,8 @@ dr.default.steve.shoes=Scarpe di Steve	#
 dr.default.steve.skin=Steve	#
 dr.default.steve.top=Camicia di Steve	#
 dr.emotes.slot=Emote %d	#
+dr.deep_link_fail.profile=Collegamento diretto non riuscito: impossibile caricare il profilo	#
+dr.deep_link_fail.dressing_room=Collegamento diretto non riuscito: impossibile aprire l'offerta	#
 
 onlinePlay.notRated=Il gioco online non è valutato	#
 onlinePlay.message=Durante il gioco online potresti essere esposto a messaggi di chat o altri tipi di contenuti generati dagli utenti che non sono stati valutati e potrebbero non essere adatti a tutte le età.	#
