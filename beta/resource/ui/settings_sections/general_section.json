@@ -25,65 +25,6 @@
     "color": "$dark_body_text_color",
     "text": "options.accountErrorButton"
   },
-
-  "account_error_panel": {
-    "type": "stack_panel",
-    "orientation": "vertical",
-    "size": [ "100%", "100%c" ],
-    "controls": [
-      {
-        "account_header_panel": {
-          "type": "stack_panel",
-          "orientation": "horizontal",
-          "size": [ "100%", "100%c" ],
-          "controls": [
-            {
-              "error_glyph": {
-                "type": "image",
-                "size": [ 9, 9 ],
-                "texture": "textures/ui/ErrorGlyph"
-              }
-            },
-            {
-              "account_error_header": {
-                "type": "label",
-                "text": "options.accountError",
-                "size": [ "100%", "default" ],
-                "color": "$sub_header_text_color"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "view_errors_button@common_buttons.light_content_button": {
-          "size": [ "100%", "24px" ],
-          "$button_content": "general_section.view_account_errors_button_content",
-          "$pressed_button_name": "button.view_account_errors"
-        }
-      },
-      {
-        "section_panel_error_divider": {
-          "type": "panel",
-          "size": [ "100%", "100%c + 14px" ],
-          "controls": [
-            {
-              "section_divider": {
-                "type": "image",
-                "size": [ "100% - 30px", 1 ],
-                "anchor_from": "center",
-                "anchor_to": "center",
-                "layer": 3,
-                "texture": "textures/ui/list_item_divider_line_light"
-              }
-            }
-          ]
-        }
-      }
-    ]
-  },
-
-
   "switch_accounts_button_content": {
     "type": "stack_panel",
     "orientation": "horizontal",
@@ -269,18 +210,6 @@
       }
     ],
     "controls": [
-      {
-        "account_error@general_section.account_error_panel": {
-          "$option_label": "account error",
-          "$control_name": "general_section.account_error",
-          "bindings": [
-            {
-              "binding_name": "#has_account_error",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
       {
         "switch_accounts@general_section.switch_accounts_panel": {
           "ignored": "$ignore_profile_switch_account_button"
@@ -709,22 +638,6 @@
                 "bindings": [
                   {
                     "binding_name": "#commerce_id"
-                  }
-                ]
-              }
-            },
-            {
-              "account_transfer_status_label": {
-                "type": "label",
-                "color": "$body_text_color",
-                "offset": [ 2, 0 ],
-                "size": [ "100%", "default" ],
-                "anchor_from": "top_left",
-                "anchor_to": "top_left",
-                "text": "#account_transfer_status",
-                "bindings": [
-                  {
-                    "binding_name": "#account_transfer_status"
                   }
                 ]
               }

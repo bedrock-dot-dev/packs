@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.230.50</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.16.230.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -12279,6 +12279,12 @@ How many blocks radius from the mob's center to search in for the required block
 <td style="border-style:solid; border-width:2; padding:8px">true</td>
 <td style="border-style:solid; border-width:2; padding:8px">If true, the entities need to be tamed first before they can breed.</br></td>
 </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">transform_to_item</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">The breed item used will transform to this item upon successful interaction. Format: itemName:auxValue</br></td>
+</tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
@@ -12399,6 +12405,21 @@ Specifies hunt celebration behaviour.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Range [a, b]</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
 <td style="border-style:solid; border-width:2; padding:8px">The range of time in seconds to randomly wait before playing the sound again</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h2><p id="minecraft:combat_regeneration">minecraft:combat_regeneration</p></h2>
+
+Gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor's attack target.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">regeneration_duration</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">5</td>
+<td style="border-style:solid; border-width:2; padding:8px">The duration in seconds of Regeneration I added to the mob.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -16635,6 +16656,10 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:celebrate_hunt</td>
 <td style="border-style:solid; border-width:2; padding:8px">-789611239</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:combat_regeneration</td>
+<td style="border-style:solid; border-width:2; padding:8px">-315365016</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:conditional_bandwidth_optimization</td>

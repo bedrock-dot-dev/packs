@@ -2,7 +2,6 @@
   // Alphabetical order please :)
   "ui_defs": [
     "ui/account_banned_screen.json",
-    "ui/account_transfer_error_screen.json",
     "ui/achievement_screen.json",
     "ui/add_external_server_screen.json",
     "ui/adhoc_inprogess_screen.json",

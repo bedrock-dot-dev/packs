@@ -752,6 +752,9 @@
           "controls": [
             {
               "gamepad_helpers@start.gamepad_helpers": {}
+            },
+            {
+              "keyboard_helpers@start.keyboard_helper_vr_swap": {}
             }
           ]
         }
@@ -1088,6 +1091,23 @@
     ]
   },
 
+  "vr_swap_description@common.keyboard_helper_description": {
+    "offset": [ 5, 2 ]
+  },
+
+  "keyboard_helper_vr_swap@common.keyboard_helper": {
+    "$text_color": [ 1.0, 1.0, 1.0 ],
+    "$description_bind": "#button_keyboard_description",
+    "$keyboard_description": "start.vr_swap_description",
+    "$keyboard_character": "keyboard.keyName.e",
+    "bindings": [
+      {
+        "binding_name": "#swap_vr_keyboard_helper_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
   //---------------------------------------------------------------------------
   // Realms Invite Panel
   //---------------------------------------------------------------------------
@@ -1160,6 +1180,12 @@
       {
         "ignored": "(not $can_swap_vr_mode)",
         "from_button_id": "button.controller_secondary_select",
+        "to_button_id": "button.menu_swap_vr_mode",
+        "mapping_type": "global"
+      },
+      {
+        "ignored": "(not $can_swap_vr_mode)",
+        "from_button_id": "button.menu_swap_vr_mode",
         "to_button_id": "button.menu_swap_vr_mode",
         "mapping_type": "global"
       }

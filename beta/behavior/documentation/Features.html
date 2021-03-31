@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.16.230.50</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.16.230.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -20,6 +20,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:structure_template_feature"> minecraft:structure_template_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:underwater_cave_carver_feature"> minecraft:underwater_cave_carver_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:tree_feature"> minecraft:tree_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:vegetation_patch_feature"> minecraft:vegetation_patch_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:weighted_random_feature"> minecraft:weighted_random_feature</a> </tr> </td>
 <tr> <th><a href="#Attaching features">Attaching features</a></th> </tr>
 <tr> <th><a href="#Feature rules">Feature rules</a></th> </tr>
@@ -118,7 +119,7 @@ Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" row
 <h1><p id="minecraft:growing_plant_feature">minecraft:growing_plant_feature</p></h1>
 
 'minecraft:growing_plant_feature' places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction.</br>The growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remainder blocks.</br>This feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.</br><h2></h2>
-Example use: Defining a growing plant feature with variable body and head blocks and height distribution.<br / ><textarea readonly="true" cols="53" rows="24">
+Example use: Defining a growing plant feature with variable body and head blocks and height distribution.<br / ><textarea readonly="true" cols="53" rows="25">
 {
   "format_version": "1.16.0",
   "minecraft:growing_plant_feature": {
@@ -126,12 +127,12 @@ Example use: Defining a growing plant feature with variable body and head blocks
       "identifier": "minecraft:cave_vine_feature"
     },
     "height_distribution":  [
-      ["math.random_integer(1, 12)", 2],
-      [1, 3],
-      ["math.random_integer(1, 6)", 10]
+      [{"range_min": 1, "range_max": 13}, 2],
+      [{"range_min": 1, "range_max": 2}, 3],
+      [{"range_min": 1, "range_max": 7}, 10]
     ],
     "growth_direction": "DOWN",
-    "age" : "math.random_integer(17, 25)",
+    "age" : {"range_min": 17, "range_max": 26},
     "body_blocks" : [
       ["minecraft:cave_vines", 4],
       ["minecraft:cave_vines_body_with_berries", 1 ]
@@ -139,7 +140,8 @@ Example use: Defining a growing plant feature with variable body and head blocks
     "head_blocks" : [
       ["minecraft:cave_vines", 4],
       ["minecraft:cave_vines_head_with_berries", 1 ]
-    ]
+    ],
+  "allow_water": true
   }
 }
 </textarea> </br>
@@ -188,19 +190,54 @@ Example use: Blue vines in caves.<br / ><textarea readonly="true" cols="49" rows
 
 <h1><p id="minecraft:ore_feature">minecraft:ore_feature</p></h1>
 
-'minecraft:ore_feature' places a vein of blocks to simulate ore deposits. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if they can be replaced by the new ore block based on the list provided in the 'may_replace' field. If no 'may_replace' field is specified, the ore block can replace any existing block.</br>Succeeds if: At least one ore block is successfully placed.</br>Fails if: All ore block placements fail.</br><h2></h2>
-Example use: Oil deposits in the sand.<br / ><textarea readonly="true" cols="50" rows="14">
+'minecraft:ore_feature' places a vein of blocks to simulate ore deposits. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if they can be replaced by the new ore block based on the list provided in the 'may_replace' field of a 'replace_rules' entry. If no 'may_replace' field is specified in a 'replace_rule' entry, the ore block can replace any existing block.</br>Succeeds if: At least one ore block is successfully placed.</br>Fails if: All ore block placements fail.</br><h2></h2>
+Example use: Malachite ore in different materials.<br / ><textarea readonly="true" cols="56" rows="30">
+{
+  "format_version": 1.13.0,
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "example:malachite_ore_feature"
+    },
+  "count": 12,
+  "replace_rules": [
+    {
+      "places_block": "example:malachite_ore",
+      "may_replace": [
+        "minecraft:stone"
+      ]
+    },
+    {
+      "places_block": "example:granite_malachite_ore",
+      "may_replace": [
+        "minecraft:granite"
+      ]
+    },
+    {
+      "places_block": "example:andesite_malachite_ore",
+      "may_replace": [
+        "minecraft:andesite"
+      ]
+    }
+  ]
+  }
+}
+</textarea> </br>
+Example use: Oil deposits in the sand.<br / ><textarea readonly="true" cols="50" rows="18">
 {
   "format_version": 1.13.0,
   "minecraft:ore_feature": {
     "description": {
       "identifier": "example:oil_deposit_feature"
     },
-    "places_block": "example:oil_block",
-    "count": 12,
-    "may_replace": [
-      "minecraft:sand"
-    ]
+  "count": 12,
+  "replace_rules": [
+    {
+      "places_block": "example:oil_block",
+      "may_replace": [
+        "minecraft:sand"
+      ]
+    }
+  ]
   }
 }
 </textarea> </br>
@@ -344,6 +381,10 @@ Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" row
 
 Feature type 'minecraft:tree_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
 
+<h1><p id="minecraft:vegetation_patch_feature">minecraft:vegetation_patch_feature</p></h1>
+
+Feature type 'minecraft:vegetation_patch_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
+
 <h1><p id="minecraft:weighted_random_feature">minecraft:weighted_random_feature</p></h1>
 
 'minecraft:weighted_random_feature' randomly selects and places a feature based on a weight value. Weights are relative, with higher values making selection more likely.</br>Succeeds if: The selected feature is placed.</br>Fails if: The selected feature fails to be placed.</br><h2></h2>
@@ -411,12 +452,12 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           {
               array "<any array element>"[2] // Collection of weighted heights that placement will select from.
               {
-                  molang "[0..0]" // Plant height.
+                   "[0..0]" // Plant height.
                   float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
               }
           }
           string "growth_direction" // Direction that the plant grows towards. Valid values: UP and DOWN
-          molang "age" // Age of the head of the plant.
+           "age" : opt // Age of the head of the plant.
           array "body_blocks"[1,*]
           {
               array "<any array element>"[2] // Collection of weighted block descriptor that placement will select from for the body of the plant.
@@ -433,6 +474,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
               }
           }
+          bool "allow_water" : opt // Plant blocks can be placed in water.
       }
       object "minecraft:hell_cave_carver_feature" : opt
       {
@@ -467,10 +509,16 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
           int "count"<1-*> // The number of blocks to be placed.
-           "places_block" // Reference to the block to be placed.
-          array "may_replace"[1,*] : opt
+          array "replace_rules"[1,*] : opt
           {
-               "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
+              object "<any array element>" // Collection of replace rules that will be checked in order of definition. If a rule is resolved, the rest will not be resolved for that block position.
+              {
+                   "places_block" // Reference to the block to be placed.
+                  array "may_replace"[1,*] : opt
+                  {
+                       "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
+                  }
+              }
           }
       }
       object "minecraft:scatter_feature" : opt
@@ -1049,6 +1097,27 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   }
               }
           }
+      }
+      object "minecraft:vegetation_patch_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          array "replaceable_blocks"
+          {
+               "<any array element>" : opt
+          }
+           "ground_block"
+          feature_reference "vegetation_feature"
+          string "surface" : opt
+           "depth"
+          float "extra_deep_block_chance" : opt
+          int "vertical_range"
+          float "vegetation_chance" : opt
+           "horizontal_radius"
+          float "extra_edge_column_chance"<0.000000-*> : opt
+          bool "waterlogged" : opt
       }
       object "minecraft:weighted_random_feature" : opt
       {
