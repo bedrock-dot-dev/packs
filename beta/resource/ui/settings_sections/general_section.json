@@ -352,7 +352,7 @@
       },
       {
         "clear_msa_token": {
-          "ignored": "($education_edition or (not $thirdpartyconsole and not $is_pregame))",
+          "ignored": "($education_edition or not $is_pregame or not ($thirdpartyconsole or $is_android or $is_ios))",
           "type": "panel",
           "size": [ "100%", 32 ],
           "controls": [
@@ -402,8 +402,8 @@
       },
       {
         "unlink_msa_account@settings_common.action_button": {
-          // (never show in game) AND (never show on Publish builds unless its PS4)
-          "ignored": "((not $is_pregame) or ($is_publish and (not $is_ps4)))",
+          // (never show in game) AND (never show unless its PS4)
+          "ignored": "((not $is_pregame) or (not $is_ps4))",
           "$pressed_button_name": "button.unlink_msa",
           "$button_text": "options.unlink_msa.button",
           "bindings": [
@@ -1131,7 +1131,7 @@
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "$education_ios": "($education_edition and $ios)",
+    "$education_ios": "($education_edition and $is_ios)",
     "bindings": [
       {
         "binding_type": "view",
@@ -5535,12 +5535,6 @@
         "padding2": {
           "type": "panel",
           "size": [ "100%", 3 ]
-        }
-      },
-      {
-        "clear_purchase_inventory@settings_common.action_button": {
-          "$pressed_button_name": "button.clear_puchase_inventory",
-          "$button_text": "options.dev_clearPurchaseInventory"
         }
       },
       {

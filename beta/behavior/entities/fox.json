@@ -441,7 +441,7 @@
 
     "components": {
       "minecraft:type_family": {
-        "family": [ "fox", "mob" ]
+        "family": [ "fox", "mob", "lightweight" ]
       },
       "minecraft:breathable": {
         "totalSupply": 15,

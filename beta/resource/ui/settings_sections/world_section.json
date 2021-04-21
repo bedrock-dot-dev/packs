@@ -345,7 +345,7 @@
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "$education_ios": "($education_edition and $ios)",
+    "$education_ios": "($education_edition and $is_ios)",
     "bindings": [
       {
         "binding_type": "view",
@@ -708,7 +708,6 @@
       },
       {
         "experimental_toggles": {
-          "ignored": "$education_edition",
           "type": "stack_panel",
           "orientation": "vertical",
           "size": [ "100%", "100%c" ],
@@ -1746,7 +1745,6 @@
     "$tts_section_header": "createWorldScreen.worldSettings",
     "$toggle_tts_header_binding_type": "collection",
     "$toggle_tts_header_binding_collection_name": "experimental_toggles",
-    "ignored": "$education_edition",
     "$option_label": "#text",
     "$option_binding_name": "#experimental_toggle_value",
     "$option_enabled_binding_name": "#experimental_toggle_enabled",

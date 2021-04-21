@@ -1903,6 +1903,236 @@
             "sounds/bottle/fill_dragonbreath2"
          ]
       },
+      "break.amethyst_block" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/break1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/break2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/break3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/break4",
+               "volume" : 1
+            }
+         ]
+      },
+      "break.amethyst_cluster" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/break1",
+               "pitch" : 0.80,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break2",
+               "pitch" : 0.80,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break3",
+               "pitch" : 0.80,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break4",
+               "pitch" : 0.80,
+               "volume" : 0.80
+            }
+         ]
+      },
+      "break.azalea" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/azalea/break1",
+            "sounds/block/azalea/break2",
+            "sounds/block/azalea/break3",
+            "sounds/block/azalea/break4",
+            "sounds/block/azalea/break5",
+            "sounds/block/azalea/break6"
+         ]
+      },
+      "break.big_dripleaf" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/big_dripleaf/break1",
+            "sounds/block/big_dripleaf/break2",
+            "sounds/block/big_dripleaf/break3",
+            "sounds/block/big_dripleaf/break4",
+            "sounds/block/big_dripleaf/break5",
+            "sounds/block/big_dripleaf/break6"
+         ]
+      },
+      "break.calcite" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/calcite/break1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/break2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/break3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/break4",
+               "volume" : 1
+            }
+         ]
+      },
+      "break.dripstone_block" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/break1",
+            "sounds/block/dripstone/break2",
+            "sounds/block/dripstone/break3",
+            "sounds/block/dripstone/break4",
+            "sounds/block/dripstone/break5"
+         ]
+      },
+      "break.hanging_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/hanging_roots/break1",
+            "sounds/block/hanging_roots/break2",
+            "sounds/block/hanging_roots/break3",
+            "sounds/block/hanging_roots/break4"
+         ]
+      },
+      "break.large_amethyst_bud" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/break1",
+               "pitch" : 0.850,
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break2",
+               "pitch" : 0.850,
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break3",
+               "pitch" : 0.850,
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break4",
+               "pitch" : 0.850,
+               "volume" : 0.70
+            }
+         ]
+      },
+      "break.medium_amethyst_bud" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/break1",
+               "pitch" : 0.950,
+               "volume" : 0.550
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break2",
+               "pitch" : 0.950,
+               "volume" : 0.550
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break3",
+               "pitch" : 0.950,
+               "volume" : 0.550
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break4",
+               "pitch" : 0.950,
+               "volume" : 0.550
+            }
+         ]
+      },
+      "break.pointed_dripstone" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/break1",
+            "sounds/block/dripstone/break2",
+            "sounds/block/dripstone/break3",
+            "sounds/block/dripstone/break4",
+            "sounds/block/dripstone/break5"
+         ]
+      },
+      "break.sculk_sensor" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/sculk_sensor/break1",
+            "sounds/block/sculk_sensor/break2",
+            "sounds/block/sculk_sensor/break3",
+            "sounds/block/sculk_sensor/break4",
+            "sounds/block/sculk_sensor/break5"
+         ]
+      },
+      "break.small_amethyst_bud" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/break1",
+               "volume" : 0.40
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break2",
+               "volume" : 0.40
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break3",
+               "volume" : 0.40
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/break4",
+               "volume" : 0.40
+            }
+         ]
+      },
+      "break.spore_blossom" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/spore_blossom/break1",
+            "sounds/block/spore_blossom/break2",
+            "sounds/block/spore_blossom/break3",
+            "sounds/block/spore_blossom/break4",
+            "sounds/block/spore_blossom/break5"
+         ]
+      },
+      "break.tuff" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/tuff/break1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/break2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/break3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/break4",
+               "volume" : 1
+            }
+         ]
+      },
       "bubble.down" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -1968,6 +2198,13 @@
             "sounds/bucket/empty_lava3"
          ]
       },
+      "bucket.empty_powder_snow" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/bucket/empty_powder_snow1",
+            "sounds/bucket/empty_powder_snow2"
+         ]
+      },
       "bucket.empty_water" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -2003,6 +2240,10 @@
             "sounds/bucket/fill_lava2",
             "sounds/bucket/fill_lava3"
          ]
+      },
+      "bucket.fill_powder_snow" : {
+         "category" : "player",
+         "sounds" : [ "sounds/bucket/fill_powder_snow1", "sounds/bucket/fill_powder_snow2" ]
       },
       "bucket.fill_water" : {
          "__use_legacy_max_distance" : "true",
@@ -2127,6 +2368,37 @@
             }
          ]
       },
+      "cauldron_drip.lava.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/pointed_dripstone/drip_lava_cauldron1",
+            "sounds/block/pointed_dripstone/drip_lava_cauldron2",
+            "sounds/block/pointed_dripstone/drip_lava_cauldron3",
+            "sounds/block/pointed_dripstone/drip_lava_cauldron4"
+         ]
+      },
+      "cauldron_drip.water.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/pointed_dripstone/drip_water_cauldron1",
+            "sounds/block/pointed_dripstone/drip_water_cauldron2",
+            "sounds/block/pointed_dripstone/drip_water_cauldron3",
+            "sounds/block/pointed_dripstone/drip_water_cauldron4",
+            "sounds/block/pointed_dripstone/drip_water_cauldron5",
+            "sounds/block/pointed_dripstone/drip_water_cauldron6",
+            "sounds/block/pointed_dripstone/drip_water_cauldron7",
+            "sounds/block/pointed_dripstone/drip_water_cauldron8"
+         ]
+      },
+      "chime.amethyst_block" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/shimmer",
+               "volume" : 1
+            }
+         ]
+      },
       "conduit.activate" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -2164,6 +2436,22 @@
             "sounds/block/conduit/short7",
             "sounds/block/conduit/short8",
             "sounds/block/conduit/short9"
+         ]
+      },
+      "copper.wax.off" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/item/axe/wax_off1",
+            "sounds/item/axe/wax_off2",
+            "sounds/item/axe/wax_off3"
+         ]
+      },
+      "copper.wax.on" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/item/honeycomb/wax_on1",
+            "sounds/item/honeycomb/wax_on2",
+            "sounds/item/honeycomb/wax_on3"
          ]
       },
       "crossbow.loading.end" : {
@@ -2263,6 +2551,18 @@
             "sounds/dig/ancient_debris5"
          ]
       },
+      "dig.azalea_leaves" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/azalea_leaves/break1",
+            "sounds/block/azalea_leaves/break2",
+            "sounds/block/azalea_leaves/break3",
+            "sounds/block/azalea_leaves/break4",
+            "sounds/block/azalea_leaves/break5",
+            "sounds/block/azalea_leaves/break6",
+            "sounds/block/azalea_leaves/break7"
+         ]
+      },
       "dig.basalt" : {
          "category" : "block",
          "sounds" : [
@@ -2287,6 +2587,16 @@
             "sounds/dig/bone_block3",
             "sounds/dig/bone_block4",
             "sounds/dig/bone_block5"
+         ]
+      },
+      "dig.cave_vines" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/cave_vines/break1",
+            "sounds/block/cave_vines/break2",
+            "sounds/block/cave_vines/break3",
+            "sounds/block/cave_vines/break4",
+            "sounds/block/cave_vines/break5"
          ]
       },
       "dig.chain" : {
@@ -2314,6 +2624,15 @@
             "sounds/dig/cloth4"
          ]
       },
+      "dig.copper" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/copper/break1",
+            "sounds/block/copper/break2",
+            "sounds/block/copper/break3",
+            "sounds/block/copper/break4"
+         ]
+      },
       "dig.coral" : {
          "category" : "block",
          "sounds" : [
@@ -2324,6 +2643,26 @@
             "sounds/dig/coral2",
             "sounds/dig/coral3",
             "sounds/dig/coral4"
+         ]
+      },
+      "dig.deepslate" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate/break1",
+            "sounds/block/deepslate/break2",
+            "sounds/block/deepslate/break3",
+            "sounds/block/deepslate/break4"
+         ]
+      },
+      "dig.deepslate_bricks" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/place1",
+            "sounds/block/deepslate_bricks/place2",
+            "sounds/block/deepslate_bricks/place3",
+            "sounds/block/deepslate_bricks/place4",
+            "sounds/block/deepslate_bricks/place5",
+            "sounds/block/deepslate_bricks/place6"
          ]
       },
       "dig.fungus" : {
@@ -2389,6 +2728,16 @@
             "sounds/dig/lodestone2",
             "sounds/dig/lodestone3",
             "sounds/dig/lodestone4"
+         ]
+      },
+      "dig.moss" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/moss/break1",
+            "sounds/block/moss/break2",
+            "sounds/block/moss/break3",
+            "sounds/block/moss/break4",
+            "sounds/block/moss/break5"
          ]
       },
       "dig.nether_brick" : {
@@ -2481,6 +2830,18 @@
             "sounds/dig/nylium4",
             "sounds/dig/nylium5",
             "sounds/dig/nylium6"
+         ]
+      },
+      "dig.powder_snow" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/powder_snow/break1",
+            "sounds/block/powder_snow/break2",
+            "sounds/block/powder_snow/break3",
+            "sounds/block/powder_snow/break4",
+            "sounds/block/powder_snow/break5",
+            "sounds/block/powder_snow/break6",
+            "sounds/block/powder_snow/break7"
          ]
       },
       "dig.roots" : {
@@ -2621,6 +2982,37 @@
             "sounds/dig/wood4"
          ]
       },
+      "drip.lava.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/pointed_dripstone/drip_lava1",
+            "sounds/block/pointed_dripstone/drip_lava2",
+            "sounds/block/pointed_dripstone/drip_lava3",
+            "sounds/block/pointed_dripstone/drip_lava4",
+            "sounds/block/pointed_dripstone/drip_lava5",
+            "sounds/block/pointed_dripstone/drip_lava6"
+         ]
+      },
+      "drip.water.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/pointed_dripstone/drip_water1",
+            "sounds/block/pointed_dripstone/drip_water2",
+            "sounds/block/pointed_dripstone/drip_water3",
+            "sounds/block/pointed_dripstone/drip_water4",
+            "sounds/block/pointed_dripstone/drip_water5",
+            "sounds/block/pointed_dripstone/drip_water6",
+            "sounds/block/pointed_dripstone/drip_water7",
+            "sounds/block/pointed_dripstone/drip_water8",
+            "sounds/block/pointed_dripstone/drip_water9",
+            "sounds/block/pointed_dripstone/drip_water10",
+            "sounds/block/pointed_dripstone/drip_water11",
+            "sounds/block/pointed_dripstone/drip_water12",
+            "sounds/block/pointed_dripstone/drip_water13",
+            "sounds/block/pointed_dripstone/drip_water14",
+            "sounds/block/pointed_dripstone/drip_water15"
+         ]
+      },
       "elytra.loop" : {
          "__use_legacy_max_distance" : "true",
          "category" : "player",
@@ -2636,6 +3028,120 @@
             "sounds/mob/drowned/convert3"
          ]
       },
+      "fall.amethyst_block" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step6",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step7",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step8",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step9",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step10",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step11",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step12",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step14",
+               "volume" : 1
+            }
+         ]
+      },
+      "fall.amethyst_cluster" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step6",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step7",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step8",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step9",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step10",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step11",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step12",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step14",
+               "volume" : 1
+            }
+         ]
+      },
       "fall.ancient_debris" : {
          "category" : "player",
          "sounds" : [
@@ -2644,6 +3150,27 @@
             "sounds/step/ancient_debris3",
             "sounds/step/ancient_debris4",
             "sounds/step/ancient_debris5"
+         ]
+      },
+      "fall.azalea" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/azalea/step1",
+            "sounds/block/azalea/step2",
+            "sounds/block/azalea/step3",
+            "sounds/block/azalea/step4",
+            "sounds/block/azalea/step5",
+            "sounds/block/azalea/step6"
+         ]
+      },
+      "fall.azalea_leaves" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/azalea_leaves/step1",
+            "sounds/block/azalea_leaves/step2",
+            "sounds/block/azalea_leaves/step3",
+            "sounds/block/azalea_leaves/step4",
+            "sounds/block/azalea_leaves/step5"
          ]
       },
       "fall.basalt" : {
@@ -2657,6 +3184,17 @@
             "sounds/step/basalt6"
          ]
       },
+      "fall.big_dripleaf" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/big_dripleaf/step1",
+            "sounds/block/big_dripleaf/step2",
+            "sounds/block/big_dripleaf/step3",
+            "sounds/block/big_dripleaf/step4",
+            "sounds/block/big_dripleaf/step5",
+            "sounds/block/big_dripleaf/step6"
+         ]
+      },
       "fall.bone_block" : {
          "category" : "player",
          "sounds" : [
@@ -2665,6 +3203,45 @@
             "sounds/step/bone_block3",
             "sounds/step/bone_block4",
             "sounds/step/bone_block5"
+         ]
+      },
+      "fall.calcite" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/calcite/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step6",
+               "volume" : 1
+            }
+         ]
+      },
+      "fall.cave_vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
       },
       "fall.chain" : {
@@ -2688,6 +3265,17 @@
             "sounds/step/cloth4"
          ]
       },
+      "fall.copper" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/copper/step1",
+            "sounds/block/copper/step2",
+            "sounds/block/copper/step3",
+            "sounds/block/copper/step4",
+            "sounds/block/copper/step5",
+            "sounds/block/copper/step6"
+         ]
+      },
       "fall.coral" : {
          "category" : "player",
          "sounds" : [
@@ -2697,6 +3285,39 @@
             "sounds/step/coral4",
             "sounds/step/coral5",
             "sounds/step/coral6"
+         ]
+      },
+      "fall.deepslate" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/deepslate/step1",
+            "sounds/block/deepslate/step2",
+            "sounds/block/deepslate/step3",
+            "sounds/block/deepslate/step4",
+            "sounds/block/deepslate/step5",
+            "sounds/block/deepslate/step6"
+         ]
+      },
+      "fall.deepslate_bricks" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/step1",
+            "sounds/block/deepslate_bricks/step2",
+            "sounds/block/deepslate_bricks/step3",
+            "sounds/block/deepslate_bricks/step4",
+            "sounds/block/deepslate_bricks/step5",
+            "sounds/block/deepslate_bricks/step6"
+         ]
+      },
+      "fall.dripstone_block" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
          ]
       },
       "fall.egg" : {
@@ -2731,6 +3352,17 @@
             "sounds/step/gravel4"
          ]
       },
+      "fall.hanging_roots" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/hanging_roots/step1",
+            "sounds/block/hanging_roots/step2",
+            "sounds/block/hanging_roots/step3",
+            "sounds/block/hanging_roots/step4",
+            "sounds/block/hanging_roots/step5",
+            "sounds/block/hanging_roots/step6"
+         ]
+      },
       "fall.honey_block" : {
          "category" : "player",
          "sounds" : [
@@ -2750,6 +3382,17 @@
             "sounds/step/ladder3",
             "sounds/step/ladder4",
             "sounds/step/ladder5"
+         ]
+      },
+      "fall.moss" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/moss/step1",
+            "sounds/block/moss/step2",
+            "sounds/block/moss/step3",
+            "sounds/block/moss/step4",
+            "sounds/block/moss/step5",
+            "sounds/block/moss/step6"
          ]
       },
       "fall.nether_brick" : {
@@ -2826,6 +3469,32 @@
             "sounds/step/nylium6"
          ]
       },
+      "fall.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
+         ]
+      },
+      "fall.powder_snow" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/powder_snow/step1",
+            "sounds/block/powder_snow/step2",
+            "sounds/block/powder_snow/step3",
+            "sounds/block/powder_snow/step4",
+            "sounds/block/powder_snow/step5",
+            "sounds/block/powder_snow/step6",
+            "sounds/block/powder_snow/step7",
+            "sounds/block/powder_snow/step8",
+            "sounds/block/powder_snow/step9",
+            "sounds/block/powder_snow/step10"
+         ]
+      },
       "fall.roots" : {
          "category" : "player",
          "sounds" : [
@@ -2845,6 +3514,17 @@
             "sounds/step/sand3",
             "sounds/step/sand4",
             "sounds/step/sand5"
+         ]
+      },
+      "fall.sculk_sensor" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/sculk_sensor/step1",
+            "sounds/block/sculk_sensor/step2",
+            "sounds/block/sculk_sensor/step3",
+            "sounds/block/sculk_sensor/step4",
+            "sounds/block/sculk_sensor/step5",
+            "sounds/block/sculk_sensor/step6"
          ]
       },
       "fall.shroomlight" : {
@@ -2899,6 +3579,17 @@
             "sounds/step/soul_soil5"
          ]
       },
+      "fall.spore_blossom" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/spore_blossom/step1",
+            "sounds/block/spore_blossom/step2",
+            "sounds/block/spore_blossom/step3",
+            "sounds/block/spore_blossom/step4",
+            "sounds/block/spore_blossom/step5",
+            "sounds/block/spore_blossom/step6"
+         ]
+      },
       "fall.stem" : {
          "category" : "player",
          "sounds" : [
@@ -2920,6 +3611,35 @@
             "sounds/step/stone4",
             "sounds/step/stone5",
             "sounds/step/stone6"
+         ]
+      },
+      "fall.tuff" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/tuff/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step6",
+               "volume" : 1
+            }
          ]
       },
       "fall.vines" : {
@@ -3062,6 +3782,112 @@
             "sounds/damage/hit3"
          ]
       },
+      "hit.amethyst_block" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step6",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step7",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step8",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step9",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step10",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step11",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step12",
+               "volume" : 1
+            }
+         ]
+      },
+      "hit.amethyst_cluster" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step6",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step7",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step8",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step9",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step10",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step11",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step12",
+               "volume" : 1
+            }
+         ]
+      },
       "hit.ancient_debris" : {
          "category" : "block",
          "sounds" : [
@@ -3090,6 +3916,47 @@
             "sounds/step/stone6"
          ]
       },
+      "hit.azalea" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/azalea/step1",
+            "sounds/block/azalea/step2",
+            "sounds/block/azalea/step3",
+            "sounds/block/azalea/step4",
+            "sounds/block/azalea/step5",
+            "sounds/block/azalea/step6"
+         ]
+      },
+      "hit.azalea_leaves" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/azalea_leaves/step1",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/azalea_leaves/step2",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/azalea_leaves/step3",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/azalea_leaves/step4",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/azalea_leaves/step5",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            }
+         ]
+      },
       "hit.basalt" : {
          "category" : "block",
          "sounds" : [
@@ -3104,6 +3971,17 @@
             "sounds/step/basalt6"
          ]
       },
+      "hit.big_dripleaf" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/big_dripleaf/step1",
+            "sounds/block/big_dripleaf/step2",
+            "sounds/block/big_dripleaf/step3",
+            "sounds/block/big_dripleaf/step4",
+            "sounds/block/big_dripleaf/step5",
+            "sounds/block/big_dripleaf/step6"
+         ]
+      },
       "hit.bone_block" : {
          "category" : "block",
          "sounds" : [
@@ -3115,6 +3993,45 @@
             "sounds/step/bone_block3",
             "sounds/step/bone_block4",
             "sounds/step/bone_block5"
+         ]
+      },
+      "hit.calcite" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/calcite/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step6",
+               "volume" : 1
+            }
+         ]
+      },
+      "hit.cave_vines" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
       },
       "hit.chain" : {
@@ -3144,6 +4061,17 @@
             "sounds/step/cloth4"
          ]
       },
+      "hit.copper" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/copper/step1",
+            "sounds/block/copper/step2",
+            "sounds/block/copper/step3",
+            "sounds/block/copper/step4",
+            "sounds/block/copper/step5",
+            "sounds/block/copper/step6"
+         ]
+      },
       "hit.coral" : {
          "category" : "block",
          "sounds" : [
@@ -3156,6 +4084,38 @@
             "sounds/step/coral4",
             "sounds/step/coral5",
             "sounds/step/coral6"
+         ]
+      },
+      "hit.deepslate" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate/step1",
+            "sounds/block/deepslate/step2",
+            "sounds/block/deepslate/step3",
+            "sounds/block/deepslate/step4",
+            "sounds/block/deepslate/step5",
+            "sounds/block/deepslate/step6"
+         ]
+      },
+      "hit.deepslate_bricks" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/step1",
+            "sounds/block/deepslate_bricks/step2",
+            "sounds/block/deepslate_bricks/step3",
+            "sounds/block/deepslate_bricks/step4",
+            "sounds/block/deepslate_bricks/step5"
+         ]
+      },
+      "hit.dripstone_block" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
          ]
       },
       "hit.grass" : {
@@ -3186,6 +4146,17 @@
             "sounds/step/gravel4"
          ]
       },
+      "hit.hanging_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/hanging_roots/step1",
+            "sounds/block/hanging_roots/step2",
+            "sounds/block/hanging_roots/step3",
+            "sounds/block/hanging_roots/step4",
+            "sounds/block/hanging_roots/step5",
+            "sounds/block/hanging_roots/step6"
+         ]
+      },
       "hit.honey_block" : {
          "category" : "block",
          "sounds" : [
@@ -3208,6 +4179,17 @@
             "sounds/step/ladder3",
             "sounds/step/ladder4",
             "sounds/step/ladder5"
+         ]
+      },
+      "hit.moss" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/moss/step1",
+            "sounds/block/moss/step2",
+            "sounds/block/moss/step3",
+            "sounds/block/moss/step4",
+            "sounds/block/moss/step5",
+            "sounds/block/moss/step6"
          ]
       },
       "hit.nether_brick" : {
@@ -3305,6 +4287,72 @@
             "sounds/step/nylium6"
          ]
       },
+      "hit.pointed_dripstone" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
+         ]
+      },
+      "hit.powder_snow" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/powder_snow/step1",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step2",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step3",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step4",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step5",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step6",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step7",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step8",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step9",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            },
+            {
+               "name" : "sounds/block/powder_snow/step10",
+               "pitch" : 1.30,
+               "volume" : 0.830
+            }
+         ]
+      },
       "hit.roots" : {
          "category" : "block",
          "sounds" : [
@@ -3330,6 +4378,17 @@
             "sounds/step/sand3",
             "sounds/step/sand4",
             "sounds/step/sand5"
+         ]
+      },
+      "hit.sculk_sensor" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/sculk_sensor/step1",
+            "sounds/block/sculk_sensor/step2",
+            "sounds/block/sculk_sensor/step3",
+            "sounds/block/sculk_sensor/step4",
+            "sounds/block/sculk_sensor/step5",
+            "sounds/block/sculk_sensor/step6"
          ]
       },
       "hit.shroomlight" : {
@@ -3396,6 +4455,16 @@
             "sounds/step/soul_soil5"
          ]
       },
+      "hit.spore_blossom" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/spore_blossom/break1",
+            "sounds/block/spore_blossom/break2",
+            "sounds/block/spore_blossom/break3",
+            "sounds/block/spore_blossom/break4",
+            "sounds/block/spore_blossom/break5"
+         ]
+      },
       "hit.stem" : {
          "category" : "block",
          "sounds" : [
@@ -3425,6 +4494,35 @@
             "sounds/step/stone6"
          ]
       },
+      "hit.tuff" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/tuff/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step6",
+               "volume" : 1
+            }
+         ]
+      },
       "hit.vines" : {
          "category" : "block",
          "sounds" : [
@@ -3451,6 +4549,16 @@
             "sounds/step/wood4",
             "sounds/step/wood5",
             "sounds/step/wood6"
+         ]
+      },
+      "item.bone_meal.use" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/item/bonemeal/bonemeal1",
+            "sounds/item/bonemeal/bonemeal2",
+            "sounds/item/bonemeal/bonemeal3",
+            "sounds/item/bonemeal/bonemeal4",
+            "sounds/item/bonemeal/bonemeal5"
          ]
       },
       "item.book.page_turn" : {
@@ -3520,6 +4628,14 @@
                "volume" : 1
             }
          ]
+      },
+      "item.spyglass.stop_using" : {
+         "category" : "player",
+         "sounds" : [ "sounds/item/spyglass/stop" ]
+      },
+      "item.spyglass.use" : {
+         "category" : "player",
+         "sounds" : [ "sounds/item/spyglass/use" ]
       },
       "item.trident.hit" : {
          "__use_legacy_max_distance" : "true",
@@ -3678,6 +4794,17 @@
             "sounds/step/ancient_debris5"
          ]
       },
+      "jump.azalea" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/azalea/step1",
+            "sounds/block/azalea/step2",
+            "sounds/block/azalea/step3",
+            "sounds/block/azalea/step4",
+            "sounds/block/azalea/step5",
+            "sounds/block/azalea/step6"
+         ]
+      },
       "jump.basalt" : {
          "category" : "block",
          "sounds" : [
@@ -3692,6 +4819,17 @@
             "sounds/step/basalt6"
          ]
       },
+      "jump.big_dripleaf" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/big_dripleaf/step1",
+            "sounds/block/big_dripleaf/step2",
+            "sounds/block/big_dripleaf/step3",
+            "sounds/block/big_dripleaf/step4",
+            "sounds/block/big_dripleaf/step5",
+            "sounds/block/big_dripleaf/step6"
+         ]
+      },
       "jump.bone_block" : {
          "category" : "block",
          "sounds" : [
@@ -3703,6 +4841,16 @@
             "sounds/step/bone_block3",
             "sounds/step/bone_block4",
             "sounds/step/bone_block5"
+         ]
+      },
+      "jump.cave_vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
       },
       "jump.chain" : {
@@ -3746,6 +4894,38 @@
             "sounds/step/coral6"
          ]
       },
+      "jump.deepslate" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/deepslate/step1",
+            "sounds/block/deepslate/step2",
+            "sounds/block/deepslate/step3",
+            "sounds/block/deepslate/step4",
+            "sounds/block/deepslate/step5",
+            "sounds/block/deepslate/step6"
+         ]
+      },
+      "jump.deepslate_bricks" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/step1",
+            "sounds/block/deepslate_bricks/step2",
+            "sounds/block/deepslate_bricks/step3",
+            "sounds/block/deepslate_bricks/step4",
+            "sounds/block/deepslate_bricks/step5"
+         ]
+      },
+      "jump.dripstone_block" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
+         ]
+      },
       "jump.grass" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -3772,6 +4952,17 @@
             }
          ]
       },
+      "jump.hanging_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/hanging_roots/step1",
+            "sounds/block/hanging_roots/step2",
+            "sounds/block/hanging_roots/step3",
+            "sounds/block/hanging_roots/step4",
+            "sounds/block/hanging_roots/step5",
+            "sounds/block/hanging_roots/step6"
+         ]
+      },
       "jump.honey_block" : {
          "category" : "block",
          "sounds" : [
@@ -3783,6 +4974,17 @@
             "sounds/step/honey_block3",
             "sounds/step/honey_block4",
             "sounds/step/honey_block5"
+         ]
+      },
+      "jump.moss" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/moss/step1",
+            "sounds/block/moss/step2",
+            "sounds/block/moss/step3",
+            "sounds/block/moss/step4",
+            "sounds/block/moss/step5",
+            "sounds/block/moss/step6"
          ]
       },
       "jump.nether_brick" : {
@@ -3880,6 +5082,17 @@
             "sounds/step/nylium6"
          ]
       },
+      "jump.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
+         ]
+      },
       "jump.roots" : {
          "category" : "block",
          "sounds" : [
@@ -3904,6 +5117,17 @@
                "load_on_low_memory" : true,
                "name" : "sounds/jump/sand4"
             }
+         ]
+      },
+      "jump.sculk_sensor" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/sculk_sensor/step1",
+            "sounds/block/sculk_sensor/step2",
+            "sounds/block/sculk_sensor/step3",
+            "sounds/block/sculk_sensor/step4",
+            "sounds/block/sculk_sensor/step5",
+            "sounds/block/sculk_sensor/step6"
          ]
       },
       "jump.shroomlight" : {
@@ -3970,6 +5194,17 @@
             "sounds/step/soul_soil5"
          ]
       },
+      "jump.spore_blossom" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/spore_blossom/step1",
+            "sounds/block/spore_blossom/step2",
+            "sounds/block/spore_blossom/step3",
+            "sounds/block/spore_blossom/step4",
+            "sounds/block/spore_blossom/step5",
+            "sounds/block/spore_blossom/step6"
+         ]
+      },
       "jump.stem" : {
          "category" : "block",
          "sounds" : [
@@ -4033,6 +5268,17 @@
             "sounds/step/ancient_debris5"
          ]
       },
+      "land.azalea" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/azalea/step1",
+            "sounds/block/azalea/step2",
+            "sounds/block/azalea/step3",
+            "sounds/block/azalea/step4",
+            "sounds/block/azalea/step5",
+            "sounds/block/azalea/step6"
+         ]
+      },
       "land.basalt" : {
          "category" : "block",
          "sounds" : [
@@ -4044,6 +5290,17 @@
             "sounds/step/basalt6"
          ]
       },
+      "land.big_dripleaf" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/big_dripleaf/step1",
+            "sounds/block/big_dripleaf/step2",
+            "sounds/block/big_dripleaf/step3",
+            "sounds/block/big_dripleaf/step4",
+            "sounds/block/big_dripleaf/step5",
+            "sounds/block/big_dripleaf/step6"
+         ]
+      },
       "land.bone_block" : {
          "category" : "block",
          "sounds" : [
@@ -4052,6 +5309,16 @@
             "sounds/step/bone_block3",
             "sounds/step/bone_block4",
             "sounds/step/bone_block5"
+         ]
+      },
+      "land.cave_vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
       },
       "land.chain" : {
@@ -4086,6 +5353,38 @@
             "sounds/step/coral6"
          ]
       },
+      "land.deepslate" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/deepslate/step1",
+            "sounds/block/deepslate/step2",
+            "sounds/block/deepslate/step3",
+            "sounds/block/deepslate/step4",
+            "sounds/block/deepslate/step5",
+            "sounds/block/deepslate/step6"
+         ]
+      },
+      "land.deepslate_bricks" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/step1",
+            "sounds/block/deepslate_bricks/step2",
+            "sounds/block/deepslate_bricks/step3",
+            "sounds/block/deepslate_bricks/step4",
+            "sounds/block/deepslate_bricks/step5"
+         ]
+      },
+      "land.dripstone_block" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
+         ]
+      },
       "land.grass" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -4106,6 +5405,17 @@
             "sounds/jump/gravel4"
          ]
       },
+      "land.hanging_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/hanging_roots/step1",
+            "sounds/block/hanging_roots/step2",
+            "sounds/block/hanging_roots/step3",
+            "sounds/block/hanging_roots/step4",
+            "sounds/block/hanging_roots/step5",
+            "sounds/block/hanging_roots/step6"
+         ]
+      },
       "land.honey_block" : {
          "category" : "block",
          "sounds" : [
@@ -4114,6 +5424,17 @@
             "sounds/step/honey_block3",
             "sounds/step/honey_block4",
             "sounds/step/honey_block5"
+         ]
+      },
+      "land.moss" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/moss/step1",
+            "sounds/block/moss/step2",
+            "sounds/block/moss/step3",
+            "sounds/block/moss/step4",
+            "sounds/block/moss/step5",
+            "sounds/block/moss/step6"
          ]
       },
       "land.nether_brick" : {
@@ -4190,6 +5511,16 @@
             "sounds/step/nylium6"
          ]
       },
+      "land.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/pointed_dripstone/land1",
+            "sounds/block/pointed_dripstone/land2",
+            "sounds/block/pointed_dripstone/land3",
+            "sounds/block/pointed_dripstone/land4",
+            "sounds/block/pointed_dripstone/land5"
+         ]
+      },
       "land.roots" : {
          "category" : "block",
          "sounds" : [
@@ -4208,6 +5539,17 @@
             "sounds/jump/sand2",
             "sounds/jump/sand3",
             "sounds/jump/sand4"
+         ]
+      },
+      "land.sculk_sensor" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/sculk_sensor/step1",
+            "sounds/block/sculk_sensor/step2",
+            "sounds/block/sculk_sensor/step3",
+            "sounds/block/sculk_sensor/step4",
+            "sounds/block/sculk_sensor/step5",
+            "sounds/block/sculk_sensor/step6"
          ]
       },
       "land.shroomlight" : {
@@ -4260,6 +5602,17 @@
             "sounds/step/soul_soil3",
             "sounds/step/soul_soil4",
             "sounds/step/soul_soil5"
+         ]
+      },
+      "land.spore_blossom" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/spore_blossom/step1",
+            "sounds/block/spore_blossom/step2",
+            "sounds/block/spore_blossom/step3",
+            "sounds/block/spore_blossom/step4",
+            "sounds/block/spore_blossom/step5",
+            "sounds/block/spore_blossom/step6"
          ]
       },
       "land.stem" : {
@@ -4399,6 +5752,48 @@
             "sounds/dig/stone2",
             "sounds/dig/stone3",
             "sounds/dig/stone4"
+         ]
+      },
+      "mob.axolotl.attack" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/axolotl/attack1",
+            "sounds/mob/axolotl/attack2",
+            "sounds/mob/axolotl/attack3",
+            "sounds/mob/axolotl/attack4"
+         ]
+      },
+      "mob.axolotl.death" : {
+         "category" : "neutral",
+         "sounds" : [ "sounds/mob/axolotl/death1", "sounds/mob/axolotl/death2" ]
+      },
+      "mob.axolotl.hurt" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/axolotl/hurt1",
+            "sounds/mob/axolotl/hurt2",
+            "sounds/mob/axolotl/hurt3",
+            "sounds/mob/axolotl/hurt4"
+         ]
+      },
+      "mob.axolotl.idle" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/axolotl/idle_air1",
+            "sounds/mob/axolotl/idle_air2",
+            "sounds/mob/axolotl/idle_air3",
+            "sounds/mob/axolotl/idle_air4",
+            "sounds/mob/axolotl/idle_air5"
+         ]
+      },
+      "mob.axolotl.idle_water" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/axolotl/idle1",
+            "sounds/mob/axolotl/idle2",
+            "sounds/mob/axolotl/idle3",
+            "sounds/mob/axolotl/idle4",
+            "sounds/mob/axolotl/idle5"
          ]
       },
       "mob.bat.death" : {
@@ -5563,6 +6958,37 @@
                "volume" : 0.50
             }
          ]
+      },
+      "mob.glow_squid.ambient" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/glow_squid/ambient1",
+            "sounds/mob/glow_squid/ambient2",
+            "sounds/mob/glow_squid/ambient3",
+            "sounds/mob/glow_squid/ambient4",
+            "sounds/mob/glow_squid/ambient5"
+         ]
+      },
+      "mob.glow_squid.death" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/glow_squid/death1",
+            "sounds/mob/glow_squid/death2",
+            "sounds/mob/glow_squid/death3"
+         ]
+      },
+      "mob.glow_squid.hurt" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/glow_squid/hurt1",
+            "sounds/mob/glow_squid/hurt2",
+            "sounds/mob/glow_squid/hurt3",
+            "sounds/mob/glow_squid/hurt4"
+         ]
+      },
+      "mob.goat.charge" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/mob/goat/charge1" ]
       },
       "mob.guardian.ambient" : {
          "__use_legacy_max_distance" : "true",
@@ -7066,6 +8492,42 @@
             "sounds/mob/pillager/idle2",
             "sounds/mob/pillager/idle3",
             "sounds/mob/pillager/idle4"
+         ]
+      },
+      "mob.player.hurt_drown" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/mob/player/hurt/drown1",
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/player/hurt/drown2"
+            },
+            "sounds/mob/player/hurt/drown3",
+            "sounds/mob/player/hurt/drown4"
+         ]
+      },
+      "mob.player.hurt_freeze" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/mob/player/hurt/freeze_hurt1",
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/player/hurt/freeze_hurt2"
+            },
+            "sounds/mob/player/hurt/freeze_hurt3",
+            "sounds/mob/player/hurt/freeze_hurt4",
+            "sounds/mob/player/hurt/freeze_hurt5"
+         ]
+      },
+      "mob.player.hurt_on_fire" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/mob/player/hurt/fire_hurt1",
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/mob/player/hurt/fire_hurt2"
+            },
+            "sounds/mob/player/hurt/fire_hurt3"
          ]
       },
       "mob.polarbear.death" : {
@@ -8898,6 +10360,304 @@
             }
          ]
       },
+      "pick_berries.cave_vines" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/sweet_berry_bush/pick_from_bush1",
+            "sounds/block/sweet_berry_bush/pick_from_bush2"
+         ]
+      },
+      "place.amethyst_block" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/place1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/place2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/place3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/place4",
+               "volume" : 1
+            }
+         ]
+      },
+      "place.amethyst_cluster" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/place1",
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place2",
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place3",
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place4",
+               "volume" : 0.90
+            }
+         ]
+      },
+      "place.azalea" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/azalea/break1",
+            "sounds/block/azalea/break2",
+            "sounds/block/azalea/break3",
+            "sounds/block/azalea/break4",
+            "sounds/block/azalea/break5",
+            "sounds/block/azalea/break6"
+         ]
+      },
+      "place.azalea_leaves" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/azalea_leaves/break1",
+            "sounds/block/azalea_leaves/break2",
+            "sounds/block/azalea_leaves/break3",
+            "sounds/block/azalea_leaves/break4",
+            "sounds/block/azalea_leaves/break5",
+            "sounds/block/azalea_leaves/break6",
+            "sounds/block/azalea_leaves/break7"
+         ]
+      },
+      "place.big_dripleaf" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/big_dripleaf/break1",
+            "sounds/block/big_dripleaf/break2",
+            "sounds/block/big_dripleaf/break3",
+            "sounds/block/big_dripleaf/break4",
+            "sounds/block/big_dripleaf/break5",
+            "sounds/block/big_dripleaf/break6"
+         ]
+      },
+      "place.calcite" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/calcite/place1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/place2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/place3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/place4",
+               "volume" : 1
+            }
+         ]
+      },
+      "place.copper" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/copper/break1",
+            "sounds/block/copper/break2",
+            "sounds/block/copper/break3",
+            "sounds/block/copper/break4"
+         ]
+      },
+      "place.deepslate" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate/place1",
+            "sounds/block/deepslate/place2",
+            "sounds/block/deepslate/place3",
+            "sounds/block/deepslate/place4",
+            "sounds/block/deepslate/place5",
+            "sounds/block/deepslate/place6"
+         ]
+      },
+      "place.deepslate_bricks" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/place1",
+            "sounds/block/deepslate_bricks/place2",
+            "sounds/block/deepslate_bricks/place3",
+            "sounds/block/deepslate_bricks/place4",
+            "sounds/block/deepslate_bricks/place5",
+            "sounds/block/deepslate_bricks/place6"
+         ]
+      },
+      "place.dripstone_block" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/break1",
+            "sounds/block/dripstone/break2",
+            "sounds/block/dripstone/break3",
+            "sounds/block/dripstone/break4",
+            "sounds/block/dripstone/break5"
+         ]
+      },
+      "place.hanging_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/hanging_roots/break1",
+            "sounds/block/hanging_roots/break2",
+            "sounds/block/hanging_roots/break3",
+            "sounds/block/hanging_roots/break4"
+         ]
+      },
+      "place.large_amethyst_bud" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/place1",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place2",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place3",
+               "volume" : 0.750
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place4",
+               "volume" : 0.750
+            }
+         ]
+      },
+      "place.medium_amethyst_bud" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/place1",
+               "pitch:" : 1.10,
+               "volume" : 0.50
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place2",
+               "pitch:" : 1.10,
+               "volume" : 0.50
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place3",
+               "pitch:" : 1.10,
+               "volume" : 0.50
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place4",
+               "pitch:" : 1.10,
+               "volume" : 0.50
+            }
+         ]
+      },
+      "place.moss" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/moss/break1",
+            "sounds/block/moss/break2",
+            "sounds/block/moss/break3",
+            "sounds/block/moss/break4",
+            "sounds/block/moss/break5"
+         ]
+      },
+      "place.pointed_dripstone" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/break1",
+            "sounds/block/dripstone/break2",
+            "sounds/block/dripstone/break3",
+            "sounds/block/dripstone/break4",
+            "sounds/block/dripstone/break5"
+         ]
+      },
+      "place.powder_snow" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/powder_snow/break1",
+            "sounds/block/powder_snow/break2",
+            "sounds/block/powder_snow/break3",
+            "sounds/block/powder_snow/break4",
+            "sounds/block/powder_snow/break5",
+            "sounds/block/powder_snow/break6",
+            "sounds/block/powder_snow/break7"
+         ]
+      },
+      "place.sculk_sensor" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/sculk_sensor/place1",
+            "sounds/block/sculk_sensor/place2",
+            "sounds/block/sculk_sensor/place3",
+            "sounds/block/sculk_sensor/place4",
+            "sounds/block/sculk_sensor/place5"
+         ]
+      },
+      "place.small_amethyst_bud" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst_cluster/place1",
+               "pitch:" : 1.20,
+               "volume" : 0.40
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place2",
+               "pitch:" : 1.20,
+               "volume" : 0.40
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place3",
+               "pitch:" : 1.20,
+               "volume" : 0.40
+            },
+            {
+               "name" : "sounds/block/amethyst_cluster/place4",
+               "pitch:" : 1.20,
+               "volume" : 0.40
+            }
+         ]
+      },
+      "place.spore_blossom" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/spore_blossom/break1",
+            "sounds/block/spore_blossom/break2",
+            "sounds/block/spore_blossom/break3",
+            "sounds/block/spore_blossom/break4",
+            "sounds/block/spore_blossom/break5"
+         ]
+      },
+      "place.tuff" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/tuff/break1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/break2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/break3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/break4",
+               "volume" : 1
+            }
+         ]
+      },
       "portal.portal" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -8912,6 +10672,27 @@
          "__use_legacy_max_distance" : "true",
          "category" : "ambient",
          "sounds" : [ "sounds/portal/trigger" ]
+      },
+      "power.off.sculk_sensor" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/sculk_sensor/sculk_clicking_stop1",
+            "sounds/block/sculk_sensor/sculk_clicking_stop2",
+            "sounds/block/sculk_sensor/sculk_clicking_stop3",
+            "sounds/block/sculk_sensor/sculk_clicking_stop4",
+            "sounds/block/sculk_sensor/sculk_clicking_stop5"
+         ]
+      },
+      "power.on.sculk_sensor" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/sculk_sensor/sculk_clicking1",
+            "sounds/block/sculk_sensor/sculk_clicking2",
+            "sounds/block/sculk_sensor/sculk_clicking3",
+            "sounds/block/sculk_sensor/sculk_clicking4",
+            "sounds/block/sculk_sensor/sculk_clicking5",
+            "sounds/block/sculk_sensor/sculk_clicking6"
+         ]
       },
       "raid.horn" : {
          "__use_legacy_max_distance" : "true",
@@ -9428,6 +11209,14 @@
             "sounds/block/respawn_anchor/set_spawn3"
          ]
       },
+      "scrape" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/item/axe/scrape1",
+            "sounds/item/axe/scrape2",
+            "sounds/item/axe/scrape3"
+         ]
+      },
       "sign.dye.use" : {
          "__use_legacy_max_distance" : "true",
          "sounds" : [
@@ -9459,6 +11248,128 @@
             "sounds/random/smithing_table3"
          ]
       },
+      "step.amethyst_block" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step6",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step7",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step8",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step9",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step10",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step11",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step12",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step13",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step14",
+               "volume" : 1
+            }
+         ]
+      },
+      "step.amethyst_cluster" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/amethyst/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step6",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step7",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step8",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step9",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step10",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step11",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step12",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step13",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/amethyst/step14",
+               "volume" : 1
+            }
+         ]
+      },
       "step.ancient_debris" : {
          "category" : "player",
          "sounds" : [
@@ -9470,6 +11381,27 @@
             "sounds/step/ancient_debris2",
             "sounds/step/ancient_debris4",
             "sounds/step/ancient_debris5"
+         ]
+      },
+      "step.azalea" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/azalea/step1",
+            "sounds/block/azalea/step2",
+            "sounds/block/azalea/step3",
+            "sounds/block/azalea/step4",
+            "sounds/block/azalea/step5",
+            "sounds/block/azalea/step6"
+         ]
+      },
+      "step.azalea_leaves" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/azalea_leaves/step1",
+            "sounds/block/azalea_leaves/step2",
+            "sounds/block/azalea_leaves/step3",
+            "sounds/block/azalea_leaves/step4",
+            "sounds/block/azalea_leaves/step5"
          ]
       },
       "step.basalt" : {
@@ -9486,6 +11418,17 @@
             "sounds/step/basalt6"
          ]
       },
+      "step.big_dripleaf" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/big_dripleaf/step1",
+            "sounds/block/big_dripleaf/step2",
+            "sounds/block/big_dripleaf/step3",
+            "sounds/block/big_dripleaf/step4",
+            "sounds/block/big_dripleaf/step5",
+            "sounds/block/big_dripleaf/step6"
+         ]
+      },
       "step.bone_block" : {
          "category" : "player",
          "sounds" : [
@@ -9497,6 +11440,45 @@
             "sounds/step/bone_block2",
             "sounds/step/bone_block4",
             "sounds/step/bone_block5"
+         ]
+      },
+      "step.calcite" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/calcite/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/calcite/step6",
+               "volume" : 1
+            }
+         ]
+      },
+      "step.cave_vines" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
          ]
       },
       "step.chain" : {
@@ -9526,6 +11508,17 @@
             "sounds/step/cloth4"
          ]
       },
+      "step.copper" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/copper/step1",
+            "sounds/block/copper/step2",
+            "sounds/block/copper/step3",
+            "sounds/block/copper/step4",
+            "sounds/block/copper/step5",
+            "sounds/block/copper/step6"
+         ]
+      },
       "step.coral" : {
          "category" : "player",
          "sounds" : [
@@ -9538,6 +11531,38 @@
             "sounds/step/coral4",
             "sounds/step/coral5",
             "sounds/step/coral6"
+         ]
+      },
+      "step.deepslate" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/deepslate/step1",
+            "sounds/block/deepslate/step2",
+            "sounds/block/deepslate/step3",
+            "sounds/block/deepslate/step4",
+            "sounds/block/deepslate/step5",
+            "sounds/block/deepslate/step6"
+         ]
+      },
+      "step.deepslate_bricks" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/step1",
+            "sounds/block/deepslate_bricks/step2",
+            "sounds/block/deepslate_bricks/step3",
+            "sounds/block/deepslate_bricks/step4",
+            "sounds/block/deepslate_bricks/step5"
+         ]
+      },
+      "step.dripstone_block" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
          ]
       },
       "step.grass" : {
@@ -9578,6 +11603,17 @@
             }
          ]
       },
+      "step.hanging_roots" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/hanging_roots/step1",
+            "sounds/block/hanging_roots/step2",
+            "sounds/block/hanging_roots/step3",
+            "sounds/block/hanging_roots/step4",
+            "sounds/block/hanging_roots/step5",
+            "sounds/block/hanging_roots/step6"
+         ]
+      },
       "step.honey_block" : {
          "category" : "player",
          "sounds" : [
@@ -9603,6 +11639,17 @@
             "sounds/step/ladder3",
             "sounds/step/ladder4",
             "sounds/step/ladder5"
+         ]
+      },
+      "step.moss" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/moss/step1",
+            "sounds/block/moss/step2",
+            "sounds/block/moss/step3",
+            "sounds/block/moss/step4",
+            "sounds/block/moss/step5",
+            "sounds/block/moss/step6"
          ]
       },
       "step.nether_brick" : {
@@ -9700,6 +11747,32 @@
             "sounds/step/nylium6"
          ]
       },
+      "step.pointed_dripstone" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
+         ]
+      },
+      "step.powder_snow" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/powder_snow/step1",
+            "sounds/block/powder_snow/step2",
+            "sounds/block/powder_snow/step3",
+            "sounds/block/powder_snow/step4",
+            "sounds/block/powder_snow/step5",
+            "sounds/block/powder_snow/step6",
+            "sounds/block/powder_snow/step7",
+            "sounds/block/powder_snow/step8",
+            "sounds/block/powder_snow/step9",
+            "sounds/block/powder_snow/step10"
+         ]
+      },
       "step.roots" : {
          "category" : "player",
          "sounds" : [
@@ -9725,6 +11798,17 @@
             "sounds/step/sand3",
             "sounds/step/sand4",
             "sounds/step/sand5"
+         ]
+      },
+      "step.sculk_sensor" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/sculk_sensor/step1",
+            "sounds/block/sculk_sensor/step2",
+            "sounds/block/sculk_sensor/step3",
+            "sounds/block/sculk_sensor/step4",
+            "sounds/block/sculk_sensor/step5",
+            "sounds/block/sculk_sensor/step6"
          ]
       },
       "step.shroomlight" : {
@@ -9791,6 +11875,17 @@
             "sounds/step/soul_soil5"
          ]
       },
+      "step.spore_blossom" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/block/spore_blossom/step1",
+            "sounds/block/spore_blossom/step2",
+            "sounds/block/spore_blossom/step3",
+            "sounds/block/spore_blossom/step4",
+            "sounds/block/spore_blossom/step5",
+            "sounds/block/spore_blossom/step6"
+         ]
+      },
       "step.stem" : {
          "category" : "player",
          "sounds" : [
@@ -9818,6 +11913,35 @@
             "sounds/step/stone4",
             "sounds/step/stone5",
             "sounds/step/stone6"
+         ]
+      },
+      "step.tuff" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/tuff/step1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step4",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step5",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/tuff/step6",
+               "volume" : 1
+            }
          ]
       },
       "step.vines" : {
@@ -9873,6 +11997,25 @@
          "__use_legacy_max_distance" : "true",
          "category" : "block",
          "sounds" : [ "sounds/tile/piston/out" ]
+      },
+      "tilt_down.big_dripleaf" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/big_dripleaf/tilt_down1",
+            "sounds/block/big_dripleaf/tilt_down2",
+            "sounds/block/big_dripleaf/tilt_down3",
+            "sounds/block/big_dripleaf/tilt_down4",
+            "sounds/block/big_dripleaf/tilt_down5"
+         ]
+      },
+      "tilt_up.big_dripleaf" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/big_dripleaf/tilt_down1",
+            "sounds/block/big_dripleaf/tilt_down2",
+            "sounds/block/big_dripleaf/tilt_down3",
+            "sounds/block/big_dripleaf/tilt_down4"
+         ]
       },
       "ui.cartography_table.take_result" : {
          "__use_legacy_max_distance" : "true",
@@ -9996,6 +12139,16 @@
             "sounds/step/bone_block5"
          ]
       },
+      "use.cave_vines" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/step/vines1",
+            "sounds/step/vines2",
+            "sounds/step/vines3",
+            "sounds/step/vines4",
+            "sounds/step/vines5"
+         ]
+      },
       "use.chain" : {
          "category" : "block",
          "sounds" : [
@@ -10020,6 +12173,17 @@
             "sounds/step/cloth4"
          ]
       },
+      "use.copper" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/copper/step1",
+            "sounds/block/copper/step2",
+            "sounds/block/copper/step3",
+            "sounds/block/copper/step4",
+            "sounds/block/copper/step5",
+            "sounds/block/copper/step6"
+         ]
+      },
       "use.coral" : {
          "category" : "block",
          "sounds" : [
@@ -10032,6 +12196,39 @@
             "sounds/step/coral4",
             "sounds/step/coral5",
             "sounds/step/coral6"
+         ]
+      },
+      "use.deepslate" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate/step1",
+            "sounds/block/deepslate/step2",
+            "sounds/block/deepslate/step3",
+            "sounds/block/deepslate/step4",
+            "sounds/block/deepslate/step5",
+            "sounds/block/deepslate/step6"
+         ]
+      },
+      "use.deepslate_bricks" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/deepslate_bricks/step1",
+            "sounds/block/deepslate_bricks/step2",
+            "sounds/block/deepslate_bricks/step3",
+            "sounds/block/deepslate_bricks/step4",
+            "sounds/block/deepslate_bricks/step5",
+            "sounds/block/deepslate_bricks/step6"
+         ]
+      },
+      "use.dripstone_block" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
          ]
       },
       "use.grass" : {
@@ -10056,6 +12253,15 @@
             "sounds/step/gravel4"
          ]
       },
+      "use.hanging_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/hanging_roots/break1",
+            "sounds/block/hanging_roots/break2",
+            "sounds/block/hanging_roots/break3",
+            "sounds/block/hanging_roots/break4"
+         ]
+      },
       "use.honey_block" : {
          "category" : "block",
          "sounds" : [
@@ -10078,6 +12284,17 @@
             "sounds/step/ladder3",
             "sounds/step/ladder4",
             "sounds/step/ladder5"
+         ]
+      },
+      "use.moss" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/moss/step1",
+            "sounds/block/moss/step2",
+            "sounds/block/moss/step3",
+            "sounds/block/moss/step4",
+            "sounds/block/moss/step5",
+            "sounds/block/moss/step6"
          ]
       },
       "use.nether_brick" : {
@@ -10175,6 +12392,17 @@
             "sounds/step/nylium6"
          ]
       },
+      "use.pointed_dripstone" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/dripstone/step1",
+            "sounds/block/dripstone/step2",
+            "sounds/block/dripstone/step3",
+            "sounds/block/dripstone/step4",
+            "sounds/block/dripstone/step5",
+            "sounds/block/dripstone/step6"
+         ]
+      },
       "use.roots" : {
          "category" : "block",
          "sounds" : [
@@ -10197,6 +12425,17 @@
             "sounds/step/sand3",
             "sounds/step/sand4",
             "sounds/step/sand5"
+         ]
+      },
+      "use.sculk_sensor" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/sculk_sensor/step1",
+            "sounds/block/sculk_sensor/step2",
+            "sounds/block/sculk_sensor/step3",
+            "sounds/block/sculk_sensor/step4",
+            "sounds/block/sculk_sensor/step5",
+            "sounds/block/sculk_sensor/step6"
          ]
       },
       "use.shroomlight" : {
@@ -10258,6 +12497,17 @@
             "sounds/step/soul_soil3",
             "sounds/step/soul_soil4",
             "sounds/step/soul_soil5"
+         ]
+      },
+      "use.spore_blossom" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/spore_blossom/step1",
+            "sounds/block/spore_blossom/step2",
+            "sounds/block/spore_blossom/step3",
+            "sounds/block/spore_blossom/step4",
+            "sounds/block/spore_blossom/step5",
+            "sounds/block/spore_blossom/step6"
          ]
       },
       "use.stem" : {
