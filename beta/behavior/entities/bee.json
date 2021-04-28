@@ -22,7 +22,9 @@
                         "minecraft:double_plant:0", // Sunflower
                         "minecraft:double_plant:1", // Lilac
                         "minecraft:double_plant:4", // Rose Bush
-                        "minecraft:double_plant:5"  // Peony
+                        "minecraft:double_plant:5",  // Peony
+                        "minecraft:flowering_azalea", //Flowering Azalea
+                        "minecraft:azalea_leaves_flowered" //Flowering Azalea leaves
                     ],
                     "grow_up": {
                         "event": "minecraft:ageable_grow_up",
@@ -60,7 +62,9 @@
                         "minecraft:double_plant:0", // Sunflower
                         "minecraft:double_plant:1", // Lilac
                         "minecraft:double_plant:4", // Rose Bush
-                        "minecraft:double_plant:5"  // Peony
+                        "minecraft:double_plant:5",  // Peony
+                        "minecraft:flowering_azalea", //Flowering Azalea
+                        "minecraft:azalea_leaves_flowered" //Flowering Azalea leaves
                     ]
                 }
             },
@@ -172,7 +176,7 @@
                     "start_chance": 0.5,
                     "search_range": 6,
                     "search_height": 4,
-                    "goal_radius": 1.0,
+                    "goal_radius": 1.2,
                     "stay_duration": 20.0,
                     "target_selection_method": "random",
                     "target_offset": [0, 0.25, 0],
@@ -184,7 +188,9 @@
                         "minecraft:double_plant:8", // Sunflower top
                         "minecraft:double_plant:9", // Lilac top
                         "minecraft:double_plant:12", // Rose Bush top
-                        "minecraft:double_plant:13"  // Peony top
+                        "minecraft:double_plant:13",  // Peony top
+                        "minecraft:flowering_azalea", //Flowering azalea
+                        "minecraft:azalea_leaves_flowered" //Flowering Azalea leaves
                     ],
                     "on_stay_completed": [
                         {
@@ -253,7 +259,7 @@
                     "search_range": 16,
                     "search_height": 10,
                     "tick_interval": 1,
-                    "goal_radius": 0.633, // was tested with 0.4 when the goal radius wasn't squared. sqrt(0.4)~0.633
+                    "goal_radius": 1.2,
                     "target_blocks": [
                         "bee_nest",
                         "beehive"
@@ -382,7 +388,9 @@
                     "minecraft:double_plant:0", // Sunflower
                     "minecraft:double_plant:1", // Lilac
                     "minecraft:double_plant:4", // Rose Bush
-                    "minecraft:double_plant:5"  // Peony
+                    "minecraft:double_plant:5",  // Peony
+                    "minecraft:flowering_azalea", //Flowering azalea
+                    "minecraft:azalea_leaves_flowered" //Flowering Azalea leaves
                 ]
             },
             "minecraft:behavior.move_towards_home_restriction": {

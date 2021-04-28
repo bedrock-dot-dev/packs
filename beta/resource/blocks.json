@@ -2329,19 +2329,6 @@
          "up" : "scaffolding_top"
       }
    },
-   "sculk_sensor" : {
-      "carried_textures" : {
-         "down" : "sculk_sensor_tendril_inactive",
-         "side" : "sculk_sensor_tendril_active",
-         "up" : "sculk_sensor_tendril_inactive"
-      },
-      "sound" : "sculk_sensor",
-      "textures" : {
-         "down" : "sculk_sensor_bottom",
-         "side" : "sculk_sensor_side",
-         "up" : "sculk_sensor_top"
-      }
-   },
    "seaLantern" : {
       "sound" : "glass",
       "textures" : "sea_lantern"

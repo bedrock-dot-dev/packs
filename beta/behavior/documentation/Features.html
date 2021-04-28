@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.17.0.50</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.17.0.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -8,12 +8,14 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <th><a href="#Supported features">Supported features</a></th> </tr>
 <tr> <td> <a href="#minecraft:aggregate_feature"> minecraft:aggregate_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:sequence_feature"> minecraft:sequence_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:beards_and_shavers"> minecraft:beards_and_shavers</a> </tr> </td>
 <tr> <td> <a href="#minecraft:cave_carver_feature"> minecraft:cave_carver_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:growing_plant_feature"> minecraft:growing_plant_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:hell_cave_carver_feature"> minecraft:hell_cave_carver_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:multiface_feature"> minecraft:multiface_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:geode_feature"> minecraft:geode_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:ore_feature"> minecraft:ore_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:rect_layout"> minecraft:rect_layout</a> </tr> </td>
 <tr> <td> <a href="#minecraft:scatter_feature"> minecraft:scatter_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:search_feature"> minecraft:search_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:single_block_feature"> minecraft:single_block_feature</a> </tr> </td>
@@ -97,6 +99,26 @@ Example use: Scattering fruit throughout the canopy of a tree.<br / ><textarea r
     ]
   }
 }
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:beards_and_shavers">minecraft:beards_and_shavers</p></h1>
+
+'minecraft:beards_and_shavers' will build a 'beard' or 'shave' out space so as to provide a clear space for a feature to place.</br>Succeeds if: a beard/shave is made (this should always happen).</br>Fails if: will always return placement pos, but interior feature placement not guaranteed.</br><h2></h2>
+Example use: provides an area for interior structure placement<br / ><textarea readonly="true" cols="70" rows="14">
+{"code:beards_and_shavers": {
+          "description": {
+            "identifier": "..."
+          },
+          "places_feature": "badger:feature_that_places_a_structure",
+          "bounding_box_min": [ -2, 0, -2 ],
+          "bounding_box_max": [ 2, 8, 2 ],
+          "y_delta": 2.0,
+          "surface_block_type": "minecraft:grass",
+          "subsurface_block_type": "minecraft:dirt",
+          "beard_raggedness_min": 0.1,
+          "beard_raggedness_max": 0.3
+        }}
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
@@ -284,6 +306,28 @@ Example use: Oil deposits in the sand.<br / ><textarea readonly="true" cols="50"
   ]
   }
 }
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:rect_layout">minecraft:rect_layout</p></h1>
+
+'minecraft:rect_layout' scans the surface of a Chunk, calling place() on the surface of each block column.</br>Succeeds if: A Feature is successfully placed within a Chunk.</br>Fails if: No Feature could be placed within a Chunk.</br><h2></h2>
+Example use: Scans the surface of a chunk and places a feature if able<br / ><textarea readonly="true" cols="46" rows="16">
+
+      {
+        "ratio_of_empty_space": 0.5,
+        "feature_areas":[
+          {
+            "feature": "badger:tree",
+            "area_dimensions": [Width,Height]
+          },
+          {
+            "feature": "badger:tree2",
+            "area_dimensions": [Width,Height]
+          }
+        ]
+      }
+    
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
@@ -477,6 +521,31 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               feature_reference "<any array element>" : opt
           }
       }
+      object "minecraft:beards_and_shavers" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          feature_reference "places_feature" // Named reference of feature to be placed
+          array "bounding_box_min" // Dimensions of the Bounding Box
+          {
+              float "[0..0]"
+              float "[1..1]"
+              float "[2..2]"
+          }
+          array "bounding_box_max" // Dimensions of the Bounding Box
+          {
+              float "[0..0]"
+              float "[1..1]"
+              float "[2..2]"
+          }
+          float "y_delta" // Y Delta for BAS
+           "surface_block_type" // Reference to the block to be placed.
+           "subsurface_block_type" // Reference to the block to be placed.
+          float "beard_raggedness_min" : opt // Y Delta for BAS
+          float "beard_raggedness_max" : opt // Y Delta for BAS
+      }
       object "minecraft:cave_carver_feature" : opt
       {
           object "description"
@@ -592,6 +661,26 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   array "may_replace"[1,*] : opt
                   {
                        "<any array element>" : opt // A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.
+                  }
+              }
+          }
+      }
+      object "minecraft:rect_layout" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          float "ratio_of_empty_space" : opt // Ratio of a Chunk to be filled with empty space rather than features.
+          array "feature_areas"[1,4294967295]
+          {
+              object "<any array element>" : opt
+              {
+                  feature_reference "feature" // Feature to be placed.
+                  array "area_dimensions" // Dimensions (size) of the associated Feature.
+                  {
+                      int "[0..0]"
+                      int "[1..1]"
                   }
               }
           }

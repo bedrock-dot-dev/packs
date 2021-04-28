@@ -710,6 +710,11 @@
             "stored_in_inventory": true
           },
           {
+            "item": "minecraft:raw_gold",
+            "priority": 2,
+            "stored_in_inventory": true
+          },
+          {
             "item": "minecraft:gold_ore",
             "priority": 2,
             "admire": true,

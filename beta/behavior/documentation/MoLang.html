@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.17.0.50</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.17.0.52</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -881,6 +881,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">Returns the current texture of the item</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.get_default_bone_pivot</td>
+<td style="border-style:solid; border-width:3; padding:7px">Gets specified axis of the specified bone orientation pivot</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.get_equipped_item_name</td>
 <td style="border-style:solid; border-width:3; padding:7px">takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and a second parameter (0=default) if you would like the equipped item or any non-zero number for the currently rendered item, and returns the name of the item in the requested slot (defaulting to the main hand if no parameter is supplied) if there is one, otherwise returns ''.</br></td>
 </tr>
@@ -1097,6 +1101,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is an illager captain, else it returns 0.0</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.is_in_contact_with_water</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is in contact with any water (water, rain, splash water bottle), else it returns 0.0</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_in_love</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is in love, else it returns 0.0</br></td>
 </tr>
@@ -1310,7 +1318,7 @@ Query Functions are boolean expressions that allow you to query for values owned
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.item_remaining_use_duration</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns the amount of time an item has left to use in seconds, else 0.0 if it doesn't make sense</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. Item queried is specified by the slot name 'main_hand' or 'off_hand'. Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.item_slot_to_bone_name</td>

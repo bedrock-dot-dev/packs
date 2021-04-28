@@ -2071,16 +2071,6 @@
             "sounds/block/dripstone/break5"
          ]
       },
-      "break.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/break1",
-            "sounds/block/sculk_sensor/break2",
-            "sounds/block/sculk_sensor/break3",
-            "sounds/block/sculk_sensor/break4",
-            "sounds/block/sculk_sensor/break5"
-         ]
-      },
       "break.small_amethyst_bud" : {
          "category" : "block",
          "sounds" : [
@@ -3516,17 +3506,6 @@
             "sounds/step/sand5"
          ]
       },
-      "fall.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
       "fall.shroomlight" : {
          "category" : "player",
          "sounds" : [
@@ -4380,17 +4359,6 @@
             "sounds/step/sand5"
          ]
       },
-      "hit.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
       "hit.shroomlight" : {
          "category" : "block",
          "sounds" : [
@@ -5119,17 +5087,6 @@
             }
          ]
       },
-      "jump.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
       "jump.shroomlight" : {
          "category" : "block",
          "sounds" : [
@@ -5541,17 +5498,6 @@
             "sounds/jump/sand4"
          ]
       },
-      "land.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
       "land.shroomlight" : {
          "category" : "block",
          "sounds" : [
@@ -5794,6 +5740,38 @@
             "sounds/mob/axolotl/idle3",
             "sounds/mob/axolotl/idle4",
             "sounds/mob/axolotl/idle5"
+         ]
+      },
+      "mob.axolotl.splash" : {
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "name" : "sounds/mob/axolotl/splash1",
+               "pitch" : 1.20,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/mob/axolotl/splash2",
+               "pitch" : 1.20,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/mob/axolotl/splash3",
+               "pitch" : 1.20,
+               "volume" : 0.90
+            }
+         ]
+      },
+      "mob.axolotl.swim" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/axolotl/swim1",
+            "sounds/mob/axolotl/swim2",
+            "sounds/mob/axolotl/swim3",
+            "sounds/mob/axolotl/swim4",
+            "sounds/mob/axolotl/swim5",
+            "sounds/mob/axolotl/swim6",
+            "sounds/mob/axolotl/swim7"
          ]
       },
       "mob.bat.death" : {
@@ -10592,16 +10570,6 @@
             "sounds/block/powder_snow/break7"
          ]
       },
-      "place.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/place1",
-            "sounds/block/sculk_sensor/place2",
-            "sounds/block/sculk_sensor/place3",
-            "sounds/block/sculk_sensor/place4",
-            "sounds/block/sculk_sensor/place5"
-         ]
-      },
       "place.small_amethyst_bud" : {
          "category" : "block",
          "sounds" : [
@@ -10672,27 +10640,6 @@
          "__use_legacy_max_distance" : "true",
          "category" : "ambient",
          "sounds" : [ "sounds/portal/trigger" ]
-      },
-      "power.off.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/sculk_clicking_stop1",
-            "sounds/block/sculk_sensor/sculk_clicking_stop2",
-            "sounds/block/sculk_sensor/sculk_clicking_stop3",
-            "sounds/block/sculk_sensor/sculk_clicking_stop4",
-            "sounds/block/sculk_sensor/sculk_clicking_stop5"
-         ]
-      },
-      "power.on.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/sculk_clicking1",
-            "sounds/block/sculk_sensor/sculk_clicking2",
-            "sounds/block/sculk_sensor/sculk_clicking3",
-            "sounds/block/sculk_sensor/sculk_clicking4",
-            "sounds/block/sculk_sensor/sculk_clicking5",
-            "sounds/block/sculk_sensor/sculk_clicking6"
-         ]
       },
       "raid.horn" : {
          "__use_legacy_max_distance" : "true",
@@ -11800,17 +11747,6 @@
             "sounds/step/sand5"
          ]
       },
-      "step.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
       "step.shroomlight" : {
          "category" : "player",
          "sounds" : [
@@ -12425,17 +12361,6 @@
             "sounds/step/sand3",
             "sounds/step/sand4",
             "sounds/step/sand5"
-         ]
-      },
-      "use.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
          ]
       },
       "use.shroomlight" : {
