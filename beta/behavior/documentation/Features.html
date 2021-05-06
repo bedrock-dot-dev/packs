@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.17.0.52</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.17.0.54</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -10,6 +10,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:sequence_feature"> minecraft:sequence_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:beards_and_shavers"> minecraft:beards_and_shavers</a> </tr> </td>
 <tr> <td> <a href="#minecraft:cave_carver_feature"> minecraft:cave_carver_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:conditional_list"> minecraft:conditional_list</a> </tr> </td>
 <tr> <td> <a href="#minecraft:growing_plant_feature"> minecraft:growing_plant_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:hell_cave_carver_feature"> minecraft:hell_cave_carver_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:multiface_feature"> minecraft:multiface_feature</a> </tr> </td>
@@ -136,6 +137,21 @@ Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" row
           "width_modifier": 0.0
         }
       }
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:conditional_list">minecraft:conditional_list</p></h1>
+
+'minecraft:conditional_list' Places the first suitable feature within a collection.</br>These conditional features will be evaluated in order.</br>Succeeds if: A condition is successfully resolved.</br>Fails if: No condition is successfully resolved.</br><h2></h2>
+Example use: assigning a feature to an expression<br / ><textarea readonly="true" cols="65" rows="9">
+"conditional_features" : [
+            { 
+              "places_feature" : "badger:some_feature_or_other",
+              "condition" : "query.check_some_block_property(),
+            },
+          ],
+          "early_out_scheme": "placement_success"
+        
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
@@ -554,6 +570,22 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+      }
+      object "minecraft:conditional_list" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          array "conditional_features" // Array of Features, and their associated Conditions, for attempted placement. These features will be evaluated as ordered.
+          {
+              object "<any array element>" : opt
+              {
+                  feature_reference "places_feature" // Feature to be placed.
+                  molang "condition" // Condition for placing associated Feature
+              }
+          }
+          enumerated_value "early_out_scheme"<"condition_success", "placement_success"> : opt // Denote whether placement should end on first successful placement or first passed condition.
       }
       object "minecraft:growing_plant_feature" : opt
       {

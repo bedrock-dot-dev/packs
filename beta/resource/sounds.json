@@ -2458,10 +2458,17 @@
          },
          "goat" : {
             "events" : {
-               "charge" : "mob.goat.charge"
+               "ambient" : "mob.goat.ambient",
+               "ambient.screamer" : "mob.goat.ambient.screamer",
+               "death" : "mob.goat.death",
+               "death.screamer" : "mob.goat.death.screamer",
+               "eat" : "mob.goat.eat",
+               "hurt" : "mob.goat.hurt",
+               "hurt.screamer" : "mob.goat.hurt.screamer",
+               "step" : "mob.goat.step"
             },
             "pitch" : [ 0.80, 1.20 ],
-            "volume" : 1.0
+            "volume" : 1
          },
          "guardian" : {
             "events" : {
@@ -4243,6 +4250,11 @@
             "sound" : "random.glass",
             "volume" : 1.0
          },
+         "glow_squid.ink_squirt" : {
+            "pitch" : 1.0,
+            "sound" : "mob.glow_squid.ink_squirt",
+            "volume" : 1.0
+         },
          "ignite" : {
             "pitch" : [ 0.80, 1.20 ],
             "sound" : "fire.ignite",
@@ -4313,6 +4325,11 @@
             "sound" : "item.trident.thunder",
             "volume" : 1.0
          },
+         "jump_to_block" : {
+            "pitch" : 1.0,
+            "sound" : "component.jump_to_block",
+            "volume" : 1.0
+         },
          "large.blast" : {
             "pitch" : 1.0,
             "sound" : "firework.large_blast",
@@ -4360,6 +4377,11 @@
          "milk" : {
             "pitch" : 1.0,
             "sound" : "mob.cow.milk",
+            "volume" : 1.0
+         },
+         "milk.screamer" : {
+            "pitch" : 1.0,
+            "sound" : "mob.goat.milk.screamer",
             "volume" : 1.0
          },
          "milk_suspiciously" : {
@@ -4461,10 +4483,30 @@
             "sound" : "random.click",
             "volume" : 1.0
          },
+         "pre_ram" : {
+            "pitch" : 1.0,
+            "sound" : "mob.goat.prepare_ram",
+            "volume" : 1.0
+         },
+         "pre_ram.screamer" : {
+            "pitch" : 1.0,
+            "sound" : "mob.goat.prepare_ram.screamer",
+            "volume" : 1.0
+         },
          "raid.horn" : {
             "pitch" : 1.0,
             "sound" : "raid.horn",
             "volume" : 12.0
+         },
+         "ram_impact" : {
+            "pitch" : 1.0,
+            "sound" : "mob.goat.ram_impact",
+            "volume" : 1.0
+         },
+         "ram_impact.screamer" : {
+            "pitch" : 1.0,
+            "sound" : "mob.goat.ram_impact.screamer",
+            "volume" : 1.0
          },
          "random.anvil_use" : {
             "pitch" : 1.0,
@@ -4584,6 +4626,11 @@
          "smithing_table.use" : {
             "pitch" : 1.0,
             "sound" : "smithing_table.use",
+            "volume" : 1.0
+         },
+         "squid.ink_squirt" : {
+            "pitch" : 1.0,
+            "sound" : "mob.squid.ink_squirt",
             "volume" : 1.0
          },
          "teleport" : {

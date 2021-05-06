@@ -207,6 +207,8 @@
     },
 
     "components": {
+      "minecraft:is_hidden_when_invisible": {
+      },
       "minecraft:type_family": {
         "family": [ "strider", "mob" ]
       },

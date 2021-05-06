@@ -1446,6 +1446,15 @@
       "sound" : "glass",
       "textures" : "ice"
    },
+   "infested_deepslate" : {
+      "isotropic" : false,
+      "sound" : "deepslate",
+      "textures" : {
+         "down" : "deepslate_top",
+         "side" : "deepslate",
+         "up" : "deepslate_top"
+      }
+   },
    "info_update" : {
       "sound" : "gravel",
       "textures" : "missing_tile"

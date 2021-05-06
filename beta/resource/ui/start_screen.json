@@ -580,6 +580,12 @@
     "$focus_override_right": "profile_button"
   },
 
+  "toolbox_mode_button@start.main_button": {
+    "$pressed_button_name": "button.toolbox_mode",
+    "$button_text": "menu.toolboxMode",
+    "$focus_override_right": "profile_button"
+  },
+
   "course_button@start.main_button": {
     "$pressed_button_name": "button.menu_courses",
     "$button_text": "course.edu.courses"
@@ -814,6 +820,20 @@
                 "ignored": "(not $play_button_visible)",
                 "controls": [
                   { "play_button@start.play_button": {} }
+                ]
+              }
+            },
+            {
+              "stacked_row_toolbox@start.stacked_row": {
+                "ignored":  "$is_toolbox_ignored",
+                "controls": [
+                  { "toolbox_mode_button@start.toolbox_mode_button": {} }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#toolbox_button_visible",
+                    "binding_name_override": "#visible"
+                  }
                 ]
               }
             },
@@ -1264,6 +1284,7 @@
     "$achievements_ignored|default": false,
     "$feedback_ignored|default": false,
     "$store_ignored|default": false,
+    "$is_toolbox_ignored|default": false,
     "variables": [
       {
         "requires": "$education_edition",
@@ -1286,6 +1307,10 @@
         "requires": "(not $supports_xbl_achievements)",
         "$achievements_ignored": true,
         "$feedback_ignored": true
+      },
+      {
+        "requires": "(not $is_desktop or $is_publish)",
+        "$is_toolbox_ignored": true
       }
     ],
     "controls": [

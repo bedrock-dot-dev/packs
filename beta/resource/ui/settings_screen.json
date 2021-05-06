@@ -184,6 +184,12 @@
               }
             },
             {
+              "creator_button@general_section.creator_button": {
+                "$toggle_group_forced_index": "$creator_forced_index",
+                "$tts_section_header": "$general_section_header"
+              }
+            },
+            {
               "video_button@general_section.video_button": {
                 "$toggle_group_forced_index": "$video_forced_index",
                 "$tts_section_header": "$general_section_header"
@@ -347,6 +353,7 @@
                 "ignored": "$ignore_storage_section"
               }
             },
+            { "creator_section@general_section.creator_section": { "visible": false } },
             { "video_section@general_section.video_section": { "visible": false } },
             {
               "view_subscriptions_section@general_section.view_subscriptions_section": {

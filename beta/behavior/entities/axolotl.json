@@ -128,6 +128,8 @@
     },
 
     "components": {
+      "minecraft:is_hidden_when_invisible": {
+      },
       "minecraft:type_family": {
         "family": [ "axolotl", "mob" ]
       },
@@ -210,7 +212,7 @@
         "duration": 10,
         "force_below_health": 8,
         "random_start_chance": 0.33,
-        "random_damage_range": [0,2],
+        "random_damage_range": [ 0, 2 ],
         "damage_sources": [
           "contact",
           "entity_attack",
@@ -220,7 +222,8 @@
           "thorns",
           "wither"
         ],
-        "apply_regeneration": true
+        "apply_regeneration": true,
+        "filters": { "test": "in_water", "operator": "==", "value": true }
       },
       "minecraft:behavior.tempt": {
         "priority": 2,

@@ -879,6 +879,7 @@ commands.immutableworld.description=Sets the immutable state of the world.
 commands.immutableworld.info=immutableworld = %s
 commands.kick.description=Kicks a player from the server.
 commands.kick.description.edu=Removes a player from the game.
+commands.kick.no.player=Please provide the name of the player you want to kick
 commands.kick.not.found=Could not find player %1$s
 commands.kick.not.yourself=You may not remove yourself from the game
 commands.kick.success=Kicked %1$s from the game
@@ -2097,7 +2098,7 @@ xbl.syncIAP.skipSignIn.prompt.description=This Microsoft Account will not be the
 
 xbl.syncIAP.confirmSync.prompt.title=Sync to %s?
 xbl.syncIAP.confirmSync.prompt.description.line1=Would you like to sync your app store purchases to %s?
-xbl.syncIAP.confirmSync.prompt.description.line2=You can only sync packs purchased outside of the Minecraft Marketplace once. They will continue to be available to anyone who plays on this device.
+xbl.syncIAP.confirmSync.prompt.description.line2=Packs purchased outside Minecraft Marketplace can only be synced once. They will continue to be available to anyone who plays on this device.
 xbl.syncIAP.confirmSync.prompt.yes=Yes, Sync My Purchases
 
 xbl.transferEntitlements.error.title=Account Error
@@ -2140,7 +2141,7 @@ date.formatted=%s %d %d
 
 dayOneExperience.carousel.title=Welcome to New Minecraft!
 dayOneExperience.carousel.welcome_text=There's a lot of exciting new stuff in this new version of Minecraft! Check out the Marketplace, create a Realm, and play online with Cross-Platform friends!
-dayOneExperience.carousel.marketplace=The Minecraft Marketplace is a place to find new skins, worlds, textures, and mash-up packs by various talented creators.
+dayOneExperience.carousel.marketplace=Minecraft Marketplace is a place to find new skins, worlds, textures, and mash-up packs by various talented creators.
 dayOneExperience.carousel.cross_platform=Cross-platform play lets you connect with players on different platforms. Sign in to your Microsoft Account to play with all your Minecraft friends!
 dayOneExperience.carousel.realms=Realms are servers run by us, just for you and your friends. Keep your Minecraft world online and always accessible, even when you log-off.
 dayOneExperience.carousel.villager=New Minecraft is the only place to receive future updates containing new features, mobs, items, blocks and much more!
@@ -2828,8 +2829,8 @@ updateScreen.updateRequired=Update Required
 updateScreen.title=Version Out of Date
 updateScreen.body=Update to the latest version to access all the new features, play with friends online, or see what's new in the Marketplace.
 updateScreen.commerceNotSupported.title=Can't Access Marketplace
-updateScreen.commerceNotSupported.body=This version of Minecraft can no longer access the Minecraft Marketplace. Update to the latest version to restore Marketplace access.
-updateScreen.packs.updateRequired=Please update to the latest version to download your pack purchased in the Minecraft Marketplace.
+updateScreen.commerceNotSupported.body=This version of Minecraft can no longer access Minecraft Marketplace. Update to the latest version to restore Marketplace access.
+updateScreen.packs.updateRequired=Please update to the latest version to download your pack purchased in Minecraft Marketplace.
 updateScreen.patchVersion=Version %s Patch Notes:
 
 hostOption.codeBuilder=Code Builder
@@ -3595,7 +3596,7 @@ howtoplay.theEnd.text.5=If once wasn't enough, add four Ender Crystals to the ex
 
 howtoplay.theStore=The Marketplace
 howtoplay.theStore.title=How to Play : The Marketplace
-howtoplay.theStore.text.1=The Minecraft Marketplace is a place to find new skins, worlds, textures, and mash-up packs by various talented creators.
+howtoplay.theStore.text.1=Minecraft Marketplace is a place to find new skins, worlds, textures, and mash-up packs by various talented creators.
 howtoplay.theStore.header.1=Explore Content
 howtoplay.theStore.text.2=Try a new skin for a fresh new look!
 howtoplay.theStore.text.3=Check out worlds to unlock new maps and challenges that you will want to play again and again!
@@ -5292,6 +5293,7 @@ menu.start=Start
 menu.switchingLevel=Switching worlds
 menu.makingBackup=Making backup...
 menu.saving=Saving...
+menu.toolboxMode=Toolbox Mode
 
 merchant.deprecated=Trade something else to unlock!
 
@@ -5667,6 +5669,8 @@ options.hidden=Hidden
 options.hidehud=Hide HUD
 options.hidehand=Hide Hand
 options.classic_box_selection=Outline Selection
+options.creator=Creator
+options.creatorTitle=Creator Settings
 options.vr_classic_box_selection=Outline Selection
 options.hidegamepadcursor=Hide Controller Cursor
 options.hidegui=Hide GUI
@@ -5826,6 +5830,7 @@ options.thirdperson.thirdpersonfront=Third Person Front
 options.title=Options
 options.toggle=Toggle
 options.renderclouds=Render Clouds
+options.toolboxMode=Toolbox Mode
 options.toggleCrouch=Toggle Crouch
 options.touch=Touch
 options.touchSettings=Touch Settings
@@ -5918,6 +5923,8 @@ options.activateExperimentalGameplay.message=Be careful! You're activating featu
 options.activateExperimentalGameplayCreate.message=Be careful! You're activating features that are still under development. You might experience crashes and your world might break. This world may not work with future updates. Press Continue to create world with experimental features turned on.
 options.activateFancyBubbles=Activate Fancy Bubble Columns?
 options.activateFancyBubblesCreate.message=Enables Fancy Bubble Columns. Fancy Bubble Columns may lower performance on some devices.
+options.activateToolboxModeCreate.message=Adds powerful tools for editing worlds. Intended for experienced creators on devices with a Mouse & Keyboard.
+options.activateToolboxModeCreate.messageWithMouse=Adds powerful tools for editing worlds. Intended for experienced creators.
 options.unlockTemplateWorldOptions=Discard the Creator's Settings?
 options.unlockTemplateWorldOptions.message=The experience that the creator of this template wants you to have might be broken if you unlock these settings.  You might not be able to return to that intended experience if you continue.
 options.unlockTemplateWorldOptions.initiate=Unlock Template World Options
@@ -6327,7 +6334,7 @@ progressScreen.message.leaveLevel=Your game is being saved. Please do not turn o
 progressScreen.message.genericMayTakeAMoment=This may take a few moments
 progressScreen.message.noUploadResponse=We couldn't confirm if your world uploaded properly. Please join your Realm to check, then try again if it hasn't been updated to the new world.
 progressScreen.message.noUploadEndpoint=Failed to find a place to upload your world. Maybe check your internet connection?
-progressScreen.message.unownedTemplate=It looks like you do not own the Marketplace template this world is based on. You can purchase it from the Minecraft Marketplace.
+progressScreen.message.unownedTemplate=It looks like you do not own the Marketplace template this world is based on. You can purchase it from Minecraft Marketplace.
 progressScreen.message.createArchiveFileFailed=We couldn't pack your world file for upload. Maybe your hard drive is full?
 progressScreen.message.createLevelStorageFailed=Something went wrong while preparing to upload your world. If this keeps happening, restarting your device may help.
 progressScreen.message.unknownError=An error occurred
@@ -6849,7 +6856,6 @@ store.promo.view=See in Character Creator
 store.realmsPlus=Realms Plus
 store.realmsPlus.content=Content
 store.realmsPlus.faq=FAQ
-store.realmsPlus.buyFor=SUBSCRIBE NOW %s ## Maximum 25 characters
 store.realmsPlus.buyNow=SUBSCRIBE NOW ## Maximum 13 characters
 store.realmsPlus.buyNowPerMonth=Subscribe Now %s/month
 store.realmsPlus.buyNowTrialPerMonth=Start Trial ## Maximum 25 characters
@@ -6879,7 +6885,7 @@ store.realmsPlus.landing.headerTrial=Free 30 Day Trial, then %s/month
 
 store.realmsPlus.landing.info1.line1=Your Own Personal Realm Server – A Persistent World Always Online for You and Your Friends!
 store.realmsPlus.landing.info1.line2=Friends Play for Free in Your Realm
-store.realmsPlus.landing.info1.line3=Jump from Console to Mobile to PC, Any Device with the Minecraft Marketplace
+store.realmsPlus.landing.info1.line3=Jump from Console to Mobile to PC - Any Device with Minecraft Marketplace
 
 store.realmsPlus.landing.info2.line1=Free Access to a Catalog of 150+ Marketplace Packs
 store.realmsPlus.landing.info2.line2=Worlds on Your Realm Include Secure Backups
@@ -6890,7 +6896,7 @@ store.realmsPlus.faq.header=FREQUENTLY ASKED QUESTIONS
 store.realmsPlus.faq.question1=What is Realms Plus?
 store.realmsPlus.faq.answer1=Realms Plus is a subscription to a personal server supporting up to 10 simultaneous players, along with unlimited access to 150+ great Minecraft worlds, texture packs, skin packs, and mash-ups for one low monthly price.
 store.realmsPlus.faq.question2=What is a personal server?
-store.realmsPlus.faq.answer2=A personal server allows you to create a shared world that is always online and accessible from any device with the Minecraft Marketplace. Players that you invite to your Realm can play this world at any time.
+store.realmsPlus.faq.answer2=A personal server allows you to create a shared world that is always online and accessible from any device with Minecraft Marketplace. Players that you invite to your Realm can play this world at any time.
 store.realmsPlus.faq.question3=Do my friends need to purchase Realms Plus to play on my Realm?
 store.realmsPlus.faq.answer3=Your friends don’t need to purchase a Realms Plus subscription to play on your Realm.  You can invite any friend (that has their multiplayer permissions enabled) to join your Realm for free.
 store.realmsPlus.faq.question4=Which devices support Realms Plus for Minecraft?
@@ -6915,7 +6921,7 @@ store.realmsPlus.content.friendsGetAccess=Your Friends Get Access to the Content
 
 store.realmsPlus.content.popularPacks=Popular Packs in Realms Plus:
 store.realmsPlus.content.viewAllPacks=VIEW ALL PACKS
-store.realmsPlus.content.contentDescription=Tap into the source of amazing Minecraft content! With Realms Plus, you get instant access to 150+ marketplace items like mash-ups, worlds, skin packs and epic adventures – with new additions each month. Your content is stored on your own personal server, and made available on any platform where you enjoy both Realms and the Minecraft Marketplace. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free!
+store.realmsPlus.content.contentDescription=Tap into the source of amazing Minecraft content! With Realms Plus, you get instant access to 150+ marketplace items like mash-ups, worlds, skin packs and epic adventures – with new additions each month. Your content is stored on your own personal server, and made available on any platform where you enjoy both Realms and Minecraft Marketplace. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free!
 
 
 store.realmsPlus.freeTrial=START FREE TRIAL
@@ -8103,6 +8109,7 @@ tile.crying_obsidian.name=Crying Obsidian
 
 tile.powder_snow.name=Powder Snow
 tile.deepslate.name=Deepslate
+tile.infested_deepslate.name=Infested Deepslate
 tile.cobbled_deepslate.name=Cobbled Deepslate
 tile.dripstone_block.name=Dripstone Block
 tile.pointed_dripstone.name=Pointed Dripstone
@@ -8130,7 +8137,6 @@ tile.deepslate_lapis_ore.name=Deepslate Lapis Ore
 tile.deepslate_iron_ore.name=Deepslate Iron Ore
 tile.deepslate_gold_ore.name=Deepslate Gold Ore
 tile.deepslate_redstone_ore.name=Deepslate Redstone Ore
-tile.lit_deepslate_redstone_ore.name=Lit Deepslate Redstone Ore
 tile.deepslate_diamond_ore.name=Deepslate Diamond Ore
 tile.deepslate_coal_ore.name=Deepslate Coal Ore
 tile.deepslate_emerald_ore.name=Deepslate Emerald Ore
@@ -8256,7 +8262,7 @@ structure_block.export=Export
 structure_block.corner=Corner
 structure_block.corner.text.1.title=Corner Mode:
 structure_block.corner.text.2.paragraph=Corner Mode is used with the Detect button in Save Mode to define the area to save. It will only detect Corner Blocks with the same name as the structure being saved.
-structure_block.export.disabled_message=Export is disabled on world templates from the Minecraft Marketplace.
+structure_block.export.disabled_message=Export is disabled on Minecraft Marketplace world templates.
 structure_block.reset=Reset
 structure_block.save=Save
 structure_block.redstone_save_mode=Redstone Save Mode
@@ -8291,6 +8297,8 @@ structure_block.exportProgressTitle=Exporting Your Structure
 
 title.oldgl1=Old graphics card detected; this may prevent you from
 title.oldgl2=playing in the future as OpenGL 2.0 will be required.
+
+toolboxMode.text=coming soon
 
 ## These are being used by TextObject tests. Changing them will break the test.
 translation.test.args=%s %s
@@ -8398,7 +8406,7 @@ trial.tabbed_upsell.multiplayer.description=The full Minecraft experience lets y
 trial.tabbed_upsell.server.title=SERVERS
 trial.tabbed_upsell.server.description=Servers offer some of the most creative ways to enjoy Minecraft! Play great mini-games, meet the Minecraft community and make new friends. Unlock the full Minecraft experience to try Servers today!
 trial.tabbed_upsell.store.title=STORE
-trial.tabbed_upsell.store.description=Get access to the Minecraft Marketplace, our in-game store. Switch up your look with new skins, change your world, or explore incredible new maps from the best community creators! Get the full game today!
+trial.tabbed_upsell.store.description=Get access to Minecraft Marketplace, our in-game store. Switch up your look with new skins, change your world, or explore incredible new maps from the best community creators! Get the full game today!
 trial.tabbed_upsell.creative.title=CREATIVE
 trial.tabbed_upsell.creative.description=Buy Minecraft and get Creative Mode! Access the entire inventory - the only limit to what you can build is your imagination! Fly around your world, make your dream home out of anything and everything, or just blow up a mountain with unlimited TNT! 
 trial.tabbed_upsell.addon.title=ADD-ONS
@@ -8448,7 +8456,7 @@ trial.creative.mode.title=CREATIVE
 trial.survival.mode.1.intro_description=The original Minecraft experience: collect resources to craft tools and build structures, find and farm food to manage your hunger, battle dangerous mobs, and explore a vast world.
 trial.survival.mode.2.intro_description=Start by collecting some wood and dirt for a makeshift home to help you survive the first night! From there it's all up to you.
 trial.creative.mode.1.intro_description=Build anything you can imagine in Creative Mode. Take no damage, fly through the skies, and enjoy instant access to every block in the game! This mode lets you focus on crafting and gives you everything you need to build something beautiful!
-trial.creative.mode.2.intro_description=You'll also have access to Inspiration Island, a tutorial world and introduction to Creative mode that'll teach you how to be a master builder in no time! You can find more great worlds like this in the Minecraft Marketplace.
+trial.creative.mode.2.intro_description=You'll also have access to Inspiration Island, a tutorial world and introduction to Creative mode that'll teach you how to be a master builder in no time! You can find more great worlds like this in Minecraft Marketplace.
 trial.tour.marketplace=TOUR THE MARKETPLACE
 trial.world.title=Which Trial World?
 
@@ -8894,8 +8902,12 @@ hbui.CreateNewWorld.advanced.naturalRegenerationDescription=Gain or lose health 
 hbui.CreateNewWorld.advanced.naturalRegenerationTitle=Natural regeneration
 hbui.CreateNewWorld.advanced.respawnRadiusDescription=Respawn within this block radius when you die and no custom spawnpoint is set. Max value of 128.
 hbui.CreateNewWorld.advanced.respawnRadiusLabel=Respawn radius
+hbui.CreateNewWorld.advanced.respawnRadiusPlaceholder=5
 hbui.CreateNewWorld.advanced.showCoordinatesDescription=Display your current position
 hbui.CreateNewWorld.advanced.showCoordinatesTitle=Show coordinates
+hbui.CreateNewWorld.advanced.simulationDistanceDescription=The game loads and applies changes within a 96×96 block radius
+hbui.CreateNewWorld.advanced.simulationDistanceOption=%1$s chunks
+hbui.CreateNewWorld.advanced.simulationDistanceTitel=Simulation distance
 hbui.CreateNewWorld.advanced.startWithMapDescription=Spawn with a blank map to explore your world
 hbui.CreateNewWorld.advanced.startWithMapTitle=Starting map
 hbui.CreateNewWorld.advanced.tileDropsDescription=Blocks drop when they’re broken
@@ -9002,7 +9014,7 @@ contentlog.history.title=Content Log History
 contentlog.history.copyToClipboard=Copy to Clipboard
 contentlog.logLocationSectionName=Content Log Location:
 contentlog.settingsSectionName=Content Log Settings
-contentlog.clear_files=Delete Old Content Logs
+contentlog.clear_files=Delete Old Logs
 contentlog.delete.title=Delete Old Log Files?
 contentlog.delete.body1=Select "Delete Now" to delete all previous log files.
 contentlog.delete.body2=Note: The log file for your currently active session will remain.
