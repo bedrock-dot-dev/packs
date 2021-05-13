@@ -876,7 +876,10 @@
       "textures" : "deadbush"
    },
    "deepslate" : {
-      "isotropic" : false,
+      "isotropic" : {
+         "down" : true,
+         "up" : true
+      },
       "sound" : "deepslate",
       "textures" : {
          "down" : "deepslate_top",
@@ -1447,7 +1450,10 @@
       "textures" : "ice"
    },
    "infested_deepslate" : {
-      "isotropic" : false,
+      "isotropic" : {
+         "down" : true,
+         "up" : true
+      },
       "sound" : "deepslate",
       "textures" : {
          "down" : "deepslate_top",
@@ -2078,7 +2084,7 @@
       "textures" : "potatoes"
    },
    "powder_snow" : {
-      "isotropic" : true,
+      "isotropic" : false,
       "sound" : "powder_snow",
       "textures" : "powder_snow"
    },

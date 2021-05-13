@@ -783,6 +783,24 @@
         }
       },
       {
+        "realms_invites": {
+          "ignored": "(not $is_realms_enabled or not $is_pregame)",
+          "type": "panel",
+          "size": [ "100%", 32 ],
+          "controls": [
+            {
+              "check_realms_invites_button@settings_common.action_button": {
+                "$pressed_button_name": "realms_invites_button",
+                "$button_text": "options.realms.checkInvites",
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "offset": [ 0, 2 ]
+              }
+            }
+          ]
+        }
+      },
+      {
         "sign_out": {
           "ignored": "($build_platform_UWP or not $is_pregame or $requires_xbl_signin_to_play)",
           "type": "panel",

@@ -405,7 +405,7 @@
     "$button_text": "menu.achievements",
     "anchor_to": "top_middle",
     "anchor_from": "top_middle",
-    "ignored": "$achievements_ignored",
+    "ignored": true,
     "bindings": [
       {
         "binding_name": "#achievements_visible",

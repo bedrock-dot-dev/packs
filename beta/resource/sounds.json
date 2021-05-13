@@ -4140,6 +4140,11 @@
             "sound" : "mob.zombie.converted_to_drowned",
             "volume" : [ 1.0, 2.0 ]
          },
+         "convert_to_stray" : {
+            "pitch" : 1.0,
+            "sound" : "mob.skeleton.convert_to_stray",
+            "volume" : 1.0
+         },
          "converted_to_zombified" : {
             "pitch" : [ 0.90, 1.10 ],
             "sound" : "mob.piglin.converted_to_zombified",

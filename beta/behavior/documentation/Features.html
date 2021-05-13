@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.17.0.54</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.17.0.56</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -17,6 +17,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:geode_feature"> minecraft:geode_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:ore_feature"> minecraft:ore_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:rect_layout"> minecraft:rect_layout</a> </tr> </td>
+<tr> <td> <a href="#minecraft:scan_surface"> minecraft:scan_surface</a> </tr> </td>
 <tr> <td> <a href="#minecraft:scatter_feature"> minecraft:scatter_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:search_feature"> minecraft:search_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:single_block_feature"> minecraft:single_block_feature</a> </tr> </td>
@@ -344,6 +345,14 @@ Example use: Scans the surface of a chunk and places a feature if able<br / ><te
         ]
       }
     
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:scan_surface">minecraft:scan_surface</p></h1>
+
+'minecraft:scan_surface' scans the surface of a Chunk, calling place() on the surface of each block column.</br>Succeeds if: A Feature was successfully placed during the scan.</br>Fails if: No Feature was placed during the course of the scan.</br><h2></h2>
+Example use: Scans the surface of a chunk and places a feature if able<br / ><textarea readonly="true" cols="50" rows="2">
+{"scan_surface_feature": "example:apple_feature"}
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
@@ -716,6 +725,14 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   }
               }
           }
+      }
+      object "minecraft:scan_surface" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          feature_reference "scan_surface_feature" // Named reference of feature to be placed
       }
       object "minecraft:scatter_feature" : opt
       {

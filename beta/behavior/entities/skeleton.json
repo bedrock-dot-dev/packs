@@ -85,7 +85,7 @@
       "become_stray": {
         "minecraft:transformation": {
           "into": "minecraft:stray",
-          "transformation_sound" : "",
+          "transformation_sound" : "convert_to_stray",
           "keep_level": true,
           "drop_inventory": true,
           "preserve_equipment": true

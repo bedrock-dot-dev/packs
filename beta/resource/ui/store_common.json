@@ -3652,16 +3652,16 @@
         "promo_banner_button@common.minecraftTenLabel": {
           "size": [ "default", "default" ],
           "offset": [ 0, -1 ],
+          "color":  "$text_color",
           "text": "#banner_button_text",
-          "color": "$text_color",
           "font_scale_factor": 0.8,
           "bindings": [
             {
-              "binding_name": "#banner_button_text"
-            },
-            {
               "binding_name": "#promo_page_is_ready",
               "binding_name_override": "#visible"
+            },
+            {
+              "binding_name": "#banner_button_text"
             }
           ]
         }
@@ -3684,18 +3684,30 @@
   "promo_banner_image": {
     "type": "image",
     "size": [ "100%", "17%x" ],
-    "texture": "textures/ui/background_with_border",
-    "layer": 1
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_name": "#banner_texture_name",
+        "binding_name_override": "#texture"
+      },
+      {
+        "binding_name": "#banner_texture_filepath",
+        "binding_name_override":  "#texture_file_system"
+      }
+    ]
   },
 
   "promo_banner_title@common.minecraftTenLabel": {
     "size": [ "default", "default" ],
-    "color": "$body_text_color",
     "text": "#banner_title_text",
     "font_scale_factor": 1.2,
     "bindings": [
       {
         "binding_name": "#banner_title_text"
+      },
+      {
+        "binding_name": "#title_text_color",
+        "binding_name_override": "#color"
       }
     ]
   },
@@ -3737,7 +3749,7 @@
                 "type": "stack_panel",
                 "orientation": "vertical",
                 "size": [ "40%", "fill" ],
-                "offset": [ 5, 5 ],
+                "offset": [ 5, 9 ],
                 "anchor_from": "top_left",
                 "anchor_to": "top_left",
                 "layer": 2,
@@ -3768,7 +3780,7 @@
                 "size": [ "100%c", 16 ],
                 "min_size": [ "40%", 16 ],
                 "max_size": [ "100%", 16 ],
-                "offset": [ 5, -8 ],
+                "offset": [ 5, -13 ],
                 "anchor_from": "bottom_left",
                 "anchor_to": "bottom_left",
                 "$button_state_panel": "common_buttons.new_ui_width_fitting_button_panel",

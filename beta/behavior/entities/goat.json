@@ -175,8 +175,8 @@
           "pre_ram_sound": "pre_ram.screamer",
           "ram_impact_sound": "ram_impact.screamer",
           "cooldown_range": [
-            30,
-            300
+            5,
+            15
           ],
           "on_start": [
             {

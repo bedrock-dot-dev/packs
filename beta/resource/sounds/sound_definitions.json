@@ -9225,6 +9225,14 @@
             "sounds/mob/silverfish/step4"
          ]
       },
+      "mob.skeleton.convert_to_stray" : {
+         "category" : "neutral",
+         "sounds" : [
+            "sounds/mob/stray/convert1",
+            "sounds/mob/stray/convert2",
+            "sounds/mob/stray/convert3"
+         ]
+      },
       "mob.skeleton.death" : {
          "__use_legacy_max_distance" : "true",
          "category" : "hostile",

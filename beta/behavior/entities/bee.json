@@ -176,7 +176,7 @@
                     "start_chance": 0.5,
                     "search_range": 6,
                     "search_height": 4,
-                    "goal_radius": 1.2,
+                    "goal_radius": 1.0,
                     "stay_duration": 20.0,
                     "target_selection_method": "random",
                     "target_offset": [0, 0.25, 0],
@@ -184,7 +184,6 @@
                         "minecraft:red_flower",     // All small flowers except Dandelion
                         "minecraft:yellow_flower",  // Dandelion
                         "minecraft:wither_rose",
-                        "minecraft:sweet_berry_bush",
                         "minecraft:double_plant:8", // Sunflower top
                         "minecraft:double_plant:9", // Lilac top
                         "minecraft:double_plant:12", // Rose Bush top
@@ -259,7 +258,7 @@
                     "search_range": 16,
                     "search_height": 10,
                     "tick_interval": 1,
-                    "goal_radius": 1.2,
+                    "goal_radius": 0.633, // was tested with 0.4 when the goal radius wasn't squared. sqrt(0.4)~0.633
                     "target_blocks": [
                         "bee_nest",
                         "beehive"

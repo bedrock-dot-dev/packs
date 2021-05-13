@@ -37,6 +37,9 @@
         "value": 10,
         "max": 10
       },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {

@@ -123,7 +123,10 @@
 							"first_person_map_controller" : "(query.get_equipped_item_name(0, 1) == 'map' || query.get_equipped_item_name('off_hand') == 'map')"
 						},
 						{
-							"first_person_crossbow_equipped" : "query.get_equipped_item_name == 'crossbow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+							"first_person_crossbow_equipped": "query.get_equipped_item_name == 'crossbow' && (variable.item_use_normalized > 0 && variable.item_use_normalized < 1.0)"
+						},
+						{
+							"first_person_breathing_bob": "variable.attack_time <= 0.0"
 						}
 					],
 					"transitions" : [
@@ -198,9 +201,6 @@
 						},
 						{
 							"damage_nearby_mobs" : "variable.damage_nearby_mobs"
-						},
-						{
-							"bow_and_arrow" : "query.has_target"
 						},
 						{
 							"swimming" : "variable.swim_amount > 0.0"
