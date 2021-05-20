@@ -1190,6 +1190,21 @@
   "settings_content": {
     "type": "panel",
     "controls": [
+		// Adding fill background color for all settings.
+		{
+			"background": {
+				"type": "image",
+				"texture": "textures/ui/White",
+				"keep_ratio": false,
+				"size": [ "100%", "100%sm" ],
+				"color": [0.192, 0.196, 0.2],  // First test: [0.239, 0.204, 0.204]
+				"offset": [0,0],
+				"layer": -1,
+				"anchor_from": "top_left",
+				"anchor_to": "top_left"
+			  }
+		},
+
       {
         "stack_panel": {
           "type": "stack_panel",

@@ -43,6 +43,7 @@
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": "tropical_fish_bucket",
+          "transform_to_item": "bucket:0",
           "grow_up": {
             "event": "minecraft:ageable_grow_up",
             "target": "self"
@@ -65,7 +66,7 @@
         "minecraft:breedable": {
           "require_tame": false,
           "breed_items": "tropical_fish_bucket",
-          "transform_to_item": "bucket",
+          "transform_to_item": "bucket:0",
           "breeds_with": {
             "mate_type": "minecraft:axolotl",
             "baby_type": "minecraft:axolotl",

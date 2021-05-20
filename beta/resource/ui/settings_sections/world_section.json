@@ -707,11 +707,6 @@
         }
       },
       {
-        "experimental_toggles_label_info@settings_common.option_group_label": {
-          "$text": "createWorldScreen.experimentalgameplayinfo"
-        }
-      },
-      {
         "experimental_toggles": {
           "type": "stack_panel",
           "orientation": "vertical",
