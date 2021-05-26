@@ -5611,7 +5611,6 @@ options.fboEnable=Активувати FBO	#
 options.forceUnicodeFont=Шрифт Юнікоду	#
 options.fov=Кут огляду	#
 options.fov.toggle=Кут огляду можна змінювати в грі	#
-options.licenses=Ліцензії	#
 options.licensed_content=Ліцензований вміст	#
 options.font_license=Ліцензія на шрифт	#
 options.font_license_body=%1	#

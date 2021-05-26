@@ -603,7 +603,8 @@
 
   "switch_accounts_button@start.main_button": {
     "$pressed_button_name": "button.switch_accounts",
-    "$button_text": "accounts.switch"
+    "$button_text": "#switch_accounts_button_text",
+    "$button_text_binding_type": "global"
   },
 
   "achievements_button@start.main_button": {
@@ -1040,14 +1041,9 @@
             },
             {
               "buy_game@start.stacked_row": {
+                "ignored": "$unlock_full_game_button_ignored",
                 "controls": [
                   { "buy_game_button@start.buy_game_button": {} }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#buy_game_visible",
-                    "binding_name_override": "#visible"
-                  }
                 ]
               }
             },

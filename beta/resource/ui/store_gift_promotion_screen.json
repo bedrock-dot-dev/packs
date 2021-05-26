@@ -857,28 +857,6 @@
     "controls": [
       {
         "main_panel@gift_promo.promotion_top_main_panel": {}
-      },
-      {
-        "left_corner_art": {
-          "type": "image",
-          "size": [ 128, 124 ],
-          "offset": [ 1, 0 ],
-          "anchor_from": "top_left",
-          "anchor_to": "top_left",
-          "texture": "textures/ui/bubbles_left_corner",
-          "layer": 1
-        }
-      },
-      {
-        "right_corner_art": {
-          "type": "image",
-          "size": [ 128, 124 ],
-          "offset": [ -1, 0 ],
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "texture": "textures/ui/bubbles_right_corner",
-          "layer": 1
-        }
       }
     ]
   },

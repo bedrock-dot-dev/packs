@@ -5611,7 +5611,6 @@ options.fboEnable=Ενεργοποίηση FBO	#
 options.forceUnicodeFont=Υποχρεωτική χρήση γραμματοσειράς Unicode	#
 options.fov=Οπτικό πεδίο	#
 options.fov.toggle=Η αλλαγή του οπτικού πεδίου είναι δυνατή από το παιχνίδι	#
-options.licenses=Άδειες χρήσης	#
 options.licensed_content=Περιεχόμενο με άδεια χρήσης	#
 options.font_license=Άδεια χρήσης γραμματοσειράς	#
 options.font_license_body=%1	#
@@ -6522,7 +6521,7 @@ storageManager.mcpack=Πακέτο εορταστικών εμφανίσεων M
 storageManager.mcaddon=Πρόσθετο Minecraft	#
 storageManager.mcworld=Κόσμος Minecraft	#
 
-raycasting.purchase.error=Ανιχνεύσαμε ότι η συσκευή σου δεν πληροί τις απαιτήσεις συστήματος για την εκτέλεση αυτού του πακέτου, επομένως, δεν μπορείς να κατεβάσεις αυτό το πακέτο. Μπορείς να ελέγξεις τις ελάχιστες απαιτήσεις συστήματος παρακάτω: %s+ GPU: GPU με υλικό που υποστηρίζει τεχνολογία ray tracing, όπως NVIDIA GeForce RTX 2060 ή καλύτερη. Ρίξε μια ματιά στις Συνήθεις ερωτήσεις στην τοποθεσία minecraft.net για περισσότερες λεπτομέρειες. %s+ RAM: 8 GB ή καλύτερη %s+ CPU: Intel Core i5 ή ισοδύναμος	###the %s will be turned into linebreaks. Don't reorder.
+raycasting.purchase.error=Ανιχνεύσαμε ότι η συσκευή σου δεν πληροί τις απαιτήσεις συστήματος για την εκτέλεση αυτού του πακέτου, επομένως, δεν μπορείς να κατεβάσεις αυτό το πακέτο. Μπορείς να ελέγξεις τις ελάχιστες απαιτήσεις συστήματος παρακάτω: GPU %s+: GPU με υλικό που υποστηρίζει τεχνολογία ray tracing, όπως NVIDIA GeForce RTX 2060 ή καλύτερη. Ρίξε μια ματιά στις Συνήθεις ερωτήσεις στην τοποθεσία minecraft.net για περισσότερες λεπτομέρειες. RAM %s+: 8 GB ή καλύτερη, CPU %s+: Intel Core i5 ή ισοδύναμος	###the %s will be turned into linebreaks. Don't reorder.
 raycasting.purchase.error.title=Προειδοποίηση απαιτήσεων συστήματος	#
 
 resourcepack.City=Πακέτο υφών πόλης	#

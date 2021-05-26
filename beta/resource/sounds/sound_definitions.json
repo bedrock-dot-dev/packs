@@ -1976,19 +1976,19 @@
          "sounds" : [
             {
                "name" : "sounds/block/calcite/break1",
-               "volume" : 1
+               "volume" : 0.90
             },
             {
                "name" : "sounds/block/calcite/break2",
-               "volume" : 1
+               "volume" : 0.90
             },
             {
                "name" : "sounds/block/calcite/break3",
-               "volume" : 1
+               "volume" : 0.90
             },
             {
                "name" : "sounds/block/calcite/break4",
-               "volume" : 1
+               "volume" : 0.90
             }
          ]
       },
@@ -10770,19 +10770,19 @@
          "sounds" : [
             {
                "name" : "sounds/block/calcite/place1",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             },
             {
                "name" : "sounds/block/calcite/place2",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             },
             {
                "name" : "sounds/block/calcite/place3",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             },
             {
                "name" : "sounds/block/calcite/place4",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             }
          ]
       },

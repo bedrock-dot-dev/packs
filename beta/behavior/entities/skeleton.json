@@ -12,7 +12,7 @@
         "minecraft:is_shaking": {},
         "minecraft:timer": {
           "looping": false,
-          "time": 45,
+          "time": 20,
           "time_down_event": {
             "event": "become_stray_event"
           }

@@ -15,8 +15,8 @@
 			"override_previous_animation": true,
 			"bones": {
 				"rightitem": {
-					"position": [ "math.sin(math.sqrt(variable.attack_time) * 75.0) * 10.0", "math.sin(math.sqrt(variable.attack_time) * 65.0) * 5.0", "-math.sin(math.sqrt(variable.attack_time) * 115.0) * 5.0" ],
-					"rotation": [ "-math.sin(math.sqrt(variable.attack_time) * 25.0) * 70.0", "-math.sin(math.sqrt(variable.attack_time) * 75.0) * 15.0", "-math.sin(math.sqrt(variable.attack_time) * 80.0) * 35.0" ]
+					"position": [ "-math.sin(math.sqrt(variable.attack_time) * Math.Pi * 100) * 10", "math.sin(math.sqrt(variable.attack_time) * Math.Pi * 2 * 60) * 10", "-math.sin(variable.attack_time * Math.Pi * 65) * 2" ],
+					"rotation": [ "-math.sin(math.sqrt(variable.attack_time) * Math.Pi * 20) * 25", "-math.sin(math.sqrt(variable.attack_time) * 75.0) * 15.0", "-math.sin(math.sqrt(variable.attack_time) * 25) * 15" ]
 				}
 			}
 		},

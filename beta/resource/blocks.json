@@ -1007,6 +1007,7 @@
       "textures" : "dirt"
    },
    "dirt_with_roots" : {
+      "isotropic" : true,
       "sound" : "gravel",
       "textures" : "dirt_with_roots"
    },

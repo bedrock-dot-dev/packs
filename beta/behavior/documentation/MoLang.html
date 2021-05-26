@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.17.0.58</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.17.10.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -362,6 +362,10 @@ Strings in molang are surrounded by single - quotes.Eg: 'minecraft:pig' or 'hell
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`math.min(A, B)`</td>
 <td style="border-style:solid; border-width:3; padding:7px">Return lowest value of A or B</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">`math.min_angle(value)`</td>
+<td style="border-style:solid; border-width:3; padding:7px">Minimize angle magnitude (in degrees) into the range [-180, 180)</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`math.mod(value, denominator)`</td>
@@ -823,6 +827,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.day</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the day of the current level.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.death_ticks</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the elapsed ticks since the mob started dying.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.debug_output</td>
@@ -1471,6 +1479,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.shield_blocking_bob</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the how much the offhand shield should translate down when blocking and being hit.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.show_bottom</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if we render the entity's bottom, else it returns 0.0</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.sit_amount</td>

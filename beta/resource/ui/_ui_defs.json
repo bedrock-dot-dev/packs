@@ -46,6 +46,7 @@
     "ui/dev_console_screen.json",
     "ui/disconnect_screen.json",
     "ui/edu_discovery_dialog.json",
+    "ui/edu_pause_screen_pause_button.json",
     "ui/emote_wheel_screen.json",
     "ui/enchanting_screen.json",
     "ui/enchanting_screen_pocket.json",

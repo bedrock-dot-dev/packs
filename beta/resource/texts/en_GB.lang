@@ -5611,7 +5611,6 @@ options.fboEnable=Enable FBOs	#
 options.forceUnicodeFont=Force Unicode Font	#
 options.fov=FOV	#
 options.fov.toggle=FOV Can Be Altered By Gameplay	#
-options.licenses=Licences	#
 options.licensed_content=Licensed Content	#
 options.font_license=Font Licence	#
 options.font_license_body=%1	#
@@ -6522,7 +6521,7 @@ storageManager.mcpack=Minecraft Pack	#
 storageManager.mcaddon=Minecraft Addon	#
 storageManager.mcworld=Minecraft World	#
 
-raycasting.purchase.error=We have detected that your device does not meet the system requirements to run this pack so you are unable to download this pack. You can review the minimum system requirements below: %s+ GPU: Hardware ray tracing capable GPU such as NVIDIA GeForce RTX 2060 or better. See our FAQ on minecraft.net for more details. %s+ RAM: 8GB or better %s+ CPU: Intel Core i5 or equivalent 	###the %s will be turned into linebreaks. Don't reorder.
+raycasting.purchase.error=We have detected that your device does not meet the system requirements to run this pack so you are unable to download this pack. You can review the minimum system requirements below: %s+ GPU: Hardware ray tracing capable GPU such as NVIDIA GeForce RTX 2060 or better. See our FAQ on minecraft.net for more details. %s+ RAM: 8GB or better %s+ CPU: Intel Core i5 or equivalent. 	###the %s will be turned into linebreaks. Don't reorder.
 raycasting.purchase.error.title=System Requirements Warning	#
 
 resourcepack.City=City Texture Pack	#
@@ -8754,7 +8753,7 @@ tips.edu.23=Press I on your keyboard or touch the Immersive Reader icon to read 
 
 tips.game.1=Use seagrass to attract and breed turtles.	#
 tips.game.2=Protect baby turtles from hostile mobs!	#
-tips.game.3=Baby turtles will drop scutes when they grow – these can be crafted into turtle shells.	#
+tips.game.3=Baby turtles will drop scutes when they grow - these can be crafted into turtle shells.	#
 tips.game.4=Use a bed to set your respawn point during the day.	#
 tips.game.5=Brew some water-breathing potions for underwater exploration!	#
 tips.game.6=Dolphins can lead you to shipwrecks and underwater ruins, feed them cod and follow their trail!	#

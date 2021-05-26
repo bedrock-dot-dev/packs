@@ -308,7 +308,7 @@ action.hint.exit.llama=Toca Agachar para desmontar.	#
 action.hint.exit.skeleton_horse=Toca Agachar para desmontar.	#
 action.interact.creeper=Prender	#
 action.interact.edit=Editar	#
-action.interact.exit.boat=Bajar	#
+action.interact.exit.boat=Abandonar barco	#
 action.interact.feed=Alimentar	#
 action.interact.fishing=Pescar	#
 action.interact.milk=Leche	#
@@ -5611,7 +5611,6 @@ options.fboEnable=Activar FBOs	#
 options.forceUnicodeFont=Forzar fuente unicode	#
 options.fov=Campo de visión	#
 options.fov.toggle=El campo de visión puede verse alterado por las condiciones de juego	#
-options.licenses=Licencias	#
 options.licensed_content=Contenido con licencia	#
 options.font_license=Licencia de fuente	#
 options.font_license_body=%1	#
@@ -6076,7 +6075,7 @@ hudScreen.tooltip.removeBook=Eliminar libro	#
 hudScreen.tooltip.shear=Trasquilar	#
 hudScreen.tooltip.carve=Tallar	#
 hudScreen.tooltip.grow=Crecer	#
-hudScreen.tooltip.boatExit=Bajar	#
+hudScreen.tooltip.boatExit=Abandonar barco	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -6522,7 +6521,7 @@ storageManager.mcpack=Pack de Minecraft	#
 storageManager.mcaddon=Complemento de Minecraft	#
 storageManager.mcworld=Mundo de Minecraft	#
 
-raycasting.purchase.error=No puedes descargar este pack porque hemos detectado que tu dispositivo no cumple con los requisitos mínimos del sistema para ejecutarlo. Estos son los requisitos mínimos del sistema: +%s GPU: GPU compatible con el trazado de rayos, como GeForce RTX 2060 o superior de NVIDIA. Para obtener más información, lee las preguntas frecuentes en minecraft.net. +%s RAM: 8 GB o más. +%s CPU: Intel Core i5 o equivalente 	###the %s will be turned into linebreaks. Don't reorder.
+raycasting.purchase.error=No puedes descargar este pack porque hemos detectado que su dispositivo no cumple con los requisitos mínimos del sistema para ejecutarlo. Estos son los requisitos mínimos del sistema: +%s GPU: GPU compatible con el trazado de rayos, como GeForce RTX 2060 o superior de NVIDIA. Para obtener más información, lee las preguntas frecuentes en minecraft.net. +%s RAM: 8 GB o más. +%s CPU: Intel Core i5 o equivalente 	###the %s will be turned into linebreaks. Don't reorder.
 raycasting.purchase.error.title=Aviso sobre los requisitos del sistema	#
 
 resourcepack.City=Packs de texturas de ciudad	#
