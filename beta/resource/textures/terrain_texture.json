@@ -1960,6 +1960,24 @@
             "textures/blocks/potatoes_stage_3"
          ]
       },
+      "potted_azalea_bush_plant" : {
+         "textures" : "textures/blocks/potted_azalea_bush_plant"
+      },
+      "potted_azalea_bush_side" : {
+         "textures" : "textures/blocks/potted_azalea_bush_side"
+      },
+      "potted_azalea_bush_top" : {
+         "textures" : "textures/blocks/potted_azalea_bush_top"
+      },
+      "potted_flowering_azalea_bush_plant" : {
+         "textures" : "textures/blocks/potted_flowering_azalea_bush_plant"
+      },
+      "potted_flowering_azalea_bush_side" : {
+         "textures" : "textures/blocks/potted_flowering_azalea_bush_side"
+      },
+      "potted_flowering_azalea_bush_top" : {
+         "textures" : "textures/blocks/potted_flowering_azalea_bush_top"
+      },
       "powder_snow" : {
          "textures" : "textures/blocks/powder_snow"
       },

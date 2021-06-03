@@ -82,9 +82,13 @@
    "azalea" : {
       "sound" : "azalea",
       "textures" : {
-         "down" : "azalea_plant",
+         "down" : "potted_azalea_bush_top",
+         "east" : "azalea_plant",
+         "north" : "azalea_side",
          "side" : "azalea_side",
-         "up" : "azalea_top"
+         "south" : "potted_azalea_bush_side",
+         "up" : "azalea_top",
+         "west" : "potted_azalea_bush_plant"
       }
    },
    "azalea_leaves" : {
@@ -1251,9 +1255,13 @@
    "flowering_azalea" : {
       "sound" : "azalea",
       "textures" : {
-         "down" : "azalea_plant",
+         "down" : "potted_flowering_azalea_bush_top",
+         "east" : "azalea_plant",
+         "north" : "flowering_azalea_side",
          "side" : "flowering_azalea_side",
-         "up" : "flowering_azalea_top"
+         "south" : "potted_flowering_azalea_bush_side",
+         "up" : "flowering_azalea_top",
+         "west" : "potted_flowering_azalea_bush_plant"
       }
    },
    "flowing_lava" : {

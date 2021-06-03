@@ -180,6 +180,7 @@
         "avoid_damage_blocks": true
       },
       "minecraft:movement.amphibious": {
+        "max_turn": 15.0
       },
       "minecraft:movement": {
         "value": 0.1
