@@ -345,7 +345,7 @@
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "$education_ios": "($education_edition and $ios)",
+    "$education_ios": "($education_edition and $is_ios)",
     "bindings": [
       {
         "binding_type": "view",
@@ -708,7 +708,6 @@
       },
       {
         "experimental_toggles": {
-          "ignored": "$education_edition",
           "type": "stack_panel",
           "orientation": "vertical",
           "size": [ "100%", "100%c" ],
@@ -1004,7 +1003,11 @@
           "controls": [
             {
               "export_button@settings_common.action_button": {
-                "ignored": "(($pocket_edition or $export_disabled or not $file_picking_supported) and not $education_ios",
+                // std pocket should not have export until bedrock wants it
+                // export is disabled in game
+                // Some platforms such as fireTV do not support file picking
+                // EDU supports file picking on all supported platforms except ios which is pocket
+                "ignored": "(($pocket_edition or $export_disabled or not $file_picking_supported) and not $education_edition)",
                 "size": [ "50%", 30 ],
                 "anchor_from": "top_left",
                 "anchor_to": "top_left",
@@ -1190,7 +1193,7 @@
     "$available_grid_dimensions": "#available_grid_dimensions_level",
     "$realms_grid_dimensions": "#realms_grid_dimensions_level",
     "$unowned_grid_dimensions": "#unowned_grid_dimensions_level",
-    "$unowned_visible": true,
+    "$unowned_visible": "#unowned_visible_level",
     "$button.selected_pack": "button.selected_pack_level",
     "$button.deselected_pack": "button.deselected_pack_level",
     "$button.available_pack": "button.available_pack_level",
@@ -1279,7 +1282,7 @@
     "$available_grid_dimensions": "#available_grid_dimensions_addon",
     "$realms_grid_dimensions": "#realms_grid_dimensions_addon",
     "$unowned_grid_dimensions": "#unowned_grid_dimensions_addon",
-    "$unowned_visible": false,
+    "$unowned_visible": "#unowned_visible_addon",
     "$default_item_texture": "#default_item_texture_addon",
     "$default_item_file_system": "#default_item_file_system_addon",
     "$default_item_zip": "#default_item_zip_addon",
@@ -1742,7 +1745,6 @@
     "$tts_section_header": "createWorldScreen.worldSettings",
     "$toggle_tts_header_binding_type": "collection",
     "$toggle_tts_header_binding_collection_name": "experimental_toggles",
-    "ignored": "$education_edition",
     "$option_label": "#text",
     "$option_binding_name": "#experimental_toggle_value",
     "$option_enabled_binding_name": "#experimental_toggle_enabled",

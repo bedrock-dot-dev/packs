@@ -2,7 +2,6 @@
   // Alphabetical order please :)
   "ui_defs": [
     "ui/account_banned_screen.json",
-    "ui/account_transfer_error_screen.json",
     "ui/achievement_screen.json",
     "ui/add_external_server_screen.json",
     "ui/adhoc_inprogess_screen.json",
@@ -161,6 +160,7 @@
     "ui/third_party_store_screen.json",
     "ui/toast_screen.json",
     "ui/token_faq_screen.json",
+    "ui/toolbox_mode_screen.json",
     "ui/trial_upsell_screen.json",
     "ui/ugc_viewer_screen.json",
     "ui/ui_art_assets_common.json",
