@@ -1117,7 +1117,7 @@
     "$ignore_piece_selected": true,
     "$ignore_color_picker": true,
 
-    "$category_featured_offer_size": [ "20%", "100%x" ],
+    "$category_featured_offer_size": [ "20% - 2px", "100%x" ],
     "$featured_skin_grid_size": [ "100%", "100%c" ],
     "$featured_skin_pack_button_max_size": [ "33%", "56.25%x" ],
 

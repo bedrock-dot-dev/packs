@@ -245,6 +245,22 @@
       "sound" : "wood",
       "textures" : "birch_sign"
    },
+   "black_candle" : {
+      "carried_textures" : "black_candle_carried",
+      "sound" : "candle",
+      "textures" : "black_candle"
+   },
+   "black_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
+   },
    "black_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "black_glazed_terracotta"
@@ -282,6 +298,22 @@
          "south" : "blast_furnace_front_off",
          "up" : "blast_furnace_top",
          "west" : "blast_furnace_side"
+      }
+   },
+   "blue_candle" : {
+      "carried_textures" : "blue_candle_carried",
+      "sound" : "candle",
+      "textures" : "blue_candle"
+   },
+   "blue_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
       }
    },
    "blue_glazed_terracotta" : {
@@ -325,6 +357,22 @@
    },
    "brick_stairs" : {
       "textures" : "brick"
+   },
+   "brown_candle" : {
+      "carried_textures" : "brown_candle_carried",
+      "sound" : "candle",
+      "textures" : "brown_candle"
+   },
+   "brown_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "brown_glazed_terracotta" : {
       "sound" : "stone",
@@ -400,6 +448,22 @@
          "down" : "campfire_log",
          "side" : "campfire_log_lit",
          "up" : "campfire_fire"
+      }
+   },
+   "candle" : {
+      "carried_textures" : "candle_carried",
+      "sound" : "candle",
+      "textures" : "candle"
+   },
+   "candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
       }
    },
    "carpet" : {
@@ -814,6 +878,22 @@
       "isotropic" : false,
       "sound" : "copper",
       "textures" : "cut_copper"
+   },
+   "cyan_candle" : {
+      "carried_textures" : "cyan_candle_carried",
+      "sound" : "candle",
+      "textures" : "cyan_candle"
+   },
+   "cyan_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "cyan_glazed_terracotta" : {
       "sound" : "stone",
@@ -1388,9 +1468,41 @@
       "sound" : "gravel",
       "textures" : "gravel"
    },
+   "gray_candle" : {
+      "carried_textures" : "gray_candle_carried",
+      "sound" : "candle",
+      "textures" : "gray_candle"
+   },
+   "gray_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
+   },
    "gray_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "gray_glazed_terracotta"
+   },
+   "green_candle" : {
+      "carried_textures" : "green_candle_carried",
+      "sound" : "candle",
+      "textures" : "green_candle"
+   },
+   "green_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "green_glazed_terracotta" : {
       "sound" : "stone",
@@ -1661,9 +1773,41 @@
    "light_block" : {
       "carried_textures" : "light_block_carried"
    },
+   "light_blue_candle" : {
+      "carried_textures" : "light_blue_candle_carried",
+      "sound" : "candle",
+      "textures" : "light_blue_candle"
+   },
+   "light_blue_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
+   },
    "light_blue_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "light_blue_glazed_terracotta"
+   },
+   "light_gray_candle" : {
+      "carried_textures" : "light_gray_candle_carried",
+      "sound" : "candle",
+      "textures" : "light_gray_candle"
+   },
+   "light_gray_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "light_weighted_pressure_plate" : {
       "sound" : "metal",
@@ -1673,6 +1817,22 @@
       "isotropic" : false,
       "sound" : "copper",
       "textures" : "lightning_rod"
+   },
+   "lime_candle" : {
+      "carried_textures" : "lime_candle_carried",
+      "sound" : "candle",
+      "textures" : "lime_candle"
+   },
+   "lime_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "lime_glazed_terracotta" : {
       "sound" : "stone",
@@ -1771,6 +1931,22 @@
          "south" : "loom_side",
          "up" : "loom_top",
          "west" : "loom_side"
+      }
+   },
+   "magenta_candle" : {
+      "carried_textures" : "magenta_candle_carried",
+      "sound" : "candle",
+      "textures" : "magenta_candle"
+   },
+   "magenta_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
       }
    },
    "magenta_glazed_terracotta" : {
@@ -1911,6 +2087,22 @@
       "sound" : "stone",
       "textures" : "obsidian"
    },
+   "orange_candle" : {
+      "carried_textures" : "orange_candle_carried",
+      "sound" : "candle",
+      "textures" : "orange_candle"
+   },
+   "orange_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
+   },
    "orange_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "orange_glazed_terracotta"
@@ -1943,6 +2135,22 @@
    "packed_ice" : {
       "sound" : "glass",
       "textures" : "ice_packed"
+   },
+   "pink_candle" : {
+      "carried_textures" : "pink_candle_carried",
+      "sound" : "candle",
+      "textures" : "pink_candle"
+   },
+   "pink_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "pink_glazed_terracotta" : {
       "sound" : "stone",
@@ -2140,6 +2348,22 @@
       "sound" : "wood",
       "textures" : "pumpkin_stem"
    },
+   "purple_candle" : {
+      "carried_textures" : "purple_candle_carried",
+      "sound" : "candle",
+      "textures" : "purple_candle"
+   },
+   "purple_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
+   },
    "purple_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "purple_glazed_terracotta"
@@ -2200,6 +2424,22 @@
       "isotropic" : false,
       "sound" : "stone",
       "textures" : "raw_iron_block"
+   },
+   "red_candle" : {
+      "carried_textures" : "red_candle_carried",
+      "sound" : "candle",
+      "textures" : "red_candle"
+   },
+   "red_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "red_flower" : {
       "sound" : "grass",
@@ -3154,6 +3394,22 @@
       "sound" : "grass",
       "textures" : "wheat"
    },
+   "white_candle" : {
+      "carried_textures" : "white_candle_carried",
+      "sound" : "candle",
+      "textures" : "white_candle"
+   },
+   "white_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
+   },
    "white_glazed_terracotta" : {
       "sound" : "stone",
       "textures" : "white_glazed_terracotta"
@@ -3189,6 +3445,22 @@
    "wool" : {
       "sound" : "cloth",
       "textures" : "wool"
+   },
+   "yellow_candle" : {
+      "carried_textures" : "yellow_candle_carried",
+      "sound" : "candle",
+      "textures" : "yellow_candle"
+   },
+   "yellow_candle_cake" : {
+      "sound" : "cloth",
+      "textures" : {
+         "down" : "cake_bottom",
+         "east" : "cake_side",
+         "north" : "cake_side",
+         "south" : "cake_side",
+         "up" : "cake_top",
+         "west" : "cake_west"
+      }
    },
    "yellow_flower" : {
       "sound" : "grass",

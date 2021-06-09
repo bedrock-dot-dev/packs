@@ -399,6 +399,40 @@
          "pitch" : 1.0,
          "volume" : 1.0
       },
+      "candle" : {
+         "events" : {
+            "break" : {
+               "pitch" : 1.0,
+               "sound" : "dig.candle",
+               "volume" : 1.0
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 1.0,
+               "sound" : "hit.candle",
+               "volume" : 1.0
+            },
+            "item.use.on" : {
+               "pitch" : 0.80,
+               "sound" : "use.candle"
+            },
+            "place" : {
+               "pitch" : 1.0,
+               "sound" : "dig.candle",
+               "volume" : 1.0
+            },
+            "power.off" : {
+               "pitch" : 0.50,
+               "sound" : "random.click"
+            },
+            "power.on" : {
+               "pitch" : 0.60,
+               "sound" : "random.click"
+            }
+         },
+         "pitch" : 1.0,
+         "volume" : 1.0
+      },
       "cave_vines" : {
          "events" : {
             "break" : {
@@ -3675,6 +3709,11 @@
             "sound" : "ambient.basalt_deltas.mood",
             "volume" : 0.80
          },
+         "ambient.candle" : {
+            "pitch" : 1.0,
+            "sound" : "ambient.candle",
+            "volume" : 1.0
+         },
          "ambient.cave" : {
             "pitch" : [ 0.80, 1.0 ],
             "sound" : "ambient.cave",
@@ -4065,6 +4104,11 @@
             "sound" : "random.burp",
             "volume" : 0.50
          },
+         "cake.add_candle" : {
+            "pitch" : 1.0,
+            "sound" : "cake.add_candle",
+            "volume" : 1.0
+         },
          "camera.take_picture" : {
             "pitch" : 1.0,
             "sound" : "camera.take_picture",
@@ -4234,6 +4278,11 @@
             "pitch" : 1.0,
             "sound" : "random.explode",
             "volume" : 4.0
+         },
+         "extinguish.candle" : {
+            "pitch" : 1.0,
+            "sound" : "extinguish.candle",
+            "volume" : 1.0
          },
          "extinguish.fire" : {
             "pitch" : [ 1.80, 2.40 ],
@@ -4944,6 +4993,29 @@
                },
                "step" : {
                   "sound" : "step.calcite",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : 1.0,
+            "volume" : 1.0
+         },
+         "candle" : {
+            "events" : {
+               "default" : "",
+               "fall" : {
+                  "sounds" : "step.candle",
+                  "volume" : 1.0
+               },
+               "jump" : {
+                  "sound" : "step.candle",
+                  "volume" : 1.0
+               },
+               "land" : {
+                  "sound" : "step.candle",
+                  "volume" : 1.0
+               },
+               "step" : {
+                  "sound" : "step.candle",
                   "volume" : 1.0
                }
             },

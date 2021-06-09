@@ -117,6 +117,7 @@
     "ui/realms_common.json",
     "ui/realms_create.json",
     "ui/realms_pending_invitations.json",
+    "ui/realms_slots_screen.json",
     "ui/realms_settings_screen.json",
     "ui/realms_allowlist.json",
     "ui/realmsplus_upgrade_notice_screen.json",

@@ -142,7 +142,7 @@
 
   "launch_world_button_stack_def": {
     "type": "stack_panel",
-    "size": [ "100%", 30 ],
+    "size": [ "100%", 35 ],
     "orientation": "horizontal"
   },
 
@@ -151,7 +151,7 @@
     "controls": [
       {
         "create_or_play_button@settings_common.action_button": {
-          "size": [ "fill", 30 ],
+          "size": [ "fill", 35 ],
           "$button_text": "menu.play",
           "default_focus_precedence": 1,
           "$pressed_button_name": "play_world_button",
@@ -165,9 +165,9 @@
       },
       {
         "play_on_realm_button@settings_common.action_button": {
-          "size": [ "50%", 30 ],
+          "size": [ "50%", 35 ],
           "ignored": "(not $is_pregame or $education_edition)",
-          "$button_text_max_size": [ "100%", 20 ],
+          "$button_text_max_size": [ "100%", 25 ],
           "$button_text": "menu.playOnRealms",
           "$pressed_button_name": "play_world_on_realm_button",
           "$focus_override_up": "FOCUS_OVERRIDE_STOP",
@@ -196,7 +196,7 @@
   },
 
   "edu_play_host_button@settings_common.action_button": {
-    "size": [ "fill", 30 ],
+    "size": [ "fill", 35 ],
     "$pressed_button_name": "play_world_edu_button",
     "$focus_override_up": "FOCUS_OVERRIDE_STOP",
     "property_bag": {
@@ -1147,6 +1147,53 @@
                 "anchor_to": "bottom_left",
                 "$button_text": "gui.copyWorld",
                 "$pressed_button_name": "copy_world_button"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "upload_download_slot_panel": {
+          "ignored": "(not $is_realm_slot)",
+          "type": "panel",
+          "size": [ "100%", "100%c + 2px" ],
+          "controls": [
+            {
+              "upload_download_slot_button@settings_common.action_button": {
+                "size": [ "100%", 30 ],
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left",
+                "$button_text": "#lot_upload_or_download",
+                "$pressed_button_name": "upload_download_slot_button",
+                "bindings": [
+                  {
+                    "binding_name": "#slot_upload_or_download"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "replace_slot_panel": {
+          "ignored": "(not $is_realm_slot)",
+          "type": "panel",
+          "size": [ "100%", "100%c + 2px" ],
+          "controls": [
+            {
+              "replace_slot_button@settings_common.action_button": {
+                "size": [ "100%", 30 ],
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left",
+                "$button_text": "realmsSettingsScreen.uploadWorldButton",
+                "$pressed_button_name": "replace_slot_button",
+                "bindings": [
+                  {
+                    "binding_name": "(not #slot_new_world)",
+                    "binding_name_override": "#enabled"
+                  }
+                ]
               }
             }
           ]
