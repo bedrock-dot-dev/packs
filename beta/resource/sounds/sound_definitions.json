@@ -1391,6 +1391,15 @@
             "sounds/block/chorusflower/grow4"
          ]
       },
+      "block.click" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/random/click",
+               "volume" : 0.20
+            }
+         ]
+      },
       "block.composter.empty" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
@@ -2039,6 +2048,15 @@
             }
          ]
       },
+      "break.dirt_with_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/rooted_dirt/break1",
+            "sounds/block/rooted_dirt/break2",
+            "sounds/block/rooted_dirt/break3",
+            "sounds/block/rooted_dirt/break4"
+         ]
+      },
       "break.dripstone_block" : {
          "category" : "block",
          "sounds" : [
@@ -2414,7 +2432,7 @@
          ]
       },
       "cauldron_drip.lava.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "block",
          "sounds" : [
             "sounds/block/pointed_dripstone/drip_lava_cauldron1",
             "sounds/block/pointed_dripstone/drip_lava_cauldron2",
@@ -2423,7 +2441,7 @@
          ]
       },
       "cauldron_drip.water.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "block",
          "sounds" : [
             "sounds/block/pointed_dripstone/drip_water_cauldron1",
             "sounds/block/pointed_dripstone/drip_water_cauldron2",
@@ -3043,7 +3061,7 @@
          ]
       },
       "drip.lava.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "block",
          "sounds" : [
             "sounds/block/pointed_dripstone/drip_lava1",
             "sounds/block/pointed_dripstone/drip_lava2",
@@ -3054,7 +3072,7 @@
          ]
       },
       "drip.water.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "block",
          "sounds" : [
             "sounds/block/pointed_dripstone/drip_water1",
             "sounds/block/pointed_dripstone/drip_water2",
@@ -3181,7 +3199,7 @@
          ]
       },
       "fall.amethyst_block" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/amethyst/step1",
@@ -3238,7 +3256,7 @@
          ]
       },
       "fall.amethyst_cluster" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/amethyst/step1",
@@ -3305,7 +3323,7 @@
          ]
       },
       "fall.azalea" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/azalea/step1",
             "sounds/block/azalea/step2",
@@ -3316,7 +3334,7 @@
          ]
       },
       "fall.azalea_leaves" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/azalea_leaves/step1",
             "sounds/block/azalea_leaves/step2",
@@ -3337,7 +3355,7 @@
          ]
       },
       "fall.big_dripleaf" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/big_dripleaf/step1",
             "sounds/block/big_dripleaf/step2",
@@ -3358,7 +3376,7 @@
          ]
       },
       "fall.calcite" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/calcite/step1",
@@ -3387,7 +3405,7 @@
          ]
       },
       "fall.cave_vines" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/step/vines1",
             "sounds/step/vines2",
@@ -3418,7 +3436,7 @@
          ]
       },
       "fall.copper" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/copper/step1",
             "sounds/block/copper/step2",
@@ -3451,7 +3469,7 @@
          ]
       },
       "fall.deepslate_bricks" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/deepslate_bricks/step1",
             "sounds/block/deepslate_bricks/step2",
@@ -3461,8 +3479,19 @@
             "sounds/block/deepslate_bricks/step6"
          ]
       },
+      "fall.dirt_with_roots" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/rooted_dirt/step1",
+            "sounds/block/rooted_dirt/step2",
+            "sounds/block/rooted_dirt/step3",
+            "sounds/block/rooted_dirt/step4",
+            "sounds/block/rooted_dirt/step5",
+            "sounds/block/rooted_dirt/step6"
+         ]
+      },
       "fall.dripstone_block" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/dripstone/step1",
             "sounds/block/dripstone/step2",
@@ -3537,7 +3566,7 @@
          ]
       },
       "fall.moss" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/moss/step1",
             "sounds/block/moss/step2",
@@ -3622,7 +3651,7 @@
          ]
       },
       "fall.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/dripstone/step1",
             "sounds/block/dripstone/step2",
@@ -3633,7 +3662,7 @@
          ]
       },
       "fall.powder_snow" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/powder_snow/step1",
             "sounds/block/powder_snow/step2",
@@ -3721,7 +3750,7 @@
          ]
       },
       "fall.spore_blossom" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/spore_blossom/step1",
             "sounds/block/spore_blossom/step2",
@@ -3755,7 +3784,7 @@
          ]
       },
       "fall.tuff" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/tuff/step1",
@@ -4254,6 +4283,20 @@
             "sounds/block/deepslate_bricks/step3",
             "sounds/block/deepslate_bricks/step4",
             "sounds/block/deepslate_bricks/step5"
+         ]
+      },
+      "hit.dirt_with_roots" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/block/rooted_dirt/step1"
+            },
+            "sounds/block/rooted_dirt/step2",
+            "sounds/block/rooted_dirt/step3",
+            "sounds/block/rooted_dirt/step4",
+            "sounds/block/rooted_dirt/step5",
+            "sounds/block/rooted_dirt/step6"
          ]
       },
       "hit.dripstone_block" : {
@@ -4920,7 +4963,7 @@
          "sounds" : [ "sounds/item/trident/thunder1", "sounds/item/trident/thunder2" ]
       },
       "jump.ancient_debris" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/ancient_debris1",
             {
@@ -4933,7 +4976,7 @@
          ]
       },
       "jump.azalea" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/azalea/step1",
             "sounds/block/azalea/step2",
@@ -4944,7 +4987,7 @@
          ]
       },
       "jump.basalt" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/basalt1",
             {
@@ -4958,7 +5001,7 @@
          ]
       },
       "jump.big_dripleaf" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/big_dripleaf/step1",
             "sounds/block/big_dripleaf/step2",
@@ -4969,7 +5012,7 @@
          ]
       },
       "jump.bone_block" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/bone_block1",
             {
@@ -4982,7 +5025,7 @@
          ]
       },
       "jump.cave_vines" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/step/vines1",
             "sounds/step/vines2",
@@ -4992,7 +5035,7 @@
          ]
       },
       "jump.chain" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/chain1",
             {
@@ -5007,7 +5050,7 @@
       },
       "jump.cloth" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/cloth1",
             {
@@ -5019,7 +5062,7 @@
          ]
       },
       "jump.coral" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/coral1",
             {
@@ -5044,7 +5087,7 @@
          ]
       },
       "jump.deepslate_bricks" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/deepslate_bricks/step1",
             "sounds/block/deepslate_bricks/step2",
@@ -5053,8 +5096,22 @@
             "sounds/block/deepslate_bricks/step5"
          ]
       },
+      "jump.dirt_with_roots" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/rooted_dirt/step1",
+            "sounds/block/rooted_dirt/step2",
+            "sounds/block/rooted_dirt/step3",
+            "sounds/block/rooted_dirt/step4",
+            "sounds/block/rooted_dirt/step5",
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/block/rooted_dirt/step6"
+            }
+         ]
+      },
       "jump.dripstone_block" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/dripstone/step1",
             "sounds/block/dripstone/step2",
@@ -5066,7 +5123,7 @@
       },
       "jump.grass" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/grass1",
             {
@@ -5079,7 +5136,7 @@
       },
       "jump.gravel" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/gravel1",
             "sounds/jump/gravel2",
@@ -5091,7 +5148,7 @@
          ]
       },
       "jump.hanging_roots" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/block/hanging_roots/step1",
             "sounds/block/hanging_roots/step2",
@@ -5102,7 +5159,7 @@
          ]
       },
       "jump.honey_block" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/honey_block1",
             {
@@ -5115,7 +5172,7 @@
          ]
       },
       "jump.moss" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/moss/step1",
             "sounds/block/moss/step2",
@@ -5126,7 +5183,7 @@
          ]
       },
       "jump.nether_brick" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_brick1",
             {
@@ -5140,7 +5197,7 @@
          ]
       },
       "jump.nether_gold_ore" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_gold_ore1",
             {
@@ -5153,7 +5210,7 @@
          ]
       },
       "jump.nether_sprouts" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_sprouts1",
             {
@@ -5166,7 +5223,7 @@
          ]
       },
       "jump.nether_wart" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_wart1",
             {
@@ -5179,7 +5236,7 @@
          ]
       },
       "jump.netherite" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/netherite1",
             {
@@ -5193,7 +5250,7 @@
          ]
       },
       "jump.netherrack" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/netherrack1",
             {
@@ -5207,7 +5264,7 @@
          ]
       },
       "jump.nylium" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nylium1",
             {
@@ -5221,7 +5278,7 @@
          ]
       },
       "jump.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/dripstone/step1",
             "sounds/block/dripstone/step2",
@@ -5232,7 +5289,7 @@
          ]
       },
       "jump.roots" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/roots1",
             {
@@ -5246,7 +5303,7 @@
       },
       "jump.sand" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/sand1",
             "sounds/jump/sand2",
@@ -5258,7 +5315,7 @@
          ]
       },
       "jump.shroomlight" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/shroomlight1",
             {
@@ -5273,7 +5330,7 @@
       },
       "jump.slime" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/mob/slime/small1",
             "sounds/mob/slime/small2",
@@ -5284,7 +5341,7 @@
       },
       "jump.snow" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "load_on_low_memory" : true,
@@ -5296,7 +5353,7 @@
          ]
       },
       "jump.soul_sand" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/soul_sand1",
             {
@@ -5309,7 +5366,7 @@
          ]
       },
       "jump.soul_soil" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/soul_soil1",
             {
@@ -5322,7 +5379,7 @@
          ]
       },
       "jump.spore_blossom" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/spore_blossom/step1",
             "sounds/block/spore_blossom/step2",
@@ -5333,7 +5390,7 @@
          ]
       },
       "jump.stem" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/stem1",
             {
@@ -5348,7 +5405,7 @@
       },
       "jump.stone" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/stone1",
             {
@@ -5360,7 +5417,7 @@
          ]
       },
       "jump.vines" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/vines1",
             {
@@ -5374,7 +5431,7 @@
       },
       "jump.wood" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/wood1",
             "sounds/jump/wood2",
@@ -5386,7 +5443,7 @@
          ]
       },
       "land.ancient_debris" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/ancient_debris1",
             "sounds/step/ancient_debris2",
@@ -5396,7 +5453,7 @@
          ]
       },
       "land.azalea" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/azalea/step1",
             "sounds/block/azalea/step2",
@@ -5407,7 +5464,7 @@
          ]
       },
       "land.basalt" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/basalt1",
             "sounds/step/basalt2",
@@ -5418,7 +5475,7 @@
          ]
       },
       "land.big_dripleaf" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/big_dripleaf/step1",
             "sounds/block/big_dripleaf/step2",
@@ -5429,7 +5486,7 @@
          ]
       },
       "land.bone_block" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/bone_block1",
             "sounds/step/bone_block2",
@@ -5439,7 +5496,7 @@
          ]
       },
       "land.cave_vines" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/step/vines1",
             "sounds/step/vines2",
@@ -5449,7 +5506,7 @@
          ]
       },
       "land.chain" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/chain1",
             "sounds/step/chain2",
@@ -5461,7 +5518,7 @@
       },
       "land.cloth" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/cloth1",
             "sounds/jump/cloth2",
@@ -5470,7 +5527,7 @@
          ]
       },
       "land.coral" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/coral1",
             "sounds/step/coral2",
@@ -5492,7 +5549,7 @@
          ]
       },
       "land.deepslate_bricks" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/deepslate_bricks/step1",
             "sounds/block/deepslate_bricks/step2",
@@ -5501,8 +5558,19 @@
             "sounds/block/deepslate_bricks/step5"
          ]
       },
+      "land.dirt_with_roots" : {
+         "category" : "player",
+         "sounds" : [
+            "sounds/block/rooted_dirt/step1",
+            "sounds/block/rooted_dirt/step2",
+            "sounds/block/rooted_dirt/step3",
+            "sounds/block/rooted_dirt/step4",
+            "sounds/block/rooted_dirt/step5",
+            "sounds/block/rooted_dirt/step6"
+         ]
+      },
       "land.dripstone_block" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/dripstone/step1",
             "sounds/block/dripstone/step2",
@@ -5514,7 +5582,7 @@
       },
       "land.grass" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/grass1",
             "sounds/jump/grass2",
@@ -5524,7 +5592,7 @@
       },
       "land.gravel" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/gravel1",
             "sounds/jump/gravel2",
@@ -5533,7 +5601,7 @@
          ]
       },
       "land.hanging_roots" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/block/hanging_roots/step1",
             "sounds/block/hanging_roots/step2",
@@ -5544,7 +5612,7 @@
          ]
       },
       "land.honey_block" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/honey_block1",
             "sounds/step/honey_block2",
@@ -5554,7 +5622,7 @@
          ]
       },
       "land.moss" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/moss/step1",
             "sounds/block/moss/step2",
@@ -5565,7 +5633,7 @@
          ]
       },
       "land.nether_brick" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_brick1",
             "sounds/step/nether_brick2",
@@ -5576,7 +5644,7 @@
          ]
       },
       "land.nether_gold_ore" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_gold_ore1",
             "sounds/step/nether_gold_ore2",
@@ -5586,7 +5654,7 @@
          ]
       },
       "land.nether_sprouts" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_sprouts1",
             "sounds/step/nether_sprouts2",
@@ -5596,7 +5664,7 @@
          ]
       },
       "land.nether_wart" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nether_wart1",
             "sounds/step/nether_wart2",
@@ -5606,7 +5674,7 @@
          ]
       },
       "land.netherite" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/netherite1",
             "sounds/step/netherite2",
@@ -5617,7 +5685,7 @@
          ]
       },
       "land.netherrack" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/netherrack1",
             "sounds/step/netherrack2",
@@ -5628,7 +5696,7 @@
          ]
       },
       "land.nylium" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/nylium1",
             "sounds/step/nylium2",
@@ -5639,7 +5707,7 @@
          ]
       },
       "land.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/pointed_dripstone/land1",
             "sounds/block/pointed_dripstone/land2",
@@ -5649,7 +5717,7 @@
          ]
       },
       "land.roots" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/roots1",
             "sounds/step/roots2",
@@ -5660,7 +5728,7 @@
       },
       "land.sand" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/sand1",
             "sounds/jump/sand2",
@@ -5669,7 +5737,7 @@
          ]
       },
       "land.shroomlight" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/shroomlight1",
             "sounds/step/shroomlight2",
@@ -5681,7 +5749,7 @@
       },
       "land.slime" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/mob/slime/small1",
             "sounds/mob/slime/small2",
@@ -5692,7 +5760,7 @@
       },
       "land.snow" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/snow1",
             "sounds/jump/snow2",
@@ -5701,7 +5769,7 @@
          ]
       },
       "land.soul_sand" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/soul_sand1",
             "sounds/step/soul_sand2",
@@ -5711,7 +5779,7 @@
          ]
       },
       "land.soul_soil" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/soul_soil1",
             "sounds/step/soul_soil2",
@@ -5721,7 +5789,7 @@
          ]
       },
       "land.spore_blossom" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/spore_blossom/step1",
             "sounds/block/spore_blossom/step2",
@@ -5732,7 +5800,7 @@
          ]
       },
       "land.stem" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/stem1",
             "sounds/step/stem2",
@@ -5744,7 +5812,7 @@
       },
       "land.stone" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/stone1",
             "sounds/jump/stone2",
@@ -5753,7 +5821,7 @@
          ]
       },
       "land.vines" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/step/vines1",
             "sounds/step/vines2",
@@ -5764,7 +5832,7 @@
       },
       "land.wood" : {
          "__use_legacy_max_distance" : "true",
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             "sounds/jump/wood1",
             "sounds/jump/wood2",
@@ -10980,6 +11048,17 @@
             "sounds/block/deepslate_bricks/place6"
          ]
       },
+      "place.dirt_with_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/rooted_dirt/step1",
+            "sounds/block/rooted_dirt/step2",
+            "sounds/block/rooted_dirt/step3",
+            "sounds/block/rooted_dirt/step4",
+            "sounds/block/rooted_dirt/step5",
+            "sounds/block/rooted_dirt/step6"
+         ]
+      },
       "place.dripstone_block" : {
          "category" : "block",
          "sounds" : [
@@ -11703,7 +11782,7 @@
          ]
       },
       "step.amethyst_block" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/amethyst/step1",
@@ -11764,7 +11843,7 @@
          ]
       },
       "step.amethyst_cluster" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/amethyst/step1",
@@ -11838,7 +11917,7 @@
          ]
       },
       "step.azalea" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/azalea/step1",
             "sounds/block/azalea/step2",
@@ -11849,7 +11928,7 @@
          ]
       },
       "step.azalea_leaves" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/azalea_leaves/step1",
             "sounds/block/azalea_leaves/step2",
@@ -11873,7 +11952,7 @@
          ]
       },
       "step.big_dripleaf" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/big_dripleaf/step1",
             "sounds/block/big_dripleaf/step2",
@@ -11897,7 +11976,7 @@
          ]
       },
       "step.calcite" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/calcite/step1",
@@ -11934,7 +12013,7 @@
          ]
       },
       "step.cave_vines" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/step/vines1",
             "sounds/step/vines2",
@@ -12007,7 +12086,7 @@
          ]
       },
       "step.deepslate_bricks" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/deepslate_bricks/step1",
             "sounds/block/deepslate_bricks/step2",
@@ -12016,8 +12095,22 @@
             "sounds/block/deepslate_bricks/step5"
          ]
       },
+      "step.dirt_with_roots" : {
+         "category" : "player",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/block/rooted_dirt/step1"
+            },
+            "sounds/block/rooted_dirt/step2",
+            "sounds/block/rooted_dirt/step3",
+            "sounds/block/rooted_dirt/step4",
+            "sounds/block/rooted_dirt/step5",
+            "sounds/block/rooted_dirt/step6"
+         ]
+      },
       "step.dripstone_block" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/dripstone/step1",
             "sounds/block/dripstone/step2",
@@ -12104,7 +12197,7 @@
          ]
       },
       "step.moss" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/moss/step1",
             "sounds/block/moss/step2",
@@ -12210,7 +12303,7 @@
          ]
       },
       "step.pointed_dripstone" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/dripstone/step1",
             "sounds/block/dripstone/step2",
@@ -12221,7 +12314,7 @@
          ]
       },
       "step.powder_snow" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/powder_snow/step1",
             "sounds/block/powder_snow/step2",
@@ -12327,7 +12420,7 @@
          ]
       },
       "step.spore_blossom" : {
-         "category" : "neutral",
+         "category" : "player",
          "sounds" : [
             "sounds/block/spore_blossom/step1",
             "sounds/block/spore_blossom/step2",
@@ -12367,7 +12460,7 @@
          ]
       },
       "step.tuff" : {
-         "category" : "block",
+         "category" : "player",
          "sounds" : [
             {
                "name" : "sounds/block/tuff/step1",
@@ -12677,6 +12770,17 @@
             "sounds/block/deepslate_bricks/step4",
             "sounds/block/deepslate_bricks/step5",
             "sounds/block/deepslate_bricks/step6"
+         ]
+      },
+      "use.dirt_with_roots" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/rooted_dirt/step1",
+            "sounds/block/rooted_dirt/step2",
+            "sounds/block/rooted_dirt/step3",
+            "sounds/block/rooted_dirt/step4",
+            "sounds/block/rooted_dirt/step5",
+            "sounds/block/rooted_dirt/step6"
          ]
       },
       "use.dripstone_block" : {

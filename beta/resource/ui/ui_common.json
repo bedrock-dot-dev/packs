@@ -3368,6 +3368,7 @@
 
   "scroll_view_control": {
     "type": "scroll_view",
+    "size": "$scroll_view_control_size",
     "scroll_speed": 15,
     "scrollbar_track_button": "button.scrollbar_skip_track",
     "scrollbar_touch_button": "button.scrollbar_touch",
@@ -3566,6 +3567,8 @@
     // scrolling content area and scroll box/track
     "$scrolling_pane_size|default": [ "100%", "100%" ],
     "$scrolling_pane_offset|default": [ 0, 0 ],
+
+    "$scroll_view_control_size|default": [ "100%", "100%" ],
 
     // Sizes and offsets of the background behind the scrolling content, the
     // viewport containing the scrolling content, the scroll track, and the area

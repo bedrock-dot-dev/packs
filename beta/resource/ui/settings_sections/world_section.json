@@ -644,6 +644,18 @@
         }
       },
       {
+        "respawn_blocks_explode_toggle@settings_common.option_toggle": {
+          "$tts_section_header": "createWorldScreen.worldSettings",
+          "ignored": "$education_edition",
+          "$option_label": "createWorldScreen.respawnblocksexplode",
+          "$option_binding_name": "#respawn_blocks_explode",
+          "$option_enabled_binding_name": "#respawn_blocks_explode_enabled",
+          "$toggle_name": "respawn_blocks_explode",
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "$toggle_binding_condition": "always_when_visible"
+        }
+      },
+      {
         "mob_loot_toggle@settings_common.option_toggle": {
           "$tts_section_header": "createWorldScreen.worldSettings",
           "ignored": "$education_edition",
