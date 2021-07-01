@@ -3889,7 +3889,7 @@
          },
          "attach" : {
             "pitch" : 0.70,
-            "sound" : "random.click",
+            "sound" : "block.click",
             "volume" : 1.0
          },
          "beacon.activate" : {
@@ -4324,7 +4324,7 @@
          },
          "detach" : {
             "pitch" : [ 1.10, 1.330 ],
-            "sound" : "random.bowhit",
+            "sound" : "block.bowhit",
             "volume" : 0.40
          },
          "drip.lava.pointed_dripstone" : {

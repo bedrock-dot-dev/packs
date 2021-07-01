@@ -1342,6 +1342,15 @@
             "sounds/block/furnace/fire_crackle5"
          ]
       },
+      "block.bowhit" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/random/bowhit1",
+            "sounds/random/bowhit2",
+            "sounds/random/bowhit3",
+            "sounds/random/bowhit4"
+         ]
+      },
       "block.campfire.crackle" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",
