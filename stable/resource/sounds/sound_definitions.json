@@ -200,6 +200,53 @@
             "sounds/ambient/nether/nether_wastes/mood4"
          ]
       },
+      "ambient.candle" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/candle/ambient1",
+               "pitch" : 0.80,
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/block/candle/ambient2",
+               "pitch" : 0.80,
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/block/candle/ambient3",
+               "pitch" : 0.80,
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/block/candle/ambient1",
+               "pitch" : 0.90,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/block/candle/ambient2",
+               "pitch" : 0.90,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/block/candle/ambient3",
+               "pitch" : 0.90,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/block/candle/ambient1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/candle/ambient2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/candle/ambient3",
+               "volume" : 1
+            }
+         ]
+      },
       "ambient.cave" : {
          "category" : "ambient",
          "sounds" : [
@@ -1976,19 +2023,19 @@
          "sounds" : [
             {
                "name" : "sounds/block/calcite/break1",
-               "volume" : 1
+               "volume" : 0.90
             },
             {
                "name" : "sounds/block/calcite/break2",
-               "volume" : 1
+               "volume" : 0.90
             },
             {
                "name" : "sounds/block/calcite/break3",
-               "volume" : 1
+               "volume" : 0.90
             },
             {
                "name" : "sounds/block/calcite/break4",
-               "volume" : 1
+               "volume" : 0.90
             }
          ]
       },
@@ -2245,6 +2292,14 @@
                "name" : "sounds/bucket/fill2"
             },
             "sounds/bucket/fill3"
+         ]
+      },
+      "cake.add_candle" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/cake/add_candle1",
+            "sounds/block/cake/add_candle2",
+            "sounds/block/cake/add_candle3"
          ]
       },
       "camera.take_picture" : {
@@ -2584,6 +2639,14 @@
             "sounds/dig/bone_block3",
             "sounds/dig/bone_block4",
             "sounds/dig/bone_block5"
+         ]
+      },
+      "dig.candle" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/candle/break1",
+            "sounds/block/candle/break2",
+            "sounds/block/candle/break3"
          ]
       },
       "dig.cave_vines" : {
@@ -3023,6 +3086,98 @@
             "sounds/mob/drowned/convert1",
             "sounds/mob/drowned/convert2",
             "sounds/mob/drowned/convert3"
+         ]
+      },
+      "extinguish.candle" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/candle/extinguish1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/candle/extinguish2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/candle/extinguish3",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/candle/extinguish1",
+               "pitch" : 0.90,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/candle/extinguish2",
+               "pitch" : 0.90,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/candle/extinguish3",
+               "pitch" : 0.90,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/candle/extinguish1",
+               "pitch" : 1.10,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/candle/extinguish2",
+               "pitch" : 1.10,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/candle/extinguish3",
+               "pitch" : 1.10,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/candle/extinguish1",
+               "pitch" : 0.90,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish2",
+               "pitch" : 0.90,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish3",
+               "pitch" : 0.90,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish1",
+               "pitch" : 1.10,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish2",
+               "pitch" : 1.10,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish3",
+               "pitch" : 1.10,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish1",
+               "pitch" : 1.0,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish2",
+               "pitch" : 1.0,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/block/candle/extinguish3",
+               "pitch" : 1.0,
+               "volume" : 0.90
+            }
          ]
       },
       "fall.amethyst_block" : {
@@ -4008,6 +4163,14 @@
                "name" : "sounds/block/calcite/step6",
                "volume" : 1
             }
+         ]
+      },
+      "hit.candle" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/candle/step1",
+            "sounds/block/candle/step2",
+            "sounds/block/candle/step3"
          ]
       },
       "hit.cave_vines" : {
@@ -10770,19 +10933,19 @@
          "sounds" : [
             {
                "name" : "sounds/block/calcite/place1",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             },
             {
                "name" : "sounds/block/calcite/place2",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             },
             {
                "name" : "sounds/block/calcite/place3",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             },
             {
                "name" : "sounds/block/calcite/place4",
-               "volume" : 1
+               "volume" : 0.9399999999999999
             }
          ]
       },
@@ -11762,6 +11925,14 @@
             }
          ]
       },
+      "step.candle" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/candle/step1",
+            "sounds/block/candle/step2",
+            "sounds/block/candle/step3"
+         ]
+      },
       "step.cave_vines" : {
          "category" : "neutral",
          "sounds" : [
@@ -12417,6 +12588,14 @@
             "sounds/step/bone_block3",
             "sounds/step/bone_block4",
             "sounds/step/bone_block5"
+         ]
+      },
+      "use.candle" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/candle/step1",
+            "sounds/block/candle/step2",
+            "sounds/block/candle/step3"
          ]
       },
       "use.cave_vines" : {

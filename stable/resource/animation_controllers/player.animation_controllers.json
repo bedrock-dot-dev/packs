@@ -172,7 +172,7 @@
 					"animations" : [
 						"humanoid_base_pose",
 						{
-							"look_at_target" : "!query.is_sleeping"
+							"look_at_target" : "!query.is_sleeping && !query.is_emoting"
 						},
 						"move.arms",
 						"move.legs",

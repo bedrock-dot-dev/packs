@@ -603,7 +603,8 @@
 
   "switch_accounts_button@start.main_button": {
     "$pressed_button_name": "button.switch_accounts",
-    "$button_text": "accounts.switch"
+    "$button_text": "#switch_accounts_button_text",
+    "$button_text_binding_type": "global"
   },
 
   "achievements_button@start.main_button": {
@@ -717,7 +718,7 @@
         "marketplace_button_label": {
           "type": "label",
           "text": "menu.store",
-          "layer":  1,
+          "layer": 1,
           "color": "$light_button_locked_text_color"
         }
       }
@@ -731,6 +732,94 @@
     "text": "store.startMenu.sale",
     "color": "$light_button_default_text_color",
     "layer": 2
+  },
+
+  "store_button_stack@start.stacked_row": {
+    "controls": [
+      {
+        "store_button@start.store_button": {
+          "enabled": "(not $store_disabled)",
+          "bindings": [
+            {
+              "binding_name": "(not #has_marketplace_errors)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "update_icon@start.update_prompt_icon": {
+          "ignored": "$store_disabled",
+          "size": [ "52.38%y", 15 ],
+          "offset": [ -16, -6 ],
+          "bindings": [
+            {
+              "binding_name": "#update_icon_visible",
+              "binding_name_override": "#visible",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      },
+      {
+        "new_offers_icon@start.new_offers_icon": {
+          "ignored": "$store_disabled",
+          "offset": [ 8, -6 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "bindings": [
+            {
+              "binding_name": "#new_offers",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "marketplace_error_button@common_buttons.dynamic_tooltip_notification_panel": {
+          "size": [ "100%", "100%" ],
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.menu_store_error",
+              "mapping_type": "pressed"
+            },
+            {
+              "to_button_id": "button.is_hovered",
+              "mapping_type": "pressed"
+            }
+          ],
+          "consume_hover_events": false,
+          "focus_enabled": true,
+          "$dynamic_tooltip_button_visibility_binding_name": "#has_marketplace_errors",
+          "$tooltip_popup_visible_binding": "#marketplace_errors_tooltip_visible",
+          "$override_tooltip_popup_image": true,
+          "$tooltip_popup_override_image_panel": "start.store_error_image",
+          "$tooltip_text_binding_name": "#marketplace_error_text",
+          "$tool_tip_text_max_size": [ "300px", "default" ],
+          "$tooltip_panel_content": "start.store_error_content",
+          "bindings": [
+            {
+              "binding_name": "#has_marketplace_errors",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "marketplace_error_icon@start.marketplace_error_icon": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ -2, 0 ],
+          "bindings": [
+            {
+              "binding_name": "#has_marketplace_errors",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
   },
 
   "buy_game_button@start.main_button": {
@@ -825,7 +914,7 @@
             },
             {
               "stacked_row_toolbox@start.stacked_row": {
-                "ignored":  "$is_toolbox_ignored",
+                "ignored": "$is_toolbox_ignored",
                 "controls": [
                   { "toolbox_mode_button@start.toolbox_mode_button": {} }
                 ],
@@ -949,105 +1038,15 @@
               }
             },
             {
-              "store@start.stacked_row": {
-                "ignored": "(($trial and not $use_single_column_for_buttons) or ($store_ignored))",
-                "controls": [
-                  {
-                    "store_button@start.store_button": {
-                      "enabled": "(not $store_disabled)",
-                      "bindings": [
-                        {
-                          "binding_name": "(not #has_marketplace_errors)",
-                          "binding_name_override": "#visible"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "update_icon@start.update_prompt_icon": {
-                      "ignored": "$store_disabled",
-                      "size": [ "52.38%y", 15 ],
-                      "offset": [ -16, -6 ],
-                      "bindings": [
-                        {
-                          "binding_name": "#update_icon_visible",
-                          "binding_name_override": "#visible",
-                          "binding_condition": "always"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "new_offers_icon@start.new_offers_icon": {
-                      "ignored": "$store_disabled",
-                      "offset": [ 8, -6 ],
-                      "anchor_from": "top_right",
-                      "anchor_to": "top_right",
-                      "bindings": [
-                        {
-                          "binding_name": "#new_offers",
-                          "binding_name_override": "#visible"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "marketplace_error_button@common_buttons.dynamic_tooltip_notification_panel": {
-                      "size": [ "100%", "100%" ],
-                      "button_mappings": [
-                        {
-                          "from_button_id": "button.menu_select",
-                          "to_button_id": "button.menu_store_error",
-                          "mapping_type": "pressed"
-                        },
-                        {
-                          "to_button_id": "button.is_hovered",
-                          "mapping_type": "pressed"
-                        }
-                      ],
-                      "consume_hover_events": false,
-                      "focus_enabled": true,
-                      "$dynamic_tooltip_button_visibility_binding_name": "#has_marketplace_errors",
-                      "$tooltip_popup_visible_binding": "#marketplace_errors_tooltip_visible",
-                      "$override_tooltip_popup_image": true,
-                      "$tooltip_popup_override_image_panel": "start.store_error_image",
-                      "$tooltip_text_binding_name": "#marketplace_error_text",
-                      "$tool_tip_text_max_size": [ "300px", "default" ],
-                      "$tooltip_panel_content": "start.store_error_content",
-                      "bindings": [
-                        {
-                          "binding_name": "#has_marketplace_errors",
-                          "binding_name_override": "#visible"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "marketplace_error_icon@start.marketplace_error_icon": {
-                      "anchor_from": "top_left",
-                      "anchor_to": "top_left",
-                      "offset": [ -2, 0 ],
-                      "bindings": [
-                        {
-                          "binding_name": "#has_marketplace_errors",
-                          "binding_name_override": "#visible"
-                        }
-                      ]
-                    }
-                  }
-                ]
+              "store@start.store_button_stack": {
+                "ignored": "(($trial and not $use_single_column_for_buttons) or ($store_ignored))"
               }
             },
             {
               "buy_game@start.stacked_row": {
+                "ignored": "$unlock_full_game_button_ignored",
                 "controls": [
                   { "buy_game_button@start.buy_game_button": {} }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#buy_game_visible",
-                    "binding_name_override": "#visible"
-                  }
                 ]
               }
             },

@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.17.0.2</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.17.10.4</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Why Does MoLang Exist?">Why Does MoLang Exist?</a></th> </tr>
@@ -117,27 +117,27 @@ All identifiers not in a scope listed below are reserved for future use</br><h2>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`->`</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) Arrow operator, for accessing data from a different entity</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Arrow operator, for accessing data from a different entity</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`context.variable_name`</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) Read-only storage provided by the game in certain scenarios</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Read-only storage provided by the game in certain scenarios</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`loop`</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) For repeating one or more commands 'n' times</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">For repeating one or more commands 'n' times</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`for_each`</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) For iterating over an array of entities</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">For iterating over an array of entities</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`break`</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) For early exiting a loop/for_each scope</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">For early exiting a loop/for_each scope</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`continue`</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL) For skipping the rest of the set of statements of a loop/for_each iteration and moving to the next iteration</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">For skipping the rest of the set of statements of a loop/for_each iteration and moving to the next iteration</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`[` `]`</td>
@@ -361,6 +361,10 @@ Strings in molang are surrounded by single - quotes.Eg: 'minecraft:pig' or 'hell
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`math.min(A, B)`</td>
 <td style="border-style:solid; border-width:3; padding:7px">Return lowest value of A or B</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">`math.min_angle(value)`</td>
+<td style="border-style:solid; border-width:3; padding:7px">Minimize angle magnitude (in degrees) into the range [-180, 180)</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`math.mod(value, denominator)`</td>
@@ -756,6 +760,18 @@ Query Functions are boolean expressions that allow you to query for values owned
 <td style="border-style:solid; border-width:3; padding:7px">Returns the body yaw rotation if called on an actor, else it returns 0.0</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.bone_aabb</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the axis aligned bounding box of a bone as a struct with members '.min', '.max', along with '.x', '.y', and '.z' values for each.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.bone_origin</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the initial (from the .geo) pivot of a bone as a struct with members '.x', '.y', and '.z'.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.bone_rotation</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the initial (from the .geo) rotation of a bone as a struct with members '.x', '.y', and '.z' in degrees.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.camera_distance_range_lerp</td>
 <td style="border-style:solid; border-width:3; padding:7px">Takes two distances (any order) and return a number from 0 to 1 based on the camera distance between the two ranges clamped to that range.  For example, `query.camera_distance_range_lerp(10, 20)` will return 0 for any distance less than or equal to 10, 0.2 for a distance of 12, 0.5 for 15, and 1 for 20 or greater.  If you pass in (20, 10), a distance of 20 will return 0.0</br></td>
 </tr>
@@ -822,6 +838,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.day</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the day of the current level.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.death_ticks</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the elapsed ticks since the mob started dying.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.debug_output</td>
@@ -1470,6 +1490,10 @@ Query Functions are boolean expressions that allow you to query for values owned
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.shield_blocking_bob</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the how much the offhand shield should translate down when blocking and being hit.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.show_bottom</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if we render the entity's bottom, else it returns 0.0</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.sit_amount</td>

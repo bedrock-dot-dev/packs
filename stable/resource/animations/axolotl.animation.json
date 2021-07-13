@@ -1383,8 +1383,20 @@
 				"body" : {
 					"rotation" : [ 0.0, 0.0, 45.0 ]
 				},
-				"head" : {
-					"rotation" : [ 0.0, 0.0, 45.0 ]
+				"head": {
+					"rotation": [ 0.0, 0.0, 45.0 ]
+				},
+				"right_arm": {
+					"rotation": [ 49.1, -25.8, 0 ]
+				},
+				"right_leg": {
+					"rotation": [ -72.5, 117.5, 85 ]
+				},
+				"left_arm": {
+					"rotation": [ 49.1, 25.8, 0 ]
+				},
+				"left_leg": {
+					"rotation": [ -72.5, -117.5, -85 ]
 				}
 			}
 		},

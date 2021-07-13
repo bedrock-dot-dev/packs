@@ -5168,6 +5168,13 @@
         }
       },
       {
+        "automation_run_entire_server_test_group@settings_common.option_toggle": {
+          "$option_label": "Enable Running Entire Server Test Group",
+          "$option_binding_name": "#automation_run_entire_server_test_group",
+          "$toggle_name": "automation_run_entire_server_test_group"
+        }
+      },
+      {
         "automation_testrun_id_text_box@settings_common.option_text_edit": {
           "$option_label": "Testrun ID",
           "$max_text_edit_length": 200,

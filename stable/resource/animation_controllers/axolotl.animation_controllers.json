@@ -22,7 +22,7 @@
         "idle": {
           "animations": [
             {
-              "idle_float": "query.is_in_water && !query.is_on_ground"
+              "idle_float": "query.is_in_water && !query.is_on_ground && !query.is_playing_dead"
             },
             {
               "idle_floor": "!query.is_in_water && query.is_on_ground"

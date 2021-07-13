@@ -6,8 +6,8 @@
 				"identifier": "geometry.axolotl",
 				"texture_width": 64,
 				"texture_height": 64,
-				"visible_bounds_width": 3,
-				"visible_bounds_height": 2.5,
+				"visible_bounds_width": 1.5,
+				"visible_bounds_height": 0.25,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
 			"bones": [
