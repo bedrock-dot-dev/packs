@@ -100,7 +100,7 @@
           "type": "label",
           "size": [ "100%", "default" ],
           "text": "xbl.savePurchase.description.line1",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "color": "$body_text_color",
           "font_scale_factor": "$font_scale",
           "bindings": [
@@ -126,7 +126,7 @@
           "type": "label",
           "size": [ "100%", "default" ],
           "text": "xbl.savePurchase.description.line2",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "color": "$body_text_color",
           "font_scale_factor": "$font_scale",
           "bindings": [

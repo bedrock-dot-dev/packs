@@ -92,7 +92,7 @@
 
   "smooth_label": {
     "type": "label",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "font_scale_factor": 1.1,
     "color": "$body_text_color"
   },
@@ -235,7 +235,7 @@
           "color": "$main_header_text_color",
           "text": "realmsCreateScreen.termsAndConditionsAgree",
           "font_size": "normal",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "offset": [ 22, 0 ],
           "size": [ "75%", "default" ],
           "layer": 3,

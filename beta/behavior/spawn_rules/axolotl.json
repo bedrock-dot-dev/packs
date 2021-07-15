@@ -9,6 +9,7 @@
       {
         "minecraft:spawns_underground": {},
         "minecraft:spawns_underwater": {},
+        "minecraft:disallow_spawns_in_bubble": {},
         "minecraft:weight": {
           "default": 8
         },
@@ -16,6 +17,10 @@
           "min": 0,
           "max": 0,
           "adjust_for_weather": false
+        },
+        "minecraft:spawns_above_block_filter": {
+          "blocks": "minecraft:stone",
+          "distance": 10
         },
         "minecraft:herd": {
           "min_size": 1,

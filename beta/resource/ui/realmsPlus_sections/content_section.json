@@ -125,7 +125,7 @@
     "type": "label",
     "size": [ "100%", "default" ],
     "text": "store.realmsPlus.content.friendsGetAccess",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "color": "$store_white_text_color"
   },
 
@@ -163,7 +163,7 @@
                 "size": [ "100%", "default" ],
                 "color": "$body_text_color",
                 "text": "$pack_type_description_text",
-                "font_type": "smooth"
+                "font_type": "#smooth_font"
               }
             }
           ]
@@ -414,7 +414,7 @@
           "size": [ "100%", "default" ],
           "text": "#content_section_text",
           "color": "$body_text_color",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "bindings": [
             {
               "binding_name": "#content_section_text",

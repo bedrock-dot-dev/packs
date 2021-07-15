@@ -305,7 +305,7 @@
           "color": "$body_text_color",
           "size": [ "100%-4px", "default" ],
           "text": "#patch_description",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "bindings": [
             {
               "binding_name": "#patch_description",

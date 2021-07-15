@@ -597,7 +597,7 @@
   },
 
   "featured_world_button@start.main_button": {
-    "$pressed_button_name": "button.featured_world",
+    "$pressed_button_name": "button.featured_category",
     "$button_text": "start_screen.start_demo"
   },
 
@@ -1310,6 +1310,12 @@
       {
         "requires": "(not $is_desktop or $is_publish)",
         "$is_toolbox_ignored": true
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(not #screen_needs_rebuild)",
+        "binding_name_override": "#visible"
       }
     ],
     "controls": [

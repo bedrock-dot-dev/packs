@@ -873,7 +873,7 @@
           "type": "label",
           "size": [ "100% - 4px", "default" ],
           "text": "#friend_helper_text",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "font_scale_factor": 1.333,
           "shadow": false,
           "bindings": [
@@ -900,7 +900,7 @@
           "type": "label",
           "size": [ "100% - 4px", "default" ],
           "text": "xbox.profile.favoriteHelperText",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "font_scale_factor": 1.333,
           "shadow": false
         }

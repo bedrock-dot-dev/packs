@@ -140,7 +140,7 @@
           "text": "#text",
           "text_tts": "#tts_text",
           "color": "$body_text_color",
-          "font_type": "smooth",
+          "font_type": "#font_type",
           "shadow": false,
           "bindings": [
             {

@@ -133,7 +133,7 @@
           "type": "label",
           "text": "store.tokens.tokenInfo",
           "size": [ "100%", "default" ],
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "font_scale_factor": 1.1,
           "color": "$store_white_text_color"
         }

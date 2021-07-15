@@ -36,7 +36,7 @@
                 "layer": 2,
                 "text_alignment": "left",
                 "color": "$xbl_signin_text_color",
-                "font_type": "smooth"
+                "font_type": "#smooth_font"
               }
             },
             {
@@ -62,7 +62,7 @@
                 "layer": 2,
                 "text_alignment": "left",
                 "color": "$xbl_signin_text_color",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "visible": "#message_line2_visible",
                 "bindings": [
                   {
@@ -89,7 +89,7 @@
           "layer": 2,
           "text_alignment": "center",
           "color": "$xbl_signin_text_color",
-          "font_type": "smooth"
+          "font_type": "#smooth_font"
         }
       },
       {
@@ -105,7 +105,7 @@
                 "layer": 2,
                 "text_alignment": "center",
                 "color": "$xbl_signin_text_color",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "font_scale_factor": "$xbl_signin_font_scale_factor",
                 "bindings": [
                   {
@@ -131,7 +131,7 @@
           "layer": 2,
           "text_alignment": "center",
           "color": "$xbl_signin_text_color",
-          "font_type": "smooth"
+          "font_type": "#smooth_font"
         }
       },
       {
@@ -147,7 +147,7 @@
                 "layer": 2,
                 "text_alignment": "center",
                 "color": "$xbl_signin_text_color",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "font_scale_factor": "$xbl_signin_font_scale_factor",
                 "bindings": [
                   {

@@ -30,7 +30,7 @@
           "type": "label",
           "text": "$faq_answer",
           "size": [ "100%", "default" ],
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "font_scale_factor": 0.9,
           "color": "$store_white_text_color"
         }
@@ -48,7 +48,7 @@
           "type": "label",
           "text": "#faq_price_text",
           "size": [ "100%", "default" ],
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "font_scale_factor": 0.9,
           "color": "$store_white_text_color",
           "bindings": [

@@ -533,7 +533,7 @@
           "font_scale_factor": 0.75,
           "size": [ "100%", "25%" ],
           "layer": 15,
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "color": "$dressing_room_right_side_default_text_color",
           "text": "#selected_skin_name",
           "bindings": [
@@ -1311,7 +1311,7 @@
     "$toast_text_alignment": "center",
     "$toast_anchor_from": "center",
     "$toast_anchor_to": "center",
-    "$toast_font_type": "smooth",
+    "$toast_font_type": "#smooth_font",
     "$offset_anims": [],
     "$alpha_anims": [
       "@persona.popup_anim_start"
@@ -1336,7 +1336,7 @@
       {
         "popup_dialog_message@popup_dialog.popup_dialog_message": {
           "color": "$dressing_room_right_side_default_text_color",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "font_scale_factor": 1.3,
           "size": [ "90% - 32px", "68%" ],
           "offset": [ 30, 4 ]

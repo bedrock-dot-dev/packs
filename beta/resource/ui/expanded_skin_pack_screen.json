@@ -377,7 +377,7 @@
                 "type": "label",
                 "size": [ "100%", "default" ],
                 "color": "$body_text_color",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "font_scale_factor": 0.68,
                 "text": "#purchase_with_currency_disclaimer",
                 "bindings": [
@@ -518,7 +518,7 @@
                       "max_size": [ "100% - 2px", 20 ],
                       "offset": [ 2, 1 ],
                       "layer": 1,
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "color": "$body_text_color",
                       "text_alignment": "left",
                       "text": "#pack_name",
@@ -546,7 +546,7 @@
                       "offset": [ 2, 0 ],
                       "layer": 1,
                       "color": "$store_author_text_color",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "text": "#creator_name",
                       "bindings": [
                         {
@@ -635,7 +635,7 @@
     "size": [ "100%", "default" ],
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "text": "skins.store.upsell.unlockPack",
     "color": "$body_text_color"
   },

@@ -171,7 +171,7 @@
     "layer": 0,
     "anchor_from": "center",
     "anchor_to": "center",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "color": "$f_color_format"
   },
 

@@ -1961,7 +1961,7 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "layer": 2,
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "enable_profanity_filter": false,
 
           "font_scale_factor": "$single_line_font_scale_factor",
@@ -2621,7 +2621,7 @@
   "minecraftTenLabel": {
     "type": "label",
     "font_type": "MinecraftTen",
-    "backup_font_type": "DefaultFont",
+    "backup_font_type": "UIFont",
     "color": "$generic_button_text_color", // We have to specify a color for unit tests - expect to override this when used.
 
     "variables": [

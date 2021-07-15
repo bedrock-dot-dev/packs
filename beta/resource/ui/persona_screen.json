@@ -478,7 +478,7 @@
                 "max_size": [ 100, "100%" ],
                 "layer": 3,
                 "font_scale_factor": 0.8,
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "color": "$dressing_room_sale_banner_text_color",
                 "$special_banner_text_binding_name|default": "#special_banner_text",
                 "text": "$special_banner_text_binding_name",
@@ -643,7 +643,7 @@
                 "size": [ "fill", 15 ],
                 "font_scale_factor": 0.75,
                 "layer": 15,
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "color": "$right_side_default_text_color",
                 "text": "#current_skin_name",
                 "bindings": [
@@ -659,7 +659,7 @@
                 "size": [ "fill", 15 ],
                 "font_scale_factor": 0.75,
                 "layer": 15,
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "color": "$right_side_default_text_color",
                 "text": "#active_skin_name",
                 "bindings": [
@@ -702,7 +702,7 @@
           "type": "label",
           "size": [ "100%", 20 ],
           "layer": 15,
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "color": "$right_side_default_text_color",
           "text": "#preview_skin_name",
           "bindings": [
@@ -984,7 +984,7 @@
                             "layer": 2,
                             "color": "$right_side_default_text_color",
                             "text": "#right_panel_description",
-                            "font_type": "smooth",
+                            "font_type": "#smooth_font",
                             "bindings": [
                               {
                                 "binding_name": "#right_panel_description"
@@ -1334,7 +1334,7 @@
                       "text_alignment": "left",
                       "color": "$dressing_room_right_side_default_text_color",
                       "text": "#skin_pack_right_panel_usage_text",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "bindings": [
                         {
                           "binding_type": "global",
@@ -1380,7 +1380,7 @@
           "$tooltip_panel_offset": [ "-14%", "-100%c - 2px" ],
           "$tooltip_popup_chevron_offset": [ "7%", "100%y - 3px" ],
           "$tooltip_chevron_anchor": "bottom_middle",
-          "$tooltip_text_font_type": "smooth"
+          "$tooltip_text_font_type": "#smooth_font"
         }
       },
       {
@@ -1839,7 +1839,7 @@
     "layer": 2,
     "size": [ "100% - 23px", "default" ],
     "text": "#right_panel_description",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "font_scale_factor": 0.85,
     "color": "$dressing_room_right_side_default_text_color",
     "bindings": [
@@ -3095,7 +3095,7 @@
                       "text_alignment": "left",
                       "color": "$dressing_room_right_side_default_text_color",
                       "text": "$text_binding_name",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "bindings": [
                         {
                           "binding_type": "global",
@@ -4949,7 +4949,7 @@
     "$toast_text_alignment": "center",
     "$toast_anchor_from": "center",
     "$toast_anchor_to": "center",
-    "$toast_font_type": "smooth",
+    "$toast_font_type": "#smooth_font",
     "$offset_anims": [],
     "$alpha_anims": [
       "@persona.popup_anim_start"

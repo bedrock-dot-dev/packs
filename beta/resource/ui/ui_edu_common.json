@@ -39,7 +39,7 @@
     "anchor_to": "top_left",
     "layer": 1,
     "color": "$body_text_color",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "text_alignment": "left"
   },
 
@@ -436,7 +436,7 @@
   "share_dialog_title": {
     "type": "label",
     "color": "$title_text_color",
-    "$popup_title_text|default": "library.item.sharepopup.title.simple",
+    "$popup_title_text|default": "($share_source + '.item.sharepopup.title.simple')",
     "text": "$popup_title_text",
     "layer": 2
   },
@@ -463,12 +463,12 @@
   },
 
   "teams_advanced_share_header_panel@edu_common.share_header_panel": {
-    "$popup_title_text": "library.item.sharepopup.title.advanced"
+    "$popup_title_text": "$teams_advanced_share_header_text"
   },
 
   "add_resource_share_header_panel@edu_common.share_header_panel": {
     "$close_button_id": "button.cancel_add_resource_button",
-    "$popup_title_text": "library.item.sharepopup.title.addResource"
+    "$popup_title_text": "($share_source + '.item.sharepopup.title.addResource')"
   },
 
   //body
@@ -516,7 +516,7 @@
       {
         "add_resource_label@edu_common.share_dialog_body_text": {
           "font_scale_factor": 0.95,
-          "text": "library.item.sharepopup.secondayText"
+          "text": "($share_source + '.item.sharepopup.secondayText')"
         }
       },
       { "teams_padding_middle@common.empty_panel": { "size": [ "100%", 10 ] } },
@@ -524,11 +524,18 @@
         "resource_button@common_buttons.light_text_button": {
           "size": [ "100%", 18 ],
           "$pressed_button_name": "button.resource_button",
-          "$button_text": "library.item.sharepopup.addResourceButton",
+          "$button_text": "($share_source + '.item.sharepopup.addResourceButton')",
           "focus_identifier": "$pressed_button_name"
         }
       }
     ]
+  },
+
+  "edit_resource_uri_glyph": {
+    "type": "image",
+    "layer": 2,
+    "size": "$glyph_size",
+    "texture": "textures/ui/editIcon"
   },
 
   "edit_resources_section": {
@@ -538,16 +545,36 @@
       {
         "resource_label_text@edu_common.share_dialog_body_text": {
           "font_scale_factor": 0.95,
-          "text": "library.item.sharepopup.editResourceLabel"
+          "text": "($share_source + '.item.sharepopup.editResourceLabel')"
         }
       },
       { "teams_padding_middle@common.empty_panel": { "size": [ "100%", 10 ] } },
       {
-        "resource_button@common_buttons.light_text_button": {
-          "size": [ "100%", 18 ],
-          "$pressed_button_name": "button.resource_button",
-          "$button_text": "library.item.sharepopup.editResourceButton",
-          "focus_identifier": "$pressed_button_name"
+        "edit_resource_body_button_stack": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "layer": 5,
+          "size": [ "100%", "100%cm" ],
+          "controls": [
+            { "padding_left@common.empty_panel": { "size": [ "fill", "100%sm" ] } },
+            {
+              "resource_button@edu_pause.shared_resource_uri_button": {
+                "size": [ "100% - 150px", 20 ]
+              }
+            },
+            { "padding_middle@common.empty_panel": { "size": [ 1, 4 ] } },
+            {
+              "edit_resource_uri_button@common_buttons.light_glyph_button": {
+                "size": [ 20, 20 ],
+                "$glyph_size": [ 16, 16 ],
+                "layer": 1,
+                "$button_content": "edu_common.edit_resource_uri_glyph",
+                "$pressed_button_name": "button.resource_button",
+                "$button_tts_name": "($share_source + '.item.sharepopup.editResource.button.accessibility')"
+              }
+            },
+            { "padding_right@common.empty_panel": { "size": [ "fill", 4 ] } }
+          ]
         }
       }
     ]
@@ -559,7 +586,7 @@
     "layer": 5,
     "size": [ "100%", "100%c" ],
 
-    "$body_size|default": [ "100% - 125px", 10 ],
+    "$body_size|default": [ "100%", 10 ],
     "$body_font_size|default": 1.0,
     "$icons_ignored|default": true,
     "$add_resources_ignored|default": true,
@@ -572,7 +599,8 @@
             {
               "body_text@edu_common.share_dialog_body_text": {
                 "font_scale_factor": "$body_font_size",
-                "size": "$body_size"
+                "size": "$body_size",
+                "text_alignment": "center"
               }
             }
           ]
@@ -593,21 +621,21 @@
   },
 
   "teams_simple_body_content_stack@edu_common.body_content_stack": {
-    "$popup_body_text": "library.item.sharepopup.body",
+    "$popup_body_text": "($share_source + '.item.sharepopup.body')",
     "$icons_ignored": false
   },
 
   "teams_body_content_stack@edu_common.body_content_stack": {
-    "$body_size": [ "100% - 100px", "default" ],
-    "$popup_body_text": "library.item.sharepopup.shareText.noResource",
+    "$body_size": [ "100% - 5px", "default" ],
+    "$popup_body_text": "$teams_body_content_stack_text",
     "$icons_ignored": false,
     "$add_resources_ignored": false
   },
 
   "teams_body_resource_content_stack@edu_common.body_content_stack": {
-    "$body_size": [ "100% - 75px", "default" ],
+    "$body_size": [ "100% - 5px", "default" ],
     "$body_font_size": 0.92,
-    "$popup_body_text": "library.item.sharepopup.shareText.resource",
+    "$popup_body_text": "$share_resource_added_text",
     "$icons_ignored": false,
     "$edit_resources_ignored": false
   },
@@ -623,7 +651,7 @@
           "controls": [
             {
               "teams_share_label@edu_common.share_dialog_body_text": {
-                "text": "library.item.sharepopup.addResource.labelOne",
+                "text": "($share_source + '.item.sharepopup.addResource.labelOne')",
                 "font_scale_factor": 0.95
               }
             }
@@ -636,7 +664,7 @@
           "controls": [
             {
               "teams_share_label@edu_common.share_dialog_body_text": {
-                "text": "library.item.sharepopup.addResource.labelTwo",
+                "text": "($share_source + '.item.sharepopup.addResource.labelTwo')",
                 "font_scale_factor": 0.95
               }
             }
@@ -649,13 +677,13 @@
           "$single_label_size": [ "default", "default" ],
           "$single_line_font_scale_factor": 1,
           "$pressed_button_name": "button.add_resource_learn_more",
-          "$single_line_label_text": "library.item.sharepopup.addResource.learnMoreLinkText"
+          "$single_line_label_text": "($share_source + '.item.sharepopup.addResource.learnMoreLinkText')"
         }
       },
       { "url_padding_middle@common.empty_panel": { "size": [ "100%sm", 10 ] } },
       {
         "url_label@edu_common.share_dialog_body_text": {
-          "text": "library.item.sharepopup.addResource.urlLabel",
+          "text": "($share_source + '.item.sharepopup.addResource.urlLabel')",
           "$focus_id": "url_textbox"
         }
       },
@@ -665,14 +693,14 @@
           "size": [ "100%", 20 ],
           "$text_box_name": "#textbox.url",
           "$text_edit_box_content_binding_name": "#textbox_content.url",
-          "$place_holder_text": "library.item.sharepopup.addResource.urlHintText",
+          "$place_holder_text": "($share_source + '.item.sharepopup.addResource.urlHintText')",
           "$focus_id": "url_textbox",
           "max_length": 512
         }
       },
       {
         "button_name_label@edu_common.share_dialog_body_text": {
-          "text": "library.item.sharepopup.addResource.buttonNameLabel",
+          "text": "($share_source + '.item.sharepopup.addResource.buttonNameLabel')",
           "$focus_id": "button_name"
         }
       },
@@ -682,14 +710,14 @@
           "size": [ "100%", 20 ],
           "$text_box_name": "#textbox.button_name",
           "$text_edit_box_content_binding_name": "#textbox_content.button_name",
-          "$place_holder_text": "library.item.sharepopup.addResource.buttonNameHintText",
+          "$place_holder_text": "($share_source + '.item.sharepopup.addResource.buttonNameHintText')",
           "$focus_id": "button_name",
           "max_length": 20
         }
       },
       { "button_padding_top@common.empty_panel": { "size": [ "100%sm", 5 ] } },
       {
-        "add_resource_body_button_stack": {
+        "add_edit_resource_body_button_stack": {
           "type": "stack_panel",
           "orientation": "horizontal",
           "layer": 5,
@@ -699,7 +727,7 @@
               "done_button@common_buttons.light_text_button": {
                 "size": [ "fill", 18 ],
                 "$pressed_button_name": "button.done_add_resource_button",
-                "$button_text": "library.item.sharepopup.addResource.doneButton",
+                "$button_text": "($share_source + '.item.sharepopup.addResource.doneButton')",
                 "focus_identifier": "$pressed_button_name",
                 "bindings": [
                   {
@@ -711,15 +739,38 @@
             },
             { "button_padding_middle@common.empty_panel": { "size": [ 2, "100%sm" ] } },
             {
-              "remove_button@common_buttons.light_text_button": {
-                "size": [ "fill", 18 ],
-                "$pressed_button_name": "button.remove_add_resource_button",
-                "$button_text": "library.item.sharepopup.addResource.removeButton",
-                "focus_identifier": "$pressed_button_name",
-                "bindings": [
+              "cancel_delete_panel_stack": {
+                "type": "panel",
+                "layer": 5,
+                "size": [ "fill", "100%cm" ],
+                "controls": [
                   {
-                    "binding_name": "#has_addtional_resource",
-                    "binding_name_override": "#enabled"
+                    "remove_button@common_buttons.light_text_button": {
+                      "size": [ "100%", 18 ],
+                      "$pressed_button_name": "button.delete_resource_button",
+                      "$button_text": "($share_source + '.item.sharepopup.addResource.deleteButton')",
+                      "focus_identifier": "$pressed_button_name",
+                      "bindings": [
+                        {
+                          "binding_name": "#has_edu_external_link",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "cancel_button@common_buttons.light_text_button": {
+                      "size": [ "100%", 18 ],
+                      "$pressed_button_name": "button.cancel_add_resource_button",
+                      "$button_text": "($share_source + '.item.sharepopup.addResource.cancelButton')",
+                      "focus_identifier": "$pressed_button_name",
+                      "bindings": [
+                        {
+                          "binding_name": "#is_adding_resource",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -733,7 +784,7 @@
   "share_dialog_body_text": {
     "type": "label",
     "color": "$body_text_color",
-    "$popup_body_text|default": "library.item.sharepopup.body",
+    "$popup_body_text|default": "($share_source + '.item.sharepopup.body')",
     "text": "$popup_body_text",
     "size": [ "100%", "default" ],
     "layer": 1,
@@ -809,7 +860,7 @@
           "$text_edit_box_enabled_binding_type": "none",
           "$text_edit_box_label_anchor_point": "left_middle",
           "$text_edit_box_label_size": [ "100%", 10 ],
-          "$place_holder_text": "$library_item_share_link",
+          "$place_holder_text": "$placeholder_item_share_link",
           "$place_holder_text_color": "$body_text_color",
           "$locked_text_alpha": 1.0
         }
@@ -924,12 +975,13 @@
   "horizontal_divider": {
     "type": "panel",
     "size": [ "100%", 8 ],
+    "$alpha|default":  0.1,
     "controls": [
       {
         "divider": {
           "type": "image",
           "texture": "textures/ui/horizontal_divider",
-          "alpha": 0.1,
+          "alpha": "$alpha",
           "keep_ratio": false,
           "size": [ "100%", 2 ]
         }

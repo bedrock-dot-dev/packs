@@ -231,7 +231,7 @@
                       "size": [ "90%", 10 ],
                       "offset": [ 0, "25%" ],
                       "color": "$body_text_color",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "font_scale_factor": 0.8,
                       "text": "#text",
                       "bindings": [
@@ -876,7 +876,7 @@
           "anchor_to": "center",
           "text_alignment": "center",
           "text": "#purchase_with_currency_button_text",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "bindings": [
             {
               "binding_name": "#purchase_with_currency_button_text"
@@ -943,7 +943,7 @@
   "discount_label": {
     "type": "label",
     "size": [ "default", 10 ],
-    "$discount_label_font|default": "smooth",
+    "$discount_label_font|default": "#smooth_font",
     "font_type": "$discount_label_font",
     "text": "#markdown_percentage",
     "color": "$store_sales_banner_text_color",
@@ -986,7 +986,7 @@
     "size": [ "100%", "100%" ],
     "use_priority": true,
     "$coin_image_on_right|default": true,
-    "$purchase_price_font_type|default": "smooth",
+    "$purchase_price_font_type|default": "#smooth_font",
     "controls": [
       {
         "sales_banner_offset_panel": {
@@ -1130,7 +1130,7 @@
     "size": [ "100%", "100%" ],
     "use_priority": true,
     "$coin_image_on_right|default": true,
-    "$purchase_price_font_type|default": "smooth",
+    "$purchase_price_font_type|default": "#smooth_font",
     "controls": [
       {
         "sales_banner_offset_panel": {
@@ -1504,7 +1504,7 @@
           "layer": 4,
           "color": "$text_color",
           "text": "#full_price",
-          "$purchase_price_font_type|default": "smooth",
+          "$purchase_price_font_type|default": "#smooth_font",
           "font_type": "$purchase_price_font_type",
           "bindings": [
             {
@@ -2064,7 +2064,7 @@
                       "type": "label",
                       "size": [ "default", "100%" ],
                       "text": "$star_number",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "color": "$body_text_color"
                     }
                   }
@@ -2143,7 +2143,7 @@
               "percent": {
                 "type": "label",
                 "size": [ 20, "100%" ],
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "color": "$body_text_color",
                 "text": "$rating_percentage",
                 "property_bag": {
@@ -2300,7 +2300,7 @@
                       "anchor_from": "top_middle",
                       "anchor_to": "top_middle",
                       "text": "#rating_text",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "color": "$body_text_color",
                       "property_bag": {
                         "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
@@ -2336,7 +2336,7 @@
                       "anchor_to": "top_middle",
                       "text": "#number_of_ratings",
                       "offset": [ 0, -1 ],
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "color": "$body_text_color",
                       "property_bag": {
                         "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
@@ -3122,7 +3122,7 @@
           "offset": [ 2, 0 ],
           "layer": 1,
           "color": "$body_text_color",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "font_scale_factor": 0.8,
           "enable_profanity_filter": false,
           "$description_label_binding_name": "#description_label",
@@ -3188,7 +3188,7 @@
                 "type": "label",
                 "size": [ "default", 8 ],
                 "text_alignment": "left",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "font_scale_factor": 0.8,
                 "color": "$body_text_color",
                 "text": "$item_glyph_text_binding",
@@ -3350,7 +3350,7 @@
               "timer_label": {
                 "type": "label",
                 "size": [ "default", "100%" ],
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "text": "#time_until_sale_expires",
                 "color": "$coin_color",
                 "offset": [ 2, 0 ],
@@ -3796,7 +3796,7 @@
                 "offset": [ 0, -1 ],
                 "layer": 10,
                 "color": "$body_text_color",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "font_scale_factor": 0.8,
                 "text": "#last_update_text",
                 "bindings": [
@@ -4164,7 +4164,7 @@
                 "size": [ "default", 10 ],
                 "offset": [ 0, 1 ],
                 "text": "#offer_prompt_text",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "$offer_price_color|default": "$dark_button_secondary_default_text_color",
                 "color": "$offer_price_color",
                 "property_bag": {

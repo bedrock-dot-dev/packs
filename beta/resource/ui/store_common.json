@@ -685,7 +685,7 @@
           "$timer_label_color|default": "$light_button_default_text_color",
           "color": "$timer_label_color",
           "layer": 1,
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "bindings": "$timer_bindings"
         }
       }
@@ -778,7 +778,7 @@
                       "type": "label",
                       "size": [ "100%", "default" ],
                       "color": "$body_text_color",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "text": "#realms_expiration_label",
                       "bindings": [
                         {
@@ -1533,7 +1533,7 @@
       {
         "coin_balance_text": {
           "type": "label",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "layer": 4,
           "size": [ 42, 14 ],
           "offset": [ -14, 1.5 ], // x offset around minecoin icon
@@ -1833,7 +1833,7 @@
                   {
                     "gamertag_label": {
                       "type": "label",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "text_alignment": "right",
                       "text": "#gamertagpacks",
                       "color": "$body_text_color",
@@ -1893,7 +1893,7 @@
                   {
                     "gamertag_label": {
                       "type": "label",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "text_alignment": "right",
                       "size": [ "default", "default" ],
                       "text": "store.inventory.no.xbl",
@@ -1982,7 +1982,7 @@
                   {
                     "gamertag_label": {
                       "type": "label",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "text_alignment": "right",
                       "size": [ "default", "default" ],
                       "text": "store.inventory.no.xbl",
@@ -2062,7 +2062,7 @@
           "offset": [ 2, -1 ],
           "layer": 10,
           "color": "$body_text_color",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "$disclaimer_font_scale_factor|default": 0.68,
           "font_scale_factor": "$disclaimer_font_scale_factor",
           "text": "#purchase_with_currency_disclaimer",
@@ -2213,7 +2213,7 @@
           "size": [ "fill", "100%" ],
           "text": "#creator_label",
           "color": "$store_author_text_color",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "bindings": [
             {
               "binding_type": "$store_factory_collection_details",
@@ -2328,7 +2328,7 @@
               "price@common_store.label": {
                 "size": [ "default", 10 ],
                 "text": "#offer_prompt_text",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "offset": [ 1, -1 ],
                 "color": "$coin_color",
                 "anchor_from": "bottom_right",
@@ -3007,7 +3007,7 @@
     "max_size": [ "100%", 10 ],
     "text": "#title_label",
     "color": "$body_text_color",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "layer": 1,
     "bindings": [
       {
@@ -3420,7 +3420,7 @@
           "type": "label",
           "size": [ "default", "100%" ],
           "layer": 1,
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "color": "$store_rating_text_panel_color",
           "text": "$rating_label_text_binding",
           "bindings": [
@@ -3594,7 +3594,7 @@
       {
         "label": {
           "type": "label",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "color": "$body_text_color",
           "layer": 7,
           "anchor_from": "top_left",
@@ -3761,7 +3761,7 @@
                     "banner_description": {
                       "type": "label",
                       "size": [ "100%", "default" ],
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "font_scale_factor": 0.8,
                       "color": "$body_text_color",
                       "text": "#banner_description_text",
@@ -3967,7 +3967,7 @@
                 "size": [ "100%", 10 ],
                 "text": "#show_more_text",
                 "color": "$body_text_color",
-                "font_type": "smooth",
+                "font_type": "#smooth_font",
                 "text_alignment": "center",
                 "layer": 1,
                 "bindings": [
@@ -4078,7 +4078,7 @@
     "color": "$store_sales_banner_text_color",
     "size": [ "default", 10 ],
     "offset": [ 1, 0 ],
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "text": "#offer_markdown_percentage",
     "font_scale_factor": 1,
     "layer": 4,
@@ -4108,7 +4108,7 @@
     "size": [ "default", 10 ],
     "offset": [ 1, -0.5 ],
     "text": "#offer_markdown_percentage",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "layer": 4,
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
@@ -4147,7 +4147,7 @@
           "size": [ "default", "100%" ],
           "offset": "$offer_price_offset",
           "text": "#offer_full_price",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "layer": 4, // place behind sale banner when possible
           "bindings": [
             {
@@ -4200,7 +4200,7 @@
     "text": "#title_label",
     "text_alignment": "left",
     "color": "$body_text_color",
-    "font_type": "smooth",
+    "font_type": "#smooth_font",
     "$is_hero_offer|default": false,
     "layer": 1,
     "$store_offer_title_visible_binding|default": "(not #is_offer_collection_query)",
@@ -4517,7 +4517,7 @@
                                                     "size": [ "default", 10 ],
                                                     "offset": [ 0, 0.5 ],
                                                     "text": "#offer_prompt_text",
-                                                    "font_type": "smooth",
+                                                    "font_type": "#smooth_font",
                                                     "layer": 4,
                                                     "bindings": [
                                                       {
@@ -4845,7 +4845,7 @@
                                         "size": [ "default", 10 ],
                                         "offset": [ 0, 0.5 ],
                                         "text": "#offer_prompt_text",
-                                        "font_type": "smooth",
+                                        "font_type": "#smooth_font",
                                         "layer": 4,
                                         "bindings": [
                                           {
@@ -5603,7 +5603,7 @@
                       "size": [ "100%", 10 ],
                       "text": "#title_label",
                       "color": "$body_text_color",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "layer": 1,
                       "bindings": [
                         {
@@ -5625,7 +5625,7 @@
                       "size": [ "100%", 10 ],
                       "text": "#offer_type_label",
                       "color": "$body_text_color",
-                      "font_type": "smooth",
+                      "font_type": "#smooth_font",
                       "layer": 1,
                       "bindings": [
                         {

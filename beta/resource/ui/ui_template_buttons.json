@@ -634,7 +634,7 @@
     "$pressed_button_texture": "textures/ui/imagetaggedcorner",
     "$locked_button_texture": "textures/ui/imagetaggedcorner",
     "$default_color": "white",
-    "$default_font": "smooth",
+    "$default_font": "#smooth_font",
     "$button_offset": [ 0, 0 ],
     "$border_visible": false,
     "$default_state_border_visible": false,

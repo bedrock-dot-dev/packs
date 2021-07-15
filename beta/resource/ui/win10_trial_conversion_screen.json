@@ -217,7 +217,7 @@
       {
         "packtitle@win10_trial_conversion.label_panel": {
           "text": "#title_name",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "bindings": [
             {
               "binding_name": "#title_name",
@@ -233,7 +233,7 @@
       {
         "packdesc@win10_trial_conversion.label_panel": {
           "text": "#description_text",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "size": [ "100%", "default" ],
           "color": "$wtc_pack_desc_text_color",
           "bindings": [
@@ -321,7 +321,7 @@
               "include_label@win10_trial_conversion.label_panel": {
                 "size": [ "100% - 3px", "default" ],
                 "$text": "trial.includes",
-                "font_type": "smooth"
+                "font_type": "#smooth_font"
               }
             }
           ]

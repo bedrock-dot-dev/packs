@@ -70,7 +70,7 @@
           "anchor_to": "bottom_right",
           "text": "store.promo.today",
           "text_alignment": "right",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "color": "$body_text_color",
           "bindings": [
             {
@@ -345,7 +345,7 @@
           "ignored": "$default_state",
           "offset": [ 0, -3 ],
           "color": "$body_text_color",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "text": "#promo_unlock_date",
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
@@ -497,7 +497,7 @@
           "ignored": "$default_state",
           "offset": [ 0, 3 ],
           "color": "$body_text_color",
-          "font_type": "smooth",
+          "font_type": "#smooth_font",
           "text": "#promo_unlock_date",
           "anchor_from": "top_middle",
           "anchor_to": "top_middle",
