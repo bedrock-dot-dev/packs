@@ -627,6 +627,19 @@
         }
       },
       {
+        "pack_progress@authentication_modals.modal_dialog_frame": {
+          "$dialog_title_text": "#sign_in_modal_title",
+          "$dialog_title_text_binding_type": "global",
+          "$dialog_content": "authentication.pack_progress_content",
+          "bindings": [
+            {
+              "binding_name": "#pack_progress_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
         "demo@edu_signin.screen_content": {
           "bindings": [
             {
@@ -883,6 +896,46 @@
         "binding_name": "#show_popup_dismiss_button",
         "binding_name_override": "#visible"
       }
+    ]
+  },
+
+  "pack_progress_content": {
+    "type": "stack_panel",
+    "size": [ 274, "100%c" ],
+    "controls": [
+      { "top_padding@common.empty_panel": { "size": [ "100%", 5 ] } },
+      {
+        "loading_text_panel@edu_common.vertical_stack_item": {
+          "controls": [
+            {
+              "loading_text": {
+                "type": "label",
+                "size": [ "default", 49 ],
+                "max_size": [ "100% - 10px", 49 ],
+                "color": "$loading_text_color",
+                "text": "#loading_text",
+                "bindings": [
+                  {
+                    "binding_name": "#loading_text"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "loading_bar_panel@edu_common.vertical_stack_item": {
+          "controls": [
+            {
+              "loading_bar@popup_dialog.progress_bar_icon": {
+                "size": [ "100% - 23px", 5 ]
+              }
+            }
+          ]
+        }
+      },
+      { "bottom_padding@common.empty_panel": { "size": [ "100%", 11 ] } }
     ]
   },
 

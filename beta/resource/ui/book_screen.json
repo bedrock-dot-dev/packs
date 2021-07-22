@@ -30,7 +30,7 @@
 
   "screenshot_frame": {
     "type": "image",
-    "texture": "textures/ui/screenshot_frame",
+    "texture": "$screenshot_frame_texture",
     "layer": 1,
     "anchor_from": "center",
     "anchor_to": "center",

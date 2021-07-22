@@ -2802,6 +2802,8 @@
           "size": [ "100%", 6 ]
         }
       },
+      // ADO 576207: Reintroduce this panel for Switch when subscriptions come out, but without showing when it shouldn't on other platforms...
+      /*
       {
         "lower_panel": {
           "type": "panel",
@@ -2848,6 +2850,7 @@
           ]
         }
       },
+      */
       {
         "bottom_panel": {
           "type": "panel",
@@ -5515,7 +5518,14 @@
           "$toggle_name": "dev_disable_render_item_in_hand"
         }
       },
-
+      {
+        "option_toggle_disable_render_main_menu_cubemap@settings_common.option_toggle": {
+          "$option_label": "options.dev_disableRenderMainMenuCubeMap",
+          "$option_binding_name": "#dev_disable_render_main_menu_cube_map",
+          "$option_enabled_binding_name": "#dev_disable_render_main_menu_cube_map_enabled",
+          "$toggle_name": "dev_disable_render_main_menu_cube_map"
+        }
+      },
       {
         "leak_memory@settings_common.option_text_edit_with_text_button": {
           "$option_label": "Leak Memory",

@@ -1737,6 +1737,12 @@
   "summary_factory_object": {
     "type": "stack_panel",
     "size": [ "100%", "100%c" ],
+
+    "focus_container": true,
+    "focus_wrap_enabled": false,
+    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_container_custom_left": "$main_content_focus_container_left_custom",
+
     "controls": [
       {
         "summary@pdp.summary_content_panel": {
@@ -1750,11 +1756,6 @@
           "$content_name": "#update_notification_section_visible"
         }
       }
-      //{
-      //  "summary_description@pdp.summary_description_panel": {
-      //    "$content_name": "#summary_content_visible"
-      //  }
-      //}
     ]
   },
 
@@ -2591,8 +2592,7 @@
           "$offset": [ 0, -1 ],
           "$button_text_bind_name": "#ratings_button_text",
           "$font_type": "MinecraftTen",
-          "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "$focus_wrap_enabled": false,
           "$button_focus_precedence|default": 9,
           "$pressed_button_name": "button.submit_rating",
           "$focus_id": "interact_button",
@@ -4062,6 +4062,11 @@
     "$store_factory_collection_prefix|default": "",
     "$store_factory_collection_name|default": "",
 
+    "focus_container": true,
+    "focus_wrap_enabled": false,
+    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_container_custom_left": "$main_content_focus_container_left_custom",
+
     "$content": "pdp.description_inner_panel"
   },
 
@@ -4400,8 +4405,7 @@
   "bundle_offer_summary_grid_item": {
     "type": "panel",
     "size": [ "100%", "100%c + 2px" ],
-    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+    "$focus_wrap_enabled": false,
     "controls": [
       {
         "bundle_offer_summary_button@common_buttons.dark_content_button": {

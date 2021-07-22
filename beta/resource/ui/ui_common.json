@@ -18,8 +18,11 @@
     "focus_change_up": "$focus_override_up",
     "focus_change_left": "$focus_override_left",
     "focus_change_right": "$focus_override_right",
-    "focus_enabled": true,
+    "$focus_enabled|default": true,
+    "focus_enabled": "$focus_enabled",
     "focus_magnet_enabled": true,
+    "$focus_wrap_enabled|default": true,
+    "focus_wrap_enabled": "$focus_wrap_enabled",
 
     "$button_focus_precedence|default": 0,
     "default_focus_precedence": "$button_focus_precedence",
@@ -1952,6 +1955,8 @@
     "$single_label_size|default": [ "default", 10 ],
     "$underline_control|default": "common.empty_panel",
     "$single_line_font_scale_factor|default": 1,
+    "$font_type|default": "smooth",
+    "$font_size|default": "normal",
     "controls": [
       {
         "label_panel": {
@@ -1961,7 +1966,8 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "layer": 2,
-          "font_type": "#smooth_font",
+          "font_type": "$font_type",
+          "font_size":  "$font_size",
           "enable_profanity_filter": false,
 
           "font_scale_factor": "$single_line_font_scale_factor",
@@ -2320,6 +2326,12 @@
         "binding_name_override": "#visible"
       }
     ]
+  },
+
+  "gamepad_helper_start@gamepad_helper": {
+    "$icon_texture": "#controller_start_icon",
+    "$icon_description_bind": "#button_start_description",
+    "$icon_image_ref": "icon@common.gamepad_icon_button"
   },
 
   "gamepad_helper_a@gamepad_helper": {
