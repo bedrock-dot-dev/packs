@@ -606,6 +606,15 @@
         }
       },
       {
+        "option_toggle_11@settings_common.option_toggle": {
+          "$option_label": "options.clearhotbar",
+          "$option_binding_name": "#controller_clear_hotbar",
+          "$option_enabled_binding_name": "#controller_clear_hotbar_enabled",
+          "$toggle_name": "controller_clear_hotbar",
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP"
+        }
+      },
+      {
         "gamepad_swap_ab@settings_common.option_toggle": {
           "$option_label": "#swap_gamepad_ab",
           "$option_binding_name": "#swap_gamepad_ab_buttons",

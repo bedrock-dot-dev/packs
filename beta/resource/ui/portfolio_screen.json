@@ -306,7 +306,7 @@
       },
       {
         "close_button@portfolio.close_button": {
-          "offset": [ -3, 5 ]
+          "offset": [ -10, 10 ]
         }
       },
       {

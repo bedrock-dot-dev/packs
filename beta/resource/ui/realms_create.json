@@ -213,7 +213,7 @@
     "$button_text_size": [ "100%", "default" ],
     "$button_text_max_size": [ "100% - 10px", 20 ],
     "$button_font_size": "normal",
-    "$font_type": "#smooth_font",
+    "$font_type": "smooth",
     "$pressed_button_name": "$pressed_button_name_terms_conditions",
     "anchor_from": "right_middle",
     "anchor_to": "right_middle"
@@ -224,7 +224,7 @@
     "$button_text_size": [ "100%", "default" ],
     "$button_text_max_size": [ "100% - 10px", 20 ],
     "$button_font_size": "normal",
-    "$font_type": "#smooth_font",
+    "$font_type": "smooth",
     "$pressed_button_name": "$pressed_button_name_privacy_policy",
     "anchor_from": "right_middle",
     "anchor_to": "right_middle"
@@ -312,7 +312,7 @@
                             "color": "$main_header_text_color",
                             "text": "realmsCreateScreen.termsAndConditionsAgree",
                             "font_size": "normal",
-                            "font_type": "#smooth_font",
+                            "font_type": "smooth",
                             "offset": [ 22, 0 ],
                             "size": [ "75%", "default" ],
                             "layer": 3,
@@ -509,7 +509,7 @@
         "realms_terms_info@settings_common.option_info_label": {
           "$container_text_binding_name": "#realms_terms_info",
           "$used_fontsize": "normal",
-          "$used_fonttype": "#smooth_font",
+          "$used_fonttype": "smooth",
           "$show_option_label": false,
           "$show_for_ios|default": false,
           "layer": 3,
@@ -520,7 +520,7 @@
         "realms_external_subscription_terms_info@settings_common.option_info_label": {
           "$container_text_binding_name": "#realms_purchase_info",
           "$used_fontsize": "normal",
-          "$used_fonttype": "#smooth_font",
+          "$used_fonttype": "smooth",
           "$show_option_label": false,
           "$show_for_ios|default": false,
           "ignored": "(not $xbox_one or $hide_external_subscription_purchase_info)",
@@ -532,7 +532,7 @@
         "realms_switch_nso_info@settings_common.option_info_label": {
           "$container_text_binding_name": "#realms_switch_nso_info",
           "$used_fontsize": "normal",
-          "$used_fonttype": "#smooth_font",
+          "$used_fonttype": "smooth",
           "$show_option_label": false,
           "$show_for_ios|default": false,
           "ignored": "(not $nx_os)",

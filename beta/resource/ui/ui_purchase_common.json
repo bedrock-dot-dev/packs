@@ -332,7 +332,7 @@
     "color": "$body_text_color",
     "size": [ "100%", "default" ],
     "text": "#pack_description",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "shadow": true,
     "layer": 1,
     "bindings": [

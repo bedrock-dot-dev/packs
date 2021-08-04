@@ -139,7 +139,7 @@
     "type": "label",
     "text": "worldConversionErrorReport.terms.agreementForBeta",
     "size": [ "100%", "default" ],
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "color": "$body_text_color"
   },
 

@@ -270,7 +270,7 @@
                                       "description@manifest_validation.text_label": {
                                         "layer": 1,
                                         "size": [ "fill", 30 ],
-                                        "font_type": "#smooth_font",
+                                        "font_type": "smooth",
                                         "$text_label": "#pack_header_description"
                                       }
                                     },
@@ -397,7 +397,7 @@
                                         "size": [ "100%", "default" ],
                                         "offset": [ 0, 1 ],
                                         "$text_label": "#pack_id",
-                                        "font_type": "#smooth_font",
+                                        "font_type": "smooth",
                                         "font_scale_factor": 1.1
                                       }
                                     }
@@ -446,7 +446,7 @@
                                         "size": [ "100%", "default" ],
                                         "offset": [ 0, 1 ],
                                         "$text_label": "#pack_version",
-                                        "font_type": "#smooth_font",
+                                        "font_type": "smooth",
                                         "font_scale_factor": 1.1
                                       }
                                     }
@@ -494,7 +494,7 @@
                                         "layer": 1,
                                         "size": [ "100%", "default" ],
                                         "offset": [ 0, 1 ],
-                                        "font_type": "#smooth_font",
+                                        "font_type": "smooth",
                                         "font_scale_factor": 1.1,
                                         "$text_label": "#pack_path"
                                       }
@@ -547,7 +547,7 @@
                             "anchor_to": "left_middle",
                             "offset": [ 2, 2 ],
                             "text": "#error_type_label",
-                            "font_type": "#smooth_font",
+                            "font_type": "smooth",
                             "font_scale_factor": 1.2,
                             "color": "$main_header_text_color",
                             "bindings": [
@@ -621,7 +621,7 @@
                   //                "type": "label",
                   //                "color": "$main_header_text_color",
                   //                "size": [ "100% - 8px", "default" ],
-                  //                "font_type": "#smooth_font",
+                  //                "font_type": "smooth",
                   //                "offset": [ 4, 4 ],
                   //                "anchor_from": "top_left",
                   //                "anchor_to": "top_left",
@@ -687,7 +687,7 @@
                                   "type": "label",
                                   "color": "$main_header_text_color",
                                   "size": [ "100% - 8px", "default" ],
-                                  "font_type": "#smooth_font",
+                                  "font_type": "smooth",
                                   "offset": [ 0, 2 ],
                                   "anchor_from": "top_left",
                                   "anchor_to": "top_left",

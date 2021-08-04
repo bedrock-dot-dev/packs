@@ -9,7 +9,7 @@
     "anchor_to": "top_left",
     "layer": 1,
     "color": "$body_text_color",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "text_alignment": "left"
   },
 

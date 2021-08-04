@@ -1779,6 +1779,9 @@
       },
       {
         "item_button_ref@$button_ref": {
+          "tts_ignore_count": true,
+          "tts_skip_message": true,
+          "tts_inherit_siblings": true,
           "layer": 5
         }
       },

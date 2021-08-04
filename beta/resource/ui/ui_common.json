@@ -355,6 +355,9 @@
     "$toggle_tts_index_priority|default": 150,
     "$tts_section_header|default": "",
 
+    "$ignore_tts_enabled_bind|default": false,
+    "$toggle_focus_bind|default": "",
+
     "radio_toggle_group": "$radio_toggle_group",
     "toggle_name": "$toggle_name",
     "toggle_default_state": "$toggle_default_state",
@@ -446,8 +449,15 @@
         "binding_name": "$toggle_tts_override_toggle_value"
       },
       {
+        "ignored": "$ignore_tts_enabled_bind",
         "binding_type": "$toggle_tts_enabled_binding_type",
         "binding_name": "#tts_enabled",
+        "binding_name_override": "#focus_enabled"
+      },
+      {
+        "ignored": "(($toggle_focus_bind = '') and (not $ignore_tts_enabled_bind))",
+        "binding_type": "global",
+        "binding_name": "$toggle_focus_bind",
         "binding_name_override": "#focus_enabled"
       }
     ]
@@ -2633,7 +2643,7 @@
   "minecraftTenLabel": {
     "type": "label",
     "font_type": "MinecraftTen",
-    "backup_font_type": "UIFont",
+    "backup_font_type": "DefaultFont",
     "color": "$generic_button_text_color", // We have to specify a color for unit tests - expect to override this when used.
 
     "variables": [
@@ -4027,6 +4037,9 @@
       },
       {
         "item_button_ref@$button_ref": {
+          "tts_ignore_count": true,
+          "tts_skip_message": true,
+          "tts_inherit_siblings": true,
           "layer": 5
         }
       },

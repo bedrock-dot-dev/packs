@@ -132,7 +132,7 @@
     "shadow": false,
     "$welcome_text|default": "",
     "text": "$welcome_text",
-    "font_type": "#smooth_font"
+    "font_type": "smooth"
   },
 
   "welcome_text_panel@library_modal.text_panel": {

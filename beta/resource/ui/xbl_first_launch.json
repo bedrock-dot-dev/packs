@@ -59,7 +59,7 @@
     "type": "label",
     "size": [ "100%", "100%" ],
     "text": "#message",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "$message_scale_factor|default": 1.0,
     "variables": {
       "requires": "$has_platform_specific_prompt",

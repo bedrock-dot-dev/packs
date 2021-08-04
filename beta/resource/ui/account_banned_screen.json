@@ -109,7 +109,7 @@
           "type": "label",
           "size": [ "100%", "default" ],
           "text": "playfab.account.banned.body",
-          "font_type": "#smooth_font",
+          "font_type": "smooth",
           "color": "$body_text_color"
         }
       }

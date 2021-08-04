@@ -535,7 +535,7 @@
           "font_scale_factor": 0.75,
           "size": [ "100%", "25%" ],
           "layer": 15,
-          "font_type": "#smooth_font",
+          "font_type": "smooth",
           "color": "$dressing_room_right_side_default_text_color",
           "text": "#selected_skin_name",
           "bindings": [
@@ -862,17 +862,7 @@
   //// sides padding panel ////
   "buttons_sides_padding_panel": {
     "type": "panel",
-    "variables": [
-      {
-        "requires": "$supports_xbl_achievements",
-        "$sides_padding_size": [ "5%", 0 ]
-      },
-      {
-        "requires": "(not $supports_xbl_achievements)",
-        "$sides_padding_size": [ "27%", 0 ]
-      }
-    ],
-    "size": "$sides_padding_size"
+    "size": [ "27%", 0 ]
   },
 
   "sides_padding_panel": {
@@ -890,14 +880,6 @@
       { "edit_button@profile.edit_appearance_button_panel": {} },
       { "delete_button@profile.delete_appearance_button": {} },
       { "mid_padding@profile.horizontal_padding_8px": {} },
-      {
-        "achievements_button@profile.achievements_button": {}
-      },
-      {
-        "more_padding@profile.horizontal_padding_4px": {
-          "ignored": "(not $supports_xbl_achievements)"
-        }
-      },
       { "settings_button@profile.settings_button": {} },
       { "right_padding@profile.buttons_sides_padding_panel": {} }
     ]
@@ -1309,7 +1291,7 @@
     "$toast_text_alignment": "center",
     "$toast_anchor_from": "center",
     "$toast_anchor_to": "center",
-    "$toast_font_type": "#smooth_font",
+    "$toast_font_type": "smooth",
     "$offset_anims": [],
     "$alpha_anims": [
       "@persona.popup_anim_start"
@@ -1334,7 +1316,7 @@
       {
         "popup_dialog_message@popup_dialog.popup_dialog_message": {
           "color": "$dressing_room_right_side_default_text_color",
-          "font_type": "#smooth_font",
+          "font_type": "smooth",
           "font_scale_factor": 1.3,
           "size": [ "90% - 32px", "68%" ],
           "offset": [ 30, 4 ]

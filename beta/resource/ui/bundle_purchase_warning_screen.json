@@ -162,7 +162,7 @@
                 "type": "label",
                 "size": [ "100%", 10 ],
                 "text": "#offer_title",
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "color": "$store_light_grey_text_color",
                 "layer": 3,
                 "bindings": [
@@ -212,7 +212,7 @@
                 "type": "label",
                 "text": "$label_text",
                 "text_alignment": "center",
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "color": "$store_white_text_color"
               }
             }

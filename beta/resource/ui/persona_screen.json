@@ -478,7 +478,7 @@
                 "max_size": [ 100, "100%" ],
                 "layer": 3,
                 "font_scale_factor": 0.8,
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "color": "$dressing_room_sale_banner_text_color",
                 "$special_banner_text_binding_name|default": "#special_banner_text",
                 "text": "$special_banner_text_binding_name",
@@ -643,7 +643,7 @@
                 "size": [ "fill", 15 ],
                 "font_scale_factor": 0.75,
                 "layer": 15,
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "color": "$right_side_default_text_color",
                 "text": "#current_skin_name",
                 "bindings": [
@@ -659,7 +659,7 @@
                 "size": [ "fill", 15 ],
                 "font_scale_factor": 0.75,
                 "layer": 15,
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "color": "$right_side_default_text_color",
                 "text": "#active_skin_name",
                 "bindings": [
@@ -702,7 +702,7 @@
           "type": "label",
           "size": [ "100%", 20 ],
           "layer": 15,
-          "font_type": "#smooth_font",
+          "font_type": "smooth",
           "color": "$right_side_default_text_color",
           "text": "#preview_skin_name",
           "bindings": [
@@ -984,7 +984,7 @@
                             "layer": 2,
                             "color": "$right_side_default_text_color",
                             "text": "#right_panel_description",
-                            "font_type": "#smooth_font",
+                            "font_type": "smooth",
                             "bindings": [
                               {
                                 "binding_name": "#right_panel_description"
@@ -1334,7 +1334,7 @@
                       "text_alignment": "left",
                       "color": "$dressing_room_right_side_default_text_color",
                       "text": "#skin_pack_right_panel_usage_text",
-                      "font_type": "#smooth_font",
+                      "font_type": "smooth",
                       "bindings": [
                         {
                           "binding_type": "global",
@@ -1380,7 +1380,7 @@
           "$tooltip_panel_offset": [ "-14%", "-100%c - 2px" ],
           "$tooltip_popup_chevron_offset": [ "7%", "100%y - 3px" ],
           "$tooltip_chevron_anchor": "bottom_middle",
-          "$tooltip_text_font_type": "#smooth_font"
+          "$tooltip_text_font_type": "smooth"
         }
       },
       {
@@ -1677,11 +1677,13 @@
               "mapping_type": "pressed"
             },
             {
+              "ignored": "($controller_left_bumper_mapping = '')",
               "from_button_id": "button.menu_tab_left",
               "to_button_id": "$controller_left_bumper_mapping",
               "mapping_type": "focused"
             },
             {
+              "ignored": "($controller_right_bumper_mapping = '')",
               "from_button_id": "button.menu_tab_right",
               "to_button_id": "$controller_right_bumper_mapping",
               "mapping_type": "focused"
@@ -1839,7 +1841,7 @@
     "layer": 2,
     "size": [ "100% - 23px", "default" ],
     "text": "#right_panel_description",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "font_scale_factor": 0.85,
     "color": "$dressing_room_right_side_default_text_color",
     "bindings": [
@@ -3096,7 +3098,7 @@
                       "text_alignment": "left",
                       "color": "$dressing_room_right_side_default_text_color",
                       "text": "$text_binding_name",
-                      "font_type": "#smooth_font",
+                      "font_type": "smooth",
                       "bindings": [
                         {
                           "binding_type": "global",
@@ -3715,6 +3717,8 @@
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "$toggle_tts_enabled_binding_type": "global",
+    "$ignore_tts_enabled_bind": true,
+    "$toggle_focus_bind": "#is_top_bar_focus_enabled",
     "$radio_toggle_group": true,
     "$toggle_name": "navigation_tab",
     "$toggle_group_default_selected": "$default_tab",
@@ -3766,6 +3770,10 @@
     "type": "stack_panel",
     "orientation": "horizontal",
     "size": [ "100%", "100%" ],
+    "focus_container": true,
+    "focus_wrap_enabled": true,
+    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_container_custom_left": "$main_content_focus_container_left_custom",
     "controls": [
       { "customization_tab@persona.customization_tab": {} },
       { "skins_tab@persona.skins_tab": {} },
@@ -3900,11 +3908,13 @@
         "mapping_type": "focused"
       },
       {
+        "ignored": "($controller_left_bumper_mapping = '')",
         "from_button_id": "button.menu_tab_left",
         "to_button_id": "$controller_left_bumper_mapping",
         "mapping_type": "focused"
       },
       {
+        "ignored": "($controller_right_bumper_mapping = '')",
         "from_button_id": "button.menu_tab_right",
         "to_button_id": "$controller_right_bumper_mapping",
         "mapping_type": "focused"
@@ -4955,7 +4965,7 @@
     "$toast_text_alignment": "center",
     "$toast_anchor_from": "center",
     "$toast_anchor_to": "center",
-    "$toast_font_type": "#smooth_font",
+    "$toast_font_type": "smooth",
     "$offset_anims": [],
     "$alpha_anims": [
       "@persona.popup_anim_start"
@@ -5956,7 +5966,24 @@
                   {
                     "other_focus_container_name": "content_stack2"
                   }
-                ]
+                ],
+
+                "$is_sidebar_navigation_enabled|default": false,
+                "$focus_navigation_mode_up|default": "none",
+                "$focus_container_custom_up|default": [],
+                "variables": [
+                  {
+                    "requires": "(not $is_sidebar_navigation_enabled)",
+                    "$focus_navigation_mode_up": "custom",
+                    "$focus_container_custom_up": [
+                      {
+                        "other_focus_container_name": "persona_tabs_cape"
+                      }
+                    ]
+                  }
+                ],
+                "focus_nagivation_mode_up": "$focus_navigation_mode_up",
+                "focus_container_custom_up": "$focus_container_custom_up"
               }
             },
             { "bottom_panel_padding@persona.vertical_base_padding": {} }

@@ -79,7 +79,7 @@
         "noto_sans@settings_common.radio_item_with_label_and_content": {
           "$toggle_state_binding_name": "#typeface_radio_notoSans",
           "$radio_label_text": "typeface.notoSans",
-          "$radio_label_font_type": "#smooth_font"
+          "$radio_label_font_type": "smooth"
         }
       },
       {

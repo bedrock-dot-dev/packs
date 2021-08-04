@@ -745,7 +745,7 @@
     "type": "panel",
     "size": [ "100%", "100%c" ],
     "layer": 1,
-    "$description_font_type": "#smooth_font",
+    "$description_font_type": "smooth",
     "$description_font_scale_factor": 1.333,
     "controls": [
       {

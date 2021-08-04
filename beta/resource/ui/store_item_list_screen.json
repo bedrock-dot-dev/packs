@@ -114,7 +114,7 @@
     "size": [ "100%", 10 ],
     "text": "#title_label",
     "color": "$body_text_color",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "layer": 1,
     "bindings": [
       {
@@ -472,7 +472,7 @@
                             "size": [ "default", 10 ],
                             "offset": [ 0, 0.5 ],
                             "text": "#offer_prompt_text",
-                            "font_type": "#smooth_font",
+                            "font_type": "smooth",
                             "layer": 4,
                             "bindings": [
                               {

@@ -355,7 +355,7 @@
           "type": "label",
           "text": "-",
           "size": [ 4, "default" ],
-          "font_type": "#smooth_font",
+          "font_type": "smooth",
           "color": "$store_white_text_color"
         }
       },
@@ -364,7 +364,7 @@
           "type": "label",
           "text": "$info_text_line",
           "size": [ "fill", "default" ],
-          "font_type": "#smooth_font",
+          "font_type": "smooth",
           "color": "$store_white_text_color",
           "bindings": "$text_bindings"
         }

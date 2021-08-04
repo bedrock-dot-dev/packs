@@ -817,7 +817,7 @@
 					"color": "$main_header_text_color",
 					"size": [ "100%-8px", "default" ],
 					"text": "$radio_label_desc",
-					"font_type": "#smooth_font",
+					"font_type": "smooth",
 					"font_scale_factor": 1.333,
 					"shadow": false
 				}

@@ -2557,17 +2557,17 @@
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "text": "#size",
-    "font_type": "#smooth_font"
+    "font_type": "smooth"
   }, //pack size text,
 
   "description_label@resource_packs.white_label": {
     "text": "$bottom_description_text",
-    "font_type": "#smooth_font"
+    "font_type": "smooth"
   }, //white text for description, no edit
 
   "pack_label@resource_packs.white_label": {
     "text": "#description",
-    "font_type": "#smooth_font"
+    "font_type": "smooth"
   }, //grey text for description,
 
   "selected_pack_description_label@resource_packs.pack_label": {
@@ -2828,7 +2828,7 @@
           "controls": [
             {
               "option_info_label@settings_common.option_info_label": {
-                "$used_fonttype": "#smooth_font",
+                "$used_fonttype": "smooth",
                 "$container_text_binding_name": "#world_template_option_locked_warning_text",
                 "$show_option_label": false
               }
@@ -3043,7 +3043,7 @@
                             "layer": 1,
                             "size": [ "100%-2px", "100%" ],
                             "text": "$default_item_description",
-                            "font_type": "#smooth_font",
+                            "font_type": "smooth",
                             "offset": [ 1, 0 ]
                           }
                         }

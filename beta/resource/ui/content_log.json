@@ -34,7 +34,7 @@
     "type": "label",
     "layer": 31,
     "text": "#text",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "size": [ "100%", "default" ],
     "shadow": true,
     "localize": false,

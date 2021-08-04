@@ -297,7 +297,7 @@
     "text": "#price_text",
     "layer": 5,
     "text_alignment": "center",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "bindings": [
       {
         "binding_name": "$price_visible",

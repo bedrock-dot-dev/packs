@@ -39,7 +39,7 @@
     "anchor_to": "top_left",
     "layer": 1,
     "color": "$body_text_color",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "text_alignment": "left"
   },
 
@@ -522,6 +522,8 @@
       { "teams_padding_middle@common.empty_panel": { "size": [ "100%", 10 ] } },
       {
         "resource_button@common_buttons.light_text_button": {
+          "$focus_override_up": "copy_button",
+          "$focus_override_right": "teams_button",
           "size": [ "100%", 18 ],
           "$pressed_button_name": "button.resource_button",
           "$button_text": "($share_source + '.item.sharepopup.addResourceButton')",
@@ -559,18 +561,30 @@
             { "padding_left@common.empty_panel": { "size": [ "fill", "100%sm" ] } },
             {
               "resource_button@edu_pause.shared_resource_uri_button": {
+                "$focus_id": "resource_button",
+                "$focus_override_up": "copy_button",
+                "$focus_override_left": "copy_button",
                 "size": [ "100% - 150px", 20 ]
               }
             },
             { "padding_middle@common.empty_panel": { "size": [ 1, 4 ] } },
             {
               "edit_resource_uri_button@common_buttons.light_glyph_button": {
+                "$focus_id": "edit_resource_uri_button",
+                "$focus_override_up": "copy_button",
+                "$focus_override_right": "teams_button",
                 "size": [ 20, 20 ],
                 "$glyph_size": [ 16, 16 ],
                 "layer": 1,
                 "$button_content": "edu_common.edit_resource_uri_glyph",
                 "$pressed_button_name": "button.resource_button",
-                "$button_tts_name": "($share_source + '.item.sharepopup.editResource.button.accessibility')"
+                "$button_tts_name": "($share_source + '.item.sharepopup.editResource.button.accessibility')",
+                "variables": [
+                  {
+                    "requires": "($apple_os and $supports_clipboard)",
+                    "$focus_override_right": "mail_button"
+                  }
+                ]
               }
             },
             { "padding_right@common.empty_panel": { "size": [ "fill", 4 ] } }
@@ -589,8 +603,7 @@
     "$body_size|default": [ "100%", 10 ],
     "$body_font_size|default": 1.0,
     "$icons_ignored|default": true,
-    "$add_resources_ignored|default": true,
-    "$edit_resources_ignored|default": true,
+    "$resource_uri_state|default": "",
 
     "controls": [
       {
@@ -607,7 +620,22 @@
         }
       },
       { "padding_middle@common.empty_panel": { "size": [ "100%sm", 4 ] } },
-      { "icons@edu_common.icon_section": { "ignored": "$icons_ignored" } },
+      {
+        "icons@edu_common.icon_section": {
+          "ignored": "$icons_ignored",
+          "$focus_down": "copy_button",
+          "variables": [
+            {
+              "requires": "($resource_uri_state = 'add_resource')",
+              "$wrap_focus_left": "button.resource_button"
+            },
+            {
+              "requires": "($resource_uri_state = 'edit_resource')",
+              "$wrap_focus_left": "edit_resource_uri_button"
+            }
+          ]
+        }
+      },
       {
         "copy_link_centering_panel@edu_common.vertical_stack_item": {
           "controls": [
@@ -615,8 +643,8 @@
           ]
         }
       },
-      { "add_resources@edu_common.add_resources_section": { "ignored": "$add_resources_ignored" } },
-      { "edit_resources@edu_common.edit_resources_section": { "ignored": "$edit_resources_ignored" } }
+      { "add_resources@edu_common.add_resources_section": { "ignored": "(not ($resource_uri_state = 'add_resource'))" } },
+      { "edit_resources@edu_common.edit_resources_section": { "ignored": "(not ($resource_uri_state = 'edit_resource'))" } }
     ]
   },
 
@@ -629,7 +657,7 @@
     "$body_size": [ "100% - 5px", "default" ],
     "$popup_body_text": "$teams_body_content_stack_text",
     "$icons_ignored": false,
-    "$add_resources_ignored": false
+    "$resource_uri_state": "add_resource"
   },
 
   "teams_body_resource_content_stack@edu_common.body_content_stack": {
@@ -637,7 +665,7 @@
     "$body_font_size": 0.92,
     "$popup_body_text": "$share_resource_added_text",
     "$icons_ignored": false,
-    "$edit_resources_ignored": false
+    "$resource_uri_state": "edit_resource"
   },
 
   "add_resource_body_content_stack": {
@@ -853,6 +881,8 @@
     "orientation": "horizontal",
     "size": [ "100%", 22 ],
     "$placeholder_text": "#share_link",
+    "$focus_left|default": "classrooms_button",
+    "$focus_right|default": "resource_button",
     "controls": [
       {
         "link_box@common.text_edit_box": {
@@ -868,6 +898,9 @@
       },
       {
         "copy_button@common_buttons.light_content_button": {
+          "$focus_id": "copy_button",
+          "$focus_override_left": "$focus_left",
+          "$focus_override_right": "$focus_right",
           "$button_content": "edu_common.share_label",
           "$pressed_button_name": "button.copy_share_link",
           "size": [ 22, 22 ]
@@ -881,10 +914,15 @@
     "size": [ "100%", 10 ],
     "offset": [ 0, 1 ],
     "orientation": "horizontal",
+    "$focus_down|default": "copy_button",
+    "$wrap_focus_left|default": "copy_button",
     "controls": [
       { "padding_left@common.empty_panel": { "size": [ "fill", "100%" ] } },
       {
         "teams_button@edu_common.default_share_button": {
+          "$focus_id": "teams_button",
+          "$focus_override_down": "$focus_down",
+          "$focus_override_left": "$wrap_focus_left",
           "$share_image": "textures/ui/teams_icon",
           "$pressed_button_name": "button.teams_share",
           "$image_size": [ "100%", "100%" ],
@@ -899,6 +937,8 @@
       },
       {
         "mail_button@edu_common.default_share_button": {
+          "$focus_id": "mail_button",
+          "$focus_override_down": "$focus_down",
           "$share_image": "textures/ui/mail_icon",
           "$pressed_button_name": "button.mail_share",
           "$image_size": [ "100% - 6px", "100% - 4px" ]
@@ -911,6 +951,8 @@
       },
       {
         "classrooms_button@edu_common.default_share_button": {
+          "$focus_id": "classrooms_button",
+          "$focus_override_down": "$focus_down",
           "$share_image": "textures/ui/classrooms_icon",
           "$pressed_button_name": "button.classrooms_share",
           "$image_size": [ "100% - 4px", "100% - 4px" ]

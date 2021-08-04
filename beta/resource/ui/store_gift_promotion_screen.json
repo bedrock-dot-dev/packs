@@ -62,7 +62,7 @@
 
     "$tooltip_button_binding_type": "none",
     "$tooltip_text_binding_name": "store.promo.tooltip",
-    "$tooltip_text_font_type": "#smooth_font",
+    "$tooltip_text_font_type": "smooth",
     "$tooltip_text_font_scale": 0.8,
     "$tooltip_popup_override_image_panel": "gift_promo.timer_icon_tooltip_panel",
     "$override_tooltip_popup_image": true,
@@ -108,7 +108,7 @@
   "promotion_item_description": {
     "type": "label",
     "size": [ "100%", "default" ],
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "font_scale_factor": 0.8,
     "text": "#item_description_text",
     "color": "$body_text_color",
@@ -177,7 +177,7 @@
               "timer_text": {
                 "type": "label",
                 "size": [ "100%", "default" ],
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "font_scale_factor": 0.8,
                 "color": "$coin_color",
                 "text": "#item_timer_text",
@@ -251,7 +251,7 @@
               "text": {
                 "type": "label",
                 "size": [ "100%", "default" ],
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "font_scale_factor": 0.8,
                 "color": "$body_text_color",
                 "text": "store.mashup.count.world"
@@ -285,7 +285,7 @@
   "free_discount_label": {
     "type": "label",
     "size": [ "default", 10 ],
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "text": "storageManager.share.totalPercent",
     "color": "$store_sales_banner_text_color",
     "layer": 10
@@ -352,7 +352,7 @@
                       "layer": 4,
                       "color": "$text_color",
                       "text": "#item_full_price",
-                      "font_type": "#smooth_font",
+                      "font_type": "smooth",
                       "bindings": [
                         {
                           "binding_name": "#item_full_price"

@@ -60,7 +60,7 @@
               "header_text": {
                 "type": "label",
                 "text": "#unlink_warning_text",
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "font_scale_factor": 1.2,
                 "color": "$body_text_color",
                 "size": [ "100%", "default" ],
@@ -81,7 +81,7 @@
               "header_text_2": {
                 "type": "label",
                 "text": "options.unlink_msa.confirm.warning.2",
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "font_scale_factor": 1.2,
                 "color": "$body_text_color",
                 "size": [ "100%", "default" ]
@@ -192,7 +192,7 @@
                 "type": "label",
                 "size": [ "100%", "default" ],
                 "max_size": [ "100%", "100%" ],
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "font_scale_factor": 1.2,
                 "text": "$checkbox_text",
                 "color": "$body_text_color"

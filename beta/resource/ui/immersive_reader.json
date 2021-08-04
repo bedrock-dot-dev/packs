@@ -141,7 +141,7 @@
           "max_size": [ "100%", "fill" ],
           "size": [ "default", "fill" ],
           "text": "#error_text",
-          "font_type": "#smooth_font",
+          "font_type": "smooth",
           "font_scale_factor": 1.2,
           "bindings": [
             {

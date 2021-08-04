@@ -44,7 +44,7 @@
                 "type": "label",
                 "size": [ "fill", "default" ],
                 "text": "#text",
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "color": "$main_header_text_color",
                 "bindings": [
                   {

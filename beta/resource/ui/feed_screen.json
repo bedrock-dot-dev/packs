@@ -1095,7 +1095,7 @@
     "size": [ "80%", "default" ],
     "text_alignment": "center",
     "layer": 1,
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "bindings": [
       {
         "binding_name": "#textpost_content",

@@ -2542,7 +2542,7 @@
                     "name_label2": {
                       "type": "label",
                       "color": "$main_header_text_color",
-                      "font_type": "#smooth_font",
+                      "font_type": "smooth",
                       "size": [ "100%", "default" ],
                       "$warning_text|default": "options.viewSubscriptions.consumableToSubscriptionTransitionInfo",
                       "$text_bindings|default": [],
@@ -2601,7 +2601,7 @@
                     "name_label2": {
                       "type": "label",
                       "color": "$main_header_text_color",
-                      "font_type": "#smooth_font",
+                      "font_type": "smooth",
                       "size": [ "100%", "default" ],
                       "$warning_text|default": "options.viewSubscriptions.boughtOnAnotherDevice",
                       "$text_bindings|default": [],
@@ -2673,7 +2673,7 @@
                 "text": "$description",
                 "text_alignment": "left",
                 "color": "$body_text_color",
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "size": [ "100%", "fill" ],
                 "$description_bindings|default": [
                   {
@@ -2777,7 +2777,7 @@
               "renews_text": {
                 "type": "label",
                 "color": "$main_header_text_color",
-                "font_type": "#smooth_font",
+                "font_type": "smooth",
                 "anchor_from": "top_left",
                 "anchor_to": "top_left",
                 "layer": 3,
@@ -6596,8 +6596,8 @@
       },
       {
         "@settings_common.radio_with_label": {
-          "$toggle_state_binding_name": "#transport_layer_websockets",
-          "$radio_label_text": "options.dev_transport_layer.websockets"
+          "$toggle_state_binding_name": "#transport_layer_nethernet_websockets",
+          "$radio_label_text": "options.dev_transport_layer.nethernet_websockets"
         }
       }
     ]

@@ -71,7 +71,7 @@
     "localize": false,
     "size": [ "100%", "default" ],
     "text": "#text",
-    "font_type": "#smooth_font",
+    "font_type": "smooth",
     "line_padding": 1,
     "font_scale_factor": 1,
     "bindings": [
