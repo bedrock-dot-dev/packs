@@ -474,10 +474,7 @@
   //body
   "body_panel": {
     "type": "panel",
-    "offset": [ 11, 23 ],
-    "size": [ "100% - 22px", "100%c + 18px" ],
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
+    "size": [ 300, "100%cm" ],
     "layer": 1,
 
     "$body_stack|default": "edu_common.body_content_stack",
@@ -490,14 +487,21 @@
   "teams_body_panel@edu_common.body_panel": {
     "$body_stack": "edu_common.teams_body_content_stack"
   },
+
   "teams_body_resource_panel@edu_common.body_panel": {
     "$body_stack": "edu_common.teams_body_resource_content_stack"
   },
+
   "teams_simple_body_resource_panel@edu_common.body_panel": {
     "$body_stack": "edu_common.teams_simple_body_content_stack"
   },
+
+  "joincode_body_panel@edu_common.body_panel": {
+    "$body_stack": "edu_common.joincode_body_content_stack"
+  },
+
   "add_resource_body_panel@edu_common.body_panel": {
-    "$body_stack": "edu_common.add_resource_body_content_stack"
+    "$body_stack": "edu_common.add_edit_resource_body_content_stack"
   },
 
   "icon_section": {
@@ -512,19 +516,18 @@
   "add_resources_section": {
     "type": "stack_panel",
     "controls": [
-      { "divider@edu_common.horizontal_divider": { "size": [ "100%", 22 ] } },
+      { "divider@edu_common.horizontal_divider": { "size": [ "100%", 20 ] } },
       {
         "add_resource_label@edu_common.share_dialog_body_text": {
-          "font_scale_factor": 0.95,
-          "text": "($share_source + '.item.sharepopup.secondayText')"
+          "text": "($share_source + '.item.sharepopup.secondaryText')"
         }
       },
-      { "teams_padding_middle@common.empty_panel": { "size": [ "100%", 10 ] } },
+      { "teams_padding_middle@common.empty_panel": { "size": [ "100%", 8 ] } },
       {
         "resource_button@common_buttons.light_text_button": {
           "$focus_override_up": "copy_button",
           "$focus_override_right": "teams_button",
-          "size": [ "100%", 18 ],
+          "size": [ "100%", 24 ],
           "$pressed_button_name": "button.resource_button",
           "$button_text": "($share_source + '.item.sharepopup.addResourceButton')",
           "focus_identifier": "$pressed_button_name"
@@ -536,6 +539,7 @@
   "edit_resource_uri_glyph": {
     "type": "image",
     "layer": 2,
+    "$glyph_size|default": [ 22, 16 ],
     "size": "$glyph_size",
     "texture": "textures/ui/editIcon"
   },
@@ -543,14 +547,13 @@
   "edit_resources_section": {
     "type": "stack_panel",
     "controls": [
-      { "divider@edu_common.horizontal_divider": { "size": [ "100%", 30 ] } },
+      { "divider@edu_common.horizontal_divider": { "size": [ "100%", 20 ] } },
       {
         "resource_label_text@edu_common.share_dialog_body_text": {
-          "font_scale_factor": 0.95,
           "text": "($share_source + '.item.sharepopup.editResourceLabel')"
         }
       },
-      { "teams_padding_middle@common.empty_panel": { "size": [ "100%", 10 ] } },
+      { "teams_padding_middle@common.empty_panel": { "size": [ "100%", 8 ] } },
       {
         "edit_resource_body_button_stack": {
           "type": "stack_panel",
@@ -558,13 +561,12 @@
           "layer": 5,
           "size": [ "100%", "100%cm" ],
           "controls": [
-            { "padding_left@common.empty_panel": { "size": [ "fill", "100%sm" ] } },
             {
               "resource_button@edu_pause.shared_resource_uri_button": {
                 "$focus_id": "resource_button",
                 "$focus_override_up": "copy_button",
                 "$focus_override_left": "copy_button",
-                "size": [ "100% - 150px", 20 ]
+                "size": [ "fill", "100%sm" ]
               }
             },
             { "padding_middle@common.empty_panel": { "size": [ 1, 4 ] } },
@@ -573,8 +575,7 @@
                 "$focus_id": "edit_resource_uri_button",
                 "$focus_override_up": "copy_button",
                 "$focus_override_right": "teams_button",
-                "size": [ 20, 20 ],
-                "$glyph_size": [ 16, 16 ],
+                "size": [ 28, 24 ],
                 "layer": 1,
                 "$button_content": "edu_common.edit_resource_uri_glyph",
                 "$pressed_button_name": "button.resource_button",
@@ -586,8 +587,7 @@
                   }
                 ]
               }
-            },
-            { "padding_right@common.empty_panel": { "size": [ "fill", 4 ] } }
+            }
           ]
         }
       }
@@ -612,8 +612,7 @@
             {
               "body_text@edu_common.share_dialog_body_text": {
                 "font_scale_factor": "$body_font_size",
-                "size": "$body_size",
-                "text_alignment": "center"
+                "size": "$body_size"
               }
             }
           ]
@@ -662,25 +661,32 @@
 
   "teams_body_resource_content_stack@edu_common.body_content_stack": {
     "$body_size": [ "100% - 5px", "default" ],
-    "$body_font_size": 0.92,
     "$popup_body_text": "$share_resource_added_text",
     "$icons_ignored": false,
     "$resource_uri_state": "edit_resource"
+  },
+
+  "joincode_body_content_stack@edu_common.body_content_stack": {
+    "$body_size": [ "100% - 4px", 40 ],
+    "$body_font_size": 1.1,
+    "$popup_body_text": "joincode.popup.body",
+    "$icons_ignored": false,
+    "$add_resources_ignored": true,
+    "$edit_resources_ignored": true
   },
 
   "add_resource_body_content_stack": {
     "type": "stack_panel",
     "orientation": "vertical",
     "layer": 5,
-    "size": [ "100%", "100%c" ],
+    "size": [ "100%", "default" ],
     "controls": [
       {
         "label_one_centering_panel@edu_common.vertical_stack_item": {
           "controls": [
             {
               "teams_share_label@edu_common.share_dialog_body_text": {
-                "text": "($share_source + '.item.sharepopup.addResource.labelOne')",
-                "font_scale_factor": 0.95
+                "text": "($share_source + '.item.sharepopup.addResource.labelOne')"
               }
             }
           ]
@@ -692,8 +698,7 @@
           "controls": [
             {
               "teams_share_label@edu_common.share_dialog_body_text": {
-                "text": "($share_source + '.item.sharepopup.addResource.labelTwo')",
-                "font_scale_factor": 0.95
+                "text": "($share_source + '.item.sharepopup.addResource.labelTwo')"
               }
             }
           ]
@@ -705,14 +710,19 @@
           "$single_label_size": [ "default", "default" ],
           "$single_line_font_scale_factor": 1,
           "$pressed_button_name": "button.add_resource_learn_more",
-          "$single_line_label_text": "($share_source + '.item.sharepopup.addResource.learnMoreLinkText')"
+          "$single_line_label_text": "($share_source + '.item.sharepopup.addResource.learnMoreLinkText')",
+          "$focus_id": "button.add_resource_learn_more",
+          "$focus_override_left": "button.leave_add_resource",
+          "$focus_override_up": "button.leave_add_resource",
+          "$focus_override_right": "url_textbox",
+          "$focus_override_down": "url_textbox"
         }
       },
       { "url_padding_middle@common.empty_panel": { "size": [ "100%sm", 10 ] } },
       {
         "url_label@edu_common.share_dialog_body_text": {
           "text": "($share_source + '.item.sharepopup.addResource.urlLabel')",
-          "$focus_id": "url_textbox"
+          "$focus_id": "url_textbox_label"
         }
       },
       {
@@ -720,88 +730,198 @@
           "layer": 2,
           "size": [ "100%", 20 ],
           "$text_box_name": "#textbox.url",
-          "$text_edit_box_content_binding_name": "#textbox_content.url",
+          "$text_edit_box_content_binding_name": "#textbox.url.content",
           "$place_holder_text": "($share_source + '.item.sharepopup.addResource.urlHintText')",
           "$focus_id": "url_textbox",
+          "focus_change_left": "button.add_resource_learn_more",
+          "focus_change_up": "button.add_resource_learn_more",
+          "focus_change_right": "button_name",
+          "focus_change_down": "button_name",
           "max_length": 512
         }
       },
+      {
+        "inline_notification@edu_common.inline_notification": {
+          "$state": "error",
+          "$warning_text": "($share_source + '.item.sharepopup.addResource.invalidSchema'",
+          "bindings": [
+            {
+              "binding_name": "#has_resource_uri_error",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      { "inline_notification_spacer@common.empty_panel": { "size": [ "100%sm", 5 ] } },
       {
         "button_name_label@edu_common.share_dialog_body_text": {
           "text": "($share_source + '.item.sharepopup.addResource.buttonNameLabel')",
           "$focus_id": "button_name"
         }
       },
+      { "button_middle_spacer@common.empty_panel": { "size": [ "100%sm", 2 ] } },
       {
         "button_name_textbox@common.text_edit_box": {
           "layer": 2,
           "size": [ "100%", 20 ],
-          "$text_box_name": "#textbox.button_name",
-          "$text_edit_box_content_binding_name": "#textbox_content.button_name",
+          "$text_box_name": "#textbox.buttonName",
+          "$text_edit_box_content_binding_name": "#textbox.buttonName.content",
           "$place_holder_text": "($share_source + '.item.sharepopup.addResource.buttonNameHintText')",
           "$focus_id": "button_name",
-          "max_length": 20
+          "max_length": 20,
+          "focus_change_up": "url_textbox",
+          "focus_change_left": "url_textbox",
+          "focus_change_right": "button.done_add_resource_button",
+          "focus_change_down": "button.done_add_resource_button",
+          "bindings": [
+            {
+              "binding_name": "#resource_uri_done_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
         }
       },
-      { "button_padding_top@common.empty_panel": { "size": [ "100%sm", 5 ] } },
       {
-        "add_edit_resource_body_button_stack": {
-          "type": "stack_panel",
-          "orientation": "horizontal",
-          "layer": 5,
-          "size": [ "100%", "100%cm" ],
+        "button_name_textbox_next_disabled@common.text_edit_box": {
+          "layer": 2,
+          "size": [ "100%", 20 ],
+          "$text_box_name": "#textbox.buttonName",
+          "$text_edit_box_content_binding_name": "#textbox.buttonName.content",
+          "$place_holder_text": "($share_source + '.item.sharepopup.addResource.buttonNameHintText')",
+          "$focus_id": "button_name",
+          "max_length": 20,
+          "focus_change_up": "url_textbox",
+          "focus_change_left": "url_textbox",
+          "focus_change_right": "button.leave_add_resource",
+          "focus_change_down": "button.leave_add_resource",
+          "bindings": [
+            {
+              "binding_name": "(not #resource_uri_done_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "add_edit_resource_body_content_stack": {
+    "type": "panel",
+    "layer": 5,
+    "size": [ "100%", 128 ],
+    "controls": [
+      {
+        "scroll_content": {
+          "type": "panel",
+          "size": [ "100%", 128 ],
+          "anchor_to": "top_left",
+          "anchor_from": "top_left",
           "controls": [
             {
-              "done_button@common_buttons.light_text_button": {
-                "size": [ "fill", 18 ],
-                "$pressed_button_name": "button.done_add_resource_button",
-                "$button_text": "($share_source + '.item.sharepopup.addResource.doneButton')",
-                "focus_identifier": "$pressed_button_name",
+              "scrolling_panel@common.scrolling_panel": {
+                "$scrolling_content": "edu_common.add_resource_body_content_stack",
+                "$show_background": false,
+                "$scroll_size": [ 5, "100%" ],
+                "$scroll_bar_left_padding_size": [ 1, 0 ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "resource_popup_buttons": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%" ],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "done_button@common_buttons.light_text_button": {
+          "size": [ "fill", "100%" ],
+          "$pressed_button_name": "button.done_add_resource_button",
+          "$button_text": "($share_source + '.item.sharepopup.addResource.doneButton')",
+          "focus_identifier": "$pressed_button_name",
+          "focus_change_left": "button_name",
+          "bindings": [
+            {
+              "binding_name": "#resource_uri_done_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      { "button_padding@common.empty_panel": { "size": [ 2, "100%" ] } },
+      {
+        "back_button_panel": {
+          "size": [ "fill", "100%" ],
+          "type": "panel",
+          "controls": [
+            {
+              "back_button_enabled@common_buttons.light_text_button": {
+                "size": [ "100%", "100%" ],
+                "$pressed_button_name": "$back_button_name",
+                "$button_text": "$back_button_text",
+                "focus_identifier": "button.leave_add_resource",
+                "focus_change_right": "button.add_resource_learn_more",
+                "focus_change_down": "button.add_resource_learn_more",
                 "bindings": [
                   {
-                    "binding_name": "#is_url_resouce_valid",
-                    "binding_name_override": "#enabled"
+                    "binding_name": "#resource_uri_done_enabled",
+                    "binding_name_override": "#visible"
                   }
                 ]
               }
             },
-            { "button_padding_middle@common.empty_panel": { "size": [ 2, "100%sm" ] } },
             {
-              "cancel_delete_panel_stack": {
-                "type": "panel",
-                "layer": 5,
-                "size": [ "fill", "100%cm" ],
-                "controls": [
+              "back_button_disabled@common_buttons.light_text_button": {
+                "size": [ "100%", "100%" ],
+                "$pressed_button_name": "$back_button_name",
+                "$button_text": "$back_button_text",
+                "focus_identifier": "button.leave_add_resource",
+                "focus_change_left": "button_name",
+                "focus_change_right": "button.add_resource_learn_more",
+                "focus_change_down": "button.add_resource_learn_more",
+                "bindings": [
                   {
-                    "remove_button@common_buttons.light_text_button": {
-                      "size": [ "100%", 18 ],
-                      "$pressed_button_name": "button.delete_resource_button",
-                      "$button_text": "($share_source + '.item.sharepopup.addResource.deleteButton')",
-                      "focus_identifier": "$pressed_button_name",
-                      "bindings": [
-                        {
-                          "binding_name": "#has_edu_external_link",
-                          "binding_name_override": "#visible"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "cancel_button@common_buttons.light_text_button": {
-                      "size": [ "100%", 18 ],
-                      "$pressed_button_name": "button.cancel_add_resource_button",
-                      "$button_text": "($share_source + '.item.sharepopup.addResource.cancelButton')",
-                      "focus_identifier": "$pressed_button_name",
-                      "bindings": [
-                        {
-                          "binding_name": "#is_adding_resource",
-                          "binding_name_override": "#visible"
-                        }
-                      ]
-                    }
+                    "binding_name": "(not #resource_uri_done_enabled)",
+                    "binding_name_override": "#visible"
                   }
                 ]
               }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "add_resource_popup_lower_button_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "$back_button_text|default": "",
+    "$back_button_name|default": "",
+    "controls": [
+      {
+        "edit_resource_popup_buttons@edu_common.resource_popup_buttons": {
+          "$back_button_name": "button.delete_resource_button",
+          "$back_button_text": "($share_source + '.item.sharepopup.addResource.deleteButton')",
+          "bindings": [
+            {
+              "binding_name": "#has_edu_external_link",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "add_resource_popup_buttons@edu_common.resource_popup_buttons": {
+          "$back_button_name": "button.cancel_add_resource_button",
+          "$back_button_text": "($share_source + '.item.sharepopup.addResource.cancelButton')",
+          "bindings": [
+            {
+              "binding_name": "#is_adding_resource",
+              "binding_name_override": "#visible"
             }
           ]
         }
@@ -813,6 +933,7 @@
     "type": "label",
     "color": "$body_text_color",
     "$popup_body_text|default": "($share_source + '.item.sharepopup.body')",
+    "font_type": "smooth",
     "text": "$popup_body_text",
     "size": [ "100%", "default" ],
     "layer": 1,
@@ -820,7 +941,6 @@
     "anchor_to": "top_middle"
   },
 
-  
   "share_icon": {
     "type": "image",
     "layer": 2,
@@ -843,25 +963,25 @@
             {
               "requires": "($apple_os and $supports_share)",
               "$share_icon_texture": "textures/ui/share_apple",
-              "$share_icon_offset": [ 3.5, -1.5 ],
+              "$share_icon_offset": [ 3.5, 0.5 ],
               "$share_icon_size": [ 11, 15 ]
             },
             {
               "requires": "(($microsoft_os or (not $apple_os and not $google_os)) and $supports_share)",
               "$share_icon_texture": "textures/ui/share_microsoft",
-              "$share_icon_offset": [ 2.5, -0.5 ],
+              "$share_icon_offset": [ 2.0, 2.0 ],
               "$share_icon_size": [ 15, 13 ]
             },
             {
               "requires": "($google_os and $supports_share)",
               "$share_icon_texture": "textures/ui/share_google",
-              "$share_icon_offset": [ 2.0, -0.5 ],
+              "$share_icon_offset": [ 2.0, 1.0 ],
               "$share_icon_size": [ 14, 13 ]
             },
             {
               "requires": "($supports_clipboard and not $supports_share)",
               "$share_icon_texture": "textures/ui/copy",
-              "$share_icon_offset": [ 1.5, -0.5 ],
+              "$share_icon_offset": [ 2.0, 1.0 ],
               "$share_icon_size": [ 13, 14 ]
             }
           ],
@@ -879,14 +999,14 @@
   "copy_link_stack_panel": {
     "type": "stack_panel",
     "orientation": "horizontal",
-    "size": [ "100%", 22 ],
+    "size": [ "100%", "100%cm" ],
     "$placeholder_text": "#share_link",
     "$focus_left|default": "classrooms_button",
     "$focus_right|default": "resource_button",
     "controls": [
       {
         "link_box@common.text_edit_box": {
-          "size": [ "fill", 22 ],
+          "size": [ "fill", "100%sm" ],
           "enabled": false,
           "$text_edit_box_enabled_binding_type": "none",
           "$text_edit_box_label_anchor_point": "left_middle",
@@ -903,7 +1023,7 @@
           "$focus_override_right": "$focus_right",
           "$button_content": "edu_common.share_label",
           "$pressed_button_name": "button.copy_share_link",
-          "size": [ 22, 22 ]
+          "size": [ "100%y", 24 ]
         }
       }
     ]
@@ -1018,7 +1138,7 @@
   "horizontal_divider": {
     "type": "panel",
     "size": [ "100%", 8 ],
-    "$alpha|default":  0.1,
+    "$alpha|default": 0.1,
     "controls": [
       {
         "divider": {
@@ -1191,96 +1311,51 @@
     ]
   },
 
-  //Popup dialog and factory
-  "edu_share_popup_dialog@popup_dialog.popup_dialog": {
-    "size": [ 300, "100%cm" ],
-    "$background_control|default": "common.dialog_background_hollow_3",
-    "$header_control|default": "edu_common.share_header_panel",
-    "$body_content_control|default": "edu_common.body_panel",
-    "controls": [
-      {
-        "background@$background_control": {
-          "$fill_alpha": 1.0,
-          "size": [ "100%", "100%sm + 28px" ]
-        }
-      },
-      {
-        "header@$header_control": {}
-      },
-      {
-        "body_content@$body_content_control": {}
-      }
-    ],
-    "$close_button_id|default": "button.close_share_popup",
-    "button_mappings": [
-      {
-        "from_button_id": "button.menu_cancel",
-        "to_button_id": "$close_button_id",
-        "mapping_type": "global"
-      },
-      {
-        "from_button_id": "button.menu_exit",
-        "to_button_id": "$close_button_id",
-        "mapping_type": "global"
-      },
-      {
-        "from_button_id": "button.menu_up",
-        "to_button_id": "button.menu_up",
-        "mapping_type": "global",
-        "scope": "view"
-      },
-      {
-        "from_button_id": "button.menu_down",
-        "to_button_id": "button.menu_down",
-        "mapping_type": "global",
-        "scope": "view"
-      },
-      {
-        "from_button_id": "button.menu_left",
-        "to_button_id": "button.menu_left",
-        "mapping_type": "global",
-        "scope": "view"
-      },
-      {
-        "from_button_id": "button.menu_right",
-        "to_button_id": "button.menu_right",
-        "mapping_type": "global",
-        "scope": "view"
-      }
-    ]
-  },
-
-  "edu_share_text_popup@edu_common.edu_share_popup_dialog": {
-    "$background_control": "common.dialog_background_hollow_3",
-    "$header_control": "edu_common.share_header_panel",
-    "$body_content_control": "edu_common.body_panel"
-  },
-
-  //Popup dialog and factory
-  "teams_edu_share_text_popup@edu_common.edu_share_popup_dialog": {
-    "$background_control": "common.dialog_background_hollow_3",
-    "$header_control": "edu_common.teams_advanced_share_header_panel",
-    "$body_content_control": "edu_common.teams_body_panel"
-  },
-
-  "teams_edu_share_resource_popup@edu_common.edu_share_popup_dialog": {
-    "$background_control": "common.dialog_background_hollow_3",
-    "$header_control": "edu_common.teams_advanced_share_header_panel",
-    "$body_content_control": "edu_common.teams_body_resource_panel"
-  },
-
-  "teams_edu_simple_share_resource_popup@edu_common.edu_share_popup_dialog": {
-    "$background_control": "common.dialog_background_hollow_3",
-    "$header_control": "edu_common.share_header_panel",
-    "$body_content_control": "edu_common.teams_simple_body_resource_panel"
-  },
-
   // Popup dialog and factory
-  "add_resource_dialog@edu_common.edu_share_popup_dialog": {
-    "$background_control": "common.dialog_background_hollow_3",
-    "$header_control": "edu_common.add_resource_share_header_panel",
-    "$body_content_control": "edu_common.add_resource_body_panel",
-    "$close_button_id": "button.cancel_add_resource_button"
+  "edu_share_text_popup@popup_dialog.form_fit_modal_dialog_popup": {
+    "$modal_title": "($share_source + '.item.sharepopup.title.simple')",
+    "$modal_contents": "edu_common.body_panel",
+    "$modal_contents_padding": [ 6, 6 ],
+    "$popup_dialog_escape_button_name": "button.close_share_popup"
+  },
+
+  "teams_edu_share_text_popup@popup_dialog.form_fit_modal_dialog_popup": {
+    "$modal_title": "$teams_advanced_share_header_text",
+    "$modal_contents": "edu_common.teams_body_panel",
+    "$modal_contents_padding": [ 6, 6 ],
+    "$popup_dialog_escape_button_name": "button.close_share_popup"
+  },
+
+  "teams_edu_share_resource_popup@popup_dialog.form_fit_modal_dialog_popup": {
+    "$modal_title": "$teams_advanced_share_header_text",
+    "$modal_contents": "edu_common.teams_body_resource_panel",
+    "$modal_contents_padding": [ 6, 6 ],
+    "$popup_dialog_escape_button_name": "button.close_share_popup"
+  },
+
+  "teams_edu_simple_share_resource_popup@popup_dialog.form_fit_modal_dialog_popup": {
+    "$modal_title": "($share_source + '.item.sharepopup.title.simple')",
+    "$modal_contents": "edu_common.teams_simple_body_resource_panel",
+    "$modal_contents_padding": [ 6, 6 ],
+    "$popup_dialog_escape_button_name": "button.close_share_popup"
+  },
+
+  "joincode_edu_popup@popup_dialog.form_fit_modal_dialog_popup": {
+    "$modal_title": "($share_source + '.item.sharepopup.title.simple')",
+    "$modal_contents": "edu_common.joincode_body_panel",
+    "$modal_contents_padding": [ 6, 6 ],
+    "$popup_dialog_escape_button_name": "button.close_share_popup"
+  },
+
+  "add_resource_dialog@popup_dialog.form_fit_modal_dialog_popup": {
+    "$popup_dialog_escape_button_name": "button.cancel_add_resource_button",
+
+    "$modal_title": "($share_source + '.item.sharepopup.title.addResource')",
+    "$modal_contents": "edu_common.add_resource_body_panel",
+    "$modal_contents_padding": [ 6, 6 ],
+
+    "$popup_type": "popup_dialog.form_fit_screen_with_title_and_close_and_bottom_buttons",
+    "$lower_button_control": "edu_common.add_resource_popup_lower_button_panel"
   },
 
   "share_popup_dialog_factory": {
@@ -1290,7 +1365,78 @@
       "teams_share_link_simple_popup": "@edu_common.teams_edu_simple_share_resource_popup",
       "teams_share_link_popup": "@edu_common.teams_edu_share_text_popup",
       "teams_share_link_resource_popup": "@edu_common.teams_edu_share_resource_popup",
+      "joincode_popup": "@edu_common.joincode_edu_popup",
       "add_resource_dialog": "@edu_common.add_resource_dialog"
     }
+  },
+
+  "inline_notification": {
+    "type": "image",
+    "texture": "textures/ui/background_indent_no_top",
+    "size": [ "100%", "100%cm" ],
+    "layer": 1,
+    "$state|default": "info",
+    "$icon|default": "textures/ui/WarningGlyph",
+    "$icon_size|default": [ 13, 20 ],
+    "variables": [
+      {
+        "requires": "($state = 'info')",
+        "$icon": "textures/ui/infobulb",
+        "$icon_size": [ 15, 19 ]
+      },
+      {
+        "requires": "($state = 'update')",
+        "$icon": "textures/ui/UpdateGlyph",
+        "$icon_size": [ 13, 20 ]
+      },
+      {
+        "requires": "($state = 'warning')",
+        "$icon": "textures/ui/WarningGlyph",
+        "$icon_size": [ 13, 20 ]
+      },
+      {
+        "requires": "($state = 'error')",
+        "$icon": "textures/ui/ErrorGlyph",
+        "$icon_size": [ 13, 20 ]
+      }
+    ],
+    "controls": [
+      {
+        "stack": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100% - 6px", "100%cm + 11px" ],
+          "offset": [ 3, 5 ],
+          "layer": 2,
+          "controls": [
+            {
+              "icon": {
+                "type": "image",
+                "texture": "$icon",
+                "size": "$icon_size",
+                "layer": 3
+              }
+            },
+            {
+              "spacer": {
+                "type": "panel",
+                "size": [ 4, "100%sm" ],
+                "layer": 3
+              }
+            },
+            {
+              "warning_text": {
+                "type": "label",
+                "color": "$body_text_color",
+                "size": [ "fill", "default" ],
+                "layer": 3,
+                "font_type": "smooth",
+                "text": "$warning_text"
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }

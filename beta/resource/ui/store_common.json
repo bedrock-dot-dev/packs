@@ -451,6 +451,27 @@
     "color": [ 0.7, 0.7, 0.7, 1.0 ]
   },
 
+  "spinner_animation": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "frame_count": 10,
+    "frame_step": 7,
+    "fps": 10
+  },
+
+  "progress_loading_spinner": {
+    "type": "image",
+    "layer": 1,
+    "texture": "textures/ui/loading_spin",
+    "$progress_loading_spinner_anchor|default": "center",
+    "anchor_from": "$progress_loading_spinner_anchor",
+    "anchor_to": "$progress_loading_spinner_anchor",
+    "uv_size": [ 7, 7 ],
+    "size": [ 14, 14 ],
+    "uv": "@common_store.spinner_animation",
+    "disable_anim_fast_forward": true
+  },
+
   "failure_text_wait_animation": {
     "anim_type": "wait",
     "$failure_timeout|default": 5.0,
@@ -524,7 +545,7 @@
                 "size": [ "100%", "100%c + 8px" ],
                 "controls": [
                   {
-                    "progress_loading_bars@common_store.progress_loading_bars": {
+                    "progress_loading_spinner@common_store.progress_loading_spinner": {
                       "layer": "($baseLayer + 1)"
                     }
                   }
@@ -1560,7 +1581,7 @@
           "anchor_to": "left_middle",
           "controls": [
             {
-              "coin_purchase_in_progress@common_store.progress_loading_bars": {
+              "coin_purchase_in_progress@common_store.progress_loading_spinner": {
                 "size": [ "100%", "100%" ],
                 "anchor_from": "center",
                 "anchor_to": "center"
@@ -2695,6 +2716,14 @@
                           "binding_collection_name": "$store_factory_collection_name",
                           "binding_collection_prefix": "$store_factory_collection_prefix"
                         }
+                      ],
+                      "button_mappings": [
+                        {
+                          "from_button_id": "button.menu_select",
+                          "to_button_id": "button.navigate_carousel_right",
+                          "mapping_type": "pressed",
+                          "button_up_right_of_first_refusal": true
+                        }
                       ]
                     }
                   }
@@ -3718,9 +3747,7 @@
         }
       },
       {
-        "progress_loading_bars@common_store.progress_loading_bars": {
-          "color": "$light_button_default_text_color",
-          "size": [ "100%sm - 4px", "8%x" ],
+        "progress_loading_spinner@common_store.progress_loading_spinner": {
           "bindings": [
             {
               "binding_name": "(not #promo_page_is_ready)",

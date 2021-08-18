@@ -5840,7 +5840,7 @@
                 // The max y is 200 due to the fact that we have no way to say use inherited max sibling height
                 //   - 200 was used in thoughts that whatever text was used would not need more that 200px
                 //     allowing the image to grow and string with the height of the text object
-                "max_size": [ 12, 200 ],
+                "max_size": [ 15, 200 ],
                 "controls": [
                   {
                     "tooltip_image_panel": {
@@ -5896,6 +5896,8 @@
                 "font_scale_factor": "$tooltip_text_font_scale",
                 "$tooltip_text_color|default": "$f_color_format",
                 "color": "$tooltip_text_color",
+                "$tooltip_text_font_type|default": "default",
+                "font_type": "$tooltip_text_font_type",
                 "bindings": [
                   {
                     "binding_name": "$tooltip_text_binding_name",

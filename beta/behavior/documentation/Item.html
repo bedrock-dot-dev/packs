@@ -1,4 +1,4 @@
-<h1>ITEM DOCUMENTATION </br>Version: 1.17.30.20</h1>
+<h1>ITEM DOCUMENTATION </br>Version: 1.17.30.22</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -90,9 +90,9 @@ The display name for an item.</br>Type: description_id_setter</br><a href="#Inde
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:durability</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Durability item component: how much damage can this item take before breaking.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="damage_chance">damage_chance</p></h3>
+<td style="border-style:solid; border-width:3; padding:7px">A property that determines when an item will break from use. The durability of an item is potentially depleted upon use based on the damage chance.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="damage_chance">damage_chance</p></h3>
 
-Damage chance.</br>Type: damage_chance</br><a href="#Index">Back to top</a><br><br>
+Damage chance is the chance of this item losing durability. Could be an int or an int range with min and max value.</br>Type: damage_chance</br><a href="#Index">Back to top</a><br><br>
 
 <h3><p id="max_durability">max_durability</p></h3>
 

@@ -1772,7 +1772,7 @@
                 "$focus_id": "see_pack_in_store_button",
                 "bindings": [
                   {
-                    "binding_name": "(not #show_realms_plus_button)",
+                    "binding_name": "#is_see_pack_in_store_button_visible",
                     "binding_name_override": "#visible"
                   }
                 ]
@@ -2280,14 +2280,13 @@
   "loading_progress_bars": {
     "type": "image",
     "layer": 2,
-    "texture": "textures/ui/loading_bar",
+    "texture": "textures/ui/loading_spin",
     "anchor_from": "center",
     "anchor_to": "center",
     "offset": [ 0, 6 ],
-    "size": [ 64, 8 ],
-    "uv_size": [ 64, 8 ],
-    "uv": "@progress.bar_animation",
-    "color": [ 0.7, 0.7, 0.7, 1.0 ],
+    "uv_size": [ 7, 7 ],
+    "size": [ 14, 14 ],
+    "uv": "@progress.spinner_animation",
     "controls": [
       {
         "loading_text": {

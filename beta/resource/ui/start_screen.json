@@ -164,7 +164,8 @@
     "$button_content": "start.change_skin_icon",
     "$pressed_alpha": 0.65,
     "$focus_id": "menu_skins_button",
-    "$button_tts_header": "accessibility.start.skinPicker"
+    "$button_tts_header": "accessibility.start.skinPicker",
+    "tts_index_order": 4
   },
 
   "profile_button@common_buttons.light_text_form_fitting_button": {
@@ -685,7 +686,8 @@
   "play_button@start.main_button": {
     "$pressed_button_name": "$play_button_target",
     "$button_text": "menu.play",
-    "$focus_override_right": "profile_button"
+    "$focus_override_right": "profile_button",
+    "tts_index_order": 1
   },
 
   "toolbox_mode_button@start.main_button": {
@@ -712,7 +714,8 @@
   "switch_accounts_button@start.main_button": {
     "$pressed_button_name": "button.switch_accounts",
     "$button_text": "#switch_accounts_button_text",
-    "$button_text_binding_type": "global"
+    "$button_text_binding_type": "global",
+    "tts_index_order": 3
   },
 
   "launch_editions_button@start.main_button": {

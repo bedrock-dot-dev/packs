@@ -260,7 +260,16 @@
     ]
   },
 
-  "pick_scrolling_content": {
+  "header": {
+    "type": "label",
+    "offset": [ -11, 0 ],
+    "max_size": [ "100%", "default" ],
+    "size": [ "default", "default" ],
+    "color": "$book_page_number_color",
+    "text": "$header_text"
+  },
+
+  "screenshot_grid": {
     "type": "grid",
     "size": [ "default", "default" ],
     "grid_item_template": "portfolio.pick_item",
@@ -269,6 +278,34 @@
     "bindings": [
       {
         "binding_name": "#pick_grid_dimensions"
+      }
+    ]
+  },
+
+  "text_centering_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      {
+        "header@portfolio.header": {
+          "$header_text": "book.headerInventory"
+        }
+      }
+    ]
+  },
+  
+  "pick_scrolling_content": {
+    "type": "stack_panel",
+    "size": [ 225, "default" ],
+    "controls": [
+      {
+        "header@portfolio.text_centering_panel": {
+        }
+      },
+      {
+        "portfolio_grid@portfolio.screenshot_grid": {
+          "$pick_grid_dimension_binding": "#pick_grid_dimensions"
+        }
       }
     ]
   },
@@ -684,7 +721,7 @@
     "type": "button",
     "size": [ 120, 20 ],
     "offset": [ "-75%x", 30 ],
-    "$button_text": "portfolioScreen.add_photo",
+    "$button_text": "portfolioScreen.addPhoto",
     "$pressed_button_name": "button.portfolio_add_photo",
     "layer": 1,
     "anchor_from": "bottom_middle",
