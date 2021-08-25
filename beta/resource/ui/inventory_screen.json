@@ -699,7 +699,9 @@
                             "anchor_to": "right_middle",
 
                             "$focus_id": "craftable_toggle",
-                            "$focus_override_left": "recipe_search_bar"
+                            "$focus_override_left": "recipe_search_bar",
+                            "$default_border_visible": false,
+                            "$hover_border_visible": false
                           }
                         }
                       ]

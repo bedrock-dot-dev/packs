@@ -5566,6 +5566,17 @@
         }
       },
       {
+        "option_default_profiling_option@settings_common.option_dropdown": {
+          "$option_label": "Profiling Configuration",
+          "$dropdown_content": "general_section.default_profiling_group_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "default_profiling_group",
+          "$options_dropdown_toggle_label_binding": "#default_profiling_group_toggle_label",
+          "$option_enabled_binding_name": "#default_profiling_group_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "150%" ]
+        }
+      },
+      {
         "edu_demo@settings_common.option_toggle": {
           "ignored": "(not $education_edition)",
           "$option_label": "options.dev_eduDemo",
@@ -6591,6 +6602,22 @@
         "@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#dev_realms_environment_radio_local",
           "$radio_label_text": "options.dev_realms_environment.local"
+        }
+      }
+    ]
+  },
+  "default_profiling_group_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#internal_profiling_bootstrap",
+          "$radio_label_text": "Internal Profiling Configuration"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#creator_profiling_bootstrap",
+          "$radio_label_text": "Creator Profiling Configuration"
         }
       }
     ]

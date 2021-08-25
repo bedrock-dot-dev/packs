@@ -618,7 +618,6 @@
             },
             {
               "invite_padding": {
-                "ignored": "($nx_os or $is_ps4)",
                 "type": "panel",
                 "size": [ 3, 0 ],
                 "bindings": [
@@ -631,33 +630,11 @@
             },
             {
               "invite_btn_other@start.column_frame": {
-                "ignored": "($nx_os or $is_ps4)",
                 "size": [ 28, 32 ],
                 "controls": [
                   { "invite_button@start.realms_pending_invite_panel": {} }
                 ]
               }
-            }
-          ]
-        }
-      },
-      {
-        "invite_btn_nx_ps4@start.column_frame": {
-          "ignored": "(not $nx_os and not $is_ps4)",
-          "size": [ 32, 32 ],
-          "controls": [
-            {
-              "invite_button@start.realms_pending_invite_panel": {
-                "anchor_from": "bottom_left",
-                "anchor_to": "bottom_left",
-                "offset": [ 8, -16 ]
-              }
-            }
-          ],
-          "bindings": [
-            {
-              "binding_name": "#realms_notification_visible",
-              "binding_name_override": "#visible"
             }
           ]
         }

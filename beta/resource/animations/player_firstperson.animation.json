@@ -25,6 +25,9 @@
 			"bones": {
 				"body": {
 					"rotation": [ "query.target_x_rotation", "query.target_y_rotation", 0.0 ]
+				},
+				"head": {
+					"rotation": [ "query.target_x_rotation", "query.target_y_rotation + 180", 0.0 ]
 				}
 			}
 		},

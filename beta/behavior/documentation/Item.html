@@ -1,4 +1,4 @@
-<h1>ITEM DOCUMENTATION </br>Version: 1.17.30.22</h1>
+<h1>ITEM DOCUMENTATION </br>Version: 1.17.30.23</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -50,7 +50,7 @@ List of block descriptors that contain blocks that this item can be used on. If 
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">Cool down time for a component. After you use an item it becomes unusable for the duration specified by the 'cool down time' setting in this component.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="category">category</p></h3>
 
-The type of cool down for this item.</br>Type: string</br><a href="#Index">Back to top</a><br><br>
+The type of cool down for this item.</br>Type: hashed_string</br><a href="#Index">Back to top</a><br><br>
 
 <h3><p id="duration">duration</p></h3>
 
@@ -168,17 +168,17 @@ How long in seconds will this fuel cook items for.</br>Type: float</br><a href="
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:icon</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">The icon item componenent determines the icon to represent the item in the UI and elsewhere.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="frame">frame</p></h3>
+<td style="border-style:solid; border-width:3; padding:7px">The icon item component determines the icon to represent the item.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="frame">frame</p></h3>
 
-An index or expression for which frame of the icon to display.  Default resolves to 0.</br>Type: expression_node</br><a href="#Index">Back to top</a><br><br>
+An index or MoLang expression for which frame of the icon to display. Default resolves to 0.</br>Type: expression_node</br><a href="#Index">Back to top</a><br><br>
 
 <h3><p id="legacy_id">legacy_id</p></h3>
 
-Legacy texture id for older item icons</br>Type: string</br><a href="#Index">Back to top</a><br><br>
+Legacy texture string id for older item icons. Legacy ID list can be found here under 'Namespaced ID': https://minecraft.fandom.com/wiki/Bedrock_Edition_data_values</br>Type: string</br><a href="#Index">Back to top</a><br><br>
 
 <h3><p id="texture">texture</p></h3>
 
-The key from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file Example: blaze_powder</br>Type: string</br><a href="#Index">Back to top</a><br><br>
+The key for the object contain the expected textures, from file 'resource_pack/textures/item_texture.json'.</br>Type: string</br><a href="#Index">Back to top</a><br><br>
 
 </td>
 </tr>

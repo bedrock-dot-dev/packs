@@ -2643,7 +2643,7 @@
   "minecraftTenLabel": {
     "type": "label",
     "font_type": "MinecraftTen",
-    "backup_font_type": "DefaultFont",
+    "backup_font_type": "UIFont",
     "color": "$generic_button_text_color", // We have to specify a color for unit tests - expect to override this when used.
 
     "variables": [

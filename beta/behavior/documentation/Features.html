@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.17.30.22</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.17.30.23</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -27,8 +27,6 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:tree_feature"> minecraft:tree_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:vegetation_patch_feature"> minecraft:vegetation_patch_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:weighted_random_feature"> minecraft:weighted_random_feature</a> </tr> </td>
-<tr> <td> <a href="#minecraft:sculk_patch_feature"> minecraft:sculk_patch_feature</a> </tr> </td>
-<tr> <td> <a href="#minecraft:catalyst_feature"> minecraft:catalyst_feature</a> </tr> </td>
 <tr> <th><a href="#Attaching features">Attaching features</a></th> </tr>
 <tr> <th><a href="#Feature rules">Feature rules</a></th> </tr>
 <tr> <th><a href="#Feature rule schema">Feature rule schema</a></th> </tr>
@@ -360,7 +358,7 @@ Example use: Scans the surface of a chunk and places a feature if able<br / ><te
 
 <h1><p id="minecraft:scatter_feature">minecraft:scatter_feature</p></h1>
 
-'minecraft:scatter_feature' scatters a feature throughout a chunk. The 'x', 'y', and 'z' fields are per-coordinate parameters. Note that coordinates represent an offset from the input position, not an absolute position. Coordinates may be a single value, a random distribution, or molang expression that resolves to a numeric value. The 'coordinate_eval_order' field is provided for finer control of coordinate resolution (particularly when using the 'grid' distribution). 'iterations' controls how many individual placements should occur if the 'scatter_chance' check succeeds. The 'scatter_chance' check happens once, so either all placements will run or none will.</br>Succeeds if: At least one feature placement succeeds.</br>Fails if: All feature placements fail.</br><h2></h2>
+'minecraft:scatter_feature' scatters a feature throughout a chunk. The 'x', 'y', and 'z' fields are per-coordinate parameters. Note that coordinates represent an offset from the input position, not an absolute position. Coordinates may be a single value, a random distribution, or Molang expression that resolves to a numeric value. The 'coordinate_eval_order' field is provided for finer control of coordinate resolution (particularly when using the 'grid' distribution). 'iterations' controls how many individual placements should occur if the 'scatter_chance' check succeeds. The 'scatter_chance' check happens once, so either all placements will run or none will.</br>Succeeds if: At least one feature placement succeeds.</br>Fails if: All feature placements fail.</br><h2></h2>
 Example use: Scattering flowers at sea level across half the chunks in a biome.<br / ><textarea readonly="true" cols="54" rows="21">
 {
   "format_version": 1.13.0,
@@ -520,14 +518,6 @@ Example use: Selecting and placing a variant of a flower.<br / ><textarea readon
 }
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
-
-<h1><p id="minecraft:sculk_patch_feature">minecraft:sculk_patch_feature</p></h1>
-
-Feature type 'minecraft:sculk_patch_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
-
-<h1><p id="minecraft:catalyst_feature">minecraft:catalyst_feature</p></h1>
-
-Feature type 'minecraft:catalyst_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
 
 <h2>Feature schema</h2>
 Here is the complete feature schema<br / ><textarea readonly="true" cols="192" rows="32">
@@ -1356,45 +1346,6 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
               }
           }
-      }
-      object "minecraft:sculk_patch_feature" : opt
-      {
-          object "description"
-          {
-              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
-          }
-          array "replaceable_blocks"
-          {
-               "<any array element>" : opt
-          }
-          array "cant_place_sculk_vein_on"
-          {
-               "<any array element>" : opt
-          }
-           "ground_block"
-          feature_reference "growth_feature" : opt
-          string "surface" : opt
-          int "vertical_range"
-          float "growth_chance" : opt
-           "horizontal_radius"
-      }
-      object "minecraft:catalyst_feature" : opt
-      {
-          object "description"
-          {
-              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
-          }
-          array "can_place_sculk_catalyst_on"
-          {
-               "<any array element>" : opt
-          }
-           "central_block"
-          feature_reference "patch_feature" : opt
-          feature_reference "central_patch_feature" : opt
-          int "vertical_range"
-          int "pathes_count_min"
-          int "pathes_count_max"
-          int "max_patch_distance"
       }
   }
 

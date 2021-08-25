@@ -2163,9 +2163,9 @@ xbl.syncIAP.confirmSync.prompt.yes=Yes, Sync My Purchases
 
 xbl.marketplace.account.error.body.nobutton=There is an error with your account. You will be unable to use the marketplace until we have resolved the issue. If this issue persists for several days please contact support.
 
-playfab.account.banned.title=Banned
-playfab.account.banned.body=You have been banned from Minecraft. For the duration of your ban, you will be unable to play on your worlds (certain platforms), play on servers, join Realms, host or join multiplayer games, or use the Marketplace. If you are paying for a Realm, you will need to cancel your subscription through the store where it was purchased.
-playfab.account.banned.body.button=More Info
+playfab.account.banned.title=You've been banned
+playfab.account.banned.body=You have been banned from playing multiplayer in Minecraft. You won’t be able to play on servers, join realms, host or join multiplayer games or use the marketplace. If you are paying for a Realm, you need to cancel your subscription through the store where it was purchased.
+playfab.account.banned.body.button=More info
 
 store.sign_in_warning.no_xbl_and_local_content=Important! You have purchased packs and/or Minecoins that are only available on this device and might be lost due to a device malfunction, loss, or uninstalling Minecraft! Sign in with a Microsoft Account (free) and transfer your pack entitlements and Minecoins to that account to protect and access your them on any device that you sign in on.
 store.sign_in_warning.no_xbl_and_no_local_content.line1=Important! Purchased packs that are only available on this device can be lost due to device malfunction, loss or uninstalling Minecraft!
@@ -5382,6 +5382,8 @@ npcscreen.action.command.placeholder=Type Command Here...
 npcscreen.action.command.title=Command
 npcscreen.action.url.placeholder=Type URL Here...
 npcscreen.action.url.title=URL
+npcscreen.action.url.warning.invalidUri=Only URLs beginning with "http" or "https" are supported.
+npcscreen.action.url.warning.emptyUri=If no URL is added, this button will open a new browser window.
 npcscreen.addcommand=Add Command
 npcscreen.addtext=Type Dialog Here...
 npcscreen.addurl=Add URL
@@ -5399,6 +5401,9 @@ npcscreen.learnmore=Learn More
 npcscreen.name=Name
 npcscreen.npc=NPC
 npcscreen.requiresop=OP Required
+
+npcUri.launch.success=Opened the NPC Link.
+npcUri.launch.failure=Unable to open the NPC Link. This doesn't look like a supported URL.
 
 offer.category.skinpack=Skin Packs
 offer.category.resourcepack=Texture Packs
@@ -8665,6 +8670,7 @@ xbox.firstsignin.line3=Don't have an account? Create one now to earn achievement
 xbox.firstsignin.line3.norealmsOrServers=Don't have an account? Create one now to earn achievements and play with your cross-platform friends!
 xbox.failedsignin.body=We could not sign you into your Microsoft Account. Access to Realms, Profiles, and your Marketplace items will be limited. Please try again later.
 xbox.failedsignin.error=Error Code:
+xbox.failedsignin.moreInfo=More Info
 xbox.dev_wrongSandboxSigninFailed.title=Something Went Wrong
 xbox.dev_wrongSandboxSigninFailed.line1=Failed to sign in to %s sandbox. Please change sandboxes and restart Minecraft or sign in with a different account. Sandbox will be %s on restart. 
 xbox.dev_wrongSandboxSigninFailed.button.dev=Change To Dev Sandbox
@@ -9177,9 +9183,16 @@ hbui.CreateNewWorldSideMenu.create=Create
 hbui.CreateNewWorldSideMenu.createOnRealm=Create on Realm
 hbui.CreateNewWorldSideMenu.selectTab=Select
 hbui.DeprecatedModal.close=Close modal
+hbui.Dropdown.elementType=dropdown
+hbui.Dropdown.open=Open
+hbui.Dropdown.toggleElementType=Selected option
 hbui.ErrorModal.goBack=Go back
 hbui.ErrorModal.goingBack=Going back to the previous screen...
 hbui.ErrorModal.title=An error has occurred
+hbui.Item.elementType=item
+hbui.Item.select=Select
+hbui.Item.selected=selected
+hbui.Item.unselected=unselected
 hbui.MenuButton.menu=Menu
 hbui.MenuButton.toggle=Toggle menu
 hbui.SectionList.groupNarration=%1$s, group %2$s of %3$s
@@ -9201,6 +9214,50 @@ hbui.Toggle.count=%1$s of %2$s
 hbui.Toggle.elementType=choice toggle
 hbui.Toggle.select=Select
 hbui.Toggle.selected=selected
+
+## Save Location Transfer
+save_location_transfer.progress.title=Moving files
+save_location_transfer.progress.message=Moving "%s"...
+save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.
+
+save_location_transfer.button.get_started=Get started
+save_location_transfer.button.retry=Retry
+save_location_transfer.button.go_to_faq=Go to FAQ
+save_location_transfer.button.next=Next
+save_location_transfer.button.resume=Resume
+save_location_transfer.button.continue=Continue
+save_location_transfer.button.start=Start moving files
+save_location_transfer.button.marketplace=Your Marketplace packs
+save_location_transfer.button.main_menu=Go to Main menu
+save_location_transfer.button.faq=Read the FAQ for more info.
+save_location_transfer.button.microsoft_store=Go to Microsoft Store
+save_location_transfer.button.help=Help
+
+save_location_transfer.title.initializing=Optimizing data
+save_location_transfer.gathering_info.description=Gathering information...
+save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.
+
+save_location_transfer.start_transfer.generic.title=New storage location
+save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.
+save_location_transfer.start_transfer.total_file_size=Total file size:
+save_location_transfer.start_transfer.new_location=New location: %s
+
+save_location_transfer.resume_transfer.title=Move was interrupted
+save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.
+save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.
+save_location_transfer.resume_transfer.need_to_move=Need to move:
+save_location_transfer.resume_transfer.available=(%s available)
+save_location_transfer.resume_transfer.location=Location: %s
+save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.
+
+save_location_transfer.transfer_error_out_of_space.title=Not enough free space
+save_location_transfer.transfer_error_out_of_space.files_left=Files left:
+
+save_location_transfer.finished.generic.title=All done
+save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.
+
+save_location_transfer.transfer_error.title=Trouble moving files!
+save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).
 
 trade.doesNotWant=Trader does not want this
 trade.excalamation=!
@@ -9541,6 +9598,8 @@ gameTest.assert.missingExplosionComponent=Can not set fuse of entity because it 
 gameTest.assert.invalidEntityInstance=Invalid entity instance
 gameTest.assert.unexpectedParameterValue=Unexpected value for parameter '%s'
 gameTest.assert.expectEntityInstance=Expected entity instance
+gameTest.assert.invalidFluidType=Invalid fluid type
+gameTest.assert.expectCauldron=Expected block of type Cauldron
 gameTest.success.runningTests=Running %s tests...
 gameTest.success.relativePosition=Position relative to %s: %s					## first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=%s passed!
