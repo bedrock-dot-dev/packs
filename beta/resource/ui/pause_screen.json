@@ -36,69 +36,16 @@
   // Skins Panel
   //---------------------------------------------------------------------------
 
-  "change_skin_panel": {
-    "type": "stack_panel",
-    "orientation": "horizontal",
-    "size": [ 49, 26 ],
+  "dressing_room_controller_button_content": {
+    "type": "panel",
+    "size": [ "100%c", "100%cm" ],
+    "min_size": [ 82, 22 ],
     "controls": [
       {
         "button_x@common.gamepad_helper_x": {
           "$gamepad_helper_visible_binding_type": "none",
-          "layer": 3
-        }
-      },
-      {
-        "skin_icon_panel": {
-          "type": "panel",
-          "size": [ "100%c", 26 ],
-          "controls": [
-            {
-              "change_skin_icon@pause.change_skin_icon": {
-                "offset": [ 0, 2 ]
-              }
-            }
-          ]
-        }
-      }
-    ]
-  },
-
-  "profile_skin_icon_panel": {
-    "type": "panel",
-    "controls": [
-      {
-        "profile_label": {
-          "type": "label",
-          "text": "profileScreen.header",
-          "size": [ "default", 10 ],
-          "color": "$light_button_default_text_color"
-        }
-      }
-    ]
-  },
-
-  "change_profile_button_panel": {
-    "type": "panel",
-    "size": [ 70, 26 ],
-    "controls": [
-      {
-        "enabled_panel": {
-          "type": "stack_panel",
-          "orientation": "horizontal",
-          "size": [ "100%", "100%" ],
-          "controls": [
-            {
-              "button_x@common.gamepad_helper_x": {
-                "$gamepad_helper_visible_binding_type": "none",
-                "layer": 3
-              }
-            },
-            {
-              "skin_icon_panel@pause.profile_skin_icon_panel": {
-                "size": [ "100%c", 26 ]
-              }
-            }
-          ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
           "bindings": [
             {
               "binding_name": "#can_change_skin",
@@ -108,12 +55,17 @@
         }
       },
       {
-        "disabled_panel@pause.profile_skin_icon_panel": {
-          "size": [ "100%", 26 ],
-          "bindings": [
+        "button_label_panel": {
+          "type": "panel",
+          "size": [ "100%c", "100%c" ],
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "controls": [
             {
-              "binding_name": "(not #can_change_skin)",
-              "binding_name_override": "#visible"
+              "button_label_text_left@pause.controller_button_label": {
+                "size": [ "default", "default" ],
+                "max_size": [ 75, 20 ]
+              }
             }
           ]
         }
@@ -121,17 +73,29 @@
     ]
   },
 
+  "controller_button_label@common_buttons.new_ui_binding_button_label": {
+    "size": [ "100%", "100%c" ],
+    "$anchor": "left_middle",
+    "$button_text": "profileScreen.header",
+    "$button_text_binding_type": "none",
+    "$button_binding_condition": "none",
+    "$button_text_grid_collection_name": ""
+  },
+
   "column_frame": {
     "type": "panel"
   },
 
-  "change_profile_button_gamepad@common_buttons.light_content_button": {
-    "size": [ 70, 26 ],
+  "change_profile_button_gamepad@common_buttons.light_content_form_fitting_button": {
+    "size": [ "100%", "100%c" ],
+    "$button_content_size_override": [ "100%c - 4px", "100%c - 4px" ],
     "$pressed_button_name": "button.to_profile_or_skins_screen",
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
-    "$button_content_offset": [ 3, 2 ],
-    "$button_content": "pause.change_profile_button_panel",
+    "$button_offset": [ -3, 1 ],
+    "$new_ui_label_offset": [ 0, -1 ],
+    "$text_alignment": "left",
+    "$button_content": "pause.dressing_room_controller_button_content",
     "$pressed_alpha": 0.65,
     "$hide_description": true,
     "$visibility_binding_type|default": "global",
@@ -204,6 +168,7 @@
                 "anchor_to": "bottom_middle",
                 "rotation": "gesture_x",
                 "size": [ "100%", "100%" ],
+                "use_selected_skin": false,
                 "animation_reset_name": "screen_animation_reset",
                 "anims": [
                   "@common.screen_exit_size_animation_push",
@@ -212,6 +177,9 @@
                   "@common.screen_entrance_size_animation_pop"
                 ],
                 "bindings": [
+                  {
+                    "binding_name": "#paper_doll_skin"
+                  },
                   {
                     "binding_type": "view",
                     "source_control_name": "viewer_panel",

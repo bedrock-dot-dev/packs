@@ -1036,7 +1036,7 @@
 
   "horizontal_form_fitting": {
     "type": "panel",
-    "size": [ "100%c", "100%" ],
+    "size": [ "100%c", "100%c" ],
     "offset": "$button_offset",
     "controls": [
       {
