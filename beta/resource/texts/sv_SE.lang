@@ -2163,8 +2163,8 @@ xbl.syncIAP.confirmSync.prompt.yes=Ja, synkronisera mina köp	#
 
 xbl.marketplace.account.error.body.nobutton=Ett fel har inträffat med ditt konto. Du kan inte använda marknaden förrän felet är löst. Kontakta kundtjänst om felet kvarstår i flera dagar.	#
 
-playfab.account.banned.title=Avstängd	#
-playfab.account.banned.body=Du har blivit avstängd från Minecraft. Under hela din avstängning kommer du inte att kunna spela på dina världar (vissa plattformar), spela på servrar, gå med i Realms, vara värd för eller gå med i spel för flera spelare eller använda marknaden. Om du betalar för en Realm måste du avbryta ditt abonnemang via butiken där det köptes.	#
+playfab.account.banned.title=Du har blivit blockerad	#
+playfab.account.banned.body=Du har blivit blockerad från att spela spel för flera spelare i Minecraft. Du kommer inte att kunna spela på servrar, gå med i Realms, vara värd för eller gå med i spel för flera spelare eller använda marknaden. Om du betalar för en Realm måste du avbryta ditt abonnemang via butiken där det köptes.	#
 playfab.account.banned.body.button=Mer information	#
 
 store.sign_in_warning.no_xbl_and_local_content=Viktigt! Du har köpt paket och/eller Minecoins som bara finns tillgängliga på den här enheten. De försvinner om enheten går sönder eller försvinner, eller om du avinstallerar Minecraft! Logga in med ett Microsoft-konto (gratis) och för över dina paketrättigheter och Minecoins till det kontot för att skydda dem och komma åt dem på alla dina enheter med det kontot.	#
@@ -8670,7 +8670,7 @@ xbox.firstsignin.line3=Har du inget konto? Skapa ett nu så kan du börja låsa 
 xbox.firstsignin.line3.norealmsOrServers=Har du inget konto? Skapa ett nu så kan du börja låsa upp achievements och spela med dina kompisar på andra plattformar!	#
 xbox.failedsignin.body=Vi kunde inte logga in dig på ditt Microsoft-konto. Åtkomst till Realms, profiler och dina föremål från marknaden kommer att begränsas. Försök igen senare.	#
 xbox.failedsignin.error=Felkod:	#
-xbox.failedsignin.moreInfo=More Info	#
+xbox.failedsignin.moreInfo=Mer information	#
 xbox.dev_wrongSandboxSigninFailed.title=Någonting gick fel	#
 xbox.dev_wrongSandboxSigninFailed.line1=Kunde inte logga in i %s-sandlådan. Byt sandlåda och starta om Minecraft eller logga in med ett annat konto. Vid omstart är sandlådan %s. 	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=Byt till utvecklarsandlåda	#
@@ -9216,48 +9216,48 @@ hbui.Toggle.select=Välj	#
 hbui.Toggle.selected=valt	#
 
 ## Save Location Transfer
-save_location_transfer.progress.title=Moving files	#
-save_location_transfer.progress.message=Moving "%s"...	#
-save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.	#
+save_location_transfer.progress.title=Flyttar filer	#
+save_location_transfer.progress.message=Flyttar "%s" …	#
+save_location_transfer.worlds_error=Vissa världar är inte tillgängliga eftersom de inte kunde flyttas. Starta om Minecraft för att försöka igen.	#
 
-save_location_transfer.button.get_started=Get started	#
-save_location_transfer.button.retry=Retry	#
-save_location_transfer.button.go_to_faq=Go to FAQ	#
-save_location_transfer.button.next=Next	#
-save_location_transfer.button.resume=Resume	#
-save_location_transfer.button.continue=Continue	#
-save_location_transfer.button.start=Start moving files	#
-save_location_transfer.button.marketplace=Your Marketplace packs	#
-save_location_transfer.button.main_menu=Go to Main menu	#
-save_location_transfer.button.faq=Read the FAQ for more info.	#
-save_location_transfer.button.microsoft_store=Go to Microsoft Store	#
-save_location_transfer.button.help=Help	#
+save_location_transfer.button.get_started=Kom i gång	#
+save_location_transfer.button.retry=Försök igen	#
+save_location_transfer.button.go_to_faq=Gå till Vanliga frågor och svar	#
+save_location_transfer.button.next=Nästa	#
+save_location_transfer.button.resume=Återuppta	#
+save_location_transfer.button.continue=Fortsätt	#
+save_location_transfer.button.start=Börja flytta filer	#
+save_location_transfer.button.marketplace=Dina paket från marknaden	#
+save_location_transfer.button.main_menu=Gå till huvudmenyn	#
+save_location_transfer.button.faq=Läs vanliga frågor och svar för att få mer information.	#
+save_location_transfer.button.microsoft_store=Gå till Microsoft Store	#
+save_location_transfer.button.help=Hjälp	#
 
-save_location_transfer.title.initializing=Optimizing data	#
-save_location_transfer.gathering_info.description=Gathering information...	#
-save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.	#
+save_location_transfer.title.initializing=Optimerar data	#
+save_location_transfer.gathering_info.description=Samlar in information …	#
+save_location_transfer.description.out_of_space=Du har inte tillräckligt med ledigt utrymme för att flytta dina filer till en ny plats.	#
 
-save_location_transfer.start_transfer.generic.title=New storage location	#
-save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.	#
-save_location_transfer.start_transfer.total_file_size=Total file size:	#
-save_location_transfer.start_transfer.new_location=New location: %s	#
+save_location_transfer.start_transfer.generic.title=Ny lagringsplats	#
+save_location_transfer.start_transfer.description=Vi måste flytta dina filer till en annan plats på din enhet.	#
+save_location_transfer.start_transfer.total_file_size=Total filstorlek:	#
+save_location_transfer.start_transfer.new_location=Ny plats: %s	#
 
-save_location_transfer.resume_transfer.title=Move was interrupted	#
-save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.	#
-save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.	#
-save_location_transfer.resume_transfer.need_to_move=Need to move:	#
-save_location_transfer.resume_transfer.available=(%s available)	#
-save_location_transfer.resume_transfer.location=Location: %s	#
-save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.	#
+save_location_transfer.resume_transfer.title=Flytten avbröts	#
+save_location_transfer.resume_transfer.description=Vi håller på att flytta dina data till en ny plats på din enhet. Tryck på Återuppta för att slutföra flytten.	#
+save_location_transfer.resume_transfer.description.out_of_space=Vi håller på att flytta dina data till en ny plats på din enhet, men du har inte tillräckligt med ledigt utrymme.	#
+save_location_transfer.resume_transfer.need_to_move=Måste flyttas:	#
+save_location_transfer.resume_transfer.available=(%s tillgänglig)	#
+save_location_transfer.resume_transfer.location=Plats: %s	#
+save_location_transfer.resume_transfer.free_up=Frigör minst %s för att fortsätta.	#
 
-save_location_transfer.transfer_error_out_of_space.title=Not enough free space	#
-save_location_transfer.transfer_error_out_of_space.files_left=Files left:	#
+save_location_transfer.transfer_error_out_of_space.title=Inte tillräckligt med ledigt utrymme	#
+save_location_transfer.transfer_error_out_of_space.files_left=Filer kvar:	#
 
-save_location_transfer.finished.generic.title=All done	#
-save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.	#
+save_location_transfer.finished.generic.title=Allt klart	#
+save_location_transfer.finished.generic.description=Filerna har flyttats. Starta om Minecraft.	#
 
-save_location_transfer.transfer_error.title=Trouble moving files!	#
-save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).	#
+save_location_transfer.transfer_error.title=Problem med att flytta filer!	#
+save_location_transfer.transfer_error.description=Vi kunde inte flytta alla dina filer. Följande fel uppstod: (%s).	#
 
 trade.doesNotWant=Handlaren är inte intresserad	#
 trade.excalamation=!	#
@@ -9598,8 +9598,8 @@ gameTest.assert.missingExplosionComponent=Det går inte tända en stubin för en
 gameTest.assert.invalidEntityInstance=Ogiltig instans av entitet	#
 gameTest.assert.unexpectedParameterValue=Oväntat värde för parametern %s	#
 gameTest.assert.expectEntityInstance=Förväntad instans av entitet	#
-gameTest.assert.invalidFluidType=Invalid fluid type	#
-gameTest.assert.expectCauldron=Expected block of type Cauldron	#
+gameTest.assert.invalidFluidType=Ogiltig vätsketyp	#
+gameTest.assert.expectCauldron=Förväntade block av typen Kittel	#
 gameTest.success.runningTests=Kör %s tester …	#
 gameTest.success.relativePosition=Position i förhållande till %s: %s						### first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=%s godkändes!	#

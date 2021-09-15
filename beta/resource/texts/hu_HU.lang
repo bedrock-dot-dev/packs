@@ -2163,8 +2163,8 @@ xbl.syncIAP.confirmSync.prompt.yes=Igen, szinkronizálom vásárlásaimat	#
 
 xbl.marketplace.account.error.body.nobutton=Probléma lépett fel a fiókoddal. A probléma megoldásáig nem használhatod a Piacteret. Ha a hiba több napon át fennáll, lépj kapcsolatba a terméktámogatással.	#
 
-playfab.account.banned.title=Kitiltva	#
-playfab.account.banned.body=Kitiltottak a Minecraft rendszerből. A kitiltás ideje alatt nem fogsz tudni játszani a világaidon (bizonyos platformokon), nem játszhatsz a szervereken, nem csatlakozhatsz realmekhez, nem tudsz többjátékos játékokat indítani vagy ilyenekhez csatlakozni, illetve a piacteret sem használhatod. Ha van aktív Realm-előfizetésed, akkor le kell mondanod ugyanabban az áruházban, amelyben megvásároltad.	#
+playfab.account.banned.title=Letiltottak	#
+playfab.account.banned.body=Letiltottak a Minecraft többjátékos módjának használatától. A továbbiakban nem fogsz tudni játszani a kiszolgálókon, nem csatlakozhatsz realmekhez, nem tudsz többjátékos játékokat indítani vagy ilyenekhez csatlakozni, illetve a piacteret sem használhatod. Ha van aktív Realm-előfizetésed, akkor le kell mondanod ugyanabban az áruházban, amelyben megvásároltad.	#
 playfab.account.banned.body.button=További információk	#
 
 store.sign_in_warning.no_xbl_and_local_content=Fontos! Olyan csomagokat és/vagy Minecoinokat vásároltál, amelyek csak ezen az eszközön elérhetőek, és elvesznek, ha az eszköz meghibásodik, vagy a Minecraft eltávolításra kerül! Jelentkezz be egy Microsoft-fiókkal (ennek létrehozása ingyenes), és vidd át csomag- és érmejogosultságaidat arra a fiókra, hogy később bármilyen eszközön hozzájuk férhess bejelentkezés után.	#
@@ -8670,7 +8670,7 @@ xbox.firstsignin.line3=Még nincs fiókod? Hozz létre egyet most a mérföldkö
 xbox.firstsignin.line3.norealmsOrServers=Még nincs fiókod? Hozz létre egyet most, hogy eredményeket szerezz és együtt játszhass más platformot használó barátaiddal!	#
 xbox.failedsignin.body=Nem tudtunk beléptetni a Microsoft-fiókodba. Így csak korlátozott mértékben férsz hozzá a Realmshez, a profilokhoz és a Piactéren vásárolt elemekhez. Próbálkozz újra később.	#
 xbox.failedsignin.error=Hibakód:	#
-xbox.failedsignin.moreInfo=More Info	#
+xbox.failedsignin.moreInfo=További információk	#
 xbox.dev_wrongSandboxSigninFailed.title=Hiba történt	#
 xbox.dev_wrongSandboxSigninFailed.line1=Nem sikerült bejelentkezni a(z) %s nyílt világba. Kérjük, válts nyílt világot, és indítsd újra a Minecraftot, vagy jelentkezz be egy másik fiókkal. A nyílt világ ez lesz: %s az újrainduláskor. 	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=Váltás a fejlesztői nyílt világra	#
@@ -9216,48 +9216,48 @@ hbui.Toggle.select=Kijelölés	#
 hbui.Toggle.selected=kiválasztva	#
 
 ## Save Location Transfer
-save_location_transfer.progress.title=Moving files	#
-save_location_transfer.progress.message=Moving "%s"...	#
-save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.	#
+save_location_transfer.progress.title=Fájlok áthelyezése	#
+save_location_transfer.progress.message=„%s” áthelyezése...	#
+save_location_transfer.worlds_error=Egyes világok nem érhetők el, mivel nem sikerült őket áthelyezni. Az ismételt próbálkozáshoz indítsd újra a Minecraftot.	#
 
-save_location_transfer.button.get_started=Get started	#
-save_location_transfer.button.retry=Retry	#
-save_location_transfer.button.go_to_faq=Go to FAQ	#
-save_location_transfer.button.next=Next	#
-save_location_transfer.button.resume=Resume	#
-save_location_transfer.button.continue=Continue	#
-save_location_transfer.button.start=Start moving files	#
-save_location_transfer.button.marketplace=Your Marketplace packs	#
-save_location_transfer.button.main_menu=Go to Main menu	#
-save_location_transfer.button.faq=Read the FAQ for more info.	#
-save_location_transfer.button.microsoft_store=Go to Microsoft Store	#
-save_location_transfer.button.help=Help	#
+save_location_transfer.button.get_started=Első lépések	#
+save_location_transfer.button.retry=Újra	#
+save_location_transfer.button.go_to_faq=Ugrás a gyakori kérdésekhez	#
+save_location_transfer.button.next=Következő	#
+save_location_transfer.button.resume=Folytatás	#
+save_location_transfer.button.continue=Tovább	#
+save_location_transfer.button.start=Fájlok áthelyezésének megkezdése	#
+save_location_transfer.button.marketplace=Piactéri csomagjaid	#
+save_location_transfer.button.main_menu=Ugrás a főmenübe	#
+save_location_transfer.button.faq=További információkért olvasd el a gyakori kérdéseket.	#
+save_location_transfer.button.microsoft_store=Ugrás a Microsoft Store-ba	#
+save_location_transfer.button.help=Súgó	#
 
-save_location_transfer.title.initializing=Optimizing data	#
-save_location_transfer.gathering_info.description=Gathering information...	#
-save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.	#
+save_location_transfer.title.initializing=Adatok optimalizálása	#
+save_location_transfer.gathering_info.description=Információk összegyűjtése...	#
+save_location_transfer.description.out_of_space=Nincs elegendő szabad hely a fájlok új helyre való áthelyezéséhez.	#
 
-save_location_transfer.start_transfer.generic.title=New storage location	#
-save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.	#
-save_location_transfer.start_transfer.total_file_size=Total file size:	#
-save_location_transfer.start_transfer.new_location=New location: %s	#
+save_location_transfer.start_transfer.generic.title=Új tárolási hely	#
+save_location_transfer.start_transfer.description=Át kell helyeznünk a fájlokat egy másik helyre az eszközödön.	#
+save_location_transfer.start_transfer.total_file_size=Teljes fájlméret:	#
+save_location_transfer.start_transfer.new_location=Új hely: %s	#
 
-save_location_transfer.resume_transfer.title=Move was interrupted	#
-save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.	#
-save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.	#
-save_location_transfer.resume_transfer.need_to_move=Need to move:	#
-save_location_transfer.resume_transfer.available=(%s available)	#
-save_location_transfer.resume_transfer.location=Location: %s	#
-save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.	#
+save_location_transfer.resume_transfer.title=Az áthelyezés megszakadt	#
+save_location_transfer.resume_transfer.description=Jelenleg azon dolgozunk, hogy áthelyezzük az adatokat egy új helyre az eszközödön. Az áthelyezés folytatásához nyomd meg a Folytatás gombot.	#
+save_location_transfer.resume_transfer.description.out_of_space=Jelenleg azon dolgozunk, hogy áthelyezzük az adatokat egy új helyre az eszközödön, de nincs elegendő szabad hely.	#
+save_location_transfer.resume_transfer.need_to_move=Az áthelyezéshez szükséges:	#
+save_location_transfer.resume_transfer.available=(%s elérhető)	#
+save_location_transfer.resume_transfer.location=Hely: %s	#
+save_location_transfer.resume_transfer.free_up=Szabadíts fel legalább %s helyet a folytatáshoz.	#
 
-save_location_transfer.transfer_error_out_of_space.title=Not enough free space	#
-save_location_transfer.transfer_error_out_of_space.files_left=Files left:	#
+save_location_transfer.transfer_error_out_of_space.title=Nincs elég szabad hely	#
+save_location_transfer.transfer_error_out_of_space.files_left=Fennmaradó fájlok:	#
 
-save_location_transfer.finished.generic.title=All done	#
-save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.	#
+save_location_transfer.finished.generic.title=Minden kész!	#
+save_location_transfer.finished.generic.description=Sikeresen áthelyeztük a fájlokat. Indítsd újra a Minecraftot.	#
 
-save_location_transfer.transfer_error.title=Trouble moving files!	#
-save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).	#
+save_location_transfer.transfer_error.title=Probléma merült fel a fájlok áthelyezése során.	#
+save_location_transfer.transfer_error.description=Nem sikerült áthelyezni az összes fájlodat. A következő hibába ütköztünk: (%s).	#
 
 trade.doesNotWant=A kereskedő nem akarja ezt	#
 trade.excalamation=!	#
@@ -9598,8 +9598,8 @@ gameTest.assert.missingExplosionComponent=Az entitás nem állítható be robban
 gameTest.assert.invalidEntityInstance=Érvénytelen entitáspéldány	#
 gameTest.assert.unexpectedParameterValue=A(z) '%s' paraméter váratlan értéke	#
 gameTest.assert.expectEntityInstance=Várható entitáspéldány	#
-gameTest.assert.invalidFluidType=Invalid fluid type	#
-gameTest.assert.expectCauldron=Expected block of type Cauldron	#
+gameTest.assert.invalidFluidType=Érvénytelen folyadéktípus	#
+gameTest.assert.expectCauldron=Várt blokktípus: üst	#
 gameTest.success.runningTests=%s teszt futtatása...	#
 gameTest.success.relativePosition=Pozíció a következőhöz képest: %s: %s						### first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=%s sikerült!	#

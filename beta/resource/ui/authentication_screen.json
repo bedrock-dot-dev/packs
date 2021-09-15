@@ -136,7 +136,7 @@
     "size": [ 200, 18 ],
     "$button_text": "eula.view",
     "property_bag": {
-      "#hyperlink": "https://education.minecraft.net/eula"
+      "#hyperlink": "https://aka.ms/meeeula"
     }
   },
 
@@ -228,7 +228,7 @@
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
     "property_bag": {
-      "#hyperlink": "https://aka.ms/privacy"
+      "#hyperlink": "https://aka.ms/mee_privacy"
     }
   },
 
@@ -616,8 +616,8 @@
     "orientation": "vertical",
     "size": [ 260, "100%c" ],
     "controls": [
-      { "body_text@authentication.title_panel": { } },
-      { "body_hyperlink@authentication.hyperlink_panel": { } },
+      { "body_text@authentication.title_panel": {} },
+      { "body_hyperlink@authentication.hyperlink_panel": {} },
       {
         "sign_in_wrapper@common.empty_panel": {
           "size": [ "100%", "100%c + 4px" ],
@@ -767,7 +767,8 @@
           "control_ids": {
             "trial_info": "@authentication.popup_dialog_trial_info",
             "trial_info_ios": "@authentication.popup_dialog_trial_info_ios",
-            "generic_welcome": "@authentication.popup_dialog_generic_welcome"
+            "generic_welcome": "@authentication.popup_dialog_generic_welcome",
+            "muts_driven": "@authentication.authentication_popup"
           }
         }
       }
@@ -1174,6 +1175,19 @@
         }
       },
       {
+        "open_popup@common_buttons.light_text_button": {
+          "$pressed_button_name": "button.debug_open_json_popup",
+          "size": [ 150, 16 ],
+          "$button_text": "Load popup from clipboard",
+          "bindings": [
+            {
+              "binding_name": "#debug_json_popup_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
         "refresh_popup@common_buttons.light_text_button": {
           "$pressed_button_name": "button.debug_refresh_popup",
           "size": [ 100, 16 ],
@@ -1197,5 +1211,156 @@
         }
       }
     ]
+  },
+
+  "authentication_popup_link_button": {
+    "type": "stack_panel",
+    "$single_label_size": [ "default", 10 ],
+    "$single_line_font_scale_factor": 1,
+    "$pressed_button_name": "('button.' + $link_type + '_popup_link')",
+    "$single_line_label_text": "('#popup_' + $link_type + '_text')",
+    "$label_text_bindings": [
+      {
+        "binding_name": "('#popup_' + $link_type + '_text')"
+      }
+    ],
+    "controls": [
+      { "top_padding@common.empty_panel": { "size": [ "100%", 10 ] } },
+      { "link_button@edu_common.underline_button": {} }
+    ],
+    "bindings": [
+      {
+        "binding_name": "('#popup_' + $link_type + '_visible')",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "authentication_popup_contents": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { "initial_padding@common.empty_panel": { "size": [ "100%", 3 ] } },
+      {
+        "body@authentication.smooth_bound_label": {
+          "font_scale_factor": 1,
+          "max_size": [ "100%", "default" ],
+          "$text_binding_name": "#popup_text"
+        }
+      },
+      {
+        "learn_more_link@authentication.authentication_popup_link_button": {
+          "$link_type": "learn_more"
+        }
+      },
+      {
+        "link2@authentication.authentication_popup_link_button": {
+          "$link_type": "open_demo"
+        }
+      },
+      { "end_padding@common.empty_panel": { "size": [ "100%", 3 ] } }
+    ]
+  },
+
+  "resizeable_scrolling_panel@common.scrolling_panel": {
+    "$scrolling_pane_size": [ "100%", "100%c" ],
+    "$scroll_view_control_size": [ "100%", "100%c" ],
+    "$scroll_view_stack_panel_size": [ "100%", "100%cm" ],
+    "$scroll_view_port_panel_size": [ "100%", "100%cm" ],
+    "$view_port_size": [ "fill", "100%cm" ],
+    "$view_port_size_touch": [ "100%", "100%cm" ],
+    "$scroll_view_port_size": [ "100%", "100%c" ],
+    "$scroll_view_port_size_touch": [ "100%", "100%c" ]
+  },
+
+  "authentication_popup_content_panel@authentication.resizeable_scrolling_panel": {
+    "size": [ 254, "100%c" ],
+
+    // 185 fills the screen at its smallest
+    "$scroll_view_port_max_size": [ "100%", 185 ],
+    "$scroll_view_port_max_size_touch": [ "100%", 185 ],
+
+    "$scrolling_content": "authentication.authentication_popup_contents",
+    "$show_background": false,
+    "$scroll_bar_left_padding_size": [ 0, 0 ],
+    "$scroll_bar_right_padding_size": [ 0, 0 ],
+    "$scroll_bar_and_track_size": [ "100%c", "100%sm - 6px" ],
+    "$scroll_track_offset": [ 0, 3 ],
+    "$scroll_size": [ 5, "100%" ],
+    "$scroll_size_touch": "$scroll_size"
+  },
+
+  "authentication_popup_button@common_buttons.light_text_button": {
+    "$button_text": "('#popup_' + $button_pos + '_lower_button_text')",
+    "$button_text_binding_type": "global",
+    "$button_binding_condition": "visible",
+
+    "$pressed_button_name": "('button.' + $button_pos + '_lower_popup_button')",
+    "size": [ "fill", "100%" ]
+  },
+
+  "authentication_popup_one_button": {
+    "type": "panel",
+    "controls": [
+      {
+        "button@authentication.authentication_popup_button": {
+          "$button_pos": "first",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(not #popup_has_two_buttons)",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "authentication_popup_two_buttons": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%" ],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "first_button@authentication.authentication_popup_button": {
+          "$button_pos": "first"
+        }
+      },
+      { "button_padding@common.empty_panel": { "size": [ 2, "100%" ] } },
+      {
+        "second_button@authentication.authentication_popup_button": {
+          "$button_pos": "second"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#popup_has_two_buttons",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "authentication_popup_lower_button_panel": {
+    "type": "panel",
+    "controls": [
+      { "one_button@authentication.authentication_popup_one_button": {} },
+      { "two_buttons@authentication.authentication_popup_two_buttons": {} }
+    ]
+  },
+
+  "authentication_popup@popup_dialog.form_fit_modal_dialog_popup": {
+    "$popup_dialog_escape_button_name": "button.close_dialog",
+
+    "$modal_title": "#popup_title",
+    "$modal_title_binding_type": "global",
+    "$modal_title_binding_condition": "visible",
+
+    "$modal_contents": "authentication.authentication_popup_content_panel",
+    "$modal_contents_padding": [ 6, 0 ],
+
+    "$popup_type": "popup_dialog.form_fit_screen_with_title_and_close_and_bottom_buttons",
+    "$lower_button_control": "authentication.authentication_popup_lower_button_panel"
   }
 }

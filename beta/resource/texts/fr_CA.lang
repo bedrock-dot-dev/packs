@@ -2163,8 +2163,8 @@ xbl.syncIAP.confirmSync.prompt.yes=Oui, synchroniser mes achats	#
 
 xbl.marketplace.account.error.body.nobutton=Une erreur est survenue avec votre compte. Vous ne pourrez pas utiliser le marché tant que ce problème ne sera pas résolu. Si le problème persiste pendant plusieurs jours, veuillez communiquer avec l'équipe de soutien.	#
 
-playfab.account.banned.title=Banni	#
-playfab.account.banned.body=Vous avez été banni de Minecraft. Pour toute la durée de votre bannissement, vous ne pourrez pas jouer sur vos mondes (sur certaines plateformes), jouer sur des serveurs, rejoindre des Realms, héberger ou rejoindre des parties multijoueurs, ni utiliser le marché. Si vous payez pour un Realm, vous devrez annuler votre abonnement à partir du magasin où vous l'avez acheté.	#
+playfab.account.banned.title=Vous avez été banni	#
+playfab.account.banned.body=Vous avez été banni du mode multijoueur de Minecraft. Vous ne pourrez pas jouer sur des serveurs, rejoindre des Realms, héberger ou rejoindre des parties multijoueurs, ni utiliser le marché. Si vous payez pour un Realm, vous devez annuler votre abonnement à partir du magasin où vous l'avez acheté.	#
 playfab.account.banned.body.button=Plus d’infos	#
 
 store.sign_in_warning.no_xbl_and_local_content=Message important! Vous avez acheté des packs ou des pièces Minecoins qui ne sont disponibles que sur cet appareil et qui pourraient être perdus si l'appareil fait défaut, est perdu ou si vous y désinstallez Minecraft! Connectez-vous au moyen d'un compte Microsoft (gratuit) et transférez-y les droits de vos packs et vos pièces Minecoins afin de les protéger et d'y accéder à partir de n'importe quel appareil duquel vous vous connectez.	#
@@ -8670,7 +8670,7 @@ xbox.firstsignin.line3=Vous n'avez pas de compte? Créez-en un dès maintenant a
 xbox.firstsignin.line3.norealmsOrServers=Vous n'avez pas de compte? Créez-en un pour remporter des succès et jouez avec vos amis en mode multiplateforme!	#
 xbox.failedsignin.body=Nous n’avons pas pu vous connecter à votre compte Microsoft. L’accès aux Realms, aux profils et à vos objets du marché sera limité. Veuillez réessayer plus tard.	#
 xbox.failedsignin.error=Code d'erreur :	#
-xbox.failedsignin.moreInfo=More Info	#
+xbox.failedsignin.moreInfo=Plus d’infos	#
 xbox.dev_wrongSandboxSigninFailed.title=Une erreur s'est produite	#
 xbox.dev_wrongSandboxSigninFailed.line1=Échec de la connexion au bac à sable %s. Veuillez modifier les bacs à sable et redémarrez Minecraft ou vous connecter au moyen d'un autre compte. Le bac à sable sera %s au redémarrage. 	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=Modifier pour bac à sable version dév.	#
@@ -9216,48 +9216,48 @@ hbui.Toggle.select=Sélectionner	#
 hbui.Toggle.selected=sélectionné	#
 
 ## Save Location Transfer
-save_location_transfer.progress.title=Moving files	#
-save_location_transfer.progress.message=Moving "%s"...	#
-save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.	#
+save_location_transfer.progress.title=Déplacement de fichiers	#
+save_location_transfer.progress.message=Déplacement de "%s"...	#
+save_location_transfer.worlds_error=Certains mondes ne sont pas disponibles, car ils n'ont pu être déplacés. Redémarrez Minecraft pour réessayer.	#
 
-save_location_transfer.button.get_started=Get started	#
-save_location_transfer.button.retry=Retry	#
-save_location_transfer.button.go_to_faq=Go to FAQ	#
-save_location_transfer.button.next=Next	#
-save_location_transfer.button.resume=Resume	#
-save_location_transfer.button.continue=Continue	#
-save_location_transfer.button.start=Start moving files	#
-save_location_transfer.button.marketplace=Your Marketplace packs	#
-save_location_transfer.button.main_menu=Go to Main menu	#
-save_location_transfer.button.faq=Read the FAQ for more info.	#
-save_location_transfer.button.microsoft_store=Go to Microsoft Store	#
-save_location_transfer.button.help=Help	#
+save_location_transfer.button.get_started=Premiers pas	#
+save_location_transfer.button.retry=Réessayer	#
+save_location_transfer.button.go_to_faq=Aller à la FAQ	#
+save_location_transfer.button.next=Suivant	#
+save_location_transfer.button.resume=Reprendre	#
+save_location_transfer.button.continue=Continuer	#
+save_location_transfer.button.start=Commencer à déplacer des fichiers	#
+save_location_transfer.button.marketplace=Vos packs du marché	#
+save_location_transfer.button.main_menu=Aller au menu principal	#
+save_location_transfer.button.faq=Lisez la FAQ pour obtenir plus d’infos.	#
+save_location_transfer.button.microsoft_store=Aller au Microsoft Store	#
+save_location_transfer.button.help=Aide	#
 
-save_location_transfer.title.initializing=Optimizing data	#
-save_location_transfer.gathering_info.description=Gathering information...	#
-save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.	#
+save_location_transfer.title.initializing=Optimisation des données	#
+save_location_transfer.gathering_info.description=Collecte d’informations...	#
+save_location_transfer.description.out_of_space=Vous ne disposez pas de suffisamment d'espace libre pour déplacer vos fichiers vers un nouvel emplacement.	#
 
-save_location_transfer.start_transfer.generic.title=New storage location	#
-save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.	#
-save_location_transfer.start_transfer.total_file_size=Total file size:	#
-save_location_transfer.start_transfer.new_location=New location: %s	#
+save_location_transfer.start_transfer.generic.title=Nouvel emplacement de stockage	#
+save_location_transfer.start_transfer.description=Nous devons déplacer vos fichiers vers un autre emplacement sur votre appareil.	#
+save_location_transfer.start_transfer.total_file_size=Taille totale des fichiers :	#
+save_location_transfer.start_transfer.new_location=Nouvel emplacement : %s	#
 
-save_location_transfer.resume_transfer.title=Move was interrupted	#
-save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.	#
-save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.	#
-save_location_transfer.resume_transfer.need_to_move=Need to move:	#
-save_location_transfer.resume_transfer.available=(%s available)	#
-save_location_transfer.resume_transfer.location=Location: %s	#
-save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.	#
+save_location_transfer.resume_transfer.title=Le déplacement a été interrompu	#
+save_location_transfer.resume_transfer.description=Nous sommes en train de déplacer vos données vers un nouvel emplacement sur votre appareil. Veuillez appuyer sur reprendre pour terminer le déplacement.	#
+save_location_transfer.resume_transfer.description.out_of_space=Nous sommes en train de déplacer vos données vers un nouvel emplacement sur votre appareil, mais vous ne disposez pas de suffisamment d'espace libre.	#
+save_location_transfer.resume_transfer.need_to_move=Il est nécessaire de déplacer :	#
+save_location_transfer.resume_transfer.available=(%s disponibles)	#
+save_location_transfer.resume_transfer.location=Emplacement : %s	#
+save_location_transfer.resume_transfer.free_up=Veuillez libérer au moins %s pour continuer.	#
 
-save_location_transfer.transfer_error_out_of_space.title=Not enough free space	#
-save_location_transfer.transfer_error_out_of_space.files_left=Files left:	#
+save_location_transfer.transfer_error_out_of_space.title=Espace libre insuffisant	#
+save_location_transfer.transfer_error_out_of_space.files_left=Fichiers restants :	#
 
-save_location_transfer.finished.generic.title=All done	#
-save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.	#
+save_location_transfer.finished.generic.title=Terminé	#
+save_location_transfer.finished.generic.description=Vos fichiers ont été déplacés avec succès. Veuillez redémarrer Minecraft.	#
 
-save_location_transfer.transfer_error.title=Trouble moving files!	#
-save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).	#
+save_location_transfer.transfer_error.title=Nous éprouvons des problèmes avec le déplacement des fichiers!	#
+save_location_transfer.transfer_error.description=Nous n’avons pas pu déplacer tous vos fichiers. Nous avons rencontré l’erreur suivante : (%s).	#
 
 trade.doesNotWant=Le commerçant n'en veut pas	#
 trade.excalamation=!	#
@@ -9598,8 +9598,8 @@ gameTest.assert.missingExplosionComponent=Impossible de régler la mèche de l�
 gameTest.assert.invalidEntityInstance=Instance d’entité non valide	#
 gameTest.assert.unexpectedParameterValue=Valeur inattendue pour le paramètre « %s »	#
 gameTest.assert.expectEntityInstance=Instance d’entité attendue	#
-gameTest.assert.invalidFluidType=Invalid fluid type	#
-gameTest.assert.expectCauldron=Expected block of type Cauldron	#
+gameTest.assert.invalidFluidType=Type de fluide non valide	#
+gameTest.assert.expectCauldron=Un bloc de type Chaudron était attendu	#
 gameTest.success.runningTests=Exécution de tests %s...	#
 gameTest.success.relativePosition=Position par rapport à %s : %s						### first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=Réussite de %s!	#

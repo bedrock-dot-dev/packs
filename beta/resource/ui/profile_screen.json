@@ -821,31 +821,6 @@
     "$button_content": "profile.retry_button_image_content"
   },
 
-  ////////////////////////////
-  //// achievement button ////
-  "achievements_button@common_buttons.light_text_button": {
-    "ignored": "(not $supports_xbl_achievements)",
-    "size": [ "fill", "100%" ],
-    "$pressed_button_name": "button.achievements",
-    "$button_text": "gui.achievements",
-    "$font_type": "MinecraftTen",
-    "$button_font_scale_factor": 1.0,
-    "$new_ui_label_offset": [ 0, 2 ],
-    "$button_text_size": [ "100%", "100%" ],
-    "$button_text_max_size": [ "100%", "100%" ],
-    "tts_play_on_unchanged_focus_control": true,
-
-    "$persona_focus_precedence": 3,
-
-    "bindings": [
-      {
-        "binding_name": "#enable_achievement_button",
-        "binding_name_override": "#enabled",
-        "binding_condition": "always"
-      }
-    ]
-  },
-
   /////////////////////////
   //// settings button ////
   "settings_button@common_buttons.light_content_button": {

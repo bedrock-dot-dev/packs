@@ -2163,9 +2163,9 @@ xbl.syncIAP.confirmSync.prompt.yes=Да, синхронизиране на мо�
 
 xbl.marketplace.account.error.body.nobutton=Има грешка в акаунта ви. Няма да можете да използвате пазара, докато не разрешим проблема. Ако проблемът продължи няколко дни, се свържете с екипа за поддръжка.	#
 
-playfab.account.banned.title=Баннат	#
-playfab.account.banned.body=Вашият достъп в Minecraft е блокиран. По време на вашата забрана няма да можете да играете във вашите светове (на определени платформи), да играете на сървъри, да се присъединявате към Realms, да хоствате или да се присъединявате към групови игри или да използвате пазара. Ако плащате за Realm, ще трябва да отмените абонамента си чрез магазина, от който е купен.	#
-playfab.account.banned.body.button=Още информация	#
+playfab.account.banned.title=Вие бяхте блокирани	#
+playfab.account.banned.body=Бяхте блокирани от групова игра в Minecraft. Няма да можете да играете на сървъри, да се присъединявате към realms, да хоствате или да се присъединявате към групови игри, нито да използвате пазара. Ако плащате за Realm, трябва да отмените абонамента си през магазина, от който е закупен.	#
+playfab.account.banned.body.button=Повече информация	#
 
 store.sign_in_warning.no_xbl_and_local_content=Важно! Закупили сте пакети и/или Minecoins, които са налични само на това устройство и могат да бъдат изгубени заради неизправност, загуба на устройството или деинсталиране на Minecraft! Влезте с акаунт в Xbox Live (безплатно) и прехвърлете своите права за пакети и Minecoins към този акаунт, за да ги защитите и да имате достъп до тях на всяко устройство, на което влизате.	#
 store.sign_in_warning.no_xbl_and_no_local_content.line1=Важно! Закупените пакети, които са достъпни само на това устройство, може да се загубят поради неизправност на устройството, загубата му или ако деинсталирате Minecraft!	#
@@ -8670,7 +8670,7 @@ xbox.firstsignin.line3=Нямате акаунт? Създайте свой со
 xbox.firstsignin.line3.norealmsOrServers=Нямате акаунт? Създайте си сега, за да печелите постижения и да играете с вашите приятели на различни платформи!	#
 xbox.failedsignin.body=Неуспешно влизане във вашия акаунт в Microsoft. Достъпът до Realms, профили и вашите елементи на пазара ще бъде ограничен. Опитайте отново по-късно.	#
 xbox.failedsignin.error=Код на грешка:	#
-xbox.failedsignin.moreInfo=More Info	#
+xbox.failedsignin.moreInfo=Повече информация	#
 xbox.dev_wrongSandboxSigninFailed.title=Възникна грешка	#
 xbox.dev_wrongSandboxSigninFailed.line1=Неуспешно влизане в тестова среда %s. Променете тестовите среди и рестартирайте Minecraft или влезте с друг акаунт. Тестовата среда ще бъде %s при рестартиране. 	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=Промяна на тестова среда за разработчици	#
@@ -9216,48 +9216,48 @@ hbui.Toggle.select=Избор	#
 hbui.Toggle.selected=избрано	#
 
 ## Save Location Transfer
-save_location_transfer.progress.title=Moving files	#
-save_location_transfer.progress.message=Moving "%s"...	#
-save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.	#
+save_location_transfer.progress.title=Преместване на файлове	#
+save_location_transfer.progress.message=Преместване на „%s“...	#
+save_location_transfer.worlds_error=Някои светове са недостъпни, защото не могат да бъдат преместени. Рестартирайте Minecraft, за да опитате отново.	#
 
-save_location_transfer.button.get_started=Get started	#
-save_location_transfer.button.retry=Retry	#
-save_location_transfer.button.go_to_faq=Go to FAQ	#
-save_location_transfer.button.next=Next	#
-save_location_transfer.button.resume=Resume	#
-save_location_transfer.button.continue=Continue	#
-save_location_transfer.button.start=Start moving files	#
-save_location_transfer.button.marketplace=Your Marketplace packs	#
-save_location_transfer.button.main_menu=Go to Main menu	#
-save_location_transfer.button.faq=Read the FAQ for more info.	#
-save_location_transfer.button.microsoft_store=Go to Microsoft Store	#
-save_location_transfer.button.help=Help	#
+save_location_transfer.button.get_started=Първи стъпки	#
+save_location_transfer.button.retry=Повторен опит	#
+save_location_transfer.button.go_to_faq=Към ЧЗВ	#
+save_location_transfer.button.next=Напред	#
+save_location_transfer.button.resume=Възобновяване	#
+save_location_transfer.button.continue=Продължаване	#
+save_location_transfer.button.start=Начало на преместване на файлове	#
+save_location_transfer.button.marketplace=Вашите пакети от пазара	#
+save_location_transfer.button.main_menu=Към главното меню	#
+save_location_transfer.button.faq=Прочетете ЧЗВ за повече информация.	#
+save_location_transfer.button.microsoft_store=Към Microsoft Store	#
+save_location_transfer.button.help=Помощ	#
 
-save_location_transfer.title.initializing=Optimizing data	#
-save_location_transfer.gathering_info.description=Gathering information...	#
-save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.	#
+save_location_transfer.title.initializing=Оптимизиране на данни	#
+save_location_transfer.gathering_info.description=Събиране на информация...	#
+save_location_transfer.description.out_of_space=Не разполагате с достатъчно свободно пространство, за да преместите файловете си на ново местоположение.	#
 
-save_location_transfer.start_transfer.generic.title=New storage location	#
-save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.	#
-save_location_transfer.start_transfer.total_file_size=Total file size:	#
-save_location_transfer.start_transfer.new_location=New location: %s	#
+save_location_transfer.start_transfer.generic.title=Ново местоположение за съхранение	#
+save_location_transfer.start_transfer.description=Трябва да преместим файловете ви на ново местоположение на вашето устройство.	#
+save_location_transfer.start_transfer.total_file_size=Общ размер на файла:	#
+save_location_transfer.start_transfer.new_location=Ново местоположение: %s	#
 
-save_location_transfer.resume_transfer.title=Move was interrupted	#
-save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.	#
-save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.	#
-save_location_transfer.resume_transfer.need_to_move=Need to move:	#
-save_location_transfer.resume_transfer.available=(%s available)	#
-save_location_transfer.resume_transfer.location=Location: %s	#
-save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.	#
+save_location_transfer.resume_transfer.title=Преместването беше прекъснато	#
+save_location_transfer.resume_transfer.description=В момента преместваме вашите данни на ново местоположение на устройството ви. Натиснете „Възобновяване“, за да завършите преместването.	#
+save_location_transfer.resume_transfer.description.out_of_space=В момента преместваме вашите данни на ново местоположение на устройството ви, но не разполагате с достатъчно свободно пространство.	#
+save_location_transfer.resume_transfer.need_to_move=Нужно за преместване:	#
+save_location_transfer.resume_transfer.available=(%s налично)	#
+save_location_transfer.resume_transfer.location=Местоположение: %s	#
+save_location_transfer.resume_transfer.free_up=Освободете поне %s, за да продължите.	#
 
-save_location_transfer.transfer_error_out_of_space.title=Not enough free space	#
-save_location_transfer.transfer_error_out_of_space.files_left=Files left:	#
+save_location_transfer.transfer_error_out_of_space.title=Няма достатъчно свободно пространство	#
+save_location_transfer.transfer_error_out_of_space.files_left=Оставащи файлове:	#
 
-save_location_transfer.finished.generic.title=All done	#
-save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.	#
+save_location_transfer.finished.generic.title=Всичко е готово	#
+save_location_transfer.finished.generic.description=Файловете ви бяха преместени успешно. Рестартирайте Minecraft.	#
 
-save_location_transfer.transfer_error.title=Trouble moving files!	#
-save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).	#
+save_location_transfer.transfer_error.title=Проблем с преместване на файлове!	#
+save_location_transfer.transfer_error.description=Не успяхме да преместим всички ваши файлове. Срещнахме следната грешка: (%s).	#
 
 trade.doesNotWant=Търговецът не желае това	#
 trade.excalamation=!	#
@@ -9598,8 +9598,8 @@ gameTest.assert.missingExplosionComponent=Не може да се зададе �
 gameTest.assert.invalidEntityInstance=Невалиден екземпляр на обект	#
 gameTest.assert.unexpectedParameterValue=Неочаквана стойност за параметър „%s“	#
 gameTest.assert.expectEntityInstance=Очакван екземпляр на обект	#
-gameTest.assert.invalidFluidType=Invalid fluid type	#
-gameTest.assert.expectCauldron=Expected block of type Cauldron	#
+gameTest.assert.invalidFluidType=Невалиден тип течност	#
+gameTest.assert.expectCauldron=Очакван е блок от тип „Казан“	#
 gameTest.success.runningTests=Изпълняват се %s теста...	#
 gameTest.success.relativePosition=Позиция спрямо %s: %s						### first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=%s е успешен!	#

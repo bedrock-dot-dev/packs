@@ -3302,6 +3302,7 @@
           "clips_children": true,
           "offset": "$scroll_view_port_offset",
           "size": "$scroll_view_port_size",
+          "max_size": "$scroll_view_port_max_size",
           "controls": [
             {
               "scrolling_content@$scrolling_content": {
@@ -3321,7 +3322,8 @@
 
   "scroll_bar_and_track": {
     "type": "panel",
-    "size": [ "100%c", "100%" ],
+    "$scroll_bar_and_track_size|default": [ "100%c", "100%" ],
+    "size": "$scroll_bar_and_track_size",
     "clips_children": true,
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
@@ -3598,6 +3600,7 @@
     "$background_size|default": [ "100%", "100%" ],
     "$background_offset|default": [ 0, 0 ],
     "$scroll_view_port_size|default": [ "100%", "100%" ],
+    "$scroll_view_port_max_size|default": [ "100%", "100%" ],
     "$scroll_view_port_offset|default": [ 0, 0 ],
     "$scroll_bar_left_padding_size|default": [ 2, 0 ],
     "$scroll_bar_right_padding_size|default": [ 2, 0 ],
@@ -3610,6 +3613,7 @@
     "$background_size_touch|default": [ "100%", "100%" ],
     "$background_offset_touch|default": [ 0, 0 ],
     "$scroll_view_port_size_touch|default": [ "100%", "100%" ],
+    "$scroll_view_port_max_size_touch|default": [ "100%", "100%" ],
     "$scroll_view_port_offset_touch|default": [ 0, 0 ],
     "$scroll_bar_left_padding_size_touch|default": [ 0, 0 ],
     "$scroll_bar_right_padding_size_touch|default": [ 0, 0 ],
@@ -3641,6 +3645,7 @@
           "$background_size": "$background_size_touch",
           "$background_offset": "$background_offset_touch",
           "$scroll_view_port_size": "$scroll_view_port_size_touch",
+          "$scroll_view_port_max_size": "$scroll_view_port_max_size_touch",
           "$scroll_view_port_offset": "$scroll_view_port_offset_touch",
           "$scroll_track_image_control": "common.empty_panel",
           "$scroll_bar_left_padding_size": "$scroll_bar_left_padding_size_touch",
@@ -5116,7 +5121,8 @@
               "$day_one_experience_intro_screen_size": [ "60%", "85%" ], // Day One Experience intro popup
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
-              "$gamepad_disconnect_screen_size": [ 300, 100 ] //custom gamepad disconnected modal size, to contain all languages in title
+              "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
+              "$cloud_upload_progress_screen_size": [ 290, 200 ]
             },
             // PE edition and VR
             {
@@ -5162,7 +5168,8 @@
               "$day_one_experience_intro_screen_size": [ "60%", "85%" ], // Day One Experience intro popup
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
-              "$gamepad_disconnect_screen_size": [ 300, 100 ] //custom gamepad disconnected modal size, to contain all languages in title
+              "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
+              "$cloud_upload_progress_screen_size": [ 290, 200 ]
             }
           ],
           "button_mappings": [

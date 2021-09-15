@@ -905,17 +905,6 @@
         }
       },
       {
-        "show_border_effect@settings_common.option_toggle": {
-          "$tts_section_header": "createWorldScreen.cheatSettings",
-          "$option_label": "createWorldScreen.showbordereffect",
-          "$option_binding_name": "#show_border_effect",
-          "$option_enabled_binding_name": "#show_border_effect_enabled",
-          "$toggle_name": "show_border_effect",
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
-          "$toggle_binding_condition": "always_when_visible"
-        }
-      },
-      {
         "world_management_label@settings_common.option_group_label": {
           "ignored": "(not $is_pregame or not $is_world_edit or not $education_edition)",
           "$text": "createWorldScreen.worldManagement",

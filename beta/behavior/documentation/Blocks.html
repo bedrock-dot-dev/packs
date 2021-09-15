@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.17.30.24</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.17.40.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -58,7 +58,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:display_name</td>
 <td style="border-style:solid; border-width:3; padding:7px">String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Specifies the language file key that maps to what text will be displayed when you hover over the block.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Specifies the language file key that maps to what text will be displayed when you hover over the block.</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:entity_collision</td>
@@ -118,7 +118,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:geometry</td>
 <td style="border-style:solid; border-width:3; padding:7px">String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">The geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">The geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:immovable</td>
@@ -154,7 +154,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:part_visibility</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Maps bone names in a geometry file to a condition that turns their rendering on/off. The condition should be a Molang query that uses block properties to determine true/falseSupported queries include 'has_block_property', 'block_property', and other queries that can evaluate without knowledge of the block's in-game positional or player affected data.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Maps bone names in a geometry file to a condition that turns their rendering on/off. The condition should be a Molang query that uses block properties to determine true/falseSupported queries include 'has_block_property', 'block_property', and other queries that can evaluate without knowledge of the block's in-game positional or player affected data.</br>Experimental toggles required: Upcoming Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:pick_collision</td>
@@ -255,8 +255,8 @@ List of conditions where the block can be placed/survive</br><h4></h4>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:rotation</td>
 <td style="border-style:solid; border-width:3; padding:7px">Vector [a, b, c]</td>
-<td style="border-style:solid; border-width:3; padding:7px">rotation[0, 0, 0]</td>
-<td style="border-style:solid; border-width:3; padding:7px">This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">rotation[0.0, 0.0, 0.0]</td>
+<td style="border-style:solid; border-width:3; padding:7px">This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z. Angles need to be in factors of 90 and within the bounds [-360, 360].</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:ticking</td>
@@ -316,7 +316,7 @@ List of conditions where the block can be placed/survive</br><h4></h4>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:unit_cube</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Specifies that a unit cube is to be used with tessellation.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Specifies that a unit cube is to be used with tessellation.</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:unwalkable</td>

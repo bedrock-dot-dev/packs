@@ -48,7 +48,7 @@
         "pillager_root_controller": "controller.animation.pillager.root"
       },
       "render_controllers": [ "controller.render.pillager" ],
-      "enable_attachables": true
+      "enable_attachables": false
     }
   }
 }

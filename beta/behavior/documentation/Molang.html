@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.17.30.24</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.17.40.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -1761,6 +1761,10 @@ Molang uses the `"min_engine_version"` from the `manifest.json` of the resource 
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">1.17.30</td>
 <td style="border-style:solid; border-width:3; padding:7px">Fixed query.item_remaining_use_duration conversion from ticks to seconds (multiplied by 20 instead of dividing). Also fixed normalization logic in that query to go from 1 down to 0 instead of 0 up to 1.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">1.17.40</td>
+<td style="border-style:solid; border-width:3; padding:7px">Added some new error messages for invalid expressions which previously ran with probably unexpected results. For example "'text' + 1" will now cause a content error.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>

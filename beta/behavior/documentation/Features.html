@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.17.30.24</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.17.40.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -27,6 +27,8 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:tree_feature"> minecraft:tree_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:vegetation_patch_feature"> minecraft:vegetation_patch_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:weighted_random_feature"> minecraft:weighted_random_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:sculk_patch_feature"> minecraft:sculk_patch_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:catalyst_feature"> minecraft:catalyst_feature</a> </tr> </td>
 <tr> <th><a href="#Attaching features">Attaching features</a></th> </tr>
 <tr> <th><a href="#Feature rules">Feature rules</a></th> </tr>
 <tr> <th><a href="#Feature rule schema">Feature rule schema</a></th> </tr>
@@ -107,12 +109,12 @@ Example use: Scattering fruit throughout the canopy of a tree.<br / ><textarea r
 <h1><p id="minecraft:beards_and_shavers">minecraft:beards_and_shavers</p></h1>
 
 'minecraft:beards_and_shavers' will build a 'beard' or 'shave' out space so as to provide a clear space for a feature to place.</br>Succeeds if: a beard/shave is made (this should always happen).</br>Fails if: will always return placement pos, but interior feature placement not guaranteed.</br><h2></h2>
-Example use: provides an area for interior structure placement<br / ><textarea readonly="true" cols="70" rows="14">
+Example use: provides an area for interior structure placement<br / ><textarea readonly="true" cols="73" rows="14">
 {"code:beards_and_shavers": {
           "description": {
             "identifier": "..."
           },
-          "places_feature": "badger:feature_that_places_a_structure",
+          "places_feature": "minecraft:feature_that_places_a_structure",
           "bounding_box_min": [ -2, 0, -2 ],
           "bounding_box_max": [ 2, 8, 2 ],
           "y_delta": 2.0,
@@ -144,10 +146,10 @@ Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" row
 <h1><p id="minecraft:conditional_list">minecraft:conditional_list</p></h1>
 
 'minecraft:conditional_list' Places the first suitable feature within a collection.</br>These conditional features will be evaluated in order.</br>Succeeds if: A condition is successfully resolved.</br>Fails if: No condition is successfully resolved.</br><h2></h2>
-Example use: assigning a feature to an expression<br / ><textarea readonly="true" cols="65" rows="9">
+Example use: assigning a feature to an expression<br / ><textarea readonly="true" cols="68" rows="9">
 "conditional_features" : [
             { 
-              "places_feature" : "badger:some_feature_or_other",
+              "places_feature" : "minecraft:some_feature_or_other",
               "condition" : "query.check_some_block_property(),
             },
           ],
@@ -231,40 +233,40 @@ Example use: Blue vines in caves.<br / ><textarea readonly="true" cols="49" rows
 <h1><p id="minecraft:geode_feature">minecraft:geode_feature</p></h1>
 
 'minecraft:geode_feature' generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. Succeeds if: At least one block within the geode is placed.</br>Fails if: All blocks within the geode fail to be placed.</br><h2></h2>
-Example use: Diamond geodes with emerald blocks inside and obsidian on the outside.<br / ><textarea readonly="true" cols="56" rows="32">
+Example use: Diamond geodes with emerald blocks inside and obsidian on the outside.<br / ><textarea readonly="true" cols="54" rows="32">
 {
   "format_version": "1.13.0",
   "minecraft:geode_feature": {
-    "description": {
-      "identifier": "minecraft:diamond_geode_feature"
-    },
-    "filler": "minecraft:air",
-    "inner_layer": "minecraft:diamond_block",
-    "alternate_inner_layer": "minecraft:emerald_block",
-    "middle_layer": "minecraft:calcite",
-    "outer_layer": "minecraft:obsidian",
-    "inner_placements": [
-      {
-        "name": "minecraft:amethyst_cluster",
-        "states": {
-          "amethyst_cluster_type": "small"
-        }
-      }
-    ],
-    "min_outer_wall_distance": 4,
-    "max_outer_wall_distance": 7,
-    "min_distribution_points": 3,
-    "max_distribution_points": 5,
-    "min_point_offset": 1,
-    "max_point_offset": 3,
-    "max_radius": 16,
-    "crack_point_offset": 2.0,
-    "generate_crack_chance": 0.95,
-    "base_crack_size": 2.0,
-    "noise_multiplier": 0.025,
-    "use_potential_placements_chance": 0.35,
-    "use_alternate_layer0_chance": 0.083,
-    "placements_require_layer0_alternate": true,
+  "description": {
+    "identifier": "minecraft:diamond_geode_feature"
+  },
+  "filler": "minecraft:air",
+  "inner_layer": "minecraft:diamond_block",
+  "alternate_inner_layer": "minecraft:emerald_block",
+  "middle_layer": "minecraft:calcite",
+  "outer_layer": "minecraft:obsidian",
+  "inner_placements": [
+    {
+    "name": "minecraft:amethyst_cluster",
+    "states": {
+      "amethyst_cluster_type": "small"
+    }
+    }
+  ],
+  "min_outer_wall_distance": 4,
+  "max_outer_wall_distance": 7,
+  "min_distribution_points": 3,
+  "max_distribution_points": 5,
+  "min_point_offset": 1,
+  "max_point_offset": 3,
+  "max_radius": 16,
+  "crack_point_offset": 2.0,
+  "generate_crack_chance": 0.95,
+  "base_crack_size": 2.0,
+  "noise_multiplier": 0.025,
+  "use_potential_placements_chance": 0.35,
+  "use_alternate_layer0_chance": 0.083,
+  "placements_require_layer0_alternate": true,
   "invalid_blocks_threshold": 1
   }
 }
@@ -335,11 +337,11 @@ Example use: Scans the surface of a chunk and places a feature if able<br / ><te
         "ratio_of_empty_space": 0.5,
         "feature_areas":[
           {
-            "feature": "badger:tree",
+            "feature": "minecraft:tree",
             "area_dimensions": [Width,Height]
           },
           {
-            "feature": "badger:tree2",
+            "feature": "minecraft:tree2",
             "area_dimensions": [Width,Height]
           }
         ]
@@ -518,6 +520,14 @@ Example use: Selecting and placing a variant of a flower.<br / ><textarea readon
 }
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:sculk_patch_feature">minecraft:sculk_patch_feature</p></h1>
+
+Feature type 'minecraft:sculk_patch_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:catalyst_feature">minecraft:catalyst_feature</p></h1>
+
+Feature type 'minecraft:catalyst_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
 
 <h2>Feature schema</h2>
 Here is the complete feature schema<br / ><textarea readonly="true" cols="192" rows="32">
@@ -879,7 +889,8 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           }
           feature_reference "feature_to_snap" // Named reference of feature to be snapped
           int "vertical_search_range" // Range to search for a floor or ceiling for snaping the feature.
-          string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling' and 'floor'
+          string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'
+          bool "allow_underwater_placement" : opt // Features can be snapped through water as well as air.
       }
       object "minecraft:structure_template_feature" : opt
       {
@@ -1346,6 +1357,45 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
                   float "[1..1]" // Weight used in random selection. Value is relative to other weights in the collection.
               }
           }
+      }
+      object "minecraft:sculk_patch_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          array "replaceable_blocks"
+          {
+               "<any array element>" : opt
+          }
+          array "cant_place_sculk_vein_on"
+          {
+               "<any array element>" : opt
+          }
+           "ground_block"
+          feature_reference "growth_feature" : opt
+          string "surface" : opt
+          int "vertical_range"
+          float "growth_chance" : opt
+           "horizontal_radius"
+      }
+      object "minecraft:catalyst_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          array "can_place_sculk_catalyst_on"
+          {
+               "<any array element>" : opt
+          }
+           "central_block"
+          feature_reference "patch_feature" : opt
+          feature_reference "central_patch_feature" : opt
+          int "vertical_range"
+          int "pathes_count_min"
+          int "pathes_count_max"
+          int "max_patch_distance"
       }
   }
 
