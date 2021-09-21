@@ -112,6 +112,9 @@
     "$button_action|default": "button.defaultNoAction",
     "$interact_button_id|default": "interact_button",
     "$progress_loading_focus_precedence|default": 0,
+
+    "$focus_override_left": "author_button",
+    "$focus_override_right": "FOCUS_OVERRIDE_STOP",
     "controls": [
       {
         "buttons_panel@pdp.smooth_buttons_panel": {
@@ -804,8 +807,6 @@
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
     "orientation": "horizontal",
-    "$button_action|default": "button.defaultNoAction",
-    "$interact_button_id|default": "interact_button",
     "controls": [
       {
         "padding@pdp.horizontal_padding_2px": {}
@@ -816,9 +817,13 @@
           "size": [ 24, "100%" ],
           "$button_focus_precedence": 7,
           "$pressed_button_name": "button.share",
-          "$interact_button_id|default": "button.share",
-          "$focus_id": "$interact_button_id",
-          "$button_content": "pdp.share_label"
+          "$button_content": "pdp.share_label",
+
+          "$focus_id": "share_button",
+          "$focus_override_up": "interact_button",
+          "$focus_override_down": "read_more_button",
+          "$focus_override_left": "rating_button",
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP"
         }
       }
     ],
@@ -1737,6 +1742,12 @@
   "summary_factory_object": {
     "type": "stack_panel",
     "size": [ "100%", "100%c" ],
+
+    "focus_container": true,
+    "focus_wrap_enabled": false,
+    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_container_custom_left": "$main_content_focus_container_left_custom",
+
     "controls": [
       {
         "summary@pdp.summary_content_panel": {
@@ -1750,11 +1761,6 @@
           "$content_name": "#update_notification_section_visible"
         }
       }
-      //{
-      //  "summary_description@pdp.summary_description_panel": {
-      //    "$content_name": "#summary_content_visible"
-      //  }
-      //}
     ]
   },
 
@@ -2591,8 +2597,7 @@
           "$offset": [ 0, -1 ],
           "$button_text_bind_name": "#ratings_button_text",
           "$font_type": "MinecraftTen",
-          "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "$focus_wrap_enabled": false,
           "$button_focus_precedence|default": 9,
           "$pressed_button_name": "button.submit_rating",
           "$focus_id": "interact_button",
@@ -2843,6 +2848,11 @@
                                   "default_control": "default",
                                   "hover_control": "hover",
                                   "pressed_control": "hover",
+
+                                  "focus_identifier": "video_overlay",
+                                  "focus_change_right": "author_button",
+                                  "focus_change_down": "read_more_button",
+
                                   "bindings": [
                                     {
                                       "binding_name": "#video_button_enabled",
@@ -2987,6 +2997,12 @@
                                     },
                                     {
                                       "summary_rating_button@common_buttons.underline_button": {
+                                        "$focus_id": "rating_button",
+                                        "$focus_override_up": "author_button",
+                                        "$focus_override_left": "video_overlay",
+                                        "$focus_override_right": "share_button",
+                                        "$focus_override_down": "read_more_button",
+
                                         "$single_line_label_text": "#rating_button_text",
                                         "$label_text_bindings": [
                                           {
@@ -3070,6 +3086,12 @@
                 "offset": [ 0, -4 ],
                 "$pressed_button_name": "button.seeMoreBy",
                 "$single_line_label_text": "#creator_label",
+
+                "$focus_id": "author_button",
+                "$focus_override_down": "rating_button",
+                "$focus_override_left": "video_overlay",
+                "$focus_override_right": "interact_button",
+
                 "$label_text_bindings": [
                   {
                     "binding_type": "$store_factory_collection_details",
@@ -4003,6 +4025,9 @@
                 "$offset": [ -6, -2.5 ],
                 "$single_line_label_text": "store.mashup.readMore",
                 "$pressed_button_name": "button.read_toggle",
+
+                "$focus_id": "read_more_button",
+
                 "bindings": [
                   {
                     "binding_type": "view",
@@ -4061,6 +4086,11 @@
     "$store_factory_collection_details|default": "none",
     "$store_factory_collection_prefix|default": "",
     "$store_factory_collection_name|default": "",
+
+    "focus_container": true,
+    "focus_wrap_enabled": false,
+    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_container_custom_left": "$main_content_focus_container_left_custom",
 
     "$content": "pdp.description_inner_panel"
   },
@@ -4400,8 +4430,7 @@
   "bundle_offer_summary_grid_item": {
     "type": "panel",
     "size": [ "100%", "100%c + 2px" ],
-    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
-    "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+    "$focus_wrap_enabled": false,
     "controls": [
       {
         "bundle_offer_summary_button@common_buttons.dark_content_button": {

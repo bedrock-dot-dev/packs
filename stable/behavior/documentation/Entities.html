@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.17.10.4</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.17.30.4</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Client Entity Documentation">Client Entity Documentation</a></th> </tr>
@@ -8900,16 +8900,22 @@ This filter group will pass only when the moon_intensity is greater than 0.5 AND
 <td style="border-style:solid; border-width:2; padding:8px">The damage dealt by the knockback roar.</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">knockback_horizontal_strength</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">4</td>
+<td style="border-style:solid; border-width:2; padding:8px">The strength of the horizontal knockback.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">knockback_range</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">4</td>
 <td style="border-style:solid; border-width:2; padding:8px">The radius (in blocks) of the knockback effect.</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">knockback_strength</td>
+<td style="border-style:solid; border-width:2; padding:8px">knockback_vertical_strength</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">4</td>
-<td style="border-style:solid; border-width:2; padding:8px">The strength of the knockback.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The strength of the vertical knockback.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -11332,6 +11338,12 @@ This filter group will pass only when the moon_intensity is greater than 0.5 AND
 <td style="border-style:solid; border-width:2; padding:8px">If true, the mob can pickup items to its hand or armor slots</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">excluded_items</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">List of items this mob will not pick up</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">goal_radius</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.5</td>
@@ -13126,15 +13138,15 @@ Defines an entity's behavior for having items equipped to it.</br><h3></h3>
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">on_bred</td>
-<td style="border-style:solid; border-width:2; padding:8px">MoLang</td>
+<td style="border-style:solid; border-width:2; padding:8px">Molang</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">A molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A Molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">on_death</td>
-<td style="border-style:solid; border-width:2; padding:8px">MoLang</td>
+<td style="border-style:solid; border-width:2; padding:8px">Molang</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">A molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A Molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -15146,7 +15158,7 @@ Allows the entity to be a thrown entity.</br><h3></h3>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">offset</td>
 <td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
-<td style="border-style:solid; border-width:2; padding:8px">[0, 0.5, 0]</td>
+<td style="border-style:solid; border-width:2; padding:8px">[0, 0, 0]</td>
 <td style="border-style:solid; border-width:2; padding:8px">The offset from the entity's anchor where the projectile will spawn</br></td>
 </tr>
 <tr>
@@ -15439,7 +15451,7 @@ Determines whether this entity can be ridden. Allows specifying the different se
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">rotate_rider_by</td>
-<td style="border-style:solid; border-width:1; padding:9px">MoLang</td>
+<td style="border-style:solid; border-width:1; padding:9px">Molang</td>
 <td style="border-style:solid; border-width:1; padding:9px">0</td>
 <td style="border-style:solid; border-width:1; padding:9px">Offset to rotate riders by</br></td>
 </tr>

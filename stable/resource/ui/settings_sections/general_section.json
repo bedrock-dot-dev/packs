@@ -2802,6 +2802,8 @@
           "size": [ "100%", 6 ]
         }
       },
+      // ADO 576207: Reintroduce this panel for Switch when subscriptions come out, but without showing when it shouldn't on other platforms...
+      /*
       {
         "lower_panel": {
           "type": "panel",
@@ -2848,6 +2850,7 @@
           ]
         }
       },
+      */
       {
         "bottom_panel": {
           "type": "panel",
@@ -3609,6 +3612,15 @@
         }
       },
       {
+        "input_hint_toggle@settings_common.option_toggle": {
+          "ignored": "(not $education_edition)",
+          "$option_label": "options.showInputHints",
+          "$option_binding_name": "#show_input_hints",
+          "$option_enabled_binding_name": "#show_input_hints_enabled",
+          "$toggle_name": "show_input_hints"
+        }
+      },
+      {
         "reset_button@settings_common.action_button": {
           "ignored": "(not $is_pregame)",
           "$pressed_button_name": "button.reset_settings",
@@ -4349,7 +4361,7 @@
       {
         "patch_version_text_box@settings_common.option_text_edit": {
           "$option_label": "options.dev_overrideVersionPatch",
-          "$max_text_edit_length": 2,
+          "$max_text_edit_length": 3,
           "$text_box_name": "dev_version_patch_override_text_box",
           "$option_binding_name": "#dev_version_patch_override"
         }
@@ -5332,6 +5344,17 @@
   }
 },*/
       {
+        "option_dropdown_transport_layer@settings_common.option_dropdown": {
+          "$option_label": "options.dev_transport_layer",
+          "$dropdown_content": "general_section.dev_transport_layer_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "dev_transport_layer_dropdown",
+          "$options_dropdown_toggle_label_binding": "#dev_transport_layer_dropdown_toggle_label",
+          "$option_enabled_binding_name": "#dev_transport_layer_dropdown_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "250%" ]
+        }
+      },
+      {
         "option_toggle_remote_imgui@settings_common.option_toggle": {
           "$option_label": "options.remote_imgui_toggle",
           "$option_binding_name": "#remote_imgui",
@@ -5430,7 +5453,17 @@
         }
       },
 
-
+      {
+        "option_dropdown_raytracing_mode@settings_common.option_dropdown": {
+          "$option_label": "options.dev_raytracing_mode",
+          "$dropdown_content": "general_section.dev_raytracing_mode_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "raytracing_mode_dropdown",
+          "$options_dropdown_toggle_label_binding": "#dev_raytracing_mode_dropdown_toggle_label",
+          "$option_enabled_binding_name": "#dev_raytracing_mode_dropdown_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "140%" ]
+        }
+      },
       {
         "option_toggle_disable_render_terrain@settings_common.option_toggle": {
           "$option_label": "options.dev_disableRenderTerrain",
@@ -5495,7 +5528,14 @@
           "$toggle_name": "dev_disable_render_item_in_hand"
         }
       },
-
+      {
+        "option_toggle_disable_render_main_menu_cubemap@settings_common.option_toggle": {
+          "$option_label": "options.dev_disableRenderMainMenuCubeMap",
+          "$option_binding_name": "#dev_disable_render_main_menu_cube_map",
+          "$option_enabled_binding_name": "#dev_disable_render_main_menu_cube_map_enabled",
+          "$toggle_name": "dev_disable_render_main_menu_cube_map"
+        }
+      },
       {
         "leak_memory@settings_common.option_text_edit_with_text_button": {
           "$option_label": "Leak Memory",
@@ -5526,6 +5566,17 @@
         }
       },
       {
+        "option_default_profiling_option@settings_common.option_dropdown": {
+          "$option_label": "Profiling Configuration",
+          "$dropdown_content": "general_section.default_profiling_group_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "default_profiling_group",
+          "$options_dropdown_toggle_label_binding": "#default_profiling_group_toggle_label",
+          "$option_enabled_binding_name": "#default_profiling_group_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "150%" ]
+        }
+      },
+      {
         "edu_demo@settings_common.option_toggle": {
           "ignored": "(not $education_edition)",
           "$option_label": "options.dev_eduDemo",
@@ -5552,6 +5603,21 @@
           "$slider_tts_text_value": "#ad_token_refresh_threshold_text_value",
           "$option_enabled_binding_name": "#ad_token_refresh_threshold_enabled",
           "$slider_steps_binding_name": "#ad_token_refresh_threshold_steps",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "playfab_token_refresh_threshold@settings_common.option_slider": {
+          "$option_label": "#playfab_token_refresh_threshold_slider_label",
+          "$slider_name": "playfab_token_refresh_threshold",
+          "$slider_value_binding_name": "#playfab_token_refresh_threshold",
+          "$slider_tts_text_value": "#playfab_token_refresh_threshold_text_value",
+          "$option_enabled_binding_name": "#playfab_token_refresh_threshold_enabled",
+          "$slider_steps_binding_name": "#playfab_token_refresh_threshold_steps",
           "$label_bindings": [
             {
               "binding_name": "$option_label"
@@ -5804,7 +5870,19 @@
           "$dropdown_scroll_content_size": [ "100%", "200%" ]
         }
       },
+      {
+        "education_env_dropdown@settings_common.option_dropdown": {
+          "ignored": "(not $education_edition)",
 
+          "$option_label": "options.dev_education_services_environment",
+          "$dropdown_content": "general_section.dev_education_environment_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "dev_education_env_dropdown",
+          "$options_dropdown_toggle_label_binding": "#dev_education_env_dropdown_toggle_label",
+          "$option_enabled_binding_name": "#dev_education_env_dropdown_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "200%" ]
+        }
+      },
       {
         "sunsetting_use_overrides_toggle@settings_common.option_toggle": {
           "$option_label": "options.dev_sunset_overrides",
@@ -5869,6 +5947,17 @@
         }
       },
       {
+        "education_azure_notebooks_env_dropdown@settings_common.option_dropdown": {
+          "$option_label": "options.dev_education_azure_notebooks_environment",
+          "$dropdown_content": "general_section.dev_education_azure_notebooks_environment_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "dev_education_azure_notebooks_env_dropdown",
+          "$options_dropdown_toggle_label_binding": "#dev_education_azure_notebooks_env_dropdown_toggle_label",
+          "$option_enabled_binding_name": "#dev_education_azure_notebooks_env_dropdown_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "200%" ]
+        }
+      },
+      {
         "option_clear_store_cache_button@settings_common.action_button": {
           "$pressed_button_name": "dev_clear_store_cache_button",
           "$button_text": "options.dev_clearStoreCache"
@@ -5926,9 +6015,17 @@
         }
       },
       {
-        "add_coins@settings_common.action_button": {
-          "$pressed_button_name": "button.add_coins",
-          "$button_text": "options.dev_addCoins"
+        "add_500_coins@settings_common.action_button": {
+          "$pressed_button_name": "button.add_500_coins",
+          "$button_text": "#add_500_text",
+          "$button_text_binding_type": "global"
+        }
+      },
+      {
+        "add_100000_coins@settings_common.action_button": {
+          "$pressed_button_name": "button.add_100000_coins",
+          "$button_text": "#add_100000_text",
+          "$button_text_binding_type": "global"
         }
       },
       {
@@ -6509,7 +6606,50 @@
       }
     ]
   },
-
+  "default_profiling_group_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#internal_profiling_bootstrap",
+          "$radio_label_text": "Internal Profiling Configuration"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#creator_profiling_bootstrap",
+          "$radio_label_text": "Creator Profiling Configuration"
+        }
+      }
+    ]
+  },
+  "dev_transport_layer_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#transport_layer_raknet",
+          "$radio_label_text": "options.dev_transport_layer.raknet"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#transport_layer_nethernet_xmpp",
+          "$radio_label_text": "options.dev_transport_layer.nethernet_xmpp"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#transport_layer_nethernet_mpsd",
+          "$radio_label_text": "options.dev_transport_layer.nethernet_mpsd"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#transport_layer_nethernet_websockets",
+          "$radio_label_text": "options.dev_transport_layer.nethernet_websockets"
+        }
+      }
+    ]
+  },
   "dev_debug_hud_dropdown_content@settings_common.option_radio_dropdown_group": {
     "$radio_buttons": [
       {
@@ -6622,6 +6762,22 @@
       }
     ]
   },
+  "dev_raytracing_mode_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#raytracing_mode_compatibility",
+          "$radio_label_text": "options.dev_raytracing_mode.compatibility"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#raytracing_mode_full",
+          "$radio_label_text": "options.dev_raytracing_mode.full"
+        }
+      }
+    ]
+  },
   "dev_quality_dropdown_content@settings_common.option_radio_dropdown_group": {
     "$radio_buttons": [
       {
@@ -6706,6 +6862,34 @@
       }
     ]
   },
+  "dev_education_environment_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "education_environment_dev@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_environment_dev",
+          "$radio_label_text": "options.dev_education_environment.dev"
+        }
+      },
+      {
+        "education_environment_staging@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_environment_staging",
+          "$radio_label_text": "options.dev_education_environment.staging"
+        }
+      },
+      {
+        "education_environment_prod@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_environment_prod",
+          "$radio_label_text": "options.dev_education_environment.prod"
+        }
+      },
+      {
+        "education_environment_local@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_environment_local",
+          "$radio_label_text": "options.dev_education_environment.local"
+        }
+      }
+    ]
+  },
   "dev_sunsetting_tier_dropdown_content@settings_common.option_radio_dropdown_group": {
     "$radio_buttons": [
       {
@@ -6730,6 +6914,34 @@
         "sunsetting_not_pending@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#sunsetting_not_pending",
           "$radio_label_text": "options.dev_sunsetting_tier.not_pending"
+        }
+      }
+    ]
+  },
+  "dev_education_azure_notebooks_environment_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "education_azure_notebooks_environment_dev@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_azure_notebooks_environment_dev",
+          "$radio_label_text": "options.dev_education_environment.dev"
+        }
+      },
+      {
+        "education_azure_notebooks_environment_staging@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_azure_notebooks_environment_staging",
+          "$radio_label_text": "options.dev_education_environment.staging"
+        }
+      },
+      {
+        "education_azure_notebooks_environment_prod@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_azure_notebooks_environment_prod",
+          "$radio_label_text": "options.dev_education_environment.prod"
+        }
+      },
+      {
+        "education_azure_notebooks_environment_local@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#education_azure_notebooks_environment_local",
+          "$radio_label_text": "options.dev_education_environment.local"
         }
       }
     ]

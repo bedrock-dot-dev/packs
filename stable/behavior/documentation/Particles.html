@@ -1,4 +1,4 @@
-<h1>PARTICLES DOCUMENTATION </br>Version: 1.17.10.4</h1>
+<h1>PARTICLES DOCUMENTATION </br>Version: 1.17.30.4</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Basic Structure Overview">Basic Structure Overview</a></th> </tr>
@@ -14,7 +14,7 @@
 <tr> <td> <a href="#Smoke particle"> Smoke particle</a> </tr> </td>
 <tr> <td> <a href="#Mob Flame effect"> Mob Flame effect</a> </tr> </td>
 <tr> <td> <a href="#Bouncing Bubbles"> Bouncing Bubbles</a> </tr> </td>
-<tr> <th><a href="#MoLang integration">MoLang integration</a></th> </tr>
+<tr> <th><a href="#Molang integration">Molang integration</a></th> </tr>
 <tr> <td> <a href="#"> </a> </tr> </td>
 <tr> <th><a href="#Namespacing">Namespacing</a></th> </tr>
 <tr> <th><a href="#Particles Entity Integration">Particles Entity Integration</a></th> </tr>
@@ -80,7 +80,7 @@ The particle system is component based.  What this means is that particle effect
 <h2></h2>
 For fields in these components, the following shorthand is used:<br / ><textarea readonly="true" cols="107" rows="7">
 <float> - field takes a floating point input
-<float/molang> - field takes a floating point input, or a MoLang expression
+<float/molang> - field takes a floating point input, or a Molang expression
 <default:val> - specifies the default value used if field isn't specified
 <bool> - "true" or "false"
 <string> - a string ("this is a string"
@@ -802,13 +802,13 @@ For fields in these components, the following shorthand is used:<br / ><textarea
 
 <h1><p id="Curves">Curves</p></h1>
 
-Curves are interpolation values, with inputs from 0 to 1, and outputs based on the curve.  The result of the curve is a MoLang variable of the same name that can be referenced in MoLang in components.  For each rendering frame for each particle, the curves are evaluated and the result is placed in a MoLang variable of the name of the curve.</br><h2></h2>
+Curves are interpolation values, with inputs from 0 to 1, and outputs based on the curve.  The result of the curve is a Molang variable of the same name that can be referenced in Molang in components.  For each rendering frame for each particle, the curves are evaluated and the result is placed in a Molang variable of the name of the curve.</br><h2></h2>
 <br / ><textarea readonly="true" cols="120" rows="32">
 
     "curves": {
-      // "molangvar" is the MoLang variable to be used later in MoLang expressions
+      // "molangvar" is the Molang variable to be used later in Molang expressions
       // for example "variable.mycurve" here would make the result of the curve
-      // available in MoLang as "variable.mycurve".  Note that all variables must begin with "variable."
+      // available in Molang as "variable.mycurve".  Note that all variables must begin with "variable."
       "molangvar": {
         // type can be "linear", "bezier", "bezier_chain", or "catmull_rom"
         // "linear" is a series of nodes, equally spaced between 0 and 1 (after applying input/horizontal_range)
@@ -904,17 +904,17 @@ Events can be triggered elsewhere in the .json and fire off new particle and sou
             "effect": <string>,
             // "emitter", "emitter_bound", "particle" or "particle_with_velocity"
             "type": <string>,
-            // this MoLang is run on the emitter for this event once this
+            // this Molang is run on the emitter for this event once this
             // event fires
             // NOTE: this will not have access to the event
-            // triggering emitter's MoLang data
+            // triggering emitter's Molang data
             "pre_effect_expression": <string>,
           },
           "sound_effect": {
             // name of the level sound event
             "event_name": <string>
           },
-          // Runs this MoLang expression on the event-firing emitter
+          // Runs this Molang expression on the event-firing emitter
           "expression": <string>,
           // for debugging, this will log a message, along with the firing effect's name and event position
           // the log message will show up in the content logger
@@ -1174,9 +1174,9 @@ Events can be triggered elsewhere in the .json and fire off new particle and sou
 
 <br><br>
 
-<h1><p id="MoLang integration">MoLang integration</p></h1>
+<h1><p id="Molang integration">Molang integration</p></h1>
 
-Where it makes sense, any field can use a MoLang expression. MoLang expressions are strings, and are defined in the MoLang documentation.  The particle system uses some special MoLang variables that particle MoLang expressions can use.  Additionally, custom MoLang paramaters can be set in various ways and used in MoLang expressions in effects.</br><h2></h2>
+Where it makes sense, any field can use a Molang expression. Molang expressions are strings, and are defined in the Molang documentation.  The particle system uses some special Molang variables that particle Molang expressions can use.  Additionally, custom Molang paramaters can be set in various ways and used in Molang expressions in effects.</br><h2></h2>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
@@ -1274,7 +1274,7 @@ All particle effects should be namespaced (in their name).</br></br>Namespacing 
 
 <h1><p id="Animation Controller effects">Animation Controller effects</p></h1>
 
-</br>Animation controllers can specify effect events for their states.  This allows for a list of particle effects to be started upon state entry, and for those particle effects to be automatically ended when leaving the state.  For particles that don't terminate (or don't terminate prior to state transition), they will be terminated at state exit.</br></br>The schema is:</br>"particle_effects": [</br>    // array of effect events</br>]</br>The array syntax allows for more than one effect to be triggered on state entry.</br></br>An example is the Blaze's flame-up effect in it's animation controller. This animation controller has two states, "default" and "flaming".  It transitions between the two via the "query.is_charged" entity flag check.  When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization MoLang expression), and is terminated when the state exits.</br><h2></h2>
+</br>Animation controllers can specify effect events for their states.  This allows for a list of particle effects to be started upon state entry, and for those particle effects to be automatically ended when leaving the state.  For particles that don't terminate (or don't terminate prior to state transition), they will be terminated at state exit.</br></br>The schema is:</br>"particle_effects": [</br>    // array of effect events</br>]</br>The array syntax allows for more than one effect to be triggered on state entry.</br></br>An example is the Blaze's flame-up effect in it's animation controller. This animation controller has two states, "default" and "flaming".  It transitions between the two via the "query.is_charged" entity flag check.  When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization Molang expression), and is terminated when the state exits.</br><h2></h2>
 <br / ><textarea readonly="true" cols="47" rows="32">
 
 {
@@ -1333,7 +1333,7 @@ Animations can also trigger particle effects.  These are fire-and-forget effects
 
 <h1><p id="Effect Event">Effect Event</p></h1>
 
-</br>Particle events in the entity have the following properties:</br>- "effect" is the effect name specified in the entity's resource definition .json (the particle effect list), this specifies what particle effect to start/play</br>- "locator" is an optional parameter that maps to a locator of the same name in the resource definition.  By specifying a locator, the emitter will follow that locator around as the entity animates, including orientation.  If this is not specified, the effect will occur at the origin of the entity.</br>- "pre_effect_script" is an optional parameter that is a MoLang expression run at emitter startup time.  This can set up MoLang variables, (for example 'particle color'), which can be then referred to inside the particle effect .json itself.</br><h2></h2>
+</br>Particle events in the entity have the following properties:</br>- "effect" is the effect name specified in the entity's resource definition .json (the particle effect list), this specifies what particle effect to start/play</br>- "locator" is an optional parameter that maps to a locator of the same name in the resource definition.  By specifying a locator, the emitter will follow that locator around as the entity animates, including orientation.  If this is not specified, the effect will occur at the origin of the entity.</br>- "pre_effect_script" is an optional parameter that is a Molang expression run at emitter startup time.  This can set up Molang variables, (for example 'particle color'), which can be then referred to inside the particle effect .json itself.</br><h2></h2>
 <br / ><textarea readonly="true" cols="43" rows="8">
 
 {

@@ -18,8 +18,11 @@
     "focus_change_up": "$focus_override_up",
     "focus_change_left": "$focus_override_left",
     "focus_change_right": "$focus_override_right",
-    "focus_enabled": true,
+    "$focus_enabled|default": true,
+    "focus_enabled": "$focus_enabled",
     "focus_magnet_enabled": true,
+    "$focus_wrap_enabled|default": true,
+    "focus_wrap_enabled": "$focus_wrap_enabled",
 
     "$button_focus_precedence|default": 0,
     "default_focus_precedence": "$button_focus_precedence",
@@ -352,6 +355,9 @@
     "$toggle_tts_index_priority|default": 150,
     "$tts_section_header|default": "",
 
+    "$ignore_tts_enabled_bind|default": false,
+    "$toggle_focus_bind|default": "",
+
     "radio_toggle_group": "$radio_toggle_group",
     "toggle_name": "$toggle_name",
     "toggle_default_state": "$toggle_default_state",
@@ -443,8 +449,15 @@
         "binding_name": "$toggle_tts_override_toggle_value"
       },
       {
+        "ignored": "$ignore_tts_enabled_bind",
         "binding_type": "$toggle_tts_enabled_binding_type",
         "binding_name": "#tts_enabled",
+        "binding_name_override": "#focus_enabled"
+      },
+      {
+        "ignored": "(($toggle_focus_bind = '') and (not $ignore_tts_enabled_bind))",
+        "binding_type": "global",
+        "binding_name": "$toggle_focus_bind",
         "binding_name_override": "#focus_enabled"
       }
     ]
@@ -1952,6 +1965,8 @@
     "$single_label_size|default": [ "default", 10 ],
     "$underline_control|default": "common.empty_panel",
     "$single_line_font_scale_factor|default": 1,
+    "$font_type|default": "smooth",
+    "$font_size|default": "normal",
     "controls": [
       {
         "label_panel": {
@@ -1961,7 +1976,8 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "layer": 2,
-          "font_type": "smooth",
+          "font_type": "$font_type",
+          "font_size":  "$font_size",
           "enable_profanity_filter": false,
 
           "font_scale_factor": "$single_line_font_scale_factor",
@@ -2322,6 +2338,12 @@
     ]
   },
 
+  "gamepad_helper_start@gamepad_helper": {
+    "$icon_texture": "#controller_start_icon",
+    "$icon_description_bind": "#button_start_description",
+    "$icon_image_ref": "icon@common.gamepad_icon_button"
+  },
+
   "gamepad_helper_a@gamepad_helper": {
     "$icon_texture": "#controller_face_down_icon",
     "$icon_description_bind": "#button_a_description",
@@ -2621,7 +2643,7 @@
   "minecraftTenLabel": {
     "type": "label",
     "font_type": "MinecraftTen",
-    "backup_font_type": "DefaultFont",
+    "backup_font_type": "UIFont",
     "color": "$generic_button_text_color", // We have to specify a color for unit tests - expect to override this when used.
 
     "variables": [
@@ -3368,6 +3390,7 @@
 
   "scroll_view_control": {
     "type": "scroll_view",
+    "size": "$scroll_view_control_size",
     "scroll_speed": 15,
     "scrollbar_track_button": "button.scrollbar_skip_track",
     "scrollbar_touch_button": "button.scrollbar_touch",
@@ -3566,6 +3589,8 @@
     // scrolling content area and scroll box/track
     "$scrolling_pane_size|default": [ "100%", "100%" ],
     "$scrolling_pane_offset|default": [ 0, 0 ],
+
+    "$scroll_view_control_size|default": [ "100%", "100%" ],
 
     // Sizes and offsets of the background behind the scrolling content, the
     // viewport containing the scrolling content, the scroll track, and the area
@@ -4012,6 +4037,9 @@
       },
       {
         "item_button_ref@$button_ref": {
+          "tts_ignore_count": true,
+          "tts_skip_message": true,
+          "tts_inherit_siblings": true,
           "layer": 5
         }
       },
@@ -5812,7 +5840,7 @@
                 // The max y is 200 due to the fact that we have no way to say use inherited max sibling height
                 //   - 200 was used in thoughts that whatever text was used would not need more that 200px
                 //     allowing the image to grow and string with the height of the text object
-                "max_size": [ 12, 200 ],
+                "max_size": [ 15, 200 ],
                 "controls": [
                   {
                     "tooltip_image_panel": {
@@ -5868,6 +5896,8 @@
                 "font_scale_factor": "$tooltip_text_font_scale",
                 "$tooltip_text_color|default": "$f_color_format",
                 "color": "$tooltip_text_color",
+                "$tooltip_text_font_type|default": "default",
+                "font_type": "$tooltip_text_font_type",
                 "bindings": [
                   {
                     "binding_name": "$tooltip_text_binding_name",

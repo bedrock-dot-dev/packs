@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.17.10.4</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.17.30.4</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Overview">Overview</a></th> </tr>
@@ -357,7 +357,7 @@ Example use: Scans the surface of a chunk and places a feature if able<br / ><te
 
 <h1><p id="minecraft:scatter_feature">minecraft:scatter_feature</p></h1>
 
-'minecraft:scatter_feature' scatters a feature throughout a chunk. The 'x', 'y', and 'z' fields are per-coordinate parameters. Note that coordinates represent an offset from the input position, not an absolute position. Coordinates may be a single value, a random distribution, or molang expression that resolves to a numeric value. The 'coordinate_eval_order' field is provided for finer control of coordinate resolution (particularly when using the 'grid' distribution). 'iterations' controls how many individual placements should occur if the 'scatter_chance' check succeeds. The 'scatter_chance' check happens once, so either all placements will run or none will.</br>Succeeds if: At least one feature placement succeeds.</br>Fails if: All feature placements fail.</br><h2></h2>
+'minecraft:scatter_feature' scatters a feature throughout a chunk. The 'x', 'y', and 'z' fields are per-coordinate parameters. Note that coordinates represent an offset from the input position, not an absolute position. Coordinates may be a single value, a random distribution, or Molang expression that resolves to a numeric value. The 'coordinate_eval_order' field is provided for finer control of coordinate resolution (particularly when using the 'grid' distribution). 'iterations' controls how many individual placements should occur if the 'scatter_chance' check succeeds. The 'scatter_chance' check happens once, so either all placements will run or none will.</br>Succeeds if: At least one feature placement succeeds.</br>Fails if: All feature placements fail.</br><h2></h2>
 Example use: Scattering flowers at sea level across half the chunks in a biome.<br / ><textarea readonly="true" cols="54" rows="21">
 {
   "format_version": 1.13.0,

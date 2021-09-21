@@ -185,7 +185,8 @@
               }
             },
             { "realm_subscription_origin_label@realms_settings.realm_subscription_origin_label": {} },
-            { "realm_consumable_to_subscription_info_label@realms_settings.realm_consumable_to_subscription_info_label": {} },
+            // ADO 576207: Bring this message back for switch but make sure we can be confident it never falsely displays
+            //{ "realm_consumable_to_subscription_info_label@realms_settings.realm_consumable_to_subscription_info_label": {} },
             {
               "_0": {
                 "type": "panel",
@@ -1084,7 +1085,7 @@
       },
       {
         "dev_options_button@settings_common.section_toggle_base": {
-          "ignored": "($non_config_realms_env or $is_realm_slot)",
+          "ignored": "($non_config_realms_env or $realm_no_world_edit)",
           "$toggle_view_binding_name": "dev_options_button_toggle",
           "$toggle_group_forced_index": "$dev_options_toggle_index",
           "$glyph_texture": "textures/ui/dev_glyph",
@@ -1130,7 +1131,7 @@
       },
       {
         "dev_options_section@realms_settings.generic_section_wrapper": {
-          "ignored": "($non_config_realms_env or $is_realm_slot)",
+          "ignored": "($non_config_realms_env or $realm_no_world_edit)",
           "$section_button_name|default": "dev_options_button_toggle",
           "$section_content_name|default": "branch_section"
         }
