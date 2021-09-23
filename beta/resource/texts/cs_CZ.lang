@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Kanál říše	#
 accessibility.play.tabLeft=Pro levý tabulátor stiskněte %s	#
 accessibility.play.tabRight=Pro pravý tabulátor stiskněte %s	#
 accessibility.play.legacyWorldsDelete=Odstranit starší svět	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Oprávnění	#
 accessibility.pause.profile=Vybrat profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Jejda! Zdá se, že jste se přihlásili p
 
 eula.intro=Chcete-li hrát hru Minecraft: Education Edition, musíte přijmout licenční smlouvu koncového uživatele.	#
 eula.location=Smlouva EULA je na adrese:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Licenční smlouva koncového uživatele	#
 eula.view=Zobrazit smlouvu EULA	#
 eula.callToAction=Podmínky této smlouvy přijmete kliknutím na tlačítko Přijmout.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=Datová značka se neshoduje s %1$s	
 commands.scoreboard.players.score.notFound=Pro hráče %1$s nebylo nalezeno žádné skóre %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Skóre %1$d NENÍ v rozsahu %2$d až %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Skóre %1$d je v rozsahu %2$d až %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Datové úložiště je téměř plné! Minec
 storageSpaceWarningScreen.lowduringgameplay=Na vašem zařízení téměř došlo místo, které Minecraft potřebuje k ukládání světů a nastavení. Doporučujeme smazat některé nepoužívané soubory, aby vzniklo místo pro ty nové.	#
 storageSpaceWarningScreen.fullduringgameplay=Datové úložiště je plné a Minecraft nemůže uložit váš postup! Minecraft vás vrátí do hlavní nabídky, abyste uvolnili místo na úložišti.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=ZOBRAZIT MÉ SVĚTY	#
 edu.play_screen.view_library=ZOBRAZIT KNIHOVNU	#
 edu.play_screen.create_new=VYTVOŘIT NOVÝ	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Hledat	#
 edu.worlds_screen.play=HRÁT	#
 edu.worlds_screen.host=ZAKLÁDAJÍCÍ HRÁČ	#
 edu.worlds_screen.settings=NASTAVENÍ	#
+edu.worlds_screen.manage=SPRAVOVAT	#
+edu.worlds_screen.back=ZPĚT	#
+edu.worlds_screen.copy=KOPÍROVAT	#
+edu.worlds_screen.export=EXPORTOVAT	#
+edu.worlds_screen.share=SDÍLET	#
+edu.worlds_screen.delete=ODSTRANIT	#
 edu.worlds_screen.courses_title=Moje kurzy	#
 
 edu.templates.title=Moje šablony	#
@@ -3735,6 +3744,7 @@ level.import.success=Import úrovně byl úspěšně dokončen	#
 level.export.failed=Export úrovně se nezdařil	#
 level.import.failed=Import úrovně se nezdařil	#
 level.import.failed.incompatibleEdition=Import úrovně se nezdařil: nepodporovaný formát souboru	#
+
 invite.clear=Vymazat výběr	#
 invite.send=Odeslat %d pozvánek	#
 invite.sendOne=Odeslat 1 pozvánku	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Krovky	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Prázdná mapa	#
 item.emptyLocatorMap.name=Prázdná mapa lokátoru	#
-item.emptyPotion.name=Lahvička s vodou	#
 item.enchanted_book.name=Kouzelná kniha	#
 item.end_crystal.name=Endový krystal	#
 tile.end_rod.name=Endový prut	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Vypnout vykreslování počasí	#
 options.dev_disableRenderHud=Vypnout vykreslování informačního panelu	#
 options.dev_disableRenderItemInHand=Vypnout vykreslování předmětů v ruce	#
 options.dev_disableRenderMainMenuCubeMap=Zakázat vykreslování CubeMap hlavní nabídky	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Vlákno instance serveru	#
 options.dev_newCuller=Použijte nového trhače	#
 options.dev_showBuildInfo=Zobrazit informace o stavbě	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Aktuální úpravy	#
 options.dev_unusedTreatmentsTitle=Nepoužité úpravy	#
 options.dev_addTreatmentId=Přidat ID úpravy	#
 options.dev_addLabel=Přidat	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Obnovit výchozí hodnoty	#
 options.dev_clearFlights=Vymazat	#
 options.dev_experimentalProgressions=Přepsat průběh	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Únava při těžbě	#
 potion.digSpeed=Zrychlení	#
 potion.effects.whenDrank=Při použití:	#
 potion.empty=Žádné účinky	#
+potion.emptyPotion.name=Lahvička s vodou	#
+potion.emptyPotion.splash.name=Vrhací lahvička s vodou	#
+potion.emptyPotion.linger.name=Lahvička s vodou s místním účinkem	#
 potion.fireResistance=Ohnivzdornost	#
 potion.fireResistance.name=Lektvar ohnivzdornosti	#
 potion.fireResistance.splash.name=Vrhací lektvar ohnivzdornosti	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Převedení světa se nezdařilo	#
 worldConversionErrorPrompt.message=Jejda, něco se nepovedlo při konverzi světa. Zkuste to znovu později.	#
-worldConversionErrorPrompt.message.upload=Něco se nepovedlo. Nepodařilo se nám převést váš svět. Můžete nám ho zaslat později, když přejdete do svého starého světa a stisknete :_gamepad_face_button_up:. Případně nám zašlete svůj svět nyní, abychom se jím mohli dále zabývat.	#
-worldConversionErrorPrompt.sendWorld=Zaslat svět nyní	#
-worldConversionErrorPrompt.backToWorld=Zpět ke světům	#
-
-worldConversionErrorReport.title=Nahlásit tento svět	#
-worldConversionErrorReport.button.reportAndSend=Nahlásit a odeslat svět	#
-worldConversionErrorReport.dropdown.default=Co se nepovedlo?	#
-worldConversionErrorReport.dropdown.mobs=Stvoření se nechovají, jak mají, nebo chybí.	#
-worldConversionErrorReport.dropdown.terrain=Terén je poškozený nebo chybí.	#
-worldConversionErrorReport.dropdown.itemsMissing=Ztratily se mi předměty, výtvory nebo statistiky hráče.	#
-worldConversionErrorReport.dropdown.itemInteraction=Nelze používat předměty.	#
-worldConversionErrorReport.dropdown.worldConversion=Převedení světa se nezdařilo	#
-worldConversionErrorReport.terms.agreement=Kliknutím na možnost Souhlasím nahrajete svůj svět týmu Minecraftu. Platí smlouva o poskytování služeb společnosti Microsoft a prohlášení o zásadách ochrany osobních údajů.	#
-worldConversionErrorReport.terms.agreementForBeta=Nahráním svého světa tímto opravňujete společnost Microsoft k testování, reprodukci, úpravě, distribuci a veřejnému předvádění vašeho světa v rámci podpory přenosu vašeho světa do hry Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Zobrazit podmínky	#
-
-
-worldConversionErrorReport.sending.title=Zasílání starého světa	#
-worldConversionErrorReport.sending.description=Zasílání starého světa do Minecraftu...	#
-
-worldConversionErrorReport.sending.complete=Odeslání bylo dokončeno	#
-worldConversionErrorReport.sending.completeMessage.part1=Děkujeme! Tvrdě pracujeme na nápravě chyb a nemůžeme vám odpovědět ohledně tohoto konkrétního světa. Zde je potvrzení, že jsme ho přijali:	#
-worldConversionErrorReport.sending.completeMessage.part2=Potvrzení: %s	#
 
 worldError.corrupted=je poškozen a nelze ho spustit.	#
 worldError.invalidArguments=byl vytvořen s neplatnými argumenty.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Ostrov hub	#
 eduTemplateWorld.starterTown.name=Počáteční město	#
 eduTemplateWorld.tutorialVolumeII.name=Výuka, díl II	#
 eduTemplateWorld.blocksOfGrass.name=Travnaté bloky	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Svět byl odeslán	#
-worldConversion.feedback.failed.title=Odeslání světa se nezdařilo	#
-worldConversion.feedback.done.msg=Děkujeme, že jste nám zaslali kopii svého světa a že nám pomáháte hledat chyby! Tvrdě pracujeme na jejich nápravě a nemůžeme vám odpovědět ohledně tohoto konkrétního světa. Zde je potvrzení, že jsme ho přijali: %s	#
-worldConversion.feedback.failed.msg=Jejda! Nepodařilo se nám přijmout váš svět. Zkuste si zkontrolovat připojení k internetu nebo ho pošlete znovu později.	#
-worldConversion.feedback.prompt.title=Odeslat svět	#
-worldConversion.feedback.prompt.msg=Nevypadal nebo nefungoval váš svět tak, jak by měl? Pošlete nám svůj svět a pomozte nám najít chyby!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Převod byl dokončen	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Aktualizace Better Together (%s)	#
 client.version.1.4=Aktualizace Aquatic (%s)	#
 client.version.1.5=Aktualizace Aquatic (%s)	#
 client.version.1.11=Village & Pillage (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Akce!	#
 dr.banner.limitedTimeOffer=Časově omezená nabídka!	#

@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realmin syöte	#
 accessibility.play.tabLeft=Siirry vasemmalle painamalla %s	#
 accessibility.play.tabRight=Siirry oikealle painamalla %s	#
 accessibility.play.legacyWorldsDelete=Poista vanha maailma	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Luvat	#
 accessibility.pause.profile=Valitse profiili	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hups! Näyttää siltä, että olet kirjau
 
 eula.intro=Sinun on hyväksyttävä loppukäyttäjän lisenssisopimus (EULA), jotta voit käyttää Minecraft: Education Editionia.	#
 eula.location=EULA löytyy osoitteesta:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Käyttöoikeussopimus	#
 eula.view=Näytä käyttöoikeussopimus	#
 eula.callToAction=Napsauttamalla Hyväksy hyväksyt sopimuksen ehdot.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=TietoTunnus ei vastaa pelaajaa %1$s	
 commands.scoreboard.players.score.notFound=Pelaajalle %1$s ei löydy %2$s-tulosta									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Tulos %1$s EI ole välillä %2$s−%3$s								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Tulos %1$s on välillä %2$s−%3$s								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Tallennustilasi on melkein lopussa! Minecraft
 storageSpaceWarningScreen.lowduringgameplay=Laitteesi tallennustila, johon Minecraft voi tallentaa maailmoja ja asetuksia, on melkein lopussa. Kannattaa poistaa vanhoja juttuja, jota et enää tarvitse, jotta voit jatkaa uusien juttujen tallentamista!	#
 storageSpaceWarningScreen.fullduringgameplay=Tallennustilasi on lopussa, eikä Minecraft voi tallentaa edistystäsi! Minecraft palauttaa sinut päävalikkoon tallennustilan tyhjentämistä varten.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=NÄYTÄ MAAILMANI	#
 edu.play_screen.view_library=NÄYTÄ KIRJASTO	#
 edu.play_screen.create_new=LUO UUSI	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Haku	#
 edu.worlds_screen.play=PELAA	#
 edu.worlds_screen.host=ISÄNNÖI	#
 edu.worlds_screen.settings=ASETUKSET	#
+edu.worlds_screen.manage=HALLITSE	#
+edu.worlds_screen.back=TAKAISIN	#
+edu.worlds_screen.copy=KOPIOI	#
+edu.worlds_screen.export=VIE	#
+edu.worlds_screen.share=JAA	#
+edu.worlds_screen.delete=POISTA	#
 edu.worlds_screen.courses_title=Omat kurssit	#
 
 edu.templates.title=Omat mallit	#
@@ -3735,6 +3744,7 @@ level.import.success=Taso tuotu onnistuneesti	#
 level.export.failed=Tason vienti epäonnistui	#
 level.import.failed=Tason tuonti epäonnistui	#
 level.import.failed.incompatibleEdition=Tason tuonti epäonnistui: tiedostomuotoa ei tueta	#
+
 invite.clear=Tyhjennä valinnat	#
 invite.send=Lähetä %d kutsua	#
 invite.sendOne=Lähetä 1 kutsu	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Liitosiivet	#
 item.emerald.name=Smaragdi	#
 item.emptyMap.name=Tyhjä kartta	#
 item.emptyLocatorMap.name=Tyhjä paikannuskartta	#
-item.emptyPotion.name=Vesipullo	#
 item.enchanted_book.name=Lumottu kirja	#
 item.end_crystal.name=Äärikristalli	#
 tile.end_rod.name=Ääritanko	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Poista sään piirtäminen käytöstä	#
 options.dev_disableRenderHud=Poista heijastusnäytön piirtäminen käytöstä	#
 options.dev_disableRenderItemInHand=Poista kädessä olevien esineiden piirtäminen käytöstä	#
 options.dev_disableRenderMainMenuCubeMap=Poista päävalikon kuutiokartoitus käytöstä	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Palvelininstanssisäie	#
 options.dev_newCuller=Käytä uutta karsijaa	#
 options.dev_showBuildInfo=Näytä versiotiedot	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Nykyiset käsittelyt	#
 options.dev_unusedTreatmentsTitle=Käyttämättömät hoidot	#
 options.dev_addTreatmentId=Lisää käsittelytunnus	#
 options.dev_addLabel=Lisää	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Palauta oletus	#
 options.dev_clearFlights=Poista	#
 options.dev_experimentalProgressions=Ohita sarjat	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Kaivuuhidastus	#
 potion.digSpeed=Pikakaivuu	#
 potion.effects.whenDrank=Käytettäessä:	#
 potion.empty=Ei vaikutuksia	#
+potion.emptyPotion.name=Vesipullo	#
+potion.emptyPotion.splash.name=Roiskevesipullo	#
+potion.emptyPotion.linger.name=Viipyilevä vesipullo	#
 potion.fireResistance=Tulensieto	#
 potion.fireResistance.name=Tulensiedon taikajuoma	#
 potion.fireResistance.splash.name=Tulensiedon roisketaikajuoma	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Maailman muuntaminen epäonnistui	#
 worldConversionErrorPrompt.message=Hups, jokin meni pieleen maailman muuntamisessa. Yritä myöhemmin uudelleen.	#
-worldConversionErrorPrompt.message.upload=Jokin meni pieleen. Emme kyenneet muuntamaan maailmaasi. Voit lähettää meille maailmasi myöhemmin menemällä vanhaan maailmaasi ja painamalla :_gamepad_face_button_up:. Voit myös lähettää meille maailmasi nyt, jotta voimme tehdä lisätutkimuksia.	#
-worldConversionErrorPrompt.sendWorld=Lähetä maailma nyt	#
-worldConversionErrorPrompt.backToWorld=Takaisin maailmoihin	#
-
-worldConversionErrorReport.title=Ilmoita tästä maailmasta	#
-worldConversionErrorReport.button.reportAndSend=Ilmoita maailmasta ja lähetä se	#
-worldConversionErrorReport.dropdown.default=Mikä meni pieleen?	#
-worldConversionErrorReport.dropdown.mobs=Hirviöt käyttäytyivät väärin tai niitä puuttui	#
-worldConversionErrorReport.dropdown.terrain=Maasto oli virheellinen tai sitä puuttui	#
-worldConversionErrorReport.dropdown.itemsMissing=Esineeni, luomukseni ja/tai pelaajatilastoni hävisivät	#
-worldConversionErrorReport.dropdown.itemInteraction=En voinut vaikuttaa esineisiin	#
-worldConversionErrorReport.dropdown.worldConversion=Maailman muuntaminen epäonnistui	#
-worldConversionErrorReport.terms.agreement=Valitsemalla Hyväksy lähetät maailmasi Minecraft-tiimille. Microsoftin palvelusopimus ja tietosuojakäytännöt pätevät.	#
-worldConversionErrorReport.terms.agreementForBeta=Lähettämällä maailmasi annat Microsoftille luvan testata, jäljentää, muokata, jakaa ja esitellä julkisesti maailmaasi tukena maailmasi Minecraftiin siirtämisessä.	#
-worldConversionErrorReport.terms.viewTerms=Katso käyttöehdot	#
-
-
-worldConversionErrorReport.sending.title=Lähetetään vanhaa maailmaa	#
-worldConversionErrorReport.sending.description=Lähetetään vanhaa maailmaa Minecraftiin...	#
-
-worldConversionErrorReport.sending.complete=Lähetys onnistui	#
-worldConversionErrorReport.sending.completeMessage.part1=Kiitos! Teemme kovasti töitä asioiden korjaamiseksi emmekä voi ottaa sinuun yhteyttä juuri tästä maailmasta. Tässä on kuittisi vahvistukseksi siitä, että olemme vastaanottaneet maailmasi.	#
-worldConversionErrorReport.sending.completeMessage.part2=Vastaanotettu: %s	#
 
 worldError.corrupted=on vahingoittunut, eikä sitä voida käynnistää.	#
 worldError.invalidArguments=luotiin virheellisillä argumenteilla.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Sienisaari	#
 eduTemplateWorld.starterTown.name=Aloittelukaupunki	#
 eduTemplateWorld.tutorialVolumeII.name=Tutoriaali, osa II	#
 eduTemplateWorld.blocksOfGrass.name=Ruhokuutioita	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Maailma lähetetty	#
-worldConversion.feedback.failed.title=Maailman lähetys epäonnistui	#
-worldConversion.feedback.done.msg=Kiitos, että lähetit meille kopion maailmastasi ja autat meitä löytämään virheitä! Teemme kovasti töitä asioiden korjaamiseksi emmekä voi ottaa sinuun yhteyttä juuri tästä maailmasta. Tässä on kuittisi vahvistukseksi siitä, että olemme vastaanottaneet maailmasi: %s	#
-worldConversion.feedback.failed.msg=Hups! Emme saaneet vastaanotettua maailmaasi. Tarkista internetyhteytesi tai lähetä maailmasi uudelleen myöhemmin.	#
-worldConversion.feedback.prompt.title=Lähetä maailma	#
-worldConversion.feedback.prompt.msg=Eikö vanha maailmasi näytä siltä miltä sen pitäisi tai toimi kunnolla? Lähetä maailmasi meille ja auta meitä löytämään virheet!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Muunto suoritettu	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together -päivitys (%s)	#
 client.version.1.4=Vesipäivitys (%s)	#
 client.version.1.5=Vesipäivitys (%s)	#
 client.version.1.11=Kylä ja Ryöstelijä -päivitys (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Ale!	#
 dr.banner.limitedTimeOffer=Tarjous voimassa rajoitetun ajan!	#

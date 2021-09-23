@@ -22,7 +22,8 @@
         { "vindicator_base": "controller.animation.vindicator.base.v1.0" }
       ],
       "render_controllers": [ "controller.render.vindicator" ],
-      "enable_attachables": false,
+      "enable_attachables": true,
+      "hide_armor": true,
       "spawn_egg": {
         "texture": "spawn_egg",
         "texture_index": 39

@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Feed del Realm	#
 accessibility.play.tabLeft=Pulsa %s para usar el tabulador a la izquierda	#
 accessibility.play.tabRight=Pulsa %s para usar el tabulador a la derecha	#
 accessibility.play.legacyWorldsDelete=Borrar mundo heredado	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Permisos	#
 accessibility.pause.profile=Elegir perfil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=¡Vaya! Parece que has iniciado sesión co
 
 eula.intro=Para usar Minecraft: Education Edition tienes que aceptar el Contrato de Licencia para el Usuario Final.	#
 eula.location=El CLUF está disponible en:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Contrato de Licencia para el Usuario Final	#
 eula.view=Ver CLUF	#
 eula.callToAction=Para aceptar los términos del contrato haz clic en aceptar.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=El elemento dataTag no coincide con 
 commands.scoreboard.players.score.notFound=No se ha encontrado ninguna puntuación de %1$s para %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=La puntuación %1$d NO está dentro del intervalo %2$d a %3$d.								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=La puntuación %1$d está dentro del intervalo %2$d a %3$d.								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=¡Ya casi no te queda espacio de almacenamien
 storageSpaceWarningScreen.lowduringgameplay=Casi no queda espacio en tu dispositivo para que Minecraft guarde mundos y configuración. ¿Por qué no borras datos que no necesites para poder seguir guardando cosas?	#
 storageSpaceWarningScreen.fullduringgameplay=Te has quedado sin espacio de almacenamiento de datos, por lo que Minecraft no puede guardar tu progreso. Minecraft te devolverá al menú principal para que liberes espacio de almacenamiento.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=VER MIS MUNDOS	#
 edu.play_screen.view_library=VER BIBLIOTECA	#
 edu.play_screen.create_new=CREAR NUEVO	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Buscar	#
 edu.worlds_screen.play=JUGAR	#
 edu.worlds_screen.host=ANFITRIÓN	#
 edu.worlds_screen.settings=AJUSTES	#
+edu.worlds_screen.manage=ADMINISTRAR	#
+edu.worlds_screen.back=ATRÁS	#
+edu.worlds_screen.copy=COPIAR	#
+edu.worlds_screen.export=EXPORTAR	#
+edu.worlds_screen.share=COMPARTIR	#
+edu.worlds_screen.delete=SUPRIMIR	#
 edu.worlds_screen.courses_title=Mis recorridos	#
 
 edu.templates.title=Mis plantillas	#
@@ -3735,6 +3744,7 @@ level.import.success=Importación de nivel finalizada	#
 level.export.failed=Exportación de nivel fallida	#
 level.import.failed=Importación de nivel fallida	#
 level.import.failed.incompatibleEdition=Fallo en la importación del nivel: formato de archivo incompatible	#
+
 invite.clear=Anular selección	#
 invite.send=Enviar %d invitaciones	#
 invite.sendOne=Mandar 1 invitación.	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Élitros	#
 item.emerald.name=Esmeralda	#
 item.emptyMap.name=Mapa vacío	#
 item.emptyLocatorMap.name=Mapa localizador vacío	#
-item.emptyPotion.name=Botella de agua	#
 item.enchanted_book.name=Libro encantado	#
 item.end_crystal.name=Cristal de End	#
 tile.end_rod.name=Vara de End	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Desactivar dibujo del tiempo meteorológico	#
 options.dev_disableRenderHud=Desactivar dibujo de estaciones	#
 options.dev_disableRenderItemInHand=Desactivar dibujo de objetos en la mano	#
 options.dev_disableRenderMainMenuCubeMap=Deshabilitar el dibujo de cubemap del menú principal	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Hilo de instancia de servidor	#
 options.dev_newCuller=Usar nuevo selector	#
 options.dev_showBuildInfo=Mostrar información de versión	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Tratamientos actuales	#
 options.dev_unusedTreatmentsTitle=Tratamientos sin usar	#
 options.dev_addTreatmentId=Añadir ID de tratamiento	#
 options.dev_addLabel=Añadir	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Restablecer valores predeterminados	#
 options.dev_clearFlights=Borrar	#
 options.dev_experimentalProgressions=Anular progreso	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Fatiga de extracción	#
 potion.digSpeed=Prisa	#
 potion.effects.whenDrank=Al aplicarse:	#
 potion.empty=Sin efectos	#
+potion.emptyPotion.name=Botella de agua	#
+potion.emptyPotion.splash.name=Botella de agua de salpicadura	#
+potion.emptyPotion.linger.name=Botella de agua persistente	#
 potion.fireResistance=Resistente al fuego	#
 potion.fireResistance.name=Poción ignífuga	#
 potion.fireResistance.splash.name=Poción ignífuga de salpicadura	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=La conversión del mundo ha fallado	#
 worldConversionErrorPrompt.message=Ups, algo no ha ido como se esperaba durante la conversión de mundo. Por favor, vuelve a intentarlo más tarde.	#
-worldConversionErrorPrompt.message.upload=Algo ha salido mal y no hemos podido convertir tu mundo. Para enviarnos tu mundo más tarde, ve a tu mundo antiguo y pulsa :_gamepad_face_button_up:. O envíanos ahora tu mundo para que podamos seguir investigando.	#
-worldConversionErrorPrompt.sendWorld=Enviar mundo ahora	#
-worldConversionErrorPrompt.backToWorld=Volver a Mundos	#
-
-worldConversionErrorReport.title=Informar sobre este mundo	#
-worldConversionErrorReport.button.reportAndSend=Informar sobre este mundo y enviarlo	#
-worldConversionErrorReport.dropdown.default=¿Qué ha salido mal?	#
-worldConversionErrorReport.dropdown.mobs=Faltan criaturas o no se comportan de la forma que deberían	#
-worldConversionErrorReport.dropdown.terrain=Falta terreno o está roto	#
-worldConversionErrorReport.dropdown.itemsMissing=He perdido mis objetos, creaciones o estadísticas de jugador	#
-worldConversionErrorReport.dropdown.itemInteraction=No puedo interaccionar con los objetos	#
-worldConversionErrorReport.dropdown.worldConversion=La conversión del mundo ha fallado	#
-worldConversionErrorReport.terms.agreement=En el momento en que pulses Acepto, el mundo se enviará al equipo de Minecraft. Se aplica el Contrato de servicios y la Declaración de privacidad de Microsoft.	#
-worldConversionErrorReport.terms.agreementForBeta=Al subir tu mundo autorizas a Microsoft a probar, reproducir, modificar, distribuir y mostrar públicamente tu mundo, como contrapartida por transferir tu mundo a Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Ver términos	#
-
-
-worldConversionErrorReport.sending.title=Enviando mundo antiguo	#
-worldConversionErrorReport.sending.description=Enviando mundo antiguo a Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Envío realizado	#
-worldConversionErrorReport.sending.completeMessage.part1=¡Gracias! Estamos ocupados solucionando un montón de cosas, por lo que no podremos enviarte información sobre este mundo específico. Aquí tienes tu recibo para confirmar que lo hemos recibido:	#
-worldConversionErrorReport.sending.completeMessage.part2=Recibo: %s	#
 
 worldError.corrupted=se ha dañado y no se puede iniciar.	#
 worldError.invalidArguments=se ha creado con argumentos no válidos.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Islote del champiñón	#
 eduTemplateWorld.starterTown.name=Ciudad de partida	#
 eduTemplateWorld.tutorialVolumeII.name=Tutorial volumen II	#
 eduTemplateWorld.blocksOfGrass.name=Bloques de hierba	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Mundo enviado	#
-worldConversion.feedback.failed.title=Error en el envío del mundo	#
-worldConversion.feedback.done.msg=¡Gracias por enviarnos una copia de tu mundo y por ayudarnos a solucionar los errores! Estamos ocupados solucionando un montón de cosas, por lo que no podremos enviarte información sobre este mundo específico. Aquí tienes tu recibo para confirmar que lo hemos recibido: %s	#
-worldConversion.feedback.failed.msg=¡Vaya! No hemos recibido tu mundo. Comprueba tu conexión a Internet o vuelve a enviarlo más tarde.	#
-worldConversion.feedback.prompt.title=Enviar mundo	#
-worldConversion.feedback.prompt.msg=¿Tu mundo antiguo no se ve o no funciona como debería? Envíanos tu mundo y ayúdanos a encontrar los errores.	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversión completa	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Actualización Better Together (%s)	#
 client.version.1.4=Actualización Acuática (%s)	#
 client.version.1.5=Actualización Acuática (%s)	#
 client.version.1.11=Pueblo y saqueo (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=¡Oferta!	#
 dr.banner.limitedTimeOffer=¡Oferta por tiempo limitado!	#

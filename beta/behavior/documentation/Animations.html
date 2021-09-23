@@ -1,4 +1,4 @@
-<h1>ANIMATIONS DOCUMENTATION </br>Version: 1.17.40.20</h1>
+<h1>ANIMATIONS DOCUMENTATION </br>Version: 1.17.40.21</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -12,6 +12,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <th><a href="#Getting Started">Getting Started</a></th> </tr>
 <tr> <td> <a href="#Upgrade from v1.7 Beta to v1.8"> Upgrade from v1.7 Beta to v1.8</a> </tr> </td>
 <tr> <td> <a href="#Upgrade from v1.8 Beta to v1.10"> Upgrade from v1.8 Beta to v1.10</a> </tr> </td>
+<tr> <td> <a href="#Upgrade from v1.10 to v1.17.30"> Upgrade from v1.10 to v1.17.30</a> </tr> </td>
 <tr> <td> <a href="#Adding Animations"> Adding Animations</a> </tr> </td>
 <tr> <td> <a href="#Animation Hierarchy"> Animation Hierarchy</a> </tr> </td>
 <tr> <th><a href="#Key Frames">Key Frames</a></th> </tr>
@@ -29,7 +30,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <h2></h2>
 Animation Controller Format:<br / ><textarea readonly="true" cols="59" rows="24">
 {
-  "format_version": "1.10.0",
+  "format_version": "1.17.30",
   "animation_controllers": {
     "controller.animation.sheep.move": {
       "states": {
@@ -68,7 +69,7 @@ the animation controller for that frame.  It will take the value of `query.groun
 <br / ><textarea readonly="true" cols="54" rows="27">
 ```
 {
-  "format_version": "1.10.0",
+  "format_version": "1.17.30",
   "animation_controllers": {
     "controller.animation.sheep.move": {
       "states": {
@@ -286,6 +287,10 @@ To upgrade previous scripts, you'll want to do the following steps to all of you
 
 - the ability to have animations reference other animations in an arbitrarily deep hierarchy.</br>- the parameters section of animation controllers has been replaced with the `variables` section.</br>- in the entity definition file, animation controllers are now listed in the `animations` section, and a `scriptsnimate` section has been added to define which root animations to play.</br>The v1.8 file format is backwards-compatible with v1.10 so you don't _need_ to change anything (although we recommend refactoring your files in the spirit of v1.10 as there is a slight performance win with the new format, as well as it being simpler to understand.</br><a href="#Index">Back to top</a><br><br>
 
+<h1><p id="Upgrade from v1.10 to v1.17.30">Upgrade from v1.10 to v1.17.30</p></h1>
+
+- Molang expressions inside transitions that contain capital letters are properly evaluated now. Strings inside such expressions are not forced to lowercase anymore and work as expected.</br><a href="#Index">Back to top</a><br><br>
+
 <h1><p id="Adding Animations">Adding Animations</p></h1>
 
 <h2></h2>
@@ -344,7 +349,7 @@ This means you will not see the move animation in the pig.json animation file ei
 While a lot of this can be managed in the entity definition `scripts/animate` section, animation controllers give you the functionality of a state machine into states and control them as a block.  Animations in an animation controller state can be animation controllers themselves, allowing for arbitrarily complex animation hierarchies.</br><h3></h3>
 Here's a sample animation controller<br / ><textarea readonly="true" cols="58" rows="27">
 {
-  "format_version": "1.10.0",
+  "format_version": "1.17.30",
   "animation_controllers": {
     "controller.animation.my_mob.move": {
       "initial_state": "moving",

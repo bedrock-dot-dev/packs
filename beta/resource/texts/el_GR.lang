@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Τροφοδοσία Realm	#
 accessibility.play.tabLeft=Πάτησε το %s για μετακίνηση αριστερά	#
 accessibility.play.tabRight=Πάτησε το %s για μετακίνηση δεξιά	#
 accessibility.play.legacyWorldsDelete=Διαγραφή κόσμου παλαιού τύπου	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Δικαιώματα	#
 accessibility.pause.profile=Επιλογή προφίλ	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ωχ! Φαίνεται πως πραγμα
 
 eula.intro=Για να χρησιμοποιήσεις το Minecraft: Education Edition θα πρέπει να αποδεχθείς την Άδεια χρήσης τελικού χρήστη.	#
 eula.location=Η Άδεια χρήσης τελικού χρήστη βρίσκεται στη διεύθυνση:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Άδεια Χρήσης Τελικού Χρήστη	#
 eula.view=Προβολή EULA	#
 eula.callToAction=Κάνε κλικ στην "Αποδοχή" για να δεχθείς τους όρους αυτής της άδειας.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=Η ετικέτα δεδομένων
 commands.scoreboard.players.score.notFound=Δεν βρέθηκε βαθμολογία %1$s για τον παίκτη %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Η βαθμολογία %1$d ΔΕΝ είναι εντός του εύρους %2$d έως %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Η βαθμολογία %1$d είναι εντός του εύρους %2$d έως %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Ο χώρος αποθήκευσης δεδο
 storageSpaceWarningScreen.lowduringgameplay=Ο χώρος αποθήκευσης της συσκευής σου που μπορεί να χρησιμοποιήσει το Minecraft για να σώσει κόσμους και ρυθμίσεις σε αυτή τη συσκευή είναι σχεδόν πλήρης. Γιατί δεν διαγράφεις πράγματα που δεν χρειάζεσαι, ώστε να συνεχίσεις να αποθηκεύεις νέα στοιχεία;	#
 storageSpaceWarningScreen.fullduringgameplay=Ο χώρος αποθήκευσης δεδομένων είναι πλήρης και το Minecraft δεν μπορεί να σώσει την πρόοδό σου! Το Minecraft θα σε μεταφέρει στο κύριο μενού για να αδειάσεις τον χώρο αποθήκευσης.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=ΠΡΟΒΟΛΗ ΤΩΝ ΚΟΣΜΩΝ ΜΟΥ	#
 edu.play_screen.view_library=ΠΡΟΒΟΛΗ ΒΙΒΛΙΟΘΗΚΗΣ	#
 edu.play_screen.create_new=ΔΗΜΙΟΥΡΓΙΑ ΝΕΟΥ	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Αναζήτηση	#
 edu.worlds_screen.play=ΠΑΙΞΕ	#
 edu.worlds_screen.host=ΟΙΚΟΔΕΣΠΟΤΗΣ	#
 edu.worlds_screen.settings=ΡΥΘΜΙΣΕΙΣ	#
+edu.worlds_screen.manage=ΔΙΑΧΕΙΡΙΣΗ	#
+edu.worlds_screen.back=ΠΙΣΩ	#
+edu.worlds_screen.copy=ΑΝΤΙΓΡΑΦΗ	#
+edu.worlds_screen.export=ΕΞΑΓΩΓΗ	#
+edu.worlds_screen.share=ΚΟΙΝΗ ΧΡΗΣΗ	#
+edu.worlds_screen.delete=ΔΙΑΓΡΑΦΗ	#
 edu.worlds_screen.courses_title=Τα μαθήματά μου	#
 
 edu.templates.title=Τα πρότυπά μου	#
@@ -3735,6 +3744,7 @@ level.import.success=Η εισαγωγή επιπέδου ολοκληρώθηκ
 level.export.failed=Η εξαγωγή επιπέδου απέτυχε	#
 level.import.failed=Η εισαγωγή επιπέδου απέτυχε	#
 level.import.failed.incompatibleEdition=Η εισαγωγή επιπέδου απέτυχε: Μη υποστηριζόμενη μορφή αρχείου	#
+
 invite.clear=Εκκαθάριση επιλογής	#
 invite.send=Αποστολή %d προσκλήσεων	#
 invite.sendOne=Αποστολή 1 πρόσκλησης	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Έλυτρα	#
 item.emerald.name=Σμαράγδι	#
 item.emptyMap.name=Κενός Χάρτης	#
 item.emptyLocatorMap.name=Κενός χάρτης εντοπισμού	#
-item.emptyPotion.name=Μπουκάλι με νερό	#
 item.enchanted_book.name=Μαγεμένο βιβλίο	#
 item.end_crystal.name=Κρύσταλλος του Τέλους	#
 tile.end_rod.name=Ράβδος του Τέλους	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Απενεργοποίηση σχεδιασμο
 options.dev_disableRenderHud=Απενεργοποίηση σχεδιασμού Hud	#
 options.dev_disableRenderItemInHand=Απενεργοποίηση σχεδιασμού αντικειμένου στο χέρι	#
 options.dev_disableRenderMainMenuCubeMap=Απενεργοποίηση σχεδίου CubeMap στο κύριο μενού	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Νήμα παρουσίας διακομιστή	#
 options.dev_newCuller=Χρήση νέου διαλογέα	#
 options.dev_showBuildInfo=Εμφάνιση πληροφοριών δομής	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Τρέχουσα επεξεργασία	#
 options.dev_unusedTreatmentsTitle=Αχρησιμοποίητη επεξεργασία	#
 options.dev_addTreatmentId=Προσθήκη αναγνωριστικού επεξεργασίας	#
 options.dev_addLabel=Προσθήκη	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Επαναφορά στις προεπιλογές	#
 options.dev_clearFlights=Απαλοιφή	#
 options.dev_experimentalProgressions=Παράκαμψη προόδων	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Κόπωση εξόρυξης	#
 potion.digSpeed=Βιασύνη	#
 potion.effects.whenDrank=Όταν εφαρμόζεται:	#
 potion.empty=Χωρίς αποτέλεσμα	#
+potion.emptyPotion.name=Μπουκάλι Νερού	#
+potion.emptyPotion.splash.name=Εκτοξευόμενο μπουκάλι με νερό	#
+potion.emptyPotion.linger.name=Επίμονο μπουκάλι με νερό	#
 potion.fireResistance=Ανθ/κότητα στη φωτιά	#
 potion.fireResistance.name=Φίλτρο Ανθεκτικότητας στη φωτιά	#
 potion.fireResistance.splash.name=Φίλτρο Πιτσιλιάς Αντίστασης Φωτιάς	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Αποτυχία μετατροπής κόσμου	#
 worldConversionErrorPrompt.message=Παρουσιάστηκε κάποιο πρόβλημα κατά τη μετατροπή κόσμου. Δοκίμασε ξανά αργότερα.	#
-worldConversionErrorPrompt.message.upload=Κάτι πήγε στραβά. Δεν μπορέσαμε να μετατρέψουμε τον κόσμο σου. Μπορείς να μας στείλεις τον κόσμο σου αργότερα μεταβαίνοντας στον παλαιό κόσμο σου και πατώντας το :_gamepad_face_button_up:. Εναλλακτικά, στείλε μας τον κόσμο σου τώρα, για να διερευνήσουμε το ζήτημα.	#
-worldConversionErrorPrompt.sendWorld=Αποστολή κόσμου τώρα	#
-worldConversionErrorPrompt.backToWorld=Πίσω στους κόσμους	#
-
-worldConversionErrorReport.title=Αναφορά αυτού του κόσμου	#
-worldConversionErrorReport.button.reportAndSend=Αναφορά και αποστολή κόσμου	#
-worldConversionErrorReport.dropdown.default=Τι πήγε στραβά;	#
-worldConversionErrorReport.dropdown.mobs=Πλάσματα συμπεριφέρονταν ανάρμοστα ή έλειπαν	#
-worldConversionErrorReport.dropdown.terrain=Έδαφος ήταν κατεστραμμένο ή έλειπε	#
-worldConversionErrorReport.dropdown.itemsMissing=Έχασα τα στοιχεία μου, τις δημιουργίες μου ή/και στατιστικά παίκτη	#
-worldConversionErrorReport.dropdown.itemInteraction=Δεν μπορούσα να αλληλεπιδράσω με στοιχεία	#
-worldConversionErrorReport.dropdown.worldConversion=Αποτυχία μετατροπής κόσμου	#
-worldConversionErrorReport.terms.agreement=Επιλέγοντας "Συμφωνώ", στέλνεις τον κόσμο σου στην Ομάδα Minecraft. Ισχύει η Σύμβαση παροχής υπηρεσιών και η Δήλωση προστασίας απορρήτου της Microsoft.	#
-worldConversionErrorReport.terms.agreementForBeta=Αν αποστείλεις τον κόσμο σου, δίνεις εξουσιοδότηση στην Microsoft για έλεγχο, αναπαραγωγή, τροποποίηση, διανομή και δημόσια προβολή του κόσμου σου στα πλαίσια της υποστήριξης της μεταφοράς του κόσμου σου στο Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Προβολή όρων	#
-
-
-worldConversionErrorReport.sending.title=Αποστολή παλαιού κόσμου	#
-worldConversionErrorReport.sending.description=Αποστολή παλαιού κόσμου στο Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Η αποστολή ολοκληρώθηκε	#
-worldConversionErrorReport.sending.completeMessage.part1=Ευχαριστούμε! Εργαζόμαστε εντατικά για να επιλύσουμε τα προβλήματα και δεν θα μπορέσουμε να σου απαντήσουμε για αυτόν τον συγκεκριμένο κόσμο. Ακολουθεί η απόδειξη ότι τον λάβαμε:	#
-worldConversionErrorReport.sending.completeMessage.part2=Απόδειξη: %s	#
 
 worldError.corrupted=είναι κατεστραμμένος και δεν μπορεί να εκκινηθεί.	#
 worldError.invalidArguments=δημιουργήθηκε με μη έγκυρα ορίσματα.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Νησί των Μανιταριών	#
 eduTemplateWorld.starterTown.name=Πόλη αρχαρίων	#
 eduTemplateWorld.tutorialVolumeII.name=Εκμάθηση - Μέρος II	#
 eduTemplateWorld.blocksOfGrass.name=Κύβοι γρασιδιού	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Ο κόσμος υποβλήθηκε	#
-worldConversion.feedback.failed.title=Αποτυχία υποβολής κόσμου	#
-worldConversion.feedback.done.msg=Σε ευχαριστούμε που μας έστειλες ένα αντίγραφο του κόσμου σου και που μας βοηθάς να εντοπίζουμε σφάλματα! Εργαζόμαστε εντατικά για να επιλύσουμε τα προβλήματα και δεν θα μπορέσουμε να σου απαντήσουμε για αυτόν τον συγκεκριμένο κόσμο. Ακολουθεί η απόδειξη ότι τον λάβαμε: %s	#
-worldConversion.feedback.failed.msg=Ους! Δυστυχώς δεν λάβαμε τον κόσμο σου. Έλεγξε τη σύνδεσή σου στο Internet ή στείλε τον ξανά αργότερα.	#
-worldConversion.feedback.prompt.title=Υποβολή κόσμου	#
-worldConversion.feedback.prompt.msg=Μήπως ο κόσμος σου δεν εμφανιζόταν ή δεν λειτουργούσε όπως θα έπρεπε; Στείλε μας τον κόσμο σου και βοήθησέ μας να εντοπίσουμε σφάλματα!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Η μετατροπή ολοκληρώθηκε	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Ενημέρωση Better Together (%s)	#
 client.version.1.4=Ενημέρωση Update Aquatic (%s)	#
 client.version.1.5=Ενημέρωση Update Aquatic (%s)	#
 client.version.1.11=Χωριά και Λεηλασία (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Εκπτώσεις!	#
 dr.banner.limitedTimeOffer=Προσφορά περιορισμένου χρόνου!	#

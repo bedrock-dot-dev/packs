@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Стрічка Realm	#
 accessibility.play.tabLeft=Натисніть %s, щоб перейти ліворуч	#
 accessibility.play.tabRight=Натисніть %s, щоб перейти праворуч	#
 accessibility.play.legacyWorldsDelete=Видалити застарілий світ	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Дозволи	#
 accessibility.pause.profile=Вибрати профіль	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ой! Схоже, ви ввійшли пі
 
 eula.intro=Щоб грати в Minecraft: Education Edition, ви повинні прийняти ліцензійну угоду.	#
 eula.location=Ознайомтеся з умовами ліцензійної угоди за адресою:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Ліцензійна угода для кінцевого користувача	#
 eula.view=Переглянути ліцензійну угоду	#
 eula.callToAction=Натисніть кнопку "Прийняти", щоб прийняти умови цієї угоди.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=Тег даних не підход�
 commands.scoreboard.players.score.notFound=Очки "%1$s" для гравця "%2$s" не знайдено										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Очки %1$d ПОЗА діапазоном від %2$d до %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Очки %1$d у діапазоні від %2$d до %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Ви майже вичерпали прост
 storageSpaceWarningScreen.lowduringgameplay=На вашому пристрої майже закінчилося місце, яке Minecraft може використовувати для збереження світів і настройок! Видаліть старі непотрібні файли, щоб зберігати нові.	#
 storageSpaceWarningScreen.fullduringgameplay=Ви майже вичерпали простір для зберігання даних. Minecraft не вдалося зберегти результати. Вас буде переспрямовано в головне меню для звільнення місця.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=ПЕРЕГЛЯНУТИ МОЇ СВІТИ	#
 edu.play_screen.view_library=ПЕРЕГЛЯНУТИ БІБЛІОТЕКУ	#
 edu.play_screen.create_new=СТВОРИТИ	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Пошук	#
 edu.worlds_screen.play=ГРАТИ	#
 edu.worlds_screen.host=СТАТИ ХОСТОМ	#
 edu.worlds_screen.settings=ПАРАМЕТРИ	#
+edu.worlds_screen.manage=НАЛАШТУВАТИ	#
+edu.worlds_screen.back=НАЗАД	#
+edu.worlds_screen.copy=КОПІЮВАТИ	#
+edu.worlds_screen.export=ЕКСПОРТУВАТИ	#
+edu.worlds_screen.share=ПОДІЛИТИСЯ	#
+edu.worlds_screen.delete=ВИДАЛИТИ	#
 edu.worlds_screen.courses_title=Мої курси	#
 
 edu.templates.title=Мої шаблони	#
@@ -3735,6 +3744,7 @@ level.import.success=Імпорт рівня завершено	#
 level.export.failed=Не вдалось експортувати рівень	#
 level.import.failed=Не вдалось імпортувати рівень	#
 level.import.failed.incompatibleEdition=Не вдалося імпортувати рівень: непідтримуваний формат файлу	#
+
 invite.clear=Скасувати вибір	#
 invite.send=Надіслати %d запрош.	#
 invite.sendOne=Надіслати 1 запрош.	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Надкрилля	#
 item.emerald.name=Смарагд	#
 item.emptyMap.name=Порожня карта	#
 item.emptyLocatorMap.name=Пуста карта шукача	#
-item.emptyPotion.name=Пляшка з водою	#
 item.enchanted_book.name=Книга чарів	#
 item.end_crystal.name=Кристал Енду	#
 tile.end_rod.name=Стержень Енду	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Вимкнути малювання погод�
 options.dev_disableRenderHud=Вимкнути малювання елементів HUD	#
 options.dev_disableRenderItemInHand=Вимкнути малювання предмета в руці	#
 options.dev_disableRenderMainMenuCubeMap=Вимкнути малювання CubeMap у головному меню	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Потік екземпляра сервера	#
 options.dev_newCuller=Використовувати новий збирач	#
 options.dev_showBuildInfo=Показати відомості про збірку	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Поточні процедури	#
 options.dev_unusedTreatmentsTitle=Невикористані засоби обробки	#
 options.dev_addTreatmentId=Додати код процедури	#
 options.dev_addLabel=Додати	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Скинути до замовчувань	#
 options.dev_clearFlights=Очистити	#
 options.dev_experimentalProgressions=Перевизначення прогресу	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Втома від видобування	#
 potion.digSpeed=Поспіх	#
 potion.effects.whenDrank=При застосуванні:	#
 potion.empty=Немає ефектів	#
+potion.emptyPotion.name=Пляшка з водою	#
+potion.emptyPotion.splash.name=Вибухова пляшечка води	#
+potion.emptyPotion.linger.name=Осідаюча пляшечка води	#
 potion.fireResistance=Вогнестійкість	#
 potion.fireResistance.name=Зілля вогнестійкості	#
 potion.fireResistance.splash.name=Вибухове зілля вогнестійкості	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Помилка перетворення світу	#
 worldConversionErrorPrompt.message=Ех, щось пішло не так під час створення світу. Спробуйте ще раз згодом.	#
-worldConversionErrorPrompt.message.upload=Щось пішло не так. Не вдалося перетворити ваш світ. Ви можете надіслати нам свій світ трохи згодом, відкривши свій старий світ і натиснувши :_gamepad_face_button_up:. Або надішліть нам світ просто зараз, і ми дослідимо проблему.	#
-worldConversionErrorPrompt.sendWorld=Надіслати світ зараз	#
-worldConversionErrorPrompt.backToWorld=Повернутися до світів	#
-
-worldConversionErrorReport.title=Повідомте про цей світ	#
-worldConversionErrorReport.button.reportAndSend=Повідомити та надіслати світ	#
-worldConversionErrorReport.dropdown.default=Що пішло не так?	#
-worldConversionErrorReport.dropdown.mobs=Моби вели себе дивно або їх не було взагалі	#
-worldConversionErrorReport.dropdown.terrain=Земля була пошкоджена або відсутня	#
-worldConversionErrorReport.dropdown.itemsMissing=Зникли предмети, витвори та/або параметри гравця	#
-worldConversionErrorReport.dropdown.itemInteraction=Не вдалося взаємодіяти з предметами	#
-worldConversionErrorReport.dropdown.worldConversion=Помилка перетворення світу	#
-worldConversionErrorReport.terms.agreement=Натискаючи "Приймаю", ви погоджуєтеся з умовами передавання вашого світу до розробників Minecraft. Застосовуються умови Угоди про використання служб Microsoft і Декларації про конфіденційність.	#
-worldConversionErrorReport.terms.agreementForBeta=Передаючи свій світ ви надаєте право корпорації Майкрософт тестувати, відтворювати, змінювати, розповсюджувати та публічно демонструвати ваш світ за можливість розміщення вашого світу в Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Переглянути умови	#
-
-
-worldConversionErrorReport.sending.title=Надсилання старого світу	#
-worldConversionErrorReport.sending.description=Надсилання старого світу до Minecraft…	#
-
-worldConversionErrorReport.sending.complete=Надсилання завершено	#
-worldConversionErrorReport.sending.completeMessage.part1=Дякуємо! Ми активно працюємо над виправленнями, тому не зможемо поділитися з вами новинами щодо саме цього світу. Ось підтвердження, що ми отримали ваш запит:	#
-worldConversionErrorReport.sending.completeMessage.part2=Запит: %s	#
 
 worldError.corrupted=пошкоджено, і його не вдається запустити.	#
 worldError.invalidArguments=створено з неприпустимими аргументами.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Острів грибів	#
 eduTemplateWorld.starterTown.name=Початкове місто	#
 eduTemplateWorld.tutorialVolumeII.name=Навчальний світ – частина II	#
 eduTemplateWorld.blocksOfGrass.name=Блок трави	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Світ надіслано	#
-worldConversion.feedback.failed.title=Помилка надсилання світу	#
-worldConversion.feedback.done.msg=Дякуємо за надсилання нам копії вашого світу та допомогу в пошуку багів! Ми активно працюємо над виправленнями, тому не зможемо поділитися з вами новинами щодо саме цього світу. Ось підтвердження, що ми отримали ваш запит: %s	#
-worldConversion.feedback.failed.msg=Ой! Не вдалось отримати ваш світ. Спробуйте перевірити своє підключення до Інтернету або надіслати світ трохи згодом.	#
-worldConversion.feedback.prompt.title=Надішліть світ	#
-worldConversion.feedback.prompt.msg=Ваш старий світ не виглядає або не працює належним чином? Надішліть його нам, щоб ми пошукали баги!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Перетворення завершено	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Оновлення "Better Together" (%s)	#
 client.version.1.4=Оновлення "Водний світ" (%s)	#
 client.version.1.5=Оновлення "Водний світ" (%s)	#
 client.version.1.11=Село й мародери (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Розпродаж!	#
 dr.banner.limitedTimeOffer=Тимчасова пропозиція!	#

@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Bölge Akışı	#
 accessibility.play.tabLeft=Sola bir sekme ilerletmek için %s düğmesine basın	#
 accessibility.play.tabRight=Sağa bir sekme ilerletmek için %s düğmesine basın	#
 accessibility.play.legacyWorldsDelete=Eski Dünyayı Sil	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=İzinler	#
 accessibility.pause.profile=Profil Seç	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hay aksi! Görünüşe göre kişisel bir 
 
 eula.intro=Minecraft: Education Edition kullanmak için Son Kullanıcı Lisans Anlaşması'nı (EULA) kabul etmeniz gerekir.	#
 eula.location=EULA'ya şu adresten ulaşılabilir:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Son Kullanıcı Lisans Sözleşmesi	#
 eula.view=EULA'yı Görüntüle	#
 eula.callToAction=Bu anlaşmanın şartlarını kabul etmek için Kabul Et'e tıklayın.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=%1$s için dataTag eşleşmiyor					
 commands.scoreboard.players.score.notFound=%2$s için %1$s puanı bulunamadı										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=%1$d puanı %2$d ile %3$d aralığında DEĞİL								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=%1$d puanı %2$d ile %3$d aralığında								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Veri depolama alanınız dolmak üzere! Ek de
 storageSpaceWarningScreen.lowduringgameplay=Cihazınızda Minecraft'ın dünyaları ve ayarları bu cihaza kaydetmek için kullanabileceği alan neredeyse bitti. Yeni öğeleri kaydetmeye devam edebilmek için ihtiyaç duymadığınız öğeleri silmek istemez misiniz?	#
 storageSpaceWarningScreen.fullduringgameplay=Veri depolama alanınız doldu ve Minecraft ilerlemenizi kaydedemiyor! Minecraft, depolama alanı açmanız için sizi Ana Menü'ye döndürecek.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=DÜNYALARIMI GÖRÜNTÜLE	#
 edu.play_screen.view_library=KİTAPLIĞI GÖRÜNTÜLE	#
 edu.play_screen.create_new=YENİ OLUŞTUR	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Ara	#
 edu.worlds_screen.play=OYNA	#
 edu.worlds_screen.host=SUNUCU	#
 edu.worlds_screen.settings=AYARLAR	#
+edu.worlds_screen.manage=YÖNET	#
+edu.worlds_screen.back=GERİ	#
+edu.worlds_screen.copy=KOPYALA	#
+edu.worlds_screen.export=DIŞARI AKTAR	#
+edu.worlds_screen.share=PAYLAŞ	#
+edu.worlds_screen.delete=SİL	#
 edu.worlds_screen.courses_title=Derslerim	#
 
 edu.templates.title=Şablonlarım	#
@@ -3735,6 +3744,7 @@ level.import.success=Seviye içeri aktarma başarıyla sonlandırıldı	#
 level.export.failed=Seviye dışarı aktarma başarısız	#
 level.import.failed=Seviye içeri aktarma başarısız	#
 level.import.failed.incompatibleEdition=Seviye içe aktarılamadı: Desteklenmeyen dosya biçimi	#
+
 invite.clear=Seçimi Sil	#
 invite.send=%d Davet Gönderin	#
 invite.sendOne=1 Davet Gönderin	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Zümrüt	#
 item.emptyMap.name=Boş Harita	#
 item.emptyLocatorMap.name=Boş Yer Bulucu Harita	#
-item.emptyPotion.name=Su şişesi	#
 item.enchanted_book.name=Büyülü Kitap	#
 item.end_crystal.name=End Kristali	#
 tile.end_rod.name=End Çubuğu	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Hava Durumu Çizimini Devre Dışı Bırak	#
 options.dev_disableRenderHud=Hud Çizimini Devre Dışı Bırak	#
 options.dev_disableRenderItemInHand=Eldeki Eşya Çizimini Devre Dışı Bırak	#
 options.dev_disableRenderMainMenuCubeMap=Ana Menü CubeMap Çizimini Devre Dışı Bırak	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Sunucu Örneği İş Parçacığı	#
 options.dev_newCuller=Yeni ayırıcı kullan	#
 options.dev_showBuildInfo=Bina bilgilerini göster	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Mevcut İşlemler	#
 options.dev_unusedTreatmentsTitle=Kullanılmayan Tedaviler	#
 options.dev_addTreatmentId=İşlem Kimliği Ekle	#
 options.dev_addLabel=Ekle	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Varsayılana Sıfırla	#
 options.dev_clearFlights=Temizle	#
 options.dev_experimentalProgressions=İlerlemeleri Geçersiz Kıl	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Kazma Yorgunluğu	#
 potion.digSpeed=Çabukluk	#
 potion.effects.whenDrank=Uygulandığında:	#
 potion.empty=Etki Yok	#
+potion.emptyPotion.name=Su Şişesi	#
+potion.emptyPotion.splash.name=Sıçrayan Su Şişesi	#
+potion.emptyPotion.linger.name=Uzun Süreli Su Şişesi	#
 potion.fireResistance=Ateşe Dayanıklılık	#
 potion.fireResistance.name=Ateşe Dayanıklılık İksiri	#
 potion.fireResistance.splash.name=Sıçrayan Ateşe Dayanıklılık İksiri	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Dünya Dönüştürme Başarısız	#
 worldConversionErrorPrompt.message=Ah, dünya dönüştürülürken bir hata oluştu. Daha sonra yeniden deneyin.	#
-worldConversionErrorPrompt.message.upload=Bir sorun oluştu. Dünyanı dönüştüremedik. Daha sonra eski dünyanıza gidip :_gamepad_face_button_up: düğmesine basarak bize dünyanı gönderebilirsin. Veya daha fazla araştırabilmemiz için dünyanı hemen gönderebilirsin.	#
-worldConversionErrorPrompt.sendWorld=Dünyayı Şimdi Gönder	#
-worldConversionErrorPrompt.backToWorld=Dünyalara Dön	#
-
-worldConversionErrorReport.title=Bu Dünyayı Bildir	#
-worldConversionErrorReport.button.reportAndSend=Dünyayı Bildir ve Gönder	#
-worldConversionErrorReport.dropdown.default=Sorun neydi?	#
-worldConversionErrorReport.dropdown.mobs=Moblar yaramazlık yapıyordu veya eksikti	#
-worldConversionErrorReport.dropdown.terrain=Arazi bozuktu veya eksikti	#
-worldConversionErrorReport.dropdown.itemsMissing=Eşyalarımı, oluşturduklarımı ve/veya oyuncu istatistiklerimi kaybettim	#
-worldConversionErrorReport.dropdown.itemInteraction=Eşyalarla etkileşim kurulamadı	#
-worldConversionErrorReport.dropdown.worldConversion=Dünya dönüştürme başarısız	#
-worldConversionErrorReport.terms.agreement=Kabul seçeneğine dokunarak dünyanızı Minecraft Ekibine yükleyeceksiniz. Microsoft Hizmet Sözleşmesi ve Gizlilik Bildirimi geçerlidir.	#
-worldConversionErrorReport.terms.agreementForBeta=Dünyanızı karşıya yükleyerek Dünyanızı Minecraft'a aktarma desteği için Microsoft'un Dünyanızı test etmesine, çoğaltmasına, değiştirmesine, dağıtmasına ve herkese açık bir şekilde göstermesine izin veriyorsunuz.	#
-worldConversionErrorReport.terms.viewTerms=Koşulları Görüntüle	#
-
-
-worldConversionErrorReport.sending.title=Eski Dünya Gönderiliyor	#
-worldConversionErrorReport.sending.description=Eski Dünya Minecraft'a gönderiliyor...	#
-
-worldConversionErrorReport.sending.complete=Gönderme Tamamlandı	#
-worldConversionErrorReport.sending.completeMessage.part1=Teşekkürler! Sorunları düzeltmek için yoğun bir şekilde çalışıyoruz ve bu dünya ile ilgili olarak size dönemeyeceğiz. Talebinizi aldığımızı onaylayan belge aşağıda verilmiştir:	#
-worldConversionErrorReport.sending.completeMessage.part2=Belge: %s	#
 
 worldError.corrupted=çökmüş ve başlatılamıyor.	#
 worldError.invalidArguments=geçersiz argümanlarla oluşturuldu.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Mantar Adası	#
 eduTemplateWorld.starterTown.name=Başlangıç Kasabası	#
 eduTemplateWorld.tutorialVolumeII.name=Eğitici Düzey II	#
 eduTemplateWorld.blocksOfGrass.name=Çimen Blokları	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Dünya Gönderildi	#
-worldConversion.feedback.failed.title=Dünya Gönderme Başarısız	#
-worldConversion.feedback.done.msg=Dünyanızın kopyasını gönderdiğiniz ve hataları bulmamıza yardımcı olduğunuz için teşekkürler! Sorunları düzeltmek için yoğun bir şekilde çalışıyoruz ve bu dünya ile ilgili olarak size dönemeyeceğiz. Talebinizi aldığımızı onaylayan belge aşağıda verilmiştir: %s	#
-worldConversion.feedback.failed.msg=Ah! Dünyanızı alamadık. İnternet bağlantınızı kontrol edin veya daha sonra tekrar göndermeyi deneyin.	#
-worldConversion.feedback.prompt.title=Dünyayı Gönder	#
-worldConversion.feedback.prompt.msg=Eski dünyanız olması gerektiği gibi görünmüyor veya çalışmıyor mu? Dünyanızı bize gönderin ve hataları bulmamıza yardımcı olun!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Dönüştürme Tamamlandı	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together Güncellemesi (%s)	#
 client.version.1.4=Su Güncellemesi (%s)	#
 client.version.1.5=Su Güncellemesi (%s)	#
 client.version.1.11=Köy ve Yağma (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=İndirim!	#
 dr.banner.limitedTimeOffer=Sınırlı Süreli Teklif!	#

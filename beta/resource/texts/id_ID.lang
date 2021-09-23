@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Umpan Realm	#
 accessibility.play.tabLeft=Tekan %s untuk berpindah tab ke kiri	#
 accessibility.play.tabRight=Tekan %s untuk berpindah tab ke kanan	#
 accessibility.play.legacyWorldsDelete=Hapus Dunia Lama	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Izin	#
 accessibility.pause.profile=Pilih Profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ups! Sepertinya kamu masuk dengan akun pri
 
 eula.intro=Setujui Perjanjian Lisensi Pengguna Akhir untuk menggunakan Minecraft: Education Edition.	#
 eula.location=EULA terdapat di:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Perjanjian Lisensi Pengguna Akhir	#
 eula.view=Lihat EULA	#
 eula.callToAction=Klik Terima untuk menyetujui syarat perjanjian ini.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=dataTag tidak cocok untuk %1$s						
 commands.scoreboard.players.score.notFound=Skor %1$s untuk %2$s tidak ditemukan										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Skor %1$d TIDAK dalam rentang %2$d hingga %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Skor %1$d dalam rentang %2$d hingga %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Ruang penyimpanan datamu hampir habis! Minecr
 storageSpaceWarningScreen.lowduringgameplay=Ruang penyimpanan yang bisa digunakan Minecraft untuk menyimpan dunia dan pengaturan di perangkat ini hampir habis.  Ingin coba menghapus beberapa konten yang tidak kamu perlukan agar bisa menyimpan konten baru?	#
 storageSpaceWarningScreen.fullduringgameplay=Ruang penyimpanan datamu hampir habis dan Minecraft tidak dapat menyimpan progresmu! Minecraft akan mengembalikanmu ke Menu Utama untuk mengosongkan ruang penyimpanan.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=LIHAT DUNIA SAYA	#
 edu.play_screen.view_library=LIHAT PERPUSTAKAAN	#
 edu.play_screen.create_new=BUAT BARU	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Cari	#
 edu.worlds_screen.play=MAIN	#
 edu.worlds_screen.host=HOST	#
 edu.worlds_screen.settings=PENGATURAN	#
+edu.worlds_screen.manage=KELOLA	#
+edu.worlds_screen.back=KEMBALI	#
+edu.worlds_screen.copy=SALIN	#
+edu.worlds_screen.export=EKSPOR	#
+edu.worlds_screen.share=BAGIKAN	#
+edu.worlds_screen.delete=HAPUS	#
 edu.worlds_screen.courses_title=Kursus Saya	#
 
 edu.templates.title=Template Saya	#
@@ -3735,6 +3744,7 @@ level.import.success=Impor level berhasil diselesaikan	#
 level.export.failed=Ekspor level gagal	#
 level.import.failed=Impor level gagal	#
 level.import.failed.incompatibleEdition=Impor level gagal: Format file tidak didukung	#
+
 invite.clear=Hapus Pilihan	#
 invite.send=Kirim %d Undangan	#
 invite.sendOne=Kirim 1 Undangan	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Sayap Elytra	#
 item.emerald.name=Zamrud	#
 item.emptyMap.name=Peta Kosong	#
 item.emptyLocatorMap.name=Peta Pencari Kosong	#
-item.emptyPotion.name=Botol Air	#
 item.enchanted_book.name=Buku Sihir	#
 item.end_crystal.name=Kristal End	#
 tile.end_rod.name=Tongkat End	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Nonaktifkan Gambar Cuaca	#
 options.dev_disableRenderHud=Nonaktifkan Gambar Hud	#
 options.dev_disableRenderItemInHand=Nonaktifkan Gambar Item yang Dipegang	#
 options.dev_disableRenderMainMenuCubeMap=Nonaktifkan Gambar CubeMap Menu Utama	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Thread Instans Server	#
 options.dev_newCuller=Gunakan pilihan baru	#
 options.dev_showBuildInfo=Menampilkan info build	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Perlakuan Saat Ini	#
 options.dev_unusedTreatmentsTitle=Perlakuan yang Tidak Digunakan	#
 options.dev_addTreatmentId=Tambah Id Penanganan	#
 options.dev_addLabel=Tambah	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Atur Ulang ke Default	#
 options.dev_clearFlights=Hapus	#
 options.dev_experimentalProgressions=Timpa Kemajuan	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Kelelahan Pertambangan	#
 potion.digSpeed=Semangat	#
 potion.effects.whenDrank=Bila Berlaku:	#
 potion.empty=Tidak Ada Efek	#
+potion.emptyPotion.name=Botol Air	#
+potion.emptyPotion.splash.name=Botol Air Ciprat	#
+potion.emptyPotion.linger.name=Botol Air Jangkar	#
 potion.fireResistance=Ketahanan Api	#
 potion.fireResistance.name=Ramuan Ketahanan Api	#
 potion.fireResistance.splash.name=Percikan Ramuan Ketahanan Api	#
@@ -7736,7 +7750,7 @@ tile.cobblestone_wall.red_nether_brick.name=Dinding Bata Nether Merah	#
 tile.cocoa.name=Biji Cokelat	#
 tile.command_block.name=Blok Perintah	#
 tile.composter.name=Pembuat Kompos	#
-tile.light_block.name=Blok Ringan	#
+tile.light_block.name=Blok Cahaya	#
 tile.repeating_command_block.name=Blok Perintah Berulang	#
 tile.chain_command_block.name=Blok Perintah Rantai	#
 tile.wheat.name=Tanaman Panen	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Konversi Dunia Gagal	#
 worldConversionErrorPrompt.message=Ups, terjadi kesalahan saat mengkonversi dunia. Coba lagi nanti.	#
-worldConversionErrorPrompt.message.upload=Terjadi kesalahan. Kami tidak bisa mengonversi duniamu. Kamu bisa mengirimkan duniamu nanti dengan membuka dunia lamamu dan menekan :_gamepad_face_button_up:. Atau kirimkan duniamu sekarang agar kami bisa menyelidikinya lebih lanjut.	#
-worldConversionErrorPrompt.sendWorld=Kirim Dunia Sekarang	#
-worldConversionErrorPrompt.backToWorld=Kembali Ke Dunia	#
-
-worldConversionErrorReport.title=Laporkan Dunia Ini	#
-worldConversionErrorReport.button.reportAndSend=Laporkan dan Kirim Dunia	#
-worldConversionErrorReport.dropdown.default=Apa yang salah?	#
-worldConversionErrorReport.dropdown.mobs=Mob berperilaku salah atau hilang	#
-worldConversionErrorReport.dropdown.terrain=Medan rusak atau hilang	#
-worldConversionErrorReport.dropdown.itemsMissing=Kehilangan item, kreasi, dan/atau statistik pemain saya	#
-worldConversionErrorReport.dropdown.itemInteraction=Tidak bisa berinteraksi dengan item	#
-worldConversionErrorReport.dropdown.worldConversion=Konversi dunia gagal	#
-worldConversionErrorReport.terms.agreement=Dengan menekan Setuju, kamu mengunggah duniamu ke Tim Minecraft. Perjanjian Layanan dan Pernyataan Privasi Microsoft akan berlaku.	#
-worldConversionErrorReport.terms.agreementForBeta=Dengan mengunggah Dunia, kamu mengizinkan Microsoft untuk menguji, memproduksi ulang, memodifikasi, mendistribusikan, dan menampilkan Dunia kamu kepada publik untuk membantu mentransfer Dunia kamu ke Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Lihat Persyaratan	#
-
-
-worldConversionErrorReport.sending.title=Mengirim Dunia Lama	#
-worldConversionErrorReport.sending.description=Mengirim Dunia Lama ke Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Pengiriman Selesai	#
-worldConversionErrorReport.sending.completeMessage.part1=Terima kasih! Kami akan bekerja keras untuk memperbaiki berbagai hal dan tidak akan bisa menghubungimu tentang dunia khusus ini. Berikut adalah tanda terima yang mengonfirmasi bahwa kami telah menerimanya:	#
-worldConversionErrorReport.sending.completeMessage.part2=Tanda Terima: %s	#
 
 worldError.corrupted=rusak dan tidak bisa dimulai.	#
 worldError.invalidArguments=dibuat dengan argumen tidak valid.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Pulau Jamur	#
 eduTemplateWorld.starterTown.name=Kota Permulaan	#
 eduTemplateWorld.tutorialVolumeII.name=Tutorial Volume II	#
 eduTemplateWorld.blocksOfGrass.name=Blok Rumput	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Dunia Dikirim	#
-worldConversion.feedback.failed.title=Pengiriman Dunia Gagal	#
-worldConversion.feedback.done.msg=Terima kasih telah mengirimkan salinan duniamu dan membantu kami menemukan bug! Kami akan bekerja keras untuk memperbaiki berbagai hal dan tidak akan bisa menghubungimu tentang dunia khusus ini. Berikut adalah tanda terima yang mengonfirmasi bahwa kami telah menerimanya:%s	#
-worldConversion.feedback.failed.msg=Ups! Kami tidak bisa menerima duniamu. Coba periksa koneksi internetmu atau kirim kembali nanti.	#
-worldConversion.feedback.prompt.title=Kirim Dunia	#
-worldConversion.feedback.prompt.msg=Apakah dunia lamamu tidak terlihat atau berfungsi seperti seharusnya? Kirim duniamu dan bantu kami menemukan bug!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Konversi Selesai	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Pembaruan Better Together (%s)	#
 client.version.1.4=Pembaruan Akuatik (%s)	#
 client.version.1.5=Pembaruan Akuatik (%s)	#
 client.version.1.11=Desa & Penjarah (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Diskon!	#
 dr.banner.limitedTimeOffer=Penawaran Berbatas Waktu!	#

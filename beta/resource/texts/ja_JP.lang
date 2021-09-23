@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm のフィード	#
 accessibility.play.tabLeft=%s を押して左にタブ移動	#
 accessibility.play.tabRight=%s を押して右にタブ移動	#
 accessibility.play.legacyWorldsDelete=レガシーの世界を削除	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=アクセス許可	#
 accessibility.pause.profile=プロフィールの選択	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=おっと! 個人アカウントでサイ�
 
 eula.intro=Minecraft: Education Edition を使用するには使用許諾契約への同意が必要です。	#
 eula.location=使用許諾契約はこちらです:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=ソフトウェア ライセンス条項 (EULA)	#
 eula.view=EULA を表示	#
 eula.callToAction=この契約の条項に同意するには「同意する」をクリックしてください。	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=データ タグが %1$s と一致�
 commands.scoreboard.players.score.notFound=%2$s の %1$s のスコアが見つかりません										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=スコア %1$d は %2$d ～ %3$d の範囲にありません								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=スコア %1$d は %2$d ～ %3$d の範囲内です								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=容量に十分な空きがありません。
 storageSpaceWarningScreen.lowduringgameplay=お使いのデバイスには、Minecraft が世界や設定を保存するための十分な空き容量がありません。新しいデータを今後も保存できるよう、不要な古いデータをいくつか削除することをお勧めします。	#
 storageSpaceWarningScreen.fullduringgameplay=容量に十分な空きがないため、進行状況を保存できません。十分な空き容量を確保するため、メイン メニューに移動します。	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=作成した世界を表示	#
 edu.play_screen.view_library=ライブラリを表示	#
 edu.play_screen.create_new=新しく作る	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=検索	#
 edu.worlds_screen.play=プレイ	#
 edu.worlds_screen.host=ホスト	#
 edu.worlds_screen.settings=設定	#
+edu.worlds_screen.manage=管理	#
+edu.worlds_screen.back=戻る	#
+edu.worlds_screen.copy=コピー	#
+edu.worlds_screen.export=エクスポート	#
+edu.worlds_screen.share=共有	#
+edu.worlds_screen.delete=削除	#
 edu.worlds_screen.courses_title=マイ コース	#
 
 edu.templates.title=マイ テンプレート	#
@@ -3735,6 +3744,7 @@ level.import.success=レベル インポート完了	#
 level.export.failed=レベル エクスポート失敗	#
 level.import.failed=レベル インポート失敗	#
 level.import.failed.incompatibleEdition=レベル インポート失敗: 対応していないファイル形式です	#
+
 invite.clear=選択を解除	#
 invite.send=%d 個の招待を送信	#
 invite.sendOne=1 個の招待を送信	#
@@ -4601,7 +4611,6 @@ item.elytra.name=エリトラ	#
 item.emerald.name=エメラルド	#
 item.emptyMap.name=空っぽの地図	#
 item.emptyLocatorMap.name=まっさらな地図	#
-item.emptyPotion.name=水のビン	#
 item.enchanted_book.name=エンチャントした本	#
 item.end_crystal.name=果てのクリスタル	#
 tile.end_rod.name=果てのロッド	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=天候の描画をオフ	#
 options.dev_disableRenderHud=HUD の描画をオフ	#
 options.dev_disableRenderItemInHand=手持ちアイテムの描画をオフ	#
 options.dev_disableRenderMainMenuCubeMap=メイン メニューでキューブマップ描画を無効にする	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=サーバーのインスタンス スレッド	#
 options.dev_newCuller=新しい culler を使用	#
 options.dev_showBuildInfo=ビルド情報を表示	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=現在の処理	#
 options.dev_unusedTreatmentsTitle=未使用の処理	#
 options.dev_addTreatmentId=処理 ID を追加	#
 options.dev_addLabel=追加	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=デフォルトに戻す	#
 options.dev_clearFlights=晴れ	#
 options.dev_experimentalProgressions=進行状況の上書き	#
@@ -5974,7 +5985,7 @@ options.autoUpdateMode.on.withCellular=Wi-Fi または携帯データネット�
 options.allowCellularData=モバイルデータを使用	#
 options.cellularDataWarningLabel=モバイルデータ通信を使ってプレイすると、サービス提供会社から追加の費用を請求される可能性があります。	#
 options.turnOffAchievements=実績をオフにしますか?	#
-options.turnOffAchievements.message=実績はチートをオフにしたサバイバルモードでのみ利用可能です。このまま続けると、たとえプレイする前に設定を戻したとしても、この世界では誰も実績を獲得できなくなります。	#
+options.turnOffAchievements.message=実績はチートをオフにしたサバイバルモードでのみ利用可能です。このまま続けてしまうと、たとえプレイする前に設定を戻したとしても、この世界では誰も実績を獲得できなくなります。	#
 options.achievementsDisabled=この世界では実績を獲得できません。	#
 options.achievementsDisabled.onLoad=この設定でプレイを始めると、この世界では実績を一切獲得できなくなります。	#
 options.achievementsDisabled.notSignedIn=この世界では実績を獲得可能ですが、獲得するには Microsoft アカウントにサインインする必要があります。	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=疲労	#
 potion.digSpeed=勤勉	#
 potion.effects.whenDrank=効果:	#
 potion.empty=効能なし	#
+potion.emptyPotion.name=水のビン	#
+potion.emptyPotion.splash.name=スプラッシュ水のビン	#
+potion.emptyPotion.linger.name=残留水のビン	#
 potion.fireResistance=耐火	#
 potion.fireResistance.name=耐火のポーション	#
 potion.fireResistance.splash.name=耐火のスプラッシュ ポーション	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=世界の変換に失敗しました	#
 worldConversionErrorPrompt.message=世界の変換中に問題が発生しました。後でもう一度やり直してください。	#
-worldConversionErrorPrompt.message.upload=問題が発生したため、世界を変換できませんでした。古い世界に移動して :_gamepad_face_button_up: を押すと、Minecraft チームに世界を送ることができます。または、Minecraft チームが直ちに問題を把握できるように、今すぐに世界を送ってください。	#
-worldConversionErrorPrompt.sendWorld=世界を今すぐ送信する	#
-worldConversionErrorPrompt.backToWorld=世界に戻る	#
-
-worldConversionErrorReport.title=この世界を報告する	#
-worldConversionErrorReport.button.reportAndSend=世界を報告して送信する	#
-worldConversionErrorReport.dropdown.default=問題は何ですか?	#
-worldConversionErrorReport.dropdown.mobs=モブが正常ではない振る舞いをした、または消失した	#
-worldConversionErrorReport.dropdown.terrain=地形が崩壊または消失した	#
-worldConversionErrorReport.dropdown.itemsMissing=アイテム、建築物、またはスコアが消失した	#
-worldConversionErrorReport.dropdown.itemInteraction=アイテムを使用または操作できない	#
-worldConversionErrorReport.dropdown.worldConversion=世界の変換に失敗しました	#
-worldConversionErrorReport.terms.agreement=「同意する」を押すと、Minecraft チームに世界を送信します。マイクロソフトのサービス契約およびプライバシーに関する声明が適用されます。	#
-worldConversionErrorReport.terms.agreementForBeta=世界をアップロードすると、Minecraft チームがあなたの世界を Minecraft に転送するサポートをするため、あなたの世界をテスト、再生成、変更、配布、一般公開することに同意したとみなされます。	#
-worldConversionErrorReport.terms.viewTerms=諸条件を確認する	#
-
-
-worldConversionErrorReport.sending.title=古い世界の送信	#
-worldConversionErrorReport.sending.description=Minecraft に古い世界を送信しています...	#
-
-worldConversionErrorReport.sending.complete=送信が完了しました	#
-worldConversionErrorReport.sending.completeMessage.part1=ご協力ありがとうございます。Minecraft チームは問題の解決に尽力しております。お送りいただいた世界のみに関してお返事できない場合がございます。お送りいただいた内容は次のようになっております:	#
-worldConversionErrorReport.sending.completeMessage.part2=受領確認: %s	#
 
 worldError.corrupted=が破損しているため開始できません。	#
 worldError.invalidArguments=は無効な引数で作成されています。	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=きのこの島	#
 eduTemplateWorld.starterTown.name=始まりの町	#
 eduTemplateWorld.tutorialVolumeII.name=チュートリアル 第 2 段	#
 eduTemplateWorld.blocksOfGrass.name=草ブロック	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=世界の送信が完了しました	#
-worldConversion.feedback.failed.title=世界の送信に失敗しました	#
-worldConversion.feedback.done.msg=バグ修正にご協力いただきありがとうございます。Minecraft チームは問題の解決に尽力しております。お送りいただいた世界のみに関してお返事できない場合がございます。お送りいただいた内容は次のようになっております: %s	#
-worldConversion.feedback.failed.msg=世界を受信できませんでした。インターネット接続を確認するか、時間をおいてもう一度お試しください	#
-worldConversion.feedback.prompt.title=世界を送信する	#
-worldConversion.feedback.prompt.msg=古い世界の描画または動作が正常でない場合は、Minecraft チームに世界を送信し、バグ修正にご協力ください。	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=変換が完了しました	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together アップデート (%s)	#
 client.version.1.4=アクアティック アップデート (%s)	#
 client.version.1.5=アクアティック アップデート (%s)	#
 client.version.1.11=村と略奪者 (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=セール中!	#
 dr.banner.limitedTimeOffer=期間限定セール!	#

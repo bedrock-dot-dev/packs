@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm 動態	#
 accessibility.play.tabLeft=按 %s 以選取左標籤	#
 accessibility.play.tabRight=按 %s 以選取右標籤	#
 accessibility.play.legacyWorldsDelete=刪除舊版世界	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=權限	#
 accessibility.pause.profile=選擇設定檔	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=哎呀！看起來你使用個人帳戶登
 
 eula.intro=欲使用《Minecraft: Education Edition》，您必須接受「使用者授權合約 (EULA)」。	#
 eula.location=EULA 位於：	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=使用者授權合約 (EULA)	#
 eula.view=檢視 EULA	#
 eula.callToAction=按一下 [接受] 接受此合約條款。	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=此 dataTag 並不符合 %1$s							
 commands.scoreboard.players.score.notFound=無法找到分數 %1$s，玩家為 %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=分數 %1$d 並非介於 %2$d 至 %3$d 的範圍內								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=分數 %1$d 介於 %2$d 至 %3$d 的範圍內								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=您的資料儲存空間即將用罄！《Min
 storageSpaceWarningScreen.lowduringgameplay=您的裝置可供 Minecraft 在此裝置中儲存世界和設定使用的儲存空間即將用磬。建議刪除您不需要的舊資料，以繼續儲存新資料。	#
 storageSpaceWarningScreen.fullduringgameplay=您的資料儲存空間即將用罄！《Minecraft》無法儲存您的進度！《Minecraft》將讓您返回主選單以清出儲存空間。	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=檢視我的世界	#
 edu.play_screen.view_library=檢視資料庫	#
 edu.play_screen.create_new=建立新項目	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=搜尋	#
 edu.worlds_screen.play=開始遊戲	#
 edu.worlds_screen.host=主持人	#
 edu.worlds_screen.settings=設定	#
+edu.worlds_screen.manage=管理	#
+edu.worlds_screen.back=返回	#
+edu.worlds_screen.copy=複製	#
+edu.worlds_screen.export=匯出	#
+edu.worlds_screen.share=分享	#
+edu.worlds_screen.delete=刪除	#
 edu.worlds_screen.courses_title=我的課程	#
 
 edu.templates.title=我的範本	#
@@ -3735,6 +3744,7 @@ level.import.success=等級匯入順利完成	#
 level.export.failed=等級匯出失敗	#
 level.import.failed=等級匯入失敗	#
 level.import.failed.incompatibleEdition=等級匯入失敗：不支援的檔案格式	#
+
 invite.clear=清除選擇	#
 invite.send=送出 %d 份邀請	#
 invite.sendOne=送出 1 份邀請	#
@@ -4601,7 +4611,6 @@ item.elytra.name=鞘翅	#
 item.emerald.name=翡翠	#
 item.emptyMap.name=空白地圖	#
 item.emptyLocatorMap.name=無定位地圖	#
-item.emptyPotion.name=水瓶	#
 item.enchanted_book.name=附魔書	#
 item.end_crystal.name=終界晶體	#
 tile.end_rod.name=終界燭	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=停用天氣繪製	#
 options.dev_disableRenderHud=停用抬頭顯示器繪製	#
 options.dev_disableRenderItemInHand=停用手中物品繪製	#
 options.dev_disableRenderMainMenuCubeMap=停用主選單立方體貼圖繪圖	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=伺服器例項執行緒	#
 options.dev_newCuller=使用新剔除器	#
 options.dev_showBuildInfo=顯示建造資訊	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=目前處理	#
 options.dev_unusedTreatmentsTitle=未使用的處理	#
 options.dev_addTreatmentId=新增處理 ID	#
 options.dev_addLabel=新增	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=重設為預設值	#
 options.dev_clearFlights=清澈	#
 options.dev_experimentalProgressions=覆寫進度	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=開採倦怠	#
 potion.digSpeed=速掘	#
 potion.effects.whenDrank=使用後會得到：	#
 potion.empty=無效果	#
+potion.emptyPotion.name=水瓶	#
+potion.emptyPotion.splash.name=噴濺水瓶	#
+potion.emptyPotion.linger.name=滯留水瓶	#
 potion.fireResistance=抗火	#
 potion.fireResistance.name=抗火藥水	#
 potion.fireResistance.splash.name=噴濺型抗火藥水	#
@@ -6361,7 +6375,7 @@ potion.weakness=虛弱	#
 potion.weakness.name=虛弱藥水	#
 potion.weakness.splash.name=噴濺型虛弱藥水	#
 potion.weakness.linger.name=滯留型虛弱藥水	#
-potion.wither=凋靈怪	#
+potion.wither=凋零	#
 potion.wither.name=腐朽藥水	#
 potion.wither.splash.name=噴濺型腐朽藥水	#
 potion.wither.linger.name=滯留型腐朽藥水	#
@@ -7822,7 +7836,7 @@ tile.leaves.spruce.name=杉樹樹葉	#
 tile.lever.name=拉桿	#
 tile.glowstone.name=閃石	#
 tile.glow_lichen.name=發光地衣	#
-tile.lightning_rod.name=雷霆法杖	#
+tile.lightning_rod.name=避雷針	#
 tile.lit_pumpkin.name=南瓜燈	#
 tile.lockedchest.name=上鎖的箱子	#
 tile.log.acacia.name=相思樹原木	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=思源黑體	#
 
 worldConversionErrorPrompt.title=世界轉換失敗	#
 worldConversionErrorPrompt.message=糟糕，世界轉換期間發生錯誤。請稍後再試。	#
-worldConversionErrorPrompt.message.upload=發生錯誤，我們無法轉換您的世界。您可以稍待片刻並前往舊版世界，按 :_gamepad_face_button_up: 傳送世界給我們。您也可以立即傳送世界，以便我們深入調查問題。	#
-worldConversionErrorPrompt.sendWorld=立即傳送世界	#
-worldConversionErrorPrompt.backToWorld=返回世界	#
-
-worldConversionErrorReport.title=回報此世界	#
-worldConversionErrorReport.button.reportAndSend=回報並傳送世界	#
-worldConversionErrorReport.dropdown.default=發生什麼問題？	#
-worldConversionErrorReport.dropdown.mobs=生物行為異常或消失	#
-worldConversionErrorReport.dropdown.terrain=地形破碎或遺失	#
-worldConversionErrorReport.dropdown.itemsMissing=物品、創作物和/或玩家統計資料遺失	#
-worldConversionErrorReport.dropdown.itemInteraction=無法與物品互動	#
-worldConversionErrorReport.dropdown.worldConversion=世界轉換失敗	#
-worldConversionErrorReport.terms.agreement=按下同意鍵，你的世界就會上傳給 Minecraft 團隊。此項目受到 Microsoft 服務協議和隱私權聲明規範。	#
-worldConversionErrorReport.terms.agreementForBeta=上傳您的世界，即表示您授權 Microsoft 測試、複製、修改、分發和公開展示您的世界，以支援傳輸您的 Minecraft 世界。	#
-worldConversionErrorReport.terms.viewTerms=檢視條款與條件	#
-
-
-worldConversionErrorReport.sending.title=正在傳送舊版世界	#
-worldConversionErrorReport.sending.description=正在將舊版世界傳送至 Minecraft...	#
-
-worldConversionErrorReport.sending.complete=傳送已完成	#
-worldConversionErrorReport.sending.completeMessage.part1=感謝您！我們正在努力修復，目前暫無法針對此世界給予您回覆。以下為我們確認收到傳送項目的回條：	#
-worldConversionErrorReport.sending.completeMessage.part2=回條：%s	#
 
 worldError.corrupted=已毀壞，無法啟動。	#
 worldError.invalidArguments=以無效引數建立。	#
@@ -8844,14 +8835,6 @@ eduTemplateWorld.starterTown.name=起始城鎮	#
 eduTemplateWorld.tutorialVolumeII.name=教學課程 II	#
 eduTemplateWorld.blocksOfGrass.name=草塊	#
 
-## World Conversion Feedback
-worldConversion.feedback.done.title=世界已提交	#
-worldConversion.feedback.failed.title=世界提交失敗	#
-worldConversion.feedback.done.msg=感謝您將世界副本傳送給官方並協助我們尋找錯誤！我們正在努力修復，目前暫無法針對此世界給予您回覆。以下為我們確認收到傳送項目的回條：%s	#
-worldConversion.feedback.failed.msg=糟糕！我們無法接收您的世界。請試著檢查您的網路連線，或稍後再傳送一次。	#
-worldConversion.feedback.prompt.title=提交世界	#
-worldConversion.feedback.prompt.msg=您的舊版世界是否外觀有異常，或沒有如預期地運作呢？請將您的世界傳送給官方，並協助我們尋找錯誤！	#
-
 ## World Conversion Complete Popup
 worldConversionComplete.title=轉換完成	#
 worldConversionComplete.load_prompt=您是否現在要玩您的世界？	#
@@ -8972,7 +8955,7 @@ tips.game.49=跳入水中即可游泳！	#
 tips.game.50=激流附魔可以在雨中將您推向空中。	#
 tips.game.51=Minecraft Live 是世界性的互動即時串流活動。拿好東西，準備參加派對！	#
 tips.game.52=對動物好一點！	#
-tips.game.53=燈塔是非常強大的物品，只能使用凋零怪掉落的地獄星合成！	#
+tips.game.53=燈塔是非常強大的物品，只能使用凋靈怪掉落的地獄星合成！	#
 tips.game.54=壞人！別殺海豚！	#
 tips.game.55=您知道嗎？爆炸無法摧毀地獄星。	#
 tips.game.56=直線往上挖的時候，將火把放在腳邊即可摧毀任何可能掉在您身上的沙子或礪石。	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together 更新 (%s)	#
 client.version.1.4=新式潛水艇 (%s)	#
 client.version.1.5=新式潛水艇 (%s)	#
 client.version.1.11=村莊和劫掠者 (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=大拍賣！	#
 dr.banner.limitedTimeOffer=限時優惠！	#

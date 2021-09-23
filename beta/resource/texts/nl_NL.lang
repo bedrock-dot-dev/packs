@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm-feed	#
 accessibility.play.tabLeft=Druk op de %s om naar het linkertabblad te gaan	#
 accessibility.play.tabRight=Druk op de %s om naar het rechtertabblad te gaan	#
 accessibility.play.legacyWorldsDelete=Verouderde wereld verwijderen	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Machtigingen	#
 accessibility.pause.profile=Profiel kiezen	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Het lijkt erop dat je je hebt aangemeld me
 
 eula.intro=Als je Minecraft: Education Edition wilt gebruiken, moet je akkoord gaan met de gebruiksrechtovereenkomst voor eindgebruikers (EULA).	#
 eula.location=De EULA vind je op:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Gebruiksrechtovereenkomst voor eindgebruikers (EULA)	#
 eula.view=EULA bekijken	#
 eula.callToAction=Klik op Akkoord om akkoord te gaan met de bepalingen van deze overeenkomst.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=De dataTag komt niet overeen voor %1
 commands.scoreboard.players.score.notFound=Geen %1$s-score voor %2$s gevonden										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Score %1$d ligt NIET binnen het bereik van %2$d tot %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Score %1$d ligt binnen het bereik van %2$d tot %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Je hebt bijna geen opslagruimte meer! Minecra
 storageSpaceWarningScreen.lowduringgameplay=Je apparaat heeft bijna geen opslagruimte meer die Minecraft nodig heeft om werelden en instellingen op dit apparaat op te slaan. Probeer wat oude bestanden te verwijderen die je niet meer nodig hebt om nieuwe dingen te kunnen blijven opslaan.	#
 storageSpaceWarningScreen.fullduringgameplay=Je hebt bijna geen opslagruimte meer en Minecraft kan je voortgang niet opslaan! Je wordt teruggebracht naar het Minecraft-hoofdmenu om extra opslagruimte vrij te maken.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=MIJN WERELDEN BEKIJKEN	#
 edu.play_screen.view_library=BIBLIOTHEEK BEKIJKEN	#
 edu.play_screen.create_new=NIEUWE MAKEN	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Zoeken	#
 edu.worlds_screen.play=SPELEN	#
 edu.worlds_screen.host=HOSTEN	#
 edu.worlds_screen.settings=INSTELLINGEN	#
+edu.worlds_screen.manage=BEHEREN	#
+edu.worlds_screen.back=TERUG	#
+edu.worlds_screen.copy=KOPIËREN	#
+edu.worlds_screen.export=EXPORTEREN	#
+edu.worlds_screen.share=DELEN	#
+edu.worlds_screen.delete=VERWIJDEREN	#
 edu.worlds_screen.courses_title=Mijn vakken	#
 
 edu.templates.title=Mijn sjablonen	#
@@ -3735,6 +3744,7 @@ level.import.success=Niveau importeren voltooid	#
 level.export.failed=Niveau exporteren mislukt	#
 level.import.failed=Niveau importeren mislukt	#
 level.import.failed.incompatibleEdition=Kan level niet importeren: niet-ondersteunde bestandsindeling	#
+
 invite.clear=Selectie wissen	#
 invite.send=%d uitnodigingen sturen	#
 invite.sendOne=1 uitnodiging sturen	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Dekschild	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Lege kaart	#
 item.emptyLocatorMap.name=Lege zoekkaart	#
-item.emptyPotion.name=Waterflesje	#
 item.enchanted_book.name=Betoverd boek	#
 item.end_crystal.name=End-kristal	#
 tile.end_rod.name=End-staaf	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Weertekening uitschakelen	#
 options.dev_disableRenderHud=Scherminfotekening uitschakelen	#
 options.dev_disableRenderItemInHand=Voorwerp-in-handtekening uitschakelen	#
 options.dev_disableRenderMainMenuCubeMap=Hoofdmenu CubeMap-tekening uitschakelen	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Serverinstantiethread	#
 options.dev_newCuller=Nieuwe culler gebruiken	#
 options.dev_showBuildInfo=Versie-info tonen	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Huidige behandelingen	#
 options.dev_unusedTreatmentsTitle=Ongebruikte behandelingen	#
 options.dev_addTreatmentId=Behandelings-id toevoegen	#
 options.dev_addLabel=Toevoegen	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Opnieuw instellen op standaardwaarden	#
 options.dev_clearFlights=Wissen	#
 options.dev_experimentalProgressions=Voortgangen overschrijven	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Mijnmoeheid	#
 potion.digSpeed=Haast	#
 potion.effects.whenDrank=Indien toegepast:	#
 potion.empty=Geen effecten	#
+potion.emptyPotion.name=Waterfles	#
+potion.emptyPotion.splash.name=Spattende waterfles	#
+potion.emptyPotion.linger.name=Aanhoudende waterfles	#
 potion.fireResistance=Vuurvast	#
 potion.fireResistance.name=Drankje der Vuurbestendigheid	#
 potion.fireResistance.splash.name=Spattende drank der vuurbestendigheid	#
@@ -8380,7 +8394,7 @@ tipped_arrow.effect.fireResistance=Pijl van Vuurbestendigheid	#
 tipped_arrow.effect.moveSpeed=Pijl van Vlotheid	#
 tipped_arrow.effect.moveSlowdown=Pijl van Traagheid	#
 tipped_arrow.effect.water=Pijl van Plonsen	#
-tipped_arrow.effect.waterBreathing=Pijl van Onder water ademen	#
+tipped_arrow.effect.waterBreathing=Pijl des Wateradems	#
 tipped_arrow.effect.heal=Pijl van Genezing	#
 tipped_arrow.effect.harm=Pijl van Verwonding	#
 tipped_arrow.effect.poison=Pijl van Gif	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Conversie van wereld mislukt	#
 worldConversionErrorPrompt.message=Oeps, er is iets misgegaan bij het converteren van je wereld. Probeer het later opnieuw.	#
-worldConversionErrorPrompt.message.upload=Er is iets misgegaan. Je wereld kan niet worden geconverteerd. Je kunt je wereld later verzenden door naar je oude wereld te gaan en op :_gamepad_face_button_up: te drukken. Je kunt je wereld ook nu verzenden, zodat we het probleem kunnen onderzoeken.	#
-worldConversionErrorPrompt.sendWorld=Wereld nu verzenden	#
-worldConversionErrorPrompt.backToWorld=Terug naar werelden	#
-
-worldConversionErrorReport.title=Deze wereld rapporteren	#
-worldConversionErrorReport.button.reportAndSend=Wereld rapporteren en verzenden	#
-worldConversionErrorReport.dropdown.default=Wat is er misgegaan?	#
-worldConversionErrorReport.dropdown.mobs=Mobs deden raar of kwamen niet voor	#
-worldConversionErrorReport.dropdown.terrain=Defect of ontbrekend terrein	#
-worldConversionErrorReport.dropdown.itemsMissing=Mijn items, creaties en/of spelersstatistieken zijn verloren gegaan	#
-worldConversionErrorReport.dropdown.itemInteraction=Interactie met items is niet mogelijk	#
-worldConversionErrorReport.dropdown.worldConversion=Conversie van wereld mislukt	#
-worldConversionErrorReport.terms.agreement=Door Akkoord te kiezen wordt je wereld geüpload naar het Minecraft-team. De servicesovereenkomst en privacyverklaring van Microsoft zijn van toepassing.	#
-worldConversionErrorReport.terms.agreementForBeta=Door je wereld te uploaden, machtig je Microsoft om je wereld te testen, reproduceren, wijzigen, distribueren en openbaar weer te geven om je wereld naar Minecraft te kunnen overbrengen.	#
-worldConversionErrorReport.terms.viewTerms=Voorwaarden bekijken	#
-
-
-worldConversionErrorReport.sending.title=Oude wereld verzenden	#
-worldConversionErrorReport.sending.description=Oude wereld verzenden naar Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Verzenden voltooid	#
-worldConversionErrorReport.sending.completeMessage.part1=Hartelijk dank! We zijn ijverig aan het werk om fouten op te lossen en kunnen niet reageren voor deze specifieke wereld. Hier is je bevestiging dat we deze hebben ontvangen:	#
-worldConversionErrorReport.sending.completeMessage.part2=Ontvangstbewijs: %s	#
 
 worldError.corrupted=is beschadigd en kan niet worden gestart.	#
 worldError.invalidArguments=is gemaakt met ongeldige argumenten.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Paddenstoeleneiland	#
 eduTemplateWorld.starterTown.name=Beginnersstad	#
 eduTemplateWorld.tutorialVolumeII.name=Tutorial II	#
 eduTemplateWorld.blocksOfGrass.name=Blokken gras	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Wereld ingediend	#
-worldConversion.feedback.failed.title=Indienen van wereld mislukt	#
-worldConversion.feedback.done.msg=Hartelijk dank dat je ons een exemplaar van je wereld hebt gestuurd en ons helpt bugs te vinden! We zijn ijverig aan het werk om fouten op te lossen en kunnen niet reageren voor deze specifieke wereld. Hier is je bevestiging dat we deze hebben ontvangen: %s	#
-worldConversion.feedback.failed.msg=Oei, we hebben je wereld niet ontvangen. Controleer je internetverbinding of verzend je wereld later nog eens.	#
-worldConversion.feedback.prompt.title=Wereld indienen	#
-worldConversion.feedback.prompt.msg=Voldeed het uiterlijk of de werking van je oude wereld niet aan je verwachtingen? Stuur ons je wereld en help ons de bugs te vinden!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversie voltooid	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together Update (%s)	#
 client.version.1.4=Update Aquatic (%s)	#
 client.version.1.5=Update Aquatic (%s)	#
 client.version.1.11=Village and Pillage (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Aanbieding!	#
 dr.banner.limitedTimeOffer=Tijdelijke aanbieding!	#

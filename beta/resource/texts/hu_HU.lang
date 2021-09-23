@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm hírcsatorna	#
 accessibility.play.tabLeft=Nyomd meg a(z) %s gombot a balra lapozáshoz	#
 accessibility.play.tabRight=Nyomd meg a(z) %s gombot a jobbra lapozáshoz	#
 accessibility.play.legacyWorldsDelete=Régi világ törlése	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Engedélyek	#
 accessibility.pause.profile=Profil kiválasztása	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hoppá! Úgy tűnik, egy személyes fiókk
 
 eula.intro=A Minecraft: Education Edition használatához el kell fogadnod a végfelhasználói licencszerződést.	#
 eula.location=Ez itt olvasható:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Végfelhasználói licencszerződés	#
 eula.view=Végfelhasználói licencszerződés megtekintése	#
 eula.callToAction=A licencszerződés feltételeinek elfogadásához kattints az Elfogadás gombra.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=%1$s adatcímkéje nem egyezik						
 commands.scoreboard.players.score.notFound=Nem található %1$s pontszám %2$s részére										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=A(z) %1$d eredmény NEM ebben a tartományban van: %2$d – %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=A(z) %1$d eredmény ebben a tartományban van: %2$d – %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Majdnem elfogyott a tárhelyed! A Minecraft k
 storageSpaceWarningScreen.lowduringgameplay=Elfogyott a tárhelyed, amelyre a Minecraft világokat és beállításokat menthet el ezen az eszközön. Miért nem törölsz néhány régi cuccot, ami már nem kell, hogy továbbra is elmenthesd az új dolgokat?	#
 storageSpaceWarningScreen.fullduringgameplay=Elfogyott a tárhelyed, ezért a Minecraft nem tudja menteni a játék állását! A Minecraft visszatér a főmenübe, ahol tárhelyet szabadíthatsz fel.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=SAJÁT VILÁGOK MEGTEKINTÉSE	#
 edu.play_screen.view_library=KÖNYVTÁR MEGTEKINTÉSE	#
 edu.play_screen.create_new=ÚJ LÉTREHOZÁSA	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Keresés	#
 edu.worlds_screen.play=JÁTÉK	#
 edu.worlds_screen.host=JÁTÉKGAZDA	#
 edu.worlds_screen.settings=BEÁLLÍTÁSOK	#
+edu.worlds_screen.manage=KEZELÉS	#
+edu.worlds_screen.back=VISSZA	#
+edu.worlds_screen.copy=MÁSOLÁS	#
+edu.worlds_screen.export=EXPORTÁLÁS	#
+edu.worlds_screen.share=MEGOSZTÁS	#
+edu.worlds_screen.delete=TÖRLÉS	#
 edu.worlds_screen.courses_title=Tanfolyamaim	#
 
 edu.templates.title=Saját sablonok	#
@@ -3735,6 +3744,7 @@ level.import.success=A szint importálása sikeresen befejeződött	#
 level.export.failed=A szint exportálása nem sikerült	#
 level.import.failed=A szint importálása nem sikerült	#
 level.import.failed.incompatibleEdition=A szint betöltése sikertelen: nem támogatott fájlformátum	#
+
 invite.clear=Kijelölés törlése	#
 invite.send=%d meghívó elküldése	#
 invite.sendOne=1 meghívó elküldése	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Üres térkép	#
 item.emptyLocatorMap.name=Üres helymeghatározó térkép	#
-item.emptyPotion.name=Vizesüveg	#
 item.enchanted_book.name=Varázskönyv	#
 item.end_crystal.name=Vég-kristály	#
 tile.end_rod.name=Vég-oszlop	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Időjárás-megjelenítés kikapcsolása	#
 options.dev_disableRenderHud=Kezelőfelület-megjelenítés kikapcsolása	#
 options.dev_disableRenderItemInHand=Kézben lévő tárgy megjelenítésének kikapcsolása	#
 options.dev_disableRenderMainMenuCubeMap=A főmenü CubeMap-rajzolás funkciójának letiltása	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Kiszolgáló példány szála	#
 options.dev_newCuller=Új culler használata	#
 options.dev_showBuildInfo=Build adatainak megjelenítése	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Aktuális kezelések	#
 options.dev_unusedTreatmentsTitle=Fel nem használt kezelések	#
 options.dev_addTreatmentId=Kezelés azonosítójának megadása	#
 options.dev_addLabel=Megadás	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Visszaállítás alapértelmezettre	#
 options.dev_clearFlights=Törlés	#
 options.dev_experimentalProgressions=Előrehaladások felülbírálása	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Bányászfáradtság	#
 potion.digSpeed=Sietség	#
 potion.effects.whenDrank=Hatása:	#
 potion.empty=Nincs hatása	#
+potion.emptyPotion.name=Vizesüveg	#
+potion.emptyPotion.splash.name=Robbanó vizespalack	#
+potion.emptyPotion.linger.name=Időző vizespalack	#
 potion.fireResistance=Tűzállóság	#
 potion.fireResistance.name=Tűzállóság bájitala	#
 potion.fireResistance.splash.name=Tűzállóság robbanó bájitala	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Nem sikerült konvertálni a világot	#
 worldConversionErrorPrompt.message=Hiba történt a világ konvertálása során. Próbálkozz később.	#
-worldConversionErrorPrompt.message.upload=Hiba történt. Nem sikerült konvertálni a világot. A világot később is elküldheted nekünk úgy, hogy belépsz a régi világba, és megnyomod a :_gamepad_face_button_up: gombot. Illetve most is elküldheted, hogy kivizsgáljuk a problémát.	#
-worldConversionErrorPrompt.sendWorld=Világ küldése most	#
-worldConversionErrorPrompt.backToWorld=Vissza a világokhoz	#
-
-worldConversionErrorReport.title=Világ bejelentése	#
-worldConversionErrorReport.button.reportAndSend=Bejelentés és világ elküldése	#
-worldConversionErrorReport.dropdown.default=Milyen hibát észleltél?	#
-worldConversionErrorReport.dropdown.mobs=A mobok hibásan működtek vagy hiányoztak	#
-worldConversionErrorReport.dropdown.terrain=A terep hibás volt vagy hiányzott	#
-worldConversionErrorReport.dropdown.itemsMissing=Elveszítettem az elemeimet, alkotásaimat és/vagy játékosstatisztikáimat	#
-worldConversionErrorReport.dropdown.itemInteraction=Nem tudtam használni az elemeket	#
-worldConversionErrorReport.dropdown.worldConversion=Nem sikerült konvertálni a világot	#
-worldConversionErrorReport.terms.agreement=Az Elfogadom gombra kattintva elküldöd a világot a Minecraft csapatának. Erre vonatkozik a Microsoft szolgáltatási szerződése és adatvédelmi nyilatkozata.	#
-worldConversionErrorReport.terms.agreementForBeta=A világod feltöltésével engedélyezed a Microsoft számára, hogy a Minecraftba történő átkódoláshoz tesztelje, lemásolja, módosítsa, terjessze és nyilvánosan közzétegye a világot.	#
-worldConversionErrorReport.terms.viewTerms=Feltételek megtekintése	#
-
-
-worldConversionErrorReport.sending.title=Régi világ küldése	#
-worldConversionErrorReport.sending.description=Régi világ küldése a Minecraftba...	#
-
-worldConversionErrorReport.sending.complete=A küldés véget ért	#
-worldConversionErrorReport.sending.completeMessage.part1=Köszönjük, keményen dolgozunk a hibák kijavításán, de ezzel világgal kapcsolatban külön visszajelzést nem fogunk küldeni. Íme az igazolás, hogy megkaptuk:	#
-worldConversionErrorReport.sending.completeMessage.part2=Igazolás: %s	#
 
 worldError.corrupted=sérült, ezért nem indítható el.	#
 worldError.invalidArguments=érvénytelen argumentummal lett létrehozva.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Gomba-sziget	#
 eduTemplateWorld.starterTown.name=Kezdőváros	#
 eduTemplateWorld.tutorialVolumeII.name=Oktató, II. kötet.	#
 eduTemplateWorld.blocksOfGrass.name=Fűblokkok	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Elküldted a világot	#
-worldConversion.feedback.failed.title=Nem sikerült elüldeni a világot	#
-worldConversion.feedback.done.msg=Köszönjük, hogy elküldted a világ másolatát, és ezzel segítesz megtalálni a hibákat! Keményen dolgozunk ezek kijavításán, de ezzel a világgal kapcsolatban külön visszajelzést nem fogunk küldeni. Íme az igazolás, hogy megkaptuk: %s	#
-worldConversion.feedback.failed.msg=Hoppá, nem kaptuk meg a világot. Ellenőrizd az internetkapcsolatot, és próbáld újra elküldeni később.	#
-worldConversion.feedback.prompt.title=Világ beküldése	#
-worldConversion.feedback.prompt.msg=A régi világod nem úgy nézett ki vagy működött, ahogy kellett volna? Küldd el nekünk, és segíts megtalálni a hibákat!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Sikeres konverzió	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together frissítés (%s)	#
 client.version.1.4=Aquatic frissítés (%s)	#
 client.version.1.5=Aquatic frissítés (%s)	#
 client.version.1.11=Falvak és fosztogatók frissítés (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Vásár!	#
 dr.banner.limitedTimeOffer=Korlátozott ideig elérhető ajánlat!	#

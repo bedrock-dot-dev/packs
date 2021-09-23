@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm 内容	#
 accessibility.play.tabLeft=按下选项卡左边的 %s	#
 accessibility.play.tabRight=按下选项卡右边的 %s	#
 accessibility.play.legacyWorldsDelete=删除旧的世界	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=权限	#
 accessibility.pause.profile=选择个人资料	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=哎呀！看来您使用了个人账户进
 
 eula.intro=要使用 Minecraft: Education Edition，你必须接受最终用户许可协议。	#
 eula.location=EULA 地址：	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=最终用户许可协议	#
 eula.view=查看最终用户许可协议	#
 eula.callToAction=点击“接受”以接受该协议条款。	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=数据标签与 %1$s 不匹配						
 commands.scoreboard.players.score.notFound=未找到 %2$s 的 %1$s 分数										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=分数 %1$d 不在 %2$d 到 %3$d 范围内								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=分数 %1$d 在 %2$d 到 %3$d 范围内								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=您的存储空间即将不足！《我的世
 storageSpaceWarningScreen.lowduringgameplay=您的设备空间不足，《我的世界》无法在此设备上存储世界和设置。为什么不删除一些您不需要的旧东西，便于您保存新内容？	#
 storageSpaceWarningScreen.fullduringgameplay=您的存储空间不足，《我的世界》无法保存您的进度！ 《我的世界》 将帮助您回到主菜单，以清理出额外的存储空间。	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=查看我的世界	#
 edu.play_screen.view_library=查看库	#
 edu.play_screen.create_new=新建	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=搜索	#
 edu.worlds_screen.play=游戏	#
 edu.worlds_screen.host=主机	#
 edu.worlds_screen.settings=设置	#
+edu.worlds_screen.manage=管理	#
+edu.worlds_screen.back=返回	#
+edu.worlds_screen.copy=复制	#
+edu.worlds_screen.export=导出	#
+edu.worlds_screen.share=分享	#
+edu.worlds_screen.delete=删除	#
 edu.worlds_screen.courses_title=我的课程	#
 
 edu.templates.title=我的模板	#
@@ -3735,6 +3744,7 @@ level.import.success=等级导入成功完成	#
 level.export.failed=等级导出失败	#
 level.import.failed=等级导入失败	#
 level.import.failed.incompatibleEdition=等级导入失败：出现了不支持的格式。	#
+
 invite.clear=清除选择	#
 invite.send=发送 %d 份邀请函	#
 invite.sendOne=发送 1 份邀请	#
@@ -4601,7 +4611,6 @@ item.elytra.name=鞘翅	#
 item.emerald.name=绿宝石	#
 item.emptyMap.name=空白地图	#
 item.emptyLocatorMap.name=空的定位器地图	#
-item.emptyPotion.name=水瓶	#
 item.enchanted_book.name=附魔书	#
 item.end_crystal.name=末地水晶	#
 tile.end_rod.name=末地烛	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=禁用天气绘制	#
 options.dev_disableRenderHud=禁用 Hud 绘制	#
 options.dev_disableRenderItemInHand=禁用手中物品绘制	#
 options.dev_disableRenderMainMenuCubeMap=禁用主菜单立方体贴图绘制	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=服务器实例线程	#
 options.dev_newCuller=使用新的害兽驱除业者	#
 options.dev_showBuildInfo=显示版本信息	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=当前治疗	#
 options.dev_unusedTreatmentsTitle=未使用的治疗方法	#
 options.dev_addTreatmentId=添加处理 ID	#
 options.dev_addLabel=添加	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=重置为默认值	#
 options.dev_clearFlights=清除	#
 options.dev_experimentalProgressions=覆盖进程	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=开采疲劳	#
 potion.digSpeed=急速	#
 potion.effects.whenDrank=当使用后：	#
 potion.empty=无效果	#
+potion.emptyPotion.name=水瓶	#
+potion.emptyPotion.splash.name=喷溅的水瓶	#
+potion.emptyPotion.linger.name=滯留水瓶	#
 potion.fireResistance=抗火	#
 potion.fireResistance.name=抗火药水	#
 potion.fireResistance.splash.name=喷溅型抗火药水	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=思源黑体	#
 
 worldConversionErrorPrompt.title=世界转换失败	#
 worldConversionErrorPrompt.message=槽糕，在世界转换过程中出错了。请稍后再试。	#
-worldConversionErrorPrompt.message.upload=出错了。我们无法转换您的世界。您可以稍后通过转到旧世界并按 :_gamepad_face_button_up: 来向我们发送您的世界。或者立即向我们发送您的世界，以便我们可以进行进一步调查。	#
-worldConversionErrorPrompt.sendWorld=立即发送世界	#
-worldConversionErrorPrompt.backToWorld=返回世界	#
-
-worldConversionErrorReport.title=报告此世界	#
-worldConversionErrorReport.button.reportAndSend=报告和发送世界	#
-worldConversionErrorReport.dropdown.default=什么出错了？	#
-worldConversionErrorReport.dropdown.mobs=生物行为不当或失踪	#
-worldConversionErrorReport.dropdown.terrain=地形已破坏或缺失	#
-worldConversionErrorReport.dropdown.itemsMissing=我的物品、作品和/或玩家统计信息缺失	#
-worldConversionErrorReport.dropdown.itemInteraction=无法与物品交互	#
-worldConversionErrorReport.dropdown.worldConversion=世界转换失败	#
-worldConversionErrorReport.terms.agreement=按下“同意”，即表示您同意将您的世界上载到《我的世界》团队。Microsoft 服务协议和隐私声明将适用于此处。	#
-worldConversionErrorReport.terms.agreementForBeta=上载您的世界，即表示您授权 Microsoft 测试、复制、修改、分发和公开显示您的世界以便支持将您的世界传输到《我的世界》。	#
-worldConversionErrorReport.terms.viewTerms=查看条款	#
-
-
-worldConversionErrorReport.sending.title=正在发送旧世界	#
-worldConversionErrorReport.sending.description=正在将旧世界发送到《我的世界》...	#
-
-worldConversionErrorReport.sending.complete=发送已完成	#
-worldConversionErrorReport.sending.completeMessage.part1=非常感谢！我们正致力于修复一些内容，因此未能及时就此特定世界给予回复。下面是您的回执，确认我们已收到它：	#
-worldConversionErrorReport.sending.completeMessage.part2=回执：%s	#
 
 worldError.corrupted=已毁坏并无法启动。	#
 worldError.invalidArguments=以无效参数创建。	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=蘑菇岛	#
 eduTemplateWorld.starterTown.name=新手村	#
 eduTemplateWorld.tutorialVolumeII.name=教程第 II 卷	#
 eduTemplateWorld.blocksOfGrass.name=草地块	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=世界已提交	#
-worldConversion.feedback.failed.title=世界提交失败	#
-worldConversion.feedback.done.msg=非常感谢您向我们发送您的世界的副本，这将帮助我们找到错误！我们正致力于修复一些内容，因此未能及时就此特定世界给予回复。下面是您的回执，确认我们已收到它：%s	#
-worldConversion.feedback.failed.msg=糟糕！我们未能收到您的世界。请尝试检查您的 Internet 连接，或者稍后重新发送它。	#
-worldConversion.feedback.prompt.title=提交世界	#
-worldConversion.feedback.prompt.msg=您的旧世界未按预期方式显示或运行？向我们发送您的世界，这将帮助我们找到错误！	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=转换已完成	#
@@ -9303,6 +9286,23 @@ client.version.1.2= Better Together 更新 (%s)	#
 client.version.1.4=水生更新 (%s)	#
 client.version.1.5=水生更新 (%s)	#
 client.version.1.11=村庄和劫掠者村庄更新 (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=特惠！	#
 dr.banner.limitedTimeOffer=限时优惠！	#

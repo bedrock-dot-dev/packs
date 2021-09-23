@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Канал на обител	#
 accessibility.play.tabLeft=Натиснете %s за обхождане наляво	#
 accessibility.play.tabRight=Натиснете %s за обхождане надясно	#
 accessibility.play.legacyWorldsDelete=Изтриване на наследен свят	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Разрешения	#
 accessibility.pause.profile=Избор на профил	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Опа! Изглежда, че сте вл
 
 eula.intro=Трябва да приемете лицензионното споразумение с краен потребител, за да използвате Minecraft: Education Edition.	#
 eula.location=ЛСКП се намира на адрес:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Лицензионно споразумение с краен потребител	#
 eula.view=Преглед на ЛСКП	#
 eula.callToAction=Щракнете върху „Приемам“, за да приемете условията на това споразумение.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=dataTag няма съвпадени�
 commands.scoreboard.players.score.notFound=Не е открит резултат %1$s за %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Резултатът %1$d НЕ е в обхвата от %2$d до %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Резултатът %1$d е в обхвата от %2$d до %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Мястото ви за съхранение
 storageSpaceWarningScreen.lowduringgameplay=Устройството ви вече почти няма празно място за съхранение, което Minecraft може да ползва, за да запазва светове и настройки на това устройство.  Защо не изтриете някои стари неща, които вече не ви трябват, за да можете да запазвате нови неща?	#
 storageSpaceWarningScreen.fullduringgameplay=Нямате свободно място за съхранение на данни и Minecraft не е в състояние да запише вашия напредък! Minecraft ще ви върне към главното меню, за да освободите място за съхранение.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=ПРЕГЛЕД НА МОИТЕ СВЕТОВЕ	#
 edu.play_screen.view_library=ПРЕГЛЕД НА БИБЛИОТЕКАТА	#
 edu.play_screen.create_new=СЪЗДАВАНЕ НА НОВ	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Търсене	#
 edu.worlds_screen.play=ИГРА	#
 edu.worlds_screen.host=ХОСТВАНЕ	#
 edu.worlds_screen.settings=НАСТРОЙКИ	#
+edu.worlds_screen.manage=УПРАВЛЕНИЕ	#
+edu.worlds_screen.back=НАЗАД	#
+edu.worlds_screen.copy=КОПИРАНЕ	#
+edu.worlds_screen.export=ЕКСПОРТИРАНЕ	#
+edu.worlds_screen.share=СПОДЕЛЯНЕ	#
+edu.worlds_screen.delete=ИЗТРИВАНЕ	#
 edu.worlds_screen.courses_title=Моите курсове	#
 
 edu.templates.title=Моите шаблони	#
@@ -3735,6 +3744,7 @@ level.import.success=Импортирането на ниво е завърше�
 level.export.failed=Експортирането на ниво е неуспешно	#
 level.import.failed=Импортирането на ниво е неуспешно	#
 level.import.failed.incompatibleEdition=Неуспешно импортиране на нивото: неподдържан файлов формат	#
+
 invite.clear=Изчистване на избора	#
 invite.send=Изпращане на %d покани	#
 invite.sendOne=Изпращане на 1 покана	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Елитри	#
 item.emerald.name=Смарагд	#
 item.emptyMap.name=Празна карта	#
 item.emptyLocatorMap.name=Празна локаторна карта	#
-item.emptyPotion.name=Бутилка за вода	#
 item.enchanted_book.name=Омагьосана книга	#
 item.end_crystal.name=Кристал от Края	#
 tile.end_rod.name=Пръчка от Края	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Забраняване на създаване 
 options.dev_disableRenderHud=Забраняване на създаване на Hud	#
 options.dev_disableRenderItemInHand=Забраняване на създаване на предмет в ръка	#
 options.dev_disableRenderMainMenuCubeMap=Забраняване на създаване на CubeMap на главното меню	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Нишка за екземпляр на сървъра	#
 options.dev_newCuller=Използване на нов подборчик	#
 options.dev_showBuildInfo=Показване на информация за компилацията	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Текущи манипулации	#
 options.dev_unusedTreatmentsTitle=Неизползвани обработки	#
 options.dev_addTreatmentId=Добавяне на ИД на манипулация	#
 options.dev_addLabel=Добавяне	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Нулиране до стойностите по подразбиране	#
 options.dev_clearFlights=Бистра	#
 options.dev_experimentalProgressions=Замяна на напредъци	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Умора от добив на руда	#
 potion.digSpeed=Бързина	#
 potion.effects.whenDrank=При прилагане:	#
 potion.empty=Няма ефект	#
+potion.emptyPotion.name=Бутилка за вода	#
+potion.emptyPotion.splash.name=Разплискваща се бутилка с вода	#
+potion.emptyPotion.linger.name=Задържаща се бутилка с вода	#
 potion.fireResistance=Устойчивост на огън	#
 potion.fireResistance.name=Отвара на устойчивост на огън	#
 potion.fireResistance.splash.name=Разплискваща се отвара на устойчивост на огън	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Конвертирането на свят е неуспешно	#
 worldConversionErrorPrompt.message=Нещо се обърка по време на конвертирането на свят. Опитайте отново по-късно.	#
-worldConversionErrorPrompt.message.upload=Нещо се обърка. Не успяхме да конвертираме вашия свят. Можете да ни го изпратите по-късно, като отидете в стария си свят и натиснете :_gamepad_face_button_up:. Също така можете да ни изпратете света си сега, за да проучим проблема.	#
-worldConversionErrorPrompt.sendWorld=Изпращане на свят сега	#
-worldConversionErrorPrompt.backToWorld=Обратно към световете	#
-
-worldConversionErrorReport.title=Докладване на този свят	#
-worldConversionErrorReport.button.reportAndSend=Докладване и изпращане на света	#
-worldConversionErrorReport.dropdown.default=Какво се обърка?	#
-worldConversionErrorReport.dropdown.mobs=Мобовете се държаха зле или липсваха	#
-worldConversionErrorReport.dropdown.terrain=Имаше повреден или липсващ терен	#
-worldConversionErrorReport.dropdown.itemsMissing=Загубих предметите, творбите и/или игровите си статистики	#
-worldConversionErrorReport.dropdown.itemInteraction=Не можех да взаимодействам с предмети	#
-worldConversionErrorReport.dropdown.worldConversion=Конвертирането на свят е неуспешно	#
-worldConversionErrorReport.terms.agreement=С натискането на „Приемам“ качвате вашия свят към екипа на Minecraft. Прилагат се споразумението за услуги и декларацията за поверителност на Microsoft.	#
-worldConversionErrorReport.terms.agreementForBeta=С качването на вашия свят вие упълномощавате Microsoft да тества, възпроизвежда, променя, разпространява и излага на публичен показ вашия свят с цел прехвърлянето на вашия свят в Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Преглед на условията	#
-
-
-worldConversionErrorReport.sending.title=Изпращане на стар свят	#
-worldConversionErrorReport.sending.description=Изпращане на стар свят към Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Изпращането е завършено	#
-worldConversionErrorReport.sending.completeMessage.part1=Благодарим ви! Трудим се, за да поправим нещата, и няма да можем да се свържем с вас за този конкретен свят. Ето вашата разписка, с която потвърждаваме, че сме го получили:	#
-worldConversionErrorReport.sending.completeMessage.part2=Разписка: %s	#
 
 worldError.corrupted=е повреден и не може да бъде стартиран.	#
 worldError.invalidArguments=е създаден с невалидни аргументи.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Островът на гъбите	#
 eduTemplateWorld.starterTown.name=Начален град	#
 eduTemplateWorld.tutorialVolumeII.name=Инструкция, том II	#
 eduTemplateWorld.blocksOfGrass.name=Блокчета от трева	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Светът е подаден	#
-worldConversion.feedback.failed.title=Подаването на света е неуспешно	#
-worldConversion.feedback.done.msg=Благодарим за копието от вашия свят и че ни помагате да намираме бъгове! Трудим се, за да поправим нещата, и няма да можем да се свържем с вас за този конкретен свят. Ето вашата разписка, с която потвърждаваме, че сме го получили: %s	#
-worldConversion.feedback.failed.msg=Опа! Не успяхме да получим вашия свят. Проверете връзката си с интернет или се опитайте да го изпратите отново по-късно.	#
-worldConversion.feedback.prompt.title=Подаване на свят	#
-worldConversion.feedback.prompt.msg=Вашият стар свят не е изглеждал или работел така, както сте очаквали? Изпратете ни света си и ни помогнете да намерим бъговете!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Конвертирането е завършено	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Актуализация Better Together („По-добре 
 client.version.1.4=Актуализация „Морски свят“ (%s)	#
 client.version.1.5=Актуализация „Морски свят“ (%s)	#
 client.version.1.11=Актуализация „Село и плячкосване“ (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Разпродажба!	#
 dr.banner.limitedTimeOffer=Предложение за ограничен период от време!	#

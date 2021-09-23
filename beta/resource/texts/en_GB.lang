@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm Feed	#
 accessibility.play.tabLeft=Press the %s to tab left	#
 accessibility.play.tabRight=Press the %s to tab right	#
 accessibility.play.legacyWorldsDelete=Delete Legacy World	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Permissions	#
 accessibility.pause.profile=Choose Profile	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Oops! It looks like you signed in with a p
 
 eula.intro=To use Minecraft: Education Edition you must accept the End-User Licensing Agreement.	#
 eula.location=The EULA is at:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=End-User Licensing Agreement	#
 eula.view=View EULA	#
 eula.callToAction=Click Accept to accept the terms of this agreement.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=The dataTag does not match for %1$s	
 commands.scoreboard.players.score.notFound=No %1$s score for %2$s found										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Score %1$d is NOT in range %2$d to %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Score %1$d is in the range %2$d to %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=You are almost out of data storage space! Min
 storageSpaceWarningScreen.lowduringgameplay=Your device is almost out of the space that Minecraft can use to save worlds and settings on this device. Why not delete some old stuff you don't need so that you can keep saving new stuff?	#
 storageSpaceWarningScreen.fullduringgameplay=You are out of data storage space and Minecraft is unable to save your progress! Minecraft will return you to the Main Menu to clear up storage space.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=VIEW MY WORLDS	#
 edu.play_screen.view_library=VIEW LIBRARY	#
 edu.play_screen.create_new=CREATE NEW	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Search	#
 edu.worlds_screen.play=PLAY	#
 edu.worlds_screen.host=HOST	#
 edu.worlds_screen.settings=SETTINGS	#
+edu.worlds_screen.manage=MANAGE	#
+edu.worlds_screen.back=BACK	#
+edu.worlds_screen.copy=COPY	#
+edu.worlds_screen.export=EXPORT	#
+edu.worlds_screen.share=SHARE	#
+edu.worlds_screen.delete=DELETE	#
 edu.worlds_screen.courses_title=My Courses	#
 
 edu.templates.title=My Templates	#
@@ -3735,6 +3744,7 @@ level.import.success=Level import finished successfully	#
 level.export.failed=Level export failed	#
 level.import.failed=Level import failed	#
 level.import.failed.incompatibleEdition=Level import failed: Unsupported file format	#
+
 invite.clear=Clear Selection	#
 invite.send=Send %d Invites	#
 invite.sendOne=Send 1 Invite	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Emerald	#
 item.emptyMap.name=Empty Map	#
 item.emptyLocatorMap.name=Empty Locator Map	#
-item.emptyPotion.name=Water Bottle	#
 item.enchanted_book.name=Enchanted Book	#
 item.end_crystal.name=End Crystal	#
 tile.end_rod.name=End Rod	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Disable Weather Drawing	#
 options.dev_disableRenderHud=Disable Hud Drawing	#
 options.dev_disableRenderItemInHand=Disable Item-in-Hand Drawing	#
 options.dev_disableRenderMainMenuCubeMap=Disable Main Menu CubeMap Drawing	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Server Instance Thread	#
 options.dev_newCuller=Use new culler	#
 options.dev_showBuildInfo=Show build info	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Current Treatments	#
 options.dev_unusedTreatmentsTitle=Unused Treatments	#
 options.dev_addTreatmentId=Add Treatment ID	#
 options.dev_addLabel=Add	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Reset to Default	#
 options.dev_clearFlights=Clear	#
 options.dev_experimentalProgressions=Override Progressions	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Mining Fatigue	#
 potion.digSpeed=Haste	#
 potion.effects.whenDrank=When Applied:	#
 potion.empty=No Effects	#
+potion.emptyPotion.name=Water Bottle	#
+potion.emptyPotion.splash.name=Splash Water Bottle	#
+potion.emptyPotion.linger.name=Lingering Water Bottle	#
 potion.fireResistance=Fire Resistance	#
 potion.fireResistance.name=Potion of Fire Resistance	#
 potion.fireResistance.splash.name=Splash Potion of Fire Resistance	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=World Conversion Failed	#
 worldConversionErrorPrompt.message=Oops, something went wrong during world conversion. Try again later.	#
-worldConversionErrorPrompt.message.upload=Something went wrong. We weren't able to convert your world. You can send us your world later by going to your old world and pressing :_gamepad_face_button_up:. Or send us your world now so we can investigate further.	#
-worldConversionErrorPrompt.sendWorld=Send World Now	#
-worldConversionErrorPrompt.backToWorld=Back to Worlds	#
-
-worldConversionErrorReport.title=Report This World	#
-worldConversionErrorReport.button.reportAndSend=Report and Send World	#
-worldConversionErrorReport.dropdown.default=What went wrong?	#
-worldConversionErrorReport.dropdown.mobs=Mobs were misbehaving or missing	#
-worldConversionErrorReport.dropdown.terrain=Terrain was broken or missing	#
-worldConversionErrorReport.dropdown.itemsMissing=Lost my items, creations, and/or player stats	#
-worldConversionErrorReport.dropdown.itemInteraction=Couldn't interact with items	#
-worldConversionErrorReport.dropdown.worldConversion=World conversion failed	#
-worldConversionErrorReport.terms.agreement=By hitting Agree, you are uploading your world to the Minecraft Team. The Microsoft Services Agreement and Privacy Statement apply.	#
-worldConversionErrorReport.terms.agreementForBeta=By uploading your World you hereby authorize Microsoft to test, reproduce, modify, distribute and publicly display your World in support of transferring your World to Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=View Terms	#
-
-
-worldConversionErrorReport.sending.title=Sending Old World	#
-worldConversionErrorReport.sending.description=Sending Old World to Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Send Completed	#
-worldConversionErrorReport.sending.completeMessage.part1=Thank you! We are hard at work fixing things and won't be able to get back to you about this specific world. Here's your receipt confirming that we received it:	#
-worldConversionErrorReport.sending.completeMessage.part2=Receipt: %s	#
 
 worldError.corrupted=is corrupted and can't be started.	#
 worldError.invalidArguments=was created with invalid arguments.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Mushroom Island	#
 eduTemplateWorld.starterTown.name=Starter Town	#
 eduTemplateWorld.tutorialVolumeII.name=Tutorial Volume II	#
 eduTemplateWorld.blocksOfGrass.name=Blocks of Grass	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=World Submitted	#
-worldConversion.feedback.failed.title=World Submission Failed	#
-worldConversion.feedback.done.msg=Thank you for sending us a copy of your world and helping us find bugs! We are hard at work fixing things and won't be able to get back to you about this specific world. Here's your receipt confirming that we received it: %s	#
-worldConversion.feedback.failed.msg=Oops! We weren't able to receive your world. Try checking your internet connection or sending it again later.	#
-worldConversion.feedback.prompt.title=Submit World	#
-worldConversion.feedback.prompt.msg=Did your old world not look or work the way it should have? Send us your world and help us find the bugs!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversion Complete	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together Update (%s)	#
 client.version.1.4=Update Aquatic (%s)	#
 client.version.1.5=Update Aquatic (%s)	#
 client.version.1.11=Village & Pillage (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Sale!	#
 dr.banner.limitedTimeOffer=Limited Time Offer!	#

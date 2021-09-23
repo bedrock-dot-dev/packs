@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm-flöde	#
 accessibility.play.tabLeft=Tryck på %s för att gå en flik åt vänster	#
 accessibility.play.tabRight=Tryck på %s för att gå en flik åt höger	#
 accessibility.play.legacyWorldsDelete=Radera gammal värld	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Tillstånd	#
 accessibility.pause.profile=Välj profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hoppsan! Det verkar som att du har loggat 
 
 eula.intro=Du måste acceptera slutanvändarlicensavtalet för att använda Minecraft: Education Edition.	#
 eula.location=Du hittar slutanvändarlicensavtalet på:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Slutanvändarlicensavtal	#
 eula.view=Läs slutanvändarlicensavtal	#
 eula.callToAction=Klicka på Godkänn för att godkänna villkoren i avtalet.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=dataTag matchar inte för %1$s						
 commands.scoreboard.players.score.notFound=Hittade inget %1$s-resultat för %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Resultatet %1$d är inte inom spannet %2$d–%3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Resultatet %1$d är inom spannet %2$d–%3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Du har nästan slut på lagringsutrymme! Mine
 storageSpaceWarningScreen.lowduringgameplay=Din enhet har nästan slut på den mängd utrymme Minecraft behöver för att spara världar och inställningar. Ta bort lite gamla grejer så att du kan fortsätta spara.	#
 storageSpaceWarningScreen.fullduringgameplay=Du har slut på lagringsutrymme och Minecraft kan inte spara dina framsteg! Minecraft återgår till huvudmenyn så att du kan frigöra lagringsutrymme.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=VISA MINA VÄRLDAR	#
 edu.play_screen.view_library=VISA MITT BIBLIOTEK	#
 edu.play_screen.create_new=SKAPA NY	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Sök	#
 edu.worlds_screen.play=SPELA	#
 edu.worlds_screen.host=VÄRD	#
 edu.worlds_screen.settings=INSTÄLLNINGAR	#
+edu.worlds_screen.manage=HANTERA	#
+edu.worlds_screen.back=TILLBAKA	#
+edu.worlds_screen.copy=KOPIERA	#
+edu.worlds_screen.export=EXPORTERA	#
+edu.worlds_screen.share=DELA	#
+edu.worlds_screen.delete=TA BORT	#
 edu.worlds_screen.courses_title=Mina kurser	#
 
 edu.templates.title=Mina mallar	#
@@ -3735,6 +3744,7 @@ level.import.success=Nivåimporteringen lyckades	#
 level.export.failed=Kunde inte exportera nivån	#
 level.import.failed=Nivåimporteringen misslyckades	#
 level.import.failed.incompatibleEdition=Det gick inte att importera nivån: Ogiltigt filformat	#
+
 invite.clear=Rensa val	#
 invite.send=Skicka %d inbjudningar	#
 invite.sendOne=Skicka 1 inbjudan	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Tom karta	#
 item.emptyLocatorMap.name=Tom orienteringskarta	#
-item.emptyPotion.name=Vattenflaska	#
 item.enchanted_book.name=Förtrollad bok	#
 item.end_crystal.name=Endkristall	#
 tile.end_rod.name=Slutstav	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Stäng av uppritning av vädret	#
 options.dev_disableRenderHud=Stäng av uppritning av gränssnittet	#
 options.dev_disableRenderItemInHand=Stäng av uppritning av föremål i handen	#
 options.dev_disableRenderMainMenuCubeMap=Avaktivera CubeMap-uppritning på huvudmenyn	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Serverinstanstråd	#
 options.dev_newCuller=Använd ny gallring	#
 options.dev_showBuildInfo=Visa versionsinformation	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Aktuella behandlingar	#
 options.dev_unusedTreatmentsTitle=Oanvända behandlingar	#
 options.dev_addTreatmentId=Lägg till behandlings-id	#
 options.dev_addLabel=Lägg till	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Återställ till standard	#
 options.dev_clearFlights=Rensa	#
 options.dev_experimentalProgressions=Åsidosätt framsteg	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Matthet	#
 potion.digSpeed=Kvickhet	#
 potion.effects.whenDrank=Effekt från användning:	#
 potion.empty=Inga effekter	#
+potion.emptyPotion.name=Vattenflaska	#
+potion.emptyPotion.splash.name=Kastbar vattenflaska	#
+potion.emptyPotion.linger.name=Kvardröjande vattenflaska	#
 potion.fireResistance=Eldimmunitet	#
 potion.fireResistance.name=Eldimmunitetsbrygd	#
 potion.fireResistance.splash.name=Kastbar eldimmunitetsbrygd	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Världskonverteringen misslyckades	#
 worldConversionErrorPrompt.message=Oj, någonting gick fel under världskonverteringen. Försök igen senare.	#
-worldConversionErrorPrompt.message.upload=Något gick snett. Vi kunde inte konvertera din värld. Du kan skicka din gamla värld till oss senare genom att gå till den och trycka på :_gamepad_face_button_up:. Annars kan du skicka världen till oss nu så kan vi undersöka saken närmare.	#
-worldConversionErrorPrompt.sendWorld=Skicka värld nu	#
-worldConversionErrorPrompt.backToWorld=Tillbaka till världar	#
-
-worldConversionErrorReport.title=Anmäl den här världen	#
-worldConversionErrorReport.button.reportAndSend=Anmäl och skicka värld	#
-worldConversionErrorReport.dropdown.default=Vad gick fel?	#
-worldConversionErrorReport.dropdown.mobs=Varelser betedde sig konstigt eller saknades	#
-worldConversionErrorReport.dropdown.terrain=Terrängen var trasig eller saknades	#
-worldConversionErrorReport.dropdown.itemsMissing=Förlorade mina föremål, skapelser och/eller min spelarstatistik	#
-worldConversionErrorReport.dropdown.itemInteraction=Kunde inte interagera med föremål	#
-worldConversionErrorReport.dropdown.worldConversion=Världskonverteringen misslyckades	#
-worldConversionErrorReport.terms.agreement=Genom att trycka på Godkänn laddar du upp din värld till Minecraft-teamet. Microsofts tjänsteavtal och sekretesspolicy gäller.	#
-worldConversionErrorReport.terms.agreementForBeta=Genom att ladda upp din värld ger du ditt medgivande till att Microsoft får testa, återskapa, modifiera, distribuera och visa upp din värld offentligt för att överföra din värld till Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Visa villkor	#
-
-
-worldConversionErrorReport.sending.title=Skickar gammal värld	#
-worldConversionErrorReport.sending.description=Skickar gammal värld till Minecraft ...	#
-
-worldConversionErrorReport.sending.complete=Skickad	#
-worldConversionErrorReport.sending.completeMessage.part1=Tack! Vi jobbar hårt på att fixa saker och kommer inte kunna ge dig återkoppling om din specifika värld. Här är ditt kvitto på att vi har tagit emot den:	#
-worldConversionErrorReport.sending.completeMessage.part2=Kvitto: %s	#
 
 worldError.corrupted=är skadad och kan inte startas.	#
 worldError.invalidArguments=skapades med ogiltiga argument.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Svampö	#
 eduTemplateWorld.starterTown.name=Startby	#
 eduTemplateWorld.tutorialVolumeII.name=Handledningslunta II	#
 eduTemplateWorld.blocksOfGrass.name=Gräsblock	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Värld inskickad	#
-worldConversion.feedback.failed.title=Inskickningen av världen misslyckades	#
-worldConversion.feedback.done.msg=Tack för att du skickar din värld till oss så att vi kan lösa buggarna! Vi jobbar hårt på att fixa saker och kommer inte kunna ge dig återkoppling om din specifika värld. Här är ditt kvitto på att vi har tagit emot den: %s	#
-worldConversion.feedback.failed.msg=Oj då! Vi kunde inte ta emot din värld. Kontrollera din internetanslutning eller försök igen senare.	#
-worldConversion.feedback.prompt.title=Skicka in värld	#
-worldConversion.feedback.prompt.msg=Funkar inte din gamla värld eller beter den sig inte som den ska? Skicka den till oss så hjälper du oss att hitta buggarna!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Konvertering färdig	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Better Together-uppdateringen (%s)	#
 client.version.1.4=Aquatic-uppdateringen (%s)	#
 client.version.1.5=Aquatic-uppdateringen (%s)	#
 client.version.1.11=Village and Pillage (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Rea!	#
 dr.banner.limitedTimeOffer=Tillfälligt erbjudande!	#

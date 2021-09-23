@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm-feed	#
 accessibility.play.tabLeft=Tryk på %s for at gå til venstre	#
 accessibility.play.tabRight=Tryk på %s for at gå til højre	#
 accessibility.play.legacyWorldsDelete=Slet arvegodsverden	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Tilladelser	#
 accessibility.pause.profile=Vælg profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ups! Du er logget på med en personlig kon
 
 eula.intro=Du kan først bruge Minecraft: Education Edition, når du har accepteret licensaftalen for slutbrugere.	#
 eula.location=Licensaftalen for slutbrugere er på:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Licensaftale for slutbrugere	#
 eula.view=Se EULA	#
 eula.callToAction=Klik på Acceptér for at acceptere aftalevilkårene.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=Datatagget matcher ikke for %1$s				
 commands.scoreboard.players.score.notFound=Der er ingen %1$s-score for %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=%1$d-scoren er IKKE inden for intervallet %2$d til %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=%1$d-scoren er inden for intervallet %2$d to %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Du er næsten løbet tør for dataplads! Mine
 storageSpaceWarningScreen.lowduringgameplay=Du er næsten løbet tør for den plads, Minecraft bruger til at gemme verdener og indstillinger på enheden.  Måske kan du slette noget, du ikke bruger, så du kan gemme det nye.	#
 storageSpaceWarningScreen.fullduringgameplay=Minecraft kan ikke gemme spillet, fordi du er løbet tør for dataplads! Minecraft sender dig tilbage til hovedmenuen, så du kan frigøre lagerplads.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=SE MINE VERDENER	#
 edu.play_screen.view_library=SE BIBLIOTEK	#
 edu.play_screen.create_new=OPRET NY	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Søg	#
 edu.worlds_screen.play=SPIL	#
 edu.worlds_screen.host=VÆRT	#
 edu.worlds_screen.settings=INDSTILLINGER	#
+edu.worlds_screen.manage=ADMINISTRER	#
+edu.worlds_screen.back=TILBAGE	#
+edu.worlds_screen.copy=KOPIÉR	#
+edu.worlds_screen.export=EKSPORTÉR	#
+edu.worlds_screen.share=DEL	#
+edu.worlds_screen.delete=SLET	#
 edu.worlds_screen.courses_title=Mine kurser	#
 
 edu.templates.title=Mine skabeloner	#
@@ -2550,7 +2559,7 @@ entity.iron_golem.name=Jerngolem	#
 entity.item.name=Genstand	#
 entity.leash_knot.name=Lineknude	#
 entity.lightning_bolt.name=Lyn	#
-entity.lingering_potion.name=Langvarig eliksir	#
+entity.lingering_potion.name=Hængende eliksir	#
 entity.llama.name=Lama	#
 entity.llama_spit.name=Lamaspyt	#
 entity.magma_cube.name=Magmakube	#
@@ -3735,6 +3744,7 @@ level.import.success=Niveauimporten er gennemført	#
 level.export.failed=Niveaueksporten lykkedes ikke	#
 level.import.failed=Niveauimporten lykkedes ikke	#
 level.import.failed.incompatibleEdition=Niveauet kunne ikke importeres. Filformatet understøttes ikke	#
+
 invite.clear=Ryd valg	#
 invite.send=Send %d invitationer	#
 invite.sendOne=Send 1 invitation	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Blankt kort	#
 item.emptyLocatorMap.name=Blankt placeringskort	#
-item.emptyPotion.name=Vandflaske	#
 item.enchanted_book.name=Fortryllet bog	#
 item.end_crystal.name=End-krystal	#
 tile.end_rod.name=End-stav	#
@@ -4946,7 +4955,7 @@ itemGroup.name.hoe=Lugejern	#
 itemGroup.name.arrow=Pile	#
 itemGroup.name.potion=Eliksirer	#
 itemGroup.name.splashPotion=Plaskeeliksirer	#
-itemGroup.name.lingeringPotion=Langvarige eliksirer	#
+itemGroup.name.lingeringPotion=Hængende eliksirer	#
 itemGroup.name.bed=Senge	#
 itemGroup.name.chalkboard=Kridttavler	#
 itemGroup.name.anvil=Ambolte	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Deaktiver tegning af vejr	#
 options.dev_disableRenderHud=Deaktiver tegning af Hud	#
 options.dev_disableRenderItemInHand=Deaktiver tegning af genstand-i-hånd	#
 options.dev_disableRenderMainMenuCubeMap=Deaktiver hovedmenuens CubeMap-tegning	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Serverforekomst-tråd	#
 options.dev_newCuller=Brug ny culler	#
 options.dev_showBuildInfo=Vis oplysninger om build	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Aktuelle behandlinger	#
 options.dev_unusedTreatmentsTitle=Ubrugte behandlinger	#
 options.dev_addTreatmentId=Tilføj behandlings-id	#
 options.dev_addLabel=Tilføj	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Gendan standardindstillinger	#
 options.dev_clearFlights=Ryd	#
 options.dev_experimentalProgressions=Tilsidesæt fremskridt	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Udvindingstræthed	#
 potion.digSpeed=Hast	#
 potion.effects.whenDrank=Ved anvendelse:	#
 potion.empty=Ingen effekter	#
+potion.emptyPotion.name=Vandflaske	#
+potion.emptyPotion.splash.name=Sprøjtende vandflaske	#
+potion.emptyPotion.linger.name=Hængende vandflaske	#
 potion.fireResistance=Ildmodstand	#
 potion.fireResistance.name=Ildmodstandseliksir	#
 potion.fireResistance.splash.name=Sprøjtende ildmodstandseliksir	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Verdenen kunne ikke konverteres	#
 worldConversionErrorPrompt.message=Ups! Der gik noget galt under konverteringen af verdenen. Prøv igen senere.	#
-worldConversionErrorPrompt.message.upload=Noget gik galt. Vi kunne ikke konvertere din verden. Du kan sende os din verden senere ved at åbne din gamle verden og trykke på :_gamepad_face_button_up:. Du kan også sende os din verden nu, så vi kan undersøge sagen yderligere.	#
-worldConversionErrorPrompt.sendWorld=Send verden nu	#
-worldConversionErrorPrompt.backToWorld=Tilbage til Verdener	#
-
-worldConversionErrorReport.title=Indberet verdenen	#
-worldConversionErrorReport.button.reportAndSend=Indberet og send verden	#
-worldConversionErrorReport.dropdown.default=Hvad gik der galt?	#
-worldConversionErrorReport.dropdown.mobs=Væsnerne manglede eller opførte sig underligt	#
-worldConversionErrorReport.dropdown.terrain=Terrænet manglede eller var ødelagt	#
-worldConversionErrorReport.dropdown.itemsMissing=Jeg havde mistet mine genstande, strukturer og/eller spillerstats	#
-worldConversionErrorReport.dropdown.itemInteraction=Jeg kunne ikke interagere med genstande	#
-worldConversionErrorReport.dropdown.worldConversion=Verdenen kunne ikke konverteres	#
-worldConversionErrorReport.terms.agreement=Når du trykker på Acceptér, uploader du din verden til Minecraft-teamet. Microsofts serviceaftale og erklæring om beskyttelse af personlige oplysninger er gældende.	#
-worldConversionErrorReport.terms.agreementForBeta=Ved at uploade din verden giver du Microsoft lov til at reproducere, justere, distribuere og vise din verden offentligt som understøttelse af overførslen af din verden til Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Se vilkår	#
-
-
-worldConversionErrorReport.sending.title=Sender gammel verden	#
-worldConversionErrorReport.sending.description=Sender gammel verden til Minecraft ...	#
-
-worldConversionErrorReport.sending.complete=Indsendelsen er udført	#
-worldConversionErrorReport.sending.completeMessage.part1=Tak for det. Vi arbejder ihærdigt på at løse problemerne og kan derfor ikke afsætte tid til en specifik tilbagemelding om din verden. Her er din kvittering for, at vi har modtaget den:	#
-worldConversionErrorReport.sending.completeMessage.part2=Kvittering: %s	#
 
 worldError.corrupted=er beskadiget og kan ikke startes.	#
 worldError.invalidArguments=blev oprettet med ugyldige argumenter.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Svampeø	#
 eduTemplateWorld.starterTown.name=Begynderby	#
 eduTemplateWorld.tutorialVolumeII.name=Studieudgave II	#
 eduTemplateWorld.blocksOfGrass.name=Græsblokke	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Din verden er indsendt	#
-worldConversion.feedback.failed.title=Din verden blev ikke indsendt	#
-worldConversion.feedback.done.msg=Tak for kopien af din verden og din hjælp med at finde fejl. Vi arbejder ihærdigt på at løse problemerne og kan derfor ikke afsætte tid til en specifik tilbagemelding om din verden. Her er din kvittering for, at vi har modtaget den: %s	#
-worldConversion.feedback.failed.msg=Vi kunne ikke modtage din verden. Tjek din internetforbindelse, eller prøv igen senere.	#
-worldConversion.feedback.prompt.title=Indsend verden	#
-worldConversion.feedback.prompt.msg=Ser din gamle verden ikke ud, som den skulle? Send os din verden, og hjælp os med at finde fejlen!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Konvertering gennemført	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Opdatering Better Together (%s)	#
 client.version.1.4=Update Aquatic (%s)	#
 client.version.1.5=Update Aquatic (%s)	#
 client.version.1.11=Landsby og plyndring (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Udsalg!	#
 dr.banner.limitedTimeOffer=Tidsbegrænset tilbud!	#

@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Feed do Realm	#
 accessibility.play.tabLeft=Pressione %s para marcar à esquerda	#
 accessibility.play.tabRight=Pressione %s para marcar à direita	#
 accessibility.play.legacyWorldsDelete=Excluir Mundo de Legado	#
+accessibility.play.uploadWorld=Upload World	#
 
 accessibility.pause.permissions=Permissões	#
 accessibility.pause.profile=Escolher Perfil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Opa! Parece que você entrou com uma conta
 
 eula.intro=Para usar o Mineraft: Education Edition, você deve aceitar o Contrato de Licença de Usuário Final.	#
 eula.location=Ele pode ser encontrado em:	#
-eula.hyperlink=http://education.minecraft.net/eula	#
 eula.title=Contrato de Licenciamento do Usuário Final (EULA)	#
 eula.view=Ver EULA	#
 eula.callToAction=Clique Aceitar para concordar com os termos deste contrato.	#
@@ -1113,6 +1113,7 @@ commands.scoreboard.players.set.tagMismatch=A dataTag não corresponde a %1$s			
 commands.scoreboard.players.score.notFound=Nenhuma pontuação %1$s para %2$s encontrada										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Pontuação %1$d NÃO está na faixa de %2$d a %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Pontuação %1$d está na faixa de %2$d a %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d $d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2419,8 @@ storageSpaceWarningScreen.frontend=Você está quase sem espaço de armazenament
 storageSpaceWarningScreen.lowduringgameplay=Seu dispositivo está quase sem o espaço que o Minecraft pode usar para salvar mundos e configurações. Que tal apagar algumas coisas antigas de que você não precisa para poder continuar salvando coisas novas?	#
 storageSpaceWarningScreen.fullduringgameplay=Você está sem espaço de armazenamento de dados e o Minecraft não pode salvar o seu progresso! O Minecraft retornará você para o Menu Principal para liberar espaço de armazenamento.	#
 
+edu.signin_screen.viewTerms=View Terms	#
+
 edu.play_screen.view_worlds=VER MEUS MUNDOS	#
 edu.play_screen.view_library=VER BIBLIOTECA	#
 edu.play_screen.create_new=CRIAR NOVO	#
@@ -2434,6 +2437,12 @@ edu.worlds_screen.search_placeholder=Buscar	#
 edu.worlds_screen.play=JOGAR	#
 edu.worlds_screen.host=HOST	#
 edu.worlds_screen.settings=CONFIGURAÇÕES	#
+edu.worlds_screen.manage=GERENCIAR	#
+edu.worlds_screen.back=VOLTAR	#
+edu.worlds_screen.copy=COPIAR	#
+edu.worlds_screen.export=EXPORTAR	#
+edu.worlds_screen.share=COMPARTILHAR	#
+edu.worlds_screen.delete=APAGAR	#
 edu.worlds_screen.courses_title=Meus Cursos	#
 
 edu.templates.title=Meus modelos	#
@@ -3735,6 +3744,7 @@ level.import.success=Importação de nível concluída com sucesso	#
 level.export.failed=Falha ao exportar nível	#
 level.import.failed=Falha ao importar nível	#
 level.import.failed.incompatibleEdition=Falha ao importar nível: formato de arquivo incompatível	#
+
 invite.clear=Limpar seleção	#
 invite.send=Enviar %d convites	#
 invite.sendOne=Enviar 1 convite	#
@@ -4601,7 +4611,6 @@ item.elytra.name=Élitro	#
 item.emerald.name=Esmeralda	#
 item.emptyMap.name=Mapa em Branco	#
 item.emptyLocatorMap.name=Mapa do Localizador Vazio	#
-item.emptyPotion.name=Garrafa de Água	#
 item.enchanted_book.name=Livro Encantado	#
 item.end_crystal.name=Cristal do End	#
 tile.end_rod.name=Haste de Extremidade	#
@@ -5512,6 +5521,7 @@ options.dev_disableRenderWeather=Desabilitar Renderização do Clima	#
 options.dev_disableRenderHud=Desabilitar Renderização do HUD	#
 options.dev_disableRenderItemInHand=Desabilitar Renderização do Item na Mão	#
 options.dev_disableRenderMainMenuCubeMap=Desativar o desenho do CubeMap do menu principal	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation	#
 options.dev_serverInstanceThread=Segmento de Instância do Servidor	#
 options.dev_newCuller=Usar nova escolha	#
 options.dev_showBuildInfo=Mostrar informações de compilação	#
@@ -5598,6 +5608,7 @@ options.dev_currentTreatmentsTitle=Tratamentos Atuais	#
 options.dev_unusedTreatmentsTitle=Tratamentos Não Usados	#
 options.dev_addTreatmentId=Adicionar ID de Tratamento	#
 options.dev_addLabel=Adicionar	#
+options.dev_applyTreatments=Apply Treatments	#
 options.dev_resetToDefault=Redefinir como Padrão	#
 options.dev_clearFlights=Limpa	#
 options.dev_experimentalProgressions=Substituir Progressos	#
@@ -6281,6 +6292,9 @@ potion.digSlowDown=Cansaço	#
 potion.digSpeed=Pressa	#
 potion.effects.whenDrank=Quando Aplicado:	#
 potion.empty=Sem Efeitos	#
+potion.emptyPotion.name=Garrafa de Água	#
+potion.emptyPotion.splash.name=Garrafa de Água Arremessável	#
+potion.emptyPotion.linger.name=Garrafa de Água Prolongada	#
 potion.fireResistance=Resistência ao Fogo	#
 potion.fireResistance.name=Poção de Resistência ao Fogo	#
 potion.fireResistance.splash.name=Poção Arremessável de Resistência ao Fogo	#
@@ -6331,7 +6345,7 @@ potion.potency.3=IV	#
 potion.potency.4=V	#
 potion.potency.5=VI	#
 potion.awkward.name=Poção Estranha	#
-potion.awkward.splash.name=Estranha Poção Arremessável	#
+potion.awkward.splash.name=Poção Estranha Arremessável	#
 potion.awkward.linger.name=Estranha Poção Prolongada	#
 potion.mundane.name=Poção Mundana	#
 potion.mundane.splash.name=Poção Mundana Arremessável	#
@@ -7877,11 +7891,11 @@ tile.sticky_piston.name=Pistão Aderente	#
 tile.portal.name=Portal	#
 tile.potatoes.name=Batatas	#
 tile.stone_pressure_plate.name=Placa de Pressão de Pedra	#
-tile.wooden_pressure_plate.name=Placa de pressão de carvalho	#
-tile.acacia_pressure_plate.name=Placa de pressão de acácia	#
-tile.birch_pressure_plate.name=Placa de pressão de bétula	#
-tile.dark_oak_pressure_plate.name=Placa de pressão de carvalho escuro	#
-tile.jungle_pressure_plate.name=Placa de pressão de selva	#
+tile.wooden_pressure_plate.name=Placa de Pressão de Carvalho	#
+tile.acacia_pressure_plate.name=Placa de Pressão de Acácia	#
+tile.birch_pressure_plate.name=Placa de Pressão de Bétula	#
+tile.dark_oak_pressure_plate.name=Placa de Pressão de Carvalho Escuro	#
+tile.jungle_pressure_plate.name=Placa de Pressão de Selva	#
 tile.spruce_pressure_plate.name=Placa de pressão de Pinheiro	#
 tile.prismarine.bricks.name=Tijolos de Prismarinho	#
 tile.prismarine.dark.name=Prismarinho Escuro	#
@@ -8479,29 +8493,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Houve Falha na Conversão de Mundo	#
 worldConversionErrorPrompt.message=Opa, ocorreu um erro ao converter o mundo. Tente mais tarde.	#
-worldConversionErrorPrompt.message.upload=Algo deu errado. Não conseguimos converter o seu mundo. Você pode nos enviar seu mundo mais tarde indo para seu mundo antigo e pressionando :_gamepad_face_button_up:. Ou envie-nos seu mundo agora para podermos investigar mais a fundo.	#
-worldConversionErrorPrompt.sendWorld=Enviar Mundo Agora	#
-worldConversionErrorPrompt.backToWorld=Voltar para os Mundos	#
-
-worldConversionErrorReport.title=Fazer um Relatório Deste Mundo	#
-worldConversionErrorReport.button.reportAndSend=Fazer um Relatório Deste Mundo e Enviar	#
-worldConversionErrorReport.dropdown.default=O que deu errado?	#
-worldConversionErrorReport.dropdown.mobs=As criaturas estavam ausentes ou se comportando de modo estranho	#
-worldConversionErrorReport.dropdown.terrain=Os terreno estava quebrado ou ausente	#
-worldConversionErrorReport.dropdown.itemsMissing=Perdi meu itens, minhas criações, e/ou as estatísticas do jogador	#
-worldConversionErrorReport.dropdown.itemInteraction=Não consegui interagir com os itens	#
-worldConversionErrorReport.dropdown.worldConversion=Houve Falha na Conversão de Mundo	#
-worldConversionErrorReport.terms.agreement=Ao clicar em Aceito, você está fazendo upload de seu mundo para a equipe do Minecraft. O Contrato de Serviços Microsoft e a Declaração de Privacidade se aplicam.	#
-worldConversionErrorReport.terms.agreementForBeta=Ao fazer upload do seu Mundo, você autoriza, por meio deste termo, a Microsoft a testar, reproduzir, modificar, distribuir e exibir publicamente seu Mundo como suporte à transferência dele para o Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Ver Termos	#
-
-
-worldConversionErrorReport.sending.title=Enviando Mundo Antigo	#
-worldConversionErrorReport.sending.description=Enviando Mundo Antigo para o Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Enviar Concluído	#
-worldConversionErrorReport.sending.completeMessage.part1=Muito obrigado! Estamos trabalhando para consertar as coisas e não conseguiremos tratar este mundo específico. Aqui está o recibo confirmando que o recebemos:	#
-worldConversionErrorReport.sending.completeMessage.part2=Recibo: %s	#
 
 worldError.corrupted=está corrompido e não pode ser iniciado.	#
 worldError.invalidArguments=foi criado com argumentos inválidos.	#
@@ -8843,14 +8834,6 @@ eduTemplateWorld.mooshroomIsland.name=Ilha dos Cogumelos	#
 eduTemplateWorld.starterTown.name=Cidade Iniciante	#
 eduTemplateWorld.tutorialVolumeII.name=Tutorial Volume II	#
 eduTemplateWorld.blocksOfGrass.name=Blocos de Grama	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Mundo Enviado	#
-worldConversion.feedback.failed.title=Houve Falha no Envio do Mundo	#
-worldConversion.feedback.done.msg=Obrigado por nos enviar uma cópia do seu mundo e nos ajudar a encontrar os erros! Estamos trabalhando para consertar as coisas e não conseguiremos tratar este mundo específico. Aqui está o recibo confirmando que o recebemos: %s	#
-worldConversion.feedback.failed.msg=Opa! Não conseguimos receber o seu mundo. Verifique sua conexão de Internet ou envie novamente mais tarde.	#
-worldConversion.feedback.prompt.title=Enviar Mundo	#
-worldConversion.feedback.prompt.msg=Seu mundo antigo não está com a aparência que deveria ter ou não está funcionando como deveria? Envie-nos seu mundo e ajude-nos a encontrar os erros!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversão Concluída	#
@@ -9303,6 +9286,23 @@ client.version.1.2=Atualização Better Together (%s)	#
 client.version.1.4=Atualização Aquática (%s)	#
 client.version.1.5=Atualização Aquática (%s)	#
 client.version.1.11=Vila e Saque (%s)	#
+
+cloud_upload.title=Mojang Player Support	#
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.	#
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again	#
+cloud_upload.prompt.button.worlds=Go to Worlds	#
+cloud_upload.prompt.button.learn_more=Learn More	#
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement	#
+cloud_upload.button.upload=Upload World (%s)	#
+cloud_upload.button.service_agreement=Microsoft Services Agreement	#
+cloud_upload.terms.title=Terms & Conditions	#
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.	#
+cloud_upload.uploading.title=Uploading world files [%d/%d]	#
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.	#
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.	#
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!	#
+cloud_upload.failed.description=Your world upload failed. Try again?	#
+cloud_upload.tts.message=Uploading world files	#
 
 dr.banner.sale=Promoção!	#
 dr.banner.limitedTimeOffer=Oferta por Tempo Limitado!	#

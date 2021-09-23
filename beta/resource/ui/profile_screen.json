@@ -629,9 +629,10 @@
           "focus_nagivation_mode_right": "stop",
           "focus_nagivation_mode_left": "$main_content_focus_container_left",
           "focus_container_custom_left": "$main_content_focus_container_left_custom",
+          "$preset_arrow_button_layer": 228,
 
           "type": "stack_panel",
-          "orientation": "horizontal",
+          "orientation": "horizontal", 
           "size": [ "100%", "100%" ],
           "controls": [
             { "left_padding@profile.horizontal_fill_padding": {} },
@@ -641,6 +642,7 @@
               "preset_arrow_button_left_panel": {
                 "type": "panel",
                 "size": [ 24, "100%" ],
+                "layer": "$preset_arrow_button_layer",
                 "controls": [
                   {
                     "preset_arrow_button_left@profile.preset_arrow_button_panel": {
@@ -669,6 +671,7 @@
               "preset_arrow_button_right_panel": {
                 "type": "panel",
                 "size": [ 24, "100%" ],
+                "layer": "$preset_arrow_button_layer",
                 "controls": [
                   {
                     "preset_arrow_button_right@profile.preset_arrow_button_panel": {
