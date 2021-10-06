@@ -1847,15 +1847,14 @@
   "empty_progress_bar": {
     "type": "image",
     "texture": "textures/ui/empty_progress_bar",
-    "color": "$boss_health_bar_color"
+    "color": "#color"
   },
 
   "filled_progress_bar": {
-
     "type": "image",
     "texture": "textures/ui/filled_progress_bar",
     "clip_direction": "left",
-    "color": "$boss_health_bar_color",
+    "color": "#color",
     "bindings": [
       {
         "binding_name": "#progress_percentage",
@@ -1870,6 +1869,12 @@
       {
         "binding_name": "#progress_percentage",
         "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      },
+      {
+        "binding_name": "#bar_color",
+        "binding_name_override": "#color",
         "binding_type": "collection",
         "binding_collection_name": "$progress_bar_collection"
       }

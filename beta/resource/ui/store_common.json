@@ -1277,34 +1277,34 @@
     "size": [ "100%c", "100%" ],
     "controls": [
       {
-        "gamepad_helper_y_alignment_hack": {
-          "type": "panel",
-          "size": [ "100%c", "100%c" ],
-          "controls": [
-            {
-              "gamepad_helper_y@common.gamepad_helper_y": {
-                "$hide_description|default": true,
-                "offset": [ 4, -5 ],
-                "anchor_from": "top_left",
-                "anchor_to": "top_left",
-                "bindings": [
-                  {
-                    "binding_name": "#gamepad_helper_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
         "store_layout_search_button@store_layout.store_layout_ribbon_search_button": {
           "size": [ 17, 17 ],
           "bindings": [
             {
               "binding_name": "#is_top_row_button_focus_enabled",
               "binding_name_override": "#focus_enabled"
+            }
+          ]
+        }
+      },
+      {
+        "gamepad_helper_y_alignment_hack": {
+          "type": "panel",
+          "size": [ 12, "100%c" ],
+          "controls": [
+            {
+              "gamepad_helper_y@common.gamepad_helper_y": {
+                "$hide_description|default": true,
+                "offset": [ -11, -5 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#gamepad_helper_visible",
+              "binding_name_override": "#visible"
             }
           ]
         }
@@ -1517,40 +1517,6 @@
     "size": [ "100%c", 17 ],
     "controls": [
       {
-        "plus_image@common_buttons.new_ui_button_panel": {
-          "$button_size_override|default": [ 17, 17 ],
-          "$button_content": "common_store.plus_icon",
-          "$wallet_plus_image_bindings|default": [
-            {
-              "binding_name": "(not #gamepad_helper_visible)",
-              "binding_name_override": "#visible"
-            }
-          ],
-          "bindings": "$wallet_plus_image_bindings"
-        }
-      },
-      {
-        "gamepad_helper_x_alignment_hack": {
-          "type": "panel",
-          "size": [ "100%c", "100%c" ],
-          "controls": [
-            {
-              "gamepad_helper_x@common.gamepad_helper_x": {
-                "$hide_description|default": true,
-                "offset": [ 4, -5 ],
-                "$wallet_gamepad_helper_bindings|default": [
-                  {
-                    "binding_name": "#gamepad_helper_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ],
-                "bindings": "$wallet_gamepad_helper_bindings"
-              }
-            }
-          ]
-        }
-      },
-      {
         "purchase_coin_panel_alignment_hack": {
           "type": "panel",
           "size": [ "100%c", 17 ],
@@ -1564,6 +1530,35 @@
               }
             }
           ]
+        }
+      },
+      {
+        "plus_image@common_buttons.new_ui_button_panel": {
+          "$button_size_override|default": [ 17, 17 ],
+          "$button_content": "common_store.plus_icon"
+        }
+      },
+      {
+        "gamepad_helper_x_alignment_hack": {
+          "type": "panel",
+          "size": [ 12, "100%c" ],
+          "controls": [
+            {
+              "gamepad_helper_x@common.gamepad_helper_x": {
+                "$hide_description|default": true,
+                "offset": [ -11, -5 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            }
+          ],
+          "$wallet_gamepad_helper_bindings|default": [
+            {
+              "binding_name": "#gamepad_helper_visible",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "bindings": "$wallet_gamepad_helper_bindings"
         }
       }
     ]

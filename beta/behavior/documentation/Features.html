@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.17.40.23</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.18.0.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -129,7 +129,7 @@ Example use: provides an area for interior structure placement<br / ><textarea r
 <h1><p id="minecraft:cave_carver_feature">minecraft:cave_carver_feature</p></h1>
 
 'minecraft:cave_carver_feature' carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.This feature will also only work when placed specifically in the pass "pregeneration_pass".</br><h2></h2>
-Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" rows="11">
+Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" rows="12">
 {
       "format_version": "1.16.100",
         "minecraft:cave_feature": {
@@ -137,7 +137,8 @@ Example use: Carve caves normally.<br / ><textarea readonly="true" cols="70" row
             "identifier": "minecraft:underground_cave_carver_feature"
           },
           "fill_with": "minecraft:air",
-          "width_modifier": 0.0
+          "width_modifier": 0.0,
+          "skip_carve_chance": 15
         }
       }
 </textarea> </br>
@@ -589,6 +590,12 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+          int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+          int "height_limit" : opt // The height limit where we attempt to carve.
+          float_range "y_scale" : opt // The scaling in y.
+          float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+          float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+          float_range "floor_level" : opt // Floor Level.
       }
       object "minecraft:conditional_list" : opt
       {
@@ -648,6 +655,12 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+          int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+          int "height_limit" : opt // The height limit where we attempt to carve.
+          float_range "y_scale" : opt // The scaling in y.
+          float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+          float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+          float_range "floor_level" : opt // Floor Level.
       }
       object "minecraft:multiface_feature" : opt
       {
@@ -704,6 +717,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
           int "count"<1-*> // The number of blocks to be placed.
+          float "discard_chance_on_air_exposure"<0.000000-1.000000> : opt // Chance of discarding placement if neighboring block is Air.
           array "replace_rules"[1,*] : opt
           {
               object "<any array element>" // Collection of replace rules that will be checked in order of definition. If a rule is resolved, the rest will not be resolved for that block position.
@@ -922,6 +936,12 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           }
           block_reference "fill_with" : opt // Reference to the block to fill the cave with.
           molang "width_modifier" : opt // How many blocks to increase the cave radius by, from the center point of the cave.
+          int "skip_carve_chance"<1-*> : opt // The chance to skip doing the carve (1 / value).
+          int "height_limit" : opt // The height limit where we attempt to carve.
+          float_range "y_scale" : opt // The scaling in y.
+          float_range "horizontal_radius_multiplier" : opt // Horizontal radius multiplier.
+          float_range "vertical_radius_multiplier" : opt // Vertical radius multiplier.
+          float_range "floor_level" : opt // Floor Level.
           block_reference "replace_air_with" : opt // Reference to the block to replace air blocks with.
       }
       object "minecraft:tree_feature" : opt

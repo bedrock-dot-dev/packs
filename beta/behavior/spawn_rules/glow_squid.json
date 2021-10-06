@@ -13,7 +13,7 @@
           "default": 10
         },
         "minecraft:height_filter": {
-          "min": 0,
+          "min": -64,
           "max": 63
         },
         "minecraft:herd": {

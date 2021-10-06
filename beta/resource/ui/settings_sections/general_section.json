@@ -1937,6 +1937,10 @@
               "binding_name": "$option_label"
             }
           ],
+          "controls": [
+            { "render_distance_warning@general_section.render_distance_warning": {} },
+            { "option_generic_core@settings_common.option_generic_core": {} }
+          ],
           "bindings": [
             {
               "binding_name": "#show_render_distance",
@@ -2200,6 +2204,66 @@
     "bindings": [
       {
         "binding_name": "$rtx_disabled_option_upsell_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  // Render distance warning notification
+
+  "render_distance_warning_image": {
+    "type": "image",
+    "size": [ 7, 11 ],
+    "texture": "textures/ui/WarningGlyph"
+  },
+
+  "render_distance_popup@common.static_tooltip_popup_with_image_and_text": {
+    "size": [ "100% - 4px", "100%cm + 8px" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "bottom_middle",
+    "$tooltip_panel_offset": [ 0, -10 ],
+    "$tooltip_popup_image": "textures/ui/infobulb",
+    "$tooltip_button_binding_type": "global",
+    "$tooltip_button_collection_name": "",
+    "$tooltip_popup_visible_binding": "#render_distance_warning_tooltip_visible",
+    "$tooltip_text_binding_name": "#render_distance_performance_tooltip_text",
+    "$tooltip_chevron_anchor": "bottom_right",
+    "$tooltip_popup_chevron_offset": [ "-30%x", "100%y - 3px" ]
+  },
+
+  "render_distance_warning": {
+    "type": "panel",
+    "size": [ "100%", 0 ],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "controls": [
+      {
+        "render_distance_warning_image@general_section.render_distance_warning_image": {
+          "offset": [ -14, 0 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "controls": [
+            {
+              "hover_detection_input_panel": {
+                "type": "input_panel",
+                "consume_hover_events": false,
+                "focus_enabled": true,
+                "button_mappings": [
+                  {
+                    "to_button_id": "button.render_distance_warning_is_hovered",
+                    "mapping_type": "pressed"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      { "render_distance_popup@general_section.render_distance_popup": {} }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#render_distance_warning_visible",
         "binding_name_override": "#visible"
       }
     ]
@@ -5208,6 +5272,14 @@
           "$option_enabled_binding_name": "#automation_functional_test_block_input_enabled",
           "$toggle_name": "automation_functional_test_block_input"
         }
+      },
+      {
+        "automation_server_test_assert_on_level_diff_toggle@settings_common.option_toggle": {
+            "$option_label": "Enable Assert on Level Diff While Running Server Tests",
+            "$option_binding_name": "#automation_server_test_assert_on_level_diff",
+            "$option_enabled_binding_name": "#automation_server_test_assert_on_level_diff_enabled",
+            "$toggle_name": "automation_server_test_assert_on_level_diff"
+        }
       }
     ]
   },
@@ -6408,6 +6480,38 @@
               "binding_name_override": "#enabled"
             }
           ]
+        }
+      },
+      {
+        "open_core_ui_tests_spacer": {
+          "type": "panel",
+          "size": [ "100%", 7 ]
+        }
+      },
+      {
+        "reset_render_distance_warning_modal_label": {
+          "type": "label",
+          "text": "Render distance warning modal",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color"
+        }
+      },
+      {
+        "reset_render_distance_warning_modal_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "reset_render_distance_warning_modal@settings_common.action_button": {
+          "$pressed_button_name": "button.reset_render_distance_warning_modal",
+          "$button_text": "Reset modal"
+        }
+      },
+      {
+        "reset_render_distance_warning_modal_spacer": {
+          "type": "panel",
+          "size": [ "100%", 7 ]
         }
       }
     ]

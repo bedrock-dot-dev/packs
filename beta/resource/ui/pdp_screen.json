@@ -2895,6 +2895,7 @@
                               {
                                 "rtx_label@common_store.rtx_label": {
                                   "size": [ 20, 12 ],
+                                  "layer" : 5,
                                   "bindings": [
                                     {
                                       "binding_name": "#rtx_label_visible",
@@ -2931,8 +2932,7 @@
                     "info": {
                       "type": "stack_panel",
                       "orientation": "vertical",
-                      "size": [ "fill", 0 ],
-                      "inherit_max_sibling_height": true,
+                      "size": [ "fill", "100%c" ],
                       "controls": [
                         {
                           "summary_title_and_author_panel@pdp.title_and_author_panel": {}
@@ -2940,7 +2940,7 @@
                         {
                           "pad_fill": {
                             "type": "panel",
-                            "size": [ "100%", "fill" ]
+                            "size": [ "100%", 5 ]
                           }
                         },
                         {
