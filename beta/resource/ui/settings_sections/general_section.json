@@ -6267,6 +6267,31 @@
       }
     ]
   },
+  "new_create_world_grid_item@settings_common.radio_with_label": {
+    "$toggle_state_binding_name": "#initial_selected",
+    "$radio_label_text": "#description",
+    "$radio_label_bindings": [
+      {
+        "binding_name": "#description",
+        "binding_type": "collection",
+        "binding_condition": "once",
+        "binding_collection_name": "dev_new_create_world_screen_radio"
+      }
+    ],
+    "$radio_toggle_group": true,
+    "$toggle_binding_type": "collection",
+    "$toggle_name": "dev_new_create_world_screen_radio",
+    "$toggle_grid_collection_name": "dev_new_create_world_screen_radio",
+    "$option_enabled_binding_name": "",
+    "bindings": [
+      {
+        "binding_name": "#default_focus_precedence",
+        "binding_type": "collection",
+        "binding_condition": "visible",
+        "binding_collection_name": "dev_new_create_world_screen_radio"
+      }
+    ]
+  },
 
   "ui_debug_section": {
     "type": "stack_panel",
@@ -6384,6 +6409,66 @@
       },
       {
         "new_achievements_screens_radio_button_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_label": {
+          "type": "label",
+          "text": "New Create World Screen (requires the infrastructure)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "bindings": [
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_label_disabled": {
+          "type": "label",
+          "text": "New Create World Screen (requires the infrastructure)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "alpha": 0.5,
+          "bindings": [
+            {
+              "binding_name": "(not #core_ui_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_button": {
+          "type": "grid",
+          "size": [ "100%", "100%c" ],
+          "grid_item_template": "general_section.new_create_world_grid_item",
+          "grid_dimension_binding": "#dev_new_create_world_screen_radio_dimension",
+          "collection_name": "dev_new_create_world_screen_radio",
+          "bindings": [
+            {
+              "binding_name": "#dev_new_create_world_screen_radio_dimension",
+              "binding_condition": "visible"
+            },
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_button_spacer": {
           "type": "panel",
           "size": [ "100%", 3 ]
         }

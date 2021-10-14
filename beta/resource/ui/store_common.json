@@ -3756,7 +3756,7 @@
 
   "promo_banner_image": {
     "type": "image",
-    "size": [ "100%", "14.43%x" ],
+    "size": [ "100%", "13.67%x" ],
     "layer": 1,
     "bindings": [
       {
@@ -3821,60 +3821,215 @@
               "banner_text_panel": {
                 "type": "stack_panel",
                 "orientation": "vertical",
-                "size": [ "40%", "fill" ],
+                "size": [ "100% - 10px", "100%sm - 10px" ],
                 "offset": [ 5, 5 ],
                 "anchor_from": "top_left",
                 "anchor_to": "top_left",
                 "layer": 2,
                 "controls": [
                   {
-                    "banner_title@common_store.promo_banner_title": {}
+                    "banner_title@common_store.sdl_text_minecraftTen_aligned_panel": {
+                      "$aligned_text_scale_factor": 1.2,
+                      "$aligned_text": "#banner_title_text",
+                      "$aligned_text_color": "#title_text_color",
+                      "$text_color_binding_type": "global",
+                      "$alignment_binding_type": "global",
+                      "$left_padding_visible_binding": "#banner_title_left_padding_visible",
+                      "$right_padding_visible_binding": "#banner_title_right_padding_visible"
+
+                    }
                   },
                   {
-                    "banner_description": {
-                      "type": "label",
-                      "size": [ "100%", "default" ],
-                      "font_type": "smooth",
-                      "font_scale_factor": 0.8,
-                      "color": "$body_text_color",
-                      "text": "#banner_description_text",
-                      "bindings": [
-                        {
-                          "binding_name": "#banner_description_text"
-                        }
-                      ]
+                    "description@common_store.sdl_text_aligned_panel": {
+                      "$aligned_text_scale_factor": 0.8,
+                      "$aligned_text": "#banner_description_text",
+                      "$aligned_text_color": "#description_text_color",
+                      "$text_color_binding_type": "global",
+                      "$alignment_binding_type": "global",
+                      "$left_padding_visible_binding": "#banner_description_left_padding_visible",
+                      "$right_padding_visible_binding": "#banner_description_right_padding_visible"
                     }
                   }
                 ]
               }
             },
             {
-              "banner_button@common_buttons.light_content_button": {
-                "size": [ "100%c", 16 ],
-                "min_size": [ "40%", 16 ],
-                "max_size": [ "100%", 16 ],
-                "offset": [ 5, -8 ],
+              "button_stack_panel": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100% - 10px", "100%cm" ],
+                "offset": [ 5, -7 ],
                 "anchor_from": "bottom_left",
                 "anchor_to": "bottom_left",
-                "$button_state_panel": "common_buttons.new_ui_width_fitting_button_panel",
-                "$button_type_panel": "common_buttons.width_fitting_button_content_panel",
-                "$button_content": "common_store.promo_banner_button_content",
-                "$button_size_override": [ "100%c + 8px", "100%" ],
-                "$anchor": "bottom_left",
-                "layer": 4,
-                "$focus_id": "banner_button",
-                "$focus_override_up": "banner_full_button",
-                "$pressed_button_name": "button.promotion_page",
-                "bindings": [
+
+                "$left_padding_visible_binding": "#banner_button_left_padding_visible",
+                "$right_padding_visible_binding": "#banner_button_right_padding_visible",
+
+                "controls": [
                   {
-                    "binding_name": "#promo_page_is_ready",
-                    "binding_name_override": "#enabled"
+                    "left_offset": {
+                      "type": "panel",
+                      "size": [ 5, "100%sm" ],
+                      "bindings": [
+                        {
+                          "binding_name": "$left_padding_visible_binding",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "banner_button@common_store.sdl_content_aligned_panel": {
+                      "$aligned_text_scale_factor": 0.8,
+                      "$aligned_control": "common_store.banner_button",
+                      "$aligned_text": "#banner_description_text",
+                      "$aligned_text_color": "#description_text_color",
+                      "$text_color_binding_type": "global",
+                      "$alignment_binding_type": "global"
+                    }
+                  },
+                  {
+                    "right_offset": {
+                      "type": "panel",
+                      "size": [ 5, "100%sm" ],
+                      "bindings": [
+                        {
+                          "binding_name": "$right_padding_visible_binding",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
             }
           ]
         }
+      }
+    ]
+  },
+
+  "banner_button@common_buttons.light_content_button": {
+    "size": [ "100%c", 16 ],
+    "$button_state_panel": "common_buttons.new_ui_width_fitting_button_panel",
+    "$button_type_panel": "common_buttons.width_fitting_button_content_panel",
+    "$button_content": "common_store.promo_banner_button_content",
+    "$button_size_override": [ "100%c + 8px", "100%" ],
+    "$anchor": "bottom_left",
+    "layer": 4,
+    "$focus_id": "banner_button",
+    "$focus_override_up": "banner_full_button",
+    "$pressed_button_name": "button.promotion_page",
+    "bindings": [
+      {
+        "binding_name": "#promo_page_is_ready",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+
+  "sdl_text_aligned_panel@common_store.sdl_content_aligned_panel": {
+    "$aligned_control": "common_store.sdl_aligned_text",
+    "$aligned_text_font_type|default": "smooth",
+    "$aligned_text_scale_factor|default": 1,
+    "$aligned_text_color|default": "$body_text_color",
+    "$aligned_text|default": "",
+    "$text_color_binding_type|default": "none"
+  },
+
+  "sdl_text_minecraftTen_aligned_panel@common_store.sdl_content_aligned_panel": {
+    "$aligned_control": "common_store.sdl_aligned_minecraftTen_text",
+    "$aligned_text_scale_factor|default": 1,
+    "$aligned_text_color|default": "$body_text_color",
+    "$aligned_text|default": "",
+    "$text_color_binding_type|default": "none"
+  },
+
+  "sdl_content_aligned_panel": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%cm" ],
+    "orientation": "horizontal",
+    "$left_padding_visible_binding|default": "",
+    "$right_padding_visible_binding|default": "",
+    "$alignment_binding_type|default": "none",
+    "$alignment_collection_name|default": "",
+
+    "$aligned_control|default": "common.empty_panel",
+    "controls": [
+      {
+        "left__padding_panel": {
+          "size": [ "fill", "100%sm" ],
+          "type": "panel",
+          "bindings": [
+            {
+              "binding_name": "$left_padding_visible_binding",
+              "binding_type": "$alignment_binding_type",
+              "binding_collection_name": "$alignment_collection_name",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "control@$aligned_control": {}
+      },
+      {
+        "right_padding_panel": {
+          "size": [ "fill", "100%sm" ],
+          "type": "panel",
+          "bindings": [
+            {
+              "binding_name": "$right_padding_visible_binding",
+              "binding_type": "$alignment_binding_type",
+              "binding_collection_name": "$alignment_collection_name",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "sdl_aligned_text": {
+    "type": "label",
+    "size": [ "default", "default" ],
+    "max_size": [ "40%" , 20 ],
+    "font_type": "$aligned_text_font_type",
+    "font_scale_factor": "$aligned_text_scale_factor",
+    "color": "$aligned_text_color",
+    "text": "$aligned_text",
+    "bindings": [
+      {
+        "binding_name": "$aligned_text",
+        "binding_type": "$alignment_binding_type",
+        "binding_collection_name": "$alignment_collection_name"
+      },
+      {
+        "binding_name": "$aligned_text_color",
+        "binding_type": "$text_color_binding_type",
+        "binding_collection_name": "$alignment_collection_name",
+        "binding_name_override": "#color"
+      }
+    ]
+  },
+
+  "sdl_aligned_minecraftTen_text@common.minecraftTenLabel": {
+    "size": [ "default", "default" ],
+    "max_size": [ "100%", "default" ],
+    "font_scale_factor": "$aligned_text_scale_factor",
+    "color": "$aligned_text_color",
+    "text": "$aligned_text",
+    "bindings": [
+      {
+        "binding_name": "$aligned_text",
+        "binding_type": "$alignment_binding_type",
+        "binding_collection_name": "$alignment_collection_name"
+      },
+      {
+        "binding_name": "$aligned_text_color",
+        "binding_type": "$text_color_binding_type",
+        "binding_collection_name": "$alignment_collection_name",
+        "binding_name_override": "#color"
       }
     ]
   },

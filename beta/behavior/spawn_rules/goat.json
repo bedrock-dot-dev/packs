@@ -38,11 +38,6 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "stony_peaks"
-            },
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
               "value": "lofty_peaks"
             },
             {

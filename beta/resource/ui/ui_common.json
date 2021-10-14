@@ -5127,7 +5127,8 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$cloud_upload_progress_screen_size": [ 290, 200 ]
+              "$cloud_upload_progress_screen_size": [ 290, 200 ],
+              "$storage_migration_progress_size": [ 290, 100 ]
             },
             // PE edition and VR
             {
@@ -5174,7 +5175,8 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$cloud_upload_progress_screen_size": [ 290, 200 ]
+              "$cloud_upload_progress_screen_size": [ 290, 200 ],
+              "$storage_migration_progress_size": [ 290, 100 ]
             }
           ],
           "button_mappings": [

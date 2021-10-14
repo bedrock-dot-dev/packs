@@ -256,13 +256,7 @@
     "$markdown_size": [ "100% + 2px", "100% + 4px" ],
     "$strike_thru_offset": [ 0, 2 ],
     "$markdown_offset": [ -1, 0 ],
-    "$focus_id": "offer_coin_purchase_button",
-    "bindings": [
-      {
-        "binding_name": "#is_coin_purchase_enabled",
-        "binding_name_override": "#enabled"
-      }
-    ]
+    "$focus_id": "offer_coin_purchase_button"
   },
 
   "equip_piece_button@common_buttons.light_text_button": {

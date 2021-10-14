@@ -13,15 +13,7 @@
         "minecraft:weight": {
           "default": 10
         },
-        "minecraft:brightness_filter": {
-          "min": 0,
-          "max": 0,
-          "adjust_for_weather": false
-        },
-        "minecraft:spawns_above_block_filter": {
-          "blocks": "minecraft:stone",
-          "distance": 10
-        },
+        "minecraft:spawns_on_block_filter": "minecraft:clay",
         "minecraft:herd": {
           "min_size": 4,
           "max_size": 6,
@@ -32,10 +24,6 @@
           "test": "has_biome_tag",
           "operator": "==",
           "value": "lush_caves"
-        },
-        "minecraft:height_filter": {
-          "min": -64,
-          "max": 63
         }
       }
     ]

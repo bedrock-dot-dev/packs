@@ -125,6 +125,8 @@
     "ui/redstone_screen.json",
     "ui/resource_packs_screen.json",
     "ui/safe_zone_screen.json",
+    "ui/storage_migration_common.json",
+    "ui/storage_migration_generic_screen.json",
     "ui/scoreboards.json",
     "ui/screenshot_screen.json",
     "ui/screenshot_picker_screen.json",

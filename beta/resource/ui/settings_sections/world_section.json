@@ -801,6 +801,17 @@
         }
       },
       {
+        "always_day_toggle@settings_common.option_toggle": {
+          "$tts_section_header": "createWorldScreen.cheatSettings",
+          "$option_label": "createWorldScreen.alwaysDay",
+          "$option_binding_name": "#always_day",
+          "$option_enabled_binding_name": "#always_day_enabled",
+          "$toggle_name": "always_day",
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "$toggle_binding_condition": "always_when_visible"
+        }
+      },
+      {
         "daylight_cycle_toggle@settings_common.option_toggle": {
           "$tts_section_header": "createWorldScreen.cheatSettings",
           "$option_label": "createWorldScreen.daylightcycle",
