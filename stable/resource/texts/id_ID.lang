@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Umpan Realm	#
 accessibility.play.tabLeft=Tekan %s untuk berpindah tab ke kiri	#
 accessibility.play.tabRight=Tekan %s untuk berpindah tab ke kanan	#
 accessibility.play.legacyWorldsDelete=Hapus Dunia Lama	#
+accessibility.play.uploadWorld=Unggah Dunia	#
 
 accessibility.pause.permissions=Izin	#
 accessibility.pause.profile=Pilih Profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ups! Sepertinya kamu masuk dengan akun pri
 
 eula.intro=Setujui Perjanjian Lisensi Pengguna Akhir untuk menggunakan Minecraft: Education Edition.	#
 eula.location=EULA terdapat di:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Perjanjian Lisensi Pengguna Akhir	#
 eula.view=Lihat EULA	#
 eula.callToAction=Klik Terima untuk menyetujui syarat perjanjian ini.	#
@@ -767,6 +767,8 @@ commands.code.success=Telah meluncurkan Pembuat Kode.	#
 commands.compare.failed=Sumber dan tujuan tidak identik	#
 commands.compare.success=%1$d blok dibandingkan	#
 commands.compare.tooManyBlocks=Terlalu banyak blok di area tertentu (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Merusak dunia yang dimuat di server.	#
 commands.corruptworld.success=Berhasil merusak dunia.	#
 commands.daylock.description=Mengunci dan membuka siklus siang-malam.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=dataTag tidak cocok untuk %1$s						
 commands.scoreboard.players.score.notFound=Skor %1$s untuk %2$s tidak ditemukan										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Skor %1$d TIDAK dalam rentang %2$d hingga %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Skor %1$d dalam rentang %2$d hingga %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Ruang penyimpanan datamu hampir habis! Minecr
 storageSpaceWarningScreen.lowduringgameplay=Ruang penyimpanan yang bisa digunakan Minecraft untuk menyimpan dunia dan pengaturan di perangkat ini hampir habis.  Ingin coba menghapus beberapa konten yang tidak kamu perlukan agar bisa menyimpan konten baru?	#
 storageSpaceWarningScreen.fullduringgameplay=Ruang penyimpanan datamu hampir habis dan Minecraft tidak dapat menyimpan progresmu! Minecraft akan mengembalikanmu ke Menu Utama untuk mengosongkan ruang penyimpanan.	#
 
+edu.signin_screen.viewTerms=Lihat Persyaratan	#
+
 edu.play_screen.view_worlds=LIHAT DUNIA SAYA	#
 edu.play_screen.view_library=LIHAT PERPUSTAKAAN	#
 edu.play_screen.create_new=BUAT BARU	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Cari	#
 edu.worlds_screen.play=MAIN	#
 edu.worlds_screen.host=HOST	#
 edu.worlds_screen.settings=PENGATURAN	#
+edu.worlds_screen.manage=KELOLA	#
+edu.worlds_screen.back=KEMBALI	#
+edu.worlds_screen.copy=SALIN	#
+edu.worlds_screen.export=EKSPOR	#
+edu.worlds_screen.share=BAGIKAN	#
+edu.worlds_screen.delete=HAPUS	#
 edu.worlds_screen.courses_title=Kursus Saya	#
 
 edu.templates.title=Template Saya	#
@@ -3735,6 +3746,7 @@ level.import.success=Impor level berhasil diselesaikan	#
 level.export.failed=Ekspor level gagal	#
 level.import.failed=Impor level gagal	#
 level.import.failed.incompatibleEdition=Impor level gagal: Format file tidak didukung	#
+
 invite.clear=Hapus Pilihan	#
 invite.send=Kirim %d Undangan	#
 invite.sendOne=Kirim 1 Undangan	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Sayap Elytra	#
 item.emerald.name=Zamrud	#
 item.emptyMap.name=Peta Kosong	#
 item.emptyLocatorMap.name=Peta Pencari Kosong	#
-item.emptyPotion.name=Botol Air	#
 item.enchanted_book.name=Buku Sihir	#
 item.end_crystal.name=Kristal End	#
 tile.end_rod.name=Tongkat End	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (sebelumnya dikenal sebagai %s) berg
 multiplayer.player.left=%s keluar dari permainan	#
 multiplayer.player.left.realms=%s keluar dari Realm	#
 multiplayer.player.changeToPersona=%s mengedit tampilan karakter.	#
-multiplayer.player.changeToSkin=%s mengganti skin menjadi %s.	#
+multiplayer.player.changeToSkin=%s telah mengganti skin.	#
 multiplayer.stopSleeping=Tinggalkan Tempat Tidur	#
 multiplayer.texturePrompt.line1=Server ini menyarankan penggunaan paket sumber daya kustom.	#
 multiplayer.texturePrompt.line2=Kamu ingin mengunduh dan menginstalnya secara otomatis?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Nonaktifkan Gambar Cuaca	#
 options.dev_disableRenderHud=Nonaktifkan Gambar Hud	#
 options.dev_disableRenderItemInHand=Nonaktifkan Gambar Item yang Dipegang	#
 options.dev_disableRenderMainMenuCubeMap=Nonaktifkan Gambar CubeMap Menu Utama	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Nonaktifkan Animasi Boneka Kertas Menu Utama	#
 options.dev_serverInstanceThread=Thread Instans Server	#
 options.dev_newCuller=Gunakan pilihan baru	#
 options.dev_showBuildInfo=Menampilkan info build	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Lingkungan Penemuan (Perlu Mulai Ulang)	#
 options.discoveryEnvironment.production=Produksi	#
 options.discoveryEnvironment.staging=Penahapan	#
 options.discoveryEnvironment.local=Lokal	#
-options.discoveryEnvironment.dev=Pengembang	#
+options.discoveryEnvironment.dev=Pengembang [Tidak stabil]	#
 options.dev_realmsEnvironment=Lingkungan Realm	#
 options.dev_realms_environment.production=Produksi	#
 options.dev_realms_environment.staging=Penahapan	#
 options.dev_realms_environment.local=Lokal	#
 options.dev_realms_environment.dev=Pengembang	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Titik Akhir Realm	#
 options.dev_realmsEndpointPayment=Pembayaran Titik Akhir Realm	#
 options.dev_realmsRelyingParty=Pihak yang Mengandalkan Realm	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Perlakuan Saat Ini	#
 options.dev_unusedTreatmentsTitle=Perlakuan yang Tidak Digunakan	#
 options.dev_addTreatmentId=Tambah Id Penanganan	#
 options.dev_addLabel=Tambah	#
+options.dev_applyTreatments=Terapkan Perlakuan	#
 options.dev_resetToDefault=Atur Ulang ke Default	#
 options.dev_clearFlights=Hapus	#
 options.dev_experimentalProgressions=Timpa Kemajuan	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Kelelahan Pertambangan	#
 potion.digSpeed=Semangat	#
 potion.effects.whenDrank=Bila Berlaku:	#
 potion.empty=Tidak Ada Efek	#
+potion.emptyPotion.name=Botol Air	#
+potion.emptyPotion.splash.name=Percikan Botol Air	#
+potion.emptyPotion.linger.name=Botol Air Tahan Lama	#
 potion.fireResistance=Ketahanan Api	#
 potion.fireResistance.name=Ramuan Ketahanan Api	#
 potion.fireResistance.splash.name=Percikan Ramuan Ketahanan Api	#
@@ -6969,6 +6989,8 @@ store.menu.home=Beranda	#
 store.itemDetail.back=Detail	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Fitur ini saat ini dinonaktifkan di Beta.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Hari %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Diklaim	#
@@ -7736,7 +7758,7 @@ tile.cobblestone_wall.red_nether_brick.name=Dinding Bata Nether Merah	#
 tile.cocoa.name=Biji Cokelat	#
 tile.command_block.name=Blok Perintah	#
 tile.composter.name=Pembuat Kompos	#
-tile.light_block.name=Blok Ringan	#
+tile.light_block.name=Blok Cahaya	#
 tile.repeating_command_block.name=Blok Perintah Berulang	#
 tile.chain_command_block.name=Blok Perintah Rantai	#
 tile.wheat.name=Tanaman Panen	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Konversi Dunia Gagal	#
 worldConversionErrorPrompt.message=Ups, terjadi kesalahan saat mengkonversi dunia. Coba lagi nanti.	#
-worldConversionErrorPrompt.message.upload=Terjadi kesalahan. Kami tidak bisa mengonversi duniamu. Kamu bisa mengirimkan duniamu nanti dengan membuka dunia lamamu dan menekan :_gamepad_face_button_up:. Atau kirimkan duniamu sekarang agar kami bisa menyelidikinya lebih lanjut.	#
-worldConversionErrorPrompt.sendWorld=Kirim Dunia Sekarang	#
-worldConversionErrorPrompt.backToWorld=Kembali Ke Dunia	#
-
-worldConversionErrorReport.title=Laporkan Dunia Ini	#
-worldConversionErrorReport.button.reportAndSend=Laporkan dan Kirim Dunia	#
-worldConversionErrorReport.dropdown.default=Apa yang salah?	#
-worldConversionErrorReport.dropdown.mobs=Mob berperilaku salah atau hilang	#
-worldConversionErrorReport.dropdown.terrain=Medan rusak atau hilang	#
-worldConversionErrorReport.dropdown.itemsMissing=Kehilangan item, kreasi, dan/atau statistik pemain saya	#
-worldConversionErrorReport.dropdown.itemInteraction=Tidak bisa berinteraksi dengan item	#
-worldConversionErrorReport.dropdown.worldConversion=Konversi dunia gagal	#
-worldConversionErrorReport.terms.agreement=Dengan menekan Setuju, kamu mengunggah duniamu ke Tim Minecraft. Perjanjian Layanan dan Pernyataan Privasi Microsoft akan berlaku.	#
-worldConversionErrorReport.terms.agreementForBeta=Dengan mengunggah Dunia, kamu mengizinkan Microsoft untuk menguji, memproduksi ulang, memodifikasi, mendistribusikan, dan menampilkan Dunia kamu kepada publik untuk membantu mentransfer Dunia kamu ke Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Lihat Persyaratan	#
-
-
-worldConversionErrorReport.sending.title=Mengirim Dunia Lama	#
-worldConversionErrorReport.sending.description=Mengirim Dunia Lama ke Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Pengiriman Selesai	#
-worldConversionErrorReport.sending.completeMessage.part1=Terima kasih! Kami akan bekerja keras untuk memperbaiki berbagai hal dan tidak akan bisa menghubungimu tentang dunia khusus ini. Berikut adalah tanda terima yang mengonfirmasi bahwa kami telah menerimanya:	#
-worldConversionErrorReport.sending.completeMessage.part2=Tanda Terima: %s	#
 
 worldError.corrupted=rusak dan tidak bisa dimulai.	#
 worldError.invalidArguments=dibuat dengan argumen tidak valid.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Pulau Jamur	#
 eduTemplateWorld.starterTown.name=Kota Permulaan	#
 eduTemplateWorld.tutorialVolumeII.name=Tutorial Volume II	#
 eduTemplateWorld.blocksOfGrass.name=Blok Rumput	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Dunia Dikirim	#
-worldConversion.feedback.failed.title=Pengiriman Dunia Gagal	#
-worldConversion.feedback.done.msg=Terima kasih telah mengirimkan salinan duniamu dan membantu kami menemukan bug! Kami akan bekerja keras untuk memperbaiki berbagai hal dan tidak akan bisa menghubungimu tentang dunia khusus ini. Berikut adalah tanda terima yang mengonfirmasi bahwa kami telah menerimanya:%s	#
-worldConversion.feedback.failed.msg=Ups! Kami tidak bisa menerima duniamu. Coba periksa koneksi internetmu atau kirim kembali nanti.	#
-worldConversion.feedback.prompt.title=Kirim Dunia	#
-worldConversion.feedback.prompt.msg=Apakah dunia lamamu tidak terlihat atau berfungsi seperti seharusnya? Kirim duniamu dan bantu kami menemukan bug!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Konversi Selesai	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Pembaruan Akuatik (%s)	#
 client.version.1.5=Pembaruan Akuatik (%s)	#
 client.version.1.11=Desa & Penjarah (%s)	#
 
+cloud_upload.title=Dukungan Pemain Mojang	#
+cloud_upload.prompt.description=Berdasarkan tiket dukungan terbaru kamu, Dukungan Pemain Mojang telah memberikan izin untuk mengunggah dunia. Kamu bisa mengunggah dunia yang terpengaruh dari layar Pilih Dunia atau di bawah Pengaturan Dunia.	#
+cloud_upload.prompt.do_not_show_toggle=Jangan tampilkan layar ini lagi	#
+cloud_upload.prompt.button.worlds=Buka Dunia	#
+cloud_upload.prompt.button.learn_more=Pelajari Selengkapnya	#
+cloud_upload.toggle.accept_terms=Terima Perjanjian Layanan Microsoft	#
+cloud_upload.button.upload=Mengunggah Dunia (%s)	#
+cloud_upload.button.service_agreement=Perjanjian Layanan Microsoft	#
+cloud_upload.terms.title=Syarat & Ketentuan	#
+cloud_upload.terms.description=Untuk mengunggah dunia, terima Perjanjian Layanan Microsoft. Dunia yang diunggah tunduk pada Perjanjian Layanan Microsoft. Kamu masih bisa bermain di duniamu setelah diunggah.	#
+cloud_upload.uploading.title=Mengunggah file dunia [%d/%d]	#
+cloud_upload.uploading.description_1=Pengunggahan file dunia mungkin memerlukan waktu beberapa menit. Jangan tutup permainan atau keluar dari layar ini selama proses pengunggahan.	#
+cloud_upload.uploading.description_2=Ukuran dunia mungkin besar. Hubungkan ke WiFi untuk menghindari penggunaan data seluler.	#
+cloud_upload.succeeded.description=Pengunggahan dunia berhasil diselesaikan. Terima kasih!	#
+cloud_upload.failed.description=Pengunggahan dunia gagal. Coba lagi?	#
+cloud_upload.tts.message=Mengunggah file dunia	#
+
 dr.banner.sale=Diskon!	#
 dr.banner.limitedTimeOffer=Penawaran Berbatas Waktu!	#
 dressingRoom.skin_color_picker_title=Warna Skin	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, berhasil: %s (perlu %s)           	###
 gameTest.error.failed=%s gagal!	#
 gameTest.error.succeededInInvalidTick=Berhasil dalam tick yang tidak valid: %s diharapkan, tetapi tick saat ini %s	#
 gameTest.error.noTestsFound=Tidak ada tes yang ditemukan untuk tag '%s'	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(opsional)	#
 gameTest.assert.couldNotSetBlock=Tidak dapat mengatur Blok '%s'	#
 gameTest.assert.missingButton=Mengharapkan tombol	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Tidak dapat mengatur sumbu entitas kar
 gameTest.assert.invalidEntityInstance=Instans entitas tidak valid	#
 gameTest.assert.unexpectedParameterValue=Nilai tak terduga untuk parameter '%s'	#
 gameTest.assert.expectEntityInstance=Instans entitas yang diharapkan	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Jenis cairan tidak valid	#
 gameTest.assert.expectCauldron=Blok yang diharapkan dari jenis Kaldron	#
 gameTest.success.runningTests=Menjalankan %s tes...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s tes opsional gagal	#
 gameTest.report.bookTitle=Laporan Tes Permainan                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Mode perintah yang tidak diketahui diberikan	#
 script.error.noDebugger=Debugger tidak ada	#
 script.error.debuggerFailed=Gagal memulai debugger	#

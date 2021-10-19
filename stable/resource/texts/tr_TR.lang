@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Bölge Akışı	#
 accessibility.play.tabLeft=Sola bir sekme ilerletmek için %s düğmesine basın	#
 accessibility.play.tabRight=Sağa bir sekme ilerletmek için %s düğmesine basın	#
 accessibility.play.legacyWorldsDelete=Eski Dünyayı Sil	#
+accessibility.play.uploadWorld=Dünya Yükle	#
 
 accessibility.pause.permissions=İzinler	#
 accessibility.pause.profile=Profil Seç	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hay aksi! Görünüşe göre kişisel bir 
 
 eula.intro=Minecraft: Education Edition kullanmak için Son Kullanıcı Lisans Anlaşması'nı (EULA) kabul etmeniz gerekir.	#
 eula.location=EULA'ya şu adresten ulaşılabilir:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Son Kullanıcı Lisans Sözleşmesi	#
 eula.view=EULA'yı Görüntüle	#
 eula.callToAction=Bu anlaşmanın şartlarını kabul etmek için Kabul Et'e tıklayın.	#
@@ -767,6 +767,8 @@ commands.code.success=Kod Oluşturucu başlatıldı.	#
 commands.compare.failed=Kaynak ve hedef aynı değil	#
 commands.compare.success=%1$d blok karşılaştırıldı	#
 commands.compare.tooManyBlocks=Belirtilen alanda çok fazla blok var (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Sunucuda yüklü olan dünyayı bozar.	#
 commands.corruptworld.success=Dünya başarıyla bozuldu.	#
 commands.daylock.description=Gündüz-gece döngüsünü kilitler ve kilidini açar.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=%1$s için dataTag eşleşmiyor					
 commands.scoreboard.players.score.notFound=%2$s için %1$s puanı bulunamadı										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=%1$d puanı %2$d ile %3$d aralığında DEĞİL								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=%1$d puanı %2$d ile %3$d aralığında								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Veri depolama alanınız dolmak üzere! Ek de
 storageSpaceWarningScreen.lowduringgameplay=Cihazınızda Minecraft'ın dünyaları ve ayarları bu cihaza kaydetmek için kullanabileceği alan neredeyse bitti. Yeni öğeleri kaydetmeye devam edebilmek için ihtiyaç duymadığınız öğeleri silmek istemez misiniz?	#
 storageSpaceWarningScreen.fullduringgameplay=Veri depolama alanınız doldu ve Minecraft ilerlemenizi kaydedemiyor! Minecraft, depolama alanı açmanız için sizi Ana Menü'ye döndürecek.	#
 
+edu.signin_screen.viewTerms=Koşulları Görüntüle	#
+
 edu.play_screen.view_worlds=DÜNYALARIMI GÖRÜNTÜLE	#
 edu.play_screen.view_library=KİTAPLIĞI GÖRÜNTÜLE	#
 edu.play_screen.create_new=YENİ OLUŞTUR	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Ara	#
 edu.worlds_screen.play=OYNA	#
 edu.worlds_screen.host=SUNUCU	#
 edu.worlds_screen.settings=AYARLAR	#
+edu.worlds_screen.manage=YÖNET	#
+edu.worlds_screen.back=GERİ	#
+edu.worlds_screen.copy=KOPYALA	#
+edu.worlds_screen.export=DIŞARI AKTAR	#
+edu.worlds_screen.share=PAYLAŞ	#
+edu.worlds_screen.delete=SİL	#
 edu.worlds_screen.courses_title=Derslerim	#
 
 edu.templates.title=Şablonlarım	#
@@ -3735,6 +3746,7 @@ level.import.success=Seviye içeri aktarma başarıyla sonlandırıldı	#
 level.export.failed=Seviye dışarı aktarma başarısız	#
 level.import.failed=Seviye içeri aktarma başarısız	#
 level.import.failed.incompatibleEdition=Seviye içe aktarılamadı: Desteklenmeyen dosya biçimi	#
+
 invite.clear=Seçimi Sil	#
 invite.send=%d Davet Gönderin	#
 invite.sendOne=1 Davet Gönderin	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Zümrüt	#
 item.emptyMap.name=Boş Harita	#
 item.emptyLocatorMap.name=Boş Yer Bulucu Harita	#
-item.emptyPotion.name=Su şişesi	#
 item.enchanted_book.name=Büyülü Kitap	#
 item.end_crystal.name=End Kristali	#
 tile.end_rod.name=End Çubuğu	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (daha önce bilinen adı: %s) Realm'
 multiplayer.player.left=%s oyundan ayrıldı	#
 multiplayer.player.left.realms=%s Realm'dan ayrıldı	#
 multiplayer.player.changeToPersona=%s karakter görünümünü düzenledi.	#
-multiplayer.player.changeToSkin=%s, %s dış görünüşüne geçti.	#
+multiplayer.player.changeToSkin=%s, dış görünüşünü değiştirdi.	#
 multiplayer.stopSleeping=Yataktan Çık	#
 multiplayer.texturePrompt.line1=Bu sunucu özel bir kaynak paketi kullanılmasını önerir.	#
 multiplayer.texturePrompt.line2=Bunu indirmek ve otomatik olarak yüklemek ister misiniz?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Hava Durumu Çizimini Devre Dışı Bırak	#
 options.dev_disableRenderHud=Hud Çizimini Devre Dışı Bırak	#
 options.dev_disableRenderItemInHand=Eldeki Eşya Çizimini Devre Dışı Bırak	#
 options.dev_disableRenderMainMenuCubeMap=Ana Menü CubeMap Çizimini Devre Dışı Bırak	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Ana Menü Paperdoll Animasyonunu Devre Dışı Bırak	#
 options.dev_serverInstanceThread=Sunucu Örneği İş Parçacığı	#
 options.dev_newCuller=Yeni ayırıcı kullan	#
 options.dev_showBuildInfo=Bina bilgilerini göster	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Keşif Ortamı (Yeniden Başlatma Gerektirir)	#
 options.discoveryEnvironment.production=Üretim	#
 options.discoveryEnvironment.staging=Hazırlama	#
 options.discoveryEnvironment.local=Yerel	#
-options.discoveryEnvironment.dev=Geliştirme	#
+options.discoveryEnvironment.dev=Geliştirme [Kararsız]	#
 options.dev_realmsEnvironment=Realms Ortamı	#
 options.dev_realms_environment.production=Üretim	#
 options.dev_realms_environment.staging=Dereceleme	#
 options.dev_realms_environment.local=Yerel	#
 options.dev_realms_environment.dev=Geliştirici	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms Bitiş Noktası	#
 options.dev_realmsEndpointPayment=Realms Bitiş Noktası Ödemesi	#
 options.dev_realmsRelyingParty=Realms Bağlı Grup	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Mevcut İşlemler	#
 options.dev_unusedTreatmentsTitle=Kullanılmayan Tedaviler	#
 options.dev_addTreatmentId=İşlem Kimliği Ekle	#
 options.dev_addLabel=Ekle	#
+options.dev_applyTreatments=İşlemleri Uygula	#
 options.dev_resetToDefault=Varsayılana Sıfırla	#
 options.dev_clearFlights=Temizle	#
 options.dev_experimentalProgressions=İlerlemeleri Geçersiz Kıl	#
@@ -5686,7 +5703,7 @@ options.font_license=Yazı Tipi Lisansı	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Oturma Odası FOV	#
 options.default.format=%s	#
-options.percent.format=%s%%	#
+options.percent.format=%%%s	#
 options.fov.format=%s°	#
 options.fov.max=Quake Pro	#
 options.fov.min=Normal	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Kazma Yorgunluğu	#
 potion.digSpeed=Çabukluk	#
 potion.effects.whenDrank=Uygulandığında:	#
 potion.empty=Etki Yok	#
+potion.emptyPotion.name=Su Şişesi	#
+potion.emptyPotion.splash.name=Sıçrayan Su Şişesi	#
+potion.emptyPotion.linger.name=Uzun Süreli Su Şişesi	#
 potion.fireResistance=Ateşe Dayanıklılık	#
 potion.fireResistance.name=Ateşe Dayanıklılık İksiri	#
 potion.fireResistance.splash.name=Sıçrayan Ateşe Dayanıklılık İksiri	#
@@ -6969,6 +6989,8 @@ store.menu.home=Giriş	#
 store.itemDetail.back=Ayrıntılar	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Bu özellik şu anda Beta'da devre dışıdır.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Gün %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Alındı	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Dünya Dönüştürme Başarısız	#
 worldConversionErrorPrompt.message=Ah, dünya dönüştürülürken bir hata oluştu. Daha sonra yeniden deneyin.	#
-worldConversionErrorPrompt.message.upload=Bir sorun oluştu. Dünyanı dönüştüremedik. Daha sonra eski dünyanıza gidip :_gamepad_face_button_up: düğmesine basarak bize dünyanı gönderebilirsin. Veya daha fazla araştırabilmemiz için dünyanı hemen gönderebilirsin.	#
-worldConversionErrorPrompt.sendWorld=Dünyayı Şimdi Gönder	#
-worldConversionErrorPrompt.backToWorld=Dünyalara Dön	#
-
-worldConversionErrorReport.title=Bu Dünyayı Bildir	#
-worldConversionErrorReport.button.reportAndSend=Dünyayı Bildir ve Gönder	#
-worldConversionErrorReport.dropdown.default=Sorun neydi?	#
-worldConversionErrorReport.dropdown.mobs=Moblar yaramazlık yapıyordu veya eksikti	#
-worldConversionErrorReport.dropdown.terrain=Arazi bozuktu veya eksikti	#
-worldConversionErrorReport.dropdown.itemsMissing=Eşyalarımı, oluşturduklarımı ve/veya oyuncu istatistiklerimi kaybettim	#
-worldConversionErrorReport.dropdown.itemInteraction=Eşyalarla etkileşim kurulamadı	#
-worldConversionErrorReport.dropdown.worldConversion=Dünya dönüştürme başarısız	#
-worldConversionErrorReport.terms.agreement=Kabul seçeneğine dokunarak dünyanızı Minecraft Ekibine yükleyeceksiniz. Microsoft Hizmet Sözleşmesi ve Gizlilik Bildirimi geçerlidir.	#
-worldConversionErrorReport.terms.agreementForBeta=Dünyanızı karşıya yükleyerek Dünyanızı Minecraft'a aktarma desteği için Microsoft'un Dünyanızı test etmesine, çoğaltmasına, değiştirmesine, dağıtmasına ve herkese açık bir şekilde göstermesine izin veriyorsunuz.	#
-worldConversionErrorReport.terms.viewTerms=Koşulları Görüntüle	#
-
-
-worldConversionErrorReport.sending.title=Eski Dünya Gönderiliyor	#
-worldConversionErrorReport.sending.description=Eski Dünya Minecraft'a gönderiliyor...	#
-
-worldConversionErrorReport.sending.complete=Gönderme Tamamlandı	#
-worldConversionErrorReport.sending.completeMessage.part1=Teşekkürler! Sorunları düzeltmek için yoğun bir şekilde çalışıyoruz ve bu dünya ile ilgili olarak size dönemeyeceğiz. Talebinizi aldığımızı onaylayan belge aşağıda verilmiştir:	#
-worldConversionErrorReport.sending.completeMessage.part2=Belge: %s	#
 
 worldError.corrupted=çökmüş ve başlatılamıyor.	#
 worldError.invalidArguments=geçersiz argümanlarla oluşturuldu.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Mantar Adası	#
 eduTemplateWorld.starterTown.name=Başlangıç Kasabası	#
 eduTemplateWorld.tutorialVolumeII.name=Eğitici Düzey II	#
 eduTemplateWorld.blocksOfGrass.name=Çimen Blokları	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Dünya Gönderildi	#
-worldConversion.feedback.failed.title=Dünya Gönderme Başarısız	#
-worldConversion.feedback.done.msg=Dünyanızın kopyasını gönderdiğiniz ve hataları bulmamıza yardımcı olduğunuz için teşekkürler! Sorunları düzeltmek için yoğun bir şekilde çalışıyoruz ve bu dünya ile ilgili olarak size dönemeyeceğiz. Talebinizi aldığımızı onaylayan belge aşağıda verilmiştir: %s	#
-worldConversion.feedback.failed.msg=Ah! Dünyanızı alamadık. İnternet bağlantınızı kontrol edin veya daha sonra tekrar göndermeyi deneyin.	#
-worldConversion.feedback.prompt.title=Dünyayı Gönder	#
-worldConversion.feedback.prompt.msg=Eski dünyanız olması gerektiği gibi görünmüyor veya çalışmıyor mu? Dünyanızı bize gönderin ve hataları bulmamıza yardımcı olun!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Dönüştürme Tamamlandı	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Su Güncellemesi (%s)	#
 client.version.1.5=Su Güncellemesi (%s)	#
 client.version.1.11=Köy ve Yağma (%s)	#
 
+cloud_upload.title=Mojang Oyuncu Desteği	#
+cloud_upload.prompt.description=Son destek biletine göre Mojang Oyuncu Desteği, dünyanı yükleme izni verdi. Etkilenen dünyanı Dünya Seçme ekranından veya Dünya Ayarları altından yükleyebilirsin.	#
+cloud_upload.prompt.do_not_show_toggle=Bu ekranı bir daha gösterme	#
+cloud_upload.prompt.button.worlds=Dünyalara Git	#
+cloud_upload.prompt.button.learn_more=Daha Fazla Bilgi	#
+cloud_upload.toggle.accept_terms=Microsoft Hizmet Sözleşmesi'ni Kabul Et	#
+cloud_upload.button.upload=Dünya Yükle (%s)	#
+cloud_upload.button.service_agreement=Microsoft Hizmet Sözleşmesi	#
+cloud_upload.terms.title=Hüküm ve Koşullar	#
+cloud_upload.terms.description=Dünyanı yüklemek için Microsoft Hizmet Sözleşmesi'ni kabul et. Yüklenen dünyalar Microsoft Hizmet Sözleşmesi'ne tabidir. Yüklendikten sonra da dünyanla oynayabilirsin.	#
+cloud_upload.uploading.title=Dünya dosyaları yükleniyor [%d/%d]	#
+cloud_upload.uploading.description_1=Dünya dosyalarını yüklemek birkaç dakika sürebilir. Yükleme işlemi sırasında oyunu kapatma veya bu ekrandan ayrılma.	#
+cloud_upload.uploading.description_2=Dünya boyutları büyük olabilir. Hücresel veri kullanmamak için lütfen WiFi'ye bağlan.	#
+cloud_upload.succeeded.description=Dünya yükleme işlemin başarıyla tamamlandı. Teşekkürler!	#
+cloud_upload.failed.description=Dünya yükleme işlemin başarısız oldu. Tekrar dene?	#
+cloud_upload.tts.message=Dünya dosyaları yükleniyor	#
+
 dr.banner.sale=İndirim!	#
 dr.banner.limitedTimeOffer=Sınırlı Süreli Teklif!	#
 dressingRoom.skin_color_picker_title=Dış Görünüş Rengi	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, başarı: %s (%s gerekli)           	#
 gameTest.error.failed=%s başarısız oldu!	#
 gameTest.error.succeededInInvalidTick=Geçersiz onayda başarılı oldu: beklenen %s ancak geçerli onay %s	#
 gameTest.error.noTestsFound='%s' etiketi için test bulunamadı	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(isteğe bağlı)	#
 gameTest.assert.couldNotSetBlock=setBlock '%s' yapılamadı	#
 gameTest.assert.missingButton=Bir düğme bekleniyordu	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Patlama bileşeni olmadığından varl
 gameTest.assert.invalidEntityInstance=Geçersiz varlık örneği	#
 gameTest.assert.unexpectedParameterValue='%s' parametresi için beklenmeyen değer	#
 gameTest.assert.expectEntityInstance=Beklenen varlık örneği	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Geçersiz akışkan türü	#
 gameTest.assert.expectCauldron=Kazan türünde blok bekleniyordu	#
 gameTest.success.runningTests=%s test gerçekleştiriliyor...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s isteğe bağlı test başarısız oldu	#
 gameTest.report.bookTitle=Oyun Test Raporu                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Bilinmeyen komut modu belirtildi	#
 script.error.noDebugger=Hata ayıklayıcı kullanılamıyor	#
 script.error.debuggerFailed=Hata ayıklayıcı başlatılamadı	#

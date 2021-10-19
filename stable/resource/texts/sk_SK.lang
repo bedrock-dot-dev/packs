@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Informačný kanál ríše	#
 accessibility.play.tabLeft=Na kartu doľava prejdite stlačením ovládacieho prvku %s	#
 accessibility.play.tabRight=Na kartu doprava prejdite stlačením ovládacieho prvku %s	#
 accessibility.play.legacyWorldsDelete=Odstrániť starší svet	#
+accessibility.play.uploadWorld=Odovzdať svet	#
 
 accessibility.pause.permissions=Povolenia	#
 accessibility.pause.profile=Vybrať profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ajaj! Zdá sa, že ste sa prihlásili pomo
 
 eula.intro=Ak chcete používať hru Minecraft: Education Edition, musíte prijať licenčnú zmluvu koncového používateľa.	#
 eula.location=Licenčná zmluva koncového používateľa je na lokalite:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Licenčná zmluva koncového používateľa	#
 eula.view=Zobraziť licenčnú zmluvu koncového používateľa	#
 eula.callToAction=Kliknutím na tlačidlo Prijať prijmite podmienky tejto zmluvy.	#
@@ -767,6 +767,8 @@ commands.code.success=Zostavovač kódu sa spustil.	#
 commands.compare.failed=Zdroj a cieľ nie sú identické	#
 commands.compare.success=Bloky (%1$d) sa porovnali	#
 commands.compare.tooManyBlocks=Príliš veľa blokov v zadanej oblasti (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Poškodí svet načítaný na serveri.	#
 commands.corruptworld.success=Svet sa úspešne poškodil.	#
 commands.daylock.description=Uzamkne a odomkne cyklus deň – noc.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=Údajová značka sa nezhoduje pre h
 commands.scoreboard.players.score.notFound=Nenašlo sa žiadne skóre %1$s pre hráča %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Skóre %1$d NIE je v rozsahu %2$d až %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Skóre %1$d je v rozsahu %2$d až %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=V ukladacom priestore údajov už nemáte tak
 storageSpaceWarningScreen.lowduringgameplay=V zariadení už nemáte takmer žiadne miesto, ktoré Minecraft používa na ukladanie svetov a nastavení. Nechcete odstrániť starý obsah, ktorý nepotrebujete, aby ste mohli ukladať nový obsah?	#
 storageSpaceWarningScreen.fullduringgameplay=V ukladacom priestore údajov nemáte žiadne voľné miesto a hra Minecraft nemôže uložiť váš postup. Hra Minecraft vás vráti do hlavnej ponuky, aby ste mohli uvoľniť miesto v ukladacom priestore.	#
 
+edu.signin_screen.viewTerms=Zobraziť podmienky	#
+
 edu.play_screen.view_worlds=ZOBRAZIŤ MOJE SVETY	#
 edu.play_screen.view_library=ZOBRAZIŤ KNIŽNICU	#
 edu.play_screen.create_new=VYTVORIŤ NOVÝ	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Hľadať	#
 edu.worlds_screen.play=HRAŤ	#
 edu.worlds_screen.host=HOSTIŤ	#
 edu.worlds_screen.settings=NASTAVENIA	#
+edu.worlds_screen.manage=SPRAVOVAŤ	#
+edu.worlds_screen.back=SPÄŤ	#
+edu.worlds_screen.copy=KOPÍROVAŤ	#
+edu.worlds_screen.export=EXPORTOVAŤ	#
+edu.worlds_screen.share=ZDIEĽAŤ	#
+edu.worlds_screen.delete=ODSTRÁNIŤ	#
 edu.worlds_screen.courses_title=Moje kurzy	#
 
 edu.templates.title=Moje šablóny	#
@@ -3735,6 +3746,7 @@ level.import.success=Import úrovne sa úspešne dokončil	#
 level.export.failed=Export úrovne zlyhal	#
 level.import.failed=Import úrovne zlyhal	#
 level.import.failed.incompatibleEdition=Import úrovne zlyhal: nepodporovaný formát súboru	#
+
 invite.clear=Vymazať výber	#
 invite.send=Odoslať pozvánky (%d)	#
 invite.sendOne=Odoslať 1 pozvánku	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Krovky	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Prázdna mapa	#
 item.emptyLocatorMap.name=Prázdna mapa hľadača	#
-item.emptyPotion.name=Džbán s vodou	#
 item.enchanted_book.name=Čarovná kniha	#
 item.end_crystal.name=Kryštál z konca sveta	#
 tile.end_rod.name=Tyč z konca sveta	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=Hráč %s (predtým známy ako %s) sa p
 multiplayer.player.left=Hráč %s opustil hru	#
 multiplayer.player.left.realms=Hráč %s opustil ríšu	#
 multiplayer.player.changeToPersona=%s upravil(-a) vzhľad postavy.	#
-multiplayer.player.changeToSkin=Vzhľad hráča %s sa zmenil na %s.	#
+multiplayer.player.changeToSkin=Vzhľad hráča %s sa zmenil.	#
 multiplayer.stopSleeping=Opustiť posteľ	#
 multiplayer.texturePrompt.line1=Tento server odporúča používať vlastný balík zdrojov.	#
 multiplayer.texturePrompt.line2=Chcete ho prevziať a nainštalovať automaticky?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Zakázať vykresľovanie počasia	#
 options.dev_disableRenderHud=Zakázať vykresľovanie displeja HUD	#
 options.dev_disableRenderItemInHand=Zakázať vykresľovanie predmetov v ruke	#
 options.dev_disableRenderMainMenuCubeMap=Zakázať vykresľovanie CubeMap v hlavnej ponuke	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Zakázať animáciu papierovej bábiky v hlavnej ponuke	#
 options.dev_serverInstanceThread=Vlákno inštancie servera	#
 options.dev_newCuller=Použiť nový vyraďovač	#
 options.dev_showBuildInfo=Zobraziť informácie o zostave	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Prostredie Discovery (požaduje sa reštartovanie)	
 options.discoveryEnvironment.production=Produkcia	#
 options.discoveryEnvironment.staging=Fázy	#
 options.discoveryEnvironment.local=Miestne	#
-options.discoveryEnvironment.dev=Vývojári	#
+options.discoveryEnvironment.dev=Vývoj. [nestabilné]	#
 options.dev_realmsEnvironment=Prostredie služby Realms	#
 options.dev_realms_environment.production=Výroba	#
 options.dev_realms_environment.staging=Fázy	#
 options.dev_realms_environment.local=Miestne	#
 options.dev_realms_environment.dev=Vývojári	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Koncový bod služby Realms	#
 options.dev_realmsEndpointPayment=Platba za koncový bod služby Realms	#
 options.dev_realmsRelyingParty=Dôveryhodná strana služby Realms	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Aktuálne spracovania	#
 options.dev_unusedTreatmentsTitle=Nepoužité spracovania	#
 options.dev_addTreatmentId=Pridať ID spracovania	#
 options.dev_addLabel=Pridať	#
+options.dev_applyTreatments=Použiť spracovanie	#
 options.dev_resetToDefault=Obnoviť predvolené	#
 options.dev_clearFlights=Vymazať	#
 options.dev_experimentalProgressions=Prepísať postupy	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Únava z ťažby	#
 potion.digSpeed=Zhon	#
 potion.effects.whenDrank=Po použití:	#
 potion.empty=Žiadne účinky	#
+potion.emptyPotion.name=Fľaša s vodou	#
+potion.emptyPotion.splash.name=Rozstrekovacia fľaša s vodou	#
+potion.emptyPotion.linger.name=Dlhotrvajúca fľaša s vodou	#
 potion.fireResistance=Odolnosť proti ohňu	#
 potion.fireResistance.name=Elixír odolnosti proti ohňu	#
 potion.fireResistance.splash.name=Rozstrekovací elixír odolnosti proti ohňu	#
@@ -6969,6 +6989,8 @@ store.menu.home=Domov	#
 store.itemDetail.back=Podrobnosti	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Táto funkcia je vo verzii beta momentálne vypnutá.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Deň %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Prevzaté	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Konverzia sveta zlyhala	#
 worldConversionErrorPrompt.message=Počas konverzie sveta sa vyskytla chyba. Skúste to znova neskôr.	#
-worldConversionErrorPrompt.message.upload=Niečo sa pokazilo. Váš svet sa nepodarilo skonvertovať. Svet nám môžete odoslať neskôr tak, že prejdete do starého sveta a stlačíte tlačidlo :_gamepad_face_button_up:. Alebo nám svet odošlite teraz, aby sme mohli preskúmať príčiny.	#
-worldConversionErrorPrompt.sendWorld=Odoslať svet teraz	#
-worldConversionErrorPrompt.backToWorld=Späť na svety	#
-
-worldConversionErrorReport.title=Nahlásiť tento svet	#
-worldConversionErrorReport.button.reportAndSend=Nahlásiť a odoslať svet	#
-worldConversionErrorReport.dropdown.default=Čo sa pokazilo?	#
-worldConversionErrorReport.dropdown.mobs=Tvory sa nesprávali správne alebo chýbali	#
-worldConversionErrorReport.dropdown.terrain=Povrch sa nesprával správne alebo chýbal	#
-worldConversionErrorReport.dropdown.itemsMissing=Zmizli predmety, výtvory alebo vlastnosti hráča	#
-worldConversionErrorReport.dropdown.itemInteraction=S predmety sa nedalo narábať	#
-worldConversionErrorReport.dropdown.worldConversion=Konverzia sveta zlyhala	#
-worldConversionErrorReport.terms.agreement=Ak vyberiete možnosť Súhlasím, nahráte svoj svet tímu hry Minecraft. Platí zmluva o poskytovaní služieb spoločnosti Microsoft a vyhlásenie o ochrane osobných údajov.	#
-worldConversionErrorReport.terms.agreementForBeta=Odovzdaním sveta oprávňujete spoločnosť Microsoft na jeho testovanie, reprodukovanie, upravovanie, distribuovanie a verejné zobrazovanie na podporu prenosu tohto sveta do hry Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Zobraziť podmienky	#
-
-
-worldConversionErrorReport.sending.title=Odosiela sa starý svet	#
-worldConversionErrorReport.sending.description=Starý svet sa odosiela do hry Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Odosielanie dokončené	#
-worldConversionErrorReport.sending.completeMessage.part1=Ďakujeme. Keďže na oprave problémov tvrdo pracujeme, nepodarí sa nám vyjadriť sa k tomuto konkrétnemu svetu. Prevezmite si potvrdenie o jeho prijatí:	#
-worldConversionErrorReport.sending.completeMessage.part2=Potvrdenie: %s	#
 
 worldError.corrupted=je poškodený a nedá sa spustiť.	#
 worldError.invalidArguments=bol vytvorený s neplatnými argumentmi.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Ostrov húb	#
 eduTemplateWorld.starterTown.name=Mesto v počiatkoch	#
 eduTemplateWorld.tutorialVolumeII.name=Kurz II	#
 eduTemplateWorld.blocksOfGrass.name=Bloky trávy	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Svet odoslaný	#
-worldConversion.feedback.failed.title=Odosielanie sveta zlyhalo	#
-worldConversion.feedback.done.msg=Ďakujeme, že ste nám zaslali kópiu svojho sveta a pomáhate nám nájsť chyby. Keďže na oprave problémov tvrdo pracujeme, nepodarí sa nám vyjadriť sa k tomuto konkrétnemu svetu. Prevezmite si potvrdenie o jeho prijatí: %s	#
-worldConversion.feedback.failed.msg=Ľutujeme, váš svet sa nám nepodarilo získať. Skontrolujte svoje pripojenie k internetu alebo nám ho odošlite znova.	#
-worldConversion.feedback.prompt.title=Odoslať svet	#
-worldConversion.feedback.prompt.msg=Nevyzeral alebo nefungoval váš svet tak, ako mal? Odošlite nám ho a pomôžte nám nájsť chyby.	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Konverzia dokončená	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Aktualizácia Aquatic (%s)	#
 client.version.1.5=Aktualizácia Aquatic (%s)	#
 client.version.1.11=Dedina a rabovanie (%s)	#
 
+cloud_upload.title=Hráčska podpora spoločnosti Mojang	#
+cloud_upload.prompt.description=Na základe vašej nedávnej žiadosti o podporu vám oddelenie hráčskej podpory spoločnosti Mojang udelilo povolenie na odovzdanie sveta. Príslušný svet môžete odovzdať z obrazovky Výber sveta alebo z časti Nastavenia sveta.	#
+cloud_upload.prompt.do_not_show_toggle=Nabudúce túto obrazovku nezobrazovať	#
+cloud_upload.prompt.button.worlds=Prejsť na svety	#
+cloud_upload.prompt.button.learn_more=Ďalšie informácie	#
+cloud_upload.toggle.accept_terms=Prijať zmluvu o poskytovaní služieb spoločnosti Microsoft	#
+cloud_upload.button.upload=Odovzdať svet (%s)	#
+cloud_upload.button.service_agreement=Zmluva o poskytovaní služieb spoločnosti Microsoft	#
+cloud_upload.terms.title=Podmienky a požiadavky	#
+cloud_upload.terms.description=Ak chcete odovzdať svet, prijmite zmluvu o poskytovaní služieb spoločnosti Microsoft. Odovzdané svety podliehajú zmluve o poskytovaní služieb spoločnosti Microsoft. Po odovzdaní môžete vo svete naďalej hrať.	#
+cloud_upload.uploading.title=Odovzdávajú sa súbory sveta [%d/%d]	#
+cloud_upload.uploading.description_1=Odovzdávanie súborov sveta môže trvať niekoľko minút. Počas odovzdávania nevypínajte hru ani neopúšťajte túto obrazovku.	#
+cloud_upload.uploading.description_2=Veľkosti svetov môžu byť veľké. Pripojte sa k sieti Wi-Fi, aby ste sa vyhli používaniu mobilných dát.	#
+cloud_upload.succeeded.description=Svet sa úspešne odovzdal. Ďakujeme.	#
+cloud_upload.failed.description=Odovzdanie sveta zlyhalo. Chcete to skúsiť znova?	#
+cloud_upload.tts.message=Odovzdávajú sa súbory sveta	#
+
 dr.banner.sale=Výpredaj!	#
 dr.banner.limitedTimeOffer=Časovo obmedzená ponuka!	#
 dressingRoom.skin_color_picker_title=Farba vzhľadu	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, počet úspechov: %s (požadujú sa: %
 gameTest.error.failed=Test %s zlyhal.	#
 gameTest.error.succeededInInvalidTick=Úspech v neplatnom cykle: očakával sa %s, ale aktuálny cyklus je %s	#
 gameTest.error.noTestsFound=Nenašli sa žiadne testy pre značku %s	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(voliteľné)	#
 gameTest.assert.couldNotSetBlock=Nepodarilo sa použiť príkaz setBlock %s	#
 gameTest.assert.missingButton=Očakávalo sa tlačidlo	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Nemožno aktivovať rozbušku entity, 
 gameTest.assert.invalidEntityInstance=Neplatná inštancia entity	#
 gameTest.assert.unexpectedParameterValue=Neočakávaná hodnota parametra %s	#
 gameTest.assert.expectEntityInstance=Očakávaná inštancia entity	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Neplatný typ kvapaliny	#
 gameTest.assert.expectCauldron=Očakáva sa blok typu Kotol	#
 gameTest.success.runningTests=Spúšťajú sa testy (%s)...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=Počet neúspešných voliteľných testov: %s	
 gameTest.report.bookTitle=Správa o teste hry                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Poskytol sa neznámy príkazový režim	#
 script.error.noDebugger=Ladiaci nástroj je nedostupný	#
 script.error.debuggerFailed=Nepodarilo sa spustiť ladiaci nástroj	#

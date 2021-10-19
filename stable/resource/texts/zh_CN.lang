@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm 内容	#
 accessibility.play.tabLeft=按下选项卡左边的 %s	#
 accessibility.play.tabRight=按下选项卡右边的 %s	#
 accessibility.play.legacyWorldsDelete=删除旧的世界	#
+accessibility.play.uploadWorld=上传世界	#
 
 accessibility.pause.permissions=权限	#
 accessibility.pause.profile=选择个人资料	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=哎呀！看来您使用了个人账户进
 
 eula.intro=要使用 Minecraft: Education Edition，你必须接受最终用户许可协议。	#
 eula.location=EULA 地址：	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=最终用户许可协议	#
 eula.view=查看最终用户许可协议	#
 eula.callToAction=点击“接受”以接受该协议条款。	#
@@ -767,6 +767,8 @@ commands.code.success=已启动代码编辑器。	#
 commands.compare.failed=源坐标和目标坐标不相同	#
 commands.compare.success=已比较 %1$d 个方块	#
 commands.compare.tooManyBlocks=选定区域内的方块太多 (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=破坏服务器上加载的世界。	#
 commands.corruptworld.success=被成功破坏的世界。	#
 commands.daylock.description=锁定和解锁昼夜更替。	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=数据标签与 %1$s 不匹配						
 commands.scoreboard.players.score.notFound=未找到 %2$s 的 %1$s 分数										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=分数 %1$d 不在 %2$d 到 %3$d 范围内								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=分数 %1$d 在 %2$d 到 %3$d 范围内								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=您的存储空间即将不足！《我的世
 storageSpaceWarningScreen.lowduringgameplay=您的设备空间不足，《我的世界》无法在此设备上存储世界和设置。为什么不删除一些您不需要的旧东西，便于您保存新内容？	#
 storageSpaceWarningScreen.fullduringgameplay=您的存储空间不足，《我的世界》无法保存您的进度！ 《我的世界》 将帮助您回到主菜单，以清理出额外的存储空间。	#
 
+edu.signin_screen.viewTerms=查看条款	#
+
 edu.play_screen.view_worlds=查看我的世界	#
 edu.play_screen.view_library=查看库	#
 edu.play_screen.create_new=新建	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=搜索	#
 edu.worlds_screen.play=游戏	#
 edu.worlds_screen.host=主机	#
 edu.worlds_screen.settings=设置	#
+edu.worlds_screen.manage=管理	#
+edu.worlds_screen.back=返回	#
+edu.worlds_screen.copy=复制	#
+edu.worlds_screen.export=导出	#
+edu.worlds_screen.share=分享	#
+edu.worlds_screen.delete=删除	#
 edu.worlds_screen.courses_title=我的课程	#
 
 edu.templates.title=我的模板	#
@@ -3735,6 +3746,7 @@ level.import.success=等级导入成功完成	#
 level.export.failed=等级导出失败	#
 level.import.failed=等级导入失败	#
 level.import.failed.incompatibleEdition=等级导入失败：出现了不支持的格式。	#
+
 invite.clear=清除选择	#
 invite.send=发送 %d 份邀请函	#
 invite.sendOne=发送 1 份邀请	#
@@ -4601,7 +4613,6 @@ item.elytra.name=鞘翅	#
 item.emerald.name=绿宝石	#
 item.emptyMap.name=空白地图	#
 item.emptyLocatorMap.name=空的定位器地图	#
-item.emptyPotion.name=水瓶	#
 item.enchanted_book.name=附魔书	#
 item.end_crystal.name=末地水晶	#
 tile.end_rod.name=末地烛	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (之前被称为 %s) 加入了 Realm
 multiplayer.player.left=%s 退出了游戏	#
 multiplayer.player.left.realms=%s 退出了 Realm	#
 multiplayer.player.changeToPersona=%s编辑了角色外观。	#
-multiplayer.player.changeToSkin=%s已更改为%s皮肤。	#
+multiplayer.player.changeToSkin=%s 已更改他们的皮肤。	#
 multiplayer.stopSleeping=起床	#
 multiplayer.texturePrompt.line1=这个服务器推荐使用自定义的资源包。	#
 multiplayer.texturePrompt.line2=你想要自动下载和安装它吗？	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=禁用天气绘制	#
 options.dev_disableRenderHud=禁用 Hud 绘制	#
 options.dev_disableRenderItemInHand=禁用手中物品绘制	#
 options.dev_disableRenderMainMenuCubeMap=禁用主菜单立方体贴图绘制	#
+options.dev_disableRenderMainMenuPaperdollAnimation=禁用主菜单纸娃娃动画	#
 options.dev_serverInstanceThread=服务器实例线程	#
 options.dev_newCuller=使用新的害兽驱除业者	#
 options.dev_showBuildInfo=显示版本信息	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Discovery 环境（需要重新启动）	#
 options.discoveryEnvironment.production=生产	#
 options.discoveryEnvironment.staging=预备	#
 options.discoveryEnvironment.local=本地	#
-options.discoveryEnvironment.dev=开发	#
+options.discoveryEnvironment.dev=开发 [Unstable]	#
 options.dev_realmsEnvironment=Realms 环境	#
 options.dev_realms_environment.production=生产	#
 options.dev_realms_environment.staging=预备	#
 options.dev_realms_environment.local=本地	#
 options.dev_realms_environment.dev=开发	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms 端点	#
 options.dev_realmsEndpointPayment=Realms 端点支付	#
 options.dev_realmsRelyingParty=Realms 信任方	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=当前治疗	#
 options.dev_unusedTreatmentsTitle=未使用的治疗方法	#
 options.dev_addTreatmentId=添加处理 ID	#
 options.dev_addLabel=添加	#
+options.dev_applyTreatments=应用处理	#
 options.dev_resetToDefault=重置为默认值	#
 options.dev_clearFlights=清除	#
 options.dev_experimentalProgressions=覆盖进程	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=开采疲劳	#
 potion.digSpeed=急速	#
 potion.effects.whenDrank=当使用后：	#
 potion.empty=无效果	#
+potion.emptyPotion.name=水瓶	#
+potion.emptyPotion.splash.name=喷溅水瓶	#
+potion.emptyPotion.linger.name=滯留水瓶	#
 potion.fireResistance=抗火	#
 potion.fireResistance.name=抗火药水	#
 potion.fireResistance.splash.name=喷溅型抗火药水	#
@@ -6969,6 +6989,8 @@ store.menu.home=首页	#
 store.itemDetail.back=详情	#
 store.coin.bonus=奖励！	#
 store.disabledOnBeta=此功能当前在测试版中已禁用。	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=第 %s 天			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=已领取	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=思源黑体	#
 
 worldConversionErrorPrompt.title=世界转换失败	#
 worldConversionErrorPrompt.message=槽糕，在世界转换过程中出错了。请稍后再试。	#
-worldConversionErrorPrompt.message.upload=出错了。我们无法转换您的世界。您可以稍后通过转到旧世界并按 :_gamepad_face_button_up: 来向我们发送您的世界。或者立即向我们发送您的世界，以便我们可以进行进一步调查。	#
-worldConversionErrorPrompt.sendWorld=立即发送世界	#
-worldConversionErrorPrompt.backToWorld=返回世界	#
-
-worldConversionErrorReport.title=报告此世界	#
-worldConversionErrorReport.button.reportAndSend=报告和发送世界	#
-worldConversionErrorReport.dropdown.default=什么出错了？	#
-worldConversionErrorReport.dropdown.mobs=生物行为不当或失踪	#
-worldConversionErrorReport.dropdown.terrain=地形已破坏或缺失	#
-worldConversionErrorReport.dropdown.itemsMissing=我的物品、作品和/或玩家统计信息缺失	#
-worldConversionErrorReport.dropdown.itemInteraction=无法与物品交互	#
-worldConversionErrorReport.dropdown.worldConversion=世界转换失败	#
-worldConversionErrorReport.terms.agreement=按下“同意”，即表示您同意将您的世界上载到《我的世界》团队。Microsoft 服务协议和隐私声明将适用于此处。	#
-worldConversionErrorReport.terms.agreementForBeta=上载您的世界，即表示您授权 Microsoft 测试、复制、修改、分发和公开显示您的世界以便支持将您的世界传输到《我的世界》。	#
-worldConversionErrorReport.terms.viewTerms=查看条款	#
-
-
-worldConversionErrorReport.sending.title=正在发送旧世界	#
-worldConversionErrorReport.sending.description=正在将旧世界发送到《我的世界》...	#
-
-worldConversionErrorReport.sending.complete=发送已完成	#
-worldConversionErrorReport.sending.completeMessage.part1=非常感谢！我们正致力于修复一些内容，因此未能及时就此特定世界给予回复。下面是您的回执，确认我们已收到它：	#
-worldConversionErrorReport.sending.completeMessage.part2=回执：%s	#
 
 worldError.corrupted=已毁坏并无法启动。	#
 worldError.invalidArguments=以无效参数创建。	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=蘑菇岛	#
 eduTemplateWorld.starterTown.name=新手村	#
 eduTemplateWorld.tutorialVolumeII.name=教程第 II 卷	#
 eduTemplateWorld.blocksOfGrass.name=草地块	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=世界已提交	#
-worldConversion.feedback.failed.title=世界提交失败	#
-worldConversion.feedback.done.msg=非常感谢您向我们发送您的世界的副本，这将帮助我们找到错误！我们正致力于修复一些内容，因此未能及时就此特定世界给予回复。下面是您的回执，确认我们已收到它：%s	#
-worldConversion.feedback.failed.msg=糟糕！我们未能收到您的世界。请尝试检查您的 Internet 连接，或者稍后重新发送它。	#
-worldConversion.feedback.prompt.title=提交世界	#
-worldConversion.feedback.prompt.msg=您的旧世界未按预期方式显示或运行？向我们发送您的世界，这将帮助我们找到错误！	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=转换已完成	#
@@ -9304,6 +9295,23 @@ client.version.1.4=水生更新 (%s)	#
 client.version.1.5=水生更新 (%s)	#
 client.version.1.11=村庄和劫掠者村庄更新 (%s)	#
 
+cloud_upload.title=Mojang 玩家支持	#
+cloud_upload.prompt.description=根据您最近的支持凭证，Mojang 玩家支持已经批准您上传自己的世界。您可以在世界选择屏幕或世界设置下上传受影响的世界。	#
+cloud_upload.prompt.do_not_show_toggle=不再显示此窗口	#
+cloud_upload.prompt.button.worlds=前往世界	#
+cloud_upload.prompt.button.learn_more=了解更多	#
+cloud_upload.toggle.accept_terms=接受微软服务协议	#
+cloud_upload.button.upload=上传世界（%s）	#
+cloud_upload.button.service_agreement=微软服务协议	#
+cloud_upload.terms.title=条款和条件	#
+cloud_upload.terms.description=要上传您的世界，请接受微软服务协议。上传的世界受微软服务协议的约束。上传后，您仍然可以玩您的世界。	#
+cloud_upload.uploading.title=世界文件上传中 [%d/%d]	#
+cloud_upload.uploading.description_1=上传您的世界文件可能需要几分钟的时间。在上传过程中，不要关闭游戏或离开此屏幕。	#
+cloud_upload.uploading.description_2=世界的规模可能会很大。请使用 WiFi，不要使用移动数据。	#
+cloud_upload.succeeded.description=您的世界上传已成功。谢谢！	#
+cloud_upload.failed.description=您的世界上传失败。重试？	#
+cloud_upload.tts.message=世界文件上传中	#
+
 dr.banner.sale=特惠！	#
 dr.banner.limitedTimeOffer=限时优惠！	#
 dressingRoom.skin_color_picker_title=皮肤颜色	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=，成功：%s（需要 %s）           
 gameTest.error.failed=%s失败！	#
 gameTest.error.succeededInInvalidTick=在无效标记中成功：预期 %s，但当前标记为 %s	#
 gameTest.error.noTestsFound=未找到用于标签‘%s’的测试	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=（可选）	#
 gameTest.assert.couldNotSetBlock=无法设置方块“%s”	#
 gameTest.assert.missingButton=预期一个按钮	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=由于实体没有爆炸部件，无�
 gameTest.assert.invalidEntityInstance=无效实体实例	#
 gameTest.assert.unexpectedParameterValue=参数‘%s’的意外值	#
 gameTest.assert.expectEntityInstance=预期实体实例	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=无效液体类型	#
 gameTest.assert.expectCauldron=预期的炼药锅方块类型	#
 gameTest.success.runningTests=正在运行 %s 测试...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s 个可选测试失败	#
 gameTest.report.bookTitle=游戏测试报告                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=提供的命令模式未知	#
 script.error.noDebugger=调试器无法使用	#
 script.error.debuggerFailed=无法启动调试器	#

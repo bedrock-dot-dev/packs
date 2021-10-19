@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm-feed	#
 accessibility.play.tabLeft=Trykk på %s for å gå mot venstre	#
 accessibility.play.tabRight=Trykk på %s for å gå mot høyre	#
 accessibility.play.legacyWorldsDelete=Slett gammel verden	#
+accessibility.play.uploadWorld=Last opp verden	#
 
 accessibility.pause.permissions=Tillatelser	#
 accessibility.pause.profile=Velg profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Oi! Det ser ut til at du har logget på me
 
 eula.intro=Du må godta lisensavtalen for sluttbrukere for å bruke Minecraft: Education Edition.	#
 eula.location=Lisensavtalen for sluttbrukere finner du her:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Lisensavtale for sluttbrukere	#
 eula.view=Se lisensavtalen for sluttbrukere	#
 eula.callToAction=Klikk Godta for å godta betingelsene i denne avtalen.	#
@@ -767,6 +767,8 @@ commands.code.success=Startet Kodebygger.	#
 commands.compare.failed=Kilden og målet er ikke identiske	#
 commands.compare.success=%1$d blokker ble sammenlignet	#
 commands.compare.tooManyBlocks=Det er for mange blokker i det spesifiserte området (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Ødelegger verdenen som er lastet inn på serveren.	#
 commands.corruptworld.success=Verdenen er ødelagt.	#
 commands.daylock.description=Låser og låser opp døgnsyklusen.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=Datataggen samsvarer ikke for %1$s		
 commands.scoreboard.players.score.notFound=Fant ikke resultatet %1$s for %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Resultatet %1$d er IKKE mellom %2$d og %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Resultatet %1$d er mellom %2$d og %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Du har nesten ikke mer datalagringsplass igje
 storageSpaceWarningScreen.lowduringgameplay=Du har nesten ikke mer datalagringsplass igjen som Minecraft trenger for å lagre verdener og innstillinger på denne enheten.  Hvorfor ikke slette noe gammelt du ikke trenger så du kan fortsette med å lagre nye ting?	#
 storageSpaceWarningScreen.fullduringgameplay=Du har ikke mer datalagringsplass igjen, og Minecraft kan ikke lagre fremdriften din! Minecraft tar deg tilbake til hovedmenyen for å frigjøre plass.	#
 
+edu.signin_screen.viewTerms=Se vilkårene	#
+
 edu.play_screen.view_worlds=VIS MINE VERDENER	#
 edu.play_screen.view_library=VIS BIBLIOTEK	#
 edu.play_screen.create_new=OPPRETT NY	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Søk	#
 edu.worlds_screen.play=SPILL	#
 edu.worlds_screen.host=VERT	#
 edu.worlds_screen.settings=INNSTILLINGER	#
+edu.worlds_screen.manage=BEHANDLE	#
+edu.worlds_screen.back=TILBAKE	#
+edu.worlds_screen.copy=KOPIER	#
+edu.worlds_screen.export=EKSPORTER	#
+edu.worlds_screen.share=DEL	#
+edu.worlds_screen.delete=SLETT	#
 edu.worlds_screen.courses_title=Mine kurs	#
 
 edu.templates.title=Mine maler	#
@@ -3735,6 +3746,7 @@ level.import.success=Nivåimporten er ferdig	#
 level.export.failed=Nivåeksporten mislyktes	#
 level.import.failed=Nivåimporten mislyktes	#
 level.import.failed.incompatibleEdition=Kunne ikke importere nivået: Filformatet støttes ikke	#
+
 invite.clear=Opphev valg	#
 invite.send=Inviter %d	#
 invite.sendOne=Send 1 invitasjon	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Tomt kart	#
 item.emptyLocatorMap.name=Tomt kart	#
-item.emptyPotion.name=Vannflaske	#
 item.enchanted_book.name=Fortryllet bok	#
 item.end_crystal.name=Sluttkrystall	#
 tile.end_rod.name=Sluttstav	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (tidligere kjent som %s) har blitt m
 multiplayer.player.left=%s har forlatt spillet	#
 multiplayer.player.left.realms=%s har forlatt realmen	#
 multiplayer.player.changeToPersona=%s har endret figurens utseende.	#
-multiplayer.player.changeToSkin=%s har byttet til skallet %s.	#
+multiplayer.player.changeToSkin=%s har byttet skall.	#
 multiplayer.stopSleeping=Stå opp	#
 multiplayer.texturePrompt.line1=Det anbefales at du bruker en egendefinert ressurspakke med denne serveren.	#
 multiplayer.texturePrompt.line2=Vil du laste ned og installere den automatisk?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Deaktiver tegning av vær	#
 options.dev_disableRenderHud=Deaktiver tegning av HUD	#
 options.dev_disableRenderItemInHand=Deaktiver tegning av holdt gjenstand	#
 options.dev_disableRenderMainMenuCubeMap=Deaktiver CubeMap-tegning for hovedmeny	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Deaktiver papirdukkeanimasjon på hovedmenyen	#
 options.dev_serverInstanceThread=Serverinstanstråd	#
 options.dev_newCuller=Bruk ny utplukker	#
 options.dev_showBuildInfo=Vis informasjon om build	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Oppdagelsesmiljø (krever omstart)	#
 options.discoveryEnvironment.production=Produksjon	#
 options.discoveryEnvironment.staging=Utprøving	#
 options.discoveryEnvironment.local=Lokalt	#
-options.discoveryEnvironment.dev=Utvikling	#
+options.discoveryEnvironment.dev=Dev [Ustabil]	#
 options.dev_realmsEnvironment=Realms-miljø	#
 options.dev_realms_environment.production=Produksjon	#
 options.dev_realms_environment.staging=Utprøving	#
 options.dev_realms_environment.local=Lokalt	#
 options.dev_realms_environment.dev=Utvikling	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms-endepunkt	#
 options.dev_realmsEndpointPayment=Betaling for Realms-endepunkt	#
 options.dev_realmsRelyingParty=Realms-tilgangsserver	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Nåværende behandlinger	#
 options.dev_unusedTreatmentsTitle=Ubrukte behandlinger	#
 options.dev_addTreatmentId=Legg til behandlings-ID	#
 options.dev_addLabel=Legg til	#
+options.dev_applyTreatments=Bruk behandlinger	#
 options.dev_resetToDefault=Tilbakestill til standard	#
 options.dev_clearFlights=Klart	#
 options.dev_experimentalProgressions=Overstyr progresjon	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Utvinningsutmattelse	#
 potion.digSpeed=Hastverk	#
 potion.effects.whenDrank=Når dette brukes:	#
 potion.empty=Ingen effekter	#
+potion.emptyPotion.name=Vannflaske	#
+potion.emptyPotion.splash.name=Sprutende vannflaske	#
+potion.emptyPotion.linger.name=Langvarig vannflaske	#
 potion.fireResistance=Ildmotstand	#
 potion.fireResistance.name=Ildmotstandseliksir	#
 potion.fireResistance.splash.name=Sprutende ildmotstandseliksir	#
@@ -6969,6 +6989,8 @@ store.menu.home=Hjem	#
 store.itemDetail.back=Detaljer	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Denne funksjonen er for øyeblikket deaktivert i Beta.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Dag %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Løst inn	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Konverteringen av verdenen mislyktes	#
 worldConversionErrorPrompt.message=Au da, noe gikk galt under konverteringen av verdenen. Prøv på nytt senere.	#
-worldConversionErrorPrompt.message.upload=Noe gikk galt. Vi kunne ikke konvertere verdenen din. Du kan sende oss verdenen senere ved å gå til den gamle verdenen og trykke på :_gamepad_face_button_up:. Du kan også sende oss verdenen nå, slik at vi kan undersøke nærmere.	#
-worldConversionErrorPrompt.sendWorld=Send verden nå	#
-worldConversionErrorPrompt.backToWorld=Tilbake til verdener	#
-
-worldConversionErrorReport.title=Rapporter denne verdenen	#
-worldConversionErrorReport.button.reportAndSend=Rapporter og send verden	#
-worldConversionErrorReport.dropdown.default=Hva gikk galt?	#
-worldConversionErrorReport.dropdown.mobs=Vesener oppførte seg feil eller manglet	#
-worldConversionErrorReport.dropdown.terrain=Terreng var ødelagt eller manglet	#
-worldConversionErrorReport.dropdown.itemsMissing=Jeg mistet gjenstander, ting jeg har lagd, og/eller spillerstatistikk	#
-worldConversionErrorReport.dropdown.itemInteraction=Kunne ikke samhandle med gjenstander	#
-worldConversionErrorReport.dropdown.worldConversion=Konverteringen av verdenen mislyktes	#
-worldConversionErrorReport.terms.agreement=Ved å velge Godta laster du opp verdenen din til Minecraft-teamet. Microsofts tjenesteavtale og personvernerklæring gjelder.	#
-worldConversionErrorReport.terms.agreementForBeta=Ved å laste opp verdenen din gir du herved Microsoft lov til å teste, reprodusere, endre og distribuere verdenen samt vise den offentlig i forbindelse med overføringen til Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Se vilkårene	#
-
-
-worldConversionErrorReport.sending.title=Sender gammel verden	#
-worldConversionErrorReport.sending.description=Sender gammel verden til Minecraft …	#
-
-worldConversionErrorReport.sending.complete=Sendingen er ferdig	#
-worldConversionErrorReport.sending.completeMessage.part1=Takk skal du ha! Vi jobber på spreng med å fikse ting og kan ikke ta kontakt med deg i forbindelse med denne bestemte verdenen. Her er kvitteringen på at vi har mottatt den:	#
-worldConversionErrorReport.sending.completeMessage.part2=Kvittering: %s	#
 
 worldError.corrupted=er ødelagt og kan ikke startes.	#
 worldError.invalidArguments=ble laget med ugyldige argumenter.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Soppøya	#
 eduTemplateWorld.starterTown.name=Startby	#
 eduTemplateWorld.tutorialVolumeII.name=Opplæring utgave II	#
 eduTemplateWorld.blocksOfGrass.name=Gressblokk	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Verdenen er sendt	#
-worldConversion.feedback.failed.title=Kunne ikke sende verdenen	#
-worldConversion.feedback.done.msg=Takk for at du sender oss en kopi av verdenen din og hjelper oss å finne feil! Vi jobber på spreng med å fikse ting og kan ikke ta kontakt med deg i forbindelse med denne bestemte verdenen. Her er kvitteringen på at vi har mottatt den: %s	#
-worldConversion.feedback.failed.msg=Au da! Vi kunne ikke motta verdenen din. Prøv å sjekke Internett-tilkoblingen eller å sende den på nytt senere.	#
-worldConversion.feedback.prompt.title=Send verden	#
-worldConversion.feedback.prompt.msg=Så ikke den gamle verdenen din ut som den skulle, eller fungerte den på feil måte? Send den til oss, og hjelp oss å finne feilene!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Konvertering fullført	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Update Aquatic (%s)	#
 client.version.1.5=Update Aquatic (%s)	#
 client.version.1.11=Landsbyplyndring (%s)	#
 
+cloud_upload.title=Mojangs spillerstøtte	#
+cloud_upload.prompt.description=Basert på den nylige støtteforespørselen din har Mojangs spillerstøtte gitt tillatelse til å laste opp din verden. Du kan laste opp den berørte verdenen din fra Velg verden-skjermbildet eller under innstillinger for verden.	#
+cloud_upload.prompt.do_not_show_toggle=Ikke vis denne skjermen igjen	#
+cloud_upload.prompt.button.worlds=Gå til verdener	#
+cloud_upload.prompt.button.learn_more=Finn ut mer	#
+cloud_upload.toggle.accept_terms=Godta Microsofts tjenesteavtale	#
+cloud_upload.button.upload=Last opp verden (%s)	#
+cloud_upload.button.service_agreement=Microsofts tjenesteavtale	#
+cloud_upload.terms.title=Vilkår og betingelser	#
+cloud_upload.terms.description=Hvis du vil laste opp din verden, må du godt Microsofts tjenesteavtale. Opplastede verdener er underlagt Microsofts tjenesteavtale. Du kan fortsatt spille med verdenen når den er lastet opp.	#
+cloud_upload.uploading.title=Laster opp verdensfiler [%d/%d]	#
+cloud_upload.uploading.description_1=Det kan ta noen minutter å laste opp verdensfilene dine. Ikke slå av spillet eller forlat dette skjermbildet under opplastingsprosessen.	#
+cloud_upload.uploading.description_2=Verdener kan være store. Koble til Wi-Fi for å unngå å bruke mobildata.	#
+cloud_upload.succeeded.description=Opplasting av verden er fullført. Takk!	#
+cloud_upload.failed.description=Opplasting av verden mislyktes. Vil du prøve på nytt?	#
+cloud_upload.tts.message=Laster opp verdensfiler	#
+
 dr.banner.sale=Salg!	#
 dr.banner.limitedTimeOffer=Tidsbegrenset tilbud!	#
 dressingRoom.skin_color_picker_title=Skallfarge	#
@@ -9519,7 +9527,7 @@ dr.color.warm_bisque=Varm bisque	#
 
 emotes.change_emotes=Endre emote	#
 emotes.execute=Kjør	#
-emotes.header_text=Følelser	#
+emotes.header_text=Emoter	#
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, fullførte forsøk: %s (%s obligatoris
 gameTest.error.failed=%s mislyktes!	#
 gameTest.error.succeededInInvalidTick=Fullført i ugyldig tick: forventet %s, men gjeldende tick er %s	#
 gameTest.error.noTestsFound=Finner ingen tester for taggen %s	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(valgfritt)	#
 gameTest.assert.couldNotSetBlock=Kan ikke setBlock '%s'	#
 gameTest.assert.missingButton=Forventet en knapp	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Kan ikke tenne lunten til enheten ford
 gameTest.assert.invalidEntityInstance=Ugyldig enhetsforekomst	#
 gameTest.assert.unexpectedParameterValue=Uventet verdi for parameteren %s	#
 gameTest.assert.expectEntityInstance=Forventet enhetsforekomst	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Ugyldig væsketype	#
 gameTest.assert.expectCauldron=Forventet blokk av typen gryte	#
 gameTest.success.runningTests=Kjører %s tester …	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s valgfrie tester mislyktes	#
 gameTest.report.bookTitle=Spilltestrapport	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Ukjent kommandomodus angitt	#
 script.error.noDebugger=Feilsøkingsprogrammet er ikke tilgjengelig	#
 script.error.debuggerFailed=Kan ikke starte feilsøkingsprogram	#

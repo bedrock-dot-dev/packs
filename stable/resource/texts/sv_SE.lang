@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm-flöde	#
 accessibility.play.tabLeft=Tryck på %s för att gå en flik åt vänster	#
 accessibility.play.tabRight=Tryck på %s för att gå en flik åt höger	#
 accessibility.play.legacyWorldsDelete=Radera gammal värld	#
+accessibility.play.uploadWorld=Ladda upp värld	#
 
 accessibility.pause.permissions=Tillstånd	#
 accessibility.pause.profile=Välj profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hoppsan! Det verkar som att du har loggat 
 
 eula.intro=Du måste acceptera slutanvändarlicensavtalet för att använda Minecraft: Education Edition.	#
 eula.location=Du hittar slutanvändarlicensavtalet på:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Slutanvändarlicensavtal	#
 eula.view=Läs slutanvändarlicensavtal	#
 eula.callToAction=Klicka på Godkänn för att godkänna villkoren i avtalet.	#
@@ -767,6 +767,8 @@ commands.code.success=Startade Code Builder.	#
 commands.compare.failed=Källan och målet är inte identiska	#
 commands.compare.success=%1$d block har jämförts	#
 commands.compare.tooManyBlocks=För många block i det angivna området (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Skadar världen som lästs in på servern.	#
 commands.corruptworld.success=Världen skadades.	#
 commands.daylock.description=Låser och låser upp dygnscykeln.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=dataTag matchar inte för %1$s						
 commands.scoreboard.players.score.notFound=Hittade inget %1$s-resultat för %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Resultatet %1$d är inte inom spannet %2$d–%3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Resultatet %1$d är inom spannet %2$d–%3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2163,8 +2166,8 @@ xbl.syncIAP.confirmSync.prompt.yes=Ja, synkronisera mina köp	#
 
 xbl.marketplace.account.error.body.nobutton=Ett fel har inträffat med ditt konto. Du kan inte använda marknaden förrän felet är löst. Kontakta kundtjänst om felet kvarstår i flera dagar.	#
 
-playfab.account.banned.title=Avstängd	#
-playfab.account.banned.body=Du har blivit avstängd från Minecraft. Under hela din avstängning kommer du inte att kunna spela på dina världar (vissa plattformar), spela på servrar, gå med i Realms, vara värd för eller gå med i spel för flera spelare eller använda marknaden. Om du betalar för en Realm måste du avbryta ditt abonnemang via butiken där det köptes.	#
+playfab.account.banned.title=Du har blivit blockerad	#
+playfab.account.banned.body=Du har blivit blockerad från att spela spel för flera spelare i Minecraft. Du kommer inte att kunna spela på servrar, gå med i Realms, vara värd för eller gå med i spel för flera spelare eller använda marknaden. Om du betalar för en Realm måste du avbryta ditt abonnemang via butiken där det köptes.	#
 playfab.account.banned.body.button=Mer information	#
 
 store.sign_in_warning.no_xbl_and_local_content=Viktigt! Du har köpt paket och/eller Minecoins som bara finns tillgängliga på den här enheten. De försvinner om enheten går sönder eller försvinner, eller om du avinstallerar Minecraft! Logga in med ett Microsoft-konto (gratis) och för över dina paketrättigheter och Minecoins till det kontot för att skydda dem och komma åt dem på alla dina enheter med det kontot.	#
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Du har nästan slut på lagringsutrymme! Mine
 storageSpaceWarningScreen.lowduringgameplay=Din enhet har nästan slut på den mängd utrymme Minecraft behöver för att spara världar och inställningar. Ta bort lite gamla grejer så att du kan fortsätta spara.	#
 storageSpaceWarningScreen.fullduringgameplay=Du har slut på lagringsutrymme och Minecraft kan inte spara dina framsteg! Minecraft återgår till huvudmenyn så att du kan frigöra lagringsutrymme.	#
 
+edu.signin_screen.viewTerms=Visa villkor	#
+
 edu.play_screen.view_worlds=VISA MINA VÄRLDAR	#
 edu.play_screen.view_library=VISA MITT BIBLIOTEK	#
 edu.play_screen.create_new=SKAPA NY	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Sök	#
 edu.worlds_screen.play=SPELA	#
 edu.worlds_screen.host=VÄRD	#
 edu.worlds_screen.settings=INSTÄLLNINGAR	#
+edu.worlds_screen.manage=HANTERA	#
+edu.worlds_screen.back=TILLBAKA	#
+edu.worlds_screen.copy=KOPIERA	#
+edu.worlds_screen.export=EXPORTERA	#
+edu.worlds_screen.share=DELA	#
+edu.worlds_screen.delete=TA BORT	#
 edu.worlds_screen.courses_title=Mina kurser	#
 
 edu.templates.title=Mina mallar	#
@@ -3735,6 +3746,7 @@ level.import.success=Nivåimporteringen lyckades	#
 level.export.failed=Kunde inte exportera nivån	#
 level.import.failed=Nivåimporteringen misslyckades	#
 level.import.failed.incompatibleEdition=Det gick inte att importera nivån: Ogiltigt filformat	#
+
 invite.clear=Rensa val	#
 invite.send=Skicka %d inbjudningar	#
 invite.sendOne=Skicka 1 inbjudan	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Tom karta	#
 item.emptyLocatorMap.name=Tom orienteringskarta	#
-item.emptyPotion.name=Vattenflaska	#
 item.enchanted_book.name=Förtrollad bok	#
 item.end_crystal.name=Endkristall	#
 tile.end_rod.name=Slutstav	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (tidigare känd som %s) har anslutit
 multiplayer.player.left=%s har lämnat spelet	#
 multiplayer.player.left.realms=%s har lämnat detta Realm	#
 multiplayer.player.changeToPersona=%s har redigerat karaktärsutseendet.	#
-multiplayer.player.changeToSkin=%s har bytt utseende till %s.	#
+multiplayer.player.changeToSkin=%s har bytt utseende.	#
 multiplayer.stopSleeping=Kliv upp	#
 multiplayer.texturePrompt.line1=Den här servern rekommenderar användningen av ett anpassat resurspaket.	#
 multiplayer.texturePrompt.line2=Vill du ladda ned och installera det automagiskt?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Stäng av uppritning av vädret	#
 options.dev_disableRenderHud=Stäng av uppritning av gränssnittet	#
 options.dev_disableRenderItemInHand=Stäng av uppritning av föremål i handen	#
 options.dev_disableRenderMainMenuCubeMap=Avaktivera CubeMap-uppritning på huvudmenyn	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Avaktivera animeringen av pappersdockan på huvudmenyn	#
 options.dev_serverInstanceThread=Serverinstanstråd	#
 options.dev_newCuller=Använd ny gallring	#
 options.dev_showBuildInfo=Visa versionsinformation	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Upptäcktsmiljö (kräver omstart)	#
 options.discoveryEnvironment.production=Produktion	#
 options.discoveryEnvironment.staging=Mellanlagring	#
 options.discoveryEnvironment.local=Lokal	#
-options.discoveryEnvironment.dev=Utvecklare	#
+options.discoveryEnvironment.dev=Utv [Instabil]	#
 options.dev_realmsEnvironment=Realms-miljö	#
 options.dev_realms_environment.production=Produktion	#
 options.dev_realms_environment.staging=Mellanlagring	#
 options.dev_realms_environment.local=Lokal	#
 options.dev_realms_environment.dev=Utvecklare	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms: slutpunkt	#
 options.dev_realmsEndpointPayment=Realms: betalning från slutpunkt	#
 options.dev_realmsRelyingParty=Realms: förlitande part	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Aktuella behandlingar	#
 options.dev_unusedTreatmentsTitle=Oanvända behandlingar	#
 options.dev_addTreatmentId=Lägg till behandlings-id	#
 options.dev_addLabel=Lägg till	#
+options.dev_applyTreatments=Tillämpa behandlingar	#
 options.dev_resetToDefault=Återställ till standard	#
 options.dev_clearFlights=Rensa	#
 options.dev_experimentalProgressions=Åsidosätt framsteg	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Matthet	#
 potion.digSpeed=Kvickhet	#
 potion.effects.whenDrank=Effekt från användning:	#
 potion.empty=Inga effekter	#
+potion.emptyPotion.name=Vattenflaska	#
+potion.emptyPotion.splash.name=Kastbar vattenflaska	#
+potion.emptyPotion.linger.name=Kvardröjande vattenflaska	#
 potion.fireResistance=Eldimmunitet	#
 potion.fireResistance.name=Eldimmunitetsbrygd	#
 potion.fireResistance.splash.name=Kastbar eldimmunitetsbrygd	#
@@ -6969,6 +6989,8 @@ store.menu.home=Hem	#
 store.itemDetail.back=Detaljer	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Den här funktionen är för närvarande avstängd i Beta.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Dag %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Hämtat	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Världskonverteringen misslyckades	#
 worldConversionErrorPrompt.message=Oj, någonting gick fel under världskonverteringen. Försök igen senare.	#
-worldConversionErrorPrompt.message.upload=Något gick snett. Vi kunde inte konvertera din värld. Du kan skicka din gamla värld till oss senare genom att gå till den och trycka på :_gamepad_face_button_up:. Annars kan du skicka världen till oss nu så kan vi undersöka saken närmare.	#
-worldConversionErrorPrompt.sendWorld=Skicka värld nu	#
-worldConversionErrorPrompt.backToWorld=Tillbaka till världar	#
-
-worldConversionErrorReport.title=Anmäl den här världen	#
-worldConversionErrorReport.button.reportAndSend=Anmäl och skicka värld	#
-worldConversionErrorReport.dropdown.default=Vad gick fel?	#
-worldConversionErrorReport.dropdown.mobs=Varelser betedde sig konstigt eller saknades	#
-worldConversionErrorReport.dropdown.terrain=Terrängen var trasig eller saknades	#
-worldConversionErrorReport.dropdown.itemsMissing=Förlorade mina föremål, skapelser och/eller min spelarstatistik	#
-worldConversionErrorReport.dropdown.itemInteraction=Kunde inte interagera med föremål	#
-worldConversionErrorReport.dropdown.worldConversion=Världskonverteringen misslyckades	#
-worldConversionErrorReport.terms.agreement=Genom att trycka på Godkänn laddar du upp din värld till Minecraft-teamet. Microsofts tjänsteavtal och sekretesspolicy gäller.	#
-worldConversionErrorReport.terms.agreementForBeta=Genom att ladda upp din värld ger du ditt medgivande till att Microsoft får testa, återskapa, modifiera, distribuera och visa upp din värld offentligt för att överföra din värld till Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Visa villkor	#
-
-
-worldConversionErrorReport.sending.title=Skickar gammal värld	#
-worldConversionErrorReport.sending.description=Skickar gammal värld till Minecraft ...	#
-
-worldConversionErrorReport.sending.complete=Skickad	#
-worldConversionErrorReport.sending.completeMessage.part1=Tack! Vi jobbar hårt på att fixa saker och kommer inte kunna ge dig återkoppling om din specifika värld. Här är ditt kvitto på att vi har tagit emot den:	#
-worldConversionErrorReport.sending.completeMessage.part2=Kvitto: %s	#
 
 worldError.corrupted=är skadad och kan inte startas.	#
 worldError.invalidArguments=skapades med ogiltiga argument.	#
@@ -8670,7 +8669,7 @@ xbox.firstsignin.line3=Har du inget konto? Skapa ett nu så kan du börja låsa 
 xbox.firstsignin.line3.norealmsOrServers=Har du inget konto? Skapa ett nu så kan du börja låsa upp achievements och spela med dina kompisar på andra plattformar!	#
 xbox.failedsignin.body=Vi kunde inte logga in dig på ditt Microsoft-konto. Åtkomst till Realms, profiler och dina föremål från marknaden kommer att begränsas. Försök igen senare.	#
 xbox.failedsignin.error=Felkod:	#
-xbox.failedsignin.moreInfo=More Info	#
+xbox.failedsignin.moreInfo=Mer information	#
 xbox.dev_wrongSandboxSigninFailed.title=Någonting gick fel	#
 xbox.dev_wrongSandboxSigninFailed.line1=Kunde inte logga in i %s-sandlådan. Byt sandlåda och starta om Minecraft eller logga in med ett annat konto. Vid omstart är sandlådan %s. 	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=Byt till utvecklarsandlåda	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Svampö	#
 eduTemplateWorld.starterTown.name=Startby	#
 eduTemplateWorld.tutorialVolumeII.name=Handledningslunta II	#
 eduTemplateWorld.blocksOfGrass.name=Gräsblock	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Värld inskickad	#
-worldConversion.feedback.failed.title=Inskickningen av världen misslyckades	#
-worldConversion.feedback.done.msg=Tack för att du skickar din värld till oss så att vi kan lösa buggarna! Vi jobbar hårt på att fixa saker och kommer inte kunna ge dig återkoppling om din specifika värld. Här är ditt kvitto på att vi har tagit emot den: %s	#
-worldConversion.feedback.failed.msg=Oj då! Vi kunde inte ta emot din värld. Kontrollera din internetanslutning eller försök igen senare.	#
-worldConversion.feedback.prompt.title=Skicka in värld	#
-worldConversion.feedback.prompt.msg=Funkar inte din gamla värld eller beter den sig inte som den ska? Skicka den till oss så hjälper du oss att hitta buggarna!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Konvertering färdig	#
@@ -9216,48 +9207,48 @@ hbui.Toggle.select=Välj	#
 hbui.Toggle.selected=valt	#
 
 ## Save Location Transfer
-save_location_transfer.progress.title=Moving files	#
-save_location_transfer.progress.message=Moving "%s"...	#
-save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.	#
+save_location_transfer.progress.title=Flyttar filer	#
+save_location_transfer.progress.message=Flyttar "%s" …	#
+save_location_transfer.worlds_error=Vissa världar är inte tillgängliga eftersom de inte kunde flyttas. Starta om Minecraft för att försöka igen.	#
 
-save_location_transfer.button.get_started=Get started	#
-save_location_transfer.button.retry=Retry	#
-save_location_transfer.button.go_to_faq=Go to FAQ	#
-save_location_transfer.button.next=Next	#
-save_location_transfer.button.resume=Resume	#
-save_location_transfer.button.continue=Continue	#
-save_location_transfer.button.start=Start moving files	#
-save_location_transfer.button.marketplace=Your Marketplace packs	#
-save_location_transfer.button.main_menu=Go to Main menu	#
-save_location_transfer.button.faq=Read the FAQ for more info.	#
-save_location_transfer.button.microsoft_store=Go to Microsoft Store	#
-save_location_transfer.button.help=Help	#
+save_location_transfer.button.get_started=Kom i gång	#
+save_location_transfer.button.retry=Försök igen	#
+save_location_transfer.button.go_to_faq=Gå till Vanliga frågor och svar	#
+save_location_transfer.button.next=Nästa	#
+save_location_transfer.button.resume=Återuppta	#
+save_location_transfer.button.continue=Fortsätt	#
+save_location_transfer.button.start=Börja flytta filer	#
+save_location_transfer.button.marketplace=Dina paket från marknaden	#
+save_location_transfer.button.main_menu=Gå till huvudmenyn	#
+save_location_transfer.button.faq=Läs vanliga frågor och svar för att få mer information.	#
+save_location_transfer.button.microsoft_store=Gå till Microsoft Store	#
+save_location_transfer.button.help=Hjälp	#
 
-save_location_transfer.title.initializing=Optimizing data	#
-save_location_transfer.gathering_info.description=Gathering information...	#
-save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.	#
+save_location_transfer.title.initializing=Optimerar data	#
+save_location_transfer.gathering_info.description=Samlar in information …	#
+save_location_transfer.description.out_of_space=Du har inte tillräckligt med ledigt utrymme för att flytta dina filer till en ny plats.	#
 
-save_location_transfer.start_transfer.generic.title=New storage location	#
-save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.	#
-save_location_transfer.start_transfer.total_file_size=Total file size:	#
-save_location_transfer.start_transfer.new_location=New location: %s	#
+save_location_transfer.start_transfer.generic.title=Ny lagringsplats	#
+save_location_transfer.start_transfer.description=Vi måste flytta dina filer till en annan plats på din enhet.	#
+save_location_transfer.start_transfer.total_file_size=Total filstorlek:	#
+save_location_transfer.start_transfer.new_location=Ny plats: %s	#
 
-save_location_transfer.resume_transfer.title=Move was interrupted	#
-save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.	#
-save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.	#
-save_location_transfer.resume_transfer.need_to_move=Need to move:	#
-save_location_transfer.resume_transfer.available=(%s available)	#
-save_location_transfer.resume_transfer.location=Location: %s	#
-save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.	#
+save_location_transfer.resume_transfer.title=Flytten avbröts	#
+save_location_transfer.resume_transfer.description=Vi håller på att flytta dina data till en ny plats på din enhet. Tryck på Återuppta för att slutföra flytten.	#
+save_location_transfer.resume_transfer.description.out_of_space=Vi håller på att flytta dina data till en ny plats på din enhet, men du har inte tillräckligt med ledigt utrymme.	#
+save_location_transfer.resume_transfer.need_to_move=Måste flyttas:	#
+save_location_transfer.resume_transfer.available=(%s tillgänglig)	#
+save_location_transfer.resume_transfer.location=Plats: %s	#
+save_location_transfer.resume_transfer.free_up=Frigör minst %s för att fortsätta.	#
 
-save_location_transfer.transfer_error_out_of_space.title=Not enough free space	#
-save_location_transfer.transfer_error_out_of_space.files_left=Files left:	#
+save_location_transfer.transfer_error_out_of_space.title=Inte tillräckligt med ledigt utrymme	#
+save_location_transfer.transfer_error_out_of_space.files_left=Filer kvar:	#
 
-save_location_transfer.finished.generic.title=All done	#
-save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.	#
+save_location_transfer.finished.generic.title=Allt klart	#
+save_location_transfer.finished.generic.description=Filerna har flyttats. Starta om Minecraft.	#
 
-save_location_transfer.transfer_error.title=Trouble moving files!	#
-save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).	#
+save_location_transfer.transfer_error.title=Problem med att flytta filer!	#
+save_location_transfer.transfer_error.description=Vi kunde inte flytta alla dina filer. Följande fel uppstod: (%s).	#
 
 trade.doesNotWant=Handlaren är inte intresserad	#
 trade.excalamation=!	#
@@ -9303,6 +9294,23 @@ client.version.1.2=Better Together-uppdateringen (%s)	#
 client.version.1.4=Aquatic-uppdateringen (%s)	#
 client.version.1.5=Aquatic-uppdateringen (%s)	#
 client.version.1.11=Village and Pillage (%s)	#
+
+cloud_upload.title=Mojangs spelarsupport	#
+cloud_upload.prompt.description=Mojangs spelarsupport har utvärderat ditt supportärende och gett tillstånd att ladda upp din värld. Du kan ladda upp den aktuella världen från skärmen där du väljer värld eller i världsinställningarna.	#
+cloud_upload.prompt.do_not_show_toggle=Visa inte den här skärmen igen	#
+cloud_upload.prompt.button.worlds=Gå till världar	#
+cloud_upload.prompt.button.learn_more=Läs mer	#
+cloud_upload.toggle.accept_terms=Acceptera avtalet för Microsoft-tjänster	#
+cloud_upload.button.upload=Ladda upp värld (%s)	#
+cloud_upload.button.service_agreement=Avtalet för Microsoft-tjänster	#
+cloud_upload.terms.title=Villkor	#
+cloud_upload.terms.description=Om du vill ladda upp din värld måste du acceptera avtalet för Microsoft-tjänster. De världar du laddar upp omfattas av avtalet för Microsoft-tjänster. Du kan fortsätta att spela i världen när du har laddat upp den.	#
+cloud_upload.uploading.title=Laddar upp världsfiler [%d/%d]	#
+cloud_upload.uploading.description_1=Det kan ta några minuter att ladda upp dina världsfiler. Stäng inte av spelet och lämna inte den här skärmen medan uppladdningen pågår.	#
+cloud_upload.uploading.description_2=Världar kan vara stora. Anslut till WiFi om du inte vill använda mobildata.	#
+cloud_upload.succeeded.description=Din värld har laddats upp. Tack!	#
+cloud_upload.failed.description=Det gick inte att ladda upp din värld. Försök igen?	#
+cloud_upload.tts.message=Laddar upp världsfiler	#
 
 dr.banner.sale=Rea!	#
 dr.banner.limitedTimeOffer=Tillfälligt erbjudande!	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, lyckade: %s (%s krävs)           	###
 gameTest.error.failed=%s misslyckades!	#
 gameTest.error.succeededInInvalidTick=Lyckades med ogiltig tick: %s förväntades, men aktuell tick är %s	#
 gameTest.error.noTestsFound=Hittade inga tester för taggen %s	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(valfritt)	#
 gameTest.assert.couldNotSetBlock=Det gick inte att setBlock '%s'	#
 gameTest.assert.missingButton=Förväntade en knapp	#
@@ -9598,8 +9607,9 @@ gameTest.assert.missingExplosionComponent=Det går inte tända en stubin för en
 gameTest.assert.invalidEntityInstance=Ogiltig instans av entitet	#
 gameTest.assert.unexpectedParameterValue=Oväntat värde för parametern %s	#
 gameTest.assert.expectEntityInstance=Förväntad instans av entitet	#
-gameTest.assert.invalidFluidType=Invalid fluid type	#
-gameTest.assert.expectCauldron=Expected block of type Cauldron	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
+gameTest.assert.invalidFluidType=Ogiltig vätsketyp	#
+gameTest.assert.expectCauldron=Förväntade block av typen Kittel	#
 gameTest.success.runningTests=Kör %s tester …	#
 gameTest.success.relativePosition=Position i förhållande till %s: %s						### first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=%s godkändes!	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s valfria test misslyckades	#
 gameTest.report.bookTitle=Speltestrapport                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Okänt kommandoläge angivet	#
 script.error.noDebugger=Felsökaren är inte tillgänglig	#
 script.error.debuggerFailed=Det gick inte att starta felsökaren	#

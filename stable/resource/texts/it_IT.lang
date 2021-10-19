@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Feed del reame	#
 accessibility.play.tabLeft=Premi il %s per tab sinistro	#
 accessibility.play.tabRight=Premi il %s per tab destro	#
 accessibility.play.legacyWorldsDelete=Cancella mondo obsoleto	#
+accessibility.play.uploadWorld=Carica mondo	#
 
 accessibility.pause.permissions=Permessi	#
 accessibility.pause.profile=Scegli profilo	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ops! Sembra che tu abbia effettuato l'acce
 
 eula.intro=Per usare Minecraft: Education Edition devi accettare il contratto di licenza per l'utente finale.	#
 eula.location=L'EULA è disponibile all'indirizzo:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Accordo di licenza con l'utente finale	#
 eula.view=Visualizza EULA	#
 eula.callToAction=Fai clic su Accetta per accettare i termini dell'accordo.	#
@@ -767,6 +767,8 @@ commands.code.success=Avviato Code Builder.	#
 commands.compare.failed=Origine e destinazione non sono identici	#
 commands.compare.success=Blocchi comparati: %1$d	#
 commands.compare.tooManyBlocks=Troppi blocchi nell'area specificata (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Danneggia il mondo caricato sul server.	#
 commands.corruptworld.success=Il mondo è stato danneggiato.	#
 commands.daylock.description=Blocca e sblocca il ciclo giorno-notte.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=I dati NBT non corrispondono per %1$
 commands.scoreboard.players.score.notFound=Nessun punteggio di %1$s è stato trovato per %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Il punteggio %1$d NON è compreso tra %2$d e %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Il punteggio %1$d è compreso tra %2$d e %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Hai quasi esaurito lo spazio di archiviazione
 storageSpaceWarningScreen.lowduringgameplay=Lo spazio utilizzabile da Minecraft per salvare mondi e impostazioni è quasi esaurito su questo dispositivo. Che ne pensi di eliminare alcuni elementi che non ti servono più, in modo da riuscire a salvare nuovi elementi?	#
 storageSpaceWarningScreen.fullduringgameplay=Hai esaurito lo spazio di archiviazione e Minecraft non è in grado di salvare i tuoi progressi! Minecraft ti riporterà al menu principale dove potrai liberare dello spazio di archiviazione.	#
 
+edu.signin_screen.viewTerms=Visualizza termini	#
+
 edu.play_screen.view_worlds=VISUALIZZA I MIEI MONDI	#
 edu.play_screen.view_library=VISUALIZZA BIBLIOTECA	#
 edu.play_screen.create_new=CREA NUOVO	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Ricerca	#
 edu.worlds_screen.play=GIOCA	#
 edu.worlds_screen.host=OSPITA	#
 edu.worlds_screen.settings=IMPOSTAZIONI	#
+edu.worlds_screen.manage=GESTISCI	#
+edu.worlds_screen.back=BACKSPACE	#
+edu.worlds_screen.copy=COPIA	#
+edu.worlds_screen.export=ESPORTA	#
+edu.worlds_screen.share=CONDIVIDI	#
+edu.worlds_screen.delete=CANC	#
 edu.worlds_screen.courses_title=I miei corsi	#
 
 edu.templates.title=I miei modelli	#
@@ -3735,6 +3746,7 @@ level.import.success=Importazione livello completata	#
 level.export.failed=Impossibile esportare il livello	#
 level.import.failed=Impossibile importare il livello	#
 level.import.failed.incompatibleEdition=Importazione del livello fallita: formato file non supportato.	#
+
 invite.clear=Annulla selezione	#
 invite.send=Invia %d inviti	#
 invite.sendOne=Invia un invito	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Elitre	#
 item.emerald.name=Smeraldo	#
 item.emptyMap.name=Mappa vuota	#
 item.emptyLocatorMap.name=Mappa esploratore vuota	#
-item.emptyPotion.name=Ampolla d'acqua	#
 item.enchanted_book.name=Libro incantato	#
 item.end_crystal.name=Cristallo dell'End	#
 tile.end_rod.name=Verga dell'End	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (in precedenza %s) è ora nel reame	
 multiplayer.player.left=%s ha abbandonato la partita	#
 multiplayer.player.left.realms=%s ha abbandonato il reame	#
 multiplayer.player.changeToPersona=%s ha modificato l'aspetto del personaggio.	#
-multiplayer.player.changeToSkin=%s è passato alla skin %s.	#
+multiplayer.player.changeToSkin=%s ha cambiato skin.	#
 multiplayer.stopSleeping=Alzati dal letto	#
 multiplayer.texturePrompt.line1=Questo server consiglia l'uso di un pacchetto di risorse personalizzato.	#
 multiplayer.texturePrompt.line2=Desideri scaricarlo e installarlo automagicamente?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Disabilita colorazione meteo	#
 options.dev_disableRenderHud=Disabilita colorazione interfaccia	#
 options.dev_disableRenderItemInHand=Disabilita colorazione oggetti in mano	#
 options.dev_disableRenderMainMenuCubeMap=Disattiva colorazione MappaCubi menu principale	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Disabilita l'animazione in miniatura del menu principale	#
 options.dev_serverInstanceThread=Thread istanza server	#
 options.dev_newCuller=Usa il nuovo culler	#
 options.dev_showBuildInfo=Mostra informazioni build	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Ambiente scoperta (richiede riavvio)	#
 options.discoveryEnvironment.production=Produzione	#
 options.discoveryEnvironment.staging=Pianificazione	#
 options.discoveryEnvironment.local=Locale	#
-options.discoveryEnvironment.dev=Sviluppatore	#
+options.discoveryEnvironment.dev=Sviluppatore [Instabile]	#
 options.dev_realmsEnvironment=Ambiente Realms	#
 options.dev_realms_environment.production=Produzione	#
 options.dev_realms_environment.staging=Pianificazione	#
 options.dev_realms_environment.local=Locale	#
 options.dev_realms_environment.dev=Sviluppatore	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Endpoint Realms	#
 options.dev_realmsEndpointPayment=Pagamento endpoint Realms	#
 options.dev_realmsRelyingParty=Relying party Realms	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Incantesimi correnti	#
 options.dev_unusedTreatmentsTitle=Incantesimi non usati	#
 options.dev_addTreatmentId=Aggiungi ID incantesimo	#
 options.dev_addLabel=Aggiungi	#
+options.dev_applyTreatments=Applica incantesimi	#
 options.dev_resetToDefault=Ripristina predefinite	#
 options.dev_clearFlights=Elimina	#
 options.dev_experimentalProgressions=Sovrascrivi progressi	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Fatica del minatore	#
 potion.digSpeed=Sollecitudine	#
 potion.effects.whenDrank=Quando applicata:	#
 potion.empty=Nessun effetto	#
+potion.emptyPotion.name=Ampolla d'acqua	#
+potion.emptyPotion.splash.name=Ampolla d'acqua lanciabile	#
+potion.emptyPotion.linger.name=Ampolla d'acqua persistente	#
 potion.fireResistance=Resistenza al fuoco	#
 potion.fireResistance.name=Pozione di resistenza al fuoco	#
 potion.fireResistance.splash.name=Pozione di resistenza al fuoco lanciabile	#
@@ -6969,6 +6989,8 @@ store.menu.home=Home	#
 store.itemDetail.back=Dettagli	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Al momento questa funzionalità è disabilitata nella versione Beta.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=G. %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Reclamato	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Conversione mondo non riuscita	#
 worldConversionErrorPrompt.message=Oops, c'è stato un errore durante la conversione del mondo. Riprova più tardi.	#
-worldConversionErrorPrompt.message.upload=C'è stato un errore e non siamo in grado di convertire il tuo mondo. Puoi inviarci il mondo più tardi andando sul tuo vecchio mondo e premendo :_gamepad_face_button_up:., oppure puoi inviarlo adesso, così possiamo indagare per scoprire cosa non ha funzionato.	#
-worldConversionErrorPrompt.sendWorld=Invia mondo ora	#
-worldConversionErrorPrompt.backToWorld=Torna ai mondi	#
-
-worldConversionErrorReport.title=Segnala questo mondo	#
-worldConversionErrorReport.button.reportAndSend=Segnala e invia mondo	#
-worldConversionErrorReport.dropdown.default=Qual era il problema?	#
-worldConversionErrorReport.dropdown.mobs=Le creature si comportavano in modo strano o non erano presenti	#
-worldConversionErrorReport.dropdown.terrain=Il terreno non funzionava o non era presente	#
-worldConversionErrorReport.dropdown.itemsMissing=Ho perso oggetti, creazioni e/o statistiche giocatore	#
-worldConversionErrorReport.dropdown.itemInteraction=Non riuscivo a interagire con gli oggetti	#
-worldConversionErrorReport.dropdown.worldConversion=Conversione mondo non riuscita	#
-worldConversionErrorReport.terms.agreement=Premendo Accetto, invierai il tuo mondo al team di Minecraft. Valgono il Contratto per i Servizi Microsoft e l'Informativa sulla Privacy.	#
-worldConversionErrorReport.terms.agreementForBeta=Caricando il tuo mondo autorizzi Microsoft a testare, ricreare, modificare, distribuire e mostrare pubblicamente il tuo mondo con l'intento di supportare il trasferimento del tuo mondo in Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Visualizza termini	#
-
-
-worldConversionErrorReport.sending.title=Invio Vecchio Mondo in corso	#
-worldConversionErrorReport.sending.description=Invio Vecchio Mondo a Minecraft in corso...	#
-
-worldConversionErrorReport.sending.complete=Invio completato	#
-worldConversionErrorReport.sending.completeMessage.part1=Grazie! Stiamo lavorando a tempo pieno per risolvere tutti i problemi quindi non riusciremo a risponderti riguardo a questo mondo specifico. Ecco qui la tua ricevuta:	#
-worldConversionErrorReport.sending.completeMessage.part2=Ricevuta: %s	#
 
 worldError.corrupted=è danneggiato è non può essere avviato.	#
 worldError.invalidArguments=è stato creato con un parametro non valido.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Isola dei funghi	#
 eduTemplateWorld.starterTown.name=Città iniziale	#
 eduTemplateWorld.tutorialVolumeII.name=Esercitazione volume II	#
 eduTemplateWorld.blocksOfGrass.name=Blocchi d'erba	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Mondo inviato	#
-worldConversion.feedback.failed.title=Invio mondo non riuscito	#
-worldConversion.feedback.done.msg=Grazie per averci inviato una copia del tuo mondo per aiutarci a trovare i bug! Stiamo lavorando a tempo pieno per risolvere tutti i problemi quindi non riusciremo a risponderti riguardo a questo mondo specifico. Ecco qui la tua ricevuta: %s	#
-worldConversion.feedback.failed.msg=Ops! Non siamo riusciti a ricevere il tuo mondo. Controlla la tua connessione a internet o riprova più tardi.	#
-worldConversion.feedback.prompt.title=Invia mondo	#
-worldConversion.feedback.prompt.msg=Il tuo vecchio mondo non funzionava bene o non aveva l'aspetto che doveva? Inviacelo e aiutaci a trovare i bug!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversione completata	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Aggiornamento acquatico (%s)	#
 client.version.1.5=Aggiornamento acquatico (%s)	#
 client.version.1.11=Villaggi e saccheggi (%s)	#
 
+cloud_upload.title=Assistenza giocatori Mojang	#
+cloud_upload.prompt.description=In base al tuo recente ticket di assistenza, l'Assistenza giocatori Mojang ti ha concesso il permesso di caricare il mondo. Puoi caricarlo dalla schermata Selezione mondi o in Impostazioni mondo.	#
+cloud_upload.prompt.do_not_show_toggle=Non visualizzare più questa schermata	#
+cloud_upload.prompt.button.worlds=Vai ai mondi	#
+cloud_upload.prompt.button.learn_more=Ulteriori informazioni	#
+cloud_upload.toggle.accept_terms=Accetta il Contratto di servizi Microsoft	#
+cloud_upload.button.upload=Carica mondo (%s)	#
+cloud_upload.button.service_agreement=Contratto di servizi Microsoft	#
+cloud_upload.terms.title=Termini e condizioni	#
+cloud_upload.terms.description=Per caricare il tuo mondo, accetta il Contratto di servizi Microsoft. I mondi caricati sono soggetti al Contratto di servizi Microsoft. Puoi comunque giocare con il tuo mondo una volta caricato.	#
+cloud_upload.uploading.title=Caricamento dei file del mondo in corso [%d/%d]	#
+cloud_upload.uploading.description_1=Il caricamento dei file del mondo potrebbe richiedere alcuni minuti. Non spegnere il gioco e non abbandonare questa schermata durante il processo di caricamento.	#
+cloud_upload.uploading.description_2=Il mondo può essere di grandi dimensioni. Collegati al Wi-Fi per evitare di utilizzare i dati del cellulare.	#
+cloud_upload.succeeded.description=Il caricamento del mondo è stato completato correttamente. Grazie!	#
+cloud_upload.failed.description=Caricamento del mondo non riuscito. Vuoi riprovare?	#
+cloud_upload.tts.message=Caricamento dei file del mondo	#
+
 dr.banner.sale=Offerta!	#
 dr.banner.limitedTimeOffer=Offerta a tempo limitato!	#
 dressingRoom.skin_color_picker_title=Colore pelle	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, successi: %s (%s richiesti)           
 gameTest.error.failed=%s non riuscito!	#
 gameTest.error.succeededInInvalidTick=Riuscito in tick non valido: previsto %s, ma il tick attuale è %s	#
 gameTest.error.noTestsFound=Nessun test trovato per tag "%s"	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(facoltativo)	#
 gameTest.assert.couldNotSetBlock=Impossibile posizionare il blocco "%s"	#
 gameTest.assert.missingButton=Previsto un pulsante	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Impossibile impostare una fusione di e
 gameTest.assert.invalidEntityInstance=Istanza dell'entità non valida	#
 gameTest.assert.unexpectedParameterValue=Valore imprevisto per il parametro "%s"	#
 gameTest.assert.expectEntityInstance=Istanza dell'entità prevista	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Tipo di fluido non valido	#
 gameTest.assert.expectCauldron=Blocco previsto di tipo Calderone	#
 gameTest.success.runningTests=Esecuzione di %s test in corso...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s test facoltativi non riusciti	#
 gameTest.report.bookTitle=Report dei test del gioco                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Inserita modalità di comando sconosciuta	#
 script.error.noDebugger=Debugger non disponibile	#
 script.error.debuggerFailed=Impossibile avviare il debugger	#

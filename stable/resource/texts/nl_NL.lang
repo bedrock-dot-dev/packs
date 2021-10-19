@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm-feed	#
 accessibility.play.tabLeft=Druk op de %s om naar het linkertabblad te gaan	#
 accessibility.play.tabRight=Druk op de %s om naar het rechtertabblad te gaan	#
 accessibility.play.legacyWorldsDelete=Verouderde wereld verwijderen	#
+accessibility.play.uploadWorld=Wereld uploaden	#
 
 accessibility.pause.permissions=Machtigingen	#
 accessibility.pause.profile=Profiel kiezen	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Het lijkt erop dat je je hebt aangemeld me
 
 eula.intro=Als je Minecraft: Education Edition wilt gebruiken, moet je akkoord gaan met de gebruiksrechtovereenkomst voor eindgebruikers (EULA).	#
 eula.location=De EULA vind je op:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Gebruiksrechtovereenkomst voor eindgebruikers (EULA)	#
 eula.view=EULA bekijken	#
 eula.callToAction=Klik op Akkoord om akkoord te gaan met de bepalingen van deze overeenkomst.	#
@@ -767,6 +767,8 @@ commands.code.success=Code Builder is gestart.	#
 commands.compare.failed=Bron en bestemming zijn niet identiek	#
 commands.compare.success=%1$d blokken vergeleken	#
 commands.compare.tooManyBlocks=Te veel blokken in het opgegeven gebied (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Beschadigt de wereld die op de server is geladen.	#
 commands.corruptworld.success=Wereld beschadigd.	#
 commands.daylock.description=Vergrendelt en ontgrendelt de dag-/nachtcyclus.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=De dataTag komt niet overeen voor %1
 commands.scoreboard.players.score.notFound=Geen %1$s-score voor %2$s gevonden										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Score %1$d ligt NIET binnen het bereik van %2$d tot %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Score %1$d ligt binnen het bereik van %2$d tot %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Je hebt bijna geen opslagruimte meer! Minecra
 storageSpaceWarningScreen.lowduringgameplay=Je apparaat heeft bijna geen opslagruimte meer die Minecraft nodig heeft om werelden en instellingen op dit apparaat op te slaan. Probeer wat oude bestanden te verwijderen die je niet meer nodig hebt om nieuwe dingen te kunnen blijven opslaan.	#
 storageSpaceWarningScreen.fullduringgameplay=Je hebt bijna geen opslagruimte meer en Minecraft kan je voortgang niet opslaan! Je wordt teruggebracht naar het Minecraft-hoofdmenu om extra opslagruimte vrij te maken.	#
 
+edu.signin_screen.viewTerms=Voorwaarden bekijken	#
+
 edu.play_screen.view_worlds=MIJN WERELDEN BEKIJKEN	#
 edu.play_screen.view_library=BIBLIOTHEEK BEKIJKEN	#
 edu.play_screen.create_new=NIEUWE MAKEN	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Zoeken	#
 edu.worlds_screen.play=SPELEN	#
 edu.worlds_screen.host=HOSTEN	#
 edu.worlds_screen.settings=INSTELLINGEN	#
+edu.worlds_screen.manage=BEHEREN	#
+edu.worlds_screen.back=TERUG	#
+edu.worlds_screen.copy=KOPIËREN	#
+edu.worlds_screen.export=EXPORTEREN	#
+edu.worlds_screen.share=DELEN	#
+edu.worlds_screen.delete=VERWIJDEREN	#
 edu.worlds_screen.courses_title=Mijn vakken	#
 
 edu.templates.title=Mijn sjablonen	#
@@ -3735,6 +3746,7 @@ level.import.success=Niveau importeren voltooid	#
 level.export.failed=Niveau exporteren mislukt	#
 level.import.failed=Niveau importeren mislukt	#
 level.import.failed.incompatibleEdition=Kan level niet importeren: niet-ondersteunde bestandsindeling	#
+
 invite.clear=Selectie wissen	#
 invite.send=%d uitnodigingen sturen	#
 invite.sendOne=1 uitnodiging sturen	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Dekschild	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Lege kaart	#
 item.emptyLocatorMap.name=Lege zoekkaart	#
-item.emptyPotion.name=Waterflesje	#
 item.enchanted_book.name=Betoverd boek	#
 item.end_crystal.name=End-kristal	#
 tile.end_rod.name=End-staaf	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (ook wel bekend als %s) heeft zich a
 multiplayer.player.left=%s heeft het spel verlaten	#
 multiplayer.player.left.realms=%s heeft de realm verlaten	#
 multiplayer.player.changeToPersona=%s heeft het uiterlijk van het personage bewerkt.	#
-multiplayer.player.changeToSkin=%s is veranderd naar skin %s.	#
+multiplayer.player.changeToSkin=%s is veranderd van skin.	#
 multiplayer.stopSleeping=Uit bed stappen	#
 multiplayer.texturePrompt.line1=Deze server raadt het gebruik aan van een aangepast resourcepakket.	#
 multiplayer.texturePrompt.line2=Wilt u het automatisch downloaden en installeren?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Weertekening uitschakelen	#
 options.dev_disableRenderHud=Scherminfotekening uitschakelen	#
 options.dev_disableRenderItemInHand=Voorwerp-in-handtekening uitschakelen	#
 options.dev_disableRenderMainMenuCubeMap=Hoofdmenu CubeMap-tekening uitschakelen	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Paperdoll-animatie van hoofdmenu uitschakelen	#
 options.dev_serverInstanceThread=Serverinstantiethread	#
 options.dev_newCuller=Nieuwe culler gebruiken	#
 options.dev_showBuildInfo=Versie-info tonen	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Ontdekkingsomgeving (opnieuw opstarten vereist)	#
 options.discoveryEnvironment.production=Productie	#
 options.discoveryEnvironment.staging=Fasering	#
 options.discoveryEnvironment.local=Plaatselijk	#
-options.discoveryEnvironment.dev=Ontwikkeling	#
+options.discoveryEnvironment.dev=Dev [Instabiel]	#
 options.dev_realmsEnvironment=Realms-omgeving	#
 options.dev_realms_environment.production=Productie	#
 options.dev_realms_environment.staging=Fasering	#
 options.dev_realms_environment.local=Plaatselijk	#
 options.dev_realms_environment.dev=Ontwikkeling	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms Endpoint	#
 options.dev_realmsEndpointPayment=Realms Endpoint-betaling	#
 options.dev_realmsRelyingParty=Realms Relying Party	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Huidige behandelingen	#
 options.dev_unusedTreatmentsTitle=Ongebruikte behandelingen	#
 options.dev_addTreatmentId=Behandelings-id toevoegen	#
 options.dev_addLabel=Toevoegen	#
+options.dev_applyTreatments=Behandelingen toepassen	#
 options.dev_resetToDefault=Opnieuw instellen op standaardwaarden	#
 options.dev_clearFlights=Wissen	#
 options.dev_experimentalProgressions=Voortgangen overschrijven	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Mijnmoeheid	#
 potion.digSpeed=Haast	#
 potion.effects.whenDrank=Indien toegepast:	#
 potion.empty=Geen effecten	#
+potion.emptyPotion.name=Waterfles	#
+potion.emptyPotion.splash.name=Spattende waterfles	#
+potion.emptyPotion.linger.name=Aanhoudende waterfles	#
 potion.fireResistance=Vuurvast	#
 potion.fireResistance.name=Drankje der Vuurbestendigheid	#
 potion.fireResistance.splash.name=Spattende drank der vuurbestendigheid	#
@@ -6969,6 +6989,8 @@ store.menu.home=Start	#
 store.itemDetail.back=Details	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Deze functie is momenteel uitgeschakeld in de bèta.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Dag %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Geclaimd	#
@@ -8380,7 +8402,7 @@ tipped_arrow.effect.fireResistance=Pijl van Vuurbestendigheid	#
 tipped_arrow.effect.moveSpeed=Pijl van Vlotheid	#
 tipped_arrow.effect.moveSlowdown=Pijl van Traagheid	#
 tipped_arrow.effect.water=Pijl van Plonsen	#
-tipped_arrow.effect.waterBreathing=Pijl van Onder water ademen	#
+tipped_arrow.effect.waterBreathing=Pijl des Wateradems	#
 tipped_arrow.effect.heal=Pijl van Genezing	#
 tipped_arrow.effect.harm=Pijl van Verwonding	#
 tipped_arrow.effect.poison=Pijl van Gif	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Conversie van wereld mislukt	#
 worldConversionErrorPrompt.message=Oeps, er is iets misgegaan bij het converteren van je wereld. Probeer het later opnieuw.	#
-worldConversionErrorPrompt.message.upload=Er is iets misgegaan. Je wereld kan niet worden geconverteerd. Je kunt je wereld later verzenden door naar je oude wereld te gaan en op :_gamepad_face_button_up: te drukken. Je kunt je wereld ook nu verzenden, zodat we het probleem kunnen onderzoeken.	#
-worldConversionErrorPrompt.sendWorld=Wereld nu verzenden	#
-worldConversionErrorPrompt.backToWorld=Terug naar werelden	#
-
-worldConversionErrorReport.title=Deze wereld rapporteren	#
-worldConversionErrorReport.button.reportAndSend=Wereld rapporteren en verzenden	#
-worldConversionErrorReport.dropdown.default=Wat is er misgegaan?	#
-worldConversionErrorReport.dropdown.mobs=Mobs deden raar of kwamen niet voor	#
-worldConversionErrorReport.dropdown.terrain=Defect of ontbrekend terrein	#
-worldConversionErrorReport.dropdown.itemsMissing=Mijn items, creaties en/of spelersstatistieken zijn verloren gegaan	#
-worldConversionErrorReport.dropdown.itemInteraction=Interactie met items is niet mogelijk	#
-worldConversionErrorReport.dropdown.worldConversion=Conversie van wereld mislukt	#
-worldConversionErrorReport.terms.agreement=Door Akkoord te kiezen wordt je wereld geüpload naar het Minecraft-team. De servicesovereenkomst en privacyverklaring van Microsoft zijn van toepassing.	#
-worldConversionErrorReport.terms.agreementForBeta=Door je wereld te uploaden, machtig je Microsoft om je wereld te testen, reproduceren, wijzigen, distribueren en openbaar weer te geven om je wereld naar Minecraft te kunnen overbrengen.	#
-worldConversionErrorReport.terms.viewTerms=Voorwaarden bekijken	#
-
-
-worldConversionErrorReport.sending.title=Oude wereld verzenden	#
-worldConversionErrorReport.sending.description=Oude wereld verzenden naar Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Verzenden voltooid	#
-worldConversionErrorReport.sending.completeMessage.part1=Hartelijk dank! We zijn ijverig aan het werk om fouten op te lossen en kunnen niet reageren voor deze specifieke wereld. Hier is je bevestiging dat we deze hebben ontvangen:	#
-worldConversionErrorReport.sending.completeMessage.part2=Ontvangstbewijs: %s	#
 
 worldError.corrupted=is beschadigd en kan niet worden gestart.	#
 worldError.invalidArguments=is gemaakt met ongeldige argumenten.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Paddenstoeleneiland	#
 eduTemplateWorld.starterTown.name=Beginnersstad	#
 eduTemplateWorld.tutorialVolumeII.name=Tutorial II	#
 eduTemplateWorld.blocksOfGrass.name=Blokken gras	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Wereld ingediend	#
-worldConversion.feedback.failed.title=Indienen van wereld mislukt	#
-worldConversion.feedback.done.msg=Hartelijk dank dat je ons een exemplaar van je wereld hebt gestuurd en ons helpt bugs te vinden! We zijn ijverig aan het werk om fouten op te lossen en kunnen niet reageren voor deze specifieke wereld. Hier is je bevestiging dat we deze hebben ontvangen: %s	#
-worldConversion.feedback.failed.msg=Oei, we hebben je wereld niet ontvangen. Controleer je internetverbinding of verzend je wereld later nog eens.	#
-worldConversion.feedback.prompt.title=Wereld indienen	#
-worldConversion.feedback.prompt.msg=Voldeed het uiterlijk of de werking van je oude wereld niet aan je verwachtingen? Stuur ons je wereld en help ons de bugs te vinden!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversie voltooid	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Update Aquatic (%s)	#
 client.version.1.5=Update Aquatic (%s)	#
 client.version.1.11=Village and Pillage (%s)	#
 
+cloud_upload.title=Mojang-spelersondersteuning	#
+cloud_upload.prompt.description=Op basis van je recente ondersteuningsticket heeft Mojang-spelersondersteuning toestemming gegeven om je wereld te uploaden. Je kunt de desbetreffende wereld uploaden vanaf het scherm Wereld selecteren of onder Wereldinstellingen.	#
+cloud_upload.prompt.do_not_show_toggle=Dit scherm niet meer weergeven	#
+cloud_upload.prompt.button.worlds=Ga naar Werelden	#
+cloud_upload.prompt.button.learn_more=Meer informatie	#
+cloud_upload.toggle.accept_terms=Microsoft-servicesovereenkomst accepteren	#
+cloud_upload.button.upload=Wereld uploaden (%s)	#
+cloud_upload.button.service_agreement=Microsoft-servicesovereenkomst	#
+cloud_upload.terms.title=Voorwaarden en bepalingen	#
+cloud_upload.terms.description=Als je je wereld wilt uploaden, moet je de Microsoft-servicesovereenkomst accepteren. Geüploade werelden zijn aan de Microsoft-servicesovereenkomst onderworpen. Je kunt nog steeds in je wereld spelen nadat deze is geüpload.	#
+cloud_upload.uploading.title=Wereldbestanden uploaden [%d/%d]	#
+cloud_upload.uploading.description_1=Het uploaden van je wereldbestanden kan enkele minuten duren. Sluit het spel niet af en verlaat dit scherm niet tijdens het uploadproces.	#
+cloud_upload.uploading.description_2=De wereldbestanden kunnen groot zijn. Maak verbinding met Wi-Fi om te voorkomen dat je mobiele gegevens gebruikt.	#
+cloud_upload.succeeded.description=Je wereldupload is voltooid. Bedankt!	#
+cloud_upload.failed.description=Je wereldupload is mislukt. Probeer het opnieuw.	#
+cloud_upload.tts.message=Wereldbestanden uploaden	#
+
 dr.banner.sale=Aanbieding!	#
 dr.banner.limitedTimeOffer=Tijdelijke aanbieding!	#
 dressingRoom.skin_color_picker_title=Huidskleur	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, geslaagde pogingen: %s (%s vereist)   
 gameTest.error.failed=%s mislukt.	#
 gameTest.error.succeededInInvalidTick=Geslaagd op ongeldige tik: %s werd verwacht, maar huidige tik is %s	#
 gameTest.error.noTestsFound=Geen tests gevonden voor tag %s	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(optioneel)	#
 gameTest.assert.couldNotSetBlock=setBlock %s niet mogelijk	#
 gameTest.assert.missingButton=Een knop werd verwacht	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Kan lont van entiteit niet instellen o
 gameTest.assert.invalidEntityInstance=Ongeldig entiteitsexemplaar	#
 gameTest.assert.unexpectedParameterValue=Onverwachte waarde voor parameter %s	#
 gameTest.assert.expectEntityInstance=Verwacht entiteitsexemplaar	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Ongeldig vloeistoftype	#
 gameTest.assert.expectCauldron=Blok van het type ketel werd verwacht	#
 gameTest.success.runningTests=%s tests uitvoeren...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s optionele tests zijn mislukt	#
 gameTest.report.bookTitle=Speltestrapport                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Onbekende opdrachtmodus opgegeven	#
 script.error.noDebugger=Foutopsporing niet beschikbaar	#
 script.error.debuggerFailed=Kan foutopsporing niet starten	#

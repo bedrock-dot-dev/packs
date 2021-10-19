@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm 피드	#
 accessibility.play.tabLeft=왼쪽을 누르려면 %s 버튼을 누르세요	#
 accessibility.play.tabRight=오른쪽을 누르려면 %s 버튼을 누르세요	#
 accessibility.play.legacyWorldsDelete=기존 월드 삭제	#
+accessibility.play.uploadWorld=월드 업로드	#
 
 accessibility.pause.permissions=권한	#
 accessibility.pause.profile=프로필 선택	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=이런! 개인 계정으로 로그인한 �
 
 eula.intro=Minecraft: Education Edition을 사용하려면 최종 사용자 사용권 계약에 동의해야 합니다.	#
 eula.location=EULA:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=최종 사용자 사용권 계약	#
 eula.view=EULA 보기	#
 eula.callToAction=이 계약의 약관을 수락하려면 수락을 클릭하십시오.	#
@@ -767,6 +767,8 @@ commands.code.success=Code Builder를 실행했습니다.	#
 commands.compare.failed=원본과 대상은 동일할 수 없습니다	#
 commands.compare.success=블록 비교: %1$d	#
 commands.compare.tooManyBlocks=지정된 영역 내 블록 수가 너무 많습니다(%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=서버에 불러온 월드가 손상됩니다.	#
 commands.corruptworld.success=월드가 손상되었습니다.	#
 commands.daylock.description=낮밤 주기를 고정/전환으로 설정합니다.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=dataTag가 %1$s와(과) 일치하지
 commands.scoreboard.players.score.notFound=%2$s에 대한 %1$s 점수를 찾을 수 없습니다.										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=점수(%1$d)가 %2$d~%3$d 범위에 속하지 않습니다.								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=점수(%1$s)가 %2$s~%3$s 범위에 속합니다.								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=데이터 저장 공간이 거의 가득 찼�
 storageSpaceWarningScreen.lowduringgameplay=장치에 공간이 부족하여 Minecraft가 월드 및 설정을 저장할 수 없습니다. 필요 없는 기존 저장들을 삭제하고 새로 저장할 공간을 확보하세요.	#
 storageSpaceWarningScreen.fullduringgameplay=데이터 저장 공간이 가득 차 Minecraft가 진행 상황을 저장할 수 없습니다! Minecraft가 저장 공간 확보를 위해 플레이어를 메인 메뉴로 돌려 보낼 것입니다.	#
 
+edu.signin_screen.viewTerms=약관 보기	#
+
 edu.play_screen.view_worlds=내 월드 보기	#
 edu.play_screen.view_library=라이브러리 보기	#
 edu.play_screen.create_new=새로 만들기	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=검색	#
 edu.worlds_screen.play=플레이	#
 edu.worlds_screen.host=호스트	#
 edu.worlds_screen.settings=설정	#
+edu.worlds_screen.manage=관리	#
+edu.worlds_screen.back=뒤로	#
+edu.worlds_screen.copy=복사	#
+edu.worlds_screen.export=내보내기	#
+edu.worlds_screen.share=공유	#
+edu.worlds_screen.delete=삭제	#
 edu.worlds_screen.courses_title=내 과정	#
 
 edu.templates.title=내 템플릿	#
@@ -3735,6 +3746,7 @@ level.import.success=레벨 불러오기가 성공적으로 완료되었습니�
 level.export.failed=레벨 내보내기 실패	#
 level.import.failed=레벨 불러오기 실패	#
 level.import.failed.incompatibleEdition=레벨 가져오기 실패: 지원되지 않는 파일 형식	#
+
 invite.clear=선택 해제	#
 invite.send=%d명에게 초대장 보내기	#
 invite.sendOne=1명에게 초대장 보내기	#
@@ -4601,7 +4613,6 @@ item.elytra.name=딱지날개	#
 item.emerald.name=에메랄드	#
 item.emptyMap.name=빈 지도	#
 item.emptyLocatorMap.name=빈 위치 정보 지도	#
-item.emptyPotion.name=물병	#
 item.enchanted_book.name=효과부여 책	#
 item.end_crystal.name=엔더 수정	#
 tile.end_rod.name=엔더 막대	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s(예전 %s)님이 Realm에 참여했�
 multiplayer.player.left=%s님이 게임을 떠났습니다	#
 multiplayer.player.left.realms=%s님이 Realm을 떠났습니다	#
 multiplayer.player.changeToPersona=%s 님이 캐릭터 외형을 편집했습니다.	#
-multiplayer.player.changeToSkin=%s님이 %s 스킨으로 변경했습니다.	#
+multiplayer.player.changeToSkin=%s 님이 스킨을 변경했습니다.	#
 multiplayer.stopSleeping=일어나기	#
 multiplayer.texturePrompt.line1=이 서버는 사용자 지정 리소스 팩 사용을 권장하고 있습니다.	#
 multiplayer.texturePrompt.line2=다운로드하고 자동으로 설치하시겠습니까?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=날씨 드로잉 사용 안 함	#
 options.dev_disableRenderHud=HUD 드로잉 사용 안 함	#
 options.dev_disableRenderItemInHand=손에 든 아이템 드로잉 사용 안 함	#
 options.dev_disableRenderMainMenuCubeMap=메인 메뉴 큐브맵 그리기 비활성화	#
+options.dev_disableRenderMainMenuPaperdollAnimation=메인 메뉴 페이퍼돌 애니메이션 비활성화	#
 options.dev_serverInstanceThread=서버 인스턴스 스레드	#
 options.dev_newCuller=새 선별자 사용	#
 options.dev_showBuildInfo=빌드 정보 표시	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=환경 발견(재시작 필요)	#
 options.discoveryEnvironment.production=프로덕션	#
 options.discoveryEnvironment.staging=스테이징	#
 options.discoveryEnvironment.local=로컬	#
-options.discoveryEnvironment.dev=개발	#
+options.discoveryEnvironment.dev=개발 [불안정]	#
 options.dev_realmsEnvironment=Realms 환경	#
 options.dev_realms_environment.production=프로덕션	#
 options.dev_realms_environment.staging=스테이징	#
 options.dev_realms_environment.local=로컬	#
 options.dev_realms_environment.dev=개발	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms 엔드포인트	#
 options.dev_realmsEndpointPayment=Realms 엔드포인트 결제	#
 options.dev_realmsRelyingParty=Realms RP	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=현 처리	#
 options.dev_unusedTreatmentsTitle=사용하지 않은 처리	#
 options.dev_addTreatmentId=실험 ID 추가	#
 options.dev_addLabel=추가	#
+options.dev_applyTreatments=실험 적용	#
 options.dev_resetToDefault=기본값으로 초기화	#
 options.dev_clearFlights=지우기	#
 options.dev_experimentalProgressions=진행 상황 재정의	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=채굴 속도 저하	#
 potion.digSpeed=채굴 속도 향상	#
 potion.effects.whenDrank=적용 시:	#
 potion.empty=효과 없음	#
+potion.emptyPotion.name=물병	#
+potion.emptyPotion.splash.name=투척용 물병	#
+potion.emptyPotion.linger.name=잔류형 물병	#
 potion.fireResistance=화염 저항	#
 potion.fireResistance.name=화염 저항 포션	#
 potion.fireResistance.splash.name=투척용 화염 저항 포션	#
@@ -6969,6 +6989,8 @@ store.menu.home=홈	#
 store.itemDetail.back=세부정보	#
 store.coin.bonus=보너스!	#
 store.disabledOnBeta=이 기능은 현재 베타에서 비활성화되어 있습니다.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=%s		일	### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=신청 완료	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=월드 전환 실패	#
 worldConversionErrorPrompt.message=이런 월드 전환 중에 문제가 발생했습니다. 나중에 다시 시도하십시오.	#
-worldConversionErrorPrompt.message.upload=죄송합니다. 월드를 전환하는 데 문제가 있습니다. 나중에 기존 월드에서 :_gamepad_face_button_up:을 눌러 월드를 다시 전송하거나 추가 검토를 위해 지금 월드를 전송해주실 수 있습니다.	#
-worldConversionErrorPrompt.sendWorld=지금 월드 전송하기	#
-worldConversionErrorPrompt.backToWorld=월드 목록으로 돌아가기	#
-
-worldConversionErrorReport.title=월드 신고하기	#
-worldConversionErrorReport.button.reportAndSend=월드 신고 후 전송하기	#
-worldConversionErrorReport.dropdown.default=문제를 알려주세요.	#
-worldConversionErrorReport.dropdown.mobs=몹 행동 이상 또는 미생성	#
-worldConversionErrorReport.dropdown.terrain=지형 이상 또는 미생성	#
-worldConversionErrorReport.dropdown.itemsMissing=아이템, 만든 내용 또는 플레이어 통계 손실	#
-worldConversionErrorReport.dropdown.itemInteraction=아이템 사용 불가	#
-worldConversionErrorReport.dropdown.worldConversion=월드 전환 실패	#
-worldConversionErrorReport.terms.agreement='동의'를 선택하면 Minecraft 팀에게 월드를 전송합니다. Microsoft 서비스 계약 및 개인정보보호정책이 적용됩니다.	#
-worldConversionErrorReport.terms.agreementForBeta=월드를 업로드하면 Microsoft가 귀하의 월드를 Micecraft에 전송을 지원하기 위해 귀하의 월드를 테스트, 재생, 수정, 배포 및 공개적으로 표시하는 것을 승인하게 됩니다.	#
-worldConversionErrorReport.terms.viewTerms=약관 보기	#
-
-
-worldConversionErrorReport.sending.title=기존 월드 전송 중	#
-worldConversionErrorReport.sending.description=기존 월드를 Minecraft로 전송합니다...	#
-
-worldConversionErrorReport.sending.complete=전송 완료	#
-worldConversionErrorReport.sending.completeMessage.part1=감사합니다. 비록 이 월드에 대한 답변을 따로 제공하지는 못하지만 게임 개선을 위해 최선을 다하고 있으니 양해 부탁드립니다. 전송 확인 정보:	#
-worldConversionErrorReport.sending.completeMessage.part2=전송됨: %s	#
 
 worldError.corrupted=에 오류가 발생하여 시작할 수 없습니다.	#
 worldError.invalidArguments=은(는) 유효하지 않은 인수로 생성되었습니다.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=버섯 섬	#
 eduTemplateWorld.starterTown.name=Starter Town	#
 eduTemplateWorld.tutorialVolumeII.name=사용 지침 II	#
 eduTemplateWorld.blocksOfGrass.name=잔디 블록	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=월드 제출 완료	#
-worldConversion.feedback.failed.title=월드 제출 실패	#
-worldConversion.feedback.done.msg=감사합니다. 월드 사본이 전송되었으며 버그 분석에 사용됩니다. 비록 이 월드에 대한 답변을 따로 제공하지는 못하지만 게임 개선을 위해 최선을 다하고 있으니 양해 부탁드립니다. 전송 확인 정보: %s	#
-worldConversion.feedback.failed.msg=죄송합니다. 월드가 전송되지 않았습니다. 인터넷 연결 상태를 확인하고 다시 보내주세요.	#
-worldConversion.feedback.prompt.title=월드 제출하기	#
-worldConversion.feedback.prompt.msg=기존 월드의 외관이나 플레이가 달라졌나요? 월드를 보내주시면 버그 분석에 도움이 됩니다!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=전환 완료	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Update Aquatic(%s)	#
 client.version.1.5=Update Aquatic(%s)	#
 client.version.1.11=마을과 약탈(%s)	#
 
+cloud_upload.title=Mojang 플레이어 지원	#
+cloud_upload.prompt.description=최근 귀하의 지원 티켓을 근거로 Mojang 플레이어 지원팀에선 월드를 업로드할 수 있는 권한을 부여하였습니다. 월드 선택 화면 혹은 월드 설정에서 영향을 받은 월드를 업로드할 수 있습니다.	#
+cloud_upload.prompt.do_not_show_toggle=이 화면을 다시 표시하지 않습니다	#
+cloud_upload.prompt.button.worlds=월드로 이동	#
+cloud_upload.prompt.button.learn_more=자세히 알아보기	#
+cloud_upload.toggle.accept_terms=Microsoft 서비스 계약 동의	#
+cloud_upload.button.upload=월드 업로드 (%s)	#
+cloud_upload.button.service_agreement=Microsoft 서비스 계약	#
+cloud_upload.terms.title=이용 약관	#
+cloud_upload.terms.description=월드를 업로드하려면 Microsoft 서비스 계약에 동의하십시오. 업로드된 월드는 Microsoft 서비스 계약의 대상이 됩니다. 업로드한 뒤에도 월드를 여전히 플레이할 수 있습니다.	#
+cloud_upload.uploading.title=월드 파일 업로드 중 [%d/%d]	#
+cloud_upload.uploading.description_1=월드 파일 업로드에 몇 분 정도 걸릴 수 있습니다. 업로드 중에 게임을 종료하거나 이 화면을 떠나지 마십시오.	#
+cloud_upload.uploading.description_2=월드 사이즈는 거대할 수 있습니다. 무선 데이터 사용을 피하려면 WiFi에 연결하십시오.	#
+cloud_upload.succeeded.description=월드 업로드를 성공적으로 완료했습니다. 감사합니다!	#
+cloud_upload.failed.description=월드 업로드에 실패했습니다. 다시 시도하시겠습니까?	#
+cloud_upload.tts.message=월드 파일 업로드 중	#
+
 dr.banner.sale=세일!	#
 dr.banner.limitedTimeOffer=기간 한정 할인!	#
 dressingRoom.skin_color_picker_title=스킨 색	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, 성공: %s (%s 필요)           	### 
 gameTest.error.failed=%s 실패했습니다!	#
 gameTest.error.succeededInInvalidTick=올바르지 않은 틱 성공: 예상 %s, 하지만 현재 틱은 %s입니다	#
 gameTest.error.noTestsFound=태그 '%s'에 대한 테스트가 없습니다	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(선택 사항)	#
 gameTest.assert.couldNotSetBlock='%s' 블록을 설정할 수 없습니다	#
 gameTest.assert.missingButton=버튼이 필요합니다	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=폭발 구성 요소가 없기 때문�
 gameTest.assert.invalidEntityInstance=올바르지 않은 엔티티 인스턴스	#
 gameTest.assert.unexpectedParameterValue='%s' 매개 변수의 예기치 않은 값	#
 gameTest.assert.expectEntityInstance=예상한 엔티티 인스턴스	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=잘못된 유체 유형	#
 gameTest.assert.expectCauldron=가마솥 유형의 예상 블록	#
 gameTest.success.runningTests=%s 테스트 실행 중...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s 선택적 테스트에 실패했습니다	#
 gameTest.report.bookTitle=게임 테스트 보고서                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=알 수 없는 커맨드 모드가 제공됨	#
 script.error.noDebugger=디버거를 사용할 수 없음	#
 script.error.debuggerFailed=디버거를 시작하지 못했습니다.	#

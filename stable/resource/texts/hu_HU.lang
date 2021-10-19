@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm hírcsatorna	#
 accessibility.play.tabLeft=Nyomd meg a(z) %s gombot a balra lapozáshoz	#
 accessibility.play.tabRight=Nyomd meg a(z) %s gombot a jobbra lapozáshoz	#
 accessibility.play.legacyWorldsDelete=Régi világ törlése	#
+accessibility.play.uploadWorld=Világ feltöltése	#
 
 accessibility.pause.permissions=Engedélyek	#
 accessibility.pause.profile=Profil kiválasztása	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hoppá! Úgy tűnik, egy személyes fiókk
 
 eula.intro=A Minecraft: Education Edition használatához el kell fogadnod a végfelhasználói licencszerződést.	#
 eula.location=Ez itt olvasható:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Végfelhasználói licencszerződés	#
 eula.view=Végfelhasználói licencszerződés megtekintése	#
 eula.callToAction=A licencszerződés feltételeinek elfogadásához kattints az Elfogadás gombra.	#
@@ -767,6 +767,8 @@ commands.code.success=Elindította a Code Buildert.	#
 commands.compare.failed=A forrás és a cél nem egyeznek	#
 commands.compare.success=Összehasonlítottál %1$d blokkot	#
 commands.compare.tooManyBlocks=Túl sok blokk van a megadott területen (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Tönkreteszi a kiszolgálóra betöltött világot.	#
 commands.corruptworld.success=Sikeresen tönkretetted a világot.	#
 commands.daylock.description=Az éjszaka-nappal ciklus zárolása és feloldása.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=%1$s adatcímkéje nem egyezik						
 commands.scoreboard.players.score.notFound=Nem található %1$s pontszám %2$s részére										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=A(z) %1$d eredmény NEM ebben a tartományban van: %2$d – %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=A(z) %1$d eredmény ebben a tartományban van: %2$d – %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2163,8 +2166,8 @@ xbl.syncIAP.confirmSync.prompt.yes=Igen, szinkronizálom vásárlásaimat	#
 
 xbl.marketplace.account.error.body.nobutton=Probléma lépett fel a fiókoddal. A probléma megoldásáig nem használhatod a Piacteret. Ha a hiba több napon át fennáll, lépj kapcsolatba a terméktámogatással.	#
 
-playfab.account.banned.title=Kitiltva	#
-playfab.account.banned.body=Kitiltottak a Minecraft rendszerből. A kitiltás ideje alatt nem fogsz tudni játszani a világaidon (bizonyos platformokon), nem játszhatsz a szervereken, nem csatlakozhatsz realmekhez, nem tudsz többjátékos játékokat indítani vagy ilyenekhez csatlakozni, illetve a piacteret sem használhatod. Ha van aktív Realm-előfizetésed, akkor le kell mondanod ugyanabban az áruházban, amelyben megvásároltad.	#
+playfab.account.banned.title=Letiltottak	#
+playfab.account.banned.body=Letiltottak a Minecraft többjátékos módjának használatától. A továbbiakban nem fogsz tudni játszani a kiszolgálókon, nem csatlakozhatsz realmekhez, nem tudsz többjátékos játékokat indítani vagy ilyenekhez csatlakozni, illetve a piacteret sem használhatod. Ha van aktív Realm-előfizetésed, akkor le kell mondanod ugyanabban az áruházban, amelyben megvásároltad.	#
 playfab.account.banned.body.button=További információk	#
 
 store.sign_in_warning.no_xbl_and_local_content=Fontos! Olyan csomagokat és/vagy Minecoinokat vásároltál, amelyek csak ezen az eszközön elérhetőek, és elvesznek, ha az eszköz meghibásodik, vagy a Minecraft eltávolításra kerül! Jelentkezz be egy Microsoft-fiókkal (ennek létrehozása ingyenes), és vidd át csomag- és érmejogosultságaidat arra a fiókra, hogy később bármilyen eszközön hozzájuk férhess bejelentkezés után.	#
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Majdnem elfogyott a tárhelyed! A Minecraft k
 storageSpaceWarningScreen.lowduringgameplay=Elfogyott a tárhelyed, amelyre a Minecraft világokat és beállításokat menthet el ezen az eszközön. Miért nem törölsz néhány régi cuccot, ami már nem kell, hogy továbbra is elmenthesd az új dolgokat?	#
 storageSpaceWarningScreen.fullduringgameplay=Elfogyott a tárhelyed, ezért a Minecraft nem tudja menteni a játék állását! A Minecraft visszatér a főmenübe, ahol tárhelyet szabadíthatsz fel.	#
 
+edu.signin_screen.viewTerms=Feltételek megtekintése	#
+
 edu.play_screen.view_worlds=SAJÁT VILÁGOK MEGTEKINTÉSE	#
 edu.play_screen.view_library=KÖNYVTÁR MEGTEKINTÉSE	#
 edu.play_screen.create_new=ÚJ LÉTREHOZÁSA	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Keresés	#
 edu.worlds_screen.play=JÁTÉK	#
 edu.worlds_screen.host=JÁTÉKGAZDA	#
 edu.worlds_screen.settings=BEÁLLÍTÁSOK	#
+edu.worlds_screen.manage=KEZELÉS	#
+edu.worlds_screen.back=VISSZA	#
+edu.worlds_screen.copy=MÁSOLÁS	#
+edu.worlds_screen.export=EXPORTÁLÁS	#
+edu.worlds_screen.share=MEGOSZTÁS	#
+edu.worlds_screen.delete=TÖRLÉS	#
 edu.worlds_screen.courses_title=Tanfolyamaim	#
 
 edu.templates.title=Saját sablonok	#
@@ -3735,6 +3746,7 @@ level.import.success=A szint importálása sikeresen befejeződött	#
 level.export.failed=A szint exportálása nem sikerült	#
 level.import.failed=A szint importálása nem sikerült	#
 level.import.failed.incompatibleEdition=A szint betöltése sikertelen: nem támogatott fájlformátum	#
+
 invite.clear=Kijelölés törlése	#
 invite.send=%d meghívó elküldése	#
 invite.sendOne=1 meghívó elküldése	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Elytra	#
 item.emerald.name=Smaragd	#
 item.emptyMap.name=Üres térkép	#
 item.emptyLocatorMap.name=Üres helymeghatározó térkép	#
-item.emptyPotion.name=Vizesüveg	#
 item.enchanted_book.name=Varázskönyv	#
 item.end_crystal.name=Vég-kristály	#
 tile.end_rod.name=Vég-oszlop	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (korábbi nevén %s) csatlakozott a 
 multiplayer.player.left=%s kilépett a játékból	#
 multiplayer.player.left.realms=%s kilépett a Realmből	#
 multiplayer.player.changeToPersona=%s módosított a karakter megjelenésén.	#
-multiplayer.player.changeToSkin=%s a(z) %s felületre váltott.	#
+multiplayer.player.changeToSkin=%s másik felületre váltott.	#
 multiplayer.stopSleeping=Kiszállás az ágyból	#
 multiplayer.texturePrompt.line1=A kiszolgáló egyéni erőforráscsomag használatát javasolja.	#
 multiplayer.texturePrompt.line2=Letöltöd és telepíted varázsképességű telepítőnkkel?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Időjárás-megjelenítés kikapcsolása	#
 options.dev_disableRenderHud=Kezelőfelület-megjelenítés kikapcsolása	#
 options.dev_disableRenderItemInHand=Kézben lévő tárgy megjelenítésének kikapcsolása	#
 options.dev_disableRenderMainMenuCubeMap=A főmenü CubeMap-rajzolás funkciójának letiltása	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Paperdoll animáció letiltása a főmenüben	#
 options.dev_serverInstanceThread=Kiszolgáló példány szála	#
 options.dev_newCuller=Új culler használata	#
 options.dev_showBuildInfo=Build adatainak megjelenítése	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Felderítési környezet (újraindítást igényel)
 options.discoveryEnvironment.production=Végleges	#
 options.discoveryEnvironment.staging=Átmeneti	#
 options.discoveryEnvironment.local=Helyi	#
-options.discoveryEnvironment.dev=Fejlesztői	#
+options.discoveryEnvironment.dev=Fejlesztő [Instabil]	#
 options.dev_realmsEnvironment=Realms-környezet	#
 options.dev_realms_environment.production=Valós	#
 options.dev_realms_environment.staging=Átmeneti	#
 options.dev_realms_environment.local=Helyi	#
 options.dev_realms_environment.dev=Fejlesztői	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms-végpont	#
 options.dev_realmsEndpointPayment=Realms-végpont előfizetése	#
 options.dev_realmsRelyingParty=Realms függő entitása	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Aktuális kezelések	#
 options.dev_unusedTreatmentsTitle=Fel nem használt kezelések	#
 options.dev_addTreatmentId=Kezelés azonosítójának megadása	#
 options.dev_addLabel=Megadás	#
+options.dev_applyTreatments=Kezelések alkalmazása	#
 options.dev_resetToDefault=Visszaállítás alapértelmezettre	#
 options.dev_clearFlights=Törlés	#
 options.dev_experimentalProgressions=Előrehaladások felülbírálása	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Bányászfáradtság	#
 potion.digSpeed=Sietség	#
 potion.effects.whenDrank=Hatása:	#
 potion.empty=Nincs hatása	#
+potion.emptyPotion.name=Vizesüveg	#
+potion.emptyPotion.splash.name=Robbanó vizespalack	#
+potion.emptyPotion.linger.name=Időző vizespalack	#
 potion.fireResistance=Tűzállóság	#
 potion.fireResistance.name=Tűzállóság bájitala	#
 potion.fireResistance.splash.name=Tűzállóság robbanó bájitala	#
@@ -6969,6 +6989,8 @@ store.menu.home=Kezdőlap	#
 store.itemDetail.back=Részletek	#
 store.coin.bonus=Bónusz!	#
 store.disabledOnBeta=Ez a funkció jelenleg le van tiltva a béta változatban.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=%s		 nap	### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Megszerezve	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Nem sikerült konvertálni a világot	#
 worldConversionErrorPrompt.message=Hiba történt a világ konvertálása során. Próbálkozz később.	#
-worldConversionErrorPrompt.message.upload=Hiba történt. Nem sikerült konvertálni a világot. A világot később is elküldheted nekünk úgy, hogy belépsz a régi világba, és megnyomod a :_gamepad_face_button_up: gombot. Illetve most is elküldheted, hogy kivizsgáljuk a problémát.	#
-worldConversionErrorPrompt.sendWorld=Világ küldése most	#
-worldConversionErrorPrompt.backToWorld=Vissza a világokhoz	#
-
-worldConversionErrorReport.title=Világ bejelentése	#
-worldConversionErrorReport.button.reportAndSend=Bejelentés és világ elküldése	#
-worldConversionErrorReport.dropdown.default=Milyen hibát észleltél?	#
-worldConversionErrorReport.dropdown.mobs=A mobok hibásan működtek vagy hiányoztak	#
-worldConversionErrorReport.dropdown.terrain=A terep hibás volt vagy hiányzott	#
-worldConversionErrorReport.dropdown.itemsMissing=Elveszítettem az elemeimet, alkotásaimat és/vagy játékosstatisztikáimat	#
-worldConversionErrorReport.dropdown.itemInteraction=Nem tudtam használni az elemeket	#
-worldConversionErrorReport.dropdown.worldConversion=Nem sikerült konvertálni a világot	#
-worldConversionErrorReport.terms.agreement=Az Elfogadom gombra kattintva elküldöd a világot a Minecraft csapatának. Erre vonatkozik a Microsoft szolgáltatási szerződése és adatvédelmi nyilatkozata.	#
-worldConversionErrorReport.terms.agreementForBeta=A világod feltöltésével engedélyezed a Microsoft számára, hogy a Minecraftba történő átkódoláshoz tesztelje, lemásolja, módosítsa, terjessze és nyilvánosan közzétegye a világot.	#
-worldConversionErrorReport.terms.viewTerms=Feltételek megtekintése	#
-
-
-worldConversionErrorReport.sending.title=Régi világ küldése	#
-worldConversionErrorReport.sending.description=Régi világ küldése a Minecraftba...	#
-
-worldConversionErrorReport.sending.complete=A küldés véget ért	#
-worldConversionErrorReport.sending.completeMessage.part1=Köszönjük, keményen dolgozunk a hibák kijavításán, de ezzel világgal kapcsolatban külön visszajelzést nem fogunk küldeni. Íme az igazolás, hogy megkaptuk:	#
-worldConversionErrorReport.sending.completeMessage.part2=Igazolás: %s	#
 
 worldError.corrupted=sérült, ezért nem indítható el.	#
 worldError.invalidArguments=érvénytelen argumentummal lett létrehozva.	#
@@ -8670,7 +8669,7 @@ xbox.firstsignin.line3=Még nincs fiókod? Hozz létre egyet most a mérföldkö
 xbox.firstsignin.line3.norealmsOrServers=Még nincs fiókod? Hozz létre egyet most, hogy eredményeket szerezz és együtt játszhass más platformot használó barátaiddal!	#
 xbox.failedsignin.body=Nem tudtunk beléptetni a Microsoft-fiókodba. Így csak korlátozott mértékben férsz hozzá a Realmshez, a profilokhoz és a Piactéren vásárolt elemekhez. Próbálkozz újra később.	#
 xbox.failedsignin.error=Hibakód:	#
-xbox.failedsignin.moreInfo=More Info	#
+xbox.failedsignin.moreInfo=További információk	#
 xbox.dev_wrongSandboxSigninFailed.title=Hiba történt	#
 xbox.dev_wrongSandboxSigninFailed.line1=Nem sikerült bejelentkezni a(z) %s nyílt világba. Kérjük, válts nyílt világot, és indítsd újra a Minecraftot, vagy jelentkezz be egy másik fiókkal. A nyílt világ ez lesz: %s az újrainduláskor. 	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=Váltás a fejlesztői nyílt világra	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Gomba-sziget	#
 eduTemplateWorld.starterTown.name=Kezdőváros	#
 eduTemplateWorld.tutorialVolumeII.name=Oktató, II. kötet.	#
 eduTemplateWorld.blocksOfGrass.name=Fűblokkok	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Elküldted a világot	#
-worldConversion.feedback.failed.title=Nem sikerült elüldeni a világot	#
-worldConversion.feedback.done.msg=Köszönjük, hogy elküldted a világ másolatát, és ezzel segítesz megtalálni a hibákat! Keményen dolgozunk ezek kijavításán, de ezzel a világgal kapcsolatban külön visszajelzést nem fogunk küldeni. Íme az igazolás, hogy megkaptuk: %s	#
-worldConversion.feedback.failed.msg=Hoppá, nem kaptuk meg a világot. Ellenőrizd az internetkapcsolatot, és próbáld újra elküldeni később.	#
-worldConversion.feedback.prompt.title=Világ beküldése	#
-worldConversion.feedback.prompt.msg=A régi világod nem úgy nézett ki vagy működött, ahogy kellett volna? Küldd el nekünk, és segíts megtalálni a hibákat!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Sikeres konverzió	#
@@ -9216,48 +9207,48 @@ hbui.Toggle.select=Kijelölés	#
 hbui.Toggle.selected=kiválasztva	#
 
 ## Save Location Transfer
-save_location_transfer.progress.title=Moving files	#
-save_location_transfer.progress.message=Moving "%s"...	#
-save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.	#
+save_location_transfer.progress.title=Fájlok áthelyezése	#
+save_location_transfer.progress.message=„%s” áthelyezése...	#
+save_location_transfer.worlds_error=Egyes világok nem érhetők el, mivel nem sikerült őket áthelyezni. Az ismételt próbálkozáshoz indítsd újra a Minecraftot.	#
 
-save_location_transfer.button.get_started=Get started	#
-save_location_transfer.button.retry=Retry	#
-save_location_transfer.button.go_to_faq=Go to FAQ	#
-save_location_transfer.button.next=Next	#
-save_location_transfer.button.resume=Resume	#
-save_location_transfer.button.continue=Continue	#
-save_location_transfer.button.start=Start moving files	#
-save_location_transfer.button.marketplace=Your Marketplace packs	#
-save_location_transfer.button.main_menu=Go to Main menu	#
-save_location_transfer.button.faq=Read the FAQ for more info.	#
-save_location_transfer.button.microsoft_store=Go to Microsoft Store	#
-save_location_transfer.button.help=Help	#
+save_location_transfer.button.get_started=Első lépések	#
+save_location_transfer.button.retry=Újra	#
+save_location_transfer.button.go_to_faq=Ugrás a gyakori kérdésekhez	#
+save_location_transfer.button.next=Következő	#
+save_location_transfer.button.resume=Folytatás	#
+save_location_transfer.button.continue=Tovább	#
+save_location_transfer.button.start=Fájlok áthelyezésének megkezdése	#
+save_location_transfer.button.marketplace=Piactéri csomagjaid	#
+save_location_transfer.button.main_menu=Ugrás a főmenübe	#
+save_location_transfer.button.faq=További információkért olvasd el a gyakori kérdéseket.	#
+save_location_transfer.button.microsoft_store=Ugrás a Microsoft Store-ba	#
+save_location_transfer.button.help=Súgó	#
 
-save_location_transfer.title.initializing=Optimizing data	#
-save_location_transfer.gathering_info.description=Gathering information...	#
-save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.	#
+save_location_transfer.title.initializing=Adatok optimalizálása	#
+save_location_transfer.gathering_info.description=Információk összegyűjtése...	#
+save_location_transfer.description.out_of_space=Nincs elegendő szabad hely a fájlok új helyre való áthelyezéséhez.	#
 
-save_location_transfer.start_transfer.generic.title=New storage location	#
-save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.	#
-save_location_transfer.start_transfer.total_file_size=Total file size:	#
-save_location_transfer.start_transfer.new_location=New location: %s	#
+save_location_transfer.start_transfer.generic.title=Új tárolási hely	#
+save_location_transfer.start_transfer.description=Át kell helyeznünk a fájlokat egy másik helyre az eszközödön.	#
+save_location_transfer.start_transfer.total_file_size=Teljes fájlméret:	#
+save_location_transfer.start_transfer.new_location=Új hely: %s	#
 
-save_location_transfer.resume_transfer.title=Move was interrupted	#
-save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.	#
-save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.	#
-save_location_transfer.resume_transfer.need_to_move=Need to move:	#
-save_location_transfer.resume_transfer.available=(%s available)	#
-save_location_transfer.resume_transfer.location=Location: %s	#
-save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.	#
+save_location_transfer.resume_transfer.title=Az áthelyezés megszakadt	#
+save_location_transfer.resume_transfer.description=Jelenleg azon dolgozunk, hogy áthelyezzük az adatokat egy új helyre az eszközödön. Az áthelyezés folytatásához nyomd meg a Folytatás gombot.	#
+save_location_transfer.resume_transfer.description.out_of_space=Jelenleg azon dolgozunk, hogy áthelyezzük az adatokat egy új helyre az eszközödön, de nincs elegendő szabad hely.	#
+save_location_transfer.resume_transfer.need_to_move=Az áthelyezéshez szükséges:	#
+save_location_transfer.resume_transfer.available=(%s elérhető)	#
+save_location_transfer.resume_transfer.location=Hely: %s	#
+save_location_transfer.resume_transfer.free_up=Szabadíts fel legalább %s helyet a folytatáshoz.	#
 
-save_location_transfer.transfer_error_out_of_space.title=Not enough free space	#
-save_location_transfer.transfer_error_out_of_space.files_left=Files left:	#
+save_location_transfer.transfer_error_out_of_space.title=Nincs elég szabad hely	#
+save_location_transfer.transfer_error_out_of_space.files_left=Fennmaradó fájlok:	#
 
-save_location_transfer.finished.generic.title=All done	#
-save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.	#
+save_location_transfer.finished.generic.title=Minden kész!	#
+save_location_transfer.finished.generic.description=Sikeresen áthelyeztük a fájlokat. Indítsd újra a Minecraftot.	#
 
-save_location_transfer.transfer_error.title=Trouble moving files!	#
-save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).	#
+save_location_transfer.transfer_error.title=Probléma merült fel a fájlok áthelyezése során.	#
+save_location_transfer.transfer_error.description=Nem sikerült áthelyezni az összes fájlodat. A következő hibába ütköztünk: (%s).	#
 
 trade.doesNotWant=A kereskedő nem akarja ezt	#
 trade.excalamation=!	#
@@ -9303,6 +9294,23 @@ client.version.1.2=Better Together frissítés (%s)	#
 client.version.1.4=Aquatic frissítés (%s)	#
 client.version.1.5=Aquatic frissítés (%s)	#
 client.version.1.11=Falvak és fosztogatók frissítés (%s)	#
+
+cloud_upload.title=Mojang játékostámogatás	#
+cloud_upload.prompt.description=A Mojang játékostámogatás a legutóbbi támogatási jegyed alapján engedélyezte a világod feltöltését. Az érintett világot a Világválasztás képernyőről vagy a Világbeállítások területen töltheted fel.	#
+cloud_upload.prompt.do_not_show_toggle=Képernyő végleges elrejtése	#
+cloud_upload.prompt.button.worlds=Ugrás a Világokra	#
+cloud_upload.prompt.button.learn_more=További részletek	#
+cloud_upload.toggle.accept_terms=Microsoft Szolgáltatási szerződés elfogadása	#
+cloud_upload.button.upload=Világ feltöltése (%s)	#
+cloud_upload.button.service_agreement=Microsoft szolgáltatási szerződés	#
+cloud_upload.terms.title=Felhasználási feltételek	#
+cloud_upload.terms.description=A világ feltöltéséhez fogadd el a Microsoft szolgáltatási szerződését. A feltöltött világokra a Microsoft szolgáltatási szerződése vonatkozik. A világoddal feltöltés után is játszhatsz.	#
+cloud_upload.uploading.title=Világfájlok feltöltése [%d/%d]	#
+cloud_upload.uploading.description_1=A világfájlok feltöltése eltarthat néhány percig. A feltöltési folyamat alatt ne kapcsold ki a játékot, és ne hagyd el ezt a képernyőt.	#
+cloud_upload.uploading.description_2=A világok mérete igen nagy lehet. Csatlakozz a WiFi-hálózathoz, hogy ne mobiladat-forgalmat használj.	#
+cloud_upload.succeeded.description=A világ feltöltése sikeresen befejeződött. Köszönjük!	#
+cloud_upload.failed.description=A világ feltöltése sikertelen volt. Megpróbálod újra?	#
+cloud_upload.tts.message=Világfájlok feltöltése	#
 
 dr.banner.sale=Vásár!	#
 dr.banner.limitedTimeOffer=Korlátozott ideig elérhető ajánlat!	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, sikerek száma: %s (%s szükséges)   
 gameTest.error.failed=%s sikertelen!	#
 gameTest.error.succeededInInvalidTick=Érvénytelen órajelnél sikerült: várható órajel: %s, de az aktuális órajel: %s	#
 gameTest.error.noTestsFound=Nem található teszt a következő címkével: '%s'	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(nem kötelező)	#
 gameTest.assert.couldNotSetBlock=A(z) %s blokk nem állítható be	#
 gameTest.assert.missingButton=A rendszer gombot várt	#
@@ -9598,8 +9607,9 @@ gameTest.assert.missingExplosionComponent=Az entitás nem állítható be robban
 gameTest.assert.invalidEntityInstance=Érvénytelen entitáspéldány	#
 gameTest.assert.unexpectedParameterValue=A(z) '%s' paraméter váratlan értéke	#
 gameTest.assert.expectEntityInstance=Várható entitáspéldány	#
-gameTest.assert.invalidFluidType=Invalid fluid type	#
-gameTest.assert.expectCauldron=Expected block of type Cauldron	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
+gameTest.assert.invalidFluidType=Érvénytelen folyadéktípus	#
+gameTest.assert.expectCauldron=Várt blokktípus: üst	#
 gameTest.success.runningTests=%s teszt futtatása...	#
 gameTest.success.relativePosition=Pozíció a következőhöz képest: %s: %s						### first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=%s sikerült!	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s opcionális teszt sikertelen	#
 gameTest.report.bookTitle=Játéktesztjelentés                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Ismeretlen parancsmódot adtak meg	#
 script.error.noDebugger=A hibakereső nem érhető el	#
 script.error.debuggerFailed=Nem sikerült elindítani a hibakeresőt	#

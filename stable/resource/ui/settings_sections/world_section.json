@@ -801,6 +801,17 @@
         }
       },
       {
+        "always_day_toggle@settings_common.option_toggle": {
+          "$tts_section_header": "createWorldScreen.cheatSettings",
+          "$option_label": "createWorldScreen.alwaysDay",
+          "$option_binding_name": "#always_day",
+          "$option_enabled_binding_name": "#always_day_enabled",
+          "$toggle_name": "always_day",
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "$toggle_binding_condition": "always_when_visible"
+        }
+      },
+      {
         "daylight_cycle_toggle@settings_common.option_toggle": {
           "$tts_section_header": "createWorldScreen.cheatSettings",
           "$option_label": "createWorldScreen.daylightcycle",
@@ -902,17 +913,6 @@
           "$text_box_name": "random_tick_speed_text_box",
           "$button_text": "createWorldScreen.randomtickspeed.reset",
           "$pressed_button_name": "reset_random_tick_speed"
-        }
-      },
-      {
-        "show_border_effect@settings_common.option_toggle": {
-          "$tts_section_header": "createWorldScreen.cheatSettings",
-          "$option_label": "createWorldScreen.showbordereffect",
-          "$option_binding_name": "#show_border_effect",
-          "$option_enabled_binding_name": "#show_border_effect_enabled",
-          "$toggle_name": "show_border_effect",
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
-          "$toggle_binding_condition": "always_when_visible"
         }
       },
       {

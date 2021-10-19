@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Aktualności świata Realms	#
 accessibility.play.tabLeft=Naciśnij %s – zakładka lewa	#
 accessibility.play.tabRight=Naciśnij %s – zakładka prawa	#
 accessibility.play.legacyWorldsDelete=Usuń stary świat	#
+accessibility.play.uploadWorld=Prześlij świat	#
 
 accessibility.pause.permissions=Uprawnienia	#
 accessibility.pause.profile=Wybierz profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ups! Wygląda na to, że do logowania uży
 
 eula.intro=Musisz zaakceptować Umowę użytkownika końcowego, żeby korzystać z Minecraft: Education Edition.	#
 eula.location=Znajdziesz ją pod adresem:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Umowa licencyjna użytkownika końcowego („Umowa licencyjna”)	#
 eula.view=Pokaż Umowę licencyjną	#
 eula.callToAction=Kliknij Zaakceptuj, żeby zaakceptować warunki umowy.	#
@@ -767,6 +767,8 @@ commands.code.success=Uruchomiono Konstruktor kodów.	#
 commands.compare.failed=Miejsca źródłowe i docelowe nie są takie same	#
 commands.compare.success=Porównano bloki (%1$d)	#
 commands.compare.tooManyBlocks=Zbyt wiele bloków w podanym obszarze (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Spacza świat wgrany na serwer.	#
 commands.corruptworld.success=Pomyślnie spaczono świat.	#
 commands.daylock.description=Blokuje i odblokowuje cykl dnia i nocy.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=Znacznik danych nie pasuje do %1$sd	
 commands.scoreboard.players.score.notFound=Brak wyniku %1$s w odniesieniu do %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Wynik %1$d nie znajduje się w zakresie %2$d do %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Wynik %1$d znajduje się w zakresie %2$d do %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Zostało Ci bardzo mało wolnego miejsca na d
 storageSpaceWarningScreen.lowduringgameplay=Zostało Ci bardzo mało wolnego miejsca na urządzeniu, gdzie gra Minecraft zapisuje światy i ustawienia. Może usuniesz jakieś niepotrzebne starocie, aby zwolnić miejsce na zapis nowych rzeczy?	#
 storageSpaceWarningScreen.fullduringgameplay=Zostało Ci bardzo mało wolnego miejsca na dysku! Gra nie może zapisywać Twoich postępów! Minecraft powróci do menu głównego, aby dać Ci możliwość wygospodarowania większej ilości miejsca.	#
 
+edu.signin_screen.viewTerms=Przeczytaj postanowienia	#
+
 edu.play_screen.view_worlds=POKAŻ MOJE ŚWIATY	#
 edu.play_screen.view_library=POKAŻ BIBLIOTEKĘ	#
 edu.play_screen.create_new=STWÓRZ NOWY	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Wyszukaj	#
 edu.worlds_screen.play=GRAJ	#
 edu.worlds_screen.host=GOSPODARZ	#
 edu.worlds_screen.settings=USTAWIENIA	#
+edu.worlds_screen.manage=ZARZĄDZAJ	#
+edu.worlds_screen.back=WSTECZ	#
+edu.worlds_screen.copy=KOPIUJ	#
+edu.worlds_screen.export=EKSPORTUJ	#
+edu.worlds_screen.share=UDOSTĘPNIJ	#
+edu.worlds_screen.delete=USUŃ	#
 edu.worlds_screen.courses_title=Moje kursy	#
 
 edu.templates.title=Moje szablony	#
@@ -3735,6 +3746,7 @@ level.import.success=Import poziomu zakończony	#
 level.export.failed=Eksport poziomu nieudany	#
 level.import.failed=Import poziomu nieudany	#
 level.import.failed.incompatibleEdition=Błąd importowania poziomu: nieobsługiwany format pliku	#
+
 invite.clear=Wyczyść zaznaczenie	#
 invite.send=Wyślij zaproszenia: %d	#
 invite.sendOne=Wyślij 1 zaproszenie	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Elytry	#
 item.emerald.name=Szmaragd	#
 item.emptyMap.name=Pusta mapa	#
 item.emptyLocatorMap.name=Pusta mapa lokalizująca	#
-item.emptyPotion.name=Butelka z wodą	#
 item.enchanted_book.name=Zaklęta księga	#
 item.end_crystal.name=Kryształ Kresu	#
 tile.end_rod.name=Słupek Kresu	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=Gracz %s (poprzednio znany jako %s) do�
 multiplayer.player.left=Gracz %s opuścił grę	#
 multiplayer.player.left.realms=Gracz %s opuścił świat Realms	#
 multiplayer.player.changeToPersona=Gracz %s dokonał edycji wyglądu postaci.	#
-multiplayer.player.changeToSkin=Gracz %s zmienił używaną skórkę na skórkę %s.	#
+multiplayer.player.changeToSkin=Gracz %s zmienił używaną skórkę.	#
 multiplayer.stopSleeping=Wyjdź z łóżka	#
 multiplayer.texturePrompt.line1=Na tym serwerze zaleca się używanie niestandardowych paczek zasobów.	#
 multiplayer.texturePrompt.line2=Chcesz je pobrać i zainstalować automagicznie?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Wyłącz rysowanie pogody	#
 options.dev_disableRenderHud=Wyłącz rysowanie interfejsu HUD	#
 options.dev_disableRenderItemInHand=Wyłącz rysowanie trzymanych przedmiotów	#
 options.dev_disableRenderMainMenuCubeMap=Wyłącz rysowanie mapowania sześciennego w menu głównym	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Wyłącz animację kukły postaci w menu głównym	#
 options.dev_serverInstanceThread=Instancja wątku serwera	#
 options.dev_newCuller=Użyj nowego selekcjonera	#
 options.dev_showBuildInfo=Pokaż informacje o wersji	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Środowisko poznawcze (wymaga ponownego uruchomieni
 options.discoveryEnvironment.production=Produkcja	#
 options.discoveryEnvironment.staging=Inscenizacja	#
 options.discoveryEnvironment.local=Lokalne	#
-options.discoveryEnvironment.dev=Deweloperskie	#
+options.discoveryEnvironment.dev=Deweloperska [niestabilna]	#
 options.dev_realmsEnvironment=Środowisko Realms	#
 options.dev_realms_environment.production=Produkcyjne	#
 options.dev_realms_environment.staging=Przedprodukcyjne	#
 options.dev_realms_environment.local=Lokalne	#
 options.dev_realms_environment.dev=Deweloperskie	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Terminal Realms	#
 options.dev_realmsEndpointPayment=Płatność przez terminal Realms	#
 options.dev_realmsRelyingParty=Strona ufająca Realms	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Aktualne zabiegi	#
 options.dev_unusedTreatmentsTitle=Niewykorzystane zabiegi	#
 options.dev_addTreatmentId=Dodaj identyfikator zabiegu	#
 options.dev_addLabel=Dodaj	#
+options.dev_applyTreatments=Zastosuj zabiegi	#
 options.dev_resetToDefault=Przywróć domyślne	#
 options.dev_clearFlights=Wyczyść	#
 options.dev_experimentalProgressions=Obejdź postępy	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Zmęczenie przy kopaniu	#
 potion.digSpeed=Pośpiech	#
 potion.effects.whenDrank=Po zastosowaniu:	#
 potion.empty=Brak efektów	#
+potion.emptyPotion.name=Butelka z wodą	#
+potion.emptyPotion.splash.name=Miotana butelka wody	#
+potion.emptyPotion.linger.name=Trwała butelka wody	#
 potion.fireResistance=Odporność na ogień	#
 potion.fireResistance.name=Mikstura odporności na ogień	#
 potion.fireResistance.splash.name=Miotana mikstura odporności na ogień	#
@@ -6503,7 +6523,7 @@ resourcePack.description.default.level=Możesz to zmienić w ustawieniach.	#
 resourcePack.description.default.behaviorPacks=Domyślna rozgrywka Minecrafta.	#
 resourcePack.description.bottom.global=Paczki zasobów stosuje się kompleksowo. Oznacza to, że dowolny obiekt znajdujący się w dwóch paczkach będzie zastąpiony przez swój późniejszy odpowiednik. Paczki z twoich światów zastąpią paczki globalne. Te zasoby są tylko dla ciebie. Nikt inny nie będzie widział ustawionych tu zasobów. Paczki zasobów w twoich światach lub światach, do których dołączasz, będą zastępowały globalne zasoby.	#
 resourcePack.description.bottom.behaviorPacks=Paczki zachowań stosuje się kompleksowo. Oznacza to, że dowolny obiekt znajdujący się w dwóch paczkach będzie zastąpiony przez swój późniejszy odpowiednik.	#
-resourcePack.description.bottom.level=Paczki zasobów stosuje się kompleksowo. Oznacza to, że dowolny obiekt znajdujący się w dwóch paczkach będzie zastąpiony przez swój późniejszy odpowiednik. Paczki z twoich światów zastąpią paczki globalne. 	#
+resourcePack.description.bottom.level=Paczki zasobów stosuje się kompleksowo. Oznacza to, że dowolny obiekt znajdujący się w dwóch paczkach będzie zastąpiony przez swój późniejszy odpowiednik. Paczki z twoich światów zastąpią paczki globalne.	#
 resourcePack.description.store=Pokaż w sklepie	#
 resourcePack.header.behavior=Aktywne paczki zachowań mają zastosowanie do wszystkich graczy.	#
 resourcePack.header.level=Wymagaj od graczy, żeby zaakceptowali paczki zasobów przed dołączeniem	#
@@ -6915,7 +6935,7 @@ stat.diveOneCm=Dystans przepłynięty pod wodą	#
 stat.drop=Upuszczone przedmioty	#
 stat.dropperInspected=Przeszukane podajniki	#
 stat.enderchestOpened=Otwarte skrzynie Kresu	#
-stat.entityKilledBy=Liczba twoich śmierci: %d, sprawca: %s 	#
+stat.entityKilledBy=Liczba twoich śmierci: %d, sprawca: %s	#
 stat.entityKilledBy.none=Nie poniesiono nigdy śmierci za sprawą: %s	#
 stat.entityKills=%s, liczba zabitych: %d	#
 stat.entityKills.none=Nigdy nie zabito: %s	#
@@ -6969,6 +6989,8 @@ store.menu.home=Strona główna	#
 store.itemDetail.back=Szczegóły	#
 store.coin.bonus=Premia!	#
 store.disabledOnBeta=Ta funkcja jest w obecnej wersji beta wyłączona.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Dzień %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Odebrany	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Konwersja świata nieudana	#
 worldConversionErrorPrompt.message=Ups, coś poszło nie tak w czasie konwersji świata. Spróbuj ponownie później.	#
-worldConversionErrorPrompt.message.upload=Coś poszło nie tak. Nie mogliśmy przekonwertować Twojego świata. Możesz wysłać nam swój świat później, przechodząc do swojego starego świata i naciskając :_gamepad_face_button_up:. Możesz też wysłać go teraz, abyśmy mogli zbadać ten problem.	#
-worldConversionErrorPrompt.sendWorld=Wyślij świat teraz	#
-worldConversionErrorPrompt.backToWorld=Wróć do światów	#
-
-worldConversionErrorReport.title=Zgłoś ten świat	#
-worldConversionErrorReport.button.reportAndSend=Zgłoś i wyślij świat	#
-worldConversionErrorReport.dropdown.default=Co poszło nie tak?	#
-worldConversionErrorReport.dropdown.mobs=Moby zachowywały się nieodpowiednio lub ich nie było	#
-worldConversionErrorReport.dropdown.terrain=Teren był uszkodzony lub go nie było	#
-worldConversionErrorReport.dropdown.itemsMissing=Nie mam swoich przedmiotów, dzieł i/lub statystyk gracza	#
-worldConversionErrorReport.dropdown.itemInteraction=Nie mogę wchodzić w interakcję z przedmiotami	#
-worldConversionErrorReport.dropdown.worldConversion=Konwersja świata nieudana	#
-worldConversionErrorReport.terms.agreement=Naciskając Zgadzam się, przesyłasz swój świat zespołowi Minecraft. Zastosowanie mają Umowa o świadczenie usług oraz Zasady zachowania poufności informacji firmy Microsoft.	#
-worldConversionErrorReport.terms.agreementForBeta=Przesyłając swój świat, upoważniasz niniejszym firmę Microsoft do testowania, powielania, modyfikowania, rozprowadzania i publicznego pokazywania Twojego świata w ramach pomocy za przeniesienie go do Minecrafta.	#
-worldConversionErrorReport.terms.viewTerms=Przeczytaj postanowienia	#
-
-
-worldConversionErrorReport.sending.title=Wysyłanie starego świata	#
-worldConversionErrorReport.sending.description=Wysyłanie starego świata do Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Wysyłanie zakończone	#
-worldConversionErrorReport.sending.completeMessage.part1=Dziękujemy! Jesteśmy bardzo zajęci pracami naprawczymi i nie będziemy mogli do Ciebie się odezwać w związku z tym konkretnym światem. Oto potwierdzenie, że go otrzymaliśmy:	#
-worldConversionErrorReport.sending.completeMessage.part2=Potwierdzenie: %s	#
 
 worldError.corrupted=jest uszkodzony i nie można go uruchomić.	#
 worldError.invalidArguments=został utworzony przy użyciu nieprawidłowych argumentów.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Wyspa grzybów	#
 eduTemplateWorld.starterTown.name=Miasto początkowe	#
 eduTemplateWorld.tutorialVolumeII.name=Samouczek tom II	#
 eduTemplateWorld.blocksOfGrass.name=Bloki trawy	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Świat przesłany	#
-worldConversion.feedback.failed.title=Przesłanie świata nieudane	#
-worldConversion.feedback.done.msg=Dziękujemy za przesłanie kopii świata i pomoc w odkrywaniu błędów! Jesteśmy bardzo zajęci pracami naprawczymi i nie będziemy mogli do Ciebie się odezwać w związku z tym konkretnym światem. Oto potwierdzenie, że go otrzymaliśmy: %s	#
-worldConversion.feedback.failed.msg=Ojej! Nie otrzymaliśmy Twojego świata. Sprawdź swoje połączenie internetowe lub spróbuj przesłać nam ten świat później.	#
-worldConversion.feedback.prompt.title=Prześlij świat	#
-worldConversion.feedback.prompt.msg=Twój stary świat wyglądał lub zachowywał się nieodpowiednio? Prześlij nam go i pomóż wyszukać błędy!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Zakończono konwersję	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Update Aquatic („Aktualizacja wodna”) (%s)	#
 client.version.1.5=Update Aquatic („Aktualizacja wodna”) (%s)	#
 client.version.1.11=Village & Pillage („Wioski i grabieżcy”) (%s)	#
 
+cloud_upload.title=Pomoc techniczna Mojang dla graczy	#
+cloud_upload.prompt.description=Na podstawie Twojego ostatniego zgłoszenia przesłanego do zespołu pomocy technicznej Mojang dla graczy udzielono Ci pozwolenia na przesłanie Twojego świata. Możesz przesłać swój świat, którego dotyczy zgłoszenie, z ekranu wyboru świata lub z poziomu menu Ustawienia świata.	#
+cloud_upload.prompt.do_not_show_toggle=Nie pokazuj więcej tego ekranu	#
+cloud_upload.prompt.button.worlds=Idź do światów	#
+cloud_upload.prompt.button.learn_more=Dowiedz się więcej	#
+cloud_upload.toggle.accept_terms=Zaakceptuj Umowę o świadczenie usług firmy Microsoft	#
+cloud_upload.button.upload=Prześlij świat (%s)	#
+cloud_upload.button.service_agreement=Umowa o świadczenie usług firmy Microsoft	#
+cloud_upload.terms.title=Regulamin i warunki	#
+cloud_upload.terms.description=Aby przesłać swój świat, zaakceptuj Umowę o świadczenie usług firmy Microsoft. Przesłane światy podlegają Umowie o świadczenie usług firmy Microsoft. Po przesłaniu świata możesz nadal w nim grać.	#
+cloud_upload.uploading.title=Przesyłanie plików świata [%d/%d]	#
+cloud_upload.uploading.description_1=Przesyłanie plików świata może potrwać kilka minut. W czasie trwania procesu przesyłania nie wyłączaj gry ani nie wychodź z tego ekranu.	#
+cloud_upload.uploading.description_2=Światy mogą mieć duże rozmiary. Połącz się z siecią Wi-Fi, aby uniknąć korzystania z danych komórkowych.	#
+cloud_upload.succeeded.description=Zakończono przesyłanie świata. Dziękujemy!	#
+cloud_upload.failed.description=Przesyłanie świata nie powiodło się. Spróbować ponownie?	#
+cloud_upload.tts.message=Przesyłanie plików świata	#
+
 dr.banner.sale=Wyprzedaż!	#
 dr.banner.limitedTimeOffer=Oferta ograniczona czasowo!	#
 dressingRoom.skin_color_picker_title=Kolor skóry	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, zakończone powodzeniem: %s (wymagane 
 gameTest.error.failed=%s zakończonych niepowodzeniem!	#
 gameTest.error.succeededInInvalidTick=Powodzenie w nieprawidłowym ticku: oczekiwano %s, ale bieżący tick to %s	#
 gameTest.error.noTestsFound=Nie znaleziono testów z tagiem „%s”	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(opcjonalnie)	#
 gameTest.assert.couldNotSetBlock=Nie można ustawić setBlock '%s'	#
 gameTest.assert.missingButton=Oczekiwano przycisku	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Nie można ustawić bezpiecznika obiek
 gameTest.assert.invalidEntityInstance=Nieważna instancja obiektu	#
 gameTest.assert.unexpectedParameterValue=Nieoczekiwana wartość parametru '%s'	#
 gameTest.assert.expectEntityInstance=Oczekiwana instancja obiektu	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Nieprawidłowy typ płynu	#
 gameTest.assert.expectCauldron=Oczekiwany blok typu kocioł	#
 gameTest.success.runningTests=Uruchamianie %s testów…	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=Opcjonalne testy zakończone niepowodzeniem: %s
 gameTest.report.bookTitle=Raport z testu gry                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Podano nieznany tryb poleceń	#
 script.error.noDebugger=Debuger niedostępny	#
 script.error.debuggerFailed=Nie można uruchomić debugera	#

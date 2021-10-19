@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realm Feed
 accessibility.play.tabLeft=Press the %s to tab left
 accessibility.play.tabRight=Press the %s to tab right
 accessibility.play.legacyWorldsDelete=Delete Legacy World
+accessibility.play.uploadWorld=Upload World
 
 accessibility.pause.permissions=Permissions
 accessibility.pause.profile=Choose Profile
@@ -313,15 +314,15 @@ action.hint.exit.mule=Tap sneak to dismount
 action.hint.exit.llama=Tap sneak to dismount
 action.hint.exit.skeleton_horse=Tap sneak to dismount
 
-action.hint.exit.console.boat=Press jump to exit the boat
-action.hint.exit.console.minecart=Press jump to exit the minecart
-action.hint.exit.console.pig=Press sneak to dismount
-action.hint.exit.console.horse=Press sneak to dismount
-action.hint.exit.console.strider=Press sneak to dismount
-action.hint.exit.console.donkey=Press sneak to dismount
-action.hint.exit.console.mule=Press sneak to dismount
-action.hint.exit.console.llama=Press sneak to dismount
-action.hint.exit.console.skeleton_horse=Press sneak to dismount
+action.hint.exit.console.boat=Press :_input_key.jump: to exit the boat
+action.hint.exit.console.minecart=Press :_input_key.jump: to exit the minecart
+action.hint.exit.console.pig=Press :_input_key.sneak: to dismount
+action.hint.exit.console.horse=Press :_input_key.sneak: to dismount
+action.hint.exit.console.strider=Press :_input_key.sneak: to dismount
+action.hint.exit.console.donkey=Press :_input_key.sneak: to dismount
+action.hint.exit.console.mule=Press :_input_key.sneak: to dismount
+action.hint.exit.console.llama=Press :_input_key.sneak: to dismount
+action.hint.exit.console.skeleton_horse=Press :_input_key.sneak: to dismount
 
 action.interact.creeper=Ignite
 action.interact.edit=Edit
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Oops! It looks like you signed in with a p
 
 eula.intro=To use Minecraft: Education Edition you must accept the End-User Licensing Agreement.
 eula.location=The EULA is at:
-eula.hyperlink=https://education.minecraft.net/eula
 eula.title=End-User Licensing Agreement
 eula.view=View EULA
 eula.callToAction=Click Accept to accept the terms of this agreement.
@@ -767,6 +767,8 @@ commands.code.success=Launched Code Builder.
 commands.compare.failed=Source and destination are not identical
 commands.compare.success=%1$d blocks compared
 commands.compare.tooManyBlocks=Too many blocks in the specified area (%1$d > %2$d)
+commands.compactdb.description=Explicitly compacts the levelDB log.
+commands.compactdb.success=Successfully compacted levelDB log.
 commands.corruptworld.description=Corrupts the world loaded on the server.
 commands.corruptworld.success=Successfully corrupted the world.
 commands.daylock.description=Locks and unlocks the day-night cycle.
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=The dataTag does not match for %1$s	
 commands.scoreboard.players.score.notFound=No %1$s score for %2$s found									##1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Score %1$d is NOT in range %2$d to %3$d							##1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Score %1$d is in range %2$d to %3$d							##1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d															##
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=You are almost out of data storage space! Min
 storageSpaceWarningScreen.lowduringgameplay=Your device is almost out of the space that Minecraft can use to save worlds and settings on this device.  Why not delete some old stuff you don't need so that you can keep saving new stuff?
 storageSpaceWarningScreen.fullduringgameplay=You are out of data storage space and Minecraft is unable to save your progress! Minecraft will return you to the Main Menu to clear up storage space.
 
+edu.signin_screen.viewTerms=View Terms
+
 edu.play_screen.view_worlds=VIEW MY WORLDS
 edu.play_screen.view_library=VIEW LIBRARY
 edu.play_screen.create_new=CREATE NEW
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Search
 edu.worlds_screen.play=PLAY
 edu.worlds_screen.host=HOST
 edu.worlds_screen.settings=SETTINGS
+edu.worlds_screen.manage=MANAGE
+edu.worlds_screen.back=BACK
+edu.worlds_screen.copy=COPY
+edu.worlds_screen.export=EXPORT
+edu.worlds_screen.share=SHARE
+edu.worlds_screen.delete=DELETE
 edu.worlds_screen.courses_title=My Courses
 
 edu.templates.title=My Templates
@@ -3735,6 +3746,7 @@ level.import.success=Level import finished successfully
 level.export.failed=Level export failed
 level.import.failed=Level import failed
 level.import.failed.incompatibleEdition=Level import failed: Unsupported file format
+
 invite.clear=Clear Selection
 invite.send=Send %d Invites
 invite.sendOne=Send 1 Invite
@@ -5361,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (formerly known as %s) joined the Re
 multiplayer.player.left=%s left the game
 multiplayer.player.left.realms=%s left the Realm
 multiplayer.player.changeToPersona=%s edited the character appearance.
-multiplayer.player.changeToSkin=%s has changed to %s skin.
+multiplayer.player.changeToSkin=%s has changed their skin.
 multiplayer.stopSleeping=Leave Bed
 multiplayer.texturePrompt.line1=This server recommends the use of a custom resource pack.
 multiplayer.texturePrompt.line2=Would you like to download and install it automagically?
@@ -5511,6 +5523,7 @@ options.dev_disableRenderWeather=Disable Weather Drawing
 options.dev_disableRenderHud=Disable Hud Drawing
 options.dev_disableRenderItemInHand=Disable Item-in-Hand Drawing
 options.dev_disableRenderMainMenuCubeMap=Disable Main Menu CubeMap Drawing
+options.dev_disableRenderMainMenuPaperdollAnimation=Disable Main Menu Paperdoll Animation
 options.dev_serverInstanceThread=Server Instance Thread
 options.dev_newCuller=Use new culler
 options.dev_showBuildInfo=Show build info
@@ -5572,12 +5585,16 @@ options.discoveryEnvironment=Discovery Environment (Requires Restart)
 options.discoveryEnvironment.production=Production
 options.discoveryEnvironment.staging=Staging
 options.discoveryEnvironment.local=Local
-options.discoveryEnvironment.dev=Dev
+options.discoveryEnvironment.dev=Dev [Unstable]
 options.dev_realmsEnvironment=Realms Environment
 options.dev_realms_environment.production=Production
 options.dev_realms_environment.staging=Staging
 options.dev_realms_environment.local=Local
 options.dev_realms_environment.dev=Dev
+options.dev_realmsSku=Realms SKU
+options.dev_realms_sku.oneday=One Day
+options.dev_realms_sku.production=Production
+options.dev_realms_sku.fiveday=Five Days
 options.dev_realmsEndpoint=Realms Endpoint
 options.dev_realmsEndpointPayment=Realms Endpoint Payment
 options.dev_realmsRelyingParty=Realms Relying Party
@@ -5597,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Current Treatments
 options.dev_unusedTreatmentsTitle=Unused Treatments
 options.dev_addTreatmentId=Add Treatment Id
 options.dev_addLabel=Add
+options.dev_applyTreatments=Apply Treatments
 options.dev_resetToDefault=Reset To Default
 options.dev_clearFlights=Clear
 options.dev_experimentalProgressions=Override Progressions
@@ -6971,6 +6989,8 @@ store.menu.home=Home
 store.itemDetail.back=Details
 store.coin.bonus=Bonus!
 store.disabledOnBeta=This feature is currently disabled in Beta.
+store.disabled.nopermission=You do not have permission to use the Store at this time.
+store.disabled.generic=The Store is currently unavailable.
 
 store.giftPromo.day=Day %s		## %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Claimed
@@ -8481,29 +8501,6 @@ typeface.notoSans=Noto Sans
 
 worldConversionErrorPrompt.title=World Conversion Failed
 worldConversionErrorPrompt.message=Oops, something went wrong during world conversion. Try again later.
-worldConversionErrorPrompt.message.upload=Something went wrong. We weren't able to convert your world. You can send us your world later by going to your old world and pressing :_gamepad_face_button_up:. Or send us your world now so we can investigate further.
-worldConversionErrorPrompt.sendWorld=Send World Now
-worldConversionErrorPrompt.backToWorld=Back to Worlds
-
-worldConversionErrorReport.title=Report This World
-worldConversionErrorReport.button.reportAndSend=Report and Send World
-worldConversionErrorReport.dropdown.default=What went wrong?
-worldConversionErrorReport.dropdown.mobs=Mobs were misbehaving or missing
-worldConversionErrorReport.dropdown.terrain=Terrain was broken or missing
-worldConversionErrorReport.dropdown.itemsMissing=Lost my items, creations, and/or player stats
-worldConversionErrorReport.dropdown.itemInteraction=Couldn't interact with items
-worldConversionErrorReport.dropdown.worldConversion=World conversion failed
-worldConversionErrorReport.terms.agreement=By hitting Agree, you are uploading your world to the Minecraft Team. The Microsoft Services Agreement and Privacy Statement apply.
-worldConversionErrorReport.terms.agreementForBeta=By uploading your World you hereby authorize Microsoft to test, reproduce, modify, distribute and publicly display your World in support of transferring your World to Minecraft.
-worldConversionErrorReport.terms.viewTerms=View Terms
-
-
-worldConversionErrorReport.sending.title=Sending Old World
-worldConversionErrorReport.sending.description=Sending Old World to Minecraft...
-
-worldConversionErrorReport.sending.complete=Send Completed
-worldConversionErrorReport.sending.completeMessage.part1=Thank you! We are hard at work fixing things and won't be able to get back to you about this specific world. Here's your receipt confirming that we received it:
-worldConversionErrorReport.sending.completeMessage.part2=Receipt: %s
 
 worldError.corrupted=is corrupted and can't be started.
 worldError.invalidArguments=was created with invalid arguments.
@@ -8845,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Mushroom Island
 eduTemplateWorld.starterTown.name=Starter Town
 eduTemplateWorld.tutorialVolumeII.name=Tutorial Volume II
 eduTemplateWorld.blocksOfGrass.name=Blocks of Grass
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=World Submitted
-worldConversion.feedback.failed.title=World Submission Failed
-worldConversion.feedback.done.msg=Thank you for sending us a copy of your world and helping us find bugs! We are hard at work fixing things and won't be able to get back to you about this specific world. Here's your receipt confirming that we received it: %s
-worldConversion.feedback.failed.msg=Oops! We weren't able to receive your world. Try checking your internet connection or sending it again later.
-worldConversion.feedback.prompt.title=Submit World
-worldConversion.feedback.prompt.msg=Did your old world not look or work the way it should have? Send us your world and help us find the bugs!
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversion Complete
@@ -9306,6 +9295,23 @@ client.version.1.4=Update Aquatic (%s)
 client.version.1.5=Update Aquatic (%s)
 client.version.1.11=Village & Pillage (%s)
 
+cloud_upload.title=Mojang Player Support
+cloud_upload.prompt.description=Based on your recent support ticket, Mojang Player Support has granted permission to upload your world. You can upload your affected world from the World Select screen or under World Settings.
+cloud_upload.prompt.do_not_show_toggle=Do not show this screen again
+cloud_upload.prompt.button.worlds=Go to Worlds
+cloud_upload.prompt.button.learn_more=Learn More
+cloud_upload.toggle.accept_terms=Accept Microsoft Services Agreement
+cloud_upload.button.upload=Upload World (%s)
+cloud_upload.button.service_agreement=Microsoft Services Agreement
+cloud_upload.terms.title=Terms & Conditions
+cloud_upload.terms.description=To upload your world, accept the Microsoft Services Agreement. Uploaded worlds are subject to the Microsoft Services Agreement. You can still play with your world once uploaded.
+cloud_upload.uploading.title=Uploading world files [%d/%d]
+cloud_upload.uploading.description_1=Uploading your world files may take a few minutes. Do not turn off the game or leave this screen during the upload process.
+cloud_upload.uploading.description_2=World sizes can be large. Please connect to WiFi to avoid using cellular data.
+cloud_upload.succeeded.description=Your world upload has completed successfully. Thank you!
+cloud_upload.failed.description=Your world upload failed. Try again?
+cloud_upload.tts.message=Uploading world files
+
 dr.banner.sale=Sale!
 dr.banner.limitedTimeOffer=Limited Time Offer!
 dressingRoom.skin_color_picker_title=Skin Color
@@ -9567,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, successes: %s (%s required)           
 gameTest.error.failed=%s failed!
 gameTest.error.succeededInInvalidTick=Succeeded in invalid tick: expected %s, but current tick is %s
 gameTest.error.noTestsFound=No tests found for tag '%s'
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.
 gameTest.optionalPrefix=(optional)
 gameTest.assert.couldNotSetBlock=Could not setBlock '%s'
 gameTest.assert.missingButton=Expected a button
@@ -9599,7 +9606,8 @@ gameTest.assert.unexpectedWaterLogged=Did not expect waterlogged block
 gameTest.assert.missingExplosionComponent=Can not set fuse of entity because it does not have an explosion component
 gameTest.assert.invalidEntityInstance=Invalid entity instance
 gameTest.assert.unexpectedParameterValue=Unexpected value for parameter '%s'
-gameTest.assert.expectEntityInstance=Expected entity instance
+gameTest.assert.expectEntityInstance=Expected entity instance of type '%s'
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'
 gameTest.assert.invalidFluidType=Invalid fluid type
 gameTest.assert.expectCauldron=Expected block of type Cauldron
 gameTest.success.runningTests=Running %s tests...
@@ -9617,6 +9625,7 @@ gameTest.report.optionalFailures=%s optional tests failed
 gameTest.report.bookTitle=Game Test Report                                      ## A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.
 script.error.unknownCommandMode=Unknown command mode provided
 script.error.noDebugger=Debugger not available
 script.error.debuggerFailed=Failed to start debugger

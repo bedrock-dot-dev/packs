@@ -629,9 +629,10 @@
           "focus_nagivation_mode_right": "stop",
           "focus_nagivation_mode_left": "$main_content_focus_container_left",
           "focus_container_custom_left": "$main_content_focus_container_left_custom",
+          "$preset_arrow_button_layer": 228,
 
           "type": "stack_panel",
-          "orientation": "horizontal",
+          "orientation": "horizontal", 
           "size": [ "100%", "100%" ],
           "controls": [
             { "left_padding@profile.horizontal_fill_padding": {} },
@@ -641,6 +642,7 @@
               "preset_arrow_button_left_panel": {
                 "type": "panel",
                 "size": [ 24, "100%" ],
+                "layer": "$preset_arrow_button_layer",
                 "controls": [
                   {
                     "preset_arrow_button_left@profile.preset_arrow_button_panel": {
@@ -669,6 +671,7 @@
               "preset_arrow_button_right_panel": {
                 "type": "panel",
                 "size": [ 24, "100%" ],
+                "layer": "$preset_arrow_button_layer",
                 "controls": [
                   {
                     "preset_arrow_button_right@profile.preset_arrow_button_panel": {
@@ -819,31 +822,6 @@
     "$button_focus_precedence": 20,
     "$pressed_button_name": "button.retry_appearance_preset",
     "$button_content": "profile.retry_button_image_content"
-  },
-
-  ////////////////////////////
-  //// achievement button ////
-  "achievements_button@common_buttons.light_text_button": {
-    "ignored": "(not $supports_xbl_achievements)",
-    "size": [ "fill", "100%" ],
-    "$pressed_button_name": "button.achievements",
-    "$button_text": "gui.achievements",
-    "$font_type": "MinecraftTen",
-    "$button_font_scale_factor": 1.0,
-    "$new_ui_label_offset": [ 0, 2 ],
-    "$button_text_size": [ "100%", "100%" ],
-    "$button_text_max_size": [ "100%", "100%" ],
-    "tts_play_on_unchanged_focus_control": true,
-
-    "$persona_focus_precedence": 3,
-
-    "bindings": [
-      {
-        "binding_name": "#enable_achievement_button",
-        "binding_name_override": "#enabled",
-        "binding_condition": "always"
-      }
-    ]
   },
 
   /////////////////////////

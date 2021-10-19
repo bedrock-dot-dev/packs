@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Лента Realm	#
 accessibility.play.tabLeft=Нажмите %s для отступа влево	#
 accessibility.play.tabRight=Нажмите %s для отступа вправо	#
 accessibility.play.legacyWorldsDelete=Удалить устаревший мир	#
+accessibility.play.uploadWorld=Отправить мир	#
 
 accessibility.pause.permissions=Разрешения	#
 accessibility.pause.profile=Выбрать профиль	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Ой! Похоже, вы вошли с л�
 
 eula.intro=Для пользования Minecraft: Education Edition необходимо принять «Лицензионное соглашение пользователя».	#
 eula.location=Ознакомиться с текстом соглашения можно по адресу:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Лицензионное соглашение с пользователем	#
 eula.view=Просмотреть условия лицензии	#
 eula.callToAction=Нажмите «Принять», чтобы принять условия соглашения.	#
@@ -767,6 +767,8 @@ commands.code.success=Запущен Code Builder.	#
 commands.compare.failed=Исходный и целевой объекты не идентичны	#
 commands.compare.success=Выполнено сравнение нескольких блоков: %1$d	#
 commands.compare.tooManyBlocks=В заданной области слишком много блоков (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Повреждает мир, загруженный на сервер.	#
 commands.corruptworld.success=Мир успешно поврежден.	#
 commands.daylock.description=Блокирует и разблокирует смену дня и ночи.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=Несоответствие тег�
 commands.scoreboard.players.score.notFound=Счет «%1$s» для игрока %2$s не найден										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Счет %1$d выходит за рамки диапазона от %2$d до %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Счет %1$d находится в диапазоне от %2$d до %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=У вас почти закончилось �
 storageSpaceWarningScreen.lowduringgameplay=На вашем устройстве почти закончилось место, которое Minecraft может использовать для хранения миров и настроек! Удалите старые ненужные файлы, чтобы сохранять новые.	#
 storageSpaceWarningScreen.fullduringgameplay=У вас закончилось место для хранения данных, и не удается сохранить ваш прогресс! Minecraft вернет вас в главное меню, чтобы вы освободили место.	#
 
+edu.signin_screen.viewTerms=Просмотреть условия	#
+
 edu.play_screen.view_worlds=МОИ МИРЫ	#
 edu.play_screen.view_library=БИБЛИОТЕКА	#
 edu.play_screen.create_new=СОЗДАТЬ	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Поиск	#
 edu.worlds_screen.play=ИГРАТЬ	#
 edu.worlds_screen.host=РАЗМЕСТИТЬ	#
 edu.worlds_screen.settings=НАСТРОЙКИ	#
+edu.worlds_screen.manage=УПРАВЛЕНИЕ	#
+edu.worlds_screen.back=НАЗАД	#
+edu.worlds_screen.copy=КОПИРОВАТЬ	#
+edu.worlds_screen.export=ЭКСПОРТ	#
+edu.worlds_screen.share=ПОДЕЛИТЬСЯ	#
+edu.worlds_screen.delete=УДАЛИТЬ	#
 edu.worlds_screen.courses_title=Мои курсы	#
 
 edu.templates.title=Мои шаблоны	#
@@ -3735,6 +3746,7 @@ level.import.success=Экспорт уровня успешно завершен
 level.export.failed=Не удалось экспортировать уровень	#
 level.import.failed=Не удалось экспортировать уровень	#
 level.import.failed.incompatibleEdition=Не удалось импортировать уровень: неподдерживаемый формат файла	#
+
 invite.clear=Отменить выбор	#
 invite.send=Отправить приглашения: %d	#
 invite.sendOne=Отправить 1 приглашение	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Элитры	#
 item.emerald.name=Изумруд	#
 item.emptyMap.name=Пустая карта	#
 item.emptyLocatorMap.name=Пустая карта с локатором	#
-item.emptyPotion.name=Пузырек воды	#
 item.enchanted_book.name=Зачарованная книга	#
 item.end_crystal.name=Кристалл Края	#
 tile.end_rod.name=Стержень Края	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (ранее %s) присоедини
 multiplayer.player.left=%s покинул(а) игру	#
 multiplayer.player.left.realms=%s покинул(а) игру	#
 multiplayer.player.changeToPersona=Игрок %s изменил(а) внешний вид персонажа.	#
-multiplayer.player.changeToSkin=Игрок %s сменил(а) скин на «%s».	#
+multiplayer.player.changeToSkin=%s сменил(а) скин.	#
 multiplayer.stopSleeping=Встать с кровати	#
 multiplayer.texturePrompt.line1=Этот сервер рекомендует применить пользовательский набор ресурсов.	#
 multiplayer.texturePrompt.line2=Скачать и установить его автоматически?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Отключить прорисовку пог�
 options.dev_disableRenderHud=Отключить прорисовку индикаторов	#
 options.dev_disableRenderItemInHand=Отключить прорисовку предмета в руке	#
 options.dev_disableRenderMainMenuCubeMap=Отключить рисование кубической текстуры CubeMap в главном меню	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Отключить анимацию мини-аватара в главном меню	#
 options.dev_serverInstanceThread=Поток экземпляра сервера	#
 options.dev_newCuller=Использовать новый сортировщик	#
 options.dev_showBuildInfo=Показать сведения о сборке	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Среда обнаружения (требует �
 options.discoveryEnvironment.production=Производство	#
 options.discoveryEnvironment.staging=Подготовка	#
 options.discoveryEnvironment.local=Местн.	#
-options.discoveryEnvironment.dev=Разработчик	#
+options.discoveryEnvironment.dev=Разработка [Нестабильная]	#
 options.dev_realmsEnvironment=Среда Realms	#
 options.dev_realms_environment.production=Создание	#
 options.dev_realms_environment.staging=Подготовка	#
 options.dev_realms_environment.local=Местн.	#
 options.dev_realms_environment.dev=Разработчик	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Конечная точка Realms	#
 options.dev_realmsEndpointPayment=Конечный платеж Realms	#
 options.dev_realmsRelyingParty=Доверяющая сторона Realms	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Текущие средства обрабо�
 options.dev_unusedTreatmentsTitle=Неиспользуемые средства обработки	#
 options.dev_addTreatmentId=Добавьте ИД средства обработки	#
 options.dev_addLabel=Добавить	#
+options.dev_applyTreatments=Применение обработки	#
 options.dev_resetToDefault=Сбросить до значений по умолчанию	#
 options.dev_clearFlights=Очистить	#
 options.dev_experimentalProgressions=Переопределить последовательности	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Шахтерская усталость	#
 potion.digSpeed=Проворство	#
 potion.effects.whenDrank=После применения:	#
 potion.empty=Без эффектов	#
+potion.emptyPotion.name=Пузырек воды	#
+potion.emptyPotion.splash.name=Взрывной пузырек воды	#
+potion.emptyPotion.linger.name=Оседающий пузырек воды	#
 potion.fireResistance=Огнестойкость	#
 potion.fireResistance.name=Зелье огнестойкости	#
 potion.fireResistance.splash.name=Взрывное зелье огнестойкости	#
@@ -6969,6 +6989,8 @@ store.menu.home=Главная	#
 store.itemDetail.back=Сведения	#
 store.coin.bonus=Бонус!	#
 store.disabledOnBeta=Эта функция в настоящее время отключена в бета-версии.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=День %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Получено	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Сбой преобразования мира	#
 worldConversionErrorPrompt.message=Ой! При преобразовании мира что-то пошло не так. Повторите попытку позже.	#
-worldConversionErrorPrompt.message.upload=Что-то пошло не так. Не удалось преобразовать ваш мир. Можете отправить нам свой мир позже, перейдя к нему и нажав кнопку :_gamepad_face_button_up:. Либо отправьте нам свой мир прямо сейчас, чтобы мы могли все изучить.	#
-worldConversionErrorPrompt.sendWorld=Отправить мир сейчас	#
-worldConversionErrorPrompt.backToWorld=Назад к мирам	#
-
-worldConversionErrorReport.title=Сообщить о мире	#
-worldConversionErrorReport.button.reportAndSend=Сообщить и отправить мир	#
-worldConversionErrorReport.dropdown.default=Что пошло не так?	#
-worldConversionErrorReport.dropdown.mobs=Мобы отсутствовали или вели себя неправильно	#
-worldConversionErrorReport.dropdown.terrain=Поверхность мира отсутствовала или была искажена	#
-worldConversionErrorReport.dropdown.itemsMissing=Потеряны предметы, творения и/или статистика игрока	#
-worldConversionErrorReport.dropdown.itemInteraction=Не удалось взаимодействовать с предметами	#
-worldConversionErrorReport.dropdown.worldConversion=Сбой преобразования мира	#
-worldConversionErrorReport.terms.agreement=Нажимая «Принимаю», вы отправляете свой мир команде Minecraft. Применяются условия заявления о конфиденциальности и соглашения об использовании служб Майкрософт.	#
-worldConversionErrorReport.terms.agreementForBeta=Отправляя свой мир, вы этим предоставляете Майкрософт право на проверку, воспроизведение, изменение, распространение и публичную демонстрацию вашего мира для обеспечения его переноса в Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Просмотреть условия	#
-
-
-worldConversionErrorReport.sending.title=Отправка старого мира	#
-worldConversionErrorReport.sending.description=Отправка старого мира в Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Отправка завершена	#
-worldConversionErrorReport.sending.completeMessage.part1=Спасибо! Мы прилагаем все силы для исправления проблем и не сможем связаться с вами по поводу этого мира. Вот квитанция о получении нами мира:	#
-worldConversionErrorReport.sending.completeMessage.part2=Квитанция: %s	#
 
 worldError.corrupted=поврежден, запуск невозможен.	#
 worldError.invalidArguments=создан с недопустимыми аргументами.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Грибной остров	#
 eduTemplateWorld.starterTown.name=Начальный город	#
 eduTemplateWorld.tutorialVolumeII.name=Обучение, выпуск II	#
 eduTemplateWorld.blocksOfGrass.name=Блок травы	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Мир отправлен	#
-worldConversion.feedback.failed.title=Сбой отправки мира	#
-worldConversion.feedback.done.msg=Благодарим за отправку копии вашего мира и помощь в нахождении ошибок! Мы прилагаем все силы для исправления проблем и не сможем связаться с вами по поводу этого мира. Вот квитанция о получении нами мира: %s	#
-worldConversion.feedback.failed.msg=Ой! Не удалось получить ваш мир. Проверьте подключение к Интернету или попробуйте отправить мир позже.	#
-worldConversion.feedback.prompt.title=Отправить мир	#
-worldConversion.feedback.prompt.msg=Ваш старый мир выглядел или работал не так, как следует? Отправьте его нам и помогите выявить ошибки!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Преобразование завершено	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Водное обновление (%s)	#
 client.version.1.5=Водное обновление (%s)	#
 client.version.1.11=Деревня и мародеры (%s)	#
 
+cloud_upload.title=Поддержка игроков Mojang	#
+cloud_upload.prompt.description=Согласно вашему недавнему запросу в службу поддержки, служба поддержки игроков Mojang предоставила разрешение на отправку вашего мира. Вы можете отправить этот мир с экрана «Выбор мира» или из раздела «Настройки мира».	#
+cloud_upload.prompt.do_not_show_toggle=Больше не показывать этот экран	#
+cloud_upload.prompt.button.worlds=Перейти к мирам	#
+cloud_upload.prompt.button.learn_more=Подробнее	#
+cloud_upload.toggle.accept_terms=Принять соглашение об услугах Майкрософт	#
+cloud_upload.button.upload=Отправить мир (%s)	#
+cloud_upload.button.service_agreement=Соглашение об услугах Майкрософт	#
+cloud_upload.terms.title=Условия и положения	#
+cloud_upload.terms.description=Чтобы отправить свой мир, примите Соглашение об услугах Майкрософт. Отправленные миры регулируются Соглашением об услугах Майкрософт. После отправки мира вы сможете продолжать играть с ним.	#
+cloud_upload.uploading.title=Отправка файлов мира [%d/%d]	#
+cloud_upload.uploading.description_1=Отправка файлов мира может занять несколько минут. Не выключайте игру и не покидайте этот экран во время процесса загрузки.	#
+cloud_upload.uploading.description_2=Размеры мира могут быть большими. Подключитесь к Wi-Fi, чтобы избежать использования мобильной системы передачи данных.	#
+cloud_upload.succeeded.description=Отправка мира успешно завершена. Спасибо!	#
+cloud_upload.failed.description=Не удалось отправить мир. Повторить попытку?	#
+cloud_upload.tts.message=Отправка файлов мира	#
+
 dr.banner.sale=Распродажа!	#
 dr.banner.limitedTimeOffer=Временное предложение!	#
 dressingRoom.skin_color_picker_title=Цвет кожи	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, успешные выполнения:
 gameTest.error.failed=Сбой %s!	#
 gameTest.error.succeededInInvalidTick=Успехи в недействительных тактах: ожидалось %s, но текущий такт — %s	#
 gameTest.error.noTestsFound=Тестов по тегу «%s» не найдено	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(по желанию)	#
 gameTest.assert.couldNotSetBlock=Не удалось установить блок '%s'	#
 gameTest.assert.missingButton=Ожидалась кнопка	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Не удается установит
 gameTest.assert.invalidEntityInstance=Недействительный экземпляр сущности	#
 gameTest.assert.unexpectedParameterValue=Неожиданное значение параметра '%s'	#
 gameTest.assert.expectEntityInstance=Ожидаемый экземпляр сущности	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Недопустимый тип жидкости	#
 gameTest.assert.expectCauldron=Ожидался блок типа «Котел»	#
 gameTest.success.runningTests=Выполнение тестов %s...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=Сбой дополнительных тест�
 gameTest.report.bookTitle=Отчет о тестировании игры	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Указан неизвестный командный режим	#
 script.error.noDebugger=Отладчик недоступен	#
 script.error.debuggerFailed=Не удалось запустить отладчик	#

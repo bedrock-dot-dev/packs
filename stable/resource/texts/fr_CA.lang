@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Fil de nouvelles du Realm	#
 accessibility.play.tabLeft=Appuyez sur %s pour tabuler vers la gauche	#
 accessibility.play.tabRight=Appuyez sur %s pour tabuler vers la droite	#
 accessibility.play.legacyWorldsDelete=Supprimer le monde hérité	#
+accessibility.play.uploadWorld=Télécharger le monde	#
 
 accessibility.pause.permissions=Permissions	#
 accessibility.pause.profile=Choisir le profil	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Oups! Il semble que vous vous connectez av
 
 eula.intro=Pour utiliser Minecraft: Education Edition, vous devez accepter le Contrat de licence utilisateur final.	#
 eula.location=Le CLUF est disponible à l'adresse :	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Contrat de licence utilisateur final	#
 eula.view=Consulter le CLUF	#
 eula.callToAction=Cliquez sur Accepter pour accepter les conditions de ce contrat.	#
@@ -767,6 +767,8 @@ commands.code.success=Code Builder lancé.	#
 commands.compare.failed=La source et la destination ne sont pas identiques	#
 commands.compare.success=%1$d blocs ont été comparés	#
 commands.compare.tooManyBlocks=Trop de blocs dans la zone spécifiée (%1$d > %2$d)	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Corrompt le monde chargé sur le serveur.	#
 commands.corruptworld.success=Corruption du monde réussie.	#
 commands.daylock.description=Verrouille et déverrouille le cycle jour-nuit.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=La balise de données ne correspond 
 commands.scoreboard.players.score.notFound=Aucun score %1$s de trouvé pour %2$s										###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Le score %1$d n'est PAS dans l'écart de %2$d à %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Le score %1$d est dans l'écart de %2$d à %3$d								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2163,8 +2166,8 @@ xbl.syncIAP.confirmSync.prompt.yes=Oui, synchroniser mes achats	#
 
 xbl.marketplace.account.error.body.nobutton=Une erreur est survenue avec votre compte. Vous ne pourrez pas utiliser le marché tant que ce problème ne sera pas résolu. Si le problème persiste pendant plusieurs jours, veuillez communiquer avec l'équipe de soutien.	#
 
-playfab.account.banned.title=Banni	#
-playfab.account.banned.body=Vous avez été banni de Minecraft. Pour toute la durée de votre bannissement, vous ne pourrez pas jouer sur vos mondes (sur certaines plateformes), jouer sur des serveurs, rejoindre des Realms, héberger ou rejoindre des parties multijoueurs, ni utiliser le marché. Si vous payez pour un Realm, vous devrez annuler votre abonnement à partir du magasin où vous l'avez acheté.	#
+playfab.account.banned.title=Vous avez été banni	#
+playfab.account.banned.body=Vous avez été banni du mode multijoueur de Minecraft. Vous ne pourrez pas jouer sur des serveurs, rejoindre des Realms, héberger ou rejoindre des parties multijoueurs, ni utiliser le marché. Si vous payez pour un Realm, vous devez annuler votre abonnement à partir du magasin où vous l'avez acheté.	#
 playfab.account.banned.body.button=Plus d’infos	#
 
 store.sign_in_warning.no_xbl_and_local_content=Message important! Vous avez acheté des packs ou des pièces Minecoins qui ne sont disponibles que sur cet appareil et qui pourraient être perdus si l'appareil fait défaut, est perdu ou si vous y désinstallez Minecraft! Connectez-vous au moyen d'un compte Microsoft (gratuit) et transférez-y les droits de vos packs et vos pièces Minecoins afin de les protéger et d'y accéder à partir de n'importe quel appareil duquel vous vous connectez.	#
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Vous n'avez presque plus d'espace libre pour 
 storageSpaceWarningScreen.lowduringgameplay=Votre appareil n'a presque pas l'espace suffisant à la sauvegarde des mondes et des paramètres par Minecraft. Vous pourriez supprimer quelques vieux trucs dont vous n'avez plus besoin pour pouvoir continuer à sauvegarder de nouveaux trucs.	#
 storageSpaceWarningScreen.fullduringgameplay=Vous n'avez plus d'espace libre pour sauvegarder vos données et Minecraft ne peut enregistrer votre progression! Minecraft vous retournera au menu principal afin que vous libériez de l'espace de stockage.	#
 
+edu.signin_screen.viewTerms=Voir les conditions générales d’utilisation	#
+
 edu.play_screen.view_worlds=AFFICHER MES MONDES	#
 edu.play_screen.view_library=AFFICHER LA BIBLIOTHÈQUE	#
 edu.play_screen.create_new=CRÉER NOUVEAU	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Rechercher	#
 edu.worlds_screen.play=JOUER	#
 edu.worlds_screen.host=HÉBERGER	#
 edu.worlds_screen.settings=PARAMÈTRES	#
+edu.worlds_screen.manage=GÉRER	#
+edu.worlds_screen.back=RETOUR	#
+edu.worlds_screen.copy=COPIER	#
+edu.worlds_screen.export=EXPORTER	#
+edu.worlds_screen.share=PARTAGER	#
+edu.worlds_screen.delete=SUPPRIMER	#
 edu.worlds_screen.courses_title=Mes cours	#
 
 edu.templates.title=Mes modèles	#
@@ -3735,6 +3746,7 @@ level.import.success=L'importation du niveau a abouti	#
 level.export.failed=Échec de l'exportation du niveau	#
 level.import.failed=Échec de l'importation du niveau	#
 level.import.failed.incompatibleEdition=Échec de l'importation de niveau : format de fichier incompatible	#
+
 invite.clear=Effacer la sélection	#
 invite.send=Envoyer %d invitations	#
 invite.sendOne=Envoyer 1 invitation	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Élytres	#
 item.emerald.name=Émeraude	#
 item.emptyMap.name=Carte vierge	#
 item.emptyLocatorMap.name=Localisateur de cartes vide	#
-item.emptyPotion.name=Bouteille d'eau	#
 item.enchanted_book.name=Livre enchanté	#
 item.end_crystal.name=Cristal de l'Ender	#
 tile.end_rod.name=Barre de l'Ender	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (anciennement %s) a rejoint le Realm
 multiplayer.player.left=%s a quitté la partie	#
 multiplayer.player.left.realms=%s a quitté le Realm	#
 multiplayer.player.changeToPersona=%s a édité l’apparence du personnage.	#
-multiplayer.player.changeToSkin=%s a changé sa skin pour la skin %s.	#
+multiplayer.player.changeToSkin=%s a changé sa skin.	#
 multiplayer.stopSleeping=Sortir du lit	#
 multiplayer.texturePrompt.line1=Ce serveur recommande l'utilisation d'un pack de ressources personnalisé.	#
 multiplayer.texturePrompt.line2=Voulez-vous le télécharger et l'installer automagiquement?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Désactiver le dessin de météo	#
 options.dev_disableRenderHud=Désactiver le dessin d’interface	#
 options.dev_disableRenderItemInHand=Désactiver le dessin d’objet à la main	#
 options.dev_disableRenderMainMenuCubeMap=Désactiver le dessin CubeMap du menu principal	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Désactiver le menu principal d'animation de poupées de papier	#
 options.dev_serverInstanceThread=Fil de l'instance de serveur	#
 options.dev_newCuller=Utiliser une nouvelle sélection	#
 options.dev_showBuildInfo=Affiche les infos de la version	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Environnement de découverte (nécessite un redéma
 options.discoveryEnvironment.production=Production	#
 options.discoveryEnvironment.staging=Mise en scène	#
 options.discoveryEnvironment.local=Local	#
-options.discoveryEnvironment.dev=Dév.	#
+options.discoveryEnvironment.dev=Dev [instable]	#
 options.dev_realmsEnvironment=Environnement Realms	#
 options.dev_realms_environment.production=Production	#
 options.dev_realms_environment.staging=Gestion intermédiaire	#
 options.dev_realms_environment.local=Apprenti chimiste	#
 options.dev_realms_environment.dev=Dév.	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Point de terminaison Realms	#
 options.dev_realmsEndpointPayment=Point de terminaison Realms - paiement	#
 options.dev_realmsRelyingParty=Partie de confiance Realms	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Traitements en cours	#
 options.dev_unusedTreatmentsTitle=Traitements non utilisés	#
 options.dev_addTreatmentId=Ajouter une ID de traitement	#
 options.dev_addLabel=Ajouter	#
+options.dev_applyTreatments=Appliquer les traitements	#
 options.dev_resetToDefault=Rétablir au réglage par défaut	#
 options.dev_clearFlights=Effacer	#
 options.dev_experimentalProgressions=Ignorer les progressions	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Épuisement	#
 potion.digSpeed=Célérité	#
 potion.effects.whenDrank=Effet appliqué:	#
 potion.empty=Sans effet	#
+potion.emptyPotion.name=Bouteille d'eau	#
+potion.emptyPotion.splash.name=Bouteille d'eau jetable	#
+potion.emptyPotion.linger.name=Bouteille d’eau persistante	#
 potion.fireResistance=Résist. au feu	#
 potion.fireResistance.name=Potion de résistance au feu	#
 potion.fireResistance.splash.name=Potion de résistance au feu jetable	#
@@ -6969,6 +6989,8 @@ store.menu.home=Accueil	#
 store.itemDetail.back=Détails	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Cette fonctionnalité est actuellement désactivée en version bêta.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Jour %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Récupéré	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Échec de la conversion du monde	#
 worldConversionErrorPrompt.message=Oups! Un problème est survenu lors de la conversion du monde. Veuillez réessayer plus tard.	#
-worldConversionErrorPrompt.message.upload=Une erreur est survenue. Nous n'avons pas pu convertir votre monde. Vous pouvez nous envoyer votre monde plus tard en vous rendant sur votre ancien monde et en appuyant sur :_gamepad_face_button_up:. Ou bien envoyez-nous votre monde maintenant pour que nous puissions examiner la situation.	#
-worldConversionErrorPrompt.sendWorld=Envoyer le monde maintenant	#
-worldConversionErrorPrompt.backToWorld=Retourner aux mondes	#
-
-worldConversionErrorReport.title=Signaler ce monde	#
-worldConversionErrorReport.button.reportAndSend=Signaler et envoyer le monde	#
-worldConversionErrorReport.dropdown.default=Qu'est-ce qui tournait mal?	#
-worldConversionErrorReport.dropdown.mobs=Les créatures se comportaient mal ou étaient absentes	#
-worldConversionErrorReport.dropdown.terrain=Le terrain était brisé ou manquant	#
-worldConversionErrorReport.dropdown.itemsMissing=J'ai perdu mes objets, mes créations et/ou mes stats de joueur	#
-worldConversionErrorReport.dropdown.itemInteraction=Je ne pouvais interagir avec les objets	#
-worldConversionErrorReport.dropdown.worldConversion=La conversion du monde a échoué	#
-worldConversionErrorReport.terms.agreement=En appuyant sur Accepter, vous envoyez votre monde à l'équipe Minecraft. Le Contrat de services et la Déclaration de confidentialité de Microsoft s'appliquent.	#
-worldConversionErrorReport.terms.agreementForBeta=En téléchargeant votre monde, vous autorisez par la présente Microsoft à tester, reproduire, modifier, distribuer et affichier publiquement votre monde à l'appui du transfert de votre monde vers Minecraft.	#
-worldConversionErrorReport.terms.viewTerms=Voir les conditions générales d’utilisation	#
-
-
-worldConversionErrorReport.sending.title=Envoi de l'ancien monde	#
-worldConversionErrorReport.sending.description=Envoi de l'ancien monde à Minecraft...	#
-
-worldConversionErrorReport.sending.complete=Envoi complété	#
-worldConversionErrorReport.sending.completeMessage.part1=Merci! Nous travaillons fort à réparer les choses et nous ne pourrons pas vous revenir concernant ce monde en particulier. Voici le reçu confirmant que nous l'avons bien reçu :	#
-worldConversionErrorReport.sending.completeMessage.part2=Reçu : %s	#
 
 worldError.corrupted=est endommagé et ne peut être lancé.	#
 worldError.invalidArguments=a été créé avec des arguments non valides.	#
@@ -8670,7 +8669,7 @@ xbox.firstsignin.line3=Vous n'avez pas de compte? Créez-en un dès maintenant a
 xbox.firstsignin.line3.norealmsOrServers=Vous n'avez pas de compte? Créez-en un pour remporter des succès et jouez avec vos amis en mode multiplateforme!	#
 xbox.failedsignin.body=Nous n’avons pas pu vous connecter à votre compte Microsoft. L’accès aux Realms, aux profils et à vos objets du marché sera limité. Veuillez réessayer plus tard.	#
 xbox.failedsignin.error=Code d'erreur :	#
-xbox.failedsignin.moreInfo=More Info	#
+xbox.failedsignin.moreInfo=Plus d’infos	#
 xbox.dev_wrongSandboxSigninFailed.title=Une erreur s'est produite	#
 xbox.dev_wrongSandboxSigninFailed.line1=Échec de la connexion au bac à sable %s. Veuillez modifier les bacs à sable et redémarrez Minecraft ou vous connecter au moyen d'un autre compte. Le bac à sable sera %s au redémarrage. 	#
 xbox.dev_wrongSandboxSigninFailed.button.dev=Modifier pour bac à sable version dév.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Île aux champignons	#
 eduTemplateWorld.starterTown.name=Ville de départ	#
 eduTemplateWorld.tutorialVolumeII.name=Tutoriel, volume II	#
 eduTemplateWorld.blocksOfGrass.name=Blocs d’herbe	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Monde soumis	#
-worldConversion.feedback.failed.title=Échec de la soumission du monde	#
-worldConversion.feedback.done.msg=Merci de nous avoir envoyé une copie de votre monde et d'ainsi nous aider à traquer les bogues! Nous travaillons fort à réparer les choses et nous ne pourrons pas vous revenir concernant ce monde en particulier. Voici le reçu confirmant que nous l'avons bien reçu : %s	#
-worldConversion.feedback.failed.msg=Oups! Nous n'avons pas pu recevoir votre monde. Veuillez vérifier votre connexion Internet ou réessayer l'envoi plus tard.	#
-worldConversion.feedback.prompt.title=Soumettre le monde	#
-worldConversion.feedback.prompt.msg=Est-ce que votre ancien monde n'apparaît pas ou ne fonctionne pas tel qu'il le devrait? Envoyez-nous votre monde afin de nous aider à traquer les bogues!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Conversion complétée	#
@@ -9216,48 +9207,48 @@ hbui.Toggle.select=Sélectionner	#
 hbui.Toggle.selected=sélectionné	#
 
 ## Save Location Transfer
-save_location_transfer.progress.title=Moving files	#
-save_location_transfer.progress.message=Moving "%s"...	#
-save_location_transfer.worlds_error=Some worlds are not available because they could not be moved. Restart Minecraft to try again.	#
+save_location_transfer.progress.title=Déplacement de fichiers	#
+save_location_transfer.progress.message=Déplacement de "%s"...	#
+save_location_transfer.worlds_error=Certains mondes ne sont pas disponibles, car ils n'ont pu être déplacés. Redémarrez Minecraft pour réessayer.	#
 
-save_location_transfer.button.get_started=Get started	#
-save_location_transfer.button.retry=Retry	#
-save_location_transfer.button.go_to_faq=Go to FAQ	#
-save_location_transfer.button.next=Next	#
-save_location_transfer.button.resume=Resume	#
-save_location_transfer.button.continue=Continue	#
-save_location_transfer.button.start=Start moving files	#
-save_location_transfer.button.marketplace=Your Marketplace packs	#
-save_location_transfer.button.main_menu=Go to Main menu	#
-save_location_transfer.button.faq=Read the FAQ for more info.	#
-save_location_transfer.button.microsoft_store=Go to Microsoft Store	#
-save_location_transfer.button.help=Help	#
+save_location_transfer.button.get_started=Premiers pas	#
+save_location_transfer.button.retry=Réessayer	#
+save_location_transfer.button.go_to_faq=Aller à la FAQ	#
+save_location_transfer.button.next=Suivant	#
+save_location_transfer.button.resume=Reprendre	#
+save_location_transfer.button.continue=Continuer	#
+save_location_transfer.button.start=Commencer à déplacer des fichiers	#
+save_location_transfer.button.marketplace=Vos packs du marché	#
+save_location_transfer.button.main_menu=Aller au menu principal	#
+save_location_transfer.button.faq=Lisez la FAQ pour obtenir plus d’infos.	#
+save_location_transfer.button.microsoft_store=Aller au Microsoft Store	#
+save_location_transfer.button.help=Aide	#
 
-save_location_transfer.title.initializing=Optimizing data	#
-save_location_transfer.gathering_info.description=Gathering information...	#
-save_location_transfer.description.out_of_space=You don't have enough free space to move your files to a new location.	#
+save_location_transfer.title.initializing=Optimisation des données	#
+save_location_transfer.gathering_info.description=Collecte d’informations...	#
+save_location_transfer.description.out_of_space=Vous ne disposez pas de suffisamment d'espace libre pour déplacer vos fichiers vers un nouvel emplacement.	#
 
-save_location_transfer.start_transfer.generic.title=New storage location	#
-save_location_transfer.start_transfer.description=We need to move your files to a different location on your device.	#
-save_location_transfer.start_transfer.total_file_size=Total file size:	#
-save_location_transfer.start_transfer.new_location=New location: %s	#
+save_location_transfer.start_transfer.generic.title=Nouvel emplacement de stockage	#
+save_location_transfer.start_transfer.description=Nous devons déplacer vos fichiers vers un autre emplacement sur votre appareil.	#
+save_location_transfer.start_transfer.total_file_size=Taille totale des fichiers :	#
+save_location_transfer.start_transfer.new_location=Nouvel emplacement : %s	#
 
-save_location_transfer.resume_transfer.title=Move was interrupted	#
-save_location_transfer.resume_transfer.description=We're in the middle of moving your data to a new location on your device. Please press resume to finish the move.	#
-save_location_transfer.resume_transfer.description.out_of_space=We're in the middle of moving your data to a new location on your device, but you don't have enough free space.	#
-save_location_transfer.resume_transfer.need_to_move=Need to move:	#
-save_location_transfer.resume_transfer.available=(%s available)	#
-save_location_transfer.resume_transfer.location=Location: %s	#
-save_location_transfer.resume_transfer.free_up=Please free up at least %s to continue.	#
+save_location_transfer.resume_transfer.title=Le déplacement a été interrompu	#
+save_location_transfer.resume_transfer.description=Nous sommes en train de déplacer vos données vers un nouvel emplacement sur votre appareil. Veuillez appuyer sur reprendre pour terminer le déplacement.	#
+save_location_transfer.resume_transfer.description.out_of_space=Nous sommes en train de déplacer vos données vers un nouvel emplacement sur votre appareil, mais vous ne disposez pas de suffisamment d'espace libre.	#
+save_location_transfer.resume_transfer.need_to_move=Il est nécessaire de déplacer :	#
+save_location_transfer.resume_transfer.available=(%s disponibles)	#
+save_location_transfer.resume_transfer.location=Emplacement : %s	#
+save_location_transfer.resume_transfer.free_up=Veuillez libérer au moins %s pour continuer.	#
 
-save_location_transfer.transfer_error_out_of_space.title=Not enough free space	#
-save_location_transfer.transfer_error_out_of_space.files_left=Files left:	#
+save_location_transfer.transfer_error_out_of_space.title=Espace libre insuffisant	#
+save_location_transfer.transfer_error_out_of_space.files_left=Fichiers restants :	#
 
-save_location_transfer.finished.generic.title=All done	#
-save_location_transfer.finished.generic.description=Your files have been moved successfully. Please restart Minecraft.	#
+save_location_transfer.finished.generic.title=Terminé	#
+save_location_transfer.finished.generic.description=Vos fichiers ont été déplacés avec succès. Veuillez redémarrer Minecraft.	#
 
-save_location_transfer.transfer_error.title=Trouble moving files!	#
-save_location_transfer.transfer_error.description=We couldn't move all your files. We encountered the following error: (%s).	#
+save_location_transfer.transfer_error.title=Nous éprouvons des problèmes avec le déplacement des fichiers!	#
+save_location_transfer.transfer_error.description=Nous n’avons pas pu déplacer tous vos fichiers. Nous avons rencontré l’erreur suivante : (%s).	#
 
 trade.doesNotWant=Le commerçant n'en veut pas	#
 trade.excalamation=!	#
@@ -9303,6 +9294,23 @@ client.version.1.2=Mise à jour « Better Together » (Mieux ensemble) (%s)	#
 client.version.1.4=Mise à jour Aquatique (%s)	#
 client.version.1.5=Mise à jour Aquatique (%s)	#
 client.version.1.11=Mise à jour Village et pillage (%s)	#
+
+cloud_upload.title=Assistance aux joueurs Mojang	#
+cloud_upload.prompt.description=Sur la base de votre récent ticket d’assistance, l'assistance aux joueurs Mojang a accordé l’autorisation de télécharger votre monde. Vous pouvez télécharger votre monde affecté à partir de l’écran Sélection de monde ou sous Paramètres du monde.	#
+cloud_upload.prompt.do_not_show_toggle=Ne plus afficher cet écran	#
+cloud_upload.prompt.button.worlds=Aller aux Mondes	#
+cloud_upload.prompt.button.learn_more=En savoir plus	#
+cloud_upload.toggle.accept_terms=Accepter le contrat de services Microsoft	#
+cloud_upload.button.upload=Télécharger le monde (%s)	#
+cloud_upload.button.service_agreement=Contrat de services Microsoft	#
+cloud_upload.terms.title=Conditions générales	#
+cloud_upload.terms.description=Pour télécharger votre monde, acceptez le contrat de services Microsoft. Les mondes téléchargés sont soumis au contrat de services Microsoft. Vous pouvez toujours jouer avec votre monde une fois téléchargé.	#
+cloud_upload.uploading.title=Téléchargement de fichiers de monde [%d/%d]	#
+cloud_upload.uploading.description_1=Le téléchargement de vos fichiers de monde peut prendre quelques minutes. Ne désactivez pas le jeu ou ne quittez pas cet écran pendant le processus de téléchargement.	#
+cloud_upload.uploading.description_2=La taille des mondes peut être importante. Veuillez vous connecter au Wi-Fi pour éviter d’utiliser des données cellulaires.	#
+cloud_upload.succeeded.description=Votre téléchargement de monde s’est terminé avec succès. Merci!	#
+cloud_upload.failed.description=Votre téléchargement de monde a échoué. Réessayer?	#
+cloud_upload.tts.message=Téléchargement de fichiers de monde	#
 
 dr.banner.sale=Soldes!	#
 dr.banner.limitedTimeOffer=Offre à durée limitée!	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, succès : %s (%s requis)           	#
 gameTest.error.failed=Échec de %s!	#
 gameTest.error.succeededInInvalidTick=Réussi dans un tick non valide : %s, mais le tick actuel est %s	#
 gameTest.error.noTestsFound=Aucun test trouvé pour la balise '%s'	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(facultatif)	#
 gameTest.assert.couldNotSetBlock=Impossible de définir bloc « %s »	#
 gameTest.assert.missingButton=Un bouton était attendu	#
@@ -9598,8 +9607,9 @@ gameTest.assert.missingExplosionComponent=Impossible de régler la mèche de l�
 gameTest.assert.invalidEntityInstance=Instance d’entité non valide	#
 gameTest.assert.unexpectedParameterValue=Valeur inattendue pour le paramètre « %s »	#
 gameTest.assert.expectEntityInstance=Instance d’entité attendue	#
-gameTest.assert.invalidFluidType=Invalid fluid type	#
-gameTest.assert.expectCauldron=Expected block of type Cauldron	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
+gameTest.assert.invalidFluidType=Type de fluide non valide	#
+gameTest.assert.expectCauldron=Un bloc de type Chaudron était attendu	#
 gameTest.success.runningTests=Exécution de tests %s...	#
 gameTest.success.relativePosition=Position par rapport à %s : %s						### first %s is the name of the test and the second %s is the local location in the test structure
 gameTest.success.passed=Réussite de %s!	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s tests optionnels ont échoué	#
 gameTest.report.bookTitle=Rapport de test de jeu                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Mode de commande fourni inconnu	#
 script.error.noDebugger=Débogage non disponible	#
 script.error.debuggerFailed=Impossible de démarrer le débogage	#

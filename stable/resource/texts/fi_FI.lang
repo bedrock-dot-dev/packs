@@ -79,6 +79,7 @@ accessibility.play.realmFeed=Realmin syöte	#
 accessibility.play.tabLeft=Siirry vasemmalle painamalla %s	#
 accessibility.play.tabRight=Siirry oikealle painamalla %s	#
 accessibility.play.legacyWorldsDelete=Poista vanha maailma	#
+accessibility.play.uploadWorld=Lataa maailma	#
 
 accessibility.pause.permissions=Luvat	#
 accessibility.pause.profile=Valitse profiili	#
@@ -456,7 +457,6 @@ authentication.error.accountType.body=Hups! Näyttää siltä, että olet kirjau
 
 eula.intro=Sinun on hyväksyttävä loppukäyttäjän lisenssisopimus (EULA), jotta voit käyttää Minecraft: Education Editionia.	#
 eula.location=EULA löytyy osoitteesta:	#
-eula.hyperlink=https://education.minecraft.net/eula	#
 eula.title=Käyttöoikeussopimus	#
 eula.view=Näytä käyttöoikeussopimus	#
 eula.callToAction=Napsauttamalla Hyväksy hyväksyt sopimuksen ehdot.	#
@@ -767,6 +767,8 @@ commands.code.success=Koodinrakentaja käynnistetty.	#
 commands.compare.failed=Lähde ja kohde eivät ole identtisiä	#
 commands.compare.success=%1$d kuutiota vertailtu	#
 commands.compare.tooManyBlocks=Määritetyllä alueella (%1$d > %2$d) on liikaa kuutioita	#
+commands.compactdb.description=Explicitly compacts the levelDB log.	#
+commands.compactdb.success=Successfully compacted levelDB log.	#
 commands.corruptworld.description=Vahingoittaa palvelimelle ladattua maailmaa.	#
 commands.corruptworld.success=Maailmaa vahingoitettiin onnistuneesti.	#
 commands.daylock.description=Lukitsee ja avaa päivä-yö-kierron.	#
@@ -1113,6 +1115,7 @@ commands.scoreboard.players.set.tagMismatch=TietoTunnus ei vastaa pelaajaa %1$s	
 commands.scoreboard.players.score.notFound=Pelaajalle %1$s ei löydy %2$s-tulosta									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.test.failed=Tulos %1$s EI ole välillä %2$s−%3$s								###1: Value ##2: Min Range Value ##3: Max Range Value
 commands.scoreboard.players.test.success=Tulos %1$s on välillä %2$s−%3$s								###1: Value ##2: Min Range Value ##3: Max Range Value
+commands.scoreboard.players.get.success=%1$d																###
 
 #### Scoreboards can also handle teams, which are close to what an Objective does	####
 #### with just a little extra functionality											####
@@ -2418,6 +2421,8 @@ storageSpaceWarningScreen.frontend=Tallennustilasi on melkein lopussa! Minecraft
 storageSpaceWarningScreen.lowduringgameplay=Laitteesi tallennustila, johon Minecraft voi tallentaa maailmoja ja asetuksia, on melkein lopussa. Kannattaa poistaa vanhoja juttuja, jota et enää tarvitse, jotta voit jatkaa uusien juttujen tallentamista!	#
 storageSpaceWarningScreen.fullduringgameplay=Tallennustilasi on lopussa, eikä Minecraft voi tallentaa edistystäsi! Minecraft palauttaa sinut päävalikkoon tallennustilan tyhjentämistä varten.	#
 
+edu.signin_screen.viewTerms=Katso käyttöehdot	#
+
 edu.play_screen.view_worlds=NÄYTÄ MAAILMANI	#
 edu.play_screen.view_library=NÄYTÄ KIRJASTO	#
 edu.play_screen.create_new=LUO UUSI	#
@@ -2434,6 +2439,12 @@ edu.worlds_screen.search_placeholder=Haku	#
 edu.worlds_screen.play=PELAA	#
 edu.worlds_screen.host=ISÄNNÖI	#
 edu.worlds_screen.settings=ASETUKSET	#
+edu.worlds_screen.manage=HALLITSE	#
+edu.worlds_screen.back=TAKAISIN	#
+edu.worlds_screen.copy=KOPIOI	#
+edu.worlds_screen.export=VIE	#
+edu.worlds_screen.share=JAA	#
+edu.worlds_screen.delete=POISTA	#
 edu.worlds_screen.courses_title=Omat kurssit	#
 
 edu.templates.title=Omat mallit	#
@@ -3735,6 +3746,7 @@ level.import.success=Taso tuotu onnistuneesti	#
 level.export.failed=Tason vienti epäonnistui	#
 level.import.failed=Tason tuonti epäonnistui	#
 level.import.failed.incompatibleEdition=Tason tuonti epäonnistui: tiedostomuotoa ei tueta	#
+
 invite.clear=Tyhjennä valinnat	#
 invite.send=Lähetä %d kutsua	#
 invite.sendOne=Lähetä 1 kutsu	#
@@ -4601,7 +4613,6 @@ item.elytra.name=Liitosiivet	#
 item.emerald.name=Smaragdi	#
 item.emptyMap.name=Tyhjä kartta	#
 item.emptyLocatorMap.name=Tyhjä paikannuskartta	#
-item.emptyPotion.name=Vesipullo	#
 item.enchanted_book.name=Lumottu kirja	#
 item.end_crystal.name=Äärikristalli	#
 tile.end_rod.name=Ääritanko	#
@@ -5362,7 +5373,7 @@ multiplayer.player.joined.realms.renamed=%s (tunnettiin ennen nimellä %s) liitt
 multiplayer.player.left=%s poistui pelistä	#
 multiplayer.player.left.realms=%s poistui Realmista	#
 multiplayer.player.changeToPersona=%s on muokannut hahmon ulkonäköä.	#
-multiplayer.player.changeToSkin=%s vaihtoi olemukseen %s.	#
+multiplayer.player.changeToSkin=%s vaihtoi olemuksensa.	#
 multiplayer.stopSleeping=Nouse sängystä	#
 multiplayer.texturePrompt.line1=Tämä palvelin suosittelee mukautetun resurssipaketin käyttämistä.	#
 multiplayer.texturePrompt.line2=Haluatko ladata ja asentaa sen automaagisesti?	#
@@ -5512,6 +5523,7 @@ options.dev_disableRenderWeather=Poista sään piirtäminen käytöstä	#
 options.dev_disableRenderHud=Poista heijastusnäytön piirtäminen käytöstä	#
 options.dev_disableRenderItemInHand=Poista kädessä olevien esineiden piirtäminen käytöstä	#
 options.dev_disableRenderMainMenuCubeMap=Poista päävalikon kuutiokartoitus käytöstä	#
+options.dev_disableRenderMainMenuPaperdollAnimation=Poista päävalikon paperinukkeanimaatio käytöstä	#
 options.dev_serverInstanceThread=Palvelininstanssisäie	#
 options.dev_newCuller=Käytä uutta karsijaa	#
 options.dev_showBuildInfo=Näytä versiotiedot	#
@@ -5573,12 +5585,16 @@ options.discoveryEnvironment=Discovery-ympäristö (vaatii uudelleenkäynnistyks
 options.discoveryEnvironment.production=Tuotanto	#
 options.discoveryEnvironment.staging=Lavastus	#
 options.discoveryEnvironment.local=Paikallinen	#
-options.discoveryEnvironment.dev=Kehittäjä	#
+options.discoveryEnvironment.dev=Dev [epävakaa]	#
 options.dev_realmsEnvironment=Realms-ympäristö	#
 options.dev_realms_environment.production=Tuotanto	#
 options.dev_realms_environment.staging=Lavastaminen	#
 options.dev_realms_environment.local=Paikallinen	#
 options.dev_realms_environment.dev=Kehittäjä	#
+options.dev_realmsSku=Realms SKU	#
+options.dev_realms_sku.oneday=One Day	#
+options.dev_realms_sku.production=Production	#
+options.dev_realms_sku.fiveday=Five Days	#
 options.dev_realmsEndpoint=Realms-päätepiste	#
 options.dev_realmsEndpointPayment=Realms-päätepistemaksu	#
 options.dev_realmsRelyingParty=Realmsin luottava osapuoli	#
@@ -5598,6 +5614,7 @@ options.dev_currentTreatmentsTitle=Nykyiset käsittelyt	#
 options.dev_unusedTreatmentsTitle=Käyttämättömät hoidot	#
 options.dev_addTreatmentId=Lisää käsittelytunnus	#
 options.dev_addLabel=Lisää	#
+options.dev_applyTreatments=Käytä hoitoja	#
 options.dev_resetToDefault=Palauta oletus	#
 options.dev_clearFlights=Poista	#
 options.dev_experimentalProgressions=Ohita sarjat	#
@@ -5686,7 +5703,7 @@ options.font_license=Kirjasimen käyttöoikeus	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Olohuoneen näkökenttä	#
 options.default.format=%s	#
-options.percent.format=%s% %	#
+options.percent.format=%s %%	#
 options.fov.format=%s°	#
 options.fov.max=Quake Pro	#
 options.fov.min=Tavallinen	#
@@ -6281,6 +6298,9 @@ potion.digSlowDown=Kaivuuhidastus	#
 potion.digSpeed=Pikakaivuu	#
 potion.effects.whenDrank=Käytettäessä:	#
 potion.empty=Ei vaikutuksia	#
+potion.emptyPotion.name=Vesipullo	#
+potion.emptyPotion.splash.name=Roiskevesipullo	#
+potion.emptyPotion.linger.name=Viipyilevä vesipullo	#
 potion.fireResistance=Tulensieto	#
 potion.fireResistance.name=Tulensiedon taikajuoma	#
 potion.fireResistance.splash.name=Tulensiedon roisketaikajuoma	#
@@ -6969,6 +6989,8 @@ store.menu.home=Koti	#
 store.itemDetail.back=Yksityiskohdat	#
 store.coin.bonus=Bonus!	#
 store.disabledOnBeta=Tämä ominaisuus ei tällä hetkellä ole käytössä beetaversiossa.	#
+store.disabled.nopermission=You do not have permission to use the Store at this time.	#
+store.disabled.generic=The Store is currently unavailable.	#
 
 store.giftPromo.day=Päivä %s			### %s being day number such as "Day 1", "Day 2", etc. Please use short translations. 3 letters if possible
 store.equipped=Lunastettu	#
@@ -8479,29 +8501,6 @@ typeface.notoSans=Noto Sans	#
 
 worldConversionErrorPrompt.title=Maailman muuntaminen epäonnistui	#
 worldConversionErrorPrompt.message=Hups, jokin meni pieleen maailman muuntamisessa. Yritä myöhemmin uudelleen.	#
-worldConversionErrorPrompt.message.upload=Jokin meni pieleen. Emme kyenneet muuntamaan maailmaasi. Voit lähettää meille maailmasi myöhemmin menemällä vanhaan maailmaasi ja painamalla :_gamepad_face_button_up:. Voit myös lähettää meille maailmasi nyt, jotta voimme tehdä lisätutkimuksia.	#
-worldConversionErrorPrompt.sendWorld=Lähetä maailma nyt	#
-worldConversionErrorPrompt.backToWorld=Takaisin maailmoihin	#
-
-worldConversionErrorReport.title=Ilmoita tästä maailmasta	#
-worldConversionErrorReport.button.reportAndSend=Ilmoita maailmasta ja lähetä se	#
-worldConversionErrorReport.dropdown.default=Mikä meni pieleen?	#
-worldConversionErrorReport.dropdown.mobs=Hirviöt käyttäytyivät väärin tai niitä puuttui	#
-worldConversionErrorReport.dropdown.terrain=Maasto oli virheellinen tai sitä puuttui	#
-worldConversionErrorReport.dropdown.itemsMissing=Esineeni, luomukseni ja/tai pelaajatilastoni hävisivät	#
-worldConversionErrorReport.dropdown.itemInteraction=En voinut vaikuttaa esineisiin	#
-worldConversionErrorReport.dropdown.worldConversion=Maailman muuntaminen epäonnistui	#
-worldConversionErrorReport.terms.agreement=Valitsemalla Hyväksy lähetät maailmasi Minecraft-tiimille. Microsoftin palvelusopimus ja tietosuojakäytännöt pätevät.	#
-worldConversionErrorReport.terms.agreementForBeta=Lähettämällä maailmasi annat Microsoftille luvan testata, jäljentää, muokata, jakaa ja esitellä julkisesti maailmaasi tukena maailmasi Minecraftiin siirtämisessä.	#
-worldConversionErrorReport.terms.viewTerms=Katso käyttöehdot	#
-
-
-worldConversionErrorReport.sending.title=Lähetetään vanhaa maailmaa	#
-worldConversionErrorReport.sending.description=Lähetetään vanhaa maailmaa Minecraftiin...	#
-
-worldConversionErrorReport.sending.complete=Lähetys onnistui	#
-worldConversionErrorReport.sending.completeMessage.part1=Kiitos! Teemme kovasti töitä asioiden korjaamiseksi emmekä voi ottaa sinuun yhteyttä juuri tästä maailmasta. Tässä on kuittisi vahvistukseksi siitä, että olemme vastaanottaneet maailmasi.	#
-worldConversionErrorReport.sending.completeMessage.part2=Vastaanotettu: %s	#
 
 worldError.corrupted=on vahingoittunut, eikä sitä voida käynnistää.	#
 worldError.invalidArguments=luotiin virheellisillä argumenteilla.	#
@@ -8843,14 +8842,6 @@ eduTemplateWorld.mooshroomIsland.name=Sienisaari	#
 eduTemplateWorld.starterTown.name=Aloittelukaupunki	#
 eduTemplateWorld.tutorialVolumeII.name=Tutoriaali, osa II	#
 eduTemplateWorld.blocksOfGrass.name=Ruhokuutioita	#
-
-## World Conversion Feedback
-worldConversion.feedback.done.title=Maailma lähetetty	#
-worldConversion.feedback.failed.title=Maailman lähetys epäonnistui	#
-worldConversion.feedback.done.msg=Kiitos, että lähetit meille kopion maailmastasi ja autat meitä löytämään virheitä! Teemme kovasti töitä asioiden korjaamiseksi emmekä voi ottaa sinuun yhteyttä juuri tästä maailmasta. Tässä on kuittisi vahvistukseksi siitä, että olemme vastaanottaneet maailmasi: %s	#
-worldConversion.feedback.failed.msg=Hups! Emme saaneet vastaanotettua maailmaasi. Tarkista internetyhteytesi tai lähetä maailmasi uudelleen myöhemmin.	#
-worldConversion.feedback.prompt.title=Lähetä maailma	#
-worldConversion.feedback.prompt.msg=Eikö vanha maailmasi näytä siltä miltä sen pitäisi tai toimi kunnolla? Lähetä maailmasi meille ja auta meitä löytämään virheet!	#
 
 ## World Conversion Complete Popup
 worldConversionComplete.title=Muunto suoritettu	#
@@ -9304,6 +9295,23 @@ client.version.1.4=Vesipäivitys (%s)	#
 client.version.1.5=Vesipäivitys (%s)	#
 client.version.1.11=Kylä ja Ryöstelijä -päivitys (%s)	#
 
+cloud_upload.title=Mojang-pelaajatuki	#
+cloud_upload.prompt.description=Hiljattaisen tukipyyntösi perusteella Mojang-pelaajatuki on myöntänyt luvan ladata maailmasi. Voit ladata asiaan liittyvän maailman Valitse maailma -näytöllä tai Maailman asetukset -kohdassa.	#
+cloud_upload.prompt.do_not_show_toggle=Älä näytä tätä ruutua uudelleen	#
+cloud_upload.prompt.button.worlds=Siirry maailmoihin	#
+cloud_upload.prompt.button.learn_more=Lue lisää	#
+cloud_upload.toggle.accept_terms=Hyväksy Microsoftin palvelusopimus	#
+cloud_upload.button.upload=Lataa maailma (%s)	#
+cloud_upload.button.service_agreement=Microsoftin palvelusopimus	#
+cloud_upload.terms.title=Käyttöehdot	#
+cloud_upload.terms.description=Voit ladata maailmasi, kun olet hyväksynyt Microsoftin palvelusopimuksen. Ladattuihin maailmoihin sovelletaan Microsoftin palvelusopimusta. Voit pelata maailmassasi senkin jälkeen, kun se on ladattu.	#
+cloud_upload.uploading.title=Ladataan maailman tiedostoja [%d/%d]	#
+cloud_upload.uploading.description_1=Maailman tiedostojen lataaminen voi kestää muutaman minuutin. Älä sammuta peliä tai poistu tästä näytöstä latauksen aikana.	#
+cloud_upload.uploading.description_2=Maailmat voivat olla suuria. Muodosta yhteys WiFi-verkkoon välttääksesi mobiilidatan käytön.	#
+cloud_upload.succeeded.description=Maailman lataus on onnistui. Kiitos!	#
+cloud_upload.failed.description=Maailman lataus epäonnistui. Yritetäänkö uudelleen?	#
+cloud_upload.tts.message=Ladataan maailman tiedostoja	#
+
 dr.banner.sale=Ale!	#
 dr.banner.limitedTimeOffer=Tarjous voimassa rajoitetun ajan!	#
 dressingRoom.skin_color_picker_title=Olemuksen väri	#
@@ -9565,6 +9573,7 @@ gameTest.error.flakyFailedShowSuccesses=, onnistumiset: %s (%s vaaditaan)       
 gameTest.error.failed=%s epäonnistui!	#
 gameTest.error.succeededInInvalidTick=Onnistuminen virheellisellä pelipäivityksellä: odotettiin %s, mutta nykyinen pelipäivitys on %s	#
 gameTest.error.noTestsFound=Tunnisteelle '%s' ei löydy testejä	#
+gameTest.error.simulatedPlayerOutOfBounds=Simulated player '%s' has traveled too far from its GameTest structure.	#
 gameTest.optionalPrefix=(vapaaehtoinen)	#
 gameTest.assert.couldNotSetBlock=Kuutiota '%s' ei voitu määrittää	#
 gameTest.assert.missingButton=Odotettiin painiketta	#
@@ -9598,6 +9607,7 @@ gameTest.assert.missingExplosionComponent=Ei voida asettaa entiteetin tulilankaa
 gameTest.assert.invalidEntityInstance=Virheellinen entiteetin esiintymä	#
 gameTest.assert.unexpectedParameterValue=Odottamaton arvo parametrille '%s'	#
 gameTest.assert.expectEntityInstance=Odotettu entiteetin esiintymä	#
+gameTest.assert.didNotExpectEntityInstance=Did not expect entity instance of type '%s'	#
 gameTest.assert.invalidFluidType=Virheellinen nestetyyppi	#
 gameTest.assert.expectCauldron=Odotettu kuutiotyyppi: pata	#
 gameTest.success.runningTests=Suoritetaan %s testiä...	#
@@ -9615,6 +9625,7 @@ gameTest.report.optionalFailures=%s valinnaista testiä epäonnistui	#
 gameTest.report.bookTitle=Pelitestin raportti                                      	### A book with this title is placed next to each test with the test results inside
 
 ## Script
+script.description=Debugging options for GameTest Framework.	#
 script.error.unknownCommandMode=Annettu tuntematon komentotila	#
 script.error.noDebugger=Virheenkorjaus ei saatavilla	#
 script.error.debuggerFailed=Virheenkorjauksen käynnistäminen epäonnistui	#
