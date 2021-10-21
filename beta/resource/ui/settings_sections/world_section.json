@@ -545,7 +545,7 @@
         }
       },
       {
-        "option_dropdown_3@settings_common.option_dropdown": {
+        "option_dropdown_3@settings_common.option_dropdown_no_scroll": {
           "$tts_section_header": "createWorldScreen.worldPreferences",
           "$option_label": "createWorldScreen.worldType",
           "$dropdown_content": "world_section.world_type_dropdown_content",
@@ -553,7 +553,8 @@
           "$dropdown_name": "world_type_dropdown",
           "$options_dropdown_toggle_label_binding": "#world_type_dropdown_toggle_label",
           "$option_enabled_binding_name": "#world_type_dropdown_enabled",
-          "$dropdown_scroll_content_size": [ "100%", "200%" ],
+          "$selection_highlight_offset": [ -2, 1 ],
+          "$selection_highlight_size": [ "100%", "100% + 1px" ],
           "$focus_override_right": "FOCUS_OVERRIDE_STOP"
         }
       },
@@ -1507,6 +1508,7 @@
       },*/
       {
         "old_world_type_toggle@settings_common.radio_with_label": {
+          "ignored": "$is_publish",
           "$toggle_state_binding_name": "#world_type_radio_old",
           "$radio_label_text": "generator.old"
         }

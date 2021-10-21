@@ -1669,40 +1669,6 @@
          "pitch" : 1.0,
          "volume" : 1.0
       },
-      "sculk_sensor" : {
-         "events" : {
-            "break" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_sensor",
-               "volume" : 1.0
-            },
-            "default" : "",
-            "hit" : {
-               "pitch" : 0.50,
-               "sound" : "hit.sculk_sensor",
-               "volume" : 0.350
-            },
-            "item.use.on" : {
-               "pitch" : 0.80,
-               "sound" : "use.sculk_sensor"
-            },
-            "place" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "place.sculk_sensor",
-               "volume" : 1.0
-            },
-            "power.off" : {
-               "pitch" : 0.50,
-               "sound" : "random.click"
-            },
-            "power.on" : {
-               "pitch" : 0.60,
-               "sound" : "random.click"
-            }
-         },
-         "pitch" : 1.0,
-         "volume" : 1.0
-      },
       "shroomlight" : {
          "events" : {
             "break" : {
@@ -4653,19 +4619,9 @@
             "sound" : "random.click",
             "volume" : 1.0
          },
-         "power.off.sculk_sensor" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "power.off.sculk_sensor",
-            "volume" : 1.0
-         },
          "power.on" : {
             "pitch" : 0.60,
             "sound" : "random.click",
-            "volume" : 1.0
-         },
-         "power.on.sculk_sensor" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "power.on.sculk_sensor",
             "volume" : 1.0
          },
          "pre_ram" : {
@@ -4736,6 +4692,11 @@
          "record.mellohi" : {
             "pitch" : 1.0,
             "sound" : "record.mellohi",
+            "volume" : 1.0
+         },
+         "record.otherside" : {
+            "pitch" : 1.0,
+            "sound" : "record.otherside",
             "volume" : 1.0
          },
          "record.pigstep" : {
@@ -5969,29 +5930,6 @@
                "step" : {
                   "sound" : "block.scaffolding.step",
                   "volume" : 0.30
-               }
-            },
-            "pitch" : 1.0,
-            "volume" : 1.0
-         },
-         "sculk_sensor" : {
-            "events" : {
-               "default" : "",
-               "fall" : {
-                  "sounds" : "fall.sculk_sensor",
-                  "volume" : 0.40
-               },
-               "jump" : {
-                  "sound" : "jump.sculk_sensor",
-                  "volume" : 0.120
-               },
-               "land" : {
-                  "sound" : "land.sculk_sensor",
-                  "volume" : 0.140
-               },
-               "step" : {
-                  "sound" : "step.sculk_sensor",
-                  "volume" : 0.170
                }
             },
             "pitch" : 1.0,

@@ -144,9 +144,18 @@
             "value": "ocean"
           },
           {
-            "test": "has_biome_tag",
-            "operator": "==",
-            "value": "warm"
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "warm"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "lukewarm"
+              }
+            ]
           }
         ]
       },
@@ -179,9 +188,18 @@
             "value": "ocean"
           },
           {
-            "test": "has_biome_tag",
-            "operator": "==",
-            "value": "warm"
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "warm"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "lukewarm"
+              }
+            ]
           }
         ]
       },

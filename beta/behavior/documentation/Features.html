@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.18.0.21</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.18.0.22</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -29,6 +29,8 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:weighted_random_feature"> minecraft:weighted_random_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:sculk_patch_feature"> minecraft:sculk_patch_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:catalyst_feature"> minecraft:catalyst_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:partially_exposed_blob_feature"> minecraft:partially_exposed_blob_feature</a> </tr> </td>
+<tr> <td> <a href="#minecraft:surface_relative_threshold_feature"> minecraft:surface_relative_threshold_feature</a> </tr> </td>
 <tr> <th><a href="#Attaching features">Attaching features</a></th> </tr>
 <tr> <th><a href="#Feature rules">Feature rules</a></th> </tr>
 <tr> <th><a href="#Feature rule schema">Feature rule schema</a></th> </tr>
@@ -530,6 +532,43 @@ Feature type 'minecraft:sculk_patch_feature' has not yet been documented.</br><a
 
 Feature type 'minecraft:catalyst_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
 
+<h1><p id="minecraft:partially_exposed_blob_feature">minecraft:partially_exposed_blob_feature</p></h1>
+
+'minecraft:partially_exposed_blob_feature' generates a blob of the specified block with the specified dimensions For the most part the blob is embedded in the specified surface, however a single side is allowed to be exposed.</br><h2></h2>
+Example use: Blobs of Magma blocks partially embedded in the floors of flooded caves.<br / ><textarea readonly="true" cols="59" rows="14">
+{
+    "format_version": "1.13.0",
+    "minecraft:partially_exposed_blob_feature": {
+      "description": {
+        "identifier": "minecraft:underwater_magma_feature"
+      },
+      "places_block": "minecraft:magma",
+      "placement_radius_around_floor": 1,
+      "placement_probability_per_valid_position": 0.5,
+      "exposed_face": "up"
+    }
+  }
+}
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
+<h1><p id="minecraft:surface_relative_threshold_feature">minecraft:surface_relative_threshold_feature</p></h1>
+
+'minecraft:surface_relative_threshold_feature' determines whether the provided position is below the estimated surface level of the world, and places a feature if so.If the provided position is above configured surface or the surface is not available, placement will fail. This feature only works for Overworld generators using world generation 1.18 or later.</br><h2></h2>
+Example use: Define a feature that places the 'underwater_magma_snap_to_surface_feature', if the given position is at least two blocks below estimated surface level.<br / ><textarea readonly="true" cols="75" rows="11">
+{
+  "format_version": "1.16.0",
+  "minecraft:surface_relative_threshold_feature": {
+  "description": {
+    "identifier": "minecraft:underwater_magma_underground_feature"
+  },
+  "feature_to_snap": "minecraft:underwater_magma_snap_to_surface_feature",
+  "minimum_distance_below_surface": 2
+  }
+}
+</textarea> </br>
+<a href="#Index">Back to top</a><br><br>
+
 <h2>Feature schema</h2>
 Here is the complete feature schema<br / ><textarea readonly="true" cols="192" rows="32">
   {
@@ -777,7 +816,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
           object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
           {
-              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
               int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
               int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
               array "extent"[2]
@@ -789,7 +828,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
           object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
           {
-              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
               int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
               int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
               array "extent"[2]
@@ -801,7 +840,7 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
           object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
           {
-              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+              enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
               int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
               int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
               array "extent"[2]
@@ -904,7 +943,8 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           feature_reference "feature_to_snap" // Named reference of feature to be snapped
           int "vertical_search_range" // Range to search for a floor or ceiling for snaping the feature.
           string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'
-          bool "allow_underwater_placement" : opt // Features can be snapped through water as well as air.
+          bool "allow_air_placement" : opt // Determines whether the feature can snap through air blocks. Defaults to true.
+          bool "allow_underwater_placement" : opt // Determines whether the feature can snap through water blocks. Defaults to false.
       }
       object "minecraft:structure_template_feature" : opt
       {
@@ -1417,6 +1457,26 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
           int "pathes_count_max"
           int "max_patch_distance"
       }
+      object "minecraft:partially_exposed_blob_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          int "placement_radius_around_floor"<1-8> // Defines the cubic radius of the blob. [1, 8]
+          float "placement_probability_per_valid_position"<0.000000-1.000000> // The probability of trying to place a block at each position within the placement bounds. [0,1]
+          string "exposed_face" : opt // Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face.
+           "places_block" // Reference to the block to be placed.
+      }
+      object "minecraft:surface_relative_threshold_feature" : opt
+      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          feature_reference "feature_to_place" // Named reference of feature to be placed
+          int "minimum_distance_below_surface" : opt // The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero.
+      }
   }
 
 </textarea> </br>
@@ -1503,7 +1563,7 @@ Here is a sample feature rule<br / ><textarea readonly="true" cols="69" rows="32
               molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
               object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
               {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                   int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                   int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                   array "extent"[2]
@@ -1515,7 +1575,7 @@ Here is a sample feature rule<br / ><textarea readonly="true" cols="69" rows="32
               molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
               object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
               {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                   int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                   int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                   array "extent"[2]
@@ -1527,7 +1587,7 @@ Here is a sample feature rule<br / ><textarea readonly="true" cols="69" rows="32
               molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
               object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
               {
-                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)
+                  enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
                   int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
                   int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
                   array "extent"[2]
