@@ -38,12 +38,12 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "lofty_peaks"
+              "value": "jagged_peaks"
             },
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "snow_capped_peaks"
+              "value": "frozen_peaks"
             }
           ]
         }

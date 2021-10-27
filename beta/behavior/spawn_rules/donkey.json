@@ -45,7 +45,7 @@
         "minecraft:biome_filter": {
           "test": "has_biome_tag",
           "operator": "==",
-          "value": "mountain_meadow"
+          "value": "meadow"
         }
       }
     ]

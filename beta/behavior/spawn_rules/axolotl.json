@@ -3,7 +3,7 @@
   "minecraft:spawn_rules": {
     "description": {
       "identifier": "minecraft:axolotl",
-      "population_control": "animal"
+      "population_control": "water_animal"
     },
     "conditions": [
       {
@@ -12,6 +12,9 @@
         "minecraft:disallow_spawns_in_bubble": {},
         "minecraft:weight": {
           "default": 10
+        },
+        "minecraft:density_limit": {
+          "underground": 5
         },
         "minecraft:spawns_on_block_filter": "minecraft:clay",
         "minecraft:herd": {

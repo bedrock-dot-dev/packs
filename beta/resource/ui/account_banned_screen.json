@@ -57,15 +57,40 @@
     "size": [ "100%", "100%c" ],
     "$font_scale": 1.2,
     "controls": [
-      {
-        "line1": {
-          "type": "label",
-          "size": [ "100%", "default" ],
-          "text": "playfab.account.banned.body",
-          "font_type": "smooth",
-          "color": "$body_text_color"
+        {
+            "line1": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "font_type": "smooth",
+                "color": "$body_text_color",
+                "text": "#playfab_account_banned_body_line1",
+                "bindings": [
+                    {
+                        "binding_name": "#playfab_account_banned_body_line1"
+                    }
+                ]
+            }
+        },
+        {
+            "padding_0": {
+                "type": "panel",
+                "size": [ "100%", 5 ]
+            }
+        },
+        {
+            "line2": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "font_type": "smooth",
+                "color": "$body_text_color",
+                "text": "#playfab_account_banned_body_line2",
+                "bindings": [
+                    {
+                        "binding_name": "#playfab_account_banned_body_line2"
+                    }
+                ]
+            }
         }
-      }
     ]
   },
 

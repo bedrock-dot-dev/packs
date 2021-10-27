@@ -167,6 +167,11 @@
     "$button_text": "storage_migration.button.resume"
   },
 
+  "exit_button@storage_migration_common.base_button": {
+    "$pressed_button_name": "button.exit",
+    "$button_text": "gui.exit"
+  },
+
   "retry_help_button_panel": {
     "type": "stack_panel",
     "orientation": "horizontal",

@@ -77,8 +77,9 @@
   },
 
   // Finished
-  "finished@storage_migration_common.modal_no_buttons": {
+  "finished@storage_migration_common.modal_one_button": {
     "$text_name": "storage_migration.finished.generic.title",
+    "$button_panel": "storage_migration_common.exit_button",
     "$tts_label_panel": "storage_migration_generic.finished_content"
   },
 

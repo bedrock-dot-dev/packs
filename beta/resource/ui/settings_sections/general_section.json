@@ -2866,8 +2866,6 @@
           "size": [ "100%", 6 ]
         }
       },
-      // ADO 576207: Reintroduce this panel for Switch when subscriptions come out, but without showing when it shouldn't on other platforms...
-      /*
       {
         "lower_panel": {
           "type": "panel",
@@ -2914,7 +2912,6 @@
           ]
         }
       },
-      */
       {
         "bottom_panel": {
           "type": "panel",

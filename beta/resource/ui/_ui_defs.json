@@ -179,6 +179,7 @@
     "ui/ui_template_dialogs.json",
     "ui/ui_template_tabs.json",
     "ui/ui_template_toggles.json",
+    "ui/update_dimensions.json",
     "ui/update_version.json",
     "ui/world_conversion_error_report_screen.json",
     "ui/world_templates_screen.json",

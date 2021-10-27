@@ -69,7 +69,7 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "mountain_grove"
+              "value": "grove"
             },
             {
               "test": "has_biome_tag",
@@ -104,7 +104,7 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "mountain_meadow"
+              "value": "meadow"
             }
           ]
         }

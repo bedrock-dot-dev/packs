@@ -409,6 +409,7 @@
     "controls": [
       {
         "lock_icon_panel": {
+          "ignored": "$education_edition",
           "type": "panel",
           "size": [ 8, "100%" ],
           "controls": [
@@ -670,7 +671,7 @@
           "controls": [
             {
               "preview_skin_name@expanded_skin_pack.title_label": {
-                "visible": "(not $education_edition)",
+                "ignored": "$education_edition",
                 "text": "#skin_name",
                 // In the edge case where the skin name is too long to fit,
                 // even with the main title pushed as far to the left as it can

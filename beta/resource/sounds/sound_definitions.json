@@ -10722,6 +10722,67 @@
             }
          ]
       },
+      "music.game.frozen_peaks" : {
+         "category" : "music",
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/stand_tall",
+               "stream" : true,
+               "volume" : 0.40,
+               "weight" : 2
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/one_more_day",
+               "stream" : true,
+               "volume" : 0.40,
+               "weight" : 1
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/piano1",
+               "stream" : true,
+               "weight" : 1
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/piano2",
+               "stream" : true,
+               "weight" : 1
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/piano3",
+               "stream" : true,
+               "weight" : 1
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/hal1",
+               "stream" : true,
+               "weight" : 1
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/hal2",
+               "stream" : true,
+               "weight" : 1
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/hal3",
+               "stream" : true,
+               "weight" : 1
+            },
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/hal4",
+               "stream" : true,
+               "weight" : 1
+            }
+         ]
+      },
       "music.game.grove" : {
          "category" : "music",
          "sounds" : [
@@ -10784,7 +10845,7 @@
             }
          ]
       },
-      "music.game.lofty_peaks" : {
+      "music.game.jagged_peaks" : {
          "category" : "music",
          "sounds" : [
             {
@@ -10996,67 +11057,6 @@
             {
                "load_on_low_memory" : true,
                "name" : "sounds/music/game/nether/nether4",
-               "stream" : true,
-               "weight" : 1
-            }
-         ]
-      },
-      "music.game.snowcapped_peaks" : {
-         "category" : "music",
-         "sounds" : [
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/stand_tall",
-               "stream" : true,
-               "volume" : 0.40,
-               "weight" : 2
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/one_more_day",
-               "stream" : true,
-               "volume" : 0.40,
-               "weight" : 1
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/piano1",
-               "stream" : true,
-               "weight" : 1
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/piano2",
-               "stream" : true,
-               "weight" : 1
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/piano3",
-               "stream" : true,
-               "weight" : 1
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/hal1",
-               "stream" : true,
-               "weight" : 1
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/hal2",
-               "stream" : true,
-               "weight" : 1
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/hal3",
-               "stream" : true,
-               "weight" : 1
-            },
-            {
-               "load_on_low_memory" : true,
-               "name" : "sounds/music/game/hal4",
                "stream" : true,
                "weight" : 1
             }

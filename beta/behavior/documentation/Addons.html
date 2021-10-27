@@ -1,4 +1,4 @@
-<h1>ADDONS DOCUMENTATION </br>Version: 1.18.0.22</h1>
+<h1>ADDONS DOCUMENTATION </br>Version: 1.18.0.24</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -1704,13 +1704,13 @@ This is documentation for a beta release of Minecraft. New features, components,
 <td style="border-style:solid; border-width:4; padding:6px">minecraft:sculk_vein</td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:4; padding:6px">minecraft:seaLantern</td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:4; padding:6px">minecraft:sea_pickle</td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:4; padding:6px">minecraft:seagrass</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:4; padding:6px">minecraft:seaLantern</td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:4; padding:6px">minecraft:shroomlight</td>
@@ -1824,10 +1824,10 @@ This is documentation for a beta release of Minecraft. New features, components,
 <td style="border-style:solid; border-width:4; padding:6px">minecraft:standing_sign</td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:4; padding:6px">minecraft:sticky_piston</td>
+<td style="border-style:solid; border-width:4; padding:6px">minecraft:stickyPistonArmCollision</td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:4; padding:6px">minecraft:stickyPistonArmCollision</td>
+<td style="border-style:solid; border-width:4; padding:6px">minecraft:sticky_piston</td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:4; padding:6px">minecraft:stone</td>
@@ -8419,12 +8419,48 @@ This is documentation for a beta release of Minecraft. New features, components,
 The manifest file contains all the basic information about the pack that Minecraft needs to identify it. The tables below contain all the components of the manifest, their individual properties, and what they mean.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:4;">
 <tr> <th style="border-style:solid; border-width:4;">Name</th> <th style="border-style:solid; border-width:4;">Description</th> </tr>
 <tr>
+<td style="border-style:solid; border-width:4; padding:6px">capabilities</td>
+<td style="border-style:solid; border-width:4; padding:6px">These are the different features that the pack makes use of that aren't necessarily enabled by default.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">chemistry</td>
+<td style="border-style:solid; border-width:3; padding:7px">Allows the pack to add, change or replace Chemistry functionality</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">experimental_custom_ui</td>
+<td style="border-style:solid; border-width:3; padding:7px">Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">raytraced</td>
+<td style="border-style:solid; border-width:3; padding:7px">Indicates that this pack contains Raytracing Enhanced or Physical Based Materials for rendering</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:4; padding:6px">dependencies</td>
+<td style="border-style:solid; border-width:4; padding:6px">This section describes the packs that this pack depends on in order to work. Any packs defined here will be automatically added to the world when this one is added if they are present, or an error will be shown if they aren't. Each entry has the following parameters:</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">uuid</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">version</td>
+<td style="border-style:solid; border-width:3; padding:7px">Vector [a, b, c]</td>
+<td style="border-style:solid; border-width:3; padding:7px">This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:4; padding:6px">format_version</td>
-<td style="border-style:solid; border-width:4; padding:6px"></td>
+<td style="border-style:solid; border-width:4; padding:6px">This defines the current version of the manifest. Don't change this unless you have a good reason to</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:4; padding:6px">header</td>
-<td style="border-style:solid; border-width:4; padding:6px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<td style="border-style:solid; border-width:4; padding:6px">This is the heading of the manifest and is required for the manifest to be valid.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">base_game_version</td>
@@ -8465,8 +8501,30 @@ The manifest file contains all the basic information about the pack that Minecra
 </td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:4; padding:6px">metadata</td>
+<td style="border-style:solid; border-width:4; padding:6px">This section contains additional data about your pack and is otherwise optional.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">authors</td>
+<td style="border-style:solid; border-width:3; padding:7px">Array</td>
+<td style="border-style:solid; border-width:3; padding:7px">Name of the author(s) of the pack</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">license</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">The license of the pack</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">url</td>
+<td style="border-style:solid; border-width:3; padding:7px">String</td>
+<td style="border-style:solid; border-width:3; padding:7px">The home website of your pack</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:4; padding:6px">modules</td>
-<td style="border-style:solid; border-width:4; padding:6px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
+<td style="border-style:solid; border-width:4; padding:6px">This section describes the modules that comprise the pack. Each entry here defines one of the kinds of contents of the pack.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">description</td>
@@ -8487,64 +8545,6 @@ The manifest file contains all the basic information about the pack that Minecra
 <td style="border-style:solid; border-width:3; padding:7px">version</td>
 <td style="border-style:solid; border-width:3; padding:7px">Vector [a, b, c]</td>
 <td style="border-style:solid; border-width:3; padding:7px">This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack</br></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:4; padding:6px">dependencies</td>
-<td style="border-style:solid; border-width:4; padding:6px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
-<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">uuid</td>
-<td style="border-style:solid; border-width:3; padding:7px">String</td>
-<td style="border-style:solid; border-width:3; padding:7px">This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">version</td>
-<td style="border-style:solid; border-width:3; padding:7px">Vector [a, b, c]</td>
-<td style="border-style:solid; border-width:3; padding:7px">This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file</br></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:4; padding:6px">capabilities</td>
-<td style="border-style:solid; border-width:4; padding:6px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
-<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">experimental_custom_ui</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">chemistry</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">raytraced</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:4; padding:6px">metadata</td>
-<td style="border-style:solid; border-width:4; padding:6px"><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
-<tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">authors</td>
-<td style="border-style:solid; border-width:3; padding:7px">Array</td>
-<td style="border-style:solid; border-width:3; padding:7px">Name of the author(s) of the pack</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">license</td>
-<td style="border-style:solid; border-width:3; padding:7px">String</td>
-<td style="border-style:solid; border-width:3; padding:7px">The license of the pack</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">url</td>
-<td style="border-style:solid; border-width:3; padding:7px">String</td>
-<td style="border-style:solid; border-width:3; padding:7px">The home website of your pack</br></td>
 </tr>
 </table>
 </td>
