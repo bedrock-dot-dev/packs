@@ -10528,7 +10528,7 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/music/game/nether/soulsand_valley/so_below",
+               "name" : "sounds/music/game/nether/so_below",
                "stream" : true,
                "volume" : 0.50,
                "weight" : 7
@@ -10618,7 +10618,7 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/music/game/nether/crimson_forest/chrysopoeia",
+               "name" : "sounds/music/game/nether/chrysopoeia",
                "stream" : true,
                "volume" : 0.50,
                "weight" : 7
@@ -11031,7 +11031,7 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/music/game/nether/nether_wastes/rubedo",
+               "name" : "sounds/music/game/nether/rubedo",
                "stream" : true,
                "volume" : 0.50,
                "weight" : 6
@@ -11111,7 +11111,7 @@
          "sounds" : [
             {
                "load_on_low_memory" : true,
-               "name" : "sounds/music/game/nether/soulsand_valley/so_below",
+               "name" : "sounds/music/game/nether/so_below",
                "stream" : true,
                "volume" : 0.50,
                "weight" : 7

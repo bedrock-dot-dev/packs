@@ -1950,6 +1950,36 @@
         }
       },
       {
+        "render_distance_warning_text": {
+          "type": "panel",
+          "size": [ "100%", "100%cm + 16px" ],
+          "controls": [
+            {
+              "render_distance_popup@common.static_tooltip_popup_with_image_and_text": {
+                "size": [ "100% - 4px", "100%cm + 8px" ],
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "$tooltip_panel_offset": [ 0, 6 ],
+                "$tooltip_popup_image": "textures/ui/WarningGlyph",
+                "$tooltip_button_binding_type": "global",
+                "$tooltip_button_collection_name": "",
+                "$tooltip_popup_visible_binding": "#render_distance_warning_visible",
+                "$tooltip_text_binding_name": "#render_distance_performance_tooltip_text",
+                "$tooltip_chevron_anchor": "top_right",
+                "$tooltip_popup_chevron_offset": [ "-30%x", "-10px" ],
+                "$tooltip_popup_chevron_texture": "textures/ui/tooltip_inverted_chevron"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#render_distance_warning_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
         "vr_render_distance_slider@settings_common.option_slider": {
           "ignored": "(not $is_holographic)",
           "$option_label": "#vr_render_distance_slider_label",
@@ -2217,20 +2247,6 @@
     "texture": "textures/ui/WarningGlyph"
   },
 
-  "render_distance_popup@common.static_tooltip_popup_with_image_and_text": {
-    "size": [ "100% - 4px", "100%cm + 8px" ],
-    "anchor_from": "top_middle",
-    "anchor_to": "bottom_middle",
-    "$tooltip_panel_offset": [ 0, -10 ],
-    "$tooltip_popup_image": "textures/ui/infobulb",
-    "$tooltip_button_binding_type": "global",
-    "$tooltip_button_collection_name": "",
-    "$tooltip_popup_visible_binding": "#render_distance_warning_tooltip_visible",
-    "$tooltip_text_binding_name": "#render_distance_performance_tooltip_text",
-    "$tooltip_chevron_anchor": "bottom_right",
-    "$tooltip_popup_chevron_offset": [ "-30%x", "100%y - 3px" ]
-  },
-
   "render_distance_warning": {
     "type": "panel",
     "size": [ "100%", 0 ],
@@ -2241,25 +2257,9 @@
         "render_distance_warning_image@general_section.render_distance_warning_image": {
           "offset": [ -14, 0 ],
           "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "controls": [
-            {
-              "hover_detection_input_panel": {
-                "type": "input_panel",
-                "consume_hover_events": false,
-                "focus_enabled": true,
-                "button_mappings": [
-                  {
-                    "to_button_id": "button.render_distance_warning_is_hovered",
-                    "mapping_type": "pressed"
-                  }
-                ]
-              }
-            }
-          ]
+          "anchor_to": "top_right"
         }
-      },
-      { "render_distance_popup@general_section.render_distance_popup": {} }
+      }
     ],
     "bindings": [
       {
