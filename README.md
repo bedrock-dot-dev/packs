@@ -1,6 +1,8 @@
 # packs
 
-Minecraft Bedrock Edition behavior and resource pack files
+Minecraft Bedrock Edition vanilla behavior pack and resource pack files for the latest versions of Minecraft.
+
+Sourced from the template packs provided by Microsoft/Mojang.
 
 ## License
 
