@@ -2426,7 +2426,6 @@ disconnectionScreen.worldCorruption.message=Prøv å åpne verdenen på nytt ell
 disconnectionScreen.worldCorruption=Frakoblet på grunn av ødelagt verden	#
 disconnectionScreen.hostSuspended=Frakoblet fordi serveren ikke er tilgjengelig	#
 disconnectionScreen.invalidLevel=Ugyldig nivå!	#
-disconnectionScreen.invalidOverworldDimensionHeights=Serveren ga ugyldige høydeverdier for oververdensdimensjonen	#
 
 storageSpaceWarningScreen.frontend=Du har nesten ikke mer datalagringsplass igjen! Minecraft har begrenset tilgangen til denne funksjonen frem til du frigjør mer plass.	#
 storageSpaceWarningScreen.lowduringgameplay=Du har nesten ikke mer datalagringsplass igjen som Minecraft trenger for å lagre verdener og innstillinger på denne enheten.  Hvorfor ikke slette noe gammelt du ikke trenger så du kan fortsette med å lagre nye ting?	#
@@ -2821,7 +2820,6 @@ generator.infinite=Uendelig	#
 generator.largeBiomes=Store biomer	#
 generator.nether=Underverden	#
 generator.old=Gammel	#
-generator.void=Tomrom	#
 
 globalPauseScreen.message=Spillet er satt på pause	#
 globalPauseScreen.quit=Avslutt	#
@@ -6026,8 +6024,8 @@ options.content.noRealms=Redigere verdenen?	#
 options.content.noRealms.message=Denne verdenen bruker en ressurspakke eller mal som ikke kan brukes i flerspillerspill på forskjellige plattformer.	#
 options.experimentalWorldLoad=Vil du laste inn eksperimentell verden?	#
 options.experimentalWorldLoad.message=Denne verden bruker funksjoner som fortsatt er under utvikling. Den kan krasje, bli ødelagt eller slutte å fungere når som helst.	#
-options.updateWorldDimensions=Oppdatering av verden	#
-options.updateWorldDimensions.message=Denne oppdateringen gjør verden din høyere og dypere. Det legger til flere blokker og grotter under din nåværende verden, så det er mer å utforske under bakken.	#
+options.updateWorldHeight=Oppdatering av verden	#
+options.updateWorldHeight.message=Denne oppdateringen gjør verden din høyere og dypere. Det legger til flere blokker og grotter under din nåværende verden, så det er mer å utforske under bakken.	#
 options.activateExperimentalGameplay.message=Vær forsiktig! Du er i ferd med å lage en kopi av verdenen din med Eksperimenter slått på. Den nye verdenen kan krasje, bli ødelagt eller ikke fungere med fremtidige oppdateringer.	#
 options.activateExperimentalGameplay=Aktivere eksperimentell spillopplevelse?	#
 options.activateExperimentalGameplay.activate=Aktiver Eksperimenter	#

@@ -92,6 +92,29 @@
     ]
   },
 
+  "world_upgrade_animation": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "frame_count": 32,
+    "frame_step": 130,
+    "fps": 9,
+    "reversible": false,
+    "easing": "linear"
+  },
+
+  "world_upgrade": {
+    "type": "image",
+    "layer": 5,
+    "texture": "textures/ui/world_upgrade",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [ 10, 25 ],
+    "size": [ 130, 127 ],
+    "uv_size": [ 130, 127 ],
+    "uv": "@update_dimensions.world_upgrade_animation",
+    "disable_anim_fast_forward": true
+  },
+
   "update_dimensions_dialog@common_dialogs.main_panel_three_buttons": {
     "size": [ 300, 230 ],
     "$fill_alpha": 1,
@@ -141,15 +164,7 @@
         }
       },
       {
-        "border": {
-          "type": "image",
-          "size": [ "55%", "55%" ],
-          "offset": [ -9, 25 ],
-          "texture": "textures/ui/update_world_chunks",
-          "anchor_from": "top_left",
-          "anchor_to": "top_left",
-          "layer": 0
-        }
+        "world_upgrade_image@update_dimensions.world_upgrade": {}
       }
     ]
   },
