@@ -1,6 +1,6 @@
 # 📄 Vanilla Packs
 
-- Minecraf: Bedrock Edition Vanilla Behavior pack and Resource pack files for the latest versions of Minecraft.
+- Minecraft: Bedrock Edition Vanilla Behavior pack and Resource pack files for the latest versions of Minecraft.
 
 (**Sourced from the template packs provided by Microsoft/Mojang.**)
 
