@@ -305,8 +305,7 @@
     "anchor_to": "top_middle",
     "anchor_from": "top_middle",
     "$button_focus_precedence": 1,
-    "focus_change_up": "button.menu_quit",
-    "$focus_override_right": "change_skin_button"
+    "$focus_override_up": "achievements_button_focus"
   },
 
   "store_button_panel": {
@@ -381,8 +380,7 @@
     "$pressed_button_name": "button.menu_settings",
     "$button_text": "menu.settings",
     "anchor_to": "top_middle",
-    "anchor_from": "top_middle",
-    "$focus_override_right": "change_skin_button"
+    "anchor_from": "top_middle"
   },
 
   "how_to_play_button@pause.pause_button_template": {
@@ -390,8 +388,7 @@
     "$button_text": "menu.howToPlay",
     "anchor_to": "top_middle",
     "anchor_from": "top_middle",
-    "ignored": "(not $education_edition or $education_edition_china)",
-    "$focus_override_right": "change_skin_button"
+    "ignored": "(not $education_edition or $education_edition_china)"
   },
 
   "invite_players_button@pause.grid_button_template": {
@@ -432,8 +429,7 @@
     "$button_text": "pauseScreen.quit",
     "anchor_to": "top_middle",
     "anchor_from": "top_middle",
-    "focus_change_down": "button.feedback",
-    "$focus_override_right": "change_skin_button",
+    "$focus_override_down": "achievements_button_focus",
     "variables": [
       {
         "requires": "$is_secondary_client",
@@ -455,7 +451,11 @@
     "$button_tts_header": "accessibility.start.feedback",
     "$pressed_button_name": "button.feedback",
     "controls": [
-      { "feedback_button@pause.feedback_button": { "ignored": "$education_edition" } }
+      { "feedback_button@pause.feedback_button": {
+        "ignored": "$education_edition",
+        "$focus_override_left": "FOCUS_OVERRIDE_STOP"
+        }
+      }
     ]
   },
 
@@ -470,7 +470,11 @@
     "type": "panel",
     "$button_tts_header": "menu.achievements",
     "controls": [
-      { "achievements_button@pause.achievements_button": { "ignored": "$education_edition" } }
+      { "achievements_button@pause.achievements_button": {
+        "ignored": "$education_edition",
+        "$focus_id": "achievements_button_focus"
+        }
+      }
     ]
   },
 
@@ -1015,7 +1019,7 @@
 
   "invite_players_button_panel": {
     "type": "panel",
-    "size": [ "100%", "100%c" ],
+    "size": [ "100% - 1px", "100%c" ],
     "controls": [
       {
         "invite_players_button@pause.invite_players_button": {}
@@ -1119,6 +1123,7 @@
           "type": "panel",
           "anchor_to": "top_right",
           "anchor_from": "top_right",
+          "offset": [ "-1px", 0 ],
           "size": [ "100%c", "100% + 1px" ],
           "controls": [
             { "player_permission_button@pause.player_permission_button": {} }

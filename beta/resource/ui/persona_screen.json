@@ -306,7 +306,7 @@
 
   "equip_button_panel": {
     "type": "panel",
-    "size": [ "40% - 1px", "100%" ],
+    "size": [ "50% - 1px", "100%" ],
     "offset": [ "50%", 0 ],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
@@ -314,7 +314,7 @@
       {
         "a_button_helper@common.gamepad_helper_a": {
           "$hide_description|default": true,
-          "offset": [ "-34%", 0 ],
+          "offset": [ "-38%", 0 ],
 
           "bindings": [
             {
@@ -354,7 +354,7 @@
       {
         "view_achievement_button@persona.view_achievement": {
           "ignored": "(not $supports_xbl_achievements)",
-          "size": [ "60% - 1px", "100%" ],
+          "size": [ "50% - 1px", "100%" ],
           "$focus_override_down": "FOCUS_OVERRIDE_STOP",
           "bindings": [
             {

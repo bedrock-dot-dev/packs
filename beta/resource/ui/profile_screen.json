@@ -765,7 +765,12 @@
     "$tooltip_popup_override_image_panel": "start.store_error_image",
     "$tool_tip_text_max_size": [ "160px", "default" ],
     "$tooltip_panel_content": "profile.edit_appearance_error_button_content",
-    "bindings": []
+    "bindings": [
+      {
+        "binding_name": "(not #marketplace_disabled)",
+        "binding_name_override": "#visible"
+      }
+    ]
   },
 
   "edit_appearance_error_button_content": {
@@ -872,6 +877,12 @@
     "$right_side_default_text_color": "$dressing_room_right_side_default_text_color",
     "controls": [
       { "content@profile.bottom_panel_content": {} }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(not #marketplace_disabled)",
+        "binding_name_override": "#visible"
+      }
     ]
   },
 
@@ -1150,7 +1161,13 @@
               "featured_section_disabled_padding": {
                 "ignored": "(not $store_disabled)",
                 "type": "panel",
-                "size": [ "100%", 70 ]
+                "size": [ "100%", 70 ],
+                "bindings": [
+                  {
+                    "binding_name": "(not #marketplace_disabled)",
+                    "binding_name_override": "#visible"
+                  }
+                ]
               }
             }
           ]

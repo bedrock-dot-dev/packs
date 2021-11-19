@@ -818,7 +818,7 @@
           "enabled": "(not $store_disabled)",
           "bindings": [
             {
-              "binding_name": "(not #has_marketplace_errors)",
+              "binding_name": "(not #marketplace_disabled)",
               "binding_name_override": "#visible"
             }
           ]
@@ -877,7 +877,7 @@
           "$tooltip_panel_content": "start.store_error_content",
           "bindings": [
             {
-              "binding_name": "#has_marketplace_errors",
+              "binding_name": "#marketplace_disabled",
               "binding_name_override": "#visible"
             }
           ]
@@ -890,7 +890,7 @@
           "offset": [ -2, 0 ],
           "bindings": [
             {
-              "binding_name": "#has_marketplace_errors",
+              "binding_name": "#marketplace_disabled",
               "binding_name_override": "#visible"
             }
           ]
@@ -1046,7 +1046,13 @@
                             "controls": [
                               {
                                 "store_button@start.store_button": {
-                                  "enabled": "(not $store_disabled)"
+                                  "enabled": "(not $store_disabled)",
+                                  "bindings": [
+                                    {
+                                      "binding_name": "(not #marketplace_disabled)",
+                                      "binding_name_override": "#visible"
+                                    }
+                                  ]
                                 }
                               },
                               {

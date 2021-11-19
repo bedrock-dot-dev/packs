@@ -501,6 +501,7 @@
 
   "sidebar_option_factory_panel": {
     "type": "input_panel",
+    "size": ["100%", "100%c"],
     "controls": [
       { "sidebar_option_factory@sidebar_navigation.sidebar_option_factory": {} }
     ],

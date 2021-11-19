@@ -601,7 +601,7 @@
         }
       },
       {
-        "progress_bar_nub@achievement.progress_bar_nub": {
+        "progress_bar_nub@progress.progress_bar_nub": {
           "size": [ "100% - 10px", 5 ],
           "layer": 4
         }
@@ -636,6 +636,12 @@
         "binding_name_override": "#progress_bar_current_amount"
       }
     ]
+  },
+
+  "progress_bar_nub": {
+    "type": "image",
+    "texture": "textures/ui/experiencenub",
+    "tiled": true
   },
 
   "thick_progress_bar_icon_base": {

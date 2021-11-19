@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.0.27</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.10.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -652,7 +652,7 @@ New Spawn Rules are contained within a Behavior Pack. To begin, create a new fol
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">Mesa Plateau Stone</td>
-<td style="border-style:solid; border-width:2; padding:8px">monster, plataeu</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">monster, plateau</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">Mesa Plateau Stone M</td>
@@ -8565,132 +8565,6 @@ This filter group will pass only when the moon_intensity is greater than 0.5 AND
 
 <h2></h2>
 
-<h2><p id="minecraft.behavior.hide">minecraft.behavior.hide</p></h2>
-
-Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">duration</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Amount of time in seconds that the mob reacts.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">poi_type</td>
-<td style="border-style:solid; border-width:2; padding:8px">String</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Defines what POI type to hide at.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">timeout_cooldown</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">8.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition.</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
-<h2><p id="minecraft.behavior.move_to_poi">minecraft.behavior.move_to_poi</p></h2>
-
-Allows the mob to move to a POI if able to</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">poi_type</td>
-<td style="border-style:solid; border-width:2; padding:8px">String</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Tells the goal what POI type it should be looking for</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
-<h2><p id="minecraft.behavior.scared">minecraft.behavior.scared</p></h2>
-
-Allows the a mob to become scared when the weather outside is thundering</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">sound_interval</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The interval in which a sound will play when active in a 1/delay chance to kick off</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
-<h2><p id="minecraft.behavior.work">minecraft.behavior.work</p></h2>
-
-allows the NPC to use their jobsite POI</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">active_time</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The amount of ticks the NPC will stay in their the work location</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">can_work_in_rain</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">If true, this entity can work when their jobsite POI is being rained on.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">goal_cooldown</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The amount of ticks the goal will be on cooldown before it can be used again</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">on_arrival</td>
-<td style="border-style:solid; border-width:2; padding:8px">String</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Event to run when the mob reaches their jobsite and finishes working.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">sound_delay_max</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The max interval in which a sound will play</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">sound_delay_min</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The min interval in which a sound will play</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">work_in_rain_tolerance</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">-1</td>
-<td style="border-style:solid; border-width:2; padding:8px">If "can_work_in_rain" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
 <h2><p id="minecraft:behavior.admire_item">minecraft:behavior.admire_item</p></h2>
 
 Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component</br><h3></h3>
@@ -8916,12 +8790,6 @@ Allows the mob to drink potions based on specified environment conditions.</br><
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_modifier</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">0.0</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">potions</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
@@ -8947,6 +8815,12 @@ Allows the mob to drink potions based on specified environment conditions.</br><
 </tr>
 </table>
 </td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">speed_modifier</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The movement speed modifier to apply to the entity while it is drinking a potion. A value of 0 represents no change in speed.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -9341,6 +9215,39 @@ Allows the mob to move back to the position they were spawned.</br><h3></h3>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h2><p id="minecraft:behavior.hide">minecraft:behavior.hide</p></h2>
+
+Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">duration</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Amount of time in seconds that the mob reacts.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">poi_type</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Defines what POI type to hide at.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">timeout_cooldown</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">8.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
 <h2><p id="minecraft:behavior.hold_ground">minecraft:behavior.hold_ground</p></h2>
 
 The mob freezes and looks at the mob they are targeting.</br><h3></h3>
@@ -9456,7 +9363,7 @@ Allows the mob to inspect bookshelves.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">search_count</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">10</td>
-<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within it's search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">search_height</td>
@@ -9897,6 +9804,87 @@ Can only be used by Villagers. Allows the villagers to create paths around the v
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h2><p id="minecraft:behavior.move_to_block">minecraft:behavior.move_to_block</p></h2>
+
+Allows mob to move towards a block.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">goal_radius</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.5</td>
+<td style="border-style:solid; border-width:2; padding:8px">Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">on_reach</td>
+<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Event to run on block reached.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">on_stay_completed</td>
+<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Event to run on completing a stay of stay_duration at the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">search_height</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">1</td>
+<td style="border-style:solid; border-width:2; padding:8px">The height in blocks that the mob will look for the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">search_range</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The distance in blocks that the mob will look for the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">start_chance</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Chance to start the behavior (applied after each random tick_interval).</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">stay_duration</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Number of ticks needed to complete a stay at the block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target_blocks</td>
+<td style="border-style:solid; border-width:2; padding:8px">List</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Block types to move to.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target_offset</td>
+<td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
+<td style="border-style:solid; border-width:2; padding:8px">[0, 0, 0]</td>
+<td style="border-style:solid; border-width:2; padding:8px">Offset to add to the selected target position.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target_selection_method</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px">nearest</td>
+<td style="border-style:solid; border-width:2; padding:8px">Kind of block to find fitting the specification. Valid values are "random" and "nearest".</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">tick_interval</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">20</td>
+<td style="border-style:solid; border-width:2; padding:8px">Average interval in ticks to try to run this behavior.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
 <h2><p id="minecraft:behavior.move_to_land">minecraft:behavior.move_to_land</p></h2>
 
 Allows the mob to move back onto land when in water.</br><h3></h3>
@@ -9913,7 +9901,7 @@ Allows the mob to move back onto land when in water.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">search_count</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">10</td>
-<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within it's search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">search_height</td>
@@ -9952,7 +9940,7 @@ Allows the mob to move back into lava when on land.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">search_count</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">10</td>
-<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within it's search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">search_height</td>
@@ -9965,6 +9953,72 @@ Allows the mob to move back into lava when on land.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
 <td style="border-style:solid; border-width:2; padding:8px">The distance in blocks it will look for lava to move towards</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h2><p id="minecraft:behavior.move_to_liquid">minecraft:behavior.move_to_liquid</p></h2>
+
+Allows the mob to move into a liquid when on land.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">goal_radius</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.5</td>
+<td style="border-style:solid; border-width:2; padding:8px">Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">material_type</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px">Any</td>
+<td style="border-style:solid; border-width:2; padding:8px">The material type of the liquid block to find. Valid values are "Any", "Water", and "Lava".</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">search_count</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">10</td>
+<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">search_height</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">1</td>
+<td style="border-style:solid; border-width:2; padding:8px">Height in blocks the mob will look for the liquid block to move towards</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">search_range</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The distance in blocks it will look for the liquid block to move towards</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h2><p id="minecraft:behavior.move_to_poi">minecraft:behavior.move_to_poi</p></h2>
+
+Allows the mob to move to a POI if able to</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">poi_type</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Tells the goal what POI type it should be looking for</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
@@ -10045,7 +10099,7 @@ Allows the mob to move back into water when on land.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">search_count</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">10</td>
-<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within it's search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The number of blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">search_height</td>
@@ -10549,7 +10603,7 @@ Allows the mob to peek out. This is what the shulker uses to look out of its she
 
 <h2><p id="minecraft:behavior.pet_sleep_with_owner">minecraft:behavior.pet_sleep_with_owner</p></h2>
 
-Allows the pet mob to move onto a bed with it's owner while sleeping.</br><h3></h3>
+Allows the pet mob to move onto a bed with its owner while sleeping.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -10786,10 +10840,10 @@ Allows the mob to hover around randomly, close to the surface</br><h3></h3>
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">hover_height</td>
+<td style="border-style:solid; border-width:2; padding:8px">Range [a, b]</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">hover_height</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The height above the surface which the mob will try to maintain</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">interval</td>
@@ -10997,7 +11051,30 @@ Allows the mob to automatically start avoiding the sun when its a clear day out.
 
 <h2><p id="minecraft:behavior.rise_to_liquid_level">minecraft:behavior.rise_to_liquid_level</p></h2>
 
-Allows the mob to stay at a certain level when in liquid.</br><a href="#Index">Back to top</a><br><br>
+Allows the mob to stay at a certain level when in liquid.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">liquid_y_offset</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Target distance down from the liquid surface. i.e. Positive values move the target Y down.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">rise_delta</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Movement up in Y per tick when below the liquid surface.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">sink_delta</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Movement down in Y per tick when above the liquid surface.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
 
 <h2><p id="minecraft:behavior.roll">minecraft:behavior.roll</p></h2>
 
@@ -11025,6 +11102,21 @@ Allows the mob to run around aimlessly.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
 <td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h2><p id="minecraft:behavior.scared">minecraft:behavior.scared</p></h2>
+
+Allows the a mob to become scared when the weather outside is thundering</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">sound_interval</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The interval in which a sound will play when active in a 1/delay chance to kick off</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -11723,16 +11815,40 @@ Allows the mob to be tempted by food they like.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">If true, the mob can stop being tempted if the player moves too fast while close to this mob</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">can_tempt_vertically</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, vertical distance to the player will be considered when tempting.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">can_tempt_while_ridden</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, the mob can be tempted even if it has a passenger (i.e. if being ridden).</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">items</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">List of items this mob is tempted by</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">sound_interval</td>
+<td style="border-style:solid; border-width:2; padding:8px">Range [a, b]</td>
+<td style="border-style:solid; border-width:2; padding:8px">[0.0, 0.0]</td>
+<td style="border-style:solid; border-width:2; padding:8px">Range of random ticks to wait between tempt sounds.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
 <td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">tempt_sound</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Sound to play while the mob is being tempted.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">within_radius</td>
@@ -11765,7 +11881,7 @@ Allows the mob to look at a player that is holding a tradable item.</br><h3></h3
 <td style="border-style:solid; border-width:2; padding:8px">interest_time</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">45.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The max time in seconds that the trader will be interested with showing it's trade items</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The max time in seconds that the trader will be interested with showing its trade items</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">remove_item_time</td>
@@ -11898,6 +12014,63 @@ Allows the wither to focus its attacks on whichever mob has dealt the most damag
 </tr>
 </table>
 </td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h2><p id="minecraft:behavior.work">minecraft:behavior.work</p></h2>
+
+allows the NPC to use their jobsite POI</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">active_time</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The amount of ticks the NPC will stay in their the work location</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">can_work_in_rain</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, this entity can work when their jobsite POI is being rained on.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">goal_cooldown</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The amount of ticks the goal will be on cooldown before it can be used again</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">on_arrival</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Event to run when the mob reaches their jobsite and finishes working.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">sound_delay_max</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The max interval in which a sound will play</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">sound_delay_min</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The min interval in which a sound will play</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">work_in_rain_tolerance</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">-1</td>
+<td style="border-style:solid; border-width:2; padding:8px">If "can_work_in_rain" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -12213,16 +12386,10 @@ A component that does damage to entities that get within range.</br><h3></h3>
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">cause</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">cause</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">entity_filter</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The type of damage that is applied to entities that enter the damage range.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">damage_per_tick</td>
@@ -12235,6 +12402,12 @@ A component that does damage to entities that get within range.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.2</td>
 <td style="border-style:solid; border-width:2; padding:8px">How close a hostile entity must be to have the damage applied.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">entity_filter</td>
+<td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">The set of entities that are valid to apply the damage to when within range.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -12292,16 +12465,16 @@ Fires off a specified event when a block in the block list is broken within the 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">sensor_radius</br></td>
-</tr>
-<tr>
+<td style="border-style:solid; border-width:2; padding:8px">on_break</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">on_break</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">sensor_radius</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">16.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -12406,7 +12579,7 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 <td style="border-style:solid; border-width:2; padding:8px">breathe_blocks</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">List of blocks this entity can breathe in, in addition to the above.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">List of blocks this entity can breathe in, in addition to the other "breathes" parameters.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">breathes_air</td>
@@ -12448,7 +12621,7 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 <td style="border-style:solid; border-width:2; padding:8px">non_breathe_blocks</td>
 <td style="border-style:solid; border-width:2; padding:8px">List</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">List of blocks this entity can't breathe in, in addition to the above.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">List of blocks this entity can't breathe in, in addition to the other "breathes" parameters.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">suffocate_time</td>
@@ -12843,10 +13016,10 @@ List of hitboxes for melee and ranged hits against the entity.</br><h3></h3>
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">hitboxes</td>
 <td style="border-style:solid; border-width:2; padding:8px">Array</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">hitboxes</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Comma seperated list of hitboxes.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -12933,10 +13106,16 @@ Despawns the Actor when the despawn rules or optional filters evaluate to true.<
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">despawn_from_chance</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">Determines if "min_range_random_chance" is used in the standard despawn rules</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">despawn_from_distance</td>
 <td style="border-style:solid; border-width:2; padding:8px">JSON Object</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">despawn_from_distance</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<td style="border-style:solid; border-width:2; padding:8px">Specifies if the "min_distance" and "max_distance" are used in the standard despawn rules.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
 <tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">max_distance</td>
@@ -12952,12 +13131,6 @@ Despawns the Actor when the despawn rules or optional filters evaluate to true.<
 </tr>
 </table>
 </td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">despawn_from_chance</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">true</td>
-<td style="border-style:solid; border-width:2; padding:8px">Determines if "min_range_random_chance" is used in the standard despawn rules</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">despawn_from_inactivity</td>
@@ -13125,16 +13298,16 @@ A component that fires an event when a set of conditions are met by other entiti
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">event_filters</br></td>
-</tr>
-<tr>
+<td style="border-style:solid; border-width:2; padding:8px">event</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Event to fire when the conditions are met.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">event_filters</td>
+<td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">event</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The set of conditions that must be satisfied to fire the event.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">maximum_count</td>
@@ -13439,7 +13612,7 @@ Allows entities to flock in groups in water or not.</br><h3></h3>
 
 <h2><p id="minecraft:genetics">minecraft:genetics</p></h2>
 
-Defines the way a mob's genes and alleles are passed on to it's offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.</br><h3></h3>
+Defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
@@ -13480,7 +13653,7 @@ Defines the way a mob's genes and alleles are passed on to it's offspring, and h
 <td style="border-style:solid; border-width:1; padding:10px">birth_event</td>
 <td style="border-style:solid; border-width:1; padding:10px">String</td>
 <td style="border-style:solid; border-width:1; padding:10px"></td>
-<td style="border-style:solid; border-width:1; padding:10px">Event to run when this mob is created and matches the above allele conditions.</br></td>
+<td style="border-style:solid; border-width:1; padding:10px">Event to run when this mob is created and matches the allele conditions.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:10px">both_allele</td>
@@ -13508,6 +13681,12 @@ Defines the way a mob's genes and alleles are passed on to it's offspring, and h
 </tr>
 </table>
 </td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">mutation_rate</td>
+<td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
+<td style="border-style:solid; border-width:1; padding:9px">-1</td>
+<td style="border-style:solid; border-width:1; padding:9px">If this value is non-negative, overrides the chance for this gene that an allele will be replaced with a random one instead of the parent's allele during birth. Non-negative values greater than `1` will be the same as the value `1`.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">name</td>
@@ -13666,16 +13845,12 @@ Defines a set of conditions under which an entity should take damage.</br><h3></
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">damage_conditions</td>
 <td style="border-style:solid; border-width:2; padding:8px">Array</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">damage_conditions</br><h5><p id="Minecraft Filter">Minecraft Filter</p></h5>
+<td style="border-style:solid; border-width:2; padding:8px">List of damage conditions that when met can cause damage to the entity.</br><h5><p id="cause">cause</p></h5>
 
-filters</br><a href="#Index">Back to top</a><br><br>
-
-<h5><p id="String">String</p></h5>
-
-cause</br><h6></h6>
+The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune.</br><h6></h6>
 <br / ><textarea readonly="true" cols="5" rows="2">
 none
 </textarea> </br>
@@ -13684,6 +13859,10 @@ none
 <h5><p id="damage_per_tick">damage_per_tick</p></h5>
 
 The amount of damage done each tick that the conditions are met.</br><a href="#Index">Back to top</a><br><br>
+
+<h5><p id="filters">filters</p></h5>
+
+The set of conditions that must be satisfied before the entity takes the defined damage.</br><a href="#Index">Back to top</a><br><br>
 
 </td>
 </tr>
@@ -13886,7 +14065,7 @@ Defines this entity's inventory properties.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">private</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
-<td style="border-style:solid; border-width:2; padding:8px">If true, the entity will not drop it's inventory on death</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, the entity will not drop its inventory on death</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">restrict_to_owner</td>
@@ -14021,12 +14200,6 @@ A component that applies a mob effect to entities that get within range.</br><h3
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">entity_filter</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">effect_range</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.2</td>
@@ -14037,6 +14210,12 @@ A component that applies a mob effect to entities that get within range.</br><h3
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">10</td>
 <td style="border-style:solid; border-width:2; padding:8px">How long the applied mob effect lasts in seconds.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">entity_filter</td>
+<td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">The set of entities that are valid to apply the mob effect to.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">mob_effect</td>
@@ -14169,6 +14348,18 @@ This move control causes the mob to sway side to side giving the impression it i
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">30.0</td>
 <td style="border-style:solid; border-width:2; padding:8px">The maximum number in degrees the mob can turn per tick.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">sway_amplitude</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.05</td>
+<td style="border-style:solid; border-width:2; padding:8px">Strength of the sway movement.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">sway_frequency</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.5</td>
+<td style="border-style:solid; border-width:2; padding:8px">Multiplier for the frequency of the sway movement.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -15487,7 +15678,7 @@ Determines whether this entity can be ridden. Allows specifying the different se
 <td style="border-style:solid; border-width:2; padding:8px">controlling_seat</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The seat that designates the driver of the entity</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The seat that designates the driver of the entity. This is only observed by the horse/boat styles of riding; minecarts/entities with "minecraft:controlled_by_player" give control to any player in any seat.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">crouching_skip_interact</td>
@@ -15657,7 +15848,7 @@ Determines whether the mob will consume the item or not.</br><a href="#Index">Ba
 
 <h5><p id="craft_into">craft_into</p></h5>
 
-Defines the item this entity wants to craft with the item defined above. Should be an item name.</br><a href="#Index">Back to top</a><br><br>
+Defines the item this entity wants to craft with the item defined by "item". Should be an item name.</br><a href="#Index">Back to top</a><br><br>
 
 <h5><p id="item">item</p></h5>
 
@@ -15780,7 +15971,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 <td style="border-style:solid; border-width:2; padding:8px">spawn_entity</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Identifier of the entity to spawn, leave empty to spawn the item defined above instead.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Identifier of the entity to spawn, leave empty to spawn the item defined by "spawn_item" instead.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">spawn_event</td>
@@ -16476,22 +16667,6 @@ Sets the mapping of internal animation controller references to actual animation
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">JSON Name</th> <th style="border-style:solid; border-width:2;">ID</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft.behavior.hide</td>
-<td style="border-style:solid; border-width:2; padding:8px">233394190</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft.behavior.move_to_poi</td>
-<td style="border-style:solid; border-width:2; padding:8px">1721669938</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft.behavior.scared</td>
-<td style="border-style:solid; border-width:2; padding:8px">1812936510</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft.behavior.work</td>
-<td style="border-style:solid; border-width:2; padding:8px">-1700601421</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.admire_item</td>
 <td style="border-style:solid; border-width:2; padding:8px">1024844406</br></td>
 </tr>
@@ -16612,6 +16787,10 @@ Sets the mapping of internal animation controller references to actual animation
 <td style="border-style:solid; border-width:2; padding:8px">-1579225026</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.hide</td>
+<td style="border-style:solid; border-width:2; padding:8px">-1101331718</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.hold_ground</td>
 <td style="border-style:solid; border-width:2; padding:8px">1804286487</br></td>
 </tr>
@@ -16676,12 +16855,24 @@ Sets the mapping of internal animation controller references to actual animation
 <td style="border-style:solid; border-width:2; padding:8px">779377630</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_to_block</td>
+<td style="border-style:solid; border-width:2; padding:8px">-342788833</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_to_land</td>
 <td style="border-style:solid; border-width:2; padding:8px">-943551837</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_to_lava</td>
 <td style="border-style:solid; border-width:2; padding:8px">-945036492</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_to_liquid</td>
+<td style="border-style:solid; border-width:2; padding:8px">635836098</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_to_poi</td>
+<td style="border-style:solid; border-width:2; padding:8px">-1614682114</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_to_random_block</td>
@@ -16816,6 +17007,10 @@ Sets the mapping of internal animation controller references to actual animation
 <td style="border-style:solid; border-width:2; padding:8px">-1390363669</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.scared</td>
+<td style="border-style:solid; border-width:2; padding:8px">-1643945926</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.send_event</td>
 <td style="border-style:solid; border-width:2; padding:8px">-823429137</br></td>
 </tr>
@@ -16926,6 +17121,10 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.wither_target_highest_damage</td>
 <td style="border-style:solid; border-width:2; padding:8px">-1065562072</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.work</td>
+<td style="border-style:solid; border-width:2; padding:8px">-391600209</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>

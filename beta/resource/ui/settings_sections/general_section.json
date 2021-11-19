@@ -5439,6 +5439,25 @@
         }
       },
       {
+        "option_dropdown_skin_rotation_speed@settings_common.option_dropdown": {
+          "$option_label": "Display Skin Rotation Speed Multiplier",
+          "$dropdown_content": "general_section.dev_debug_speed_multiplier_options",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "dev_debug_skin_rotation_speed_multiplier_dropdown",
+          "$options_dropdown_toggle_label_binding": "#dev_debug_skin_rotation_speed_multiplier_dropdown_toggle_label",
+          "$option_enabled_binding_name": "#dev_debug_skin_rotation_speed_multiplier_dropdown_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "400%" ]
+        }
+      },
+      {
+        "option_toggle_all_skins_rotate@settings_common.option_toggle": {
+          "$option_label": "Toggle All Skins Rotate",
+          "$option_binding_name": "#dev_marketplace_toggle_all_skins_rotate",
+          "$option_enabled_binding_name": "#dev_marketplace_toggle_all_skins_rotate_enabled",
+          "$toggle_name": "dev_marketplace_toggle_all_skins_rotate"
+        }
+      },
+      {
         "option_dropdown_0@settings_common.option_dropdown": {
           "$option_label": "options.dev_enableDebugHudOverlay",
           "$dropdown_content": "general_section.dev_debug_hud_dropdown_content",
@@ -5513,19 +5532,22 @@
         }
       },
       {
+        "option_dropdown_server_chunk_map@settings_common.option_dropdown": {
+          "$option_label": "options.dev_chunkMapMode",
+          "$dropdown_content": "general_section.dev_chunkMapMode_content",
+          "$option_enabled_binding_name": "#dev_chunk_map_mode_dropdown_enabled",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "dev_chunk_map_mode_dropdown",
+          "$options_dropdown_toggle_label_binding": "#dev_chunk_map_mode_dropdown_toggle_label",
+          "$dropdown_scroll_content_size": [ "100%", "200%" ]
+        }
+      },
+      {
         "option_toggle_9@settings_common.option_toggle": {
           "$option_label": "options.dev_renderMobInfoState",
           "$option_binding_name": "#dev_render_mob_info_state",
           "$option_enabled_binding_name": "#dev_render_mob_info_state_enabled",
           "$toggle_name": "dev_render_mob_info_state"
-        }
-      },
-      {
-        "option_toggle_server_chunk_map@settings_common.option_toggle": {
-          "$option_label": "options.dev_showServerChunkMap",
-          "$option_binding_name": "#dev_show_server_chunk_map",
-          "$option_enabled_binding_name": "#dev_show_server_chunk_map_enabled",
-          "$toggle_name": "dev_show_server_chunk_map"
         }
       },
 
@@ -6239,31 +6261,6 @@
       }
     ]
   },
-  "new_achievements_grid_item@settings_common.radio_with_label": {
-    "$toggle_state_binding_name": "#initial_selected",
-    "$radio_label_text": "#description",
-    "$radio_label_bindings": [
-      {
-        "binding_name": "#description",
-        "binding_type": "collection",
-        "binding_condition": "once",
-        "binding_collection_name": "dev_new_achievements_screens_radio"
-      }
-    ],
-    "$radio_toggle_group": true,
-    "$toggle_binding_type": "collection",
-    "$toggle_name": "dev_new_achievements_screens_radio",
-    "$toggle_grid_collection_name": "dev_new_achievements_screens_radio",
-    "$option_enabled_binding_name": "",
-    "bindings": [
-      {
-        "binding_name": "#default_focus_precedence",
-        "binding_type": "collection",
-        "binding_condition": "visible",
-        "binding_collection_name": "dev_new_achievements_screens_radio"
-      }
-    ]
-  },
   "new_create_world_grid_item@settings_common.radio_with_label": {
     "$toggle_state_binding_name": "#initial_selected",
     "$radio_label_text": "#description",
@@ -6351,92 +6348,11 @@
         }
       },
       {
-        "new_achievements_screens_radio_label": {
-          "type": "label",
-          "text": "New Achievements Screens (requires the infrastructure)",
-          "size": [ "100%", "default" ],
-          "color": "$body_text_color",
-          "bindings": [
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "new_achievements_screens_radio_label_disabled": {
-          "type": "label",
-          "text": "New Achievements Screens (requires the infrastructure)",
-          "size": [ "100%", "default" ],
-          "color": "$body_text_color",
-          "alpha": 0.5,
-          "bindings": [
-            {
-              "binding_name": "(not #core_ui_enabled)",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "new_achievements_screens_radio_label_spacer": {
-          "type": "panel",
-          "size": [ "100%", 3 ]
-        }
-      },
-      {
-        "new_achievements_screens_radio_button": {
-          "type": "grid",
-          "size": [ "100%", "100%c" ],
-          "grid_item_template": "general_section.new_achievements_grid_item",
-          "grid_dimension_binding": "#dev_new_achievements_screens_radio_dimension",
-          "collection_name": "dev_new_achievements_screens_radio",
-          "bindings": [
-            {
-              "binding_name": "#dev_new_achievements_screens_radio_dimension",
-              "binding_condition": "visible"
-            },
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#enabled"
-            }
-          ]
-        }
-      },
-      {
-        "new_achievements_screens_radio_button_spacer": {
-          "type": "panel",
-          "size": [ "100%", 3 ]
-        }
-      },
-      {
         "new_create_world_screen_radio_label": {
           "type": "label",
-          "text": "New Create World Screen (requires the infrastructure)",
+          "text": "New Create World Screen",
           "size": [ "100%", "default" ],
-          "color": "$body_text_color",
-          "bindings": [
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "new_create_world_screen_radio_label_disabled": {
-          "type": "label",
-          "text": "New Create World Screen (requires the infrastructure)",
-          "size": [ "100%", "default" ],
-          "color": "$body_text_color",
-          "alpha": 0.5,
-          "bindings": [
-            {
-              "binding_name": "(not #core_ui_enabled)",
-              "binding_name_override": "#visible"
-            }
-          ]
+          "color": "$body_text_color"
         }
       },
       {
@@ -6456,10 +6372,6 @@
             {
               "binding_name": "#dev_new_create_world_screen_radio_dimension",
               "binding_condition": "visible"
-            },
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#enabled"
             }
           ]
         }
@@ -6500,72 +6412,39 @@
         }
       },
       {
-        "open_core_ui_label": {
+        "open_ore_ui_label": {
           "type": "label",
-          "text": "Core UI developer pages",
+          "text": "Ore UI developer pages",
           "size": [ "100%", "default" ],
-          "color": "$body_text_color",
-          "bindings": [
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#visible"
-            }
-          ]
+          "color": "$body_text_color"
         }
       },
       {
-        "open_core_ui_label_disabled": {
-          "type": "label",
-          "text": "Core UI developer pages",
-          "size": [ "100%", "default" ],
-          "color": "$body_text_color",
-          "alpha": 0.5,
-          "bindings": [
-            {
-              "binding_name": "(not #core_ui_enabled)",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "open_core_ui_label_spacer": {
+        "open_ore_ui_label_spacer": {
           "type": "panel",
-          "size": [ "100%", 3 ],
-          "bindings": [
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#enabled"
-            }
-          ]
+          "size": [ "100%", 3 ]
         }
       },
       {
-        "open_core_ui_docs@settings_common.action_button": {
-          "$pressed_button_name": "button.open_core_ui_docs",
-          "$button_text": "Open Core UI Docs",
-          "bindings": [
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#enabled"
-            }
-          ]
+        "open_ore_ui_docs@settings_common.action_button": {
+          "$pressed_button_name": "button.open_ore_ui_docs",
+          "$button_text": "Open Ore UI Documentation"
         }
       },
       {
-        "open_core_ui_tests@settings_common.action_button": {
-          "$pressed_button_name": "button.open_core_ui_tests",
-          "$button_text": "Open Core UI Tests",
-          "bindings": [
-            {
-              "binding_name": "#core_ui_enabled",
-              "binding_name_override": "#enabled"
-            }
-          ]
+        "open_ore_ui_tests@settings_common.action_button": {
+          "$pressed_button_name": "button.open_ore_ui_tests",
+          "$button_text": "Open Ore UI Test Screens"
         }
       },
       {
-        "open_core_ui_tests_spacer": {
+        "open_ore_ui_test_modal@settings_common.action_button": {
+          "$pressed_button_name": "button.open_ore_ui_test_modal",
+          "$button_text": "Open Ore UI Test Modal"
+        }
+      },
+      {
+        "open_ore_ui_tests_spacer": {
           "type": "panel",
           "size": [ "100%", 7 ]
         }
@@ -6857,6 +6736,34 @@
       }
     ]
   },
+    "dev_debug_speed_multiplier_options@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#dev_marketplace_rotation_speed_multiplier_one",
+          "$radio_label_text": "x1.0"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#dev_marketplace_rotation_speed_multiplier_two",
+          "$radio_label_text": "x2.0"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#dev_marketplace_rotation_speed_multiplier_three",
+          "$radio_label_text": "x3.0"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#dev_marketplace_rotation_speed_multiplier_four",
+          "$radio_label_text": "x4.0"
+        }
+      }
+    ]
+  },
   "dev_debug_hud_dropdown_content@settings_common.option_radio_dropdown_group": {
     "$radio_buttons": [
       {
@@ -6981,6 +6888,28 @@
         "@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#raytracing_mode_full",
           "$radio_label_text": "options.dev_raytracing_mode.full"
+        }
+      }
+    ]
+  },
+  "dev_chunkMapMode_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "dev_chunkMapMode_client@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#chunk_map_mode_client",
+          "$radio_label_text": "options.dev_chunk_map_mode_client"
+        }
+      },
+      {
+        "dev_chunkMapMode_server@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#chunk_map_mode_server_chunk_state",
+          "$radio_label_text": "options.dev_chunk_map_mode_server_chunk_state"
+        }
+      },
+      {
+        "dev_chunkMapMode_server_debug_display@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#chunk_map_mode_server_chunk_debug_display_state",
+          "$radio_label_text": "options.dev_chunk_map_mode_server_chunk_debug_display_state"
         }
       }
     ]

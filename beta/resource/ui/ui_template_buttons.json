@@ -666,6 +666,11 @@
     "$default_pressed_alpha|default": 1,
     "$border_default_alpha|default": 1,
 
+    "$border_default_layer|default": 2,
+    "$border_hover_layer|default": 3,
+    "$border_pressed_layer|default": 3,
+    "$border_locked_layer|default": 1,
+
     // These states are for passing the button state to the button content - do not set these in a parent!
     "$default_state|default": false,
     "$hover_state|default": false,
@@ -689,7 +694,7 @@
           "$border_color": "$light_border_default_color",
           "$button_alpha": "$default_button_alpha",
           "$border_visible": "$default_state_border_visible",
-          "$border_layer": 2,
+          "$border_layer": "$border_default_layer",
           "$default_state": true,
           "$border_alpha": "$border_default_alpha",
           "layer": 1
@@ -705,7 +710,7 @@
           "$content_alpha": "$hover_content_alpha",
           "$border_color": "$light_border_hover_color",
           "$border_visible": "$hover_state_border_visible",
-          "$border_layer": 3,
+          "$border_layer": "$border_hover_layer",
           "$hover_state": true,
           "$button_alpha": "$default_hover_alpha",
           "layer": 2
@@ -721,7 +726,7 @@
           "$button_offset": "$button_pressed_offset",
           "$border_color": "$light_border_pressed_color",
           "$border_visible": "$pressed_state_border_visible",
-          "$border_layer": 3,
+          "$border_layer": "$border_pressed_layer",
           "$button_alpha": "$default_pressed_alpha",
           "$pressed_state": true,
           "layer": 3
@@ -737,7 +742,7 @@
           "$border_color": "$light_border_locked_color",
           "$button_image": "common_buttons.locked_button_image",
           "$border_visible": "$locked_state_border_visible",
-          "$border_layer": 1,
+          "$border_layer": "$border_locked_layer",
           "$locked_state": true,
           "layer": 1
         }
@@ -2086,7 +2091,7 @@
           "size": [ "100%", "100%sm" ],
           "controls": [
             {
-              "focus_border@achievement.focus_border": {
+              "focus_border@common_buttons.focus_border": {
                 "size": [ "100%", "100% + 4px" ],
                 "bindings": [
                   {

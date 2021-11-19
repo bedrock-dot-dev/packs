@@ -1586,19 +1586,18 @@
       },
       {
         "platform_settings_dropdown@settings_common.option_dropdown": {
-          "ignored": "(not $nx_os and not $is_ps4)",
           "$show_option_label": true,
           "$option_label": "options.thirdPartyConsoleVisible",
           "$dropdown_content": "world_section.platform_broadcast_dropdown_content",
           "$dropdown_area": "content_area",
           "$dropdown_name": "platform_broadcast_dropdown",
           "$options_dropdown_toggle_label_binding": "#platform_broadcast_dropdown_toggle_label",
-          "$option_enabled_binding_name": "#platform_show_broadcast_dropdown",
+          "$option_enabled_binding_name": "#platform_broadcast_dropdown_enabled",
           "$dropdown_scroll_content_size": [ "100%", 60 ],
           "bindings": [
             {
-              "binding_name": "#can_be_platform_network_enabled",
-              "binding_name_override": "#enabled"
+              "binding_name": "#platform_settings_dropdown_visible",
+              "binding_name_override": "#visible"
             }
           ]
         }

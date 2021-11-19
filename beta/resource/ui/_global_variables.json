@@ -279,7 +279,9 @@
   "$neutron_color": [ 0.894, 0.698, 0.341, 1.0 ],
 
   //////// Store colors ////////
-  "$coin_color": [ 0.87, 0.84, 0.02, 1.0 ],
+  "$coin_color": [ 0.94, 0.81, 0.09, 1.0 ],
+  "$coin_offer_text_color": [ 0.2, 0.2, 0.2 ],
+  "$coin_header_text_color": [ 0.2, 0.2, 0.2 ],
   "$store_author_text_color": [ 0.7, 0.7, 0.7 ],
   "$store_realms_text_color": [ 0.356, 0.223, 0.537 ],
   "$store_sales_banner_text_color": [ 0.3, 0.3, 0.3 ],
@@ -291,9 +293,9 @@
   "$store_white_text_color": [ 1, 1, 1 ],
   "$store_dark_grey_text_color": [ 0.3, 0.3, 0.3 ],
   "$store_light_grey_text_color": [ 0.7, 0.7, 0.7 ],
-  "$coin_bonus_price_color": [ 0.2, 0.2, 0.2 ],
   "$carousel_unselected": [ 0.208, 0.208, 0.208 ],
   "$carousel_selected": [ 0.118, 0.561, 0.263 ],
+  "$coin_screen_callout_bevel_color": [ 0.3179, 0.3179, 0.3179 ],
 
   //////// Sidebar colors ////////
   "$sidebar_bg_color": [ 0.192, 0.196, 0.2 ],

@@ -2532,6 +2532,7 @@
         "bundle_summary_section": "@pdp.bundle_summary_factory_object",
         "bundle_upsell_section": "@pdp.bundles_upsell_factory_object",
         "gift_promo_banner": "@common_store.promo_banner_panel",
+        "coin_row_section": "@coin_purchase.main_panel",
         "promo_timeline": "@common_store.promo_landing_panel"
       },
       "factory_variables": [
@@ -5749,12 +5750,22 @@
     "size": [ "100% - 8px", "100%cm" ],
     "controls": [
       {
-        "image": {
+        "world_panel": {
           "type": "panel",
           "size": [ "50%", "56.25%x" ], //image aspect ratio
           "controls": [
             {
-              "key_image": {
+              "border@common.square_image_border_white": {
+                "type": "image",
+                "layer": 6,
+                "size": [ "100%", "100%" ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "texture": "textures/ui/black_border"
+              }
+            },
+            {
+              "world_key_image": {
                 "type": "image",
                 "layer": 1,
                 "size": [ "100%", "100%" ],
@@ -5768,85 +5779,88 @@
                     "binding_name": "#promo_key_art_file_system",
                     "binding_name_override": "#texture_file_system"
                   }
-                ],
-                "controls": [
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#promo_item_is_world",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "persona_panel": {
+          "type": "panel",
+          "size": [ "25%", "100%x" ], //image aspect ratio
+          "controls": [
+            {
+              "border@common.square_image_border_white": {
+                "type": "image",
+                "layer": 6,
+                "size": [ "100%", "100%" ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "texture": "textures/ui/black_border"
+              }
+            },
+            {
+              "persona_image": {
+                "type": "image",
+                "size": [ "100%", "100%" ],
+                "layer": 5,
+                "bilinear": true,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "bindings": [
                   {
-                    "border@common.focus_border_white": {
-                      "size": [ "100% + 2px", "100% + 2px" ],
-                      "color": "$light_border_default_color",
-                      "layer": 1
-                    }
+                    "binding_name": "#promo_persona_thumbnail_texture",
+                    "binding_name_override": "#texture"
                   },
                   {
-                    "persona_key_art_frame@common.square_image_border_white": {
-                      "size": [ "100%y", "80%" ],
-                      "layer": 6,
-                      "anchor_from": "center",
-                      "anchor_to": "center",
-                      "offset": [ -10, 0 ],
-                      "bindings": [
-                        {
-                          "binding_name": "#promo_item_is_persona",
-                          "binding_name_override": "#visible"
-                        }
-                      ],
-                      "controls": [
-                        {
-                          "persona_image_panel": {
-                            "type": "image",
-                            "size": [ "100% - 2px", "100% - 2px" ],
-                            "layer": 5,
-                            "bilinear": true,
-                            "anchor_from": "center",
-                            "anchor_to": "center",
-                            "bindings": [
-                              {
-                                "binding_name": "#promo_persona_thumbnail_texture",
-                                "binding_name_override": "#texture"
-                              },
-                              {
-                                "binding_name": "#promo_persona_thumbnail_file_system",
-                                "binding_name_override": "#texture_file_system"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "background@persona_common.item_rarity_color_background": {
-                            "size": [ "100% - 2px", "100% - 2px" ],
-                            "$rarity_background_alpha": 1,
-                            "$rarity_color_background_texture": "textures/ui/button_borderless_light",
-                            "layer": 1,
-                            "$rarity_background_bindings": [
-                              {
-                                "binding_name": "#rarity_color",
-                                "binding_name_override": "#color"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "rarity_bar_panel@persona_common.rarity_bar": {
-                            "size": [ "100% - 2px", 3 ],
-                            "layer": 6,
-                            "offset": [ 0, -1 ],
-                            "bindings": [
-                              {
-                                "binding_name": "#rarity_bar_texture",
-                                "binding_name_override": "#texture"
-                              },
-                              {
-                                "binding_name": "#promotion_offer_visible",
-                                "binding_name_override": "#visible"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
+                    "binding_name": "#promo_persona_thumbnail_file_system",
+                    "binding_name_override": "#texture_file_system"
                   }
                 ]
               }
+            },
+            {
+              "background@persona_common.item_rarity_color_background": {
+                "size": [ "100%", "100%" ],
+                "$rarity_background_alpha": 1,
+                "$rarity_color_background_texture": "textures/ui/button_borderless_light",
+                "layer": 1,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "$rarity_background_bindings": [
+                  {
+                    "binding_name": "#rarity_color",
+                    "binding_name_override": "#color"
+                  }
+                ]
+              }
+            },
+            {
+              "rarity_bar_panel@persona_common.rarity_bar": {
+                "size": [ "100% - 2px", 3 ],
+                "layer": 6,
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "bindings": [
+                  {
+                    "binding_name": "#rarity_bar_texture",
+                    "binding_name_override": "#texture"
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#promo_item_is_persona",
+              "binding_name_override": "#visible"
             }
           ]
         }

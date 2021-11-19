@@ -1,4 +1,4 @@
-<h1>SCRIPTING DOCUMENTATION </br>Version: 1.18.0.27</h1>
+<h1>SCRIPTING DOCUMENTATION </br>Version: 1.18.10.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -377,12 +377,12 @@ Allows you to get a block from the world when provided an x, y, and z position. 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
 <tr> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Value</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">object</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">JavaScript Object</td>
+<td style="border-style:solid; border-width:1; padding:9px">Something went wrong when retrieving the block</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">null</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">Block JS API Object</td>
+<td style="border-style:solid; border-width:1; padding:9px">An object containing the block</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -473,11 +473,11 @@ Allows you to get an array of blocks from the world when provided a minimum and 
 <tr> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Value</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">Array</td>
-<td style="border-style:solid; border-width:1; padding:9px">A 3D array of block objects. Indexs are the blocks positions relative to the min position given</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">A 3D array of block objects. Indexes are the blocks positions relative to the min position given</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">null</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">JavaScript Object</td>
+<td style="border-style:solid; border-width:1; padding:9px">Something went wrong when retrieving the blocks</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -539,12 +539,12 @@ Allows you to get an array of blocks from the world when provided a minimum and 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
 <tr> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Value</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">array</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">Array</td>
+<td style="border-style:solid; border-width:1; padding:9px">A 3D array of block objects. Indexes are the blocks positions relative to the min position given</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">null</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">JavaScript Object</td>
+<td style="border-style:solid; border-width:1; padding:9px">Something went wrong when retrieving the blocks</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -2415,7 +2415,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 <td style="border-style:solid; border-width:2; padding:8px">spawn_entity</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">Identifier of the entity to spawn, leave empty to spawn the item defined above instead.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Identifier of the entity to spawn, leave empty to spawn the item defined by "spawn_item" instead.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">spawn_event</td>
@@ -2514,7 +2514,7 @@ The tick world component is a read-only component that allows users to access th
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">distance_to_players</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">distance_to_players</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The distance a player needs to be within for the ticking area to be active. The distance is ignored if the ticking area is set to never despawn</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">never_despawn</td>

@@ -282,7 +282,13 @@
 
                 "focus_change_down": "FOCUS_OVERRIDE_STOP",
                 "focus_change_left": "emote_wheel",
-                "focus_change_right": "emote_wheel"
+                "focus_change_right": "emote_wheel",
+                "bindings": [
+                  {
+                    "binding_name": "#dressing_room_button_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
               }
             }
           ]
