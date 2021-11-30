@@ -185,8 +185,7 @@
               }
             },
             { "realm_subscription_origin_label@realms_settings.realm_subscription_origin_label": {} },
-            // ADO 576207: Bring this message back for switch but make sure we can be confident it never falsely displays
-            //{ "realm_consumable_to_subscription_info_label@realms_settings.realm_consumable_to_subscription_info_label": {} },
+            { "realm_consumable_to_subscription_info_label@realms_settings.realm_consumable_to_subscription_info_label": {} },
             {
               "_0": {
                 "type": "panel",

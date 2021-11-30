@@ -1726,7 +1726,7 @@
           "text": "dr.classic_skins.realms_plus_button",
           "font_type": "MinecraftTen",
           "text_alignment": "center",
-          "color": "$light_button_default_text_color"
+          "color": "$text_color"
         }
       },
       {

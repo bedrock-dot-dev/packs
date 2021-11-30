@@ -14,19 +14,7 @@
     "$child_control": "update_version.update_version_content",
     "$button_panel": "update_version.update_button",
     "$title_text_binding_type": "global",
-    "$fill_alpha": 1,
-    "button_mappings": [
-      {
-        "from_button_id": "button.menu_cancel",
-        "to_button_id": "button.menu_exit",
-        "mapping_type": "global"
-      },
-      {
-        "from_button_id": "button.menu_exit",
-        "to_button_id": "button.menu_exit",
-        "mapping_type": "global"
-      }
-    ]
+    "$fill_alpha": 1
   },
 
   "background@common.screen_background": {

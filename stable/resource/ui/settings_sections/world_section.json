@@ -545,7 +545,7 @@
         }
       },
       {
-        "option_dropdown_3@settings_common.option_dropdown": {
+        "option_dropdown_3@settings_common.option_dropdown_no_scroll": {
           "$tts_section_header": "createWorldScreen.worldPreferences",
           "$option_label": "createWorldScreen.worldType",
           "$dropdown_content": "world_section.world_type_dropdown_content",
@@ -553,7 +553,8 @@
           "$dropdown_name": "world_type_dropdown",
           "$options_dropdown_toggle_label_binding": "#world_type_dropdown_toggle_label",
           "$option_enabled_binding_name": "#world_type_dropdown_enabled",
-          "$dropdown_scroll_content_size": [ "100%", "200%" ],
+          "$selection_highlight_offset": [ -2, 1 ],
+          "$selection_highlight_size": [ "100%", "100% + 1px" ],
           "$focus_override_right": "FOCUS_OVERRIDE_STOP"
         }
       },
@@ -778,6 +779,17 @@
         }
       },
       {
+        "allow_cheats_toggle@settings_common.option_toggle": {
+          "$tts_section_header": "createWorldScreen.cheatSettings",
+          "$option_label": "selectWorld.cheats",
+          "$option_binding_name": "#allow_cheats",
+          "$option_enabled_binding_name": "#allow_cheats_enabled",
+          "$toggle_name": "allow_cheats",
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "$toggle_binding_condition": "always_when_visible"
+        }
+      },
+      {
         "education_toggle@settings_common.option_toggle": {
           "$tts_section_header": "createWorldScreen.cheatSettings",
           // Ignore education toggle in education since education is always on in education
@@ -787,17 +799,6 @@
           "$option_enabled_binding_name": "#education_toggle_enabled",
           "$toggle_name": "education_toggle",
           "$focus_override_right": "FOCUS_OVERRIDE_STOP"
-        }
-      },
-      {
-        "allow_cheats_toggle@settings_common.option_toggle": {
-          "$tts_section_header": "createWorldScreen.cheatSettings",
-          "$option_label": "selectWorld.cheats",
-          "$option_binding_name": "#allow_cheats",
-          "$option_enabled_binding_name": "#allow_cheats_enabled",
-          "$toggle_name": "allow_cheats",
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
-          "$toggle_binding_condition": "always_when_visible"
         }
       },
       {
@@ -1148,20 +1149,6 @@
                   }
                 ]
               }
-            }
-          ]
-        }
-      },
-      {
-        "base_game_version_debug_text": {
-          "ignored": "$is_publish",
-          "type": "label",
-          "color": "$body_text_color",
-          "text": "#text",
-          "bindings": [
-            {
-              "binding_name": "#base_game_version_debug_text",
-              "binding_name_override": "#text"
             }
           ]
         }
@@ -1521,6 +1508,7 @@
       },*/
       {
         "old_world_type_toggle@settings_common.radio_with_label": {
+          "ignored": "$is_publish",
           "$toggle_state_binding_name": "#world_type_radio_old",
           "$radio_label_text": "generator.old"
         }
@@ -1824,6 +1812,23 @@
         }
       },
       {
+        "game_version_override_toggle@settings_common.option_toggle": {
+          "$option_label": "Enable Game Version Override",
+          "$option_binding_name": "#game_version_override_toggle",
+          "$option_enabled_binding_name": "#game_version_override_toggle_enabled",
+          "$toggle_name": "game_version_override_toggle"
+        }
+      },
+      {
+        "game_version_override_textbox@settings_common.option_text_edit": {
+          "$option_label": "Game Version Override",
+          "$option_binding_name": "#game_version_override",
+          "$option_place_holder_text": "0.0.0",
+          "$option_enabled_binding_name": "#game_version_override_enabled",
+          "$text_box_name": "game_version_override_text_box"
+        }
+      },
+      {
         "spawn_dimension_dropdown@settings_common.option_dropdown_no_scroll": {
           "$option_label": "Spawn Dimension",
           "$dropdown_content": "world_section.debug_spawn_dimension_dropdown_content",
@@ -1871,6 +1876,19 @@
           "$options_dropdown_toggle_label_binding": "#dev_raytracing_mode_dropdown_toggle_label",
           "$option_enabled_binding_name": "#dev_raytracing_mode_dropdown_enabled",
           "$dropdown_scroll_content_size": [ "100%", "140%" ]
+        }
+      },
+      {
+        "base_game_version_debug_text": {
+          "type": "label",
+          "color": "$body_text_color",
+          "text": "#text",
+          "bindings": [
+            {
+              "binding_name": "#base_game_version_debug_text",
+              "binding_name_override": "#text"
+            }
+          ]
         }
       }
     ]

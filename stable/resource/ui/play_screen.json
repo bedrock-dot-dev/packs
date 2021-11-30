@@ -5131,7 +5131,29 @@
                 "$label_offset": [ 1, 0 ],
                 "$label_content_label": "localWorld.no_local_worlds_present",
                 "$label_content_content": "play.storage_location_dropdown_panel",
-                "$information_panel_label_text": "localWorld.no_local_worlds_present"
+                "$information_panel_label_text": "localWorld.no_local_worlds_present",
+                "bindings": [
+                  {
+                    "binding_name": "#no_local_world_switch_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "no_local_worlds_get_help@play.label_content_template": {
+                "size": [ "100% - 6px", "100%c + 1px" ],
+                "offset": [ 0, 2 ],
+                "$label_offset": [ 1, 0 ],
+                "$label_content_label": "localWorld.no_local_worlds_present_external",
+                "$label_content_content": "play.no_local_worlds_launch_help",
+                "$information_panel_label_text": "localWorld.no_local_worlds_present_external",
+                "bindings": [
+                  {
+                    "binding_name": "#no_local_world_help_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
               }
             }
           ]
@@ -5144,6 +5166,12 @@
         "binding_name_override": "#visible"
       }
     ]
+  },
+  
+  "no_local_worlds_launch_help@common_buttons.light_text_button": {
+    "$pressed_button_name": "button.no_local_worlds_launch_help",
+	"$button_text": "localWorld.no_local_worlds_button_label",
+    "size": [ "100%", 29 ]
   },
 
   "storage_location_dropdown_panel": {
@@ -6551,7 +6579,6 @@
       },
       {
         "x_image@common.light_close_button": {
-          "ignored": "$game_pad",
           "layer": 1,
           "offset": [ 0, -1 ],
           "anchor_from": "center",
@@ -6559,7 +6586,13 @@
           "focus_identifier": "close_button",
           "focus_change_left": "FOCUS_OVERRIDE_STOP",
           "focus_change_up": "FOCUS_OVERRIDE_STOP",
-          "focus_change_right": "FOCUS_OVERRIDE_STOP"
+          "focus_change_right": "FOCUS_OVERRIDE_STOP",
+          "bindings": [
+            {
+              "binding_name": "(not #gamepad_helper_visible)",
+              "binding_name_override": "#visible"
+            }
+          ]
         }
       }
     ]

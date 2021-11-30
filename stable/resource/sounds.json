@@ -2836,9 +2836,9 @@
          },
          "npc" : {
             "events" : {
-               "ambient" : "mob.villager.idle",
                "death" : "dig.wood",
-               "hurt" : "mob.villager.hit"
+               "hurt" : "mob.villager.hit",
+               "spawn" : "mob.villager.idle"
             },
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1.0
@@ -4692,6 +4692,11 @@
          "record.mellohi" : {
             "pitch" : 1.0,
             "sound" : "record.mellohi",
+            "volume" : 1.0
+         },
+         "record.otherside" : {
+            "pitch" : 1.0,
+            "sound" : "record.otherside",
             "volume" : 1.0
          },
          "record.pigstep" : {

@@ -554,8 +554,8 @@
               "binding_name_override": "#visible"
             },
             {
-              "binding_type": "view", 
-              "source_property_name": "#visible", 
+              "binding_type": "view",
+              "source_property_name": "#visible",
               "target_property_name": "#enabled"
             }
           ]
@@ -584,7 +584,7 @@
         "info_icon_pad": {
           "priority": 1,
           "type": "panel",
-          "size": [ 2,0]
+          "size": [ 2, 0 ]
         }
       },
       {
@@ -603,7 +603,7 @@
         "pad": {
           "priority": 0,
           "type": "panel",
-          "size": [ 2,0]
+          "size": [ 2, 0 ]
         }
       }
     ]
@@ -2895,6 +2895,7 @@
                               {
                                 "rtx_label@common_store.rtx_label": {
                                   "size": [ 20, 12 ],
+                                  "layer": 5,
                                   "bindings": [
                                     {
                                       "binding_name": "#rtx_label_visible",
@@ -2931,8 +2932,7 @@
                     "info": {
                       "type": "stack_panel",
                       "orientation": "vertical",
-                      "size": [ "fill", 0 ],
-                      "inherit_max_sibling_height": true,
+                      "size": [ "fill", "100%c" ],
                       "controls": [
                         {
                           "summary_title_and_author_panel@pdp.title_and_author_panel": {}
@@ -2940,7 +2940,7 @@
                         {
                           "pad_fill": {
                             "type": "panel",
-                            "size": [ "100%", "fill" ]
+                            "size": [ "100%", 5 ]
                           }
                         },
                         {
@@ -3601,21 +3601,22 @@
   },
 
   "in_realms_plus_button_content": {
-    "type": "panel",
+    "type": "stack_panel",
+    "orientation": "horizontal",
     "size": [ "100% + 4px", "100%" ],
+    "offset": [ -3, 0 ],
     "$is_purchase_button": false,
     "controls": [
       {
         "realm_icon_panel": {
           "type": "panel",
-          "size": [ "100%", "100% + 4px" ],
+          "size": [ "50%y + 13px", "100% + 4px" ],
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
-          "offset": [ -3, 2 ],
           "controls": [
             {
               "realms_banner@realmsPlus.markdown_background": {
-                "size": [ "100%c", "100%" ],
+                "size": [ "default", "100%" ],
                 "$banner_size": [ "13px", "100%" ],
                 "offset": [ 3, -2 ],
                 "$triangle_offset": [ 0, 0 ],
@@ -3631,8 +3632,8 @@
                 "uv_size": [ 19, 19 ],
                 "uv": "@pdp.realms_default_animation",
                 "disable_anim_fast_forward": true,
-                "anchor_from": "bottom_left",
-                "anchor_to": "bottom_left",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
                 "offset": [ 1, -2 ],
                 "layer": 15,
                 "ignored": "(not $default_state)"
@@ -3646,8 +3647,8 @@
                 "uv_size": [ 19, 19 ],
                 "uv": "@pdp.realms_default_animation",
                 "disable_anim_fast_forward": true,
-                "anchor_from": "bottom_left",
-                "anchor_to": "bottom_left",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
                 "offset": [ 1, -2 ],
                 "layer": 15,
                 "ignored": "$default_state"
@@ -3657,17 +3658,30 @@
         }
       },
       {
-        "text": {
-          "type": "label",
-          "size": [ "default", 10 ],
-          "anchor_from": "top_middle",
-          "anchor_to": "top_middle",
-          "offset": [ 8, 2.5 ],
-          "text_alignment": "center",
-          "text": "store.inRealmsPlus",
-          "color": "$text_color"
+        "buffer_panel": {
+          "type": "panel",
+          "size": [ 3, "100%" ]
         }
-      }
+      },
+        {
+          "alignment_text_panel": {
+            "type": "panel",
+            "size": [ "fill", "100%" ],
+            "controls": [
+              {
+                "text": {
+                  "type": "label",
+                  "size": [ "100%", 10 ],
+                  "anchor_from": "center",
+                  "anchor_to": "center",
+                  "text_alignment": "center",
+                  "text": "store.inRealmsPlus",
+                  "color": "$text_color"
+                }
+              }
+            ]
+          }
+        }
     ]
   },
 

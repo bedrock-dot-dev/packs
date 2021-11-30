@@ -1937,9 +1937,43 @@
               "binding_name": "$option_label"
             }
           ],
+          "controls": [
+            { "render_distance_warning@general_section.render_distance_warning": {} },
+            { "option_generic_core@settings_common.option_generic_core": {} }
+          ],
           "bindings": [
             {
               "binding_name": "#show_render_distance",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "render_distance_warning_text": {
+          "type": "panel",
+          "size": [ "100%", "100%cm + 16px" ],
+          "controls": [
+            {
+              "render_distance_popup@common.static_tooltip_popup_with_image_and_text": {
+                "size": [ "100% - 4px", "100%cm + 8px" ],
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "$tooltip_panel_offset": [ 0, 6 ],
+                "$tooltip_popup_image": "textures/ui/WarningGlyph",
+                "$tooltip_button_binding_type": "global",
+                "$tooltip_button_collection_name": "",
+                "$tooltip_popup_visible_binding": "#render_distance_warning_visible",
+                "$tooltip_text_binding_name": "#render_distance_performance_tooltip_text",
+                "$tooltip_chevron_anchor": "top_right",
+                "$tooltip_popup_chevron_offset": [ "-30%x", "-10px" ],
+                "$tooltip_popup_chevron_texture": "textures/ui/tooltip_inverted_chevron"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#render_distance_warning_visible",
               "binding_name_override": "#visible"
             }
           ]
@@ -2200,6 +2234,36 @@
     "bindings": [
       {
         "binding_name": "$rtx_disabled_option_upsell_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  // Render distance warning notification
+
+  "render_distance_warning_image": {
+    "type": "image",
+    "size": [ 7, 11 ],
+    "texture": "textures/ui/WarningGlyph"
+  },
+
+  "render_distance_warning": {
+    "type": "panel",
+    "size": [ "100%", 0 ],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "controls": [
+      {
+        "render_distance_warning_image@general_section.render_distance_warning_image": {
+          "offset": [ -14, 0 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#render_distance_warning_visible",
         "binding_name_override": "#visible"
       }
     ]
@@ -2802,8 +2866,6 @@
           "size": [ "100%", 6 ]
         }
       },
-      // ADO 576207: Reintroduce this panel for Switch when subscriptions come out, but without showing when it shouldn't on other platforms...
-      /*
       {
         "lower_panel": {
           "type": "panel",
@@ -2850,7 +2912,6 @@
           ]
         }
       },
-      */
       {
         "bottom_panel": {
           "type": "panel",
@@ -5208,6 +5269,14 @@
           "$option_enabled_binding_name": "#automation_functional_test_block_input_enabled",
           "$toggle_name": "automation_functional_test_block_input"
         }
+      },
+      {
+        "automation_server_test_assert_on_level_diff_toggle@settings_common.option_toggle": {
+            "$option_label": "Enable Assert on Level Diff While Running Server Tests",
+            "$option_binding_name": "#automation_server_test_assert_on_level_diff",
+            "$option_enabled_binding_name": "#automation_server_test_assert_on_level_diff_enabled",
+            "$toggle_name": "automation_server_test_assert_on_level_diff"
+        }
       }
     ]
   },
@@ -6195,6 +6264,31 @@
       }
     ]
   },
+  "new_create_world_grid_item@settings_common.radio_with_label": {
+    "$toggle_state_binding_name": "#initial_selected",
+    "$radio_label_text": "#description",
+    "$radio_label_bindings": [
+      {
+        "binding_name": "#description",
+        "binding_type": "collection",
+        "binding_condition": "once",
+        "binding_collection_name": "dev_new_create_world_screen_radio"
+      }
+    ],
+    "$radio_toggle_group": true,
+    "$toggle_binding_type": "collection",
+    "$toggle_name": "dev_new_create_world_screen_radio",
+    "$toggle_grid_collection_name": "dev_new_create_world_screen_radio",
+    "$option_enabled_binding_name": "",
+    "bindings": [
+      {
+        "binding_name": "#default_focus_precedence",
+        "binding_type": "collection",
+        "binding_condition": "visible",
+        "binding_collection_name": "dev_new_create_world_screen_radio"
+      }
+    ]
+  },
 
   "ui_debug_section": {
     "type": "stack_panel",
@@ -6317,6 +6411,66 @@
         }
       },
       {
+        "new_create_world_screen_radio_label": {
+          "type": "label",
+          "text": "New Create World Screen (requires the infrastructure)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "bindings": [
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_label_disabled": {
+          "type": "label",
+          "text": "New Create World Screen (requires the infrastructure)",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color",
+          "alpha": 0.5,
+          "bindings": [
+            {
+              "binding_name": "(not #core_ui_enabled)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_button": {
+          "type": "grid",
+          "size": [ "100%", "100%c" ],
+          "grid_item_template": "general_section.new_create_world_grid_item",
+          "grid_dimension_binding": "#dev_new_create_world_screen_radio_dimension",
+          "collection_name": "dev_new_create_world_screen_radio",
+          "bindings": [
+            {
+              "binding_name": "#dev_new_create_world_screen_radio_dimension",
+              "binding_condition": "visible"
+            },
+            {
+              "binding_name": "#core_ui_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "new_create_world_screen_radio_button_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
         "option_toggle_default_font_override@settings_common.option_toggle": {
           "$option_label": "Enable Default Font Overrides (requires loading from font_metadata.json)",
           "$option_binding_name": "#dev_toggle_default_font_overrides",
@@ -6408,6 +6562,38 @@
               "binding_name_override": "#enabled"
             }
           ]
+        }
+      },
+      {
+        "open_core_ui_tests_spacer": {
+          "type": "panel",
+          "size": [ "100%", 7 ]
+        }
+      },
+      {
+        "reset_render_distance_warning_modal_label": {
+          "type": "label",
+          "text": "Render distance warning modal",
+          "size": [ "100%", "default" ],
+          "color": "$body_text_color"
+        }
+      },
+      {
+        "reset_render_distance_warning_modal_label_spacer": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "reset_render_distance_warning_modal@settings_common.action_button": {
+          "$pressed_button_name": "button.reset_render_distance_warning_modal",
+          "$button_text": "Reset modal"
+        }
+      },
+      {
+        "reset_render_distance_warning_modal_spacer": {
+          "type": "panel",
+          "size": [ "100%", 7 ]
         }
       }
     ]

@@ -1847,15 +1847,14 @@
   "empty_progress_bar": {
     "type": "image",
     "texture": "textures/ui/empty_progress_bar",
-    "color": "$boss_health_bar_color"
+    "color": "#color"
   },
 
   "filled_progress_bar": {
-
     "type": "image",
     "texture": "textures/ui/filled_progress_bar",
     "clip_direction": "left",
-    "color": "$boss_health_bar_color",
+    "color": "#color",
     "bindings": [
       {
         "binding_name": "#progress_percentage",
@@ -1870,6 +1869,12 @@
       {
         "binding_name": "#progress_percentage",
         "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      },
+      {
+        "binding_name": "#bar_color",
+        "binding_name_override": "#color",
         "binding_type": "collection",
         "binding_collection_name": "$progress_bar_collection"
       }
@@ -5122,7 +5127,8 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$cloud_upload_progress_screen_size": [ 290, 200 ]
+              "$cloud_upload_progress_screen_size": [ 290, 200 ],
+              "$storage_migration_progress_size": [ 290, 100 ]
             },
             // PE edition and VR
             {
@@ -5169,7 +5175,8 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$cloud_upload_progress_screen_size": [ 290, 200 ]
+              "$cloud_upload_progress_screen_size": [ 290, 200 ],
+              "$storage_migration_progress_size": [ 290, 100 ]
             }
           ],
           "button_mappings": [
