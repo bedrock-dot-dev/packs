@@ -4945,12 +4945,15 @@
     "orientation": "horizontal",
     "size": [ "100% - 46px", "100%cm" ],
     "offset": [ 1, 0 ],
+    "focus_container": true,
+    "use_last_focus": true,
     "collection_name": "gift_promotion_collection",
     "controls": [
       {
         "period_1@common_store.promotion_period_grid_panel": {
           "collection_index": 0,
-          "$focus_override_left": "FOCUS_OVERRIDE_STOP"
+          "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+          "$focus_id": "period_1"
         }
       },
       {
@@ -4961,7 +4964,8 @@
       },
       {
         "period_2@common_store.promotion_period_grid_panel": {
-          "collection_index": 1
+          "collection_index": 1,
+          "$focus_id": "period_2"
         }
       },
       {
@@ -4972,7 +4976,8 @@
       },
       {
         "period_3@common_store.promotion_period_grid_panel": {
-          "collection_index": 2
+          "collection_index": 2,
+          "$focus_id": "period_3"
         }
       },
       {
@@ -4983,7 +4988,8 @@
       },
       {
         "period_4@common_store.promotion_period_grid_panel": {
-          "collection_index": 3
+          "collection_index": 3,
+          "$focus_id": "period_4"
         }
       },
       {
@@ -4994,7 +5000,8 @@
       },
       {
         "period_5@common_store.promotion_period_grid_panel": {
-          "collection_index": 4
+          "collection_index": 4,
+          "$focus_id": "period_5"
         }
       },
       {
@@ -5005,7 +5012,8 @@
       },
       {
         "period_6@common_store.promotion_period_grid_panel": {
-          "collection_index": 5
+          "collection_index": 5,
+          "$focus_id": "period_6"
         }
       },
       {
@@ -5017,7 +5025,8 @@
       {
         "period_7@common_store.promotion_period_grid_panel": {
           "collection_index": 6,
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP"
+          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+          "$focus_id": "period_7"
         }
       }
     ]
@@ -6160,8 +6169,8 @@
           "anchor_to": "top_left",
           "size": [ "100% - 2px", "100%" ],
           "$scrolling_pane_size": [ "100%", "100%" ],
-          "$scrolling_pane_offset": [ 5, 0 ],
-          "$scroll_size": [ 5, "100%" ],
+          "$scrolling_pane_offset": [ 5, -2 ],
+          "$scroll_size": [ 5, "100% - 32px" ], //32px of static elements and padding 
           "$scrolling_content": "common_store.promo_left_inner_top_scrolling_content",
           "$scroll_bar_left_padding_size": [ 0, 0 ],
           "$show_background": false,

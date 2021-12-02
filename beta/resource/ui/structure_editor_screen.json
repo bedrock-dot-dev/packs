@@ -1302,7 +1302,6 @@
   },
 
   "structure_name_wrapper": {
-    "ignored": "$education_edition",
     "type": "panel",
     "size": [ "100%", "100%c + 4px" ],
     "anchor_from": "top_left",
@@ -1389,7 +1388,6 @@
   },
 
   "mode_panel@settings_common.option_dropdown": {
-    "ignored": "$education_edition",
     "$option_label": "structure_block.mode",
     "$dropdown_content": "structure_editor.mode_dropdown_content",
     "$dropdown_area": "scrolling_panel",

@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.10.20</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.10.21</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -8636,45 +8636,6 @@ Allows this mob to breed with other mobs.</br><h3></h3>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
-<h2><p id="minecraft:behavior.celebrate">minecraft:behavior.celebrate</p></h2>
-
-This allows the mob celebrate by jumping up and playing a sound periodically.</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">celebration_sound</td>
-<td style="border-style:solid; border-width:2; padding:8px">String</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The sound to occasionally play.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">duration</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The duration of the celebration (in seconds).</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">jump_interval</td>
-<td style="border-style:solid; border-width:2; padding:8px">Range [a, b]</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The range of time in seconds to randomly wait before jumping again.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">on_celebration_end_event</td>
-<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The event to trigger when the goal's duration expires.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">sound_interval</td>
-<td style="border-style:solid; border-width:2; padding:8px">Range [a, b]</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The range of time in seconds to randomly wait before playing the sound again.</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
 <h2><p id="minecraft:behavior.defend_trusted_target">minecraft:behavior.defend_trusted_target</p></h2>
 
 Allows the mob to target another mob that hurts an entity it trusts.</br><h3></h3>
@@ -9758,27 +9719,6 @@ Allows the mob to move around on its own while mounted seeking a target to attac
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
 <td style="border-style:solid; border-width:2; padding:8px">If true, this mob will chase after the target as long as it's a valid target</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
-<h2><p id="minecraft:behavior.move_indoors">minecraft:behavior.move_indoors</p></h2>
-
-Can only be used by Villagers. Allows them to seek shelter indoors.</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">timeout_cooldown</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">8.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -16687,10 +16627,6 @@ Sets the mapping of internal animation controller references to actual animation
 <td style="border-style:solid; border-width:2; padding:8px">51166360</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.celebrate</td>
-<td style="border-style:solid; border-width:2; padding:8px">995178519</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.defend_trusted_target</td>
 <td style="border-style:solid; border-width:2; padding:8px">2070046390</br></td>
 </tr>
@@ -16845,10 +16781,6 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.mount_pathing</td>
 <td style="border-style:solid; border-width:2; padding:8px">1112137677</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_indoors</td>
-<td style="border-style:solid; border-width:2; padding:8px">2107078532</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.move_through_village</td>
