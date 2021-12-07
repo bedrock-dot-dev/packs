@@ -5990,6 +5990,9 @@ options.websocketEncryptionWarningLabel=Hanya nonaktifkan opsi ini jika kamu sec
 options.filelocation.title=Lokasi Penyimpanan File	#
 options.filelocation.external=Eksternal	#
 options.filelocation.appdata=Aplikasi	#
+options.filelocation.external.warning.title=Peringatan	#
+options.filelocation.external.warning.body=Lokasi Penyimpanan Eksternal telah berubah, dan duniamu di beberapa perangkat bisa hilang. Kunjungi halaman berikut untuk mengetahui detailnya: %s	#
+options.filelocation.external.warning.button=Detail (membuka browser)	#
 options.atmosphericsEnable=Atmosferik	#
 options.edgeHighlightEnable=Sorotan Tepi	#
 options.bloomEnable=Mekar	#
@@ -6628,7 +6631,7 @@ storageManager.contentType.resourcePacks=Paket Sumber Daya	#
 storageManager.contentType.behaviorPacks=Paket Perilaku	#
 storageManager.contentType.skinPacks=Paket Skin	#
 
-storageManager.baseWorld=Dunia Dasar 	#
+storageManager.baseWorld=Dunia Dasar	#
 
 storageManager.mainSizeLabel=%s - 1 Item	#
 storageManager.mainSizeLabelPlural=%s - %s Item	#
@@ -9263,7 +9266,7 @@ hbui.RenderDistanceWarningRoute.chunksSingularCaption=(%1$s bongkah)	#
 hbui.RenderDistanceWarningRoute.confirmInputLegend=Konfirmasi	#
 hbui.RenderDistanceWarningRoute.title=Optimalisasi performa	#
 hbui.RenderDistanceWarningRoute.useCurrentSettingsButton=Gunakan pengaturan saat ini	#
-hbui.RenderDistanceWarningRoute.useRecommendedSettingsButton=Gunakan pengaturan yang direkomendasikan	#
+hbui.RenderDistanceWarningRoute.useRecommendedSettingsButton=Pakai aturan yang direkomendasikan	#
 hbui.SectionList.groupNarration=%1$s, grup %2$s dari %3$s	#
 hbui.SideMenu.sideMenuItem.selected=dipilih	#
 hbui.Switch.elementType=beralih	#

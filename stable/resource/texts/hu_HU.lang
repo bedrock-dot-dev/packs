@@ -5990,6 +5990,9 @@ options.websocketEncryptionWarningLabel=Csak akkor kapcsolja ki ezt a lehetősé
 options.filelocation.title=Fájl tárolási helye	#
 options.filelocation.external=Külső	#
 options.filelocation.appdata=Alkalmazás	#
+options.filelocation.external.warning.title=Figyelmeztetés	#
+options.filelocation.external.warning.body=A külső tárhely helye megváltozott, ezért bizonyos eszközökön elveszítheted a világaidat. További részletekért lásd a következő oldalt: %s	#
+options.filelocation.external.warning.button=Részletek (elindítja a böngészőt)	#
 options.atmosphericsEnable=Légkör	#
 options.edgeHighlightEnable=Szélek kiemelése	#
 options.bloomEnable=Reflexfény	#
@@ -8653,7 +8656,7 @@ verification.nolicense.description=Problémák adódtak annak igazolásával, ho
 ## Autosave Info strings
 autosave.title=Automatikus mentés	#
 autosave.info.general=Ha ezt az ikont látod, az azt jelenti, hogy folyamatban van a játék mentése. Ne kapcsold ki az eszközt, ha ez az ikon jelenik meg a képernyőn.	#
-autosave.info.nx=Ha ezt az ikont látod, az azt jelenti, hogy folyamatban van a játék mentése. Ne kapcsold ki a Nintendo Switch konzolt, ha ez az ikont jelenik meg a képernyőn.	#
+autosave.info.nx=Ha ezt az ikont látod, az azt jelenti, hogy folyamatban van a játék mentése. Ne kapcsold ki a Nintendo Switch konzolt, ha ez az ikon jelenik meg a képernyőn.	#
 autosave.info.xbox=Ha ezt az ikont látod, az azt jelenti, hogy folyamatban van a játék mentése. Ne kapcsold ki az Xbox konzolt, ha ez az ikon jelenik meg a képernyőn.	#
 autosave.info.desktop=Ha ezt az ikont látod, az azt jelenti, hogy folyamatban van a játék mentése. Ne kapcsold ki a számítógépet, ha ez az ikon jelenik meg a képernyőn.	#
 
