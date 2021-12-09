@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.18.10.21</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.18.10.22</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -113,7 +113,7 @@ All identifiers not in a scope listed below are reserved for future use</br><h2>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`<test> ? <if true> : <if false>`</td>
-<td style="border-style:solid; border-width:3; padding:7px">Ternary conditional operator</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Ternary conditional operator - NOTE: Nested ternary expressions without parentheses were incorrectly parsed before a Versioned Change was made to fix it (see 'Versioned Changes' below)</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">`this`</td>
@@ -475,7 +475,7 @@ One can group a series of statements into a single group by wrapping them in `{`
 
 <h1><p id="Conditionals">Conditionals</p></h1>
 
-The conditional '?' operator allows for two convenient ways to implement simple branching logic.</br> The first way is to use '?' by itself to conditionally execute part of an expression, for example `A ? B`. The part after the '?' is only run if the part before it evaluates to a true boolean.</br> The second way is to use '?' with a ':' as a 'conditional ternary', for example `A ? B : C`. If the part before the '?' is evaluated as true, the part before the ':' is returned. Otherwise the part after is returned.</br><h2></h2>
+The conditional '?' operator allows for two convenient ways to implement simple branching logic.</br> The first way is to use '?' by itself to conditionally execute part of an expression, for example `A ? B`. The part after the '?' is only run if the part before it evaluates to a true boolean.</br> The second way is to use '?' with a ':' as a 'conditional ternary', for example `A ? B : C`. If the part before the '?' is evaluated as true, the part before the ':' is returned. Otherwise the part after is returned.</br> NOTE: Nested ternary expressions without parentheses were incorrectly parsed before a Versioned Change was made to fix it (see 'Versioned Changes' below).</br><h2></h2>
 Conditional Examples<br / ><textarea readonly="true" cols="42" rows="6">
 
 v.should_reset_a ? { v.a = 0; }
@@ -934,7 +934,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.get_equipped_item_name</td>
-<td style="border-style:solid; border-width:3; padding:7px">takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and a second parameter (0=default) if you would like the equipped item or any non-zero number for the currently rendered item, and returns the name of the item in the requested slot (defaulting to the main hand if no parameter is supplied) if there is one, otherwise returns ''.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">DEPRECATED (Use query.is_item_name_any instead if possible so names can be changed later without breaking content.) Takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and a second parameter (0=default) if you would like the equipped item or any non-zero number for the currently rendered item, and returns the name of the item in the requested slot (defaulting to the main hand if no parameter is supplied) if there is one, otherwise returns ''.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.get_locator_offset</td>
@@ -942,7 +942,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.get_name</td>
-<td style="border-style:solid; border-width:3; padding:7px">get the name of the mob if there is one, otherwise return ''</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">DEPRECATED (Use query.is_name_any instead if possible so names can be changed later without breaking content.) Get the name of the mob if there is one, otherwise return ''.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.get_root_locator_offset</td>
@@ -1181,6 +1181,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and returns 1.0 if there is an item in the requested slot (defaulting to the main hand if no parameter is supplied), otherwise returns 0.0.</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.is_item_name_any</td>
+<td style="border-style:solid; border-width:3; padding:7px">Takes an equipment slot name (see the replaceitem command) and an optional slot index value. After that, takes one or more full name (with 'namespace:') strings to check for. Returns 1.0 if an item in the specified slot has any of the specified names, otherwise returns 0.0. An empty string '' can be specified to check for an empty slot. Note that querying slot.enderchest, slot.saddle, slot.armor, or slot.chest will only work in behavior packs. A preferred query to query.get_equipped_item_name, as it can be adjusted by Mojang to avoid breaking content if names are changed.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_jumping</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is jumping, else it returns 0.0</br></td>
 </tr>
@@ -1209,6 +1213,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is moving, else it returns 0.0</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.is_name_any</td>
+<td style="border-style:solid; border-width:3; padding:7px">Takes one or more arguments. If the entity's name is any of the specified string values, returns 1.0. Otherwise returns 0.0. A preferred query to query.get_name, as it can be adjusted by Mojang to avoid breaking content if names are changed.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_on_fire</td>
 <td style="border-style:solid; border-width:3; padding:7px">returns 1.0 if the entity is on fire, else it returns 0.0</br></td>
 </tr>
@@ -1227,6 +1235,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_orphaned</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the entity is orphaned, else it returns 0.0</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.is_owner_identifier_any</td>
+<td style="border-style:solid; border-width:3; padding:7px">Takes one or more arguments. Returns whether the root actor identifier is any of the specified strings. A preferred query to query.owner_identifier, as it can be adjusted by Mojang to avoid breaking content if names are changed.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_persona_or_premium_skin</td>
@@ -1474,11 +1486,11 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.overlay_alpha</td>
-<td style="border-style:solid; border-width:3; padding:7px">Do not use - this function is deprecated and will be removed</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">DEPRECATED (Do not use - this function is deprecated and will be removed)</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.owner_identifier</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns the root actor identifier</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">DEPRECATED (Use query.is_owner_identifier_any instead if possible so names can be changed later without breaking content.) Returns the root actor identifier.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.player_level</td>
@@ -1727,7 +1739,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.scoreboard</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Takes one argument - the name of the scoreboard entry for this entity.  Returns the specified scoreboard value for this entity.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) DEPRECATED (The coming Actor Property feature will replace the need for querying hidden scoreboard data. Current client-side scoreboard code is only meant for supporting the standard UI elements.) Takes one argument - the name of the scoreboard entry for this entity.  Returns the specified scoreboard value for this entity.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.self</td>
@@ -1765,6 +1777,10 @@ Molang uses the `"min_engine_version"` from the `manifest.json` of the resource 
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">1.17.40</td>
 <td style="border-style:solid; border-width:3; padding:7px">Added some new error messages for invalid expressions which previously ran with probably unexpected results. For example "'text' + 1" will now cause a content error.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">1.18.10</td>
+<td style="border-style:solid; border-width:3; padding:7px">Fixed conditional (ternary) operator associativity. Previously nested conditional expressions like `A ? B : C ? D : E` would evaluate as `(A ? B : C) ? D : E`. Now they evaluate as `A ? B : (C ? D : E)`.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>

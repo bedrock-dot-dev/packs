@@ -2868,6 +2868,12 @@
                     "binding_name_override": "#hover_text",
                     "binding_type": "collection",
                     "binding_collection_name": "$item_collection_name"
+                  },
+                  {
+                    "binding_name": "#hover_items_id",
+                    "binding_name_override": "#hover_items_id",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$item_collection_name"
                   }
                 ]
               }
@@ -4066,6 +4072,15 @@
         "item_lock_cell_image@common.item_lock_cell_image": {
           "layer": 2
         }
+      },
+      {
+        "item_container_transfer_mode_overlay@common.item_container_transfer_mode_overlay": {
+          "size": "$item_renderer_size",
+          "offset": [ 1, 1 ],
+          "anchor_to": "top_left",
+          "anchor_from": "top_left",
+          "layer": 10
+        }
       }
     ]
   },
@@ -4131,6 +4146,29 @@
         "binding_name_override": "#visible",
         "binding_type": "collection",
         "binding_collection_name": "$item_collection_name"
+      }
+    ]
+  },
+
+  "item_container_transfer_mode": {
+    "type": "image",
+    "texture": "textures/ui/item_container_transfer_mode"
+  },
+
+  "item_container_transfer_mode_overlay": {
+    "type": "panel",
+    "controls": [
+      {
+        "item_container_transfer_mode@common.item_container_transfer_mode": {
+          "bindings": [
+            {
+              "binding_name": "#item_container_transfer_mode",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            }
+          ]
+        }
       }
     ]
   },
@@ -4507,6 +4545,25 @@
             {
               "binding_name": "#inventory_selected_item_lock_in_slot",
               "binding_name_override": "#visible",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "inventory_item_container_transfer_mode_overlay": {
+    "type": "panel",
+    "size": [ 21, 21 ],
+    "offset": [ -1, -2 ],
+    "layer": 55,
+    "controls": [
+      {
+        "item_container_transfer_mode@common.item_container_transfer_mode": {
+          "bindings": [
+            {
+              "binding_name": "#item_container_transfer_mode",
               "binding_condition": "always"
             }
           ]

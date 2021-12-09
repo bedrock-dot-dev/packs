@@ -4442,7 +4442,7 @@
                       "$back_button_pressed_button_name": "button.go_back",
                       "$button_content": "common.back_title_button_content",
                       "$button_tts_header": "accessibility.button.back",
-                      "$text_color": "$store_white_text_color",
+                      "$default_text_color": "$store_white_text_color",
                       "bindings": [
                         {
                           "binding_name": "#back_button_visible",
@@ -5922,6 +5922,10 @@
           "text": "#promo_button_text",
           "bindings": [
             {
+              "binding_name": "#promo_page_is_ready",
+              "binding_name_override": "#visible"
+            },
+            {
               "binding_name": "#promo_button_text"
             }
           ]
@@ -6196,13 +6200,17 @@
           "$button_content": "common_store.promo_item_action_button",
           "$anchor": "center",
           "layer": 4,
-          "$focus_id": "banner_button",
+          "$focus_id": "promo_top_button",
           "$focus_override_up": "banner_full_button",
           "$pressed_button_name": "button.item_action",
           "bindings": [
             {
               "binding_name": "#promo_action_button_visible",
               "binding_name_override": "#visible"
+            },
+            {
+              "binding_name": "#promo_top_button_focus_override_down",
+              "binding_name_override": "#focus_change_down"
             }
           ]
         }
@@ -6215,13 +6223,17 @@
           "$button_content": "common_store.promo_lower_button_content",
           "$anchor": "bottom_left",
           "layer": 4,
-          "$focus_id": "banner_button",
+          "$focus_id": "promo_bottom_button",
           "$focus_override_up": "banner_full_button",
           "$pressed_button_name": "button.item_pdp",
           "bindings": [
             {
               "binding_name": "#promo_lower_button_visible",
               "binding_name_override": "#visible"
+            },
+            {
+              "binding_name": "#promo_bottom_button_focus_override_down",
+              "binding_name_override": "#focus_change_down"
             }
           ]
         }
@@ -6531,22 +6543,21 @@
       {
         "skin_model_panel": {
           "type": "panel",
-          "size": [ "100%", 120 ],
-          "offset": [ 0, 10 ],
+          "size": [ "100%", "100%c" ],
+          "offset": [ 0, -55 ],
           "$input_progress_loading_binding_name": "#character_loading_in_progress",
           "controls": [
             {
               "skin_model": {
                 "type": "custom",
                 "renderer": "paper_doll_renderer",
-                "size": [ "100%", "150%" ],
+                "size": [ "100%", 150 ],
                 "camera_tilt_degrees": -10,
                 "starting_rotation": 30,
                 "layer": 5,
                 "use_selected_skin": false,
                 "use_skin_gui_scale": true,
                 "rotation": "gesture_x",
-                "offset": [ "50%", -60 ],
                 "bindings": [
                   {
                     "binding_type": "global",
@@ -6573,28 +6584,21 @@
                 "size": [ "100%", 22 ],
                 "anchor_from": "bottom_middle",
                 "anchor_to": "bottom_middle",
-                "offset": [ "50%", 0 ],
+                "offset": [ 0, 20 ],
                 "controls": [
                   {
                     "rotate_arrows@skin_picker.skin_rotation_arrows": {
-                      "size": [ 37, 7 ],
+                      "size": [ 37, 7 ] ,
                       "anchor_from": "center",
                       "anchor_to": "center"
                     }
                   }
                 ]
               }
-            },
-            {
-              "padding": {
-                "type": "panel",
-                "size": [ "100%", "fill" ]
-              }
             }
           ]
         }
       }
-      
     ]
   },
 
