@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.10.22</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.10.24</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -9427,10 +9427,22 @@ Allows mobs to lay down at times</br><h3></h3>
 
 <h2><p id="minecraft:behavior.lay_egg">minecraft:behavior.lay_egg</p></h2>
 
-Allows the mob to lay an egg block on a sand block if the mob is pregnant.</br><h3></h3>
+Allows the mob to lay an egg block on certain types of blocks if the mob is pregnant.</br><h3></h3>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">allow_laying_from_below</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">[EXPERIMENTAL] Allows the mob to lay its eggs from below the target if it can't get there. This is useful if the target block is water with air above, since mobs may not be able to get to the air block above water.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">egg_type</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"> minecraft:turtle_egg</td>
+<td style="border-style:solid; border-width:2; padding:8px">[EXPERIMENTAL] Block type for the egg to lay. If this is a turtle egg, the number of eggs in the block is randomly set.</br></td>
+</tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">goal_radius</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
@@ -9438,8 +9450,20 @@ Allows the mob to lay an egg block on a sand block if the mob is pregnant.</br><
 <td style="border-style:solid; border-width:2; padding:8px">Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">on_lay</td>
+<td style="border-style:solid; border-width:2; padding:8px">lay_egg_sound</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"> lay_egg</td>
+<td style="border-style:solid; border-width:2; padding:8px">[EXPERIMENTAL] Sound event name for laying egg. Defaulted to lay_egg which is used for Turtles.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">lay_seconds</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">10.0f</td>
+<td style="border-style:solid; border-width:2; padding:8px">[EXPERIMENTAL] Duration of the laying egg process in seconds.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">on_lay</td>
+<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
 <td style="border-style:solid; border-width:2; padding:8px">Event to run when this mob lays the egg.</br></td>
 </tr>
@@ -9447,19 +9471,37 @@ Allows the mob to lay an egg block on a sand block if the mob is pregnant.</br><
 <td style="border-style:solid; border-width:2; padding:8px">search_height</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">1</td>
-<td style="border-style:solid; border-width:2; padding:8px">Height in blocks the mob will look for sand block to move towards</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Height in blocks the mob will look for a target block to move towards</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">search_range</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The distance in blocks it will look for a sand block to move towards</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">The distance in blocks it will look for a target block to move towards</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
 <td style="border-style:solid; border-width:2; padding:8px">Movement speed multiplier of the mob when using this AI Goal</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target_blocks</td>
+<td style="border-style:solid; border-width:2; padding:8px">Array</td>
+<td style="border-style:solid; border-width:2; padding:8px">[ minecraft:sand ]</td>
+<td style="border-style:solid; border-width:2; padding:8px">[EXPERIMENTAL] Blocks that the mob can lay its eggs on top of.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">target_materials_above_block</td>
+<td style="border-style:solid; border-width:2; padding:8px">Array</td>
+<td style="border-style:solid; border-width:2; padding:8px">[ Air ]</td>
+<td style="border-style:solid; border-width:2; padding:8px">[EXPERIMENTAL] Types of materials that can exist above the target block. Valid types are Air, Water, and Lava.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">use_default_animation</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">[EXPERIMENTAL] Specifies if the default lay-egg animation should be played when the egg is placed or not.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>

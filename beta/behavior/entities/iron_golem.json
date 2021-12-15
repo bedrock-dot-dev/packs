@@ -112,7 +112,6 @@
         "max_distance": 10.0
       },
       "minecraft:balloonable": {
-		"mass": 2.0
       },
       "minecraft:preferred_path" : {
         "max_fall_blocks" : 1,

@@ -692,7 +692,8 @@
 
   "cancel_button@common_buttons.light_text_button": {
     "$pressed_button_name": "button.menu_exit",
-    "$button_text": "gui.cancel",
+    "$button_text": "#cancel_button_text",
+    "$button_text_binding_type": "global",
     "size": [ 66, 26 ],
     "offset": [ 0, 55 ],
     "bindings": [

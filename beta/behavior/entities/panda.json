@@ -446,7 +446,6 @@
         "speed_multiplier": 1.25
       },
       "minecraft:balloonable": {
-		"mass": 1.5
       },
       "minecraft:rideable": {
         "seat_count": 1,

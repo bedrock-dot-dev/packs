@@ -1229,7 +1229,20 @@
                   {
                     "binding_name": "#is_not_creative_mode",
                     "binding_name_override": "#visible"
-
+                  }
+                ]
+              }
+            },
+            {
+              "armor_buffer@common.empty_panel": {
+                "visible": false,
+                // Armor HUD is visible only if player has armor equipped
+                // The text needs to move up a bit further if armor is equipped
+                "size": [ "100%sm", 8 ],
+                "bindings": [
+                  {
+                    "binding_name": "#is_armor_visible",
+                    "binding_name_override" : "#visible"
                   }
                 ]
               }

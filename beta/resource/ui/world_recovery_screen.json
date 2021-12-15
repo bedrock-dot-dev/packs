@@ -61,11 +61,16 @@
 
   "description_label": {
     "type": "label",
-    "text": "world_recovery.description",
+    "text": "#recovery_text",
     "size": [ "100%", "default" ],
     "color": "$body_text_color",
     "anchor_from": "top_middle",
-    "anchor_to": "top_middle"
+    "anchor_to": "top_middle",
+    "bindings": [
+      {
+        "binding_name": "#recovery_text"
+      }
+    ]
   },
 
   "button_panel@common_buttons.light_text_button": {

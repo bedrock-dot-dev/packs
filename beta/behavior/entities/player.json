@@ -15,6 +15,7 @@
             {
               "effect": "bad_omen",
               "duration": 6000,
+              "visible": false,
               "display_on_screen_animation": true
             }
           ]

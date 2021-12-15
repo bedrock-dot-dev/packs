@@ -246,6 +246,9 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
+        }, 
+        "minecraft:balloonable": {
+          "mass": 0.8
         }
       }
     },

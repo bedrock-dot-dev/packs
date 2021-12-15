@@ -1451,6 +1451,9 @@ controller.buttonTip.take.one=Egy elvétele	#
 controller.buttonTip.take=Elvétel	#
 controller.buttonTip.takeItem=Tárgy elvétele	#
 controller.buttonTip.clearHotbar=Eszköztár ürítése	#
+controller.buttonTip.place.in.bundle=Place In Bundle	#
+controller.buttonTip.place.from.bundle=Place From Bundle	#
+controller.buttonTip.take.from.bundle=Take From Bundle	#
 
 controllerLayoutScreen.actions=Műveletek	#
 controllerLayoutScreen.activeBindingNameFormat=> %s <	#
@@ -1667,19 +1670,22 @@ createWorldScreen.commandblocksenabled=Parancsblokkok engedélyezve	#
 createWorldScreen.experimentalgameplay=Kísérletek	#
 createWorldScreen.experimentalgameplayinfo=§7A fejlesztés alatt álló funkciók kipróbálása. A világ létrehozása után nem lehet kikapcsolni.	#
 createWorldScreen.experimentalbiomes=Egyedi biomok létrehozása	#
+createWorldScreen.experimentalbiomesDescription=Create custom biomes and change world generation	#
 createWorldScreen.experimentalCreatorFeatures=Közelgő alkotói funkciók	#
+createWorldScreen.experimentalCreatorFeaturesDescription=Includes actor properties and adjustable fog parameters	#
 createWorldScreen.experimentalmodding=További modolási lehetőségek	#
+createWorldScreen.experimentalmoddingDescription=Doing a lot of repetitive things? This might help creating your add-on	#
 createWorldScreen.cavesandcliffs=Barlangok és sziklák	#
-createWorldScreen.cavesandcliffsinternal=Barlangok és sziklák (belső)	#
+createWorldScreen.cavesandcliffsDescription=Explore the new varied cave generation	#
 createWorldScreen.vanillaExperiments=Klasszikus kísérletek	#
 createWorldScreen.wildUpdate=Vadon frissítés	#
 createWorldScreen.wildUpdateDescription=Kísérleti funkciók a közelgő Vadon frissítéshez	#
-createWorldScreen.wildUpdateInternal=Vadon frissítés belső tartalmak	#
-createWorldScreen.wildUpdateInternalDescription=Belső (csak munkatársaknak szóló) kísérleti funkciók a közelgő Vadon frissítéshez	#
 createWorldScreen.experimentalholiday=Az Ünnepi építő funkciói	#
+createWorldScreen.experimentalholidayDescription=Add data-driven blocks and item technology to customize block shape, rotation, damage and more	#
 createWorldScreen.experimentalGameTest=GameTest-keretrendszer engedélyezése	#
+createWorldScreen.experimentalGameTestDescription=A toolset to build and test any new content	#
 createWorldScreen.experimentalMolangFeatures=Kísérleti Molang-funkciók	#
-createWorldScreen.experimentalDataDrivenVanillaBlocksAndItems=Adatalapú klasszikus blokkok és tárgyak (belső)	#
+createWorldScreen.experimentalMolangFeaturesDescription=Molang experimental queries and language features	#
 createWorldScreen.worldPreferences=Világ beállításai	#
 createWorldScreen.startWithMap=Kezdő térkép	#
 createWorldScreen.defaultName=Saját világ	#
@@ -1987,7 +1993,7 @@ networkWorld.view_offers=Ajánlatok megtekintése	#
 
 ## The following text is placed on in-game signs, which have a 4-line, 15-character-per-line limit.
 ## The intent of the message is to convey to the reader that the sign author's chat permissions are
-## blocked.  This cannot exceed the 4-line, 15-character/line limit!
+## blocked. This cannot exceed the 4-line, 15-character/line limit!
 ## Use dashes ("---") to fill in empty lines.
 networkWorld.userSignTextBlockedLine0=---	#
 networkWorld.userSignTextBlockedLine1=Szerző	#
@@ -6507,6 +6513,8 @@ quiz.popup.title=Kvíz	#
 raid.name=Rajtaütés	#
 raid.progress=Megmaradt mobok:	#
 raid.expiry=A rajtaütés lejárt	#
+raid.victory=Victory	#
+raid.defeat=Defeat	#
 
 recipeBook.setting.full=Tele	#
 recipeBook.setting.discover=Felfedezés	#
@@ -7261,6 +7269,15 @@ store.mashup.description=LEÍRÁS	#
 store.new.icon=Új	#
 
 store.offerDescription.title=Csomag leírása	#
+store.offerDescription.tags=Tags:	#
+store.offerDescription.genre=Genre:	#
+store.offerDescription.players=Players:	#
+store.offerDescription.playerCountNote=Note: Players indicates the number of players the creator intends for an optimal experience.	#
+store.offerDescription.languages=Languages:	#
+store.offerDescription.showMore=Show More	#
+store.offerDescription.showLess=Show Less	#
+playercount.single_player=Single Player	#
+playercount.multiplayer=Multiplayer	#
 
 store.ratings.ratingsCount=%s értékelés	#
 store.ratings.ratingOutOfFive=%s a maximális 5 csillagból	#
@@ -9156,6 +9173,7 @@ hbui.CreateNewWorld.advanced.useFlatWorldTitle=Lapos világ	#
 hbui.CreateNewWorld.advanced.worldSeedDescription=Határod meg, hogyan fog kinézni a világ, és hol fog kezdődni a kaland	#
 hbui.CreateNewWorld.advanced.worldSeedLabel=Világmag	#
 hbui.CreateNewWorld.advanced.worldSeedPlaceholder="3257840388504953787"	#
+hbui.CreateNewWorld.behaviorPacks.underConstructionMessage=Behavior packs is under construction!	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancel=Eredeti beállítások megőrzése	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancelInputLegend=Mégse	#
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationConfirm=Bétafunkciók aktiválása	#
@@ -9173,8 +9191,8 @@ hbui.CreateNewWorld.betaFeatures.internalTestsDescription=Csak fejlesztőknek, a
 hbui.CreateNewWorld.betaFeatures.internalTestsTitle=Belső tesztek	#
 hbui.CreateNewWorld.cheats.commandBlocksDescription=Parancsblokkok használatának engedélyezése	#
 hbui.CreateNewWorld.cheats.commandBlocksTitle=Parancsblokkok	#
-hbui.CreateNewWorld.cheats.daylightCycleAlwaysNoonDescription=A játék délre van állítva és nem változik	#
-hbui.CreateNewWorld.cheats.daylightCycleAlwaysNoonLabel=Mindig dél	#
+hbui.CreateNewWorld.cheats.daylightCycleAlwaysDayDescription=A játék délre van állítva és nem változik	#
+hbui.CreateNewWorld.cheats.daylightCycleAlwaysDayLabel=Always day	#
 hbui.CreateNewWorld.cheats.daylightCycleNormalDescription=A játékban eltelt idő követi a nappalok és az éjszakák normál változását	#
 hbui.CreateNewWorld.cheats.daylightCycleNormalLabel=Normál	#
 hbui.CreateNewWorld.cheats.daylightCycleTitle=Nappalok/éjszakák váltakozása	#
@@ -9216,6 +9234,8 @@ hbui.CreateNewWorld.general.gameModeCreativeLabel=Kreatív	#
 hbui.CreateNewWorld.general.gameModeSurvivalDescription=Építs, barkácsolj, vadássz, főzz és harcolj az életedért	#
 hbui.CreateNewWorld.general.gameModeSurvivalLabel=Túlélés	#
 hbui.CreateNewWorld.general.gameModeTitle=Játékmód	#
+hbui.CreateNewWorld.general.internalBetaNotificationDescription=It's not done yet, but we wanted to give you an early opportunity to try it out. If you have any feedback please write in Slack #bedrock-ui. You can turn it off by going to Settings -> UI Debug	#
+hbui.CreateNewWorld.general.internalBetaNotificationTitle=Welcome to the new UI!	#
 hbui.CreateNewWorld.general.worldNamePlaceholder=„Saját világ”	#
 hbui.CreateNewWorld.general.worldNameTitle=Világ neve	#
 hbui.CreateNewWorld.general.worldTypeTitle=Világtípus	#
@@ -9774,3 +9794,6 @@ script.success.debuggerClosed=Hibakereső bezárva	#
 world_recovery.description=Kattints az alábbi gombra. Ezzel megnyílik egy fájlválasztó, amelyben megkeresheted és kiválaszthatod a „minecraftWorlds” mappát. Nézz bele a „games/com.mojang” mappákba, kezdd az eszköz vagy az SD-kártya gyökerénél. A kiválasztást követően az új külső tárhelyhez megadott helyre másoljuk a világaidat. Az eszközön elegendő helynek kell lennie, hogy elférjenek rajta a világaid.	#
 world_recovery.title=Világ helyreállítása	#
 world_recovery.select_worlds=Világok kiválasztása	#
+
+osk.truncation_warning.title=Warning	#
+osk.truncation_warning.body=Unable to edit text. Text exceeds limits and could result in truncation or data loss.	#

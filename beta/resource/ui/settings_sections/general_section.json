@@ -3595,7 +3595,7 @@
     "controls": [
       {
         "option_toggle0@settings_common.option_toggle": {
-          "ignored": "(not $text_to_speech_supported or not $platform_tts_exists)",
+          "ignored": "(not $supports_flite_tts or not $platform_tts_exists)",
           "$option_label": "options.enableAutoPlatformTextToSpeech",
           "$option_binding_name": "#enable_auto_text_to_speech",
           "$option_enabled_binding_name": "#enable_auto_text_to_speech_enabled",
@@ -3604,7 +3604,7 @@
       },
       {
         "option_toggle1@settings_common.option_toggle": {
-          "ignored": "(not $text_to_speech_supported)",
+          "ignored": "(not $supports_flite_tts)",
           "$option_label": "options.enableUITextToSpeech",
           "$option_binding_name": "#enable_ui_text_to_speech",
           "$option_enabled_binding_name": "#enable_ui_text_to_speech_enabled",
@@ -3613,7 +3613,7 @@
       },
       {
         "option_toggle2@settings_common.option_toggle": {
-          "ignored": "(not $text_to_speech_supported)",
+          "ignored": "(not $supports_flite_tts)",
           "$option_label": "options.enableChatTextToSpeech",
           "$option_binding_name": "#enable_chat_text_to_speech",
           "$option_enabled_binding_name": "#enable_chat_text_to_speech_enabled",
@@ -3642,7 +3642,7 @@
       },
       {
         "option_toggle3@settings_common.option_toggle": {
-          "ignored": "(not $text_to_speech_supported)",
+          "ignored": "(not $supports_flite_tts)",
           "$option_label": "options.enableOpenChatMessage",
           "$option_binding_name": "#enable_open_chat_message",
           "$option_enabled_binding_name": "#enable_open_chat_message_enabled",

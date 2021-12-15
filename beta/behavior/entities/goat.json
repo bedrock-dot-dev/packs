@@ -365,6 +365,8 @@
         "hard_distance": 6,
         "max_distance": 10
       },
+      "minecraft:balloonable": {
+      },
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,

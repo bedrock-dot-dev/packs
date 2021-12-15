@@ -383,6 +383,8 @@
         "look_distance": 6.0,
         "probability": 0.02
       },
+      "minecraft:balloonable": {
+      },
       "minecraft:physics": {
       },
       "minecraft:pushable": {
