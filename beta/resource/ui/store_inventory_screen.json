@@ -470,10 +470,10 @@
     "use_last_focus": false,
     "$focus_id": "left_side",
     "$focus_override_right": "right_side",
-    "focus_nagivation_mode_left": "",
-    "focus_nagivation_mode_right": "",
-    "focus_nagivation_mode_down": "",
-    "focus_nagivation_mode_up": "",
+    "focus_navigation_mode_left": "",
+    "focus_navigation_mode_right": "",
+    "focus_navigation_mode_down": "",
+    "focus_navigation_mode_up": "",
     "controls": [
       {
         "top_pad": {
@@ -1207,10 +1207,10 @@
     "focus_container": true,
     "use_last_focus": true,
     "$focus_id": "right_side",
-    "focus_nagivation_mode_left": "none",
-    "focus_nagivation_mode_right": "stop",
-    "focus_nagivation_mode_down": "contained",
-    "focus_nagivation_mode_up": "contained",
+    "focus_navigation_mode_left": "none",
+    "focus_navigation_mode_right": "stop",
+    "focus_navigation_mode_down": "contained",
+    "focus_navigation_mode_up": "contained",
     "controls": [
       {
         "control": {

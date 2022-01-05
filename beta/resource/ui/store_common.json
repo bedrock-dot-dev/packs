@@ -331,6 +331,7 @@
     "anchor_to": "left_middle",
     "$add_coin_not_visible|default": false,
     "$purchase_button_offset|default": [ 0, 0 ],
+    "$coin_focus_enabled_binding|default": "#is_top_row_button_focus_enabled",
     "offset": "$purchase_button_offset",
     "controls": [
       {
@@ -359,7 +360,7 @@
 
           "bindings": [
             {
-              "binding_name": "#is_top_row_button_focus_enabled",
+              "binding_name": "$coin_focus_enabled_binding",
               "binding_name_override": "#focus_enabled"
             }
           ]
@@ -486,18 +487,9 @@
     "to": 1
   },
 
-  "error_image_animation": {
-    "anim_type": "flip_book",
-    "initial_uv": [ 0, 0 ],
-    "frame_count": "$failure_anim_frame_step",
-    "frame_step": 194,
-    "fps": 4,
-    "reversible": false
-  },
-
   "progress_loading": {
     "type": "panel",
-    "size": [ "100%cm", "50%" ],
+    "size": [ "100%", "100%" ],
 
     "$hide_failure_text|default": false,
     "$use_sibling_scope|default": true,
@@ -506,86 +498,41 @@
 
     "controls": [
       {
-        "centerer": {
-          "type": "panel",
-          "size": [ "100%sm", "100%c + 8px" ],
-          "layer": 0,
-          "controls": [
-            {
-              "progress_loading_spinner@common_store.progress_loading_spinner": {}
-            }
-          ]
-        }
-      },
-      {
         "progress_loading_outline@common_store.banner_fill": {
-          "visible": "(not $hide_failure_text) or (not $hide_progress_loading_outline)",
-          "size": [ "100%sm + 8px", "100%" ],
-          "layer": 1,
-          "alpha": 0,
-          "anims": [
-            "@common_store.failure_text_wait_animation"
-          ]
+          "visible": "(not $hide_progress_loading_outline)"
         }
       },
       {
         "stack_panel": {
-          "ignored": "$hide_failure_text",
           "type": "stack_panel",
           "orientation": "vertical",
-          "size": [ "100%cm", "100% - 8px" ],
-          "layer": 2,
           "controls": [
             {
-              "top_panel": {
-                "type": "stack_panel",
-                "orientation": "horizontal",
-                "size": [ "100%sm", "100%cm" ],
+              "centerer_0": {
+                "type": "panel",
+                "size": [ "100%", "100%c" ],
                 "controls": [
-                  {
-                    "error_glyph_panel": {
-                      "type": "panel",
-                      "size": [ "100%c", "100%c" ],
-                      "controls": [
-                        {
-                          "error_image": {
-                            "type": "image",
-                            "size": [ 13, 20 ],
-                            "offset": [ 0, 2 ],
-                            "texture": "textures/ui/ErrorGlyph",
-                            "alpha": 0,
-                            "anims": [
-                              "@common_store.failure_text_wait_animation"
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "padding": {
-                      "type": "panel",
-                      "size": [ 4, "100%sm" ]
-                    }
-                  },
                   {
                     "store_failure_text": {
                       "type": "label",
                       "layer": "($baseLayer + 1)",
                       "color": "$body_text_color",
-                      "text_alignment": "left",
-                      "size": [ "fill", "default" ],
+                      "text_alignment": "center",
+                      "ignored": "$hide_failure_text",
+                      "size": [ "100%-4px", "default" ],
                       "font_type": "smooth",
                       "font_scale_factor": 1.2,
-                      "text": "#store_failure_text",
+                      "$store_failure_text|default": "store.connection.failed.body",
+                      "$store_failure_text_binding_type|default": "none",
+                      "text": "$store_failure_text",
                       "alpha": 0,
                       "anims": [
                         "@common_store.failure_text_wait_animation"
                       ],
                       "bindings": [
                         {
-                          "binding_name": "#store_failure_text",
-                          "binding_type": "global"
+                          "binding_name": "$store_failure_text",
+                          "binding_type": "$store_failure_text_binding_type"
                         }
                       ]
                     }
@@ -594,52 +541,45 @@
               }
             },
             {
-              "padding": {
+              "centerer_1": {
                 "type": "panel",
-                "size": [ "100%sm", "fill" ]
-              }
-            },
-            {
-              "image": {
-                "type": "image",
-                "size": [ 194, 80 ],
-                "alpha": 0,
-                "anims": [
-                  "@common_store.failure_text_wait_animation"
-                ],
-                "uv_size": [ 194, 80 ],
-                "uv": "@common_store.error_image_animation",
-                "disable_anim_fast_forward": true,
-                "bindings": [
+                "size": [ "100%", "100%c + 8px" ],
+                "controls": [
                   {
-                    "binding_name": "#store_failure_image",
-                    "binding_name_override": "#texture"
+                    "progress_loading_spinner@common_store.progress_loading_spinner": {
+                      "layer": "($baseLayer + 1)"
+                    }
                   }
                 ]
               }
-            }
-          ]
-        }
-      },
-      {
-        "store_failure_code": {
-          "ignored": "$hide_failure_text",
-          "type": "label",
-          "color": "$e_color_format",
-          "anchor_from": "bottom_left",
-          "anchor_to": "top_left",
-          "text_alignment": "left",
-          "size": [ "100%sm-4px", "default" ],
-          "layer": 3,
-          "offset": [ 1, 2 ],
-          "text": "#store_failure_code",
-          "alpha": 0,
-          "anims": [
-            "@common_store.failure_text_wait_animation"
-          ],
-          "bindings": [
+            },
             {
-              "binding_name": "#store_failure_code"
+              "centerer_2": {
+                "type": "panel",
+                "size": [ "100%", "100%c" ],
+                "controls": [
+                  {
+                    "store_failure_code": {
+                      "type": "label",
+                      "layer": "($baseLayer + 1)",
+                      "color": "$body_text_color",
+                      "text_alignment": "center",
+                      "ignored": "$hide_failure_text",
+                      "size": [ "100%-4px", "default" ],
+                      "text": "#store_failure_code",
+                      "alpha": 0,
+                      "anims": [
+                        "@common_store.failure_text_wait_animation"
+                      ],
+                      "bindings": [
+                        {
+                          "binding_name": "#store_failure_code"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
             }
           ]
         }
@@ -1138,9 +1078,11 @@
   "direction_button_panel": {
     "type": "panel",
     "$direction_gamepad_button_helper|default": "gamepad_helper@common.gamepad_helper_right_bumper",
+    "$chevron_color|default": "$store_white_text_color",
     "controls": [
       {
         "chevron_image@common.chevron_image": {
+          "color": "$chevron_color",
           "bindings": [
             {
               "binding_name": "(not #is_using_gamepad)",
@@ -1163,6 +1105,7 @@
   },
 
   "cycle_pack_button@common_buttons.light_content_button": {
+    "$ignore_cycle_buttons|default": false,
     "ignored": "$ignore_cycle_buttons",
 
     "$button_content": "common_store.direction_button_panel",
@@ -1394,7 +1337,7 @@
           "focus_container": true,
           "use_last_focus": false,
           "focus_wrap_enabled": false,
-          "focus_nagivation_mode_up": "stop",
+          "focus_navigation_mode_up": "stop",
           "controls": [
             {
               "title_stack_panel": {
@@ -2176,12 +2119,13 @@
   "disclaimer_panel": {
     "type": "panel",
     "size": [ "100%", "100%c" ],
+    "$legal_text_offset|default": [ 2, -1 ],
     "controls": [
       {
         "legal_text_label": {
           "type": "label",
           "size": [ "100% - 2px", "default" ],
-          "offset": [ 2, -1 ],
+          "offset": "$legal_text_offset",
           "layer": 10,
           "color": "$body_text_color",
           "font_type": "smooth",
@@ -4054,7 +3998,7 @@
   },
 
   "banner_button@common_buttons.new_ui_width_fitting_button_panel": {
-    "size": [ "100%c", 16 ],
+    "size": [ "100%c", 16 ],    
     "$button_type_panel": "common_buttons.width_fitting_button_content_panel",
     "$button_content": "common_store.promo_banner_button_content",
     "$button_size_override": [ "100%c + 8px", "100%" ],
@@ -6649,7 +6593,7 @@
                 "controls": [
                   {
                     "rotate_arrows@skin_picker.skin_rotation_arrows": {
-                      "size": [ 37, 7 ],
+                      "size": [ 37, 7 ] ,
                       "anchor_from": "center",
                       "anchor_to": "center"
                     }
@@ -7994,7 +7938,7 @@
     "size": [ "100%", "100%c + 4px" ],
     "focus_container": true,
     "focus_wrap_enabled": false,
-    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_navigation_mode_left": "$main_content_focus_container_left",
     "focus_container_custom_left": "$main_content_focus_container_left_custom",
     "controls": [
       {

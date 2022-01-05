@@ -5977,6 +5977,17 @@
         }
       },
       {
+        "option_dropdown_2@settings_common.option_dropdown": {
+          "$option_label": "options.dev_realmsSku",
+          "$dropdown_content": "general_section.dev_realms_sku_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "dev_realms_sku_dropdown",
+          "$options_dropdown_toggle_label_binding": "#dev_realms_sku_dropdown_toggle_label",
+          "$option_enabled_binding_name": "#dev_realms_sku_dropdown_enabled",
+          "$dropdown_scroll_content_size": [ "100%", "200%" ]
+        }
+      },
+      {
         "education_env_dropdown@settings_common.option_dropdown": {
           "ignored": "(not $education_edition)",
 
@@ -6692,6 +6703,28 @@
       }
     ]
   },
+  "dev_realms_sku_dropdown_content@settings_common.option_radio_dropdown_group": {
+    "$radio_buttons": [
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#dev_realms_sku_radio_production",
+          "$radio_label_text": "options.dev_realms_sku.production"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#dev_realms_sku_radio_fiveday",
+          "$radio_label_text": "options.dev_realms_sku.fiveday"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#dev_realms_sku_radio_default",
+          "$radio_label_text": "options.dev_realms_sku.default"
+        }
+      }
+    ]
+  },
   "default_profiling_group_dropdown_content@settings_common.option_radio_dropdown_group": {
     "$radio_buttons": [
       {
@@ -6870,8 +6903,8 @@
       },
       {
         "@settings_common.radio_with_label": {
-          "$toggle_state_binding_name": "#debug_hud_radio_hbui",
-          "$radio_label_text": "options.dev_enableDebugHudOverlay.hbui"
+          "$toggle_state_binding_name": "#debug_hud_radio_oreui",
+          "$radio_label_text": "options.dev_enableDebugHudOverlay.OreUI"
         }
       }
     ]

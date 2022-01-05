@@ -8053,6 +8053,29 @@
             "sounds/mob/husk/step5"
          ]
       },
+      "mob.irongolem.crack" : {
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "name" : "sounds/mob/irongolem/crack1",
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/irongolem/crack2",
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/irongolem/crack1",
+               "pitch" : 0.80,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/irongolem/crack2",
+               "pitch" : 0.80,
+               "volume" : 0.80
+            }
+         ]
+      },
       "mob.irongolem.death" : {
          "__use_legacy_max_distance" : "true",
          "category" : "hostile",
@@ -8067,6 +8090,10 @@
             "sounds/mob/irongolem/hit3",
             "sounds/mob/irongolem/hit4"
          ]
+      },
+      "mob.irongolem.repair" : {
+         "category" : "neutral",
+         "sounds" : [ "sounds/mob/irongolem/repair" ]
       },
       "mob.irongolem.throw" : {
          "__use_legacy_max_distance" : "true",

@@ -1745,7 +1745,7 @@
 
     "focus_container": true,
     "focus_wrap_enabled": false,
-    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_navigation_mode_left": "$main_content_focus_container_left",
     "focus_container_custom_left": "$main_content_focus_container_left_custom",
 
     "controls": [
@@ -4318,268 +4318,276 @@
               }
             },
             {
-              "collapsed_priority_panel": {
-                "type": "stack_panel",
-                "orientation": "horizontal",
-                "size": [ "100% - 5px", "100%cm - 7px" ],
-                "use_priority": true,
+              "collapsed_panel": {
+                "type": "panel",
+                "size": [ "100%", "100%c" ],
                 "controls": [
                   {
-                    "genre_panel": {
+                    "collapsed_priority_panel": {
                       "type": "stack_panel",
                       "orientation": "horizontal",
-                      "size": [ "100%c", "100%cm + 2px" ],
-                      "priority": 0,
+                      "size": [ "100% - 5px", "100%cm - 7px" ],
+                      "use_priority": true,
                       "controls": [
                         {
-                          "label_text@common.minecraftTenLabel": {
-                            "type": "label",
-                            "size": [ "default", "default" ],
-                            "text": "store.offerDescription.genre",
-                            "color": "$body_text_color"
-                          }
-                        },
-                        {
-                          "pad": {
-                            "type": "panel",
-                            "size": [ 2, "100%sm" ]
-                          }
-                        },
-                        {
-                          "text_panel": {
-                            "type": "panel",
-                            "size": [ "100%c", "100%cm" ],
-                            "controls": [
-                              {
-                                "text_stack_panel": {
-                                  "type": "stack_panel",
-                                  "orientation": "horizontal",
-                                  "size": [ "100%c", "100%cm" ],
-                                  "offset": [ 0, 2 ],
-                                  "use_priority": true,
-                                  "controls": [
-                                    {
-                                      "genre_button@common_buttons.underline_button": {
-                                        "size": [ "100%cm", "100%cm" ],
-                                        "$single_line_label_text": "#genre_label",
-                                        "$pressed_button_name": "button.genre",
-                                        "priority": 0,
-                                        "$label_text_bindings": [
-                                          {
-                                            "binding_type": "$store_factory_binding_type",
-                                            "binding_collection_name": "$store_factory_collection_name",
-                                            "binding_name": "#genre_label"
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    {
-                                      "pad_0": {
-                                        "type": "panel",
-                                        "size": [ 4, "100%sm" ],
-                                        "priority": 1
-                                      }
-                                    },
-                                    {
-                                      "slash_divider": {
-                                        "type": "label",
-                                        "size": [ "default", "default" ],
-                                        "text": "/",
-                                        "font_type": "smooth",
-                                        "priority": 1,
-                                        "color": "$body_text_color"
-                                      }
-                                    },
-                                    {
-                                      "subgenre_button@common_buttons.underline_button": {
-                                        "size": [ "100%cm", "100%cm" ],
-                                        "$single_line_label_text": "#subgenre_label",
-                                        "$pressed_button_name": "button.subgenre",
-                                        "priority": 1,
-                                        "$label_text_bindings": [
-                                          {
-                                            "binding_type": "$store_factory_binding_type",
-                                            "binding_collection_name": "$store_factory_collection_name",
-                                            "binding_name": "#subgenre_label"
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "pad_0": {
-                      "type": "panel",
-                      "size": [ 4, "100%sm" ]
-                    }
-                  },
-                  {
-                    "players_panel": {
-                      "type": "stack_panel",
-                      "orientation": "horizontal",
-                      "size": [ "100%c", "100%cm + 2px" ],
-                      "priority": 1,
-                      "controls": [
-                        {
-                          "label_text@common.minecraftTenLabel": {
-                            "type": "label",
-                            "size": [ "default", "default" ],
-                            "text": "store.offerDescription.players",
-                            "color": "$body_text_color"
-                          }
-                        },
-                        {
-                          "pad": {
-                            "type": "panel",
-                            "size": [ 2, "100%sm" ]
-                          }
-                        },
-                        {
-                          "text_panel": {
-                            "type": "panel",
-                            "size": [ "100%c", "100%cm" ],
-                            "controls": [
-                              {
-                                "text_stack_panel": {
-                                  "type": "stack_panel",
-                                  "orientation": "vertical",
-                                  "size": [ "100%c", "100%c" ],
-                                  "offset": [ 0, 2 ],
-                                  "controls": [
-                                    {
-                                      "player_count_button@common_buttons.underline_button": {
-                                        "size": [ "100%cm", "100%cm" ],
-                                        "$single_line_label_text": "#player_count_label",
-                                        "$pressed_button_name": "button.player_count",
-                                        "$label_text_bindings": [
-                                          {
-                                            "binding_type": "$store_factory_binding_type",
-                                            "binding_collection_name": "$store_factory_collection_name",
-                                            "binding_name": "#player_count_label"
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    {
-                                      "note_text": {
-                                        "type": "label",
-                                        "size": [ "default", "default" ],
-                                        "text": "store.offerDescription.playerCountNote",
-                                        "font_scale_factor": 0.8,
-                                        "font_type": "smooth",
-                                        "color": "$body_text_color",
-                                        "bindings": [
-                                          {
-                                            "binding_name": "#is_description_expanded",
-                                            "binding_name_override": "#visible"
-                                          }
-                                        ]
-                                      }
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "pad_1": {
-                      "type": "panel",
-                      "size": [ 4, "100%sm" ]
-                    }
-                  },
-                  {
-                    "languages_panel": {
-                      "visible": false, //TODO [ADO:661384]: remove this when languages are implemented in service
-                      "type": "stack_panel",
-                      "orientation": "horizontal",
-                      "size": [ "fill", "100%cm" ],
-                      "priority": 2,
-                      "controls": [
-                        {
-                          "label_text_panel": {
-                            "type": "panel",
-                            "size": [ "100%c", "100%c" ],
+                          "genre_panel": {
+                            "type": "stack_panel",
+                            "orientation": "horizontal",
+                            "size": [ "100%c", "100%cm + 2px" ],
+                            "priority": 0,
                             "controls": [
                               {
                                 "label_text@common.minecraftTenLabel": {
                                   "type": "label",
                                   "size": [ "default", "default" ],
-                                  "text": "store.offerDescription.languages",
+                                  "text": "store.offerDescription.genre",
                                   "color": "$body_text_color"
+                                }
+                              },
+                              {
+                                "pad": {
+                                  "type": "panel",
+                                  "size": [ 2, "100%sm" ]
+                                }
+                              },
+                              {
+                                "text_panel": {
+                                  "type": "panel",
+                                  "size": [ "100%c", "100%cm" ],
+                                  "controls": [
+                                    {
+                                      "text_stack_panel": {
+                                        "type": "stack_panel",
+                                        "orientation": "horizontal",
+                                        "size": [ "100%c", "100%cm" ],
+                                        "offset": [ 0, 2 ],
+                                        "use_priority": true,
+                                        "controls": [
+                                          {
+                                            "genre_button@common_buttons.underline_button": {
+                                              "size": [ "100%cm", "100%cm" ],
+                                              "$single_line_label_text": "#genre_label",
+                                              "$pressed_button_name": "button.genre",
+                                              "priority": 0,
+                                              "$label_text_bindings": [
+                                                {
+                                                  "binding_type": "$store_factory_binding_type",
+                                                  "binding_collection_name": "$store_factory_collection_name",
+                                                  "binding_name": "#genre_label"
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "pad_0": {
+                                              "type": "panel",
+                                              "size": [ 4, "100%sm" ],
+                                              "priority": 1
+                                            }
+                                          },
+                                          {
+                                            "slash_divider": {
+                                              "type": "label",
+                                              "size": [ "default", "default" ],
+                                              "text": "/",
+                                              "font_type": "smooth",
+                                              "priority": 1,
+                                              "color": "$body_text_color"
+                                            }
+                                          },
+                                          {
+                                            "subgenre_button@common_buttons.underline_button": {
+                                              "size": [ "100%cm", "100%cm" ],
+                                              "$single_line_label_text": "#subgenre_label",
+                                              "$pressed_button_name": "button.subgenre",
+                                              "priority": 1,
+                                              "$label_text_bindings": [
+                                                {
+                                                  "binding_type": "$store_factory_binding_type",
+                                                  "binding_collection_name": "$store_factory_collection_name",
+                                                  "binding_name": "#subgenre_label"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
                                 }
                               }
                             ]
                           }
                         },
                         {
-                          "pad": {
+                          "pad_0": {
                             "type": "panel",
-                            "size": [ 2, "100%sm" ]
+                            "size": [ 4, "100%sm" ]
                           }
                         },
                         {
-                          "languages_factory@pdp.language_row_factory": {
-                            "$language_factory_collection_name": "language_collapsed_collection",
-                            "$language_factory_size": [ "fill", "100%cm" ],
-                            "$language_factory_bindings": [
+                          "players_panel": {
+                            "type": "stack_panel",
+                            "orientation": "horizontal",
+                            "size": [ "100%c", "100%cm + 2px" ],
+                            "priority": 1,
+                            "controls": [
                               {
-                                "binding_name": "#language_collapsed_collection_length",
-                                "binding_name_override": "#collection_length"
-                              }
-                            ],
-                            "$label_text_bindings": [
-                              {
-                                "binding_type": "collection_details",
-                                "binding_collection_name": "language_collapsed_collection",
-                                "binding_collection_prefix": "collapsed"
+                                "label_text@common.minecraftTenLabel": {
+                                  "type": "label",
+                                  "size": [ "default", "default" ],
+                                  "text": "store.offerDescription.players",
+                                  "color": "$body_text_color"
+                                }
                               },
                               {
-                                "binding_type": "collection",
-                                "binding_collection_name": "language_collapsed_collection",
-                                "binding_name": "#language_label"
-                              }
-                            ],
-                            "$comma_text_bindings": [
-                              {
-                                "binding_type": "collection_details",
-                                "binding_collection_name": "language_collapsed_collection",
-                                "binding_collection_prefix": "collapsed"
+                                "pad": {
+                                  "type": "panel",
+                                  "size": [ 2, "100%sm" ]
+                                }
                               },
                               {
-                                "binding_type": "collection",
-                                "binding_collection_name": "language_collapsed_collection",
-                                "binding_name": "#comma_visible",
-                                "binding_name_override": "#visible"
+                                "text_panel": {
+                                  "type": "panel",
+                                  "size": [ "100%c", "100%cm" ],
+                                  "controls": [
+                                    {
+                                      "text_stack_panel": {
+                                        "type": "stack_panel",
+                                        "orientation": "vertical",
+                                        "size": [ "100%c", "100%c" ],
+                                        "offset": [ 0, 2 ],
+                                        "controls": [
+                                          {
+                                            "player_count_button@common_buttons.underline_button": {
+                                              "size": [ "100%cm", "100%cm" ],
+                                              "$single_line_label_text": "#player_count_label",
+                                              "$pressed_button_name": "button.player_count",
+                                              "$label_text_bindings": [
+                                                {
+                                                  "binding_type": "$store_factory_binding_type",
+                                                  "binding_collection_name": "$store_factory_collection_name",
+                                                  "binding_name": "#player_count_label"
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "note_text": {
+                                              "type": "label",
+                                              "size": [ "default", "default" ],
+                                              "text": "store.offerDescription.playerCountNote",
+                                              "font_scale_factor": 0.8,
+                                              "font_type": "smooth",
+                                              "color": "$body_text_color",
+                                              "bindings": [
+                                                {
+                                                  "binding_name": "#is_description_expanded",
+                                                  "binding_name_override": "#visible"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
                               }
                             ]
                           }
+                        },
+                        {
+                          "pad_1": {
+                            "type": "panel",
+                            "size": [ 4, "100%sm" ]
+                          }
+                        },
+                        {
+                          "languages_panel": {
+                            "visible": false, //TODO [ADO:661384]: remove this when languages are implemented in service
+                            "type": "stack_panel",
+                            "orientation": "horizontal",
+                            "size": [ "fill", "100%cm" ],
+                            "priority": 2,
+                            "controls": [
+                              {
+                                "label_text_panel": {
+                                  "type": "panel",
+                                  "size": [ "100%c", "100%c" ],
+                                  "controls": [
+                                    {
+                                      "label_text@common.minecraftTenLabel": {
+                                        "type": "label",
+                                        "size": [ "default", "default" ],
+                                        "text": "store.offerDescription.languages",
+                                        "color": "$body_text_color"
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "pad": {
+                                  "type": "panel",
+                                  "size": [ 2, "100%sm" ]
+                                }
+                              },
+                              {
+                                "languages_factory@pdp.language_row_factory": {
+                                  "$language_factory_collection_name": "language_collapsed_collection",
+                                  "$language_factory_size": [ "fill", "100%cm" ],
+                                  "$language_factory_bindings": [
+                                    {
+                                      "binding_name": "#language_collapsed_collection_length",
+                                      "binding_name_override": "#collection_length"
+                                    }
+                                  ],
+                                  "$label_text_bindings": [
+                                    {
+                                      "binding_type": "collection_details",
+                                      "binding_collection_name": "language_collapsed_collection",
+                                      "binding_collection_prefix": "collapsed"
+                                    },
+                                    {
+                                      "binding_type": "collection",
+                                      "binding_collection_name": "language_collapsed_collection",
+                                      "binding_name": "#language_label"
+                                    }
+                                  ],
+                                  "$comma_text_bindings": [
+                                    {
+                                      "binding_type": "collection_details",
+                                      "binding_collection_name": "language_collapsed_collection",
+                                      "binding_collection_prefix": "collapsed"
+                                    },
+                                    {
+                                      "binding_type": "collection",
+                                      "binding_collection_name": "language_collapsed_collection",
+                                      "binding_name": "#comma_visible",
+                                      "binding_name_override": "#visible"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "pad_2": {
+                            "type": "panel",
+                            "size": [ "fill", "100%sm" ] //TODO [ADO:661384]: change fill to 4px when languages are implemented in service
+                          }
+                        },
+                        {
+                          "show_more_button_panel@pdp.description_toggle_show_button_panel": {
+                            "size": [ "100%cm", "100%cm" ],
+                            "$button_text": "store.offerDescription.showMore",
+                            "$border_offset|default": [ 3.5, 0 ],
+                            "$show_button_offset|default": [ 3.5, 0 ]
+                          }
                         }
                       ]
-                    }
-                  },
-                  {
-                    "pad_2": {
-                      "type": "panel",
-                      "size": [ "fill", "100%sm" ] //TODO [ADO:661384]: change fill to 4px when languages are implemented in service
-                    }
-                  },
-                  {
-                    "show_more_button_panel@pdp.description_toggle_show_button_panel": {
-                      "size": [ "100%cm", "100%cm" ],
-                      "$button_text": "store.offerDescription.showMore",
-                      "$border_offset|default": [ 3.5, 0 ],
-                      "$show_button_offset|default": [ 3.5, 0 ]
                     }
                   }
                 ],
@@ -4887,7 +4895,7 @@
 
     "focus_container": true,
     "focus_wrap_enabled": false,
-    "focus_nagivation_mode_left": "$main_content_focus_container_left",
+    "focus_navigation_mode_left": "$main_content_focus_container_left",
     "focus_container_custom_left": "$main_content_focus_container_left_custom",
 
     "$content": "pdp.description_inner_panel"
