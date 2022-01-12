@@ -800,7 +800,7 @@
   },
 
   "smooth_share_button_panel": {
-    "ignored": "(not $supports_clipboard and not $supports_share)",
+    "ignored": "(not $supports_clipboard_set and not $supports_share)",
     "type": "stack_panel",
     "layer": 3,
     "size": [ 22, 20 ],
@@ -1328,7 +1328,7 @@
               "$share_icon_size": [ 14, 13 ]
             },
             {
-              "requires": "($supports_clipboard and not $supports_share)",
+              "requires": "($supports_clipboard_set and not $supports_share)",
               "$share_icon_texture": "textures/ui/copy",
               "$share_icon_offset": [ 2.5, -1.0 ],
               "$share_icon_size": [ 13, 14 ]
@@ -1940,7 +1940,6 @@
         "bundle_upsell": "@pdp.bundles_upsell_factory_object"
       },
       "factory_variables": [
-        "$ratings_visible_after_x_reviews",
         "$store_factory_collection_details",
         "$store_factory_binding_type",
         "$store_factory_collection_prefix",
@@ -1978,9 +1977,6 @@
                 "layer": 1,
                 "clip_direction": "left",
                 "clip_pixelperfect": false,
-                "property_bag": {
-                  "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                },
                 "bindings": [
                   {
                     "binding_type": "$store_factory_binding_type",
@@ -2009,9 +2005,6 @@
           "texture": "textures/ui/5stars_empty_new",
           "clip_direction": "right",
           "clip_pixelperfect": false,
-          "property_bag": {
-            "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-          },
           "bindings": [
             {
               "binding_type": "$store_factory_binding_type",
@@ -2028,9 +2021,6 @@
                 "layer": 1,
                 "clip_direction": "left",
                 "clip_pixelperfect": false,
-                "property_bag": {
-                  "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                },
                 "bindings": [
                   {
                     "binding_type": "$store_factory_binding_type",
@@ -2120,9 +2110,6 @@
                             "layer": 1,
                             "clip_direction": "left",
                             "clip_pixelperfect": false,
-                            "property_bag": {
-                              "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                            },
                             "bindings": [
                               {
                                 "binding_type": "$store_factory_binding_type",
@@ -2152,9 +2139,6 @@
                 "font_type": "smooth",
                 "color": "$body_text_color",
                 "text": "$rating_percentage",
-                "property_bag": {
-                  "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                },
                 "bindings": [
                   {
                     "binding_type": "$store_factory_binding_type",
@@ -2281,9 +2265,6 @@
                     }
                   }
                 ],
-                "property_bag": {
-                  "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                },
                 "bindings": [
                   {
                     "binding_type": "$store_factory_binding_type",
@@ -2305,23 +2286,14 @@
                       "size": [ "default", "100%" ],
                       "anchor_from": "top_middle",
                       "anchor_to": "top_middle",
-                      "text": "#rating_text",
+                      "text": "#ratings_panel_text",
                       "font_type": "smooth",
                       "color": "$body_text_color",
-                      "property_bag": {
-                        "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                      },
                       "bindings": [
                         {
                           "binding_type": "$store_factory_binding_type",
                           "binding_collection_name": "$store_factory_collection_name",
-                          "binding_name": "#rating_text"
-                        },
-                        {
-                          "binding_type": "$store_factory_binding_type",
-                          "binding_collection_name": "$store_factory_collection_name",
-                          "binding_name": "#rating_text_visible",
-                          "binding_name_override": "#visible"
+                          "binding_name": "#ratings_panel_text"
                         }
                       ]
                     }
@@ -2344,9 +2316,6 @@
                       "offset": [ 0, -1 ],
                       "font_type": "smooth",
                       "color": "$body_text_color",
-                      "property_bag": {
-                        "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                      },
                       "bindings": [
                         {
                           "binding_type": "$store_factory_binding_type",
@@ -2961,9 +2930,6 @@
                             "type": "stack_panel",
                             "orientation": "horizontal",
                             "size": [ "100%", "100%cm" ],
-                            "property_bag": {
-                              "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                            },
                             "controls": [
                               {
                                 "ratings_display": {
@@ -3009,10 +2975,7 @@
                                             "binding_name": "#rating_button_text"
                                           }
                                         ],
-                                        "$pressed_button_name": "button.scrollToRateContent",
-                                        "property_bag": {
-                                          "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                                        }
+                                        "$pressed_button_name": "button.scrollToRateContent"
                                       }
                                     }
                                   ]

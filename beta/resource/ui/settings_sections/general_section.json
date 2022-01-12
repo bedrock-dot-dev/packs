@@ -6064,17 +6064,6 @@
         }
       },
       {
-        "education_azure_notebooks_env_dropdown@settings_common.option_dropdown": {
-          "$option_label": "options.dev_education_azure_notebooks_environment",
-          "$dropdown_content": "general_section.dev_education_azure_notebooks_environment_dropdown_content",
-          "$dropdown_area": "content_area",
-          "$dropdown_name": "dev_education_azure_notebooks_env_dropdown",
-          "$options_dropdown_toggle_label_binding": "#dev_education_azure_notebooks_env_dropdown_toggle_label",
-          "$option_enabled_binding_name": "#dev_education_azure_notebooks_env_dropdown_enabled",
-          "$dropdown_scroll_content_size": [ "100%", "200%" ]
-        }
-      },
-      {
         "option_clear_store_cache_button@settings_common.action_button": {
           "$pressed_button_name": "dev_clear_store_cache_button",
           "$button_text": "options.dev_clearStoreCache"
@@ -7083,34 +7072,6 @@
         "sunsetting_not_pending@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#sunsetting_not_pending",
           "$radio_label_text": "options.dev_sunsetting_tier.not_pending"
-        }
-      }
-    ]
-  },
-  "dev_education_azure_notebooks_environment_dropdown_content@settings_common.option_radio_dropdown_group": {
-    "$radio_buttons": [
-      {
-        "education_azure_notebooks_environment_dev@settings_common.radio_with_label": {
-          "$toggle_state_binding_name": "#education_azure_notebooks_environment_dev",
-          "$radio_label_text": "options.dev_education_environment.dev"
-        }
-      },
-      {
-        "education_azure_notebooks_environment_staging@settings_common.radio_with_label": {
-          "$toggle_state_binding_name": "#education_azure_notebooks_environment_staging",
-          "$radio_label_text": "options.dev_education_environment.staging"
-        }
-      },
-      {
-        "education_azure_notebooks_environment_prod@settings_common.radio_with_label": {
-          "$toggle_state_binding_name": "#education_azure_notebooks_environment_prod",
-          "$radio_label_text": "options.dev_education_environment.prod"
-        }
-      },
-      {
-        "education_azure_notebooks_environment_local@settings_common.radio_with_label": {
-          "$toggle_state_binding_name": "#education_azure_notebooks_environment_local",
-          "$radio_label_text": "options.dev_education_environment.local"
         }
       }
     ]

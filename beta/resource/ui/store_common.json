@@ -6,8 +6,6 @@
   //--------------------------------------------------------------------------------
 
   "store_base_screen@common.base_screen": {
-    "$ratings_visible_after_x_reviews": 5,
-
     "$store_factory_clipping_event": "none",
     "$store_factory_collection_details|default": "none",
     "$store_factory_binding_type|default": "global",
@@ -2542,7 +2540,6 @@
       },
       "factory_variables": [
         "$ignore_search_offer_content",
-        "$ratings_visible_after_x_reviews",
         "$store_factory_clipping_event",
         "$store_factory_collection_details",
         "$store_factory_collection_prefix",
@@ -2810,7 +2807,6 @@
       },
       "factory_variables": [
         "$whole_panel_focus_override_right",
-        "$ratings_visible_after_x_reviews",
         "$store_factory_clipping_event",
         "$store_factory_collection_details",
         "$store_factory_collection_prefix",
@@ -3275,9 +3271,6 @@
                     }
                   }
                 ],
-                "property_bag": {
-                  "#visible_after_x_ratings": "$ratings_visible_after_x_reviews"
-                },
                 "bindings": [
                   {
                     "binding_type": "$store_factory_collection_details",
@@ -3521,7 +3514,6 @@
       }
     ],
     "property_bag": {
-      "#visible_after_x_ratings": "$ratings_visible_after_x_reviews",
       "control_id": "$control_id"
     },
     "bindings": [

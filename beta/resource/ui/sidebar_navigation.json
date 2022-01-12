@@ -896,10 +896,11 @@
   },
 
   "sidebar_views": {
-    "ignored": true,
     "type": "panel",
+    "ignored": "(not $is_sidebar_navigation_enabled)",
     "size": [ "100%", "100%" ],
-    
+    "$ignore_inventory_button": true,
+
     "visible": "$sidebar_ignore_page_loading",
     "property_bag": {
       "#visible": "$sidebar_ignore_page_loading"
@@ -966,8 +967,8 @@
   },
 
   "sidebar_empty_panel": {
-    "ignored": true,
     "type": "panel",
+    "ignored": "(not $is_sidebar_navigation_enabled)",
     "size": [ 32, "100%" ],
     "bindings": [
       {

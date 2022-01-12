@@ -382,7 +382,8 @@
   "$dressing_room_skin_picker_selected_pressed_color": [ 0.4125, 0.7125, 0.75 ],
   "$dressing_room_skin_picker_equipped_border_color": [ 0.063, 0.631, 0.004 ],
   "$dressing_room_skin_picker_dark_bg_color": [ 0.55, 0.55, 0.55 ],
-
+  //////// Emote Screen colors ////////
+  "$emote_screen_gamepad_instruction_colors": [ 1.0, 1.0, 0.0 ],
   //////// Play Screen Realms+ "!" atop Pink Realms+ Content Alert ////////
   "$realmsplus_exclamation_mark_color": [ 1, 1, 1 ]
 }

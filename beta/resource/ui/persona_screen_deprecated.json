@@ -3751,155 +3751,6 @@
     "texture": "textures/ui/equipped_item_border"
   },
 
-  ///////////////////////////////////////////////////////////////////////////////////////
-  //// tab controls
-  "dressing_room_tab_image": {
-    "type": "panel",
-    "$dressing_room_tab_image_size|default": [ "75%y", "75%" ],
-    "size": "$dressing_room_tab_image_size",
-    "controls": [
-      {
-        "selected_image": {
-          "type": "image",
-          "texture": "$dressing_room_tab_image",
-          "bindings": [
-            {
-              "binding_name": "$selected_bind",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "unselected_image": {
-          "type": "image",
-          "texture": "$dressing_room_tab_image",
-          "alpha": 0.5,
-          "bindings": [
-            {
-              "binding_name": "(not $selected_bind)",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      }
-    ]
-  },
-
-  "top_tab@common_tabs.tab_top": {
-    "size": [ "fill", "100%" ],
-    "anchor_to": "top_left",
-    "anchor_from": "top_left",
-    "$toggle_tts_enabled_binding_type": "global",
-    "$radio_toggle_group": true,
-    "$toggle_name": "navigation_tab",
-    "$toggle_group_default_selected": "$default_tab",
-    "$tab_content": "persona_deprecated.dressing_room_tab_image",
-    "$selected_bind": "$image_bind",
-    "$toggle_tts_type_priority": 1001,
-    "$toggle_tts_toggle_on_text": "",
-    "$toggle_tts_toggle_off_text": ""
-  },
-
-  "customization_tab@persona_deprecated.top_tab": {
-    "$dressing_room_tab_image_size": [ 20, 19 ],
-    "$top_tab_tts_name": "dr.accessibility.header.customization",
-    "$is_left_most_tab": true,
-    "$tab_view_binding_name": "customization_tab_toggle",
-    "$image_bind": "#customization_active",
-    "$toggle_group_forced_index": 0,
-    "$dressing_room_tab_image": "textures/ui/dressing_room_customization"
-  },
-
-  "skins_tab@persona_deprecated.top_tab": {
-    "$dressing_room_tab_image_size": [ 20, 20 ],
-    "$top_tab_tts_name": "dr.accessibility.header.classic_skins",
-    "$tab_view_binding_name": "skins_tab_toggle",
-    "$image_bind": "#skins_active",
-    "$toggle_group_forced_index": 1,
-    "$dressing_room_tab_image": "textures/ui/dressing_room_skins"
-  },
-
-  "emotes_tab@persona_deprecated.top_tab": {
-    "$dressing_room_tab_image_size": [ 14, 22 ],
-    "$top_tab_tts_name": "dr.accessibility.header.animation",
-    "$tab_view_binding_name": "animations_tab_toggle",
-    "$image_bind": "#emotes_active",
-    "$toggle_group_forced_index": 2,
-    "$dressing_room_tab_image": "textures/ui/dressing_room_animation"
-  },
-
-  "capes_tab@persona_deprecated.top_tab": {
-    "$dressing_room_tab_image_size": [ 12, 20 ],
-    "$top_tab_tts_name": "dr.accessibility.header.capes",
-    "$tab_view_binding_name": "capes_tab_toggle",
-    "$image_bind": "#capes_active",
-    "$toggle_group_forced_index": 3,
-    "$dressing_room_tab_image": "textures/ui/dressing_room_capes"
-  },
-
-  "persona_tabs_with_cape": {
-    "type": "stack_panel",
-    "orientation": "horizontal",
-    "size": [ "100%", "100%" ],
-    "focus_container": true,
-    "focus_wrap_enabled": true,
-    "focus_navigation_mode_left": "$main_content_focus_container_left",
-    "focus_container_custom_left": "$main_content_focus_container_left_custom",
-    "controls": [
-      { "customization_tab@persona_deprecated.customization_tab": {} },
-      { "skins_tab@persona_deprecated.skins_tab": {} },
-      { "emotes_tab@persona_deprecated.emotes_tab": {} },
-      {
-        "cape_tab@persona_deprecated.capes_tab": {
-          "$is_right_most_tab": true
-        }
-      }
-    ]
-  },
-
-  "persona_tabs_gamepad_helper": {
-    "type": "panel",
-    "bindings": [
-      {
-        "binding_name": "#gamepad_helper_visible",
-        "binding_name_override": "#visible"
-      }
-    ],
-    "controls": [
-      {
-        "left_bumper@common.gamepad_helper_left_bumper": {
-          "anchor_from": "top_left",
-          "anchor_to": "top_left",
-          "offset": [ -5, -8 ]
-        }
-      },
-      {
-        "right_bumper@common.gamepad_helper_right_bumper": {
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "offset": [ 5, -8 ]
-        }
-      }
-
-    ]
-  },
-
-  "persona_tabs": {
-    "type": "panel",
-    "size": [ "100%", 36 ],
-    "controls": [
-      { "persona_tabs_cape@persona_deprecated.persona_tabs_with_cape": {} },
-      { "persona_tabs_gamepad_helper@persona_deprecated.persona_tabs_gamepad_helper": {} }
-    ],
-    "bindings": [
-      {
-        "binding_name": "#dressing_room_tabs_visible",
-        "binding_name_override": "#visible"
-      }
-    ]
-  },
-
   "rarity_bar_panel": {
     "type": "image",
     "size": [ "100%", 3 ],
@@ -6045,7 +5896,6 @@
                 "size": "$padding_size"
               }
             },
-            { "persona_tabs@persona_deprecated.persona_tabs": {} },
             {
               "persona_left_panels@persona_deprecated.persona_section_panels": {
                 "focus_container": true,
@@ -6232,6 +6082,7 @@
 
   "persona_screen_deprecated@common.base_screen": {
     "$safezone_screen_matrix_layer": 20,
+    "$ignore_inventory_button": true,
     "button_mappings": [
       {
         "from_button_id": "button.controller_select", // controller_X

@@ -1810,6 +1810,7 @@
 
   "profile_screen@common.base_screen": {
     "$safezone_screen_matrix_layer": 20,
+    "$ignore_inventory_button": true,
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel", // controller_B

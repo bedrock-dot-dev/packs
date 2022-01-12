@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.18.10.26</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.18.10.27</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -152,7 +152,7 @@ All identifiers not in a scope listed below are reserved for future use</br><h2>
 
 <h1><p id="Variables">Variables</p></h1>
 
-There are three variable lifetimes a variable may belong to: Temporary, Entity, and Context:</br>- Temporary variables (eg: `temp.moo = 1;`) are read/write and valid for the scope they are defined in, as per C rules.  For performance reasons their lifetime is global to the current expression execution and may return a valid value outside of the outermost scope they are defined in for an expression.  Be careful in complex expressions.  We will be adding content errors for invalid accesses as soon as possible.</br>- Entity variables (eg: `variable.moo = 1;`) are read/write and store their value on the entity for the lifetime of that entity.  Note that these are currently not saved, so quitting and reloading the world will re-initialize these.  In the same way, if the entity is despawned, any variables on the entity will be lost.</br>- Context variables (eg: `context.moo`) are read-only and specified by the game in certain situations. Details on what variables are specified and when will be available in the documentation of the area where that Molang expression is used (such as behaviours defining what context variables they expose).</br><a href="#Index">Back to top</a><br><br>
+There are three variable lifetimes a variable may belong to: Temporary, Entity, and Context:</br>- Temporary variables (eg: `temp.moo = 1;`) are read/write and valid for the scope they are defined in, as per C rules.  For performance reasons their lifetime is global to the current expression execution and may return a valid value outside of the outermost scope they are defined in for an expression.  Be careful in complex expressions.  We will be adding content errors for invalid accesses as soon as possible.</br>- Entity variables (eg: `variable.moo = 1;`) are read/write and store their value on the entity for the lifetime of that entity.  Note that these are currently not saved, so quitting and reloading the world will re-initialize these.  In the same way, if the entity is despawned, any variables on the entity will be lost.</br>- Context variables (eg: `context.moo`) are read-only and specified by the game in certain situations. Details on what variables are specified and when will be available in the documentation of the area where that Molang expression is used (such as behaviors defining what context variables they expose).</br><a href="#Index">Back to top</a><br><br>
 
 <h1><p id="Values">Values</p></h1>
 
@@ -286,7 +286,7 @@ Note that structures can be arbitrarily deep in their nesting/recursiveness.  Th
 
 <h1><p id="Strings">Strings</p></h1>
 
-Strings in Molang are surrounded by single quotes.Eg: `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two consecutive single quotes.  String operations only support `==` and `!=` at this time.</br>Note: strings don't support the ' character as there is no support for escape characters at this time.</br><a href="#Index">Back to top</a><br><br>
+Strings in Molang are surrounded by single quotes, eg: `'minecraft:pig'` or `'hello world!'`. An empty string is defined as two consecutive single quotes.  String operations only support `==` and `!=` at this time.</br>Note: strings don't support the ' character as there is no support for escape characters at this time.</br><a href="#Index">Back to top</a><br><br>
 
 <h1><p id="Math Functions">Math Functions</p></h1>
 
@@ -413,7 +413,7 @@ Strings in Molang are surrounded by single quotes.Eg: `'minecraft:pig'` or `'hel
 
 <h2></h2>
 
-Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows an expression to access variables or run queries on that entity.  For example, the example below will find all pigs within four metres of the current entity(including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable(such as an oak button) :</br>Note that in the case where the left-hand side of the `->` operator has an error (value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right-hand side and will return 0. This implementation style was a choice between performance and not requiring content creators to overly worry about checking for potentially bad values everywhere.</br></br><h3></h3>
+Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows an expression to access variables or run queries on that entity.  For example, the example below will find all pigs within four meters of the current entity (including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable (such as an oak button) :</br>Note that in the case where the left-hand side of the `->` operator has an error (value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right-hand side and will return 0. This implementation style was a choice between performance and not requiring content creators to overly worry about checking for potentially bad values everywhere.</br></br><h3></h3>
 <br / ><textarea readonly="true" cols="77" rows="7">
 
 "v.x = 0;
@@ -644,7 +644,7 @@ For each of the three resource types (materials, textures, and geometry), you ca
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
 
-Note that all elements of an array must be of the same type.  eg: a texture array must only contain textures.</br></br>An array can reference any combination of zero or more arrays (including duplicates if desired) and/or zero or more materails (again, including duplicates if you like), and you can have as many arrays as you like, each with as many elements as you like.  If an array includes arrays in its members, they do not need to be the same length.  When indexing into an array in the resource usage section, you use numerical expressions.  If the resulting number is negative, it will use zero as the index.  Any non - negative index will converted to an integer, and will wrap based on the size of the array:</br><h4></h4>
+Note that all elements of an array must be of the same type.  eg: a texture array must only contain textures.</br></br>An array can reference any combination of zero or more arrays (including duplicates if desired) and/or zero or more materials (again, including duplicates if you like), and you can have as many arrays as you like, each with as many elements as you like.  If an array includes arrays in its members, they do not need to be the same length.  When indexing into an array in the resource usage section, you use numerical expressions.  If the resulting number is negative, it will use zero as the index.  Any non - negative index will converted to an integer, and will wrap based on the size of the array:</br><h4></h4>
 <br / ><textarea readonly="true" cols="47" rows="2">
 index = max(0, expression_result) % array_size
 </textarea> </br>
@@ -679,7 +679,7 @@ The geometry section specifies which geometry to use when rendering.  As you can
 
 <h3><p id="Materials">Materials</p></h3>
 
-The materials section specifies how to map what material to what bone of the geometry.  A single material is mapped to a whole bone.  Material expressions are evaluated in the order listed.  The first part of each statement is the name of the model part to apply the material to, and the second part is the material to use.  The model part name can use * for wild - card matching of characters.  For example : </br><h4></h4>
+The materials section specifies how to map what material to what bone of the geometry.  A single material is mapped to a whole bone.  Material expressions are evaluated in the order listed.  The first part of each statement is the name of the model part to apply the material to, and the second part is the material to use.  The model part name can use * for wild - card matching of characters.  For example: </br><h4></h4>
 
 <h6></h6>
 <br / ><textarea readonly="true" cols="100" rows="7">
@@ -725,6 +725,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">Returns the number of actors rendered in the last frame</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.all</td>
+<td style="border-style:solid; border-width:3; padding:7px">Requires at least 3 arguments. Evaluates the first argument, then returns 1.0 if all of the following arguments evaluate to the same value as the first. Otherwise it returns 0.0.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.all_animations_finished</td>
 <td style="border-style:solid; border-width:3; padding:7px">Only valid in an animation controller.  Returns 1.0 if all animations in the current animation controller state have played through at least once, else it returns 0.0</br></td>
 </tr>
@@ -735,6 +739,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.anim_time</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the time in seconds since the current animation started, else 0.0 if not called within an animation</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.any</td>
+<td style="border-style:solid; border-width:3; padding:7px">Requires at least 3 arguments. Evaluates the first argument, then returns 1.0 if any of the following arguments evaluate to the same value as the first. Otherwise it returns 0.0.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.any_animation_finished</td>
@@ -950,7 +958,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.ground_speed</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns the ground speed of the entity in metres/second</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the ground speed of the entity in meters/second</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.has_any_family</td>
@@ -1019,6 +1027,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.hurt_time</td>
 <td style="border-style:solid; border-width:3; padding:7px">returns the hurt time for the actor, otherwise returns 0</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.in_range</td>
+<td style="border-style:solid; border-width:3; padding:7px">Requires 3 numerical arguments: some value, a minimum, and a maximum. If the first argument is between the minimum and maximum (inclusive), returns 1.0. Otherwise returns 0.0.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.invulnerable_ticks</td>
@@ -1250,7 +1262,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_persona_or_premium_skin</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the player has a persona or permium skin, else it returns 0.0</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns 1.0 if the player has a persona or premium skin, else it returns 0.0</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_playing_dead</td>
@@ -1418,7 +1430,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.lod_index</td>
-<td style="border-style:solid; border-width:3; padding:7px">Takes an array of distances and returns the zero - based index of which range the actor is in based on distance from the camera.For example, 'query.lod_index(10, 20, 30)' will return 0, 1, or 2 based on whether the mob is less than 10, 20, or 30 units away from the camera, or it will return 3 if it is greater than 30.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Takes an array of distances and returns the zero - based index of which range the actor is in based on distance from the camera. For example, 'query.lod_index(10, 20, 30)' will return 0, 1, or 2 based on whether the mob is less than 10, 20, or 30 units away from the camera, or it will return 3 if it is greater than 30.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.log</td>
@@ -1562,7 +1574,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.spellcolor</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns a struct representing the entity spell colour for the specified entity. The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified, each member value will be 0.0</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns a struct representing the entity spell color for the specified entity. The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified, each member value will be 0.0</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.standing_scale</td>
@@ -1630,7 +1642,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.vertical_speed</td>
-<td style="border-style:solid; border-width:3; padding:7px">Returns the speed of the entity up or down in metres/second, where positive is up</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the speed of the entity up or down in meters/second, where positive is up</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.walk_distance</td>
@@ -1671,7 +1683,7 @@ Query Functions are operators that access a wide variety of information. They ca
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.block_has_all_tags</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Takes an world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.block_has_any_tag</td>

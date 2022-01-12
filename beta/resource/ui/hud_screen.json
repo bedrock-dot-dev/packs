@@ -1241,8 +1241,8 @@
                 "size": [ "100%sm", 8 ],
                 "bindings": [
                   {
-                    "binding_name": "#is_armor_visible",
-                    "binding_name_override" : "#visible"
+                    "binding_name": "#is_in_classic_ui_mode_with_visible_armor",
+                    "binding_name_override": "#visible"
                   }
                 ]
               }
@@ -1983,6 +1983,11 @@
           },
           "bindings": [
             {
+              "binding_name": "(not #emote_tips_visible)",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            },
+            {
               "binding_name": "#left_helper_count",
               "binding_name_override": "#collection_length"
             }
@@ -1992,6 +1997,99 @@
     ]
   },
 
+  "emote_label_background": {
+    "type": "image",
+    "size": [ 100, 20 ],
+    "texture": "textures/ui/Black",
+    "alpha": 0.7,
+    "layer": 0
+  },
+
+  "emote_tip@hud.emote_label_background": {
+    "controls": [
+      {
+        "emote_keyboard_helper@common.keyboard_helper_keys": {
+          "layer": 100,
+          "$keyboard_character": "$keyboard_keyname",
+          "$text_color": "$generic_button_text_color",
+          "$description_bind": "$emote_tip_description",
+          "$keyboard_description_max_size": [ 100, 40 ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      },
+      {
+        "emote_gamepad_helper@$gamepad_helper_button_name": {
+          "$icon_description_bind": "$emote_tip_description",
+          "$gamepad_description_max_size": [ 100, 40 ],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle"
+        }
+      },
+      {
+        "emote_tooltip_padding": {
+          "type": "panel",
+          "size": [ 0, 6 ]
+        }
+      }
+    ]
+  },
+
+  "emote_helpers": {
+    "type": "panel",
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "size": [ "100%", "100%c" ],
+    "max_size": [ "100%", "50%" ],
+
+    "controls": [
+      {
+        "stack_panel": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%c" ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "controls": [
+            {
+              "emote_tip_0@hud.emote_tip": {
+                "$keyboard_keyname": "keyboard.keyname.1",
+                "$emote_tip_description": "#button_emote_0_description",
+                "$gamepad_helper_button_name": "common.gamepad_helper_y"
+              }
+            },
+            {
+              "emote_tip_1@hud.emote_tip": {
+                "$keyboard_keyname": "keyboard.keyname.2",
+                "$emote_tip_description": "#button_emote_1_description",
+                "$gamepad_helper_button_name": "common.gamepad_helper_b"
+              }
+            },
+            {
+              "emote_tip_2@hud.emote_tip": {
+                "$keyboard_keyname": "keyboard.keyname.3",
+                "$emote_tip_description": "#button_emote_2_description",
+                "$gamepad_helper_button_name": "common.gamepad_helper_a"
+              }
+            },
+            {
+              "emote_tip_3@hud.emote_tip": {
+                "$keyboard_keyname": "keyboard.keyname.4",
+                "$emote_tip_description": "#button_emote_3_description",
+                "$gamepad_helper_button_name": "common.gamepad_helper_x"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#emote_tips_visible",
+        "binding_name_override": "#visible",
+        "binding_type": "global"
+      }
+    ]
+  },
   "right_helpers": {
     "type": "panel",
     "anchor_from": "bottom_right",
@@ -2078,10 +2176,6 @@
     "$xp_control_offset|default": [ 0, -13 ],
     "variables": [
       {
-        "requires": "(not $desktop_screen)",
-        "$xp_control_offset": [ 0, -11 ]
-      },
-      {
         "requires": "$education_edition",
         "$left_helpers": "hud.left_helpers_edu"
       },
@@ -2096,6 +2190,9 @@
       },
       {
         "right_helpers@hud.right_helpers": {}
+      },
+      {
+        "emote_helpers@hud.emote_helpers": {}
       },
       { "centered_gui_elements@centered_gui_elements": {} },
       { "centered_gui_elements_at_bottom_middle@centered_gui_elements_at_bottom_middle": {} },

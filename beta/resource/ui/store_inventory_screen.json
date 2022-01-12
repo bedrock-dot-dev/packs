@@ -1183,7 +1183,6 @@
         "subscriptions_tab": "@store_inventory.subscriptions_content_section"
       },
       "factory_variables": [
-        "$ratings_visible_after_x_reviews",
         "$store_factory_clipping_event",
         "$store_factory_collection_details",
         "$store_factory_binding_type",

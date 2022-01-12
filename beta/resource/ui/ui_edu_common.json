@@ -586,7 +586,7 @@
                 "$button_tts_name": "($share_source + '.item.sharepopup.editResource.button.accessibility')",
                 "variables": [
                   {
-                    "requires": "($apple_os and $supports_clipboard)",
+                    "requires": "($apple_os and $supports_clipboard_set)",
                     "$focus_override_right": "mail_button"
                   }
                 ]
@@ -1092,7 +1092,7 @@
               "$share_icon_size": [ 14, 13 ]
             },
             {
-              "requires": "($supports_clipboard and not $supports_share)",
+              "requires": "($supports_clipboard_set and not $supports_share)",
               "$share_icon_texture": "textures/ui/copy",
               "$share_icon_offset": [ 2.0, 1.0 ],
               "$share_icon_size": [ 13, 14 ]
@@ -1117,7 +1117,7 @@
     "$focus_left|default": "classrooms_button",
     "$focus_right|default": "resource_button",
 
-    "$clipboard_share": "($supports_clipboard and not $supports_share)",
+    "$clipboard_share": "($supports_clipboard_set and not $supports_share)",
     "variables": [
       {
         "requires": "$clipboard_share",
@@ -1173,13 +1173,13 @@
           "$button_tts_header": "share.teams.tts",
           "$pressed_button_name": "button.teams_share",
           "$image_size": [ "100%", "100%" ],
-          "ignored": "($apple_os and $supports_clipboard)"
+          "ignored": "($apple_os and $supports_clipboard_set)"
         }
       },
       {
         "teams_mail_padding@common.empty_panel": {
           "size": [ 12, "100%" ],
-          "ignored": "($apple_os and $supports_clipboard)"
+          "ignored": "($apple_os and $supports_clipboard_set)"
         }
       },
       {

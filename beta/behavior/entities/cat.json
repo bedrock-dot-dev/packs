@@ -162,11 +162,6 @@
         "minecraft:is_dyeable": {
           "interact_text": "action.interact.dye"
         },
-        "minecraft:leashable": {
-          "soft_distance": 4.0,
-          "hard_distance": 6.0,
-          "max_distance": 10.0
-        },
         "minecraft:balloonable": {
           "mass": 0.6
         },
@@ -283,6 +278,11 @@
     },
 
     "components": {
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:attack_damage": {

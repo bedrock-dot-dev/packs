@@ -2293,6 +2293,7 @@
     "$keyboard_description|default": "common.keyboard_helper_description",
     "$keyboard_helper_visible_binding|default": "#keyboard_helper_visible",
     "$keyboard_character|default": "",
+    "$keyboard_description_max_size|default": [ "default", "default" ],
     "bindings": [
       {
         "binding_name": "$keyboard_helper_visible_binding",
@@ -2323,7 +2324,11 @@
           "type": "panel",
           "size": [ "100%c + 2px", 13 ],
           "controls": [
-            { "desc@$keyboard_description": {} }
+            {
+              "desc@$keyboard_description": {
+                "max_size": "$keyboard_description_max_size"
+              }
+            }
           ]
         }
       }
