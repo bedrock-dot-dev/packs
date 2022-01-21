@@ -117,8 +117,7 @@
     "size": [ "100%", "default" ],
     "layer": 1,
     "anchor_to": "top_left",
-    "anchor_from": "top_left",
-    "ttsSectionContainer": true
+    "anchor_from": "top_left"
   },
 
   //---------------------------------------------------------------------------
@@ -6591,7 +6590,7 @@
           "focus_change_right": "FOCUS_OVERRIDE_STOP",
           "bindings": [
             {
-              "binding_name": "(not #gamepad_helper_visible)",
+              "binding_name": "(not #exit_button_visible)",
               "binding_name_override": "#visible"
             }
           ]

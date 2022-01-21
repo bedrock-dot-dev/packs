@@ -164,8 +164,7 @@
     "$button_content": "start.change_skin_icon",
     "$pressed_alpha": 0.65,
     "$focus_id": "menu_skins_button",
-    "$button_tts_header": "accessibility.start.skinPicker",
-    "tts_index_order": 4
+    "$button_tts_header": "accessibility.start.skinPicker"
   },
 
   "profile_button@common_buttons.light_text_form_fitting_button": {
@@ -178,8 +177,7 @@
     "$button_text": "profileScreen.header",
     "$focus_id": "profile_button",
     "$pressed_alpha": 0.65,
-    "$button_tts_header": "accessibility.start.profile",
-    "tts_index_order": 20
+    "$button_tts_header": "accessibility.start.profile"
   },
 
   "skin_viewer_panel": {
@@ -345,7 +343,6 @@
     "$button_text_max_size": [ 80, 10 ], // longest localized string length will fit in this
     "$button_text": "xbox.signin",
     "$focus_id": "menu_xbox_signin_button",
-    "tts_index_order": 10,
     "anchor_from": "left_middle",
     "anchor_to": "left_middle"
   },
@@ -356,7 +353,6 @@
     "$focus_id": "menu_xbox_signin_button",
     "$button_text": "#platform_signin_text",
     "$button_text_binding_type": "global",
-    "tts_index_order": 10,
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
     "bindings": [
@@ -663,8 +659,7 @@
   "play_button@start.main_button": {
     "$pressed_button_name": "$play_button_target",
     "$button_text": "menu.play",
-    "$focus_override_right": "profile_button",
-    "tts_index_order": 1
+    "$focus_override_right": "profile_button"
   },
 
   "toolbox_mode_button@start.main_button": {
@@ -691,8 +686,7 @@
   "switch_accounts_button@start.main_button": {
     "$pressed_button_name": "button.switch_accounts",
     "$button_text": "#switch_accounts_button_text",
-    "$button_text_binding_type": "global",
-    "tts_index_order": 3
+    "$button_text_binding_type": "global"
   },
 
   "launch_editions_button@start.main_button": {
@@ -1512,9 +1506,6 @@
     ],
     "controls": [
       {
-        "skin_panel@start.skin_panel": { "layer": 1 }
-      },
-      {
         "main_buttons_and_title_panel@start.main_buttons_stack_panel": {}
       },
       {
@@ -1522,6 +1513,9 @@
       },
       {
         "lower_online_buttons_panel@start.lower_online_buttons_panel": {}
+      },
+      {
+        "skin_panel@start.skin_panel": { "layer": 1 }
       },
       {
         "text_panel@start.text_panel": {}

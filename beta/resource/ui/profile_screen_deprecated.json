@@ -1269,6 +1269,7 @@
     "$ignore_home_button": true,
     "$ignore_search_button": true,
     "$sidebar_ignore_page_loading": true,
+    "$ignore_inventory_button": true,
     "$screen_bg_content": "profile_deprecated.profile_screen_background_content",
 
     "$always_show_layer": 200,

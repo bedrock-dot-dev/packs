@@ -2,6 +2,7 @@
   "namespace": "realmsPlus",
 
   "realms_plus_pdp_screen@common.base_screen": {
+    "$ignore_inventory_button": "$is_sidebar_navigation_enabled",
     "$screen_content": "realmsPlus.realmsPlus_main_panel",
     "$header_safezone_control": "common_store.store_top_bar_filler",
     "$header_bar_control": "common_store.store_top_bar",
@@ -45,6 +46,7 @@
   },
 
   "realms_plus_upgrade_notice_screen@common.base_screen": {
+    "$ignore_inventory_button": "$is_sidebar_navigation_enabled",
     "$screen_content": "realmsPlus.realmsPlus_main_panel",
     "$header_safezone_control": "common_store.store_top_bar_filler",
     "$header_bar_control": "common_store.store_top_bar",

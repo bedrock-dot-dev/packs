@@ -3125,6 +3125,7 @@
       },
       {
         "description_toggle_show_button@common_buttons.light_text_form_fitting_button": {
+          "$focus_id": "description_toggle_button",
           "size": [ "100%cm", "100%cm" ],
           "anchor_from": "bottom_right",
           "anchor_to": "bottom_right",
