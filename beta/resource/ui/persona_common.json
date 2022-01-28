@@ -107,6 +107,8 @@
     - #rarity_color
     - #rarity_bar_texture
     - #rarity_bar_visible
+    - $persona_piece_binding_type
+    - $persona_piece_collection_name
     
   Variables:
     - $item_display_size
@@ -116,15 +118,10 @@
     - $item_content_control
         Child control to be placed over the image. (Extra icons, status symbols,
         ...). Default is empty panel.
-    - $persona_piece_binding_type
-        The binding type for all the bindings in this control. Default is `global`
-    - $persona_piece_collection_name
-        The collection name to use for all bindings in this control. Default is `none`
     - $item_texture_file_system_binding_name
-        Binding name for the file system binding. Default is 
-        `#persona_item_image_file_system`
+        Binding name for the file system binding. Default is `#thumbnail_texture_file_system`
     - $item_texture_path_binding_name
-        Binding name for the texture path binding. Default is `#persona_item_image_path`
+        Binding name for the texture path binding. Default is `#thumbnail_texture_path`
     - $ignore_background
         If you want the background or not. Default is `false`
     - $ignore_rarity_bar
@@ -149,6 +146,9 @@
     "$piece_section_collection_details|default": "none",
     "$piece_section_collection_prefix|default": "",
     "$piece_section_collection_name|default": "",
+
+    "$item_texture_path_binding_name|default": "#thumbnail_texture_path",
+    "$item_texture_file_system_binding_name|default": "#thumbnail_texture_file_system",
 
     "controls": [
       {
@@ -184,13 +184,13 @@
                   {
                     "binding_type": "$persona_piece_binding_type",
                     "binding_collection_name": "$persona_piece_collection_name",
-                    "binding_name": "#thumbnail_texture_file_system",
+                    "binding_name": "$item_texture_file_system_binding_name",
                     "binding_name_override": "#texture_file_system"
                   },
                   {
                     "binding_type": "$persona_piece_binding_type",
                     "binding_collection_name": "$persona_piece_collection_name",
-                    "binding_name": "#thumbnail_texture_path",
+                    "binding_name": "$item_texture_path_binding_name",
                     "binding_name_override": "#texture"
                   }
                 ]

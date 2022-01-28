@@ -809,7 +809,7 @@
     "controls": [
       {
         "store_button@start.store_button": {
-          "enabled": "(not $store_disabled)",
+          "enabled": "(not $store_disabled and not ($is_ios and $pre_release)))",
           "bindings": [
             {
               "binding_name": "(not #marketplace_disabled)",

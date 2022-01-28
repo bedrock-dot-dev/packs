@@ -1,4 +1,4 @@
-<h1>ANIMATIONS DOCUMENTATION </br>Version: 1.18.10.28</h1>
+<h1>ANIMATIONS DOCUMENTATION </br>Version: 1.18.20.21</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -14,6 +14,7 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#Animation Hierarchy"> Animation Hierarchy</a> </tr> </td>
 <tr> <td> <a href="#Upgrade from v1.10 to v1.17.30"> Upgrade from v1.10 to v1.17.30</a> </tr> </td>
 <tr> <td> <a href="#Upgrade from v1.17.30 to v1.18.10"> Upgrade from v1.17.30 to v1.18.10</a> </tr> </td>
+<tr> <td> <a href="#Upgrade from v1.18.10 to v1.18.20"> Upgrade from v1.18.10 to v1.18.20</a> </tr> </td>
 <tr> <td> <a href="#Upgrade from v1.7 Beta to v1.8"> Upgrade from v1.7 Beta to v1.8</a> </tr> </td>
 <tr> <td> <a href="#Upgrade from v1.8 Beta to v1.10"> Upgrade from v1.8 Beta to v1.10</a> </tr> </td>
 <tr> <th><a href="#Key Frames">Key Frames</a></th> </tr>
@@ -417,6 +418,10 @@ The major change with 1.17.30 is:</br>- Molang expressions inside transitions th
 <h1><p id="Upgrade from v1.17.30 to v1.18.10">Upgrade from v1.17.30 to v1.18.10</p></h1>
 
 The major change with 1.18.10 is:</br>- Fixed an issue where animation controller events defined in the default state would get skipped if the controller immediately transitioned to another state.</br><a href="#Index">Back to top</a><br><br>
+
+<h1><p id="Upgrade from v1.18.10 to v1.18.20">Upgrade from v1.18.10 to v1.18.20</p></h1>
+
+The major change with 1.18.20 is:</br>- Molang expressions inside animation scripts for actor resource definition (pre_animation and initialize) that contain capital letters are properly evaluated now. Strings inside such expressions are not forced to lowercase anymore and work as expected.</br><a href="#Index">Back to top</a><br><br>
 
 <h1><p id="Upgrade from v1.7 Beta to v1.8">Upgrade from v1.7 Beta to v1.8</p></h1>
 

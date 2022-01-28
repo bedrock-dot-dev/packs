@@ -1773,7 +1773,14 @@
   "popup_dialog_close_button@common_buttons.light_text_button": {
     "layer": 2,
     "$pressed_button_name": "button.close_dialog",
-    "$button_text": "gui.close"
+    "$button_text": "gui.close",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.close_dialog",
+        "mapping_type": "global"
+      }
+    ]
   },
 
   ///////////////////////////////////////////////////////////////////////////////////////
@@ -5192,8 +5199,8 @@
     "$message_text": "dr.classic_skins.invalidCustomSkin",
     "$middle_button_text": "gui.ok",
     "size": [ "40%", "75%" ],
-    "$section_content_size": [ "100% - 16px", "91.5% - 16px" ],
-    "$section_content_offset": [ 0, "4.5%" ],
+    "$section_content_size": [ "100% - 16px", "100% - 31px" ],
+    "$section_content_offset": [ 0, "7.5px" ],
     "controls": [
       {
         "popup_dialog_bg@persona.popup_dialog_bg": {
@@ -5403,6 +5410,13 @@
           "$dialog_content": "persona.custom_skin_info_panel",
           "size": [ "60%", "60%" ]
         }
+      }
+    ],
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.close_dialog",
+        "mapping_type": "global"
       }
     ]
   },

@@ -1145,6 +1145,8 @@
   // CREATOR button & section
 
   "creator_button@settings_common.section_toggle_base": {
+    "ignored": "$ignore_creator_section",
+
     "$toggle_view_binding_name": "creator_button_toggle",
     "$glyph_texture": "textures/ui/creator_glyph",
     "$glyph_color_texture": "textures/ui/creator_glyph_color",
@@ -1358,6 +1360,8 @@
   },
 
   "creator_section": {
+    "ignored": "$ignore_creator_section",
+
     "type": "stack_panel",
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",

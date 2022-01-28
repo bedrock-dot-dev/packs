@@ -41,7 +41,7 @@
     "size": [ "100%c", "100%cm" ],
     "controls": [
       {
-        "button_x@common.gamepad_helper_x": {
+        "button_x@common.gamepad_helper_x_14": {
           "$gamepad_helper_visible_binding_type": "none",
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",

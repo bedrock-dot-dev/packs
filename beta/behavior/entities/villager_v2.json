@@ -474,13 +474,15 @@
               "item": "minecraft:wheat_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:beetroot_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:wheat",
@@ -622,13 +624,15 @@
               "item": "minecraft:wheat_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:beetroot_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:wheat",
@@ -1550,7 +1554,6 @@
                 "any_of": [
                   { "test" : "is_family", "subject" : "other", "value" : "zombie"},
                   { "test" : "is_family", "subject" : "other", "value" : "zombie_villager"},
-                  { "test" : "is_family", "subject" : "other", "value" : "zombie_pigman"},
                   { "test" : "is_family", "subject" : "other", "value" : "illager"},
                   { "test" : "is_family", "subject" : "other", "value" : "vex"}
                 ]

@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.10.28</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.20.21</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -9456,63 +9456,6 @@ Allows the mob to inspect bookshelves.</br><h3></h3>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
-<h2><p id="minecraft:behavior.knockback_roar">minecraft:behavior.knockback_roar</p></h2>
-
-Allows the mob to perform a damaging knockback that affects all nearby entities.</br><h3></h3>
-
-<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">on_roar_end</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">attack_time</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.5</td>
-<td style="border-style:solid; border-width:2; padding:8px">The delay after which the knockback occurs (in seconds).</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">cooldown_time</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Time in seconds the mob has to wait before using the goal again</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">duration</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">1.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">The duration of the roar (in seconds).</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">knockback_damage</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">6</td>
-<td style="border-style:solid; border-width:2; padding:8px">The damage dealt by the knockback roar.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">knockback_horizontal_strength</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">4</td>
-<td style="border-style:solid; border-width:2; padding:8px">The strength of the horizontal knockback.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">knockback_range</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">4</td>
-<td style="border-style:solid; border-width:2; padding:8px">The radius (in blocks) of the knockback effect.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">knockback_vertical_strength</td>
-<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">4</td>
-<td style="border-style:solid; border-width:2; padding:8px">The strength of the vertical knockback.</br></td>
-</tr>
-</table>
-<a href="#Index">Back to top</a><br><br>
-
 <h2><p id="minecraft:behavior.lay_down">minecraft:behavior.lay_down</p></h2>
 
 Allows mobs to lay down at times</br><h3></h3>
@@ -15959,6 +15902,10 @@ Maximum number of this item the mob will hold.</br><a href="#Index">Back to top<
 
 Maximum number of this item the mob will pick up during a single goal tick.</br><a href="#Index">Back to top</a><br><br>
 
+<h5><p id="pickup_only">pickup_only</p></h5>
+
+Determines whether the mob can only pickup the item and not drop it.</br><a href="#Index">Back to top</a><br><br>
+
 <h5><p id="priority">priority</p></h5>
 
 Prioritizes which items the entity prefers. 0 is the highest priority.</br><a href="#Index">Back to top</a><br><br>
@@ -16894,10 +16841,6 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.inspect_bookshelf</td>
 <td style="border-style:solid; border-width:2; padding:8px">40191182</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.knockback_roar</td>
-<td style="border-style:solid; border-width:2; padding:8px">-1304117826</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.lay_down</td>

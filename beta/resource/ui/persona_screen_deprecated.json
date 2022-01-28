@@ -325,7 +325,7 @@
         }
       },
       {
-        "equip_button@persona_deprecated.equip_piece": {
+        "equip@persona_deprecated.equip_piece": {
           "size": [ "100%", "100%" ],
           "$focus_override_down": "FOCUS_OVERRIDE_STOP"
         }
@@ -4829,8 +4829,8 @@
     "$message_text": "dr.classic_skins.invalidCustomSkin",
     "$middle_button_text": "gui.ok",
     "size": [ "40%", "75%" ],
-    "$section_content_size": [ "100% - 16px", "91.5% - 16px" ],
-    "$section_content_offset": [ 0, "4.5%" ],
+    "$section_content_size": [ "100% - 16px", "100% - 31px" ],
+    "$section_content_offset": [ 0, "7.5px" ],
     "controls": [
       {
         "popup_dialog_bg@persona_deprecated.popup_dialog_bg": {

@@ -144,7 +144,8 @@
             "textures/items/bucket_tropical",
             "textures/items/bucket_pufferfish",
             "textures/items/bucket_powder_snow",
-            "textures/items/bucket_axolotl"
+            "textures/items/bucket_axolotl",
+            "textures/items/bucket_tadpole"
          ]
       },
       "cake" : {

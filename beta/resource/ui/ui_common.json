@@ -2064,6 +2064,7 @@
     "$hide_description|default": false,
     "$gamepad_description|default": "common.gamepad_helper_icon_description",
     "$gamepad_helper_icon_size|default": [ 26, 26 ],
+    "$gamepad_helper_icon_image_size|default": [ "100%", "100%" ],
     "$gamepad_description_offset|default": [ -2, 0 ],
     "$gamepad_helper_visible_binding_name|default": "#gamepad_helper_visible",
     "$gamepad_helper_visible_binding_type|default": "global",
@@ -2079,10 +2080,18 @@
     ],
     "controls": [
       {
-        "$icon_image_ref": {
-          "$gamepad_icon_size": "$gamepad_helper_icon_size",
-          "$gamepad_icon_visible_binding_name": "$gamepad_helper_visible_binding_name",
-          "$gamepad_icon_visible_binding_type": "$gamepad_helper_visible_binding_type"
+        "icon_panel": {
+          "type": "panel",
+          "size": "$gamepad_helper_icon_size",
+          "controls": [
+            {
+              "$icon_image_ref": {
+                "$gamepad_icon_size": "$gamepad_helper_icon_image_size",
+                "$gamepad_icon_visible_binding_name": "$gamepad_helper_visible_binding_name",
+                "$gamepad_icon_visible_binding_type": "$gamepad_helper_visible_binding_type"
+              }
+            }
+          ]
         }
       },
       {
@@ -2376,8 +2385,20 @@
     "$icon_image_ref": "icon@common.gamepad_icon_button"
   },
 
+  "gamepad_helper_a_14@gamepad_helper": {
+    "$icon_texture": "#controller_face_down_icon_14",
+    "$icon_description_bind": "#button_a_description",
+    "$icon_image_ref": "icon@common.gamepad_icon_button"
+  },
+
   "gamepad_helper_b@gamepad_helper": {
     "$icon_texture": "#controller_face_right_icon",
+    "$icon_description_bind": "#button_b_description",
+    "$icon_image_ref": "icon@common.gamepad_icon_button"
+  },
+
+  "gamepad_helper_b_14@gamepad_helper": {
+    "$icon_texture": "#controller_face_right_icon_14",
     "$icon_description_bind": "#button_b_description",
     "$icon_image_ref": "icon@common.gamepad_icon_button"
   },
@@ -2388,8 +2409,20 @@
     "$icon_image_ref": "icon@common.gamepad_icon_button"
   },
 
+  "gamepad_helper_x_14@gamepad_helper": {
+    "$icon_texture": "#controller_face_left_icon_14",
+    "$icon_description_bind": "#button_x_description",
+    "$icon_image_ref": "icon@common.gamepad_icon_button"
+  },
+
   "gamepad_helper_y@common.gamepad_helper": {
     "$icon_texture": "#controller_face_up_icon",
+    "$icon_description_bind": "#button_y_description",
+    "$icon_image_ref": "icon@common.gamepad_icon_button"
+  },
+
+  "gamepad_helper_y_14@common.gamepad_helper": {
+    "$icon_texture": "#controller_face_up_icon_14",
     "$icon_description_bind": "#button_y_description",
     "$icon_image_ref": "icon@common.gamepad_icon_button"
   },

@@ -1376,7 +1376,7 @@
                   },
                   {
                     "status_and_coins@common_store.status_with_coins": {
-                      "ignored": "$store_disabled",
+                      "ignored": "($store_disabled or ($is_ios and $pre_release))",
                       "$top_status_and_coins_visible_binding_type|default": "none",
                       "$top_status_and_coins_visible_binding|default": "",
                       "bindings": [

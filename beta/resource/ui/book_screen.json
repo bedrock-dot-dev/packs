@@ -96,7 +96,7 @@
     "anchor_from": "center",
     "anchor_to": "center",
     // Photos are square, so use x for y size
-    "size": [ "100%-32px", "100%x" ],
+    "size": [ "100%-44px", "100%x" ],
     "offset": [ 0, -2 ],
     "bindings": [
       {
@@ -299,7 +299,7 @@
       },
       {
         "close_button@book.close_button": {
-          "offset": [ -3, 5 ]
+          "offset": [ -6, 7 ]
         }
       }
     ]
@@ -539,7 +539,7 @@
   },
 
   "page_text@book.page_text_edit": {
-    "size": [ "100%-32px", "100%-52px" ],
+    "size": [ "100%-44px", "100%-64px" ],
     "offset": [ 0, "23px" ],
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
@@ -607,14 +607,14 @@
     "type": "stack_panel",
     "orientation": "horizontal",
     "size": [ "100%c", 12 ],
-    "offset": [ 0, -16 ],
+    "offset": [ 0, -22 ],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
 
     "controls": [
       {
         "swap_page_left@book.padded_button": {
-          "$button_size": [ 18, 12 ],
+          "$button_size": [ 27, 18 ],
 
           "$pressed_button_name": "button.swap_page_left",
           "$button_active": "#swap_left_active",
@@ -626,7 +626,7 @@
       },
       {
         "insert_text_page@book.padded_button": {
-          "$button_size": [ 12, 12 ],
+          "$button_size": [ 18, 18 ],
 
           "$pressed_button_name": "button.insert_text_page",
           "$button_active": "#insert_page_active",
@@ -638,7 +638,7 @@
       },
       {
         "insert_photo_page@book.padded_button": {
-          "$button_size": [ 15, 12 ],
+          "$button_size": [ 22, 18 ],
           "ignored": "(not $education_edition)",
 
           "$pressed_button_name": "button.insert_photo_page",
@@ -651,7 +651,7 @@
       },
       {
         "delete_page@book.padded_button": {
-          "$button_size": [ 12, 12 ],
+          "$button_size": [ 18, 18 ],
 
           "$pressed_button_name": "button.delete_page",
           "$button_active": "#edit_controls_active",
@@ -662,7 +662,7 @@
       },
       {
         "swap_page_right@book.padded_button": {
-          "$button_size": [ 18, 12 ],
+          "$button_size": [ 27, 18 ],
 
           "$pressed_button_name": "button.swap_page_right",
           "$button_active": "#swap_right_active",
@@ -698,7 +698,7 @@
       { "page_buttons_panel@book.page_buttons_panel": {} },
       {
         "edit_page@book.base_button": {
-          "size": [ 13, 12 ],
+          "size": [ 19, 18 ],
           "offset": [ 0, -16 ],
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
@@ -982,7 +982,7 @@
             },
             {
               "prev_button@book.base_button": {
-                "size": [ 12, 12 ],
+                "size": [ 18, 18 ],
                 "offset": [ 11, 0 ],
                 "anchor_from": "left_middle",
                 "anchor_to": "left_middle",
@@ -1000,7 +1000,7 @@
             },
             {
               "next_button@book.base_button": {
-                "size": [ 12, 12 ],
+                "size": [ 18, 18 ],
                 "offset": [ -11, 0 ],
                 "anchor_from": "right_middle",
                 "anchor_to": "right_middle",

@@ -72,31 +72,38 @@
   "keyboard_hotkey_helpers": {
     "type": "panel",
     "size": [ "100%", "100%" ],
+    "$keyboard_helper_size": [ 17, 17 ],
+    "$hide_description": true,
     "controls": [
       {
         "keyboard_1@common.keyboard_helper_keys": {
-          "offset": [ 0, "-44%" ],
+          "size": "$keyboard_helper_size",
+          "offset": [ 0, "-50% - 11px" ],
           "$keyboard_character": "keyboard.keyName.1",
           "$text_color": "$generic_button_text_color"
         }
       },
       {
         "keyboard_2@common.keyboard_helper_keys": {
-          "offset": [ "45%", "2%" ],
+          "size": "$keyboard_helper_size",
+          "offset": [ "50% + 10px", 0 ],
           "$keyboard_character": "keyboard.keyName.2",
           "$text_color": "$generic_button_text_color"
         }
       },
       {
         "keyboard_3@common.keyboard_helper_keys": {
-          "offset": [ 0, "45%" ],
+          "size": "$keyboard_helper_size",
+          "offset": [ 0, "50% + 5px" ],
+          "layer": 3,
           "$keyboard_character": "keyboard.keyName.3",
           "$text_color": "$generic_button_text_color"
         }
       },
       {
         "keyboard_4@common.keyboard_helper_keys": {
-          "offset": [ "-44%", "2%" ],
+          "size": "$keyboard_helper_size",
+          "offset": [ "-50% - 11px", 0 ],
           "$keyboard_character": "keyboard.keyName.4",
           "$text_color": "$generic_button_text_color"
         }
@@ -107,25 +114,26 @@
   "gamepad_hotkey_helpers": {
     "type": "panel",
     "size": [ "100%", "100%" ],
+    "$hide_description": true,
     "controls": [
       {
         "gamepad_y@common.gamepad_helper_y": {
-          "offset": [ "0.5%", "-40%" ]
+          "offset": [ 0, "-50% - 10px" ]
         }
       },
       {
         "gamepad_b@common.gamepad_helper_b": {
-          "offset": [ "44.5%", "9%" ]
+          "offset": [ "50% + 10px", 0 ]
         }
       },
       {
         "gamepad_a@common.gamepad_helper_a": {
-          "offset": [ "0.5%", "54%" ]
+          "offset": [ 0, "50% + 10px" ]
         }
       },
       {
         "gamepad_x@common.gamepad_helper_x": {
-          "offset": [ "-44%", "9%" ]
+          "offset": [ "-50% - 10px", 0 ]
         }
       }
     ]
@@ -137,10 +145,78 @@
     "alpha": 0
   },
 
+  "emote_selection_wheel@persona.selection_wheel": {
+    "inner_radius": 0.35,
+    "outer_radius": 1.0,
+    "$slice_count": 4,
+    "$button_name": "button.emote_selected",
+
+    "$button_focus_precedence": 10,
+    "focus_identifier": "emote_wheel",
+    "focus_change_left": "FOCUS_OVERRIDE_STOP",
+    "focus_change_right": "FOCUS_OVERRIDE_STOP",
+    "focus_change_up": "FOCUS_OVERRIDE_STOP",
+
+    "controls": [
+      {
+        "default_state@persona.wheel_state": {
+          "texture": "textures/ui/emote_wheel_updated_base"
+        }
+      },
+      {
+        "emote_slot_0_content@persona.emote_wheel_slot_content": {
+          "$emote_slot_index": 0,
+          "$emote_slot_name": "emote_slot_0",
+          "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_0",
+          "$emote_image_offset": [ 0, "-33.57%" ],
+          "$emote_touch_label_offset": [ 0, "-45%" ],
+          "$emote_touch_label_alignment": "center"
+        }
+      },
+      {
+        "emote_slot_1_content@persona.emote_wheel_slot_content": {
+          "$emote_slot_index": 1,
+          "$emote_slot_name": "emote_slot_1",
+          "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_1",
+          "$emote_image_offset": [ "32.8125%", 0 ],
+          "$emote_touch_label_offset": [ "65%", 0 ],
+          "$emote_touch_label_alignment": "left"
+        }
+      },
+      {
+        "emote_slot_2_content@persona.emote_wheel_slot_content": {
+          "$emote_slot_index": 2,
+          "$emote_slot_name": "emote_slot_2",
+          "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_2",
+          "$emote_image_offset": [ 0, "33.57%" ],
+          "$emote_touch_label_offset": [ 0, "48%" ],
+          "$emote_touch_label_alignment": "center"
+        }
+      },
+      {
+        "emote_slot_3_content@persona.emote_wheel_slot_content": {
+          "$emote_slot_index": 3,
+          "$emote_slot_name": "emote_slot_3",
+          "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_3",
+          "$emote_image_offset": [ "-32.8125%", 0 ],
+          "$emote_touch_label_offset": [ "-65%", 0 ],
+          "$emote_touch_label_alignment": "right"
+        }
+      }
+    ],
+    "state_controls": [
+      "default_state",
+      "emote_slot_0",
+      "emote_slot_1",
+      "emote_slot_2",
+      "emote_slot_3"
+    ]
+  },
+
   "emote_wheel_screen_content": {
     "type": "stack_panel",
     "orientation": "vertical",
-    "size": [ "100%", "95%" ],
+    "size": [ "100%", "100%" ],
     "controls": [
       {
         "top_padding": {
@@ -151,7 +227,7 @@
       {
         "root_panel": {
           "type": "panel",
-          "size": [ "100%", 200 ],
+          "size": [ "100%", "55% + 35px" ],
           "controls": [
             {
               "emotes_panel@common_dialogs.main_panel": {
@@ -175,84 +251,13 @@
                     }
                   },
                   {
-                    "gamepad_helpers@persona.gamepad_hotkey_helpers": {
-                      "offset": [ "0.5%", "-7%" ]
-                    }
-                  },
-                  {
-                    "keyboard_helpers@persona.keyboard_hotkey_helpers": {
-                      "offset": [ "0.5%", "-5%" ],
-                      "layer": 11
-                    }
-                  },
-                  {
-                    "emote_wheel@persona.selection_wheel": {
-                      "size": [ 176, "100%" ],
-                      "inner_radius": 0.35,
-                      "outer_radius": 1.0,
-                      "$slice_count": 4,
-                      "$button_name": "button.emote_selected",
-
-                      "$button_focus_precedence": 10,
-                      "focus_identifier": "emote_wheel",
-                      "focus_change_left": "FOCUS_OVERRIDE_STOP",
-                      "focus_change_right": "FOCUS_OVERRIDE_STOP",
-                      "focus_change_up": "FOCUS_OVERRIDE_STOP",
-
+                    "emote_wheel_content_panel": {
+                      "type": "panel",
+                      "size": [ "89.51%y", "100% - 40px" ],
                       "controls": [
-                        {
-                          "default_state@persona.wheel_state": {
-                            "size": [ 176, 176 ],
-                            "texture": "textures/ui/emote_wheel_updated_base"
-                          }
-                        },
-                        {
-                          "emote_slot_0_content@persona.emote_wheel_slot_content": {
-                            "$emote_slot_index": 0,
-                            "$emote_slot_name": "emote_slot_0",
-                            "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_0",
-                            "$emote_image_offset": [ 0, "-29.5%" ],
-                            "$emote_touch_label_offset": [ 0, "-45%" ],
-                            "$emote_touch_label_alignment": "center"
-                          }
-                        },
-                        {
-                          "emote_slot_1_content@persona.emote_wheel_slot_content": {
-                            "$emote_slot_index": 1,
-                            "$emote_slot_name": "emote_slot_1",
-                            "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_1",
-                            "$emote_image_offset": [ "28.1%", 0 ],
-                            "$emote_touch_label_offset": [ "65%", 0 ],
-                            "$emote_touch_label_alignment": "left"
-                          }
-                        },
-                        {
-                          "emote_slot_2_content@persona.emote_wheel_slot_content": {
-                            "$emote_slot_index": 2,
-                            "$emote_slot_name": "emote_slot_2",
-                            "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_2",
-                            "$emote_image_offset": [ 0, "27%" ],
-                            "$emote_touch_label_offset": [ 0, "48%" ],
-                            "$emote_touch_label_alignment": "center"
-                          }
-                        },
-                        {
-                          "emote_slot_3_content@persona.emote_wheel_slot_content": {
-                            "$emote_slot_index": 3,
-                            "$emote_slot_name": "emote_slot_3",
-                            "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_3",
-                            "$emote_image_offset": [ "-28.1%", 0 ],
-                            "$emote_touch_label_offset": [ "-65%", 0 ],
-                            "$emote_touch_label_alignment": "right"
-                          }
-                        }
-                      ],
-                      "state_controls": [
-                        "default_state",
-                        "emote_slot_0",
-                        "emote_slot_1",
-                        "emote_slot_2",
-                        "emote_slot_3"
+                        { "gamepad_helpers@persona.gamepad_hotkey_helpers": {} },
+                        { "keyboard_helpers@persona.keyboard_hotkey_helpers": {} },
+                        { "emote_wheel@persona.emote_selection_wheel": {} }
                       ]
                     }
                   }
@@ -265,7 +270,7 @@
       {
         "instruction_padding": {
           "type": "panel",
-          "size": [ "100%", 5 ]
+          "size": [ "100%", 2 ]
         }
       },
       {
@@ -341,7 +346,7 @@
       {
         "dressing_room_button_panel": {
           "type": "panel",
-          "size": [ "100%", "100%c" ],
+          "size": [ "100%", 23 ],
           "bindings": [
             {
               "binding_name": "(not #is_using_gamepad)",
@@ -352,7 +357,7 @@
             {
               "dressing_room_button@common_buttons.light_text_button": {
                 "$pressed_button_name": "button.dressing_room",
-                "size": [ 120, 23 ],
+                "size": [ 120, "100%" ],
                 "enabled": "(not $store_disabled)",
                 "$button_text": "emotes.change_emotes",
                 "$default_text_color": "$light_button_default_text_color",
@@ -512,7 +517,6 @@
 
   "wheel_state": {
     "type": "image",
-    "size": [ 176, 176 ],
     "layer": 1,
     "texture": "$wheel_state_texture"
   },
@@ -527,6 +531,7 @@
 
   "selection_wheel": {
     "type": "selection_wheel",
+    "size": [ "100%", "100%" ],
 
     "$slice_count|default": 1,
     "$inner_radius|default": 0.0,
