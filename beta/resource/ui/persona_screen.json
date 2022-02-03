@@ -422,10 +422,59 @@
   ///////////////////////////////////////////////////////////////////////////////////////
   //// Equip button controls
 
-  "equip_piece_button@common_buttons.light_text_button": {
+  "a_button_helper@common.gamepad_helper_a": {
+    "$hide_description": true,
+    "$gamepad_helper_icon_size": [ 20, 20 ],
+    "$gamepad_helper_size": [ "100%", "100%" ],
+    "offset": [ "-25% - 2px", "-25% + 1px" ],
+    "size": [ "100%", "100%" ]
+  },
+
+  "a_button_helper_center@common.empty_panel": {
+    "size": [ "90%y", "100%" ],
+    "controls": [
+      { "a_button_helper@persona.a_button_helper": {} }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#show_equip_button_helper",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "equip_piece_text": {
+    "type": "label",
+    "size": [ "100%", "default" ],
+    "color": "$text_color",
+    "text": "dr.equip_piece",
+    "text_alignment": "center"
+  },
+
+  "equip_piece_text_wrapper@common.empty_panel": {
+    "size": [ "fill", "100%" ],
+    "controls": [
+      { "text@persona.equip_piece_text": {} }
+    ]
+  },
+
+  "equip_button_content@common.horizontal_stack_panel": {
+    "size": [ "100%", "100%" ],
+    "offset": [ 0, 3 ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "controls": [
+      { "helper_wrapper@persona.a_button_helper_center": {} },
+      { "equip_text@persona.equip_piece_text_wrapper": {} }
+    ]
+  },
+
+  "equip_piece_button@common_buttons.light_content_button": {
     "$focus_id": "equip_piece_button",
     "$persona_focus_precedence": 3,
-    "$new_ui_label_offset": [ 0, 0 ],
+    "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+    "$pressed_button_name": "$equip_button_name",
+    "$button_content": "persona.equip_button_content",
 
     "variables": [
       {
@@ -436,37 +485,11 @@
     ]
   },
 
-  "equip_piece@persona.equip_piece_button": {
-    "$pressed_button_name": "$equip_button_name",
-    "$button_text": "dr.equip_piece"
-  },
-
-  "a_button_helper@common.gamepad_helper_a": {
-    "$hide_description|default": true,
-    "offset": [ "-34%", 0 ],
-
-    "bindings": [
-      {
-        "binding_name": "#show_equip_button_helper",
-        "binding_name_override": "#visible"
-      }
-    ]
-  },
-
-  "equip_button@persona.equip_piece": {
-    "size": [ "100%", "100%" ],
-    "$focus_override_down": "FOCUS_OVERRIDE_STOP"
-  },
-
   "equip_button_panel": {
     "type": "panel",
     "size": [ "40%", "100%" ],
-    "offset": [ "50%", 0 ],
-    "anchor_from": "bottom_middle",
-    "anchor_to": "bottom_middle",
     "controls": [
-      { "a_button_helper@persona.a_button_helper": {} },
-      { "equip@persona.equip_button": {} }
+      { "equip@persona.equip_piece_button": {} }
     ],
     "bindings": [
       {

@@ -1960,24 +1960,6 @@
             "sounds/block/turtle_egg/drop_egg2"
          ]
       },
-      "bloom.sculk_catalyst" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/particles/soulspeed1",
-            "sounds/particles/soulspeed2",
-            "sounds/particles/soulspeed3",
-            "sounds/particles/soulspeed4",
-            "sounds/particles/soulspeed5",
-            "sounds/particles/soulspeed6",
-            "sounds/particles/soulspeed7",
-            "sounds/particles/soulspeed8",
-            "sounds/particles/soulspeed9",
-            "sounds/particles/soulspeed10",
-            "sounds/particles/soulspeed11",
-            "sounds/particles/soulspeed12",
-            "sounds/particles/soulspeed13"
-         ]
-      },
       "bottle.dragonbreath" : {
          "__use_legacy_max_distance" : "true",
          "category" : "bottle",
@@ -2161,71 +2143,6 @@
             "sounds/block/dripstone/break3",
             "sounds/block/dripstone/break4",
             "sounds/block/dripstone/break5"
-         ]
-      },
-      "break.sculk" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk/break1",
-            "sounds/block/sculk/break2",
-            "sounds/block/sculk/break3",
-            "sounds/block/sculk/break4",
-            "sounds/block/sculk/break5",
-            "sounds/block/sculk/break6",
-            "sounds/block/sculk/break7",
-            "sounds/block/sculk/break8",
-            "sounds/block/sculk/break9",
-            "sounds/block/sculk/break10",
-            "sounds/block/sculk/break11",
-            "sounds/block/sculk/break12",
-            "sounds/block/sculk/break13",
-            "sounds/block/sculk/break14"
-         ]
-      },
-      "break.sculk_catalyst" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_catalyst/break1",
-            "sounds/block/sculk_catalyst/break2",
-            "sounds/block/sculk_catalyst/break3",
-            "sounds/block/sculk_catalyst/break4",
-            "sounds/block/sculk_catalyst/break5",
-            "sounds/block/sculk_catalyst/break6",
-            "sounds/block/sculk_catalyst/break7",
-            "sounds/block/sculk_catalyst/break8",
-            "sounds/block/sculk_catalyst/break9",
-            "sounds/block/sculk_catalyst/break10"
-         ]
-      },
-      "break.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/break1",
-            "sounds/block/sculk_sensor/break2",
-            "sounds/block/sculk_sensor/break3",
-            "sounds/block/sculk_sensor/break4",
-            "sounds/block/sculk_sensor/break5"
-         ]
-      },
-      "break.sculk_shrieker" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_shrieker/break1",
-            "sounds/block/sculk_shrieker/break2",
-            "sounds/block/sculk_shrieker/break3",
-            "sounds/block/sculk_shrieker/break4",
-            "sounds/block/sculk_shrieker/break5",
-            "sounds/block/sculk_shrieker/break6"
-         ]
-      },
-      "break.sculk_vein" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_vein/break1",
-            "sounds/block/sculk_vein/break2",
-            "sounds/block/sculk_vein/break3",
-            "sounds/block/sculk_vein/break4",
-            "sounds/block/sculk_vein/break5"
          ]
       },
       "break.small_amethyst_bud" : {
@@ -3789,28 +3706,6 @@
             "sounds/step/sand5"
          ]
       },
-      "fall.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
-      "fall.sculk_shrieker" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk/step1",
-            "sounds/block/sculk/step2",
-            "sounds/block/sculk/step3",
-            "sounds/block/sculk/step4",
-            "sounds/block/sculk/step5",
-            "sounds/block/sculk/step6"
-         ]
-      },
       "fall.shroomlight" : {
          "category" : "player",
          "sounds" : [
@@ -4686,50 +4581,6 @@
             "sounds/step/sand5"
          ]
       },
-      "hit.sculk" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk/step1",
-            "sounds/block/sculk/step2",
-            "sounds/block/sculk/step3",
-            "sounds/block/sculk/step4",
-            "sounds/block/sculk/step5",
-            "sounds/block/sculk/step6"
-         ]
-      },
-      "hit.sculk_catalyst" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_catalyst/step1",
-            "sounds/block/sculk_catalyst/step2",
-            "sounds/block/sculk_catalyst/step3",
-            "sounds/block/sculk_catalyst/step4",
-            "sounds/block/sculk_catalyst/step5",
-            "sounds/block/sculk_catalyst/step6"
-         ]
-      },
-      "hit.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
-      "hit.sculk_shrieker" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk/step1",
-            "sounds/block/sculk/step2",
-            "sounds/block/sculk/step3",
-            "sounds/block/sculk/step4",
-            "sounds/block/sculk/step5",
-            "sounds/block/sculk/step6"
-         ]
-      },
       "hit.shroomlight" : {
          "category" : "block",
          "sounds" : [
@@ -5472,17 +5323,6 @@
             }
          ]
       },
-      "jump.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
       "jump.shroomlight" : {
          "category" : "player",
          "sounds" : [
@@ -5903,17 +5743,6 @@
             "sounds/jump/sand2",
             "sounds/jump/sand3",
             "sounds/jump/sand4"
-         ]
-      },
-      "land.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
          ]
       },
       "land.shroomlight" : {
@@ -7249,157 +7078,6 @@
             {
                "name" : "sounds/mob/fox/spit3",
                "volume" : 0.70
-            }
-         ]
-      },
-      "mob.frog.ambient" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/frog/idle1",
-               "volume" : 0.820
-            },
-            {
-               "name" : "sounds/mob/frog/idle2",
-               "volume" : 0.820
-            },
-            {
-               "name" : "sounds/mob/frog/idle3",
-               "volume" : 0.820
-            },
-            {
-               "name" : "sounds/mob/frog/idle4",
-               "volume" : 0.820
-            },
-            {
-               "name" : "sounds/mob/frog/idle5",
-               "volume" : 0.820
-            },
-            {
-               "name" : "sounds/mob/frog/idle6",
-               "volume" : 0.820
-            },
-            {
-               "name" : "sounds/mob/frog/idle7",
-               "volume" : 0.820
-            },
-            {
-               "name" : "sounds/mob/frog/idle8",
-               "volume" : 0.820
-            }
-         ]
-      },
-      "mob.frog.death" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/frog/death1",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/frog/death2",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/frog/death3",
-               "volume" : 0.650
-            }
-         ]
-      },
-      "mob.frog.eat" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/frog/eat1"
-            },
-            {
-               "name" : "sounds/mob/frog/eat2"
-            },
-            {
-               "name" : "sounds/mob/frog/eat3"
-            },
-            {
-               "name" : "sounds/mob/frog/eat4"
-            }
-         ]
-      },
-      "mob.frog.hurt" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/frog/hurt1",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/frog/hurt2",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/frog/hurt3",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/frog/hurt4",
-               "volume" : 0.650
-            }
-         ]
-      },
-      "mob.frog.jump_to_block" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/frog/long_jump1"
-            },
-            {
-               "name" : "sounds/mob/frog/long_jump2"
-            },
-            {
-               "name" : "sounds/mob/frog/long_jump3"
-            },
-            {
-               "name" : "sounds/mob/frog/long_jump4"
-            }
-         ]
-      },
-      "mob.frog.step" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/frog/step1",
-               "volume" : 1
-            },
-            {
-               "name" : "sounds/mob/frog/step2",
-               "volume" : 1
-            },
-            {
-               "name" : "sounds/mob/frog/step3",
-               "volume" : 1
-            },
-            {
-               "name" : "sounds/mob/frog/step4",
-               "volume" : 1
-            }
-         ]
-      },
-      "mob.frog.tongue" : {
-         "category" : "hostile",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/frog/tongue1",
-               "volume" : 1
-            },
-            {
-               "name" : "sounds/mob/frog/tongue2",
-               "volume" : 1
-            },
-            {
-               "name" : "sounds/mob/frog/tongue3",
-               "volume" : 1
-            },
-            {
-               "name" : "sounds/mob/frog/tongue4",
-               "volume" : 1
             }
          ]
       },
@@ -10153,40 +9831,6 @@
             "sounds/mob/strider/tempt5"
          ]
       },
-      "mob.tadpole.death" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/tadpole/death1",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/tadpole/death2",
-               "volume" : 0.650
-            }
-         ]
-      },
-      "mob.tadpole.hurt" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/tadpole/hurt1",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/tadpole/hurt2",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/tadpole/hurt3",
-               "volume" : 0.650
-            },
-            {
-               "name" : "sounds/mob/tadpole/hurt4",
-               "volume" : 0.650
-            }
-         ]
-      },
       "mob.turtle.ambient" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -11685,31 +11329,6 @@
             }
          ]
       },
-      "nearby_close.warden" : {
-         "category" : "hostile",
-         "sounds" : [
-            "sounds/mob/warden/nearby_close_1",
-            "sounds/mob/warden/nearby_close_2",
-            "sounds/mob/warden/nearby_close_3",
-            "sounds/mob/warden/nearby_close_4"
-         ]
-      },
-      "nearby_closer.warden" : {
-         "category" : "hostile",
-         "sounds" : [
-            "sounds/mob/warden/nearby_closer_1",
-            "sounds/mob/warden/nearby_closer_2",
-            "sounds/mob/warden/nearby_closer_3"
-         ]
-      },
-      "nearby_closest.warden" : {
-         "category" : "hostile",
-         "sounds" : [
-            "sounds/mob/warden/nearby_closest_1",
-            "sounds/mob/warden/nearby_closest_2",
-            "sounds/mob/warden/nearby_closest_3"
-         ]
-      },
       "note.banjo" : {
          "__use_legacy_max_distance" : "true",
          "category" : "record",
@@ -12181,46 +11800,6 @@
             "sounds/block/powder_snow/break7"
          ]
       },
-      "place.sculk" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk/place1",
-            "sounds/block/sculk/place2",
-            "sounds/block/sculk/place3",
-            "sounds/block/sculk/place4",
-            "sounds/block/sculk/place5"
-         ]
-      },
-      "place.sculk_catalyst" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_catalyst/place1",
-            "sounds/block/sculk_catalyst/place2",
-            "sounds/block/sculk_catalyst/place3",
-            "sounds/block/sculk_catalyst/place4",
-            "sounds/block/sculk_catalyst/place5"
-         ]
-      },
-      "place.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/place1",
-            "sounds/block/sculk_sensor/place2",
-            "sounds/block/sculk_sensor/place3",
-            "sounds/block/sculk_sensor/place4",
-            "sounds/block/sculk_sensor/place5"
-         ]
-      },
-      "place.sculk_shrieker" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_shrieker/place1",
-            "sounds/block/sculk_shrieker/place2",
-            "sounds/block/sculk_shrieker/place3",
-            "sounds/block/sculk_shrieker/place4",
-            "sounds/block/sculk_shrieker/place5"
-         ]
-      },
       "place.small_amethyst_bud" : {
          "category" : "block",
          "sounds" : [
@@ -12291,27 +11870,6 @@
          "__use_legacy_max_distance" : "true",
          "category" : "ambient",
          "sounds" : [ "sounds/portal/trigger" ]
-      },
-      "power.off.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/sculk_clicking_stop1",
-            "sounds/block/sculk_sensor/sculk_clicking_stop2",
-            "sounds/block/sculk_sensor/sculk_clicking_stop3",
-            "sounds/block/sculk_sensor/sculk_clicking_stop4",
-            "sounds/block/sculk_sensor/sculk_clicking_stop5"
-         ]
-      },
-      "power.on.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/sculk_clicking1",
-            "sounds/block/sculk_sensor/sculk_clicking2",
-            "sounds/block/sculk_sensor/sculk_clicking3",
-            "sounds/block/sculk_sensor/sculk_clicking4",
-            "sounds/block/sculk_sensor/sculk_clicking5",
-            "sounds/block/sculk_sensor/sculk_clicking6"
-         ]
       },
       "raid.horn" : {
          "__use_legacy_max_distance" : "true",
@@ -12847,16 +12405,6 @@
             "sounds/item/axe/scrape3"
          ]
       },
-      "shriek.sculk_shrieker" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_shrieker/shriek1",
-            "sounds/block/sculk_shrieker/shriek2",
-            "sounds/block/sculk_shrieker/shriek3",
-            "sounds/block/sculk_shrieker/shriek4",
-            "sounds/block/sculk_shrieker/shriek5"
-         ]
-      },
       "sign.dye.use" : {
          "__use_legacy_max_distance" : "true",
          "sounds" : [
@@ -12877,13 +12425,6 @@
             "sounds/item/ink_sac/ink_sac3"
          ]
       },
-      "slightly_angry.warden" : {
-         "category" : "hostile",
-         "sounds" : [
-            "sounds/mob/warden/slightly_angry_1",
-            "sounds/mob/warden/slightly_angry_2"
-         ]
-      },
       "smithing_table.use" : {
          "category" : "block",
          "sounds" : [
@@ -12893,16 +12434,6 @@
             },
             "sounds/random/smithing_table2",
             "sounds/random/smithing_table3"
-         ]
-      },
-      "spread.sculk" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk/spread1",
-            "sounds/block/sculk/spread2",
-            "sounds/block/sculk/spread3",
-            "sounds/block/sculk/spread4",
-            "sounds/block/sculk/spread5"
          ]
       },
       "step.amethyst_block" : {
@@ -13477,61 +13008,6 @@
             "sounds/step/sand3",
             "sounds/step/sand4",
             "sounds/step/sand5"
-         ]
-      },
-      "step.sculk" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk/step1",
-            "sounds/block/sculk/step2",
-            "sounds/block/sculk/step3",
-            "sounds/block/sculk/step4",
-            "sounds/block/sculk/step5",
-            "sounds/block/sculk/step6"
-         ]
-      },
-      "step.sculk_catalyst" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_catalyst/step1",
-            "sounds/block/sculk_catalyst/step2",
-            "sounds/block/sculk_catalyst/step3",
-            "sounds/block/sculk_catalyst/step4",
-            "sounds/block/sculk_catalyst/step5",
-            "sounds/block/sculk_catalyst/step6"
-         ]
-      },
-      "step.sculk_sensor" : {
-         "category" : "neutral",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
-         ]
-      },
-      "step.sculk_shrieker" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk/step1",
-            "sounds/block/sculk/step2",
-            "sounds/block/sculk/step3",
-            "sounds/block/sculk/step4",
-            "sounds/block/sculk/step5",
-            "sounds/block/sculk/step6"
-         ]
-      },
-      "step.sculk_vein" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk/step1",
-            "sounds/block/sculk/step2",
-            "sounds/block/sculk/step3",
-            "sounds/block/sculk/step4",
-            "sounds/block/sculk/step5",
-            "sounds/block/sculk/step6"
          ]
       },
       "step.shroomlight" : {
@@ -14167,17 +13643,6 @@
             "sounds/step/sand3",
             "sounds/step/sand4",
             "sounds/step/sand5"
-         ]
-      },
-      "use.sculk_sensor" : {
-         "category" : "block",
-         "sounds" : [
-            "sounds/block/sculk_sensor/step1",
-            "sounds/block/sculk_sensor/step2",
-            "sounds/block/sculk_sensor/step3",
-            "sounds/block/sculk_sensor/step4",
-            "sounds/block/sculk_sensor/step5",
-            "sounds/block/sculk_sensor/step6"
          ]
       },
       "use.shroomlight" : {

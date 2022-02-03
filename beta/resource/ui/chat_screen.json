@@ -157,25 +157,16 @@
   },
 
   // Messages Panel //
-
   "messages_text": {
-    "type": "panel",
-    "size": [ "100%", "100%c" ],
-    "controls": [
-      {
-        "text": {
-          "type": "label",
-          "color": "$chat_text_color",
-          "localize": false,
-          "size": [ "100%", "default" ],
-          "text": "#text",
-          "text_tts": "#text_tts",
-          "font_type": "$chat_font_type",
-          "font_scale_factor": "$chat_font_scale_factor",
-          "line_padding": "$chat_line_spacing"
-        }
-      }
-    ],
+    "type": "label",
+    "color": "$chat_text_color",
+    "localize": false,
+    "size": [ "100%", "default" ],
+    "text": "#text",
+    "text_tts": "#text_tts",
+    "font_type": "$chat_font_type",
+    "font_scale_factor": "$chat_font_scale_factor",
+    "line_padding": "$chat_line_spacing",
     "bindings": [
       {
         "binding_name": "#chat_visible",

@@ -792,19 +792,45 @@
           "size": [ "100%", "100%c" ],
           "controls": [
             {
+              "option_slider_0@settings_common.option_slider": {
+                "$option_label": "#touch_sensitivity_slider_label",
+                "$slider_name": "touch_sensitivity",
+                "$slider_value_binding_name": "#touch_sensitivity",
+                "$slider_tts_text_value": "#touch_sensitivity_text_value",
+                "$option_enabled_binding_name": "#touch_sensitivity_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "(not #touch_controls_v2)",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "option_slider_damen@settings_common.option_slider": {
+                "$option_label": "#spyglass_touch_dampening_slider_label",
+                "$slider_name": "spyglass_touch_dampening",
+                "$slider_value_binding_name": "#spyglass_touch_dampening",
+                "$slider_tts_text_value": "#spyglass_touch_dampening_text_value",
+                "$option_enabled_binding_name": "#touch_sensitivity_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
               "option_toggle_invert_y@settings_common.option_toggle": {
                 "$option_label": "options.invertYAxis",
                 "$option_binding_name": "#touch_invert_y_axis",
                 "$option_enabled_binding_name": "#touch_invert_y_axis_enabled",
                 "$toggle_name": "touch_invert_y_axis"
-              }
-            },
-            {
-              "option_toggle_left_handed@settings_common.option_toggle": {
-                "$option_label": "options.lefthanded",
-                "$option_binding_name": "#left_handed",
-                "$option_enabled_binding_name": "#left_handed_enabled",
-                "$toggle_name": "left_handed"
               }
             },
             {
@@ -820,7 +846,13 @@
                 "$option_label": "options.toggleCrouch",
                 "$option_binding_name": "#touch_toggle_crouch",
                 "$option_enabled_binding_name": "#touch_toggle_crouch_enabled",
-                "$toggle_name": "touch_toggle_crouch"
+                "$toggle_name": "touch_toggle_crouch",
+                "bindings": [
+                  {
+                    "binding_name": "#touch_controls_v2",
+                    "binding_name_override": "#visible"
+                  }
+                ]
               }
             },
             {
@@ -936,48 +968,6 @@
               }
             },
             {
-              "hotbar_only_touch_toggle@settings_common.option_toggle": {
-                "$option_label": "options.hotbarOnlyTouch",
-                "$option_binding_name": "#hotbar_only_touch",
-                "$option_enabled_binding_name": "#hotbar_only_touch_enabled",
-                "$toggle_name": "hotbar_only_touch"
-              }
-            },
-            {
-              "option_slider_0@settings_common.option_slider": {
-                "$option_label": "#touch_sensitivity_slider_label",
-                "$slider_name": "touch_sensitivity",
-                "$slider_value_binding_name": "#touch_sensitivity",
-                "$slider_tts_text_value": "#touch_sensitivity_text_value",
-                "$option_enabled_binding_name": "#touch_sensitivity_enabled",
-                "$label_bindings": [
-                  {
-                    "binding_name": "$option_label"
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "(not #touch_controls_v2)",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            },
-            {
-              "option_slider_damen@settings_common.option_slider": {
-                "$option_label": "#spyglass_touch_dampening_slider_label",
-                "$slider_name": "spyglass_touch_dampening",
-                "$slider_value_binding_name": "#spyglass_touch_dampening",
-                "$slider_tts_text_value": "#spyglass_touch_dampening_text_value",
-                "$option_enabled_binding_name": "#touch_sensitivity_enabled",
-                "$label_bindings": [
-                  {
-                    "binding_name": "$option_label"
-                  }
-                ]
-              }
-            },
-            {
               "option_toggle_use_touchpad@settings_common.option_toggle": {
                 "$option_label": "options.usetouchpad",
                 "$option_binding_name": "#split_controls",
@@ -992,6 +982,14 @@
               }
             },
             {
+              "option_toggle_left_handed@settings_common.option_toggle": {
+                "$option_label": "options.lefthanded",
+                "$option_binding_name": "#left_handed",
+                "$option_enabled_binding_name": "#left_handed_enabled",
+                "$toggle_name": "left_handed"
+              }
+            },
+            {
               "option_toggle_swap_jump_and_sneak@settings_common.option_toggle": {
                 "$option_label": "options.swapJumpAndSneak",
                 "$option_binding_name": "#swap_jump_and_sneak",
@@ -1003,6 +1001,14 @@
                     "binding_name_override": "#visible"
                   }
                 ]
+              }
+            },
+            {
+              "hotbar_only_touch_toggle@settings_common.option_toggle": {
+                "$option_label": "options.hotbarOnlyTouch",
+                "$option_binding_name": "#hotbar_only_touch",
+                "$option_enabled_binding_name": "#hotbar_only_touch_enabled",
+                "$toggle_name": "hotbar_only_touch"
               }
             },
             {

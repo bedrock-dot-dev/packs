@@ -29,7 +29,7 @@
     "$default_text_color": [ 0.7, 0.7, 0.7 ],
     "$screen_content": "persona.emote_wheel_screen_content",
     "$screen_bg_content": "emote_wheel_touch_zone",
-    "$is_full_screen_layout": true,
+    "$is_full_screen_layout": false,
     "gamepad_cursor_deflection_mode": true
   },
 

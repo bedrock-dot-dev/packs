@@ -586,7 +586,7 @@
           "type": "image",
           "texture": "textures/ui/Black",
           "alpha": 0.7,
-          "size": [ "100%", "100%c" ],
+          "size": [ "100%", "100%c + 4px" ], // Wee bit of padding to account for emoticons 
           "anims": [
             "@hud.anim_chat_bg_wait"
           ],
@@ -595,7 +595,7 @@
               "chat_text@chat_label": {
                 "anchor_from": "top_left",
                 "anchor_to": "top_left",
-                "offset": [ 2, 0 ]
+                "offset": [ 2, 2 ]
               }
             }
           ]
