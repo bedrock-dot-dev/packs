@@ -3,6 +3,7 @@
 
   "cloud_upload_screen@progress.progress_screen": {
     "$screen_content": "cloud_upload.screen_content",
+    "$cloud_upload_progress_screen_size": [ 290, 200 ],
     "force_render_below": false,
     "should_be_skipped_during_automation": true
   },

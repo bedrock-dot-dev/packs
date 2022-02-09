@@ -360,6 +360,69 @@
     ],
     "controls": [
       {
+        // 2021-11-25 v-raskal, adding this button and dividier for the duration
+        // of the Ore UI Create New World screen opt-in beta testing. Once the
+        // beta phase is over this button and divider should be removed
+        "new_ui_switch_button_options_panel": {
+          "type": "stack_panel",
+          "ignored": "$education_edition",
+          "orientation": "vertical",
+          "size": [ "100%", "100%c + 4px" ],
+          "bindings": [
+            {
+              "binding_name": "#show_new_cnw_beta_opt_in",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "option_info_label@settings_common.option_group_label": {
+                "$text": "options.newUiCreateNewWorld.title"
+              }
+            },
+            {
+              "option_text_label@settings_common.option_group_label": {
+                "$text": "options.newUiCreateNewWorld.info"
+              }
+            },
+            {
+              "unlock_template_options_button@settings_common.action_button": {
+                "size": [ "100%", 30 ],
+                "$button_text": "options.newUiCreateNewWorld.initiate",
+                "$pressed_button_name": "switch_to_new_ui_create_new_world",
+                "$focus_override_right": "FOCUS_OVERRIDE_STOP"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "dividerNewUiSwitchButton": {
+          "type": "panel",
+          "size": [ "100%", "100%c + 14px" ],
+          "bindings": [
+            {
+              "binding_name": "#show_new_cnw_beta_opt_in",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "section_divider": {
+                "type": "image",
+                "size": [ "100% - 30px", 1 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 3,
+                "texture": "textures/ui/list_item_divider_line_light"
+              }
+            }
+          ]
+        }
+      },
+
+
+      {
         "unlock_template_options_panel": {
           "type": "stack_panel",
           "orientation": "vertical",
@@ -1586,19 +1649,18 @@
       },
       {
         "platform_settings_dropdown@settings_common.option_dropdown": {
-          "ignored": "(not $nx_os and not $is_ps4)",
           "$show_option_label": true,
           "$option_label": "options.thirdPartyConsoleVisible",
           "$dropdown_content": "world_section.platform_broadcast_dropdown_content",
           "$dropdown_area": "content_area",
           "$dropdown_name": "platform_broadcast_dropdown",
           "$options_dropdown_toggle_label_binding": "#platform_broadcast_dropdown_toggle_label",
-          "$option_enabled_binding_name": "#platform_show_broadcast_dropdown",
+          "$option_enabled_binding_name": "#platform_broadcast_dropdown_enabled",
           "$dropdown_scroll_content_size": [ "100%", 60 ],
           "bindings": [
             {
-              "binding_name": "#can_be_platform_network_enabled",
-              "binding_name_override": "#enabled"
+              "binding_name": "#platform_settings_dropdown_visible",
+              "binding_name_override": "#visible"
             }
           ]
         }
@@ -1738,6 +1800,8 @@
     "$tts_section_header": "createWorldScreen.worldSettings",
     "$toggle_tts_header_binding_type": "collection",
     "$toggle_tts_header_binding_collection_name": "experimental_toggles",
+    "$toggle_tts_inherit_siblings": true,
+    "$toggle_tts_type_priority" : 100,
     "$option_label": "#text",
     "$option_binding_name": "#experimental_toggle_value",
     "$option_enabled_binding_name": "#experimental_toggle_enabled",

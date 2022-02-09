@@ -7,8 +7,8 @@
   Requires:
     - #rarity_bar_texture
     - #rarity_bar_visible
-    - $item_binding_type
-    - $item_collection_name
+    - $persona_piece_binding_type
+    - $persona_piece_collection_name
 
   Bindings:
     - #rarity_bar_texture
@@ -24,14 +24,19 @@
     "texture": "#rarity_bar_texture",
     "bindings": [
       {
-        "binding_type": "$item_binding_type",
-        "binding_collection_name": "$item_collection_name",
+        "binding_type": "$piece_section_collection_details",
+        "binding_collection_name": "$piece_section_collection_name",
+        "binding_collection_prefix": "$piece_section_collection_prefix"
+      },
+      {
+        "binding_type": "$persona_piece_binding_type",
+        "binding_collection_name": "$persona_piece_collection_name",
         "binding_name": "#rarity_bar_texture",
         "binding_name_override": "#texture"
       },
       {
-        "binding_type": "$item_binding_type",
-        "binding_collection_name": "$item_collection_name",
+        "binding_type": "$persona_piece_binding_type",
+        "binding_collection_name": "$persona_piece_collection_name",
         "binding_name": "#rarity_bar_visible",
         "binding_name_override": "#visible"
       }
@@ -61,7 +66,7 @@
     "type": "image",
     "$rarity_color_background_texture|default": "textures/ui/White",
     "texture": "$rarity_color_background_texture",
-    "$rarity_background_alpha|default": 0.4,
+    "$rarity_background_alpha|default": 1,
     "alpha": "$rarity_background_alpha",
 
     "property_bag": {
@@ -72,9 +77,18 @@
       "#legendary": "$rarity_legendary_bg_color"
     },
 
+    "$rarity_section_collection_details|default": "none",
+    "$rarity_section_collection_prefix|default": "",
+    "$rarity_section_collection_name|default": "",
+
     "$rarity_binding_type|default": "global",
     "$rarity_collection_name|default": "none",
     "$rarity_background_bindings|default": [
+      {
+        "binding_type": "$rarity_section_collection_details",
+        "binding_collection_name": "$rarity_section_collection_name",
+        "binding_collection_prefix": "$rarity_section_collection_prefix"
+      },
       {
         "binding_type": "$rarity_binding_type",
         "binding_collection_name": "$rarity_collection_name",
@@ -102,9 +116,9 @@
     - $item_content_control
         Child control to be placed over the image. (Extra icons, status symbols,
         ...). Default is empty panel.
-    - $item_binding_type
+    - $persona_piece_binding_type
         The binding type for all the bindings in this control. Default is `global`
-    - $item_collection_name
+    - $persona_piece_collection_name
         The collection name to use for all bindings in this control. Default is `none`
     - $item_texture_file_system_binding_name
         Binding name for the file system binding. Default is 
@@ -124,17 +138,18 @@
     - #rarity_bar_visible
         If the bar is visible or not
   */
-  "item_display@common.empty_panel": {
+  "piece_item_display@common.empty_panel": {
     "$item_display_size|default": [ "100%", "100%" ],
     "size": "$item_display_size",
     "$is_loading|default": false,
     "$item_content_control|default": "common.empty_panel",
-    "$item_binding_type|default": "global",
-    "$item_collection_name|default": "none",
-    "$item_texture_file_system_binding_name|default": "#persona_item_image_file_system",
-    "$item_texture_path_binding_name|default": "#persona_item_image_path",
     "$ignore_background|default": false,
     "$ignore_rarity_bar|default": false,
+
+    "$piece_section_collection_details|default": "none",
+    "$piece_section_collection_prefix|default": "",
+    "$piece_section_collection_name|default": "",
+
     "controls": [
       {
         "item_renderer@common.empty_panel": {
@@ -144,8 +159,12 @@
               "background@persona_common.item_rarity_color_background": {
                 "ignored": "$ignore_background",
                 "$rarity_color_background_texture": "textures/ui/button_borderless_light",
-                "$rarity_binding_type": "$item_binding_type",
-                "$rarity_collection_name": "$item_collection_name"
+                "$rarity_binding_type": "$persona_piece_binding_type",
+                "$rarity_collection_name": "$persona_piece_collection_name",
+
+                "$rarity_section_collection_details": "$piece_section_collection_details",
+                "$rarity_section_collection_prefix": "$piece_section_collection_prefix",
+                "$rarity_section_collection_name": "$piece_section_collection_name"
               }
             },
             {
@@ -158,15 +177,20 @@
                 "anchor_from": "top_middle",
                 "bindings": [
                   {
-                    "binding_type": "$item_binding_type",
-                    "binding_collection_name": "$item_collection_name",
-                    "binding_name": "$item_texture_file_system_binding_name",
+                    "binding_type": "$piece_section_collection_details",
+                    "binding_collection_name": "$piece_section_collection_name",
+                    "binding_collection_prefix": "$piece_section_collection_prefix"
+                  },
+                  {
+                    "binding_type": "$persona_piece_binding_type",
+                    "binding_collection_name": "$persona_piece_collection_name",
+                    "binding_name": "#thumbnail_texture_file_system",
                     "binding_name_override": "#texture_file_system"
                   },
                   {
-                    "binding_type": "$item_binding_type",
-                    "binding_collection_name": "$item_collection_name",
-                    "binding_name": "$item_texture_path_binding_name",
+                    "binding_type": "$persona_piece_binding_type",
+                    "binding_collection_name": "$persona_piece_collection_name",
+                    "binding_name": "#thumbnail_texture_path",
                     "binding_name_override": "#texture"
                   }
                 ]

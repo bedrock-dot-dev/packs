@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:hoglin",
@@ -382,6 +382,8 @@
         "priority": 8,
         "look_distance": 6.0,
         "probability": 0.02
+      },
+      "minecraft:balloonable": {
       },
       "minecraft:physics": {
       },

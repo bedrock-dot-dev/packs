@@ -5,6 +5,20 @@
   // Common controls
   //---------------------------------------------------------------------------
 
+  "empty_panel": {
+    "type": "panel"
+  },
+
+  "horizontal_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal"
+  },
+
+  "vertical_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical"
+  },
+
   "button": {
     "type": "button",
 
@@ -353,6 +367,7 @@
     "$toggle_tts_toggle_off_text|default": "accessibility.state.off",
     "$toggle_tts_type_priority|default": -100,
     "$toggle_tts_index_priority|default": 150,
+    "$toggle_tts_inherit_siblings|default": false,
     "$tts_section_header|default": "",
 
     "$ignore_tts_enabled_bind|default": false,
@@ -383,6 +398,7 @@
     "tts_override_control_value": "$toggle_tts_override_toggle_value",
     "tts_control_type_order_priority": "$toggle_tts_type_priority",
     "tts_index_priority": "$toggle_tts_index_priority",
+    "tts_inherit_siblings": "$toggle_tts_inherit_siblings",
 
     "button_mappings": [
       {
@@ -2277,6 +2293,7 @@
     "$keyboard_description|default": "common.keyboard_helper_description",
     "$keyboard_helper_visible_binding|default": "#keyboard_helper_visible",
     "$keyboard_character|default": "",
+    "$keyboard_description_max_size|default": [ "default", "default" ],
     "bindings": [
       {
         "binding_name": "$keyboard_helper_visible_binding",
@@ -2307,7 +2324,11 @@
           "type": "panel",
           "size": [ "100%c + 2px", 13 ],
           "controls": [
-            { "desc@$keyboard_description": {} }
+            {
+              "desc@$keyboard_description": {
+                "max_size": "$keyboard_description_max_size"
+              }
+            }
           ]
         }
       }
@@ -2868,6 +2889,12 @@
                     "binding_name_override": "#hover_text",
                     "binding_type": "collection",
                     "binding_collection_name": "$item_collection_name"
+                  },
+                  {
+                    "binding_name": "#hover_items_id",
+                    "binding_name_override": "#hover_items_id",
+                    "binding_type": "collection",
+                    "binding_collection_name": "$item_collection_name"
                   }
                 ]
               }
@@ -3272,9 +3299,6 @@
   // Scroll
   //---------------------------------------------------------------------------
 
-  "empty_panel": {
-    "type": "panel"
-  },
 
   "empty_panel_size_y_0": {
     "type": "panel",
@@ -4066,6 +4090,15 @@
         "item_lock_cell_image@common.item_lock_cell_image": {
           "layer": 2
         }
+      },
+      {
+        "item_container_transfer_mode_overlay@common.item_container_transfer_mode_overlay": {
+          "size": "$item_renderer_size",
+          "offset": [ 1, 1 ],
+          "anchor_to": "top_left",
+          "anchor_from": "top_left",
+          "layer": 10
+        }
       }
     ]
   },
@@ -4131,6 +4164,29 @@
         "binding_name_override": "#visible",
         "binding_type": "collection",
         "binding_collection_name": "$item_collection_name"
+      }
+    ]
+  },
+
+  "item_container_transfer_mode": {
+    "type": "image",
+    "texture": "textures/ui/item_container_transfer_mode"
+  },
+
+  "item_container_transfer_mode_overlay": {
+    "type": "panel",
+    "controls": [
+      {
+        "item_container_transfer_mode@common.item_container_transfer_mode": {
+          "bindings": [
+            {
+              "binding_name": "#item_container_transfer_mode",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            }
+          ]
+        }
       }
     ]
   },
@@ -4507,6 +4563,25 @@
             {
               "binding_name": "#inventory_selected_item_lock_in_slot",
               "binding_name_override": "#visible",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "inventory_item_container_transfer_mode_overlay": {
+    "type": "panel",
+    "size": [ 21, 21 ],
+    "offset": [ -1, -2 ],
+    "layer": 55,
+    "controls": [
+      {
+        "item_container_transfer_mode@common.item_container_transfer_mode": {
+          "bindings": [
+            {
+              "binding_name": "#item_container_transfer_mode",
               "binding_condition": "always"
             }
           ]
@@ -5127,7 +5202,6 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$cloud_upload_progress_screen_size": [ 290, 200 ],
               "$storage_migration_progress_size": [ 290, 100 ]
             },
             // PE edition and VR
@@ -5175,7 +5249,6 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$cloud_upload_progress_screen_size": [ 290, 200 ],
               "$storage_migration_progress_size": [ 290, 100 ]
             }
           ],

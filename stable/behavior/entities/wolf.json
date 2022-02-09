@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.18.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:wolf",
@@ -246,6 +246,9 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
+        }, 
+        "minecraft:balloonable": {
+          "mass": 0.8
         }
       }
     },

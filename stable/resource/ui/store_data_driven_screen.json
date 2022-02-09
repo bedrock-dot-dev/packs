@@ -1001,6 +1001,7 @@
     "alpha": "@common_store.screen_fade_in_alpha_anim",
     "propagate_alpha": true,
     "disable_anim_fast_forward": true,
+    "$ignore_inventory_button": "$is_sidebar_navigation_enabled",
     "controls": [
       {
         "main_panel@common_store.store_header_with_coins": {

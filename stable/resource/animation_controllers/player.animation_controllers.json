@@ -108,7 +108,12 @@
 			"states" : {
 				"first_person" : {
 					"animations" : [
-						"first_person_swap_item",
+						{
+							"first_person_swap_item": "!query.blocking"
+						},
+						{
+							"first_person_shield_block": "query.blocking"
+						},
 						{
 							"first_person_attack_controller" : "variable.attack_time > 0.0f && query.get_equipped_item_name != 'map'"
 						},

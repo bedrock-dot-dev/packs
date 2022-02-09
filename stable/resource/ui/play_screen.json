@@ -117,8 +117,7 @@
     "size": [ "100%", "default" ],
     "layer": 1,
     "anchor_to": "top_left",
-    "anchor_from": "top_left",
-    "ttsSectionContainer": true
+    "anchor_from": "top_left"
   },
 
   //---------------------------------------------------------------------------
@@ -2560,7 +2559,7 @@
         }
       },
       {
-        "nagivation_panel": {
+        "navigation_panel": {
           "type": "stack_panel",
           "orientation": "horizontal",
           "size": [ "100%", 15 ],
@@ -4239,7 +4238,7 @@
   },
 
   "add_server_toggle_button@common_toggles.light_text_toggle": {
-    "visible": "(not $is_console)",
+    "visible": "(not $ignore_add_servers)",
     "size": [ "100%", 20 ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -5145,9 +5144,10 @@
                 "size": [ "100% - 6px", "100%c + 1px" ],
                 "offset": [ 0, 2 ],
                 "$label_offset": [ 1, 0 ],
-                "$label_content_label": "localWorld.no_local_worlds_present_external",
+                "$label_content_label": "#no_local_worlds_help_label",
+                "$label_content_label_binding_type": "global",
                 "$label_content_content": "play.no_local_worlds_launch_help",
-                "$information_panel_label_text": "localWorld.no_local_worlds_present_external",
+                "$information_panel_label_text": "#no_local_worlds_help_label",
                 "bindings": [
                   {
                     "binding_name": "#no_local_world_help_visible",
@@ -5167,10 +5167,11 @@
       }
     ]
   },
-  
+
   "no_local_worlds_launch_help@common_buttons.light_text_button": {
     "$pressed_button_name": "button.no_local_worlds_launch_help",
-	"$button_text": "localWorld.no_local_worlds_button_label",
+    "$button_text": "#no_local_worlds_launch_help_button_label",
+    "$button_text_binding_type": "global",
     "size": [ "100%", 29 ]
   },
 
@@ -5989,10 +5990,10 @@
     "anchor_to": "top_left",
     "focus_container": true,
     "use_last_focus": true,
-    "focus_nagivation_mode_down": "contained",
-    "focus_nagivation_mode_up": "contained",
-    "focus_nagivation_mode_right": "contained",
-    "focus_nagivation_mode_left": "contained"
+    "focus_navigation_mode_down": "contained",
+    "focus_navigation_mode_up": "contained",
+    "focus_navigation_mode_right": "contained",
+    "focus_navigation_mode_left": "contained"
   },
 
   "scrolling_offsets@play.common_scrolling_panel": {
@@ -6589,7 +6590,7 @@
           "focus_change_right": "FOCUS_OVERRIDE_STOP",
           "bindings": [
             {
-              "binding_name": "(not #gamepad_helper_visible)",
+              "binding_name": "(not #exit_button_visible)",
               "binding_name_override": "#visible"
             }
           ]
