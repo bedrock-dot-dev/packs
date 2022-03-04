@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.10",
+  "format_version": "1.18.20",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:zoglin",
@@ -16,7 +16,7 @@
         "minecraft:is_baby": {
         },
         "minecraft:attack": {
-          "damage": 1
+          "damage": 0.5
         },
         "minecraft:scale": {
           "value": 0.5

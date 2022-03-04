@@ -297,7 +297,7 @@
       "minecraft:can_climb": {
       },
       "minecraft:attack": {
-        "damage": 3
+        "damage": 4
       },
       "minecraft:healable": {
         "items": [

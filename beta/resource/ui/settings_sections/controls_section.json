@@ -802,12 +802,6 @@
                   {
                     "binding_name": "$option_label"
                   }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "(not #touch_controls_v2)",
-                    "binding_name_override": "#visible"
-                  }
                 ]
               }
             },
@@ -821,6 +815,20 @@
                 "$label_bindings": [
                   {
                     "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
+              "option_show_action_button@settings_common.option_toggle": {
+                "$option_label": "options.showActionButton",
+                "$option_binding_name": "#show_action_button",
+                "$option_enabled_binding_name": "#show_action_button_enabled",
+                "$toggle_name": "show_action_button",
+                "bindings": [
+                  {
+                    "binding_name": "#touch_controls_v2_crosshair_mode",
+                    "binding_name_override": "#visible"
                   }
                 ]
               }
@@ -951,20 +959,6 @@
                 "$option_binding_name": "#touch_vibration",
                 "$option_enabled_binding_name": "#touch_vibration_enabled",
                 "$toggle_name": "touch_vibration"
-              }
-            },
-            {
-              "option_show_action_button@settings_common.option_toggle": {
-                "$option_label": "options.showActionButton",
-                "$option_binding_name": "#show_action_button",
-                "$option_enabled_binding_name": "#show_action_button_enabled",
-                "$toggle_name": "show_action_button",
-                "bindings": [
-                  {
-                    "binding_name": "#touch_controls_v2_crosshair_mode",
-                    "binding_name_override": "#visible"
-                  }
-                ]
               }
             },
             {

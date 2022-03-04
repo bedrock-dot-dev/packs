@@ -1353,7 +1353,7 @@
           "anchor_from": "center",
           "anchor_to": "center",
           "color": "$tool_tip_text",
-          "layer": 1,
+          "layer": 31,
           "text": "$actionbar_text",
           "localize": false,
           "alpha": "@hud.anim_actionbar_text_alpha_out"
@@ -1490,7 +1490,7 @@
                 "anchor_to": "top_middle",
                 "color": "$title_command_text_color",
                 "text": "#text",
-                "layer": 1,
+                "layer": 31,
                 "localize": false,
                 "font_size": "extra_large",
                 "variables": [
@@ -1549,7 +1549,7 @@
                 "anchor_to": "top_middle",
                 "color": "$title_command_text_color",
                 "text": "#text",
-                "layer": 1,
+                "layer": 31,
                 "localize": false,
                 "font_size": "large",
                 "variables": [
@@ -1999,7 +1999,7 @@
 
   "emote_label_background": {
     "type": "image",
-    "size": [ 100, 20 ],
+    "size": [ 100, 24 ],
     "texture": "textures/ui/Black",
     "alpha": 0.7,
     "layer": 0
@@ -2008,28 +2008,30 @@
   "emote_tip@hud.emote_label_background": {
     "controls": [
       {
-        "emote_keyboard_helper@common.keyboard_helper_keys": {
-          "layer": 100,
-          "$keyboard_character": "$keyboard_keyname",
-          "$text_color": "$generic_button_text_color",
-          "$description_bind": "$emote_tip_description",
-          "$keyboard_description_max_size": [ 100, 40 ],
-          "anchor_from": "left_middle",
-          "anchor_to": "left_middle"
+        "emote_keyboard_centerer": {
+          "type": "panel",
+          "size": [ 100, 26 ],
+          "controls": [
+            {
+              "emote_keyboard_helper@common.keyboard_helper_keys": {
+                "layer": 100,
+                "$icon_size_panel": [ 17, "100%" ],
+                "$keyboard_helper_size": [ 96, 24 ],              // 96 to create a small horizontal margin in the 100 size panel
+                "$keyboard_character": "$keyboard_keyname",
+                "$text_color": "$generic_button_text_color",
+                "$description_bind": "$emote_tip_description",
+                "$keyboard_description_max_size": [ 79, "100%" ]  // 79 To account for the size of the image
+              }
+            }
+          ]
         }
       },
       {
         "emote_gamepad_helper@$gamepad_helper_button_name": {
           "$icon_description_bind": "$emote_tip_description",
-          "$gamepad_description_max_size": [ 100, 40 ],
+          "$gamepad_description_max_size": [ 79, 24 ],            // 79 To account for the size of the image
           "anchor_from": "left_middle",
           "anchor_to": "left_middle"
-        }
-      },
-      {
-        "emote_tooltip_padding": {
-          "type": "panel",
-          "size": [ 0, 6 ]
         }
       }
     ]

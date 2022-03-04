@@ -279,63 +279,89 @@
           "size": [ "100%", "100%c" ],
           "controls": [
             {
-              "instruction_label_gamepad": {
-                "type": "label",
-                "size": [ "80%", 28 ],
-                "color": "$emote_screen_gamepad_instruction_colors",
-                "text_alignment": "center",
-                "text": "#emote_screen_instructions",
-                "font_type": "MinecraftSeven",
-                "line_padding": 5.0,
-                "shadow": true,
-                "bindings": [
-                  {
-                    "binding_name": "#emote_screen_instructions",
-                    "binding_condition": "always"
-                  },
-                  {
-                    "binding_name": "#is_using_gamepad",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            },
-            {
-              "instruction_label_keyboard": {
-                "type": "label",
-                "size": [ "80%", 20 ],
-                "color": "$generic_button_text_color",
-                "text_alignment": "center",
-                "text": "emotes.instructions_keyboard",
-                "line_padding": 5.0,
-                "shadow": true,
-                "bindings": [
-                  {
-                    "binding_name": "#is_using_mouse",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "gamepad_helper_panel": {
-          "type": "panel",
-          "size": [ "100%", "100%c" ],
-          "controls": [
-            {
-              "gamepad_helpers@common.empty_panel": {
-                "type": "stack_panel",
-                "orientation": "horizontal",
-                "size": [ "100%c", "100%cm" ],
+              "instruction_background": {
+                "type": "image",
+                "texture": "textures/ui/Black",
+                "alpha": 0.7,
+                "size": [ "100%c + 10px", "100%c + 14px" ],
+                "min_size": [ 1 , "100%c + 14px" ],
+                "max_size": [ "100%c + 10px", "100%c + 14px" ],
                 "controls": [
                   {
-                    "gamepad_start@common.gamepad_helper_start": {}
+                    "gamepad_instruction_stack": {
+                      "type": "stack_panel",
+                      "orientation": "vertical",
+                      "size": [ "100%cm", "100%c" ],
+                      "controls": [
+                        {
+                          "instruction_label_gamepad": {
+                            "type": "label",
+                            "size": [ "default", "default" ],
+                            "max_size": [ 300, 28 ],
+                            "offset": [ 0, -3 ],
+                            "layer": 2,
+                            "color": "$emote_screen_gamepad_instruction_colors",
+                            "text_alignment": "center",
+                            "text": "#emote_screen_instructions",
+                            "font_type": "MinecraftSeven",
+                            "line_padding": 5.0,
+                            "shadow": true,
+                            "bindings": [
+                              {
+                                "binding_name": "#emote_screen_instructions",
+                                "binding_condition": "always"
+                              },
+                              {
+                                "binding_name": "#is_using_gamepad",
+                                "binding_name_override": "#visible"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "gamepad_helpers@common.empty_panel": {
+                            "size": [ "100%sm", "100%c" ],
+                            "controls": [
+                              {
+                                "gamepad_helper_stack": {
+                                  "type": "stack_panel",
+                                  "orientation": "horizontal",
+                                  "size": [ "100%c", "100%cm" ],
+                                  "offset": [ 0, 2 ],
+                                  "controls": [
+                                    {
+                                      "gamepad_start@common.gamepad_helper_start": {}
+                                    },
+                                    {
+                                      "gamepad_dpad_left@common.gamepad_helper_dpad_left": {}
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
                   },
                   {
-                    "gamepad_dpad_left@common.gamepad_helper_dpad_left": {}
+                    "instruction_label_keyboard": {
+                      "type": "label",
+                      "size": [ "default", "default" ],
+                      "max_size": [ 300, 20 ],
+                      "layer": 2,
+                      "color": "$generic_button_text_color",
+                      "text_alignment": "center",
+                      "text": "emotes.instructions_keyboard",
+                      "line_padding": 5.0,
+                      "shadow": true,
+                      "bindings": [
+                        {
+                          "binding_name": "#is_using_mouse",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -346,7 +372,7 @@
       {
         "dressing_room_button_panel": {
           "type": "panel",
-          "size": [ "100%", 23 ],
+          "size": [ "100%", 27 ],
           "bindings": [
             {
               "binding_name": "(not #is_using_gamepad)",
@@ -357,7 +383,7 @@
             {
               "dressing_room_button@common_buttons.light_text_button": {
                 "$pressed_button_name": "button.dressing_room",
-                "size": [ 120, "100%" ],
+                "size": [ 120, 23 ],
                 "enabled": "(not $store_disabled)",
                 "$button_text": "emotes.change_emotes",
                 "$default_text_color": "$light_button_default_text_color",

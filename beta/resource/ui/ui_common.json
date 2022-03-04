@@ -2293,10 +2293,15 @@
   "keyboard_helper": {
     "type": "stack_panel",
     "orientation": "horizontal",
-    "size": [ "100%c", 13 ],
+    "$keyboard_helper_size|default": [ "100%c", 13 ],
+    "size": "$keyboard_helper_size",
     "layer": -1,
     "$text": "",
     "$text_color": [ 0.0, 0.0, 0.0 ],
+    "$icon_size|default": [ 17, 17 ],
+    "$icon_size_panel|default": [ 17, 17 ],
+    "$icon_label_size|default": [ "default", 10 ],
+    "$icon_label_offset|default": [ 0, 0 ],
     "$hide_description|default": false,
     "$ignore_image|default": false,
     "$keyboard_description|default": "common.keyboard_helper_description",
@@ -2311,17 +2316,29 @@
     ],
     "controls": [
       {
-        "image@common.keyboard_helper_icon_image": {
-          "size": [ 17, 17 ],
+        "image_centerer": {
           "ignored": "$ignore_image",
+          "type": "panel",
+          "size": "$icon_size_panel",
           "controls": [
             {
-              "keyboard_character": {
-                "type": "label",
-                "size": [ "default", 10 ],
-                "text": "$keyboard_character",
-                "color": "$text_color",
-                "layer": 1
+              "image@common.keyboard_helper_icon_image": {
+                "size": "$icon_size",
+
+                "controls": [
+                  {
+                    "keyboard_character": {
+                      "type": "label",
+                      "size": "$icon_label_size",
+                      "offset": "$icon_label_offset",
+                      "text": "$keyboard_character",
+                      "color": "$text_color",
+                      "layer": 1,
+                      "$keyboard_character_bindings|default": [],
+                      "bindings": "$keyboard_character_bindings"
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -2331,7 +2348,7 @@
         "centerer": {
           "ignored": "($hide_description)",
           "type": "panel",
-          "size": [ "100%c + 2px", 13 ],
+          "size": [ "100%c + 2px", "100%" ],
           "controls": [
             {
               "desc@$keyboard_description": {
@@ -5235,7 +5252,8 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$storage_migration_progress_size": [ 290, 100 ]
+              "$storage_migration_progress_size": [ 290, 100 ],
+              "$store_modal_screen_size": [ "80%", "80%" ]
             },
             // PE edition and VR
             {
@@ -5282,7 +5300,8 @@
               "$day_one_experience_import_progress_screen_size": [ "80%", "90%" ], // Day One Experience import progress modal screen
               "$world_conversion_complete_screen_size": [ 290, 160 ], // World Conversion complete modal screen
               "$gamepad_disconnect_screen_size": [ 300, 100 ], //custom gamepad disconnected modal size, to contain all languages in title
-              "$storage_migration_progress_size": [ 290, 100 ]
+              "$storage_migration_progress_size": [ 290, 100 ],
+              "$store_modal_screen_size": [ "100% - 20px", "100% - 20px" ]
             }
           ],
           "button_mappings": [

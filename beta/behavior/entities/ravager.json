@@ -153,6 +153,11 @@
                     "subject": "other",
                     "test": "is_family",
                     "value": "irongolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wandering_trader"
                   }
                 ]
               },

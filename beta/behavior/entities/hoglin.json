@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.10",
+  "format_version": "1.18.20",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:hoglin",
@@ -86,13 +86,6 @@
         },
         "minecraft:movement": {
           "value": 0.36
-        },
-        "minecraft:behavior.melee_attack": {
-          "priority": 4,
-          "speed_multiplier": 1,
-          "track_target": true,
-          "reach_multiplier": 1.0,
-          "cooldown_time": 0.75
         },
         "minecraft:attack": {
           "damage": 1.0

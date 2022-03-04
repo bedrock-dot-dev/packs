@@ -1485,6 +1485,7 @@
     "$input_progress_loading_binding_type": "global",
     "$input_progress_loading_binding_name": "('#is_' + $info_panel_prefix + '_section_loading')",
 
+    "$ignore_emote_keybind_helpers": true,
     "$ignore_piece_offer_grid_visible_bind": false,
     "$piece_grid_visible_binding_name": "('#is_' + $info_panel_prefix + '_offers_visible'",
 
@@ -2916,6 +2917,7 @@
     "$piece_section_collection_details|default": "none",
     "$piece_section_collection_prefix|default": "",
     "$piece_section_collection_name|default": "",
+    "$ignore_emote_keybind_helpers|default": false,
 
     "controls": [
       {
@@ -3080,6 +3082,71 @@
                     "binding_collection_name": "$offer_state_info_collection_name",
                     "binding_name": "#achievement_offer_lock_state_texture",
                     "binding_name_override": "#texture"
+                  }
+                ]
+              }
+            },
+            {
+              "key_helpers@common.empty_panel": {
+                "ignored": "($ignore_emote_keybind_helpers or (not $is_emote_ux_enabled))",
+                "offset": [ "25%", "-30%" ],
+
+                "controls": [
+                  {
+                    "key_binding_icons@persona.icon_image": {
+                      "size": [ 25, 25 ],
+                      "offset": [ 1, 0 ],
+                      "bindings": [
+                        {
+                          "binding_type": "$piece_section_collection_details",
+                          "binding_collection_name": "$piece_section_collection_name",
+                          "binding_collection_prefix": "$piece_section_collection_prefix"
+                        },
+                        {
+                          "binding_type": "collection",
+                          "binding_collection_name": "$offer_state_info_collection_name",
+                          "binding_name": "#key_bound_texture",
+                          "binding_name_override": "#texture"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "keyboard_helpers@common.keyboard_helper": {
+                      "offset": [ 1, 0 ],
+                      "$hide_description": true,
+                      "$icon_size": [ 14, 14 ],
+                      "$icon_label_offset": [ 0.5, -1.5 ],
+                      "$text_color": "$generic_button_text_color",
+                      "$keyboard_character": "#key_bound_label",
+
+                      "$keyboard_character_bindings": [
+                        {
+                          "binding_type": "$piece_section_collection_details",
+                          "binding_collection_name": "$piece_section_collection_name",
+                          "binding_collection_prefix": "$piece_section_collection_prefix"
+                        },
+                        {
+                          "binding_type": "collection",
+                          "binding_collection_name": "$offer_state_info_collection_name",
+                          "binding_name": "$keyboard_character"
+                        }
+                      ],
+
+                      "bindings": [
+                        {
+                          "binding_type": "$piece_section_collection_details",
+                          "binding_collection_name": "$piece_section_collection_name",
+                          "binding_collection_prefix": "$piece_section_collection_prefix"
+                        },
+                        {
+                          "binding_type": "collection",
+                          "binding_collection_name": "$offer_state_info_collection_name",
+                          "binding_name": "#is_key_bound",
+                          "binding_name_override": "#visible"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -4207,7 +4274,6 @@
                       "$pressed_button_name": "$pressed_button_function",
                       "$button_content": "persona.piece_offer_button_content",
                       "$button_content_size": [ "100%", "100%" ],
-
                       "bindings": [
                         {
                           "binding_type": "$piece_section_collection_details",

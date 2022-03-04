@@ -4462,7 +4462,7 @@
         "buttons": {
           "type": "stack_panel",
           "orientation": "horizontal",
-          "size": [ "100%", "100%" ],
+          "size": [ "100% - 1px", "100%" ],
           "$secondary_visible|default": true,
           "controls": [
             {
@@ -4472,7 +4472,7 @@
                 "controls": [
                   {
                     "primary@$primary_header_button": {
-                      "size": [ "100% + 1px", "100%" ],
+                      "size": [ "100% - 1px", "100%" ],
                       "anchor_from": "top_left",
                       "anchor_to": "top_left",
                       "layer": 1
