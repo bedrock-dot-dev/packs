@@ -1033,7 +1033,8 @@
         "left_cycle_button@persona_deprecated.left_cycle_button": {
           "size": [ 15, "100%sm" ],
           "$pressed_button_name": "button.cycle_featured_pieces_left",
-          "$cycle_pack_button_enabled": "#is_left_cycle_featured_pieces_button_enabled"
+          "$cycle_pack_button_enabled": "#is_left_cycle_featured_pieces_button_enabled",
+          "$focus_id": "left_featured_cycle_button"
         }
       },
       {
@@ -1096,6 +1097,7 @@
       },
       {
         "right_cycle_button@persona_deprecated.right_cycle_button": {
+          "$focus_id": "right_featured_cycle_button",
           "size": [ 15, "100%sm" ],
           "$pressed_button_name": "button.cycle_featured_pieces_right",
           "$cycle_pack_button_enabled": "#is_right_cycle_featured_pieces_button_enabled"

@@ -762,16 +762,24 @@
     ],
     "controls": [
       {
-        "new_touch_control_schemes_settings":{
+        "common_touch_settings":{
           "type": "stack_panel",
           "size": [ "100%", "100%c" ],
-          "bindings": [
-            {
-              "binding_name": "#new_touch_control_schemes_settings",
-              "binding_name_override": "#visible"
-            }
-          ],
           "controls": [
+            {
+              "option_enable_new_touch_control_schemes_button@settings_common.option_toggle": {
+                "$option_label": "options.enableNewTouchControlSchemes",
+                "$option_binding_name": "#enable_new_touch_control_schemes",
+                "$option_enabled_binding_name": "#enable_new_touch_control_schemes_enabled",
+                "$toggle_name": "enable_new_touch_control_schemes",
+                "bindings": [
+                  {
+                    "binding_name": "#new_touch_control_schemes_preview_enabled",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
             {
               "interaction_model_dropdown@settings_common.option_dropdown": {
                 "$option_label": "options.interactionmodel",
@@ -780,17 +788,15 @@
                 "$dropdown_name": "interaction_model_dropdown",
                 "$option_enabled_binding_name": "#intereaction_model_dropdown_enabled",
                 "$options_dropdown_toggle_label_binding": "#interaction_model_dropdown_toggle_label",
-                "$dropdown_scroll_content_size": [ "100%", "200%" ]
+                "$dropdown_scroll_content_size": [ "100%", "200%" ],
+                "bindings": [
+                  {
+                    "binding_name": "#new_touch_control_schemes_settings",
+                    "binding_name_override": "#visible"
+                  }
+                ]
               }
-            }
-          ]
-        }
-      },
-      {
-        "common_touch_settings":{
-          "type": "stack_panel",
-          "size": [ "100%", "100%c" ],
-          "controls": [
+            },
             {
               "option_slider_0@settings_common.option_slider": {
                 "$option_label": "#touch_sensitivity_slider_label",
@@ -1015,12 +1021,6 @@
                 "$label_bindings": [
                   {
                     "binding_name": "$option_label"
-                  }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "(not #touch_controls_v2)",
-                    "binding_name_override": "#visible"
                   }
                 ]
               }
