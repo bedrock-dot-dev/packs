@@ -4,7 +4,7 @@
   "emote_wheel_screen@common.base_screen": {
     "button_mappings": [
       {
-        "from_button_id": "button.controller_autocomplete_back",
+        "from_button_id": "button.menu_cancel",
         "to_button_id": "button.menu_exit",
         "mapping_type": "global"
       },
@@ -29,7 +29,8 @@
     "$default_text_color": [ 0.7, 0.7, 0.7 ],
     "$screen_content": "persona.emote_wheel_screen_content",
     "$screen_bg_content": "emote_wheel_touch_zone",
-    "$is_full_screen_layout": false,
+    "$is_full_screen_layout": true,
+    "$fill_alpha":  0.0,
     "gamepad_cursor_deflection_mode": true
   },
 
@@ -169,7 +170,7 @@
           "$emote_slot_name": "emote_slot_0",
           "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_0",
           "$emote_image_offset": [ 0, "-33.57%" ],
-          "$emote_touch_label_offset": [ 0, "-45%" ],
+          "$emote_touch_label_offset": [ 0, "-52%" ],
           "$emote_touch_label_alignment": "center"
         }
       },
@@ -179,7 +180,7 @@
           "$emote_slot_name": "emote_slot_1",
           "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_1",
           "$emote_image_offset": [ "32.8125%", 0 ],
-          "$emote_touch_label_offset": [ "65%", 0 ],
+          "$emote_touch_label_offset": [ "92%", 0 ],
           "$emote_touch_label_alignment": "left"
         }
       },
@@ -189,7 +190,7 @@
           "$emote_slot_name": "emote_slot_2",
           "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_2",
           "$emote_image_offset": [ 0, "33.57%" ],
-          "$emote_touch_label_offset": [ 0, "48%" ],
+          "$emote_touch_label_offset": [ 0, "62%" ],
           "$emote_touch_label_alignment": "center"
         }
       },
@@ -199,7 +200,7 @@
           "$emote_slot_name": "emote_slot_3",
           "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_3",
           "$emote_image_offset": [ "-32.8125%", 0 ],
-          "$emote_touch_label_offset": [ "-65%", 0 ],
+          "$emote_touch_label_offset": [ "-92%", 0 ],
           "$emote_touch_label_alignment": "right"
         }
       }
@@ -550,7 +551,7 @@
   "emote_label": {
     "ignored": "(not #visible)",
     "type": "label",
-    "size": [ "100%", 17 ],
+    "size": [ "200%", 100 ],
     "text_alignment": "center",
     "color": "$dark_button_default_text_color"
   },

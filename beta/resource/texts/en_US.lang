@@ -1,4 +1,4 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
+## Comments can be added anywhere on a valid line by starting with '##'
 ##
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
@@ -55,6 +55,9 @@ accessibility.button.back=back
 accessibility.button.exit=Exit
 
 accessibility.dropdown.listItem=List item
+
+accessibility.minecoin=Minecoin
+accessibility.minecoins=Minecoins
 
 accessibility.sectionName=Section %s: 
 
@@ -7402,6 +7405,8 @@ store.coins.fixAppReceipt.title=Something went wrong
 store.coins.fixAppReceipt.body=There appears to be a problem with your App Receipt, please sign in to continue.
 store.coins.fixAppReceipt.button=Sign In to Store
 
+store.purchase.toast.generic=You just bought the %s!
+
 store.featured.realms.title=Try Realms Free
 store.featured.realms.desc=Experience the best way to play Minecraft with your friends.
 
@@ -9287,6 +9292,15 @@ hbui.CreateNewWorld.advanced.worldSeedButton=Templates
 hbui.CreateNewWorld.advanced.worldSeedDescription=Guides the algorithm that magically creates your world
 hbui.CreateNewWorld.advanced.worldSeedLabel=World seed
 hbui.CreateNewWorld.advanced.worldSeedPlaceholder=3257840388504953787
+hbui.CreateNewWorld.behaviorPacks.activatedAllPacksMessageDescription=All your owned packs have already been activated. Get more packs online!
+hbui.CreateNewWorld.behaviorPacks.activatedAllPacksMessageTitle=You’ve activated all packs
+hbui.CreateNewWorld.behaviorPacks.emptyLocalActivePacksMessageDescription=Change how items and mobs in your world behave. Get started under “Available”
+hbui.CreateNewWorld.behaviorPacks.emptyLocalActivePacksMessageTitle=No active behavior packs
+hbui.CreateNewWorld.behaviorPacks.inactivePacksEmptyBody=Go to Marketplace or online to find packs to play your world in a different way!
+hbui.CreateNewWorld.behaviorPacks.inactivePacksEmptyTitle=You don’t own any packs yet
+hbui.CreateNewWorld.behaviorPacks.noPacksAvailableBody=Behavior Packs change the behavior of items and mobs
+hbui.CreateNewWorld.behaviorPacks.noPacksAvailableTitle=No packs available
+hbui.CreateNewWorld.behaviorPacks.packPriorityInfoMessage=If multiple packs make changes to the same asset, the changes from the highest-ranked pack will be applied.
 hbui.CreateNewWorld.behaviorPacks.underConstructionMessage=Behavior packs is under construction!
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancel=Keep original settings
 hbui.CreateNewWorld.betaFeatures.activateBetaConfirmationCancelInputLegend=Cancel
@@ -9300,7 +9314,6 @@ hbui.CreateNewWorld.betaFeatures.badge=Beta
 hbui.CreateNewWorld.betaFeatures.betaLabel=Beta
 hbui.CreateNewWorld.betaFeatures.gameplayDescription=Features that change the way your world works
 hbui.CreateNewWorld.betaFeatures.gameplayTitle=Gameplay
-hbui.CreateNewWorld.betaFeatures.informationMessage=Beta features are under development and might break your world. They can’t be turned off after world creation.
 hbui.CreateNewWorld.betaFeatures.internalTestsDescription=For developers only, will not show up in retail
 hbui.CreateNewWorld.betaFeatures.internalTestsTitle=Internal Tests
 hbui.CreateNewWorld.cheats.commandBlocksDescription=Enable usage of command blocks
@@ -9408,8 +9421,6 @@ hbui.CreateNewWorld.platformLockedModal.title=Pack not allowed
 hbui.CreateNewWorld.platformLockedModal.turnOffMultiplayerAndApplyPackButton=Turn off multiplayer and apply pack
 hbui.CreateNewWorld.resourcePacks.activatedAllPacksMessageDescription=All your owned packs have already been activated. Get more packs on Marketplace or online!
 hbui.CreateNewWorld.resourcePacks.activatedAllPacksMessageTitle=You’ve activated all packs
-hbui.CreateNewWorld.resourcePacks.activeTabButtonLabel=Active
-hbui.CreateNewWorld.resourcePacks.availableTabButtonLabel=Available
 hbui.CreateNewWorld.resourcePacks.emptyLocalActivePacksMessageDescription=Do you want to change the look of your world? Try activating a resource pack under “Available”.
 hbui.CreateNewWorld.resourcePacks.emptyLocalActivePacksMessageTitle=No active resource packs
 hbui.CreateNewWorld.resourcePacks.getMorePacksButtonBody=Hundreds of packs available in the Marketplace
@@ -9423,7 +9434,6 @@ hbui.CreateNewWorld.resourcePacks.inactivePacksAccordionHeader=Owned
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyBody=Go to Marketplace or online to find packs to play your world in a different way!
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=You don’t own any packs yet
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=Local
-hbui.CreateNewWorld.resourcePacks.narration.tab=%1$s, tab %2$s of %3$s
 hbui.CreateNewWorld.resourcePacks.packPriorityInfoMessage=If multiple packs make changes to the same asset, the changes from the highest-ranked pack will be applied.
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHeader=Realms Plus
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksEmptyBody=Go to Marketplace or online to find packs to play your world in a different way!
@@ -9451,6 +9461,7 @@ hbui.CreateNewWorldSideMenu.createOnRealm=Create on Realm Server
 hbui.CreateNewWorldSideMenu.generalTabLabel=General
 hbui.CreateNewWorldSideMenu.multiplayerTabLabel=Multiplayer
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=Resource Packs
+hbui.CreateNewWorldSideMenu.selectButton=Select
 hbui.CreateNewWorldSideMenu.selectTab=Select
 hbui.DeprecatedModal.close=Close modal
 hbui.Dropdown.elementType=dropdown
@@ -9458,6 +9469,7 @@ hbui.DropdownItem.elementType=item
 hbui.DropdownItem.select=Select
 hbui.DropdownItem.selected=selected
 hbui.DropdownItem.unselected=unselected
+hbui.EmptyStateMessage.buttonSelectInputLegend=Select
 hbui.ErrorModal.goBack=Go back
 hbui.ErrorModal.goingBack=Going back to the previous screen...
 hbui.ErrorModal.title=An error has occurred
@@ -9467,6 +9479,7 @@ hbui.MenuButton.toggle=Toggle menu
 hbui.Modal.back=Back
 hbui.Modal.close=Close
 hbui.Notifications.achievementsDisabled=You can’t earn Achievements.
+hbui.Notifications.betaWarning.informationMessage=Beta features are under development and might break your world. They can’t be turned off after world creation.
 hbui.Notifications.multiplayerWarnings.checkInternetConnection=You are not connected to the internet. Your friends will not be able to join your multiplayer worlds. Sign in to your Microsoft Account to play with your friends.
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlocked=You cannot play online multiplayer because of how your Microsoft Account is set up. Please ensure your online safety settings allow Multiplayer. See instructions for changing these settings at aka.ms/MCMultiplayerHelp.
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlockedOnConsole=You cannot play online multiplayer because of how your Microsoft Account is set up. Please ensure your online safety settings allow Multiplayer and Clubs and you have an active Xbox Live Gold subscription. See instructions for changing these settings at aka.ms/MCMultiplayerHelp.##disable_3rd_party_console_resource_pack_check
@@ -9487,6 +9500,9 @@ hbui.PackListItem.dragInputLegendText=Drag
 hbui.PackListItem.dropInputLegendText=Drop
 hbui.PackListItem.expandDescriptionInputLegend=Expand
 hbui.PackListItem.removeButtonText=Remove
+hbui.PackTabs.activeTabButtonLabel=Active
+hbui.PackTabs.availableTabButtonLabel=Available
+hbui.PackTabs.narration.tab=%1$s, tab %2$s of %3$s
 hbui.RenderDistanceWarningRoute.body1=You can get better performance with render distance settings that are optimized for your device.
 hbui.RenderDistanceWarningRoute.body2=Using these recommended settings will ensure a smoother gameplay experience by decreasing how far you can see in game.
 hbui.RenderDistanceWarningRoute.chunksPluralCaption=(%1$s chunks)
@@ -9496,6 +9512,11 @@ hbui.RenderDistanceWarningRoute.title=Performance optimization
 hbui.RenderDistanceWarningRoute.useCurrentSettingsButton=Use current settings
 hbui.RenderDistanceWarningRoute.useRecommendedSettingsButton=Use recommended settings
 hbui.SectionList.groupNarration=%1$s, group %2$s of %3$s
+hbui.SeedTemplatesRoute.errorBackButtonInputLegend=Back
+hbui.SeedTemplatesRoute.errorBackButtonText=Go back
+hbui.SeedTemplatesRoute.errorMessageBody=We encountered an unknown error, please try again.
+hbui.SeedTemplatesRoute.errorMessageTitle=Seed templates couldn’t load!
+hbui.SeedTemplatesRoute.narration.loadingMessage=Loading
 hbui.SeedTemplatesRoute.selectTemplateInputLegend=Select template
 hbui.SeedTemplatesRoute.title=Seed templates
 hbui.SideMenu.sideMenuItem.selected=selected

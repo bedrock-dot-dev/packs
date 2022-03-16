@@ -1669,142 +1669,6 @@
          "pitch" : 1.0,
          "volume" : 1.0
       },
-      "sculk" : {
-         "events" : {
-            "break" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk",
-               "volume" : 1.0
-            },
-            "default" : "",
-            "hit" : {
-               "pitch" : 0.50,
-               "sound" : "hit.sculk",
-               "volume" : 0.350
-            },
-            "item.use.on" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "place.sculk",
-               "volume" : 1.0
-            },
-            "place" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk",
-               "volume" : 1.0
-            }
-         },
-         "pitch" : 1.0,
-         "volume" : 1.0
-      },
-      "sculk_catalyst" : {
-         "events" : {
-            "break" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_catalyst",
-               "volume" : 1.0
-            },
-            "default" : "",
-            "hit" : {
-               "pitch" : 0.50,
-               "sound" : "hit.sculk_catalyst",
-               "volume" : 0.30
-            },
-            "item.use.on" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "place.sculk_catalyst",
-               "volume" : 1.0
-            },
-            "place" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_catalyst",
-               "volume" : 1.0
-            }
-         }
-      },
-      "sculk_sensor" : {
-         "events" : {
-            "break" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_sensor",
-               "volume" : 1.0
-            },
-            "default" : "",
-            "hit" : {
-               "pitch" : 0.50,
-               "sound" : "hit.sculk_sensor",
-               "volume" : 0.350
-            },
-            "item.use.on" : {
-               "pitch" : 0.80,
-               "sound" : "use.sculk_sensor"
-            },
-            "place" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "place.sculk_sensor",
-               "volume" : 0.80
-            },
-            "power.off" : {
-               "pitch" : 0.50,
-               "sound" : "random.click"
-            },
-            "power.on" : {
-               "pitch" : 0.60,
-               "sound" : "random.click"
-            }
-         },
-         "pitch" : 1.0,
-         "volume" : 1.0
-      },
-      "sculk_shrieker" : {
-         "events" : {
-            "break" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_shrieker",
-               "volume" : 1.0
-            },
-            "default" : "",
-            "hit" : {
-               "pitch" : 0.50,
-               "sound" : "step.sculk_shrieker",
-               "volume" : 0.30
-            },
-            "item.use.on" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "place.sculk_shrieker",
-               "volume" : 1.0
-            },
-            "place" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_shrieker",
-               "volume" : 1.0
-            }
-         }
-      },
-      "sculk_vein" : {
-         "events" : {
-            "break" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_vein",
-               "volume" : 1.0
-            },
-            "default" : "",
-            "hit" : {
-               "pitch" : 0.50,
-               "sound" : "step.sculk_vein",
-               "volume" : 0.30
-            },
-            "item.use.on" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "place.sculk_vein",
-               "volume" : 1.0
-            },
-            "place" : {
-               "pitch" : [ 0.80, 1.0 ],
-               "sound" : "break.sculk_vein",
-               "volume" : 1.0
-            }
-         }
-      },
       "shroomlight" : {
          "events" : {
             "break" : {
@@ -2669,18 +2533,6 @@
             },
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1.0
-         },
-         "frog" : {
-            "events" : {
-               "ambient" : "mob.frog.ambient",
-               "death" : "mob.frog.death",
-               "eat" : "mob.frog.eat",
-               "hurt" : "mob.frog.hurt",
-               "jump_to_block" : "mob.frog.jump_to_block",
-               "step" : "mob.frog.step"
-            },
-            "pitch" : [ 0.80, 1.20 ],
-            "volume" : 1
          },
          "ghast" : {
             "events" : {
@@ -3586,14 +3438,6 @@
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1.0
          },
-         "tadpole" : {
-            "events" : {
-               "death" : "mob.tadpole.death",
-               "hurt" : "mob.tadpole.hurt"
-            },
-            "pitch" : [ 0.80, 1.20 ],
-            "volume" : 1
-         },
          "tropicalfish" : {
             "events" : {
                "flop" : {
@@ -4209,49 +4053,6 @@
             "sound" : "block.scaffolding.climb",
             "volume" : 1.0
          },
-         "block.sculk.charge" : {
-            "pitch" : 1.0,
-            "sound" : "charge.sculk",
-            "volume" : 1.0
-         },
-         "block.sculk.place" : {
-            "pitch" : 1.0,
-            "sound" : "place.sculk",
-            "volume" : 0.50
-         },
-         "block.sculk.spread" : {
-            "pitch" : 0.90,
-            "sound" : "spread.sculk",
-            "volume" : 1.0
-         },
-         "block.sculk_catalyst.bloom" : {
-            "attenuation_distance" : 12,
-            "sound" : "bloom.sculk_catalyst",
-            "volume" : 0.250
-         },
-         "block.sculk_sensor.clicking" : {
-            "pitch" : 0.730,
-            "sound" : "clicking.sculk_sensor"
-         },
-         "block.sculk_sensor.clicking_stop" : {
-            "pitch" : 0.620,
-            "sound" : "clicking_stop.sculk_sensor"
-         },
-         "block.sculk_sensor.place" : {
-            "pitch" : 1.0,
-            "sound" : "place.sculk_sensor",
-            "volume" : 1.0
-         },
-         "block.sculk_shrieker.place" : {
-            "pitch" : 1.0,
-            "sound" : "place.sculk_shrieker",
-            "volume" : 1.0
-         },
-         "block.sculk_shrieker.shriek" : {
-            "pitch" : [ 0.60, 1.0 ],
-            "sound" : "shriek.sculk_shrieker",
-            "volume" : 0.850
-         },
          "block.smithing_table.use" : {
             "pitch" : 1.0,
             "sound" : "random.anvil_use",
@@ -4766,21 +4567,6 @@
             "sound" : "mob.player.hurt_on_fire",
             "volume" : 1.0
          },
-         "nearby_close" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "nearby_close.warden",
-            "volume" : 1
-         },
-         "nearby_closer" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "nearby_closer.warden",
-            "volume" : 1
-         },
-         "nearby_closest" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "nearby_closest.warden",
-            "volume" : 1
-         },
          "note" : {
             "sound" : "",
             "volume" : 3.0
@@ -4835,20 +4621,10 @@
             "sound" : "random.click",
             "volume" : 1.0
          },
-         "power.off.sculk_sensor" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "power.off.sculk_sensor",
-            "volume" : 0.620
-         },
          "power.on" : {
             "pitch" : 0.60,
             "sound" : "random.click",
             "volume" : 1.0
-         },
-         "power.on.sculk_sensor" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "power.on.sculk_sensor",
-            "volume" : 0.730
          },
          "pre_ram" : {
             "pitch" : 1.0,
@@ -4995,11 +4771,6 @@
             "sound" : "random.shulkerboxopen",
             "volume" : 0.50
          },
-         "slightly_angry" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "slightly_angry.warden",
-            "volume" : 1
-         },
          "smithing_table.use" : {
             "pitch" : 1.0,
             "sound" : "smithing_table.use",
@@ -5029,11 +4800,6 @@
             "pitch" : [ 0.80, 1.20 ],
             "sound" : "tilt_up.big_dripleaf",
             "volume" : 1.0
-         },
-         "tongue" : {
-            "pitch" : [ 0.80, 1.20 ],
-            "sound" : "mob.frog.tongue",
-            "volume" : 1
          },
          "tripod" : {
             "pitch" : [ 0.90, 1.10 ],
@@ -6166,121 +5932,6 @@
                "step" : {
                   "sound" : "block.scaffolding.step",
                   "volume" : 0.30
-               }
-            },
-            "pitch" : 1.0,
-            "volume" : 1.0
-         },
-         "sculk" : {
-            "events" : {
-               "default" : "",
-               "fall" : {
-                  "sounds" : "step.sculk",
-                  "volume" : 0.40
-               },
-               "jump" : {
-                  "sound" : "step.sculk",
-                  "volume" : 0.120
-               },
-               "land" : {
-                  "sound" : "step.sculk",
-                  "volume" : 0.140
-               },
-               "step" : {
-                  "sound" : "step.sculk",
-                  "volume" : 0.170
-               }
-            },
-            "pitch" : 1.0,
-            "volume" : 1.0
-         },
-         "sculk_catalyst" : {
-            "events" : {
-               "default" : "",
-               "fall" : {
-                  "sounds" : "step.sculk_catalyst",
-                  "volume" : 0.40
-               },
-               "jump" : {
-                  "sound" : "step.sculk_catalyst",
-                  "volume" : 0.120
-               },
-               "land" : {
-                  "sound" : "step.sculk_catalyst",
-                  "volume" : 0.140
-               },
-               "step" : {
-                  "sound" : "step.sculk_catalyst",
-                  "volume" : 0.170
-               }
-            },
-            "pitch" : 1.0,
-            "volume" : 1.0
-         },
-         "sculk_sensor" : {
-            "events" : {
-               "default" : "",
-               "fall" : {
-                  "sounds" : "fall.sculk_sensor",
-                  "volume" : 0.40
-               },
-               "jump" : {
-                  "sound" : "jump.sculk_sensor",
-                  "volume" : 0.120
-               },
-               "land" : {
-                  "sound" : "land.sculk_sensor",
-                  "volume" : 0.140
-               },
-               "step" : {
-                  "sound" : "step.sculk_sensor",
-                  "volume" : 0.170
-               }
-            },
-            "pitch" : 1.0,
-            "volume" : 1.0
-         },
-         "sculk_shrieker" : {
-            "events" : {
-               "default" : "",
-               "fall" : {
-                  "sounds" : "step.sculk_shrieker",
-                  "volume" : 0.40
-               },
-               "jump" : {
-                  "sound" : "step.sculk_shrieker",
-                  "volume" : 0.120
-               },
-               "land" : {
-                  "sound" : "step.sculk_shrieker",
-                  "volume" : 0.140
-               },
-               "step" : {
-                  "sound" : "step.sculk_shrieker",
-                  "volume" : 0.170
-               }
-            },
-            "pitch" : 1.0,
-            "volume" : 1.0
-         },
-         "sculk_vein" : {
-            "events" : {
-               "default" : "",
-               "fall" : {
-                  "sounds" : "step.sculk_vein",
-                  "volume" : 0.40
-               },
-               "jump" : {
-                  "sound" : "step.sculk_vein",
-                  "volume" : 0.120
-               },
-               "land" : {
-                  "sound" : "step.sculk_vein",
-                  "volume" : 0.140
-               },
-               "step" : {
-                  "sound" : "step.sculk_vein",
-                  "volume" : 0.170
                }
             },
             "pitch" : 1.0,

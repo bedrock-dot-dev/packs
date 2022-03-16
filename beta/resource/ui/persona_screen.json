@@ -6169,11 +6169,20 @@
     "size": [ "100%", "100%c" ],
     "$skin_pack_collection": "common.empty_panel",
 
+    "clip_state_change_event": "skin_pack_collector_clip_change_event",
+
     "controls": [
       { "skin_packs@$skin_pack_collection": {} },
       { "spacer1@persona.vertical_4_padding": {} },
       { "see_more_owned@persona.see_more_skins_button": {} },
       { "divider2@persona.common_horizontal_divider": {} }
+    ],
+    "bindings": [
+      {
+        "binding_type": "$section_collection_details",
+        "binding_collection_name": "$section_collection_name",
+        "binding_collection_prefix": "$section_collection_prefix"
+      }
     ]
   },
 

@@ -5231,6 +5231,7 @@
               "$max_skin_pack_screen_size": [ 310, "56.25%x - 65.25px + 118.5px" ],
               "$extra_large_screen_size": [ "100% - 4px", "100% - 4px" ], // Skin Picker, Command Block screen
               "$extra_large_max_screen_size": [ 370, "100% - 50px" ],
+              "$xbl_immediate_signin_screen_size": [ 317, 158 ], // XBL Immediate Signin Popup
               "$xbl_optional_signin_screen_size": [ 317, 158 ], // XBL Optional Signin Popup
               "$xbl_console_signin_screen_size": [ 316, 161 ], // XBL Console Signin Popup
               "$xbl_console_signin_succeeded_screen_size": [ 230, "100% - 50px" ], // XBL Console Signin Succeeded Popup
@@ -5278,6 +5279,7 @@
               "$max_skin_pack_screen_size": [ "100% - 4px", "56.25%x - 65.25px + 118.5px" ],
               "$extra_large_screen_size": [ "100% - 4px", "100% - 4px" ], // Skin Picker, Command Block screen
               "$extra_large_max_screen_size": [ 370, "100% - 50px" ],
+              "$xbl_immediate_signin_screen_size": [ 316, 153 ], // XBL Immediate Signin Popup
               "$xbl_optional_signin_screen_size": [ 316, 153 ], // XBL Optional Signin Popup
               "$xbl_console_signin_screen_size": [ 316, 161 ], // XBL Console Signin Popup
               "$xbl_console_signin_succeeded_screen_size": [ 230, "100% - 4px" ], // XBL Console Signin Succeeded Popup

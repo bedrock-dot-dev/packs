@@ -1363,9 +1363,6 @@
       "sound" : "itemframe",
       "textures" : "itemframe_background"
    },
-   "frog_spawn" : {
-      "textures" : "frog_spawn"
-   },
    "frosted_ice" : {
       "sound" : "glass",
       "textures" : "frosted_ice"
@@ -2090,13 +2087,6 @@
       "sound" : "stone",
       "textures" : "obsidian"
    },
-   "ochre_froglight" : {
-      "textures" : {
-         "down" : "ochre_froglight_top",
-         "side" : "ochre_froglight_side",
-         "up" : "ochre_froglight_top"
-      }
-   },
    "orange_candle" : {
       "carried_textures" : "orange_candle_carried",
       "sound" : "candle",
@@ -2145,13 +2135,6 @@
    "packed_ice" : {
       "sound" : "glass",
       "textures" : "ice_packed"
-   },
-   "pearlescent_froglight" : {
-      "textures" : {
-         "down" : "pearlescent_froglight_top",
-         "side" : "pearlescent_froglight_side",
-         "up" : "pearlescent_froglight_top"
-      }
    },
    "pink_candle" : {
       "carried_textures" : "pink_candle_carried",
@@ -2609,45 +2592,6 @@
          "side" : "scaffolding_side",
          "up" : "scaffolding_top"
       }
-   },
-   "sculk" : {
-      "isotropic" : true,
-      "sound" : "sculk",
-      "textures" : "sculk"
-   },
-   "sculk_catalyst" : {
-      "sound" : "sculk_catalyst",
-      "textures" : {
-         "down" : "sculk_catalyst_bottom",
-         "side" : "sculk_catalyst_side",
-         "up" : "sculk_catalyst_top"
-      }
-   },
-   "sculk_sensor" : {
-      "carried_textures" : {
-         "down" : "sculk_sensor_tendril_inactive",
-         "side" : "sculk_sensor_tendril_active",
-         "up" : "sculk_sensor_tendril_inactive"
-      },
-      "sound" : "sculk_sensor",
-      "textures" : {
-         "down" : "sculk_sensor_bottom",
-         "side" : "sculk_sensor_side",
-         "up" : "sculk_sensor_top"
-      }
-   },
-   "sculk_shrieker" : {
-      "carried_textures" : "sculk_shrieker_inner_top",
-      "sound" : "sculk_shrieker",
-      "textures" : {
-         "down" : "sculk_shrieker_bottom",
-         "side" : "sculk_shrieker_side",
-         "up" : "sculk_shrieker_top"
-      }
-   },
-   "sculk_vein" : {
-      "sound" : "sculk_vein",
-      "textures" : "sculk_vein"
    },
    "seaLantern" : {
       "sound" : "glass",
@@ -3172,13 +3116,6 @@
          "down" : "repeater_floor",
          "side" : "repeater_floor",
          "up" : "repeater_up"
-      }
-   },
-   "verdant_froglight" : {
-      "textures" : {
-         "down" : "verdant_froglight_top",
-         "side" : "verdant_froglight_side",
-         "up" : "verdant_froglight_top"
       }
    },
    "vine" : {

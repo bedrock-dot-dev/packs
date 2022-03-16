@@ -191,6 +191,7 @@
     "ui/xbl_console_signin_succeeded.json",
     "ui/xbl_first_launch.json",
     "ui/xbl_friend_finder.json",
+    "ui/xbl_immediate_signin.json",
     "ui/xbl_optional_signin.json",
     "ui/profile_card.json",
     "ui/xbl_report_user.json"

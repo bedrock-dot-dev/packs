@@ -5261,7 +5261,6 @@
     "$rating_text_factory_collection_name": "$store_factory_collection_name",
     "$rating_text_binding_type": "$mashup_collection_binding_type",
     "$rating_text_collection_name": "$mashup_collection_name",
-    "$rating_text_visible_binding": "#rating_text_visible",
     "$store_rating_text_panel_color": "$dark_button_secondary_default_text_color",
 
     "controls": [
