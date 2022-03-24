@@ -891,7 +891,7 @@
                 "$toggle_name": "always_highlight_hovering_box_in_crosshair",
                 "bindings": [
                   {
-                    "binding_name": "#touch_controls_v2",
+                    "binding_name": "#touch_controls_v2_crosshair_mode",
                     "binding_name_override": "#visible"
                   }
                 ]

@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.30.26</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.18.30.28</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -10221,6 +10221,18 @@ Allows the mob to follow the player that owns them.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Specify if the mob can teleport to the player if it is too far away</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">ignore_vibration</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">Specify if the mob will follow the owner if it has heard a vibration lately</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">max_distance</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">60.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The maximum distance in blocks this mob can be from its owner to start following, only used when canTeleport is false</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">1.0</td>
@@ -16471,7 +16483,7 @@ Defines this entity's inventory properties.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">container_type</td>
 <td style="border-style:solid; border-width:2; padding:8px">String</td>
 <td style="border-style:solid; border-width:2; padding:8px">none</td>
-<td style="border-style:solid; border-width:2; padding:8px">Type of container this entity has. Can be horse, minecart_chest, minecart_hopper, inventory, container or hopper</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Type of container this entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">inventory_size</td>

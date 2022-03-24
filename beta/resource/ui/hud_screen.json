@@ -1637,15 +1637,15 @@
     "controls": [
       {
         "label_background": {
-          "$tip_description_background_offset|default": [ -1, 0.5 ],
-          "$tip_description_background_visible|default": false,
+          "$tip_description_background_offset|default": [0, 0 ],
+          "$tip_description_background_visible|default": true,
 
           "type": "image",
           "texture": "textures/ui/Black",
-          "alpha": 0.7,
+          "alpha": 0.5,
           "layer": -1,
           "offset": "$tip_description_background_offset",
-          "size": [ "100% + 8px", "100% + 1px" ],
+          "size": [ "100% + 2px", "100% + 2px" ],
           "visible": "$tip_description_background_visible"
         }
       }
@@ -2016,11 +2016,11 @@
               "emote_keyboard_helper@common.keyboard_helper_keys": {
                 "layer": 100,
                 "$icon_size_panel": [ 17, "100%" ],
-                "$keyboard_helper_size": [ 96, 24 ],              // 96 to create a small horizontal margin in the 100 size panel
+                "$keyboard_helper_size": [ 96, 24 ], // 96 to create a small horizontal margin in the 100 size panel
                 "$keyboard_character": "$keyboard_keyname",
                 "$text_color": "$generic_button_text_color",
                 "$description_bind": "$emote_tip_description",
-                "$keyboard_description_max_size": [ 79, "100%" ]  // 79 To account for the size of the image
+                "$keyboard_description_max_size": [ 79, "100%" ] // 79 To account for the size of the image
               }
             }
           ]
@@ -2029,7 +2029,7 @@
       {
         "emote_gamepad_helper@$gamepad_helper_button_name": {
           "$icon_description_bind": "$emote_tip_description",
-          "$gamepad_description_max_size": [ 79, 24 ],            // 79 To account for the size of the image
+          "$gamepad_description_max_size": [ 79, 24 ], // 79 To account for the size of the image
           "anchor_from": "left_middle",
           "anchor_to": "left_middle"
         }

@@ -1,4 +1,4 @@
-<h1>FEATURES DOCUMENTATION </br>Version: 1.18.30.26</h1>
+<h1>FEATURES DOCUMENTATION </br>Version: 1.18.30.28</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -21,7 +21,6 @@ This is documentation for a beta release of Minecraft. New features, components,
 <tr> <td> <a href="#minecraft:rect_layout"> minecraft:rect_layout</a> </tr> </td>
 <tr> <td> <a href="#minecraft:scan_surface"> minecraft:scan_surface</a> </tr> </td>
 <tr> <td> <a href="#minecraft:scatter_feature"> minecraft:scatter_feature</a> </tr> </td>
-<tr> <td> <a href="#minecraft:catalyst_feature"> minecraft:catalyst_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:sculk_patch_feature"> minecraft:sculk_patch_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:search_feature"> minecraft:search_feature</a> </tr> </td>
 <tr> <td> <a href="#minecraft:single_block_feature"> minecraft:single_block_feature</a> </tr> </td>
@@ -425,10 +424,6 @@ Example use: Scattering flowers at sea level across half the chunks in a biome.<
 }
 </textarea> </br>
 <a href="#Index">Back to top</a><br><br>
-
-<h1><p id="minecraft:catalyst_feature">minecraft:catalyst_feature</p></h1>
-
-Feature type 'minecraft:catalyst_feature' has not yet been documented.</br><a href="#Index">Back to top</a><br><br>
 
 <h1><p id="minecraft:sculk_patch_feature">minecraft:sculk_patch_feature</p></h1>
 
@@ -888,44 +883,23 @@ Here is the complete feature schema<br / ><textarea readonly="true" cols="192" r
               }
           }
       }
-      object "minecraft:catalyst_feature" : opt
-      {
-          object "description"
-          {
-              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
-          }
-          array "can_place_sculk_catalyst_on"
-          {
-               "<any array element>" : opt
-          }
-           "central_block"
-          feature_reference "patch_feature" : opt
-          feature_reference "central_patch_feature" : opt
-          int "vertical_range"
-          int "pathes_count_min"
-          int "pathes_count_max"
-          int "max_patch_distance"
-      }
       object "minecraft:sculk_patch_feature" : opt
       {
           object "description"
           {
               string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
           }
-          array "replaceable_blocks"
+          array "can_place_sculk_patch_on"
           {
                "<any array element>" : opt
           }
-          array "cant_place_sculk_vein_on"
-          {
-               "<any array element>" : opt
-          }
-           "ground_block"
-          feature_reference "growth_feature" : opt
-          string "surface" : opt
-          int "vertical_range"
-          float "growth_chance" : opt
-           "horizontal_radius"
+           "central_block" : opt
+          float "central_block_placement_chance"<0.000000-1.000000> : opt
+          int "cursor_count"<0-32>
+          int "charge_amount"<1-1000>
+          int "spread_attempts"<1-64>
+          int "growth_rounds"<0-8>
+          int "spread_rounds"<0-8>
       }
       object "minecraft:search_feature" : opt
       {
