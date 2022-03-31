@@ -1803,6 +1803,16 @@
         "from_button_id": "button.menu_cancel",
         "to_button_id": "button.close_dialog",
         "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.close_dialog",
+        "mapping_type": "focused"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "button.close_dialog",
+        "mapping_type": "focused"
       }
     ]
   },

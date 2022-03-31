@@ -283,7 +283,7 @@
         "table": "loot_tables/entities/ravager.json"
       },
       "minecraft:knockback_resistance": {
-        "value": 0.5
+        "value": 0.75
       },
       "minecraft:movement": {
         "value": 0.0

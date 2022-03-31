@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.20",
+  "format_version": "1.18.30",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:zoglin",
@@ -78,7 +78,7 @@
         "max": 40
       },
       "minecraft:knockback_resistance": {
-        "value": 0.5
+        "value": 0.6
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 3,
