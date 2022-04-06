@@ -511,7 +511,6 @@
 
   "underline_button@common.button": {
     "size": [ "100%c", "100%c" ],
-    "pressed_control": "hover",
 
     "$underline_button_size|default": [ "100%c", "100%c" ],
     "$single_label_size": [ "default", 8 ],

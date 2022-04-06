@@ -263,13 +263,11 @@
     "orientation": "vertical",
     "size": [ "100% - 1px", "100%c" ],
     "offset": [ 1, 0 ],
-    "$top_padding_not_visible|default": false,
     "controls": [
       {
         "padding_0": {
           "type": "panel",
-          "size": [ "100%", 4 ],
-          "ignored": "$top_padding_not_visible"
+          "size": [ "100%", 4 ]
         }
       },
       {
@@ -719,7 +717,6 @@
                 "$scrolling_pane_size": [ "100% - 2px", "100%" ],
                 "$scrolling_pane_offset": [ 2, 0 ],
                 "$scrolling_content": "store_layout.scrolling_content_stack",
-                "$top_padding_not_visible": true,
                 "$scroll_bar_left_padding_size": [ 0, 0 ],
                 "$show_background": false,
                 "$bar_visible": false

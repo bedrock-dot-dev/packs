@@ -334,7 +334,29 @@
                                       "gamepad_start@common.gamepad_helper_start": {}
                                     },
                                     {
-                                      "gamepad_dpad_left@common.gamepad_helper_dpad_left": {}
+                                      "gamepad_exit_panel@common.empty_panel": {
+                                        "size": [ 100, "100%sm" ],
+                                        "controls": [
+                                          {
+                                            "gamepad_exit": {
+                                              "type": "label",
+                                              "color": "$f_color_format",
+                                              "text": "#emote_screen_exit",
+                                              "text_alignment": "center",
+                                              "bindings": [
+                                                {
+                                                  "binding_name": "#emote_screen_exit",
+                                                  "binding_condition": "always"
+                                                },
+                                                {
+                                                  "binding_name": "#is_using_gamepad",
+                                                  "binding_name_override": "#visible"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
                                     }
                                   ]
                                 }

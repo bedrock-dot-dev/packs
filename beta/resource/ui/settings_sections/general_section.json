@@ -3583,6 +3583,13 @@
     }
   },
 
+  "darkness_slider_label": {
+    "type": "label",
+    "text": "options.darknessEffectModifier.message",
+    "size": [ "100%", "default" ],
+    "color": "$light_button_locked_text_color"
+  },
+
   "accessibility_section": {
     "type": "stack_panel",
     "size": [ "100%", "100%c" ],
@@ -3674,6 +3681,37 @@
           "$option_binding_name": "#camera_shake",
           "$option_enabled_binding_name": "#camera_shake_enabled",
           "$toggle_name": "camera_shake"
+        }
+      },
+      {
+        "darkness_slider@settings_common.option_slider": {
+          "$option_label": "#darkness_slider_label",
+          "$slider_name": "darkness",
+          "$slider_value_binding_name": "#darkness",
+          "$slider_tts_text_value": "#darkness_text_value",
+          "$option_enabled_binding_name": "#darkness_enabled",
+          "$label_bindings": [
+            {
+              "binding_name": "$option_label"
+            }
+          ]
+        }
+      },
+      {
+        "darkness_slider_label_spacer_pre": {
+          "type": "panel",
+          "size": [ "100%", 2 ]
+        }
+      },
+      {
+        "darkness_slider_label_wrapper@common.tts_label_focus_wrapper": {
+          "$tts_label_panel": "general_section.darkness_slider_label"
+        }
+      },
+      {
+        "darkness_slider_label_spacer_post": {
+          "type": "panel",
+          "size": [ "100%", 10 ]
         }
       },
       {
@@ -6846,6 +6884,12 @@
         "@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#debug_hud_radio_buffer_memory",
           "$radio_label_text": "options.dev_enableDebugHudOverlay.buffermemory"
+        }
+      },
+      {
+        "@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#debug_hud_radio_material_memory",
+          "$radio_label_text": "options.dev_enableDebugHudOverlay.materialmemory"
         }
       },
       {

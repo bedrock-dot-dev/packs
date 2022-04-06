@@ -69,7 +69,7 @@
     "layer": 1,
     "bindings": [
       {
-        "binding_name": "#is_not_creative_mode",
+        "binding_name": "#show_survival_ui",
         "binding_name_override": "#visible"
       }
     ]
@@ -146,7 +146,7 @@
           ],
           "bindings": [
             {
-              "binding_name": "#is_not_creative_mode",
+              "binding_name": "#show_survival_ui",
               "binding_name_override": "#visible"
             }
           ]
@@ -236,7 +236,7 @@
     "layer": 1,
     "bindings": [
       {
-        "binding_name": "#is_not_creative_mode",
+        "binding_name": "#show_survival_ui",
         "binding_name_override": "#visible"
       }
     ]
@@ -758,7 +758,7 @@
           "anchor_to": "bottom_left",
           "bindings": [
             {
-              "binding_name": "#is_not_creative_mode",
+              "binding_name": "#show_survival_ui",
               "binding_name_override": "#visible"
             }
           ]
@@ -1227,7 +1227,7 @@
                 "size": [ "100%sm", 17 ],
                 "bindings": [
                   {
-                    "binding_name": "#is_not_creative_mode",
+                    "binding_name": "#show_survival_ui",
                     "binding_name_override": "#visible"
                   }
                 ]

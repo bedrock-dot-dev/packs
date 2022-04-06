@@ -80,7 +80,8 @@
             "textures/items/boat_birch",
             "textures/items/boat_jungle",
             "textures/items/boat_acacia",
-            "textures/items/boat_darkoak"
+            "textures/items/boat_darkoak",
+            "textures/items/mangrove_boat"
          ]
       },
       "bone" : {
@@ -144,7 +145,8 @@
             "textures/items/bucket_tropical",
             "textures/items/bucket_pufferfish",
             "textures/items/bucket_powder_snow",
-            "textures/items/bucket_axolotl"
+            "textures/items/bucket_axolotl",
+            "textures/items/bucket_tadpole"
          ]
       },
       "cake" : {
@@ -180,6 +182,17 @@
       },
       "charcoal" : {
          "textures" : "textures/items/charcoal"
+      },
+      "chest_boat" : {
+         "textures" : [
+            "textures/items/oak_chest_boat",
+            "textures/items/spruce_chest_boat",
+            "textures/items/birch_chest_boat",
+            "textures/items/jungle_chest_boat",
+            "textures/items/acacia_chest_boat",
+            "textures/items/dark_oak_chest_boat",
+            "textures/items/mangrove_chest_boat"
+         ]
       },
       "chestplate" : {
          "textures" : [
@@ -467,6 +480,15 @@
       },
       "magma_cream" : {
          "textures" : "textures/items/magma_cream"
+      },
+      "mangrove_door" : {
+         "textures" : "textures/items/mangrove_door"
+      },
+      "mangrove_propagule" : {
+         "textures" : "textures/items/mangrove_propagule"
+      },
+      "mangrove_sign" : {
+         "textures" : "textures/items/mangrove_sign"
       },
       "map_empty" : {
          "textures" : "textures/items/map_empty"

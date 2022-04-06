@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.18.30.32</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.19.0.20</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -791,6 +791,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">Returns if the item or block has all of the tags specified</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.anger_level</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the anger level of the actor [0,n). On errors or if the actor has no anger level, returns 0. Available on the Server only.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.anim_time</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the time in seconds since the current animation started, else 0.0 if not called within an animation</br></td>
 </tr>
@@ -1069,6 +1073,14 @@ Query Functions are operators that access a wide variety of information. They ca
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.health</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.heartbeat_interval</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the heartbeat interval of the actor in seconds. Returns 0 when the actor has no heartbeat.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.heartbeat_phase</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the heartbeat phase of the actor. 0.0 if at start of current heartbeat, 1.0 if at the end. Returns 0 on errors or when the actor has no heartbeat. Available on the Client (Resource Packs) only.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.heightmap</td>
@@ -1655,6 +1667,18 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">returns the structural integrity for the actor, otherwise returns 0</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.surface_particle_color</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the particle color for the block located in the surface below the actor (scanned up to 10 blocks down). The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified or if no surface is found, each member value is set to 0.0. Available on the Client (Resource Packs) only.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.surface_particle_texture_coordinate</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the texture coordinate for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down) in a struct with 'u' and 'v' keys. If no actor is specified or if no surface is found, u and v will be 0.0. Available on the Client (Resource Packs) only.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.surface_particle_texture_size</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the texture size for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down). If no actor is specified or if no surface is found, each member value will be 0.0. Available on the Client (Resource Packs) only.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.swell_amount</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns how swollen the entity is</br></td>
 </tr>
@@ -1685,6 +1709,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.time_of_day</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns the time of day (midnight=0.0, sunrise=0.25, noon=0.5, sunset=0.75) of the dimension the entity is in.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.time_since_last_vibration_detection</td>
+<td style="border-style:solid; border-width:3; padding:7px">Returns the time in seconds since the last vibration detected by the actor. On errors or if no vibration has been detected yet, returns -1. Available on the Client (Resource Packs) only.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.time_stamp</td>
@@ -1742,10 +1770,6 @@ Query Functions are operators that access a wide variety of information. They ca
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.actor_property</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Holiday Creator Features' AND 'Upcoming Creator Features' to use.) Takes one argument: the name of the property on the entity. Returns the value of that property if it exists, else 0.0 if not.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.anger_level</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Wild Update' to use.) Returns the anger level of the actor [0,n). On errors or if the actor has no anger level, returns 0. Available on the Server only.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.biome_has_all_tags</td>
@@ -1816,14 +1840,6 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Returns 1 if the entity has a player riding it, else it returns 0</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.heartbeat_interval</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Wild Update' to use.) Returns the heartbeat interval of the actor in seconds. Returns 0 when the actor has no heartbeat.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.heartbeat_phase</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Wild Update' to use.) Returns the heartbeat phase of the actor. 0.0 if at start of current heartbeat, 1.0 if at the end. Returns 0 on errors or when the actor has no heartbeat. Available on the Client (Resource Packs) only.</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_attached</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Returns 1.0 if the actor is attached to another actor (such as being held or worn), else it will return 0.0</br></td>
 </tr>
@@ -1848,24 +1864,8 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Returns the current entity</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.surface_particle_color</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Wild Update' to use.) Returns the particle color for the block located in the surface below the actor (scanned up to 10 blocks down). The struct contains '.r' '.g' '.b' and '.a' members, each 0.0 to 1.0. If no actor is specified or if no surface is found, each member value is set to 0.0. Available on the Client (Resource Packs) only.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.surface_particle_texture_coordinate</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Wild Update' to use.) Returns the texture coordinate for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down) in a struct with 'u' and 'v' keys. If no actor is specified or if no surface is found, u and v will be 0.0. Available on the Client (Resource Packs) only.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.surface_particle_texture_size</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Wild Update' to use.) Returns the texture size for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down). If no actor is specified or if no surface is found, each member value will be 0.0. Available on the Client (Resource Packs) only.</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.target</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Returns the target of the current entity if one exists</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.time_since_last_vibration_detection</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Wild Update' to use.) Returns the time in seconds since the last vibration detected by the actor. On errors or if no vibration has been detected yet, returns -1. Available on the Client (Resource Packs) only.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>

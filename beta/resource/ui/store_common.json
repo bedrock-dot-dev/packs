@@ -3283,14 +3283,6 @@
                           "binding_collection_name": "$store_factory_collection_name",
                           "binding_collection_prefix": "$store_factory_collection_prefix"
                         }
-                      ],
-                      "button_mappings": [
-                        {
-                          "from_button_id": "button.menu_select",
-                          "to_button_id": "button.navigate_carousel_right",
-                          "mapping_type": "pressed",
-                          "button_up_right_of_first_refusal": true
-                        }
                       ]
                     }
                   }
