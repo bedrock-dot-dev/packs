@@ -17,7 +17,8 @@
       }
     },
     "result": {
-      "item": "minecraft:mud_bricks"
+      "item": "minecraft:mud_bricks",
+      "count": 4
     }
   }
 }

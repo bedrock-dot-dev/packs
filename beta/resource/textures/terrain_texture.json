@@ -2561,7 +2561,10 @@
          "textures" : "textures/blocks/sculk_shrieker_bottom"
       },
       "sculk_shrieker_inner_top" : {
-         "textures" : "textures/blocks/sculk_shrieker_inner_top"
+         "textures" : [
+            "textures/blocks/sculk_shrieker_inner_top",
+            "textures/blocks/sculk_shrieker_can_summon_inner_top"
+         ]
       },
       "sculk_shrieker_side" : {
          "textures" : "textures/blocks/sculk_shrieker_side"

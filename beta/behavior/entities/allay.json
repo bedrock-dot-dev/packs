@@ -11,7 +11,7 @@
       "pickup_item_delay": {
         "minecraft:timer": {
           "looping": false,
-          "time": 5,
+          "time": 3,
           "time_down_event": {
             "event": "pickup_item_delay_complete"
           }
@@ -20,10 +20,10 @@
       "pickup_item": {
         "minecraft:behavior.pickup_items": {
           "priority": 2,
-          "max_dist": 60,
-          "search_height": 30,
+          "max_dist": 64,
+          "search_height": 32,
           "goal_radius": 2.2,
-          "speed_multiplier": 1.0,
+          "speed_multiplier": 6,
           "pickup_based_on_chance": false,
           "can_pickup_any_item": false,
           "can_pickup_to_hand_or_equipment": false,
@@ -38,7 +38,7 @@
         "family": [ "allay", "mob" ]
       },
       "minecraft:collision_box": {
-        "width": 0.6,
+        "width": 0.35,
         "height": 0.6
       },
       "minecraft:balloonable": {
@@ -56,7 +56,7 @@
         "max_distance": 10.0
       },
       "minecraft:health": {
-        "value": 16
+        "value": 20
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -96,10 +96,10 @@
 				]
 			},
 			"minecraft:movement": {
-				"value": 0.25
+				"value": 0.1
 			},
 			"minecraft:flying_speed": {
-				"value": 0.15
+				"value": 0.1
 			},
 			"minecraft:navigation.hover": {
 				"can_path_over_water": true,
@@ -170,6 +170,7 @@
 			},
       "minecraft:behavior.go_and_give_items_to_noteblock": {
         "priority": 3,
+        "run_speed": 8,
         "on_item_throw": [
           {
             "event": "pickup_item_delay",
@@ -179,6 +180,7 @@
       },
       "minecraft:behavior.go_and_give_items_to_owner": {
         "priority": 4,
+        "run_speed": 8,
         "on_item_throw": [
           {
             "event": "pickup_item_delay",
@@ -188,15 +190,15 @@
       },
       "minecraft:behavior.stay_near_noteblock": {
         "priority": 5,
-        "speed": 1.0,
-        "start_distance": 15,
-        "stop_distance": 5
+        "speed": 8,
+        "start_distance": 16,
+        "stop_distance": 4
       },
       "minecraft:behavior.follow_owner": {
         "priority": 6,
-        "speed_multiplier": 2.5,
-        "start_distance": 20,
-        "stop_distance": 5,
+        "speed_multiplier": 8,
+        "start_distance": 16,
+        "stop_distance": 4,
         "can_teleport": false,
         "ignore_vibration": false
       },

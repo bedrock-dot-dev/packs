@@ -1176,6 +1176,7 @@
     "type": "stack_panel",
     "orientation": "vertical",
     "size": [ "100%", "100%" ],
+    "collection_name": "right_pane_factory_collection",
     "factory": {
       "name": "inventory_section_factory",
       "control_ids": {

@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.0.20</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.0.24</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -10440,12 +10440,6 @@ Allows mob to move towards its current target captain.</br><h3></h3>
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">horizontal_throw_force</td>
-<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.175000</td>
-<td style="border-style:solid; border-width:2; padding:8px">Sets the horizontal throw force.</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:2; padding:8px">listen_time</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0.000000</td>
@@ -10470,10 +10464,16 @@ Allows mob to move towards its current target captain.</br><h3></h3>
 <td style="border-style:solid; border-width:2; padding:8px">Sets the entity's speed when running toward the block.</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">vertical_throw_force</td>
+<td style="border-style:solid; border-width:2; padding:8px">throw_force</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.500000</td>
-<td style="border-style:solid; border-width:2; padding:8px">Sets the vertical throw force.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">0.200000</td>
+<td style="border-style:solid; border-width:2; padding:8px">Sets the throw force.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">vertical_throw_mul</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.500000</td>
+<td style="border-style:solid; border-width:2; padding:8px">Sets the vertical throw multiplier that is applied on top of the throw force in the vertical direction.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>

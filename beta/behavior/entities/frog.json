@@ -30,7 +30,7 @@
 					"use_default_animation": false,
 					"lay_seconds": 2,
 					"egg_type": "minecraft:frog_spawn",
-					"lay_egg_sound": "lay_egg",
+					"lay_egg_sound": "lay_spawn",
 					"on_lay": {
 						"event": "laid_egg",
 						"target": "self"
@@ -269,7 +269,8 @@
 										{ "test": "has_biome_tag", "value": "lukewarm" },
 										{ "test": "has_biome_tag", "value": "ocean" }
 									]
-								}
+								},
+								{ "test": "has_biome_tag", "value": "mangrove_swamp" }
 							]
 						},
 						"add": {
@@ -345,7 +346,8 @@
 										{ "test": "has_biome_tag", "value": "lukewarm" },
 										{ "test": "has_biome_tag", "value": "ocean" }
 									]
-								}
+								},
+								{ "test": "has_biome_tag", "value": "mangrove_swamp" }
 							]
 						},
 						"add": {

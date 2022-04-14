@@ -188,7 +188,7 @@
     "type": "panel",
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "size": [ "100%", "33% - 1px" ],
+    "size": [ "100%", "33% - 5px" ],
     "controls": [
       {
         "inactive_background@enchanting_pocket.inactive_background": {
@@ -230,7 +230,7 @@
 
   "enchant_selection_panel": {
     "type": "panel",
-    "size": [ "100%-34px", 60 ],
+    "size": [ "100%-34px", 72 ],
     "offset": [ 0, 0 ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
@@ -243,7 +243,7 @@
           "layer": 4,
           "anchor_from": "center",
           "anchor_to": "center",
-          "grid_dimensions": [ 1, 5 ],
+          "grid_dimensions": [ 1, 3 ],
           "controls": [
             {
               "button1@enchanting_pocket.enchant_button_panel": {
@@ -253,29 +253,15 @@
               }
             },
             {
-              "padd1": {
-                "type": "panel",
-                "size": [ 0, 4 ],
-                "grid_position": [ 0, 1 ]
-              }
-            },
-            {
               "button2@enchanting_pocket.enchant_button_panel": {
-                "grid_position": [ 0, 2 ],
+                "grid_position": [ 0, 1 ],
                 "$texture_selectable": "textures/ui/dust_selectable_2",
                 "$texture_unselectable": "textures/ui/dust_unselectable_2"
               }
             },
             {
-              "padd2": {
-                "type": "panel",
-                "size": [ 0, 4 ],
-                "grid_position": [ 0, 3 ]
-              }
-            },
-            {
               "button3@enchanting_pocket.enchant_button_panel": {
-                "grid_position": [ 0, 4 ],
+                "grid_position": [ 0, 2 ],
                 "$texture_selectable": "textures/ui/dust_selectable_3",
                 "$texture_unselectable": "textures/ui/dust_unselectable_3"
               }

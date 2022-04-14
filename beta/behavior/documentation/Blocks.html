@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.0.20</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.0.24</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -237,37 +237,31 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:random_ticking</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Describes the component that will trigger an even at a regular interval between two values</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<td style="border-style:solid; border-width:3; padding:7px">Triggers the specified event randomly based on the random tick speed gamerule. The random tick speed determines how often blocks are updated. Some other examples of game mechanics that use random ticking are crop growth and fire spreading.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">on_tick</td>
 <td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The event that will be triggered on ticks</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<td style="border-style:solid; border-width:2; padding:8px">The event that will be triggered on random ticks.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
 <tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">condition</td>
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">1</td>
-<td style="border-style:solid; border-width:1; padding:9px">The condition of event to be executed on the block.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">A condition using Molang queries that results to true/false. If true on the random tick, the event will be triggered. If false on the random tick, the event will not be triggered.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">event</td>
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">set_block_property</td>
-<td style="border-style:solid; border-width:1; padding:9px">The type of event executed on the block.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">range</td>
-<td style="border-style:solid; border-width:1; padding:9px">Array</td>
-<td style="border-style:solid; border-width:1; padding:9px">[10, 10]</td>
-<td style="border-style:solid; border-width:1; padding:9px">The Range between which the component will trigger his event.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">The event that will be triggered.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">target</td>
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">self</td>
-<td style="border-style:solid; border-width:1; padding:9px">The target of event executed on the block.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">The target of the event executed by the block.</br></td>
 </tr>
 </table>
 </td>
@@ -285,43 +279,37 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:ticking</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Describes the component that will trigger an even at a regular interval between two values</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<td style="border-style:solid; border-width:3; padding:7px">Triggers the specified event, either once, or at a regular interval equal to a number of ticks randomly chosen from the range provided.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">looping</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">true</td>
-<td style="border-style:solid; border-width:2; padding:8px">Does the event loop</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Does the event loop? If false, the event will only be triggered once, after a delay equal to a number of ticks randomly chosen from the range. If true, the event will loop, and each interval between events will be equal to a number of ticks randomly chosen from the range.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">on_tick</td>
 <td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
 <td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The event that will be triggered on ticks</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<td style="border-style:solid; border-width:2; padding:8px">The event that will be triggered once or on an interval.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
 <tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">condition</td>
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">1</td>
-<td style="border-style:solid; border-width:1; padding:9px">The condition of event to be executed on the block.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">A condition using Molang queries that results to true/false. If true on the scheduled tick, the event will be triggered. If false on the scheduled tick, the event will not be triggered.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">event</td>
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">set_block_property</td>
-<td style="border-style:solid; border-width:1; padding:9px">The type of event executed on the block.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">range</td>
-<td style="border-style:solid; border-width:1; padding:9px">Array</td>
-<td style="border-style:solid; border-width:1; padding:9px">[10, 10]</td>
-<td style="border-style:solid; border-width:1; padding:9px">The Range between which the component will trigger his event.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">The event that will be triggered.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">target</td>
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">self</td>
-<td style="border-style:solid; border-width:1; padding:9px">The target of event executed on the block.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">The target of the event executed by the block.</br></td>
 </tr>
 </table>
 </td>

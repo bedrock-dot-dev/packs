@@ -17,7 +17,10 @@
 					"max_size": 5
 				},
 				"minecraft:biome_filter": {
-					"test": "has_biome_tag", "operator": "==", "value": "swamp"
+					"any_of": [
+						{"test": "has_biome_tag", "operator": "==", "value": "swamp"},
+						{"test": "has_biome_tag", "operator": "==", "value": "mangrove_swamp"}
+					]
 				}
 			}
 		]

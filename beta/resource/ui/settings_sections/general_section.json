@@ -6102,6 +6102,15 @@
         }
       },
       {
+        "gathering_override@settings_common.option_text_edit": {
+          "$option_label": "options.dev.gathering_config_id_override",
+          "$option_binding_name": "#gathering_config_id_override_text_box",
+          "$option_enabled_binding_name": "#gathering_config_id_override_text_box_enabled",
+          "$max_text_edit_length": 40,
+          "$text_box_name": "gathering_config_id_override_text_box"
+        }
+      },
+      {
         "option_clear_store_cache_button@settings_common.action_button": {
           "$pressed_button_name": "dev_clear_store_cache_button",
           "$button_text": "options.dev_clearStoreCache"
@@ -6511,6 +6520,14 @@
         "reset_render_distance_warning_modal_spacer": {
           "type": "panel",
           "size": [ "100%", 7 ]
+        }
+      },
+      {
+        "option_show_touch_control_selection_screen@settings_common.option_toggle": {
+          "$option_label": "options.showTouchControlSelectionScreen",
+          "$option_binding_name": "#show_touch_control_selection_screen",
+          "$option_enabled_binding_name": "#show_touch_control_selection_screen_enabled",
+          "$toggle_name": "show_touch_control_selection_screen"
         }
       }
     ]

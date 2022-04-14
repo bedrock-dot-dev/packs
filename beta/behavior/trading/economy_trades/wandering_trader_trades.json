@@ -394,15 +394,22 @@
               ],
               "gives": [
                 {
-                  "item": "minecraft:sapling",
-                  "functions": [
+                  "choice": [
                     {
-                      "function": "random_block_state",
-                      "block_state": "sapling_type",
-                      "values": {
-                        "min": 0,
-                        "max": 5
-                      }
+                      "item": "minecraft:sapling",
+                      "functions": [
+                        {
+                          "function": "random_block_state",
+                          "block_state": "sapling_type",
+                          "values": {
+                            "min": 0,
+                            "max": 5
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "item": "minecraft:mangrove_propagule"
                     }
                   ]
                 }

@@ -2369,6 +2369,24 @@
             "sounds/block/dripstone/break5"
          ]
       },
+      "break.frog_spawn" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/frog_spawn/break1",
+            "sounds/block/frog_spawn/break2",
+            "sounds/block/frog_spawn/break3",
+            "sounds/block/frog_spawn/break4"
+         ]
+      },
+      "break.froglight" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/froglight/break1",
+            "sounds/block/froglight/break2",
+            "sounds/block/froglight/break3",
+            "sounds/block/froglight/break4"
+         ]
+      },
       "break.hanging_roots" : {
          "category" : "block",
          "sounds" : [
@@ -4349,6 +4367,16 @@
                "name" : "sounds/damage/hit2"
             },
             "sounds/damage/hit3"
+         ]
+      },
+      "hatch.frog_spawn" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/frog_spawn/hatch1",
+            "sounds/block/frog_spawn/hatch2",
+            "sounds/block/frog_spawn/hatch3",
+            "sounds/block/frog_spawn/hatch4",
+            "sounds/block/frog_spawn/hatch5"
          ]
       },
       "hit.amethyst_block" : {
@@ -7660,35 +7688,43 @@
          "sounds" : [
             {
                "name" : "sounds/mob/frog/idle1",
-               "volume" : 0.820
+               "pitch" : 0.950,
+               "volume" : 0.80
             },
             {
                "name" : "sounds/mob/frog/idle2",
+               "pitch" : 0.90,
                "volume" : 0.820
             },
             {
                "name" : "sounds/mob/frog/idle3",
-               "volume" : 0.820
+               "pitch" : 0.90,
+               "volume" : 0.90
             },
             {
                "name" : "sounds/mob/frog/idle4",
-               "volume" : 0.820
+               "pitch" : 0.950,
+               "volume" : 0.80
             },
             {
                "name" : "sounds/mob/frog/idle5",
-               "volume" : 0.820
+               "pitch" : 0.90,
+               "volume" : 0.850
             },
             {
                "name" : "sounds/mob/frog/idle6",
-               "volume" : 0.820
+               "pitch" : 0.90,
+               "volume" : 0.90
             },
             {
                "name" : "sounds/mob/frog/idle7",
-               "volume" : 0.820
+               "pitch" : 0.90,
+               "volume" : 0.70
             },
             {
                "name" : "sounds/mob/frog/idle8",
-               "volume" : 0.820
+               "pitch" : 0.90,
+               "volume" : 0.30
             }
          ]
       },
@@ -7713,16 +7749,40 @@
          "category" : "neutral",
          "sounds" : [
             {
-               "name" : "sounds/mob/frog/eat1"
+               "name" : "sounds/mob/frog/eat1",
+               "volume" : 0.60
             },
             {
-               "name" : "sounds/mob/frog/eat2"
+               "name" : "sounds/mob/frog/eat1",
+               "pitch" : 0.90,
+               "volume" : 0.60
             },
             {
-               "name" : "sounds/mob/frog/eat3"
+               "name" : "sounds/mob/frog/eat2",
+               "volume" : 0.60
             },
             {
-               "name" : "sounds/mob/frog/eat4"
+               "name" : "sounds/mob/frog/eat2",
+               "pitch" : 0.90,
+               "volume" : 0.60
+            },
+            {
+               "name" : "sounds/mob/frog/eat3",
+               "volume" : 0.60
+            },
+            {
+               "name" : "sounds/mob/frog/eat3",
+               "pitch" : 0.90,
+               "volume" : 0.60
+            },
+            {
+               "name" : "sounds/mob/frog/eat4",
+               "volume" : 0.60
+            },
+            {
+               "name" : "sounds/mob/frog/eat4",
+               "pitch" : 0.90,
+               "volume" : 0.60
             }
          ]
       },
@@ -7730,20 +7790,16 @@
          "category" : "neutral",
          "sounds" : [
             {
-               "name" : "sounds/mob/frog/hurt1",
-               "volume" : 0.650
+               "name" : "sounds/mob/frog/hurt1"
             },
             {
-               "name" : "sounds/mob/frog/hurt2",
-               "volume" : 0.650
+               "name" : "sounds/mob/frog/hurt2"
             },
             {
-               "name" : "sounds/mob/frog/hurt3",
-               "volume" : 0.650
+               "name" : "sounds/mob/frog/hurt3"
             },
             {
-               "name" : "sounds/mob/frog/hurt4",
-               "volume" : 0.650
+               "name" : "sounds/mob/frog/hurt4"
             }
          ]
       },
@@ -7751,16 +7807,55 @@
          "category" : "neutral",
          "sounds" : [
             {
-               "name" : "sounds/mob/frog/long_jump1"
+               "name" : "sounds/mob/frog/long_jump1",
+               "volume" : 0.120
             },
             {
-               "name" : "sounds/mob/frog/long_jump2"
+               "name" : "sounds/mob/frog/long_jump1",
+               "pitch" : 0.80,
+               "volume" : 0.120
             },
             {
-               "name" : "sounds/mob/frog/long_jump3"
+               "name" : "sounds/mob/frog/long_jump2",
+               "volume" : 0.120
             },
             {
-               "name" : "sounds/mob/frog/long_jump4"
+               "name" : "sounds/mob/frog/long_jump2",
+               "pitch" : 0.80,
+               "volume" : 0.120
+            },
+            {
+               "name" : "sounds/mob/frog/long_jump3",
+               "volume" : 0.120
+            },
+            {
+               "name" : "sounds/mob/frog/long_jump3",
+               "pitch" : 0.80,
+               "volume" : 0.120
+            },
+            {
+               "name" : "sounds/mob/frog/long_jump4",
+               "volume" : 0.120
+            },
+            {
+               "name" : "sounds/mob/frog/long_jump4",
+               "pitch" : 0.80,
+               "volume" : 0.120
+            }
+         ]
+      },
+      "mob.frog.lay_spawn" : {
+         "category" : "hostile",
+         "sounds" : [
+            {
+               "name" : "sounds/mob/frog/lay_spawn1",
+               "pitch" : 1.0,
+               "volume" : 0.250
+            },
+            {
+               "name" : "sounds/mob/frog/lay_spawn2",
+               "pitch" : 1.0,
+               "volume" : 0.250
             }
          ]
       },
@@ -7790,19 +7885,19 @@
          "sounds" : [
             {
                "name" : "sounds/mob/frog/tongue1",
-               "volume" : 1
+               "volume" : 0.50
             },
             {
                "name" : "sounds/mob/frog/tongue2",
-               "volume" : 1
+               "volume" : 0.50
             },
             {
                "name" : "sounds/mob/frog/tongue3",
-               "volume" : 1
+               "volume" : 0.50
             },
             {
                "name" : "sounds/mob/frog/tongue4",
-               "volume" : 1
+               "volume" : 0.50
             }
          ]
       },
@@ -10785,19 +10880,6 @@
          "category" : "neutral",
          "sounds" : [ "sounds/mob/wandering_trader/death" ]
       },
-      "mob.wanderingtrader.dink_potion" : {
-         "category" : "neutral",
-         "sounds" : [
-            {
-               "name" : "sounds/mob/wandering_trader/drink_potion",
-               "volume" : 0.70
-            },
-            {
-               "name" : "sounds/random/drink",
-               "volume" : 0.650
-            }
-         ]
-      },
       "mob.wanderingtrader.disappeared" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
@@ -10820,7 +10902,16 @@
       "mob.wanderingtrader.drink_potion" : {
          "__use_legacy_max_distance" : "true",
          "category" : "neutral",
-         "sounds" : [ "sounds/mob/wandering_trader/drink_potion" ]
+         "sounds" : [
+            {
+               "name" : "sounds/mob/wandering_trader/drink_potion",
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/random/drink",
+               "volume" : 0.650
+            }
+         ]
       },
       "mob.wanderingtrader.haggle" : {
          "__use_legacy_max_distance" : "true",
@@ -13802,6 +13893,28 @@
             "sounds/block/dripstone/step4",
             "sounds/block/dripstone/step5",
             "sounds/block/dripstone/step6"
+         ]
+      },
+      "step.frog_spawn" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/frog_spawn/step1",
+            "sounds/block/frog_spawn/step2",
+            "sounds/block/frog_spawn/step3",
+            "sounds/block/frog_spawn/step4",
+            "sounds/block/frog_spawn/step5",
+            "sounds/block/frog_spawn/step6"
+         ]
+      },
+      "step.froglight" : {
+         "category" : "block",
+         "sounds" : [
+            "sounds/block/froglight/step1",
+            "sounds/block/froglight/step2",
+            "sounds/block/froglight/step3",
+            "sounds/block/froglight/step4",
+            "sounds/block/froglight/step5",
+            "sounds/block/froglight/step6"
          ]
       },
       "step.grass" : {

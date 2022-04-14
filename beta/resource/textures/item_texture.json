@@ -304,6 +304,9 @@
             "textures/items/dye_powder_glow"
          ]
       },
+      "echo_shard" : {
+         "textures" : "textures/items/echo_shard"
+      },
       "egg" : {
          "textures" : "textures/items/egg"
       },
@@ -766,6 +769,9 @@
       },
       "record_ward" : {
          "textures" : "textures/items/record_ward"
+      },
+      "recovery_compass" : {
+         "textures" : "textures/items/recovery_compass_item"
       },
       "redstone_dust" : {
          "textures" : "textures/items/redstone_dust"

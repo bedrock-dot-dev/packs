@@ -758,6 +758,50 @@
          "pitch" : 1.0,
          "volume" : 1.0
       },
+      "frog_spawn" : {
+         "events" : {
+            "break" : {
+               "pitch" : 1.20,
+               "sound" : "break.frog_spawn",
+               "volume" : 0.10
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 1.30,
+               "sound" : "step.frog_spawn",
+               "volume" : 0.30
+            },
+            "place" : {
+               "pitch" : 1.50,
+               "sound" : "break.frog_spawn",
+               "volume" : 0.20
+            }
+         }
+      },
+      "froglight" : {
+         "events" : {
+            "break" : {
+               "sound" : "break.froglight",
+               "volume" : 1.0
+            },
+            "default" : "",
+            "hit" : {
+               "pitch" : 1.30,
+               "sound" : "step.froglight",
+               "volume" : 0.830
+            },
+            "item.use.on" : {
+               "pitch" : [ 0.80, 1.0 ],
+               "sound" : "place.froglight",
+               "volume" : 1.0
+            },
+            "place" : {
+               "pitch" : 1.0,
+               "sound" : "break.froglight",
+               "volume" : 1.0
+            }
+         }
+      },
       "fungus" : {
          "events" : {
             "break" : {
@@ -3724,6 +3768,11 @@
          "tadpole" : {
             "events" : {
                "death" : "mob.tadpole.death",
+               "flop" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.fish.flop",
+                  "volume" : 1.0
+               },
                "hurt" : "mob.tadpole.hurt"
             },
             "pitch" : [ 0.80, 1.20 ],
@@ -4416,6 +4465,16 @@
             "sound" : "dig.wood",
             "volume" : 12.0
          },
+         "block.frog_spawn.break" : {
+            "pitch" : 0.90,
+            "sound" : "break.frog_spawn",
+            "volume" : 0.30
+         },
+         "block.frog_spawn.hatch" : {
+            "pitch" : 0.60,
+            "sound" : "hatch.frog_spawn",
+            "volume" : 1.20
+         },
          "block.furnace.lit" : {
             "pitch" : 1.0,
             "sound" : "block.furnace.lit",
@@ -4932,6 +4991,11 @@
          "lay_egg" : {
             "pitch" : 0.90,
             "sound" : "block.turtle_egg.drop",
+            "volume" : 0.30
+         },
+         "lay_spawn" : {
+            "pitch" : 0.90,
+            "sound" : "mob.frog.lay_spawn",
             "volume" : 0.30
          },
          "leashknot.break" : {
@@ -5789,6 +5853,53 @@
                "step" : {
                   "sound" : "step.dripstone_block",
                   "volume" : 0.170
+               }
+            },
+            "pitch" : 1.0,
+            "volume" : 1.0
+         },
+         "frog_spawn" : {
+            "events" : {
+               "default" : "",
+               "fall" : {
+                  "pitch" : 1.30,
+                  "sounds" : "step.frog_spawn",
+                  "volume" : 0.30
+               },
+               "jump" : {
+                  "sound" : "step.frog_spawn",
+                  "volume" : 0.120
+               },
+               "land" : {
+                  "sound" : "step.frog_spawn",
+                  "volume" : 0.140
+               },
+               "step" : {
+                  "sound" : "step.frog_spawn",
+                  "volume" : 0.30
+               }
+            },
+            "pitch" : 1.0,
+            "volume" : 1.0
+         },
+         "froglight" : {
+            "events" : {
+               "default" : "",
+               "fall" : {
+                  "sounds" : "step.froglight",
+                  "volume" : 1.0
+               },
+               "jump" : {
+                  "sound" : "step.froglight",
+                  "volume" : 0.120
+               },
+               "land" : {
+                  "sound" : "step.froglight",
+                  "volume" : 0.140
+               },
+               "step" : {
+                  "sound" : "step.froglight",
+                  "volume" : 1.0
                }
             },
             "pitch" : 1.0,

@@ -1364,6 +1364,7 @@
       "textures" : "itemframe_background"
    },
    "frog_spawn" : {
+      "sound" : "frog_spawn",
       "textures" : "frog_spawn"
    },
    "frosted_ice" : {
@@ -2219,6 +2220,7 @@
       "textures" : "obsidian"
    },
    "ochre_froglight" : {
+      "sound" : "froglight",
       "textures" : {
          "down" : "ochre_froglight_top",
          "side" : "ochre_froglight_side",
@@ -2279,6 +2281,7 @@
       "textures" : "packed_mud"
    },
    "pearlescent_froglight" : {
+      "sound" : "froglight",
       "textures" : {
          "down" : "pearlescent_froglight_top",
          "side" : "pearlescent_froglight_side",
@@ -3327,6 +3330,7 @@
       }
    },
    "verdant_froglight" : {
+      "sound" : "froglight",
       "textures" : {
          "down" : "verdant_froglight_top",
          "side" : "verdant_froglight_side",
