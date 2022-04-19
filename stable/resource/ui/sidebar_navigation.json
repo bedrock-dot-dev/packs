@@ -644,6 +644,7 @@
   },
 
   "sidebar_screen_nav_option_factory_panel": {
+    "ignored": "$store_disabled",
     "type": "panel",
     "size": [ "100%", "35% - 26px" ],
     "controls": [

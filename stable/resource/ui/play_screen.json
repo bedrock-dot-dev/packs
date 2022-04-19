@@ -4389,7 +4389,8 @@
   "sync_legacy_worlds_button@common_buttons.light_text_button": {
     "layer": 2,
     "$pressed_button_name": "button.menu_sync_legacy_worlds",
-    "$button_text": "playscreen.syncLegacyWorlds",
+    "$button_text": "#sync_legacy_button_text",
+    "$button_text_binding_type": "global",
 
     "bindings": [
       {
@@ -4462,7 +4463,7 @@
         "buttons": {
           "type": "stack_panel",
           "orientation": "horizontal",
-          "size": [ "100%", "100%" ],
+          "size": [ "100% - 1px", "100%" ],
           "$secondary_visible|default": true,
           "controls": [
             {
@@ -4472,7 +4473,7 @@
                 "controls": [
                   {
                     "primary@$primary_header_button": {
-                      "size": [ "100% + 1px", "100%" ],
+                      "size": [ "100% - 1px", "100%" ],
                       "anchor_from": "top_left",
                       "anchor_to": "top_left",
                       "layer": 1
@@ -5046,7 +5047,7 @@
       },
       {
         "upgrade_legacy_worlds_label@play.world_list_label_with_color_panel": {
-          "$label_text": "playscreen.upgradeLegacyWorlds",
+          "$label_text": "#upgrade_legacy_text",
           "$square_color": "$world_diskspace_editions_fill",
           "variables": [
             {
@@ -5064,7 +5065,7 @@
       },
       {
         "legacy_world_item_grid@play.legacy_world_item_grid": {
-          "$tts_section_header": "playscreen.upgradeLegacyWorlds",
+          "$tts_section_header": "#upgrade_legacy_text",
           "variables": [
             {
               "requires": "$pre_release",
@@ -5087,7 +5088,7 @@
       },
       {
         "beta_retail_legacy_worlds_label@play.world_list_label_panel": {
-          "$label_text": "playscreen.upgradeLegacyWorlds",
+          "$label_text": "#upgrade_legacy_text",
           "bindings": [
             {
               "binding_name": "#beta_retail_legacy_worlds_visible",
@@ -5098,7 +5099,7 @@
       },
       {
         "beta_retail_legacy_grid@play.beta_retail_legacy_world_item_grid": {
-          "$tts_section_header": "playscreen.upgradeLegacyWorlds"
+          "$tts_section_header": "#upgrade_legacy_text"
         }
       },
       {
@@ -5347,7 +5348,16 @@
           "color": "$main_header_text_color",
           "size": [ "fill", "100%" ],
           "offset": [ 1, 0 ],
-          "text": "$label_text"
+          "$label_text|default": "b",
+          "text": "$label_text",
+          "$label_binding_type|default": "none",
+          "bindings": [
+            {
+              "binding_type": "$label_binding_type",
+              "binding_name": "$label_text",
+              "binding_name_override": "$label_text"
+            }
+          ]
         }
       }
     ]

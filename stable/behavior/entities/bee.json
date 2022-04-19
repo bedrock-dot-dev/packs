@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18.10",
+    "format_version": "1.18.20",
     "minecraft:entity": {
         "description": {
             "identifier": "minecraft:bee",
@@ -246,10 +246,12 @@
                             "target": "self"
                         }
                     ],
-                    "on_failed": {
+                    "on_failed": [
+                      {
                         "event": "find_hive_event",
                         "target": "self"
-                    }
+                      }
+                    ]
                 }
             },
             "find_hive": {
@@ -488,6 +490,13 @@
             "minecraft:nameable": {},
             "minecraft:block_sensor": {
                 "sensor_radius": 16,
+                "sources" : [
+                    {
+                        "test": "has_silk_touch",
+                        "subject": "other",
+                        "value": false
+                    }
+                ],
                 "on_break": [
                     {
                         "block_list": [

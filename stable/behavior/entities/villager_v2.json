@@ -405,6 +405,7 @@
         "minecraft:behavior.harvest_farm_block": {},
         "minecraft:behavior.explore_outskirts": {},
         "minecraft:behavior.work": {},
+        "minecraft:behavior.work_composter": {},
         "minecraft:behavior.mingle": {},
         "minecraft:behavior.sleep": {}
       },
@@ -474,10 +475,18 @@
               "item": "minecraft:wheat_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:beetroot_seeds",
+              "want_amount": 64,
+              "surplus_amount": 64,
+              "stored_in_inventory": true,
+              "pickup_only": true
+            },
+            {
+              "item": "minecraft:bone_meal",
               "want_amount": 64,
               "surplus_amount": 64,
               "stored_in_inventory": true
@@ -491,13 +500,11 @@
             }
           ]
         },
-        "minecraft:behavior.work": {
-          "priority": 7,
+        "minecraft:behavior.work_composter": {
+          "priority": 9,
           "active_time": 250,
           "speed_multiplier": 0.5,
           "goal_cooldown": 200,
-          "sound_delay_min": 100,
-          "sound_delay_max": 200,
           "can_work_in_rain": false,
           "work_in_rain_tolerance": 100,
           "on_arrival": {
@@ -506,11 +513,10 @@
           }
         },
         "minecraft:behavior.harvest_farm_block": {
-          "priority": 8,
-          "max_seconds_before_search": 1.0,
-          "search_cooldown_max_seconds": 8.0,
-          "seconds_until_new_task": 0.5,
-          "speed_multiplier": 0.5
+          "priority": 7
+        },
+        "minecraft:behavior.fertilize_farm_block": {
+          "priority": 8
         }
       },
 
@@ -622,13 +628,15 @@
               "item": "minecraft:wheat_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:beetroot_seeds",
               "want_amount": 64,
               "surplus_amount": 64,
-              "stored_in_inventory": true
+              "stored_in_inventory": true,
+              "pickup_only": true
             },
             {
               "item": "minecraft:wheat",
@@ -1550,7 +1558,6 @@
                 "any_of": [
                   { "test" : "is_family", "subject" : "other", "value" : "zombie"},
                   { "test" : "is_family", "subject" : "other", "value" : "zombie_villager"},
-                  { "test" : "is_family", "subject" : "other", "value" : "zombie_pigman"},
                   { "test" : "is_family", "subject" : "other", "value" : "illager"},
                   { "test" : "is_family", "subject" : "other", "value" : "vex"}
                 ]
@@ -1577,12 +1584,12 @@
         "priority": 7
       },
       "minecraft:behavior.look_at_player": {
-        "priority": 8,
+        "priority": 9,
         "look_distance": 8,
         "probability": 0.02
       },
       "minecraft:behavior.share_items": {
-        "priority": 9,
+        "priority": 10,
         "max_dist": 3,
         "goal_radius":  2.0,
         "speed_multiplier": 0.5,
@@ -1593,11 +1600,11 @@
         ]
       },
       "minecraft:behavior.move_towards_dwelling_restriction": {
-        "priority": 10,
+        "priority": 11,
         "speed_multiplier": 0.6
       },
       "minecraft:behavior.random_stroll": {
-        "priority": 10,
+        "priority": 11,
         "speed_multiplier": 0.6
       },
         "minecraft:physics": {

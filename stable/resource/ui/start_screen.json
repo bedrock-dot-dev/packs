@@ -15,6 +15,22 @@
     "size": [ 16, 16 ]
   },
 
+  "feedback_icon_edu": {
+    "type": "image",
+    "texture": "$feedback_texture",
+    "offset": [ -0.5, -0.5 ],
+    "size": [ 16, 16 ],
+    "layer": 3,
+
+    "$feedback_texture": "textures/ui/feedback",
+    "variables": [
+      {
+        "requires": "($hover_state or $pressed_state)",
+        "$feedback_texture": "textures/ui/feedback_hover"
+      }
+    ]
+  },
+
   "Xbox_icon": {
     "type": "image",
     "texture": "textures/ui/xbox4",
@@ -289,8 +305,9 @@
   //---------------------------------------------------------------------------
 
   "edu_feedback_button@common_buttons.light_content_button": {
-    "size": [ 24, 24 ],
-    "$button_content": "start.feedback_icon",
+    "size": [ 25, 25 ],
+    "$button_pressed_offset": [ 0, 0 ],
+    "$button_content": "start.feedback_icon_edu",
     "$pressed_button_name": "button.edu_feedback"
   },
 
@@ -809,7 +826,7 @@
     "controls": [
       {
         "store_button@start.store_button": {
-          "enabled": "(not $store_disabled)",
+          "enabled": "(not $store_disabled and not ($is_ios and $pre_release)))",
           "bindings": [
             {
               "binding_name": "(not #marketplace_disabled)",

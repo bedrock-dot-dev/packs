@@ -47,10 +47,10 @@
           "range": 4.0,
           "event_name": "ambient.in.raid"
         }
+      },
+      "minecraft:raid_persistence": {
+        "minecraft:persistent": {}
       }
-    },
-    "minecraft:raid_persistence": {
-      "minecraft:persistent": {}
     },
     "components": {
       "minecraft:is_hidden_when_invisible": {

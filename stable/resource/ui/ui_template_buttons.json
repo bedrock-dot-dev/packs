@@ -557,6 +557,26 @@
             }
           ]
         }
+      },
+      {
+        "pressed": {
+          "type": "panel",
+          "size": "$underline_button_size",
+          "controls": [
+            {
+              "label_hover@common.single_line_label": {
+                "$single_line_label_color|default": [ 0.215, 0.839, 0.118 ],
+                "$underline_control": [
+                  {
+                    "underline_hover@common.underline": {
+                      "$texture": "textures/ui/underline_focus"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     ]
   },

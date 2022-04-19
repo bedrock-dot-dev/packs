@@ -135,7 +135,12 @@
               "trader_exp": 20,
               "max_uses": 12,
               "reward_exp": true
-            },
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
             {
               "wants": [
                 {

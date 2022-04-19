@@ -61,13 +61,13 @@
     "$item_display_size": [ "100%y", "100% - 3px" ],
     "size": "$item_display_size",
     "$is_loading": false,
-    "$item_texture_file_system_binding_name": "#icon_file_system",
-    "$item_texture_path_binding_name": "#icon_path",
+    "$persona_piece_binding_type": "global",
+    "$persona_piece_collection_name": "",
     "$ignore_background": true,
     "$ignore_rarity_bar": true,
     "controls": [
       {
-        "item@persona_common.item_display": {
+        "item@persona_common.piece_item_display": {
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle"
         }
@@ -87,7 +87,7 @@
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
           "layer": 1,
-          "texture": "#icon_path",
+          "texture": "#thumbnail_texture_path",
           "zip_folder": "#icon_zip",
           "texture_file_system": "#thumbnail_texture_file_system",
           "bindings": [

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.18.10",
+  "format_version": "1.18.20",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:ocelot",
@@ -171,7 +171,7 @@
         ]
       },
       "minecraft:attack_damage": {
-        "value": 4
+        "value": 3
       },
       "minecraft:nameable": {
       },

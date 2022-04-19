@@ -45,10 +45,15 @@
         "padding_0@convert_purchases_to_xbl.padding": {}
       },
       {
-        "description_label_wrapper@common.tts_label_focus_wrapper": {
+        "scrolling_panel@common.scrolling_panel": {
+          "$show_background": false,
+          "$scroll_box_visible_touch": true,
           "size": [ "100%", "fill" ],
-          "$tts_label_panel": "convert_purchases_to_xbl.scrolling_panel",
-          "$focus_border_size": [ "100% + 2px", "100%" ]
+          "$scrolling_content": "convert_purchases_to_xbl.scroll_content_focus_border",
+          "$scroll_size": [ 5, "100%" ],
+          "$scrolling_pane_size": [ "100%", "100%" ],
+          "$scrolling_pane_offset": [ 0, 0 ],
+          "$scroll_bar_right_padding_size": [ 0, 0 ]
         }
       },
       {
@@ -66,7 +71,8 @@
                 "$button_text": "xbl.savePurchase.saveButton",
                 "size": [ "50% - 1px", 30 ],
                 "$button_text_max_size": [ "100%", 20 ],
-                "$button_focus_precedence": 10
+                "$button_focus_precedence": 10,
+                "$focus_override_up": "text_container"
               }
             },
             {
@@ -80,7 +86,8 @@
                 "$pressed_button_name": "button.leave_on_device",
                 "$button_text": "xbl.savePurchase.leaveOnDevice",
                 "size": [ "50% - 1px", 30 ],
-                "$button_text_max_size": [ "100%", 20 ]
+                "$button_text_max_size": [ "100%", 20 ],
+                "$focus_override_up": "text_container"
               }
             }
           ]
@@ -91,9 +98,9 @@
 
   "description_label_panel": {
     "type": "stack_panel",
-    "size": [ "100%", "100%c" ],
+    "size": [ "100% - 2px", "default" ],
     "layer": 1,
-    "$font_scale": 1.0, 
+    "$font_scale": 1.0,
     "controls": [
       {
         "line1": {
@@ -124,15 +131,12 @@
     ]
   },
 
-  "scrolling_panel@common.scrolling_panel": {
-    "$show_background": false,
-    "$scroll_box_visible_touch": true,
-    "size": [ "100%", "100%" ],
-    "$scrolling_content": "convert_purchases_to_xbl.description_label_panel",
-    "$scroll_size": [ 5, "100%" ],
-    "$scrolling_pane_size": [ "100%", "100%" ],
-    "$scrolling_pane_offset": [ 0, 0 ],
-    "$scroll_bar_right_padding_size": [ 0, 0 ]
+  // A scrolling_panel must contain a focusable element for gamepad scroll to work.
+  "scroll_content_focus_border@common.non_interact_focus_border_button": {
+    "$content_inside": "convert_purchases_to_xbl.description_label_panel",
+    "$border_size": [ "100%", "100%sm + 2px" ],
+    "size": [ "100%", "100%cm" ],
+    "$focus_id": "text_container"
   },
 
 
@@ -170,6 +174,6 @@
     "$text_name": "xbl.savePurchase.title",
     "$child_control": "convert_purchases_to_xbl.dialog_content",
     "$show_close_button": false,
-    "size": [ 240, 240 ] 
+    "size": [ 240, 240 ]
   }
 }

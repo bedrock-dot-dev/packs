@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.18.10.4</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.18.30.4</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Blocks">Blocks</a></th> </tr>
@@ -72,12 +72,6 @@
 <td style="border-style:solid; border-width:3; padding:7px">The amount of light this block will filter out. Higher value means more light will be filtered out (0 - 15).</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:breakonpush</td>
-<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">When pushed by a piston the block breaks</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:breathability</td>
 <td style="border-style:solid; border-width:3; padding:7px">Enumerator</td>
 <td style="border-style:solid; border-width:3; padding:7px">solid</td>
@@ -89,11 +83,11 @@
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">Describes the component of a custom crafting table. This component supports only "recipe_shaped" and "recipe_shapeless" typed recipes and not others like "recipe_furnace" or "recipe_brewing_mix". If there are two recipes for one item, the recipe book will pick the first that was parsed. If two input recipes are the same, crafting may assert and the resulting item may vary.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="crafting_tags">crafting_tags</p></h3>
 
-Defines the tags recipes should define to be crafted on this table.</br><a href="#Index">Back to top</a><br><br>
+Defines the tags recipes should define to be crafted on this table. Limited to 64 tags.</br><a href="#Index">Back to top</a><br><br>
 
 <h3><p id="custom_description">custom_description</p></h3>
 
-Defines the name in the UI of this table. If not specified, the name of the block will be used.</br><a href="#Index">Back to top</a><br><br>
+Defines the language file key that maps what text will be displayed in the UI of this table. If not specified, the name of the block will be used.</br><a href="#Index">Back to top</a><br><br>
 
 </td>
 </tr>
@@ -155,12 +149,6 @@ Defines the name in the UI of this table. If not specified, the name of the bloc
 <td style="border-style:solid; border-width:3; padding:7px">The geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:immovable</td>
-<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">An Immovable block cannot be pushed by pistons</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:loot</td>
 <td style="border-style:solid; border-width:3; padding:7px">String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
@@ -212,12 +200,6 @@ A material instance definition to map to a material instance in a geometry file.
 </td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:onlypistonpush</td>
-<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Blocks with those components won't stick to stickyPistons</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:part_visibility</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
@@ -249,12 +231,6 @@ List of conditions where the block can be placed/survive</br><h4></h4>
 <a href="#Index">Back to top</a><br><br>
 
 </td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:preventsjumping</td>
-<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">this component makes it so actors can't jump when walking on this block</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:random_ticking</td>
@@ -475,6 +451,12 @@ Event responses for block trigger components.</br><h2></h2>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">0</td>
 <td style="border-style:solid; border-width:2; padding:8px">The amount of damage to deal.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">mob_amount</td>
+<td style="border-style:solid; border-width:2; padding:8px">Integer</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">The amount of damage to deal if held by a mob.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">target</td>

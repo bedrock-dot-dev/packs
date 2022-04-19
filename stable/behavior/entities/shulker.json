@@ -165,7 +165,15 @@
         "attack_radius": 15
       },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 2
+        "priority": 2,
+        "entity_types": {
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "shulker"
+          }
+        }
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 3,
