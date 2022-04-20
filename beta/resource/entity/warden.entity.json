@@ -56,7 +56,8 @@
           { "look_at_target": "!(query.is_emerging || query.is_digging)" },
           "melee_attack_controller",
           { "swimming": "query.swim_amount > 0.0" },
-          "hurt_controller"
+          "hurt_controller",
+          "sonic_boom_controller"
         ]
       },
       "animations": {
@@ -76,7 +77,9 @@
         "bob": "animation.warden.bob",
         "swimming": "animation.humanoid.swimming.v1.0",
         "hurt": "animation.warden.hurt",
-        "hurt_controller": "controller.animation.warden.hurt"
+        "hurt_controller": "controller.animation.warden.hurt",
+        "sonic_boom": "animation.warden.sonic_boom",
+        "sonic_boom_controller": "controller.animation.warden.sonic_boom"
       },
       "render_controllers": [
         "controller.render.warden",

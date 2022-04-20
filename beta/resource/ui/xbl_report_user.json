@@ -151,7 +151,7 @@
         }    
       },
       {
-        "text_edit_box@common.multiline_text_edit_box": {
+        "text_edit_box@common.scrollable_multiline_text_edit_box": {
           "constrain_to_rect": false,
           "enabled_newline": true,
           "$text_box_name": "report_reason_text_box",

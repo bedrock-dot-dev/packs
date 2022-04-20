@@ -498,6 +498,8 @@
     "max_size": "$button_text_max_size",
     "$text_alignment|default": "center",
     "text_alignment": "$text_alignment",
+    "$tts_section_header|default": "",
+    "tts_section_header": "$tts_section_header",
     "bindings": [
       {
         "binding_type": "$button_text_binding_type",

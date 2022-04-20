@@ -2009,6 +2009,7 @@
       "textures" : "mangrove_planks"
    },
    "mangrove_propagule" : {
+      "carried_textures" : "mangrove_propagule_carried",
       "sound" : "wood",
       "textures" : "mangrove_propagule"
    },

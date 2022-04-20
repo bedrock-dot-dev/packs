@@ -100,6 +100,26 @@
 					]
 				}
 			}
+		},
+		"controller.animation.warden.sonic_boom" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"sonic_attack" : "query.is_sonic_boom"
+						}
+					]
+				},
+				"sonic_attack" : {
+					"animations" : [ "sonic_boom" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_sonic_boom"
+						}
+					]
+				}
+			}
 		}
 	}
 }

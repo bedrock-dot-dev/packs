@@ -118,20 +118,36 @@
         "priority": 2,
         "duration": 4.2
       },
-      "minecraft:behavior.melee_attack": {
+      "minecraft:behavior.sonic_boom": {
         "priority": 3,
+        "duration": 3.0,
+        "speed_multiplier": 1.2,
+        "attack_damage": 30,
+        "attack_range_horizontal": 15,
+        "attack_range_vertical": 20,
+        "attack_cooldown": 5,
+        "knockback_vertical_strength": 0.5,
+        "knockback_horizontal_strength": 2.5,
+        "knockback_height_cap": 0.5,
+        "duration_until_attack_sound": 1.7,
+        "charge_sound": "sonic_charge",
+        "attack_sound": "sonic_boom"
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
         "speed_multiplier": 1.2,
         "melee_fov": 360
       },
       "minecraft:behavior.investigate_suspicious_location": {
-        "priority": 4,
+        "priority": 5,
         "speed_multiplier": 0.7
       },
       "minecraft:behavior.sniff": {
-        "priority": 5,
+        "priority": 6,
         "duration": 4.16,
         "sniffing_radius": 24.0,
-        "suspicion_radius" : 6.0,
+        "suspicion_radius_horizontal" : 6.0,
+        "suspicion_radius_vertical": 20.0,
         "cooldown_range": [ 5.0, 10.0 ]
       },
       "minecraft:behavior.random_stroll": {
@@ -142,6 +158,10 @@
         "priority": 11
       },
       "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
       "minecraft:mob_effect": {
         "effect_range": 20,
         "effect_time": 13,

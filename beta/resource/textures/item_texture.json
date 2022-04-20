@@ -487,9 +487,6 @@
       "mangrove_door" : {
          "textures" : "textures/items/mangrove_door"
       },
-      "mangrove_propagule" : {
-         "textures" : "textures/items/mangrove_propagule"
-      },
       "mangrove_sign" : {
          "textures" : "textures/items/mangrove_sign"
       },

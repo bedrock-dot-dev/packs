@@ -796,11 +796,11 @@
                "volume" : 1.0
             },
             "place" : {
-               "pitch" : 1.0,
                "sound" : "break.froglight",
                "volume" : 1.0
             }
-         }
+         },
+         "pitch" : 1.0
       },
       "fungus" : {
          "events" : {
@@ -3978,7 +3978,7 @@
                "step" : {
                   "pitch" : 1.0,
                   "sound" : "mob.warden.step",
-                  "volume" : 0.30
+                  "volume" : 10.0
                }
             },
             "pitch" : [ 0.80, 1.20 ],
@@ -5305,6 +5305,16 @@
             "pitch" : 1.0,
             "sound" : "smithing_table.use",
             "volume" : 1.0
+         },
+         "sonic_boom" : {
+            "pitch" : 1.0,
+            "sound" : "mob.warden.sonic_boom",
+            "volume" : 3.0
+         },
+         "sonic_charge" : {
+            "pitch" : 1.0,
+            "sound" : "mob.warden.sonic_charge",
+            "volume" : 3.0
          },
          "squid.ink_squirt" : {
             "pitch" : 1.0,

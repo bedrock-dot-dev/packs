@@ -1652,6 +1652,9 @@
       "mangrove_propagule" : {
          "textures" : "textures/blocks/mangrove_propagule"
       },
+      "mangrove_propagule_carried" : {
+         "textures" : "textures/blocks/mangrove_propagule_carried"
+      },
       "mangrove_propagule_hanging" : {
          "textures" : "textures/blocks/mangrove_propagule_hanging"
       },

@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.0.24</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.0.26</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -96,7 +96,15 @@ Defines the language file key that maps what text will be displayed in the UI of
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:creative_category</td>
 <td style="border-style:solid; border-width:3; padding:7px">String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Specifies the creative group for the block.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this component is omitted, the block will not appear in the inventory or crafting table container screens.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="category">category</p></h3>
+
+Determines which category this block will be placed under in the inventory and crafting table container screens. Options are "construction", "nature", "equipment", "items", and "none". If omitted or "none" is specified, the block will not appear in the inventory or crafting table container screens.</br><a href="#Index">Back to top</a><br><br>
+
+<h3><p id="group">group</p></h3>
+
+Specifies the language file key that maps to which expandable/collapsible group this block will be a part of within a category. If the string given can not be resolved as a loc string, then we will check if there is an existing group whose name matches the raw string. If this field is omitted, or there is no group whose name matches the loc string or the raw string, this block will be placed standalone in the given category.</br><a href="#Index">Back to top</a><br><br>
+
+</td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:destroy_time</td>

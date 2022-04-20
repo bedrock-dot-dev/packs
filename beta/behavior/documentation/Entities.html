@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.0.24</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.0.26</h1>
 This is documentation for a beta release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of beta if your add-on isn't working properly. Resource and Behavior Packs created for the beta are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -13698,13 +13698,100 @@ Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an
 <td style="border-style:solid; border-width:2; padding:8px">sniffing_radius</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">5.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Player detection radius</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Mob detection radius</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">suspicion_radius</td>
+<td style="border-style:solid; border-width:2; padding:8px">suspicion_radius_horizontal</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
 <td style="border-style:solid; border-width:2; padding:8px">3.0</td>
-<td style="border-style:solid; border-width:2; padding:8px">Player suspicion radius. When a player is within this radius, the anger level towards that player is increased</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Mob suspicion horizontal radius. When a player is within this radius horizontally, the anger level towards that player is increased</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">suspicion_radius_vertical</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">3.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Mob suspicion vertical radius. When a player is within this radius vertically, the anger level towards that player is increased</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
+<h2><p id="minecraft:behavior.sonic_boom">minecraft:behavior.sonic_boom</p></h2>
+
+[EXPERIMENTAL BEHAVIOR] Plays the provided sounds and activates the "SONIC BOOM" actor flag during the specified duration</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">attack_cooldown</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">5.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Cooldown in seconds required after using this attack until the entity can use sonic boom again.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">attack_damage</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">30.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Attack damage of the sonic boom.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">attack_range_horizontal</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">15.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Horizontal range (in blocks) at which the sonic boom can damage the target.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">attack_range_vertical</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">20.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Vertical range (in blocks) at which the sonic boom can damage the target.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">attack_sound</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Sound event for the attack.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">charge_sound</td>
+<td style="border-style:solid; border-width:2; padding:8px">String</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Sound event for the charge up.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">duration</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">3.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Goal duration in seconds</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">duration_until_attack_sound</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.70</td>
+<td style="border-style:solid; border-width:2; padding:8px">Duration in seconds until the attack sound is played.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">knockback_height_cap</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Height cap of the attack knockback's vertical delta.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">knockback_horizontal_strength</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Horizontal strength of the attack's knockback applied to the attack target.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">knockback_vertical_strength</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Vertical strength of the attack's knockback applied to the attack target.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">speed_multiplier</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">1.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">This multiplier modifies the attacking entity's speed when moving toward the target.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -20052,6 +20139,10 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.sniff</td>
 <td style="border-style:solid; border-width:2; padding:8px">2518751594793034670</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.sonic_boom</td>
+<td style="border-style:solid; border-width:2; padding:8px">3140959826915046776</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.squid_dive</td>
