@@ -1723,6 +1723,8 @@ createWorldScreen.vanillaExperiments=Experiências Vanilla	#
 createWorldScreen.vanillaExperimentsDescription=Experimenta novas funcionalidades Vanilla que estão, atualmente, em desenvolvimento	#
 createWorldScreen.wildUpdate=Atualização Selvagem	#
 createWorldScreen.wildUpdateDescription=Experimenta as novas funcionalidades da Atualização Selvagem	#
+createWorldScreen.spectatorMode=Modo de Espetador	#
+createWorldScreen.spectatorModeDescription=Experimenta as primeiras versões do Modo de Espectador	#
 createWorldScreen.experimentalholiday=Características do Criador de Férias	#
 createWorldScreen.experimentalholidayDescription=Adiciona blocos orientados a dados e tecnologia de itens para personalizares a forma, rotação, danos do bloco e muito mais	#
 createWorldScreen.experimentalGameTest=GameTest Framework	#
@@ -8910,10 +8912,10 @@ authserver.authfailed=Isto é mau. Este servidor chumbou no nosso teste de verif
 platform.model.unknown=DESCONHECIDO	#
 
 ## Misc Compliance copy
-compliance.playtime.greaterThan24Hours=Estás a jogar há mais de 24 horas.	#
+compliance.playtime.greaterThan24Hours=Estás a jogar há mais de 24 horas	#
 compliance.playtime.message=Jogos excessivos podem interferir com a vida diária normal	#
-compliance.playtime.multipleHours=Estás a jogar há %d horas.	#
-compliance.playtime.oneHour=Estás a jogar há uma hora.	#
+compliance.playtime.multipleHours=Estás a jogar há %d horas	#
+compliance.playtime.oneHour=Estás a jogar há uma hora	#
 
 ## resource pack validation errors
 packdiscoveryerror.manifest_pack_error=Não foi possível abrir o pacote.	#

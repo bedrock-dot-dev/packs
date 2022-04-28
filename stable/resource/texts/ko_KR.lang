@@ -1723,6 +1723,8 @@ createWorldScreen.vanillaExperiments=바닐라 실험	#
 createWorldScreen.vanillaExperimentsDescription=현재 개발 중인 새로운 바닐라 기능을 시험해 보세요.	#
 createWorldScreen.wildUpdate=야생 업데이트	#
 createWorldScreen.wildUpdateDescription=야생 업데이트로 추가 예정인 기능을 시도합니다	#
+createWorldScreen.spectatorMode=관람자 모드	#
+createWorldScreen.spectatorModeDescription=관람자 모드의 초기 버전을 사용해 보세요.	#
 createWorldScreen.experimentalholiday=홀리데이 크리에이터 기능	#
 createWorldScreen.experimentalholidayDescription=데이터 기반 블록과 아이템 기술로 블록의 모양, 방향, 피해량 등을 사용자 지정할 수 있습니다	#
 createWorldScreen.experimentalGameTest=게임테스트 프레임워크	#
@@ -8911,7 +8913,7 @@ platform.model.unknown=알 수 없음	#
 
 ## Misc Compliance copy
 compliance.playtime.greaterThan24Hours=24시간 이상 플레이했습니다	#
-compliance.playtime.message=과도한 게임이용은 정상적인 일상생활에 지장을 줄 수 있습니다	#
+compliance.playtime.message=과도한 게임은 일상생활에 무리를 줄 수 있습니다	#
 compliance.playtime.multipleHours=%d시간 동안 플레이했습니다	#
 compliance.playtime.oneHour=1시간 동안 플레이했습니다	#
 
@@ -9438,7 +9440,7 @@ hbui.CreateNewWorld.resourcePacks.globalPacksInfoMessage=글로벌 팩은 모든
 hbui.CreateNewWorld.resourcePacks.globalPacksListHeader=글로벌	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksAccordionHeader=보유함	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyBody=마켓플레이스 또는 온라인으로 이동하여 다른 방식으로 월드를 플레이할 팩을 찾으세요!	#
-hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=아직 팩을 가지고 있지 않습니다	#
+hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=아직 어떤 팩도 갖고 있지 않습니다	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=로컬	#
 hbui.CreateNewWorld.resourcePacks.packPriorityInfoMessage=여러 팩이 동일한 에셋을 변경하는 경우, 가장 순위가 높은 팩이 적용됩니다.	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHeader=Realms Plus	#

@@ -1723,6 +1723,8 @@ createWorldScreen.vanillaExperiments=Eksperimen Vanila	#
 createWorldScreen.vanillaExperimentsDescription=Cobalah fitur Vanilla baru yang saat ini sedang dikembangkan	#
 createWorldScreen.wildUpdate=Pembaruan Liar	#
 createWorldScreen.wildUpdateDescription=Coba fitur baru dari Pembaruan Liar yang akan datang	#
+createWorldScreen.spectatorMode=Mode Penonton	#
+createWorldScreen.spectatorModeDescription=Coba versi awal Mode Penonton	#
 createWorldScreen.experimentalholiday=Fitur Kreator Liburan	#
 createWorldScreen.experimentalholidayDescription=Menambahkan blok berbasis data dan teknologi item untuk menyesuaikan bentuk blok, rotasi, kerusakan, dan banyak lagi	#
 createWorldScreen.experimentalGameTest=Kerangka Kerja GameTest	#
@@ -6725,7 +6727,7 @@ storageManager.contentType.resourcePacks=Paket Sumber Daya	#
 storageManager.contentType.behaviorPacks=Paket Perilaku	#
 storageManager.contentType.skinPacks=Paket Skin	#
 
-storageManager.baseWorld=Dunia Dasar 	#
+storageManager.baseWorld=Dunia Dasar	#
 
 storageManager.mainSizeLabel=%s - 1 Item	#
 storageManager.mainSizeLabelPlural=%s - %s Item	#
