@@ -2013,10 +2013,6 @@
       "sound" : "wood",
       "textures" : "mangrove_propagule"
    },
-   "mangrove_propagule_hanging" : {
-      "sound" : "wood",
-      "textures" : "mangrove_propagule_hanging"
-   },
    "mangrove_roots" : {
       "sound" : "mangrove_roots",
       "textures" : {

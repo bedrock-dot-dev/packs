@@ -54,12 +54,6 @@
         "minecraft:breedable": {
           "require_tame": true,
           "inherit_tamed": false,
-          "love_filters": {
-            "test": "is_mark_variant",
-            "subject": "self",
-            "operator": "!=",
-            "value": 1
-          }, // Wandering Trader Llamas can't fall in love
           "breeds_with": {
             "mate_type": "minecraft:llama",
             "baby_type": "minecraft:llama",
@@ -81,10 +75,11 @@
           "target": "self"
         },
         "minecraft:environment_sensor": {
-          // If this is a Wandering Trader's llama and it was just released from its leash, make it tame
-          "triggers": {
-            "filters": {
-              "all_of": [
+          "triggers": [
+            {
+              // If this is a Wandering Trader's llama and it was just released from its leash, make it tame
+              "filters": {
+                "all_of": [
                 {
                   "test": "is_leashed",
                   "subject": "self",
@@ -96,11 +91,32 @@
                   "operator": "!=",
                   "value": "minecraft:is_tamed"
                 }
-              ]
+                ]
+              },
+              "event": "minecraft:on_tame"
             },
-            "event": "minecraft:on_tame"
-          }
-        },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_leashed",
+                    "subject": "self",
+                    "value": false
+                  },
+                  {
+                    "test": "has_component",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": "minecraft:persistent"
+                  }
+                ]
+              },
+              "event": "minecraft:remove_persistence"
+            }
+          ]
+        }
+      },
+      "minecraft:llama_persistence": {
         "minecraft:persistent": {
         }
       },
@@ -581,7 +597,8 @@
             "add": {
               "component_groups": [
                 "minecraft:llama_adult",
-                "minecraft:llama_wandering_trader"
+                "minecraft:llama_wandering_trader",
+                "minecraft:llama_persistence"
               ]
             }
           },
@@ -615,6 +632,13 @@
           "component_groups": [
             "minecraft:llama_tamed",
             "minecraft:llama_unchested"
+          ]
+        }
+      },
+      "minecraft:remove_persistence": {
+        "remove": {
+          "component_groups": [
+            "minecraft:llama_persistence"
           ]
         }
       },

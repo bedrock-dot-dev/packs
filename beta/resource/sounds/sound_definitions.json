@@ -5203,6 +5203,38 @@
             "sounds/step/wood6"
          ]
       },
+      "horn.call.0" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call0" ]
+      },
+      "horn.call.1" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call1" ]
+      },
+      "horn.call.2" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call2" ]
+      },
+      "horn.call.3" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call3" ]
+      },
+      "horn.call.4" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call4" ]
+      },
+      "horn.call.5" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call5" ]
+      },
+      "horn.call.6" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call6" ]
+      },
+      "horn.call.7" : {
+         "category" : "hostile",
+         "sounds" : [ "sounds/item/horn/call7" ]
+      },
       "item.bone_meal.use" : {
          "category" : "block",
          "sounds" : [
@@ -6506,6 +6538,91 @@
                "name" : "sounds/mob/allay/item_taken4",
                "pitch" : 1.250,
                "volume" : 0.10
+            }
+         ]
+      },
+      "mob.allay.item_thrown" : {
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 0.50,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 0.56250,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 0.6250,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 0.750,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 0.93750,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 1,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 1.1250,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 1.250,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 1.50,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 1.8750,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 2,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 2.250,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 2.50,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 3,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 3.750,
+               "volume" : 0.30
+            },
+            {
+               "name" : "sounds/mob/allay/throw",
+               "pitch" : 4,
+               "volume" : 0.30
             }
          ]
       },
@@ -8200,6 +8317,15 @@
             "sounds/mob/goat/eat1",
             "sounds/mob/goat/eat2",
             "sounds/mob/goat/eat3"
+         ]
+      },
+      "mob.goat.horn_break" : {
+         "category" : "hostile",
+         "sounds" : [
+            "sounds/mob/goat/horn_break1",
+            "sounds/mob/goat/horn_break2",
+            "sounds/mob/goat/horn_break3",
+            "sounds/mob/goat/horn_break4"
          ]
       },
       "mob.goat.hurt" : {
@@ -13227,7 +13353,7 @@
          "sounds" : [ "sounds/portal/trigger" ]
       },
       "power.off.sculk_sensor" : {
-         "category" : "neutral",
+         "category" : "block",
          "sounds" : [
             "sounds/block/sculk_sensor/sculk_clicking_stop1",
             "sounds/block/sculk_sensor/sculk_clicking_stop2",
@@ -13237,7 +13363,7 @@
          ]
       },
       "power.on.sculk_sensor" : {
-         "category" : "neutral",
+         "category" : "block",
          "sounds" : [
             "sounds/block/sculk_sensor/sculk_clicking1",
             "sounds/block/sculk_sensor/sculk_clicking2",
@@ -13588,6 +13714,17 @@
             }
          ]
       },
+      "record.5" : {
+         "max_distance" : 64.0,
+         "sounds" : [
+            {
+               "load_on_low_memory" : true,
+               "name" : "sounds/music/game/records/5",
+               "stream" : true,
+               "volume" : 0.50
+            }
+         ]
+      },
       "record.blocks" : {
          "__use_legacy_max_distance" : "true",
          "category" : "record",
@@ -13782,7 +13919,7 @@
          ]
       },
       "shriek.sculk_shrieker" : {
-         "category" : "neutral",
+         "category" : "block",
          "sounds" : [
             "sounds/block/sculk_shrieker/shriek1",
             "sounds/block/sculk_shrieker/shriek2",

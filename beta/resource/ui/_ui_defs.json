@@ -189,6 +189,7 @@
     "ui/world_recovery_screen.json",
     "ui/world_templates_screen.json",
     "ui/xbl_console_signin.json",
+    "ui/xbl_console_qr_signin.json",
     "ui/xbl_console_signin_succeeded.json",
     "ui/xbl_first_launch.json",
     "ui/xbl_friend_finder.json",

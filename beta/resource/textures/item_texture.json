@@ -273,6 +273,9 @@
       "diamond_horse_armor" : {
          "textures" : "textures/items/diamond_horse_armor"
       },
+      "disc_fragment_5" : {
+         "textures" : "textures/items/disc_fragment_5"
+      },
       "dragon_breath" : {
          "textures" : "textures/items/dragons_breath"
       },
@@ -387,6 +390,9 @@
       },
       "glowstone_dust" : {
          "textures" : "textures/items/glowstone_dust"
+      },
+      "goat_horn" : {
+         "textures" : "textures/items/goat_horn"
       },
       "gold_horse_armor" : {
          "textures" : "textures/items/gold_horse_armor"
@@ -730,6 +736,9 @@
       },
       "record_13" : {
          "textures" : "textures/items/record_13"
+      },
+      "record_5" : {
+         "textures" : "textures/items/record_5"
       },
       "record_blocks" : {
          "textures" : "textures/items/record_blocks"

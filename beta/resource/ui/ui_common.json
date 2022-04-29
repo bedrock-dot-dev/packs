@@ -5394,6 +5394,7 @@
               "$xbl_immediate_signin_screen_size": [ 317, 158 ], // XBL Immediate Signin Popup
               "$xbl_optional_signin_screen_size": [ 317, 158 ], // XBL Optional Signin Popup
               "$xbl_console_signin_screen_size": [ 316, 161 ], // XBL Console Signin Popup
+              "$xbl_console_qr_signin_screen_size": [ 364, 182 ], // XBL Console QR Signin Popup
               "$xbl_console_signin_succeeded_screen_size": [ 230, "100% - 50px" ], // XBL Console Signin Succeeded Popup
               "$xbl_first_launch_screen_size": [ 317, 146 ], // XBL First Launch Popup, Trial Upsell
               "$xbl_gamer_profile_screen_size": [ 260, "100% - 50px" ], // XBL Console Signin Succeeded Popup
@@ -5442,6 +5443,7 @@
               "$xbl_immediate_signin_screen_size": [ 316, 153 ], // XBL Immediate Signin Popup
               "$xbl_optional_signin_screen_size": [ 316, 153 ], // XBL Optional Signin Popup
               "$xbl_console_signin_screen_size": [ 316, 161 ], // XBL Console Signin Popup
+              "$xbl_console_qr_signin_screen_size": [ 316, 158 ], // XBL Console QR Signin Popup
               "$xbl_console_signin_succeeded_screen_size": [ 230, "100% - 4px" ], // XBL Console Signin Succeeded Popup
               "$xbl_first_launch_screen_size": [ 316, 146 ], // XBL First Launch Popup, Trial Upsell
               "$xbl_gamer_profile_screen_size": [ 316, "100% - 4px" ], // XBL Console Signin Succeeded Popup

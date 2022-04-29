@@ -1177,22 +1177,22 @@
             "break" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.mangrove_roots.break",
-               "volume" : 1.0
+               "volume" : 0.40
             },
             "default" : "",
             "hit" : {
                "pitch" : 0.50,
                "sound" : "block.mangrove_roots.hit",
-               "volume" : 0.350
+               "volume" : 0.10
             },
             "item.use.on" : {
                "pitch" : 0.80,
                "sound" : "block.mangrove_roots.step"
             },
             "place" : {
-               "pitch" : [ 0.80, 1.0 ],
+               "pitch" : [ 1.0, 1.20 ],
                "sound" : "block.mangrove_roots.place",
-               "volume" : 0.80
+               "volume" : 0.250
             }
          }
       },
@@ -1307,13 +1307,13 @@
             "break" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.mud.break",
-               "volume" : 1.0
+               "volume" : 0.40
             },
             "default" : "",
             "hit" : {
                "pitch" : 0.50,
                "sound" : "block.mud.hit",
-               "volume" : 0.350
+               "volume" : 0.10
             },
             "item.use.on" : {
                "pitch" : 0.80,
@@ -1322,7 +1322,7 @@
             "place" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.mud.place",
-               "volume" : 0.80
+               "volume" : 0.250
             }
          }
       },
@@ -1331,22 +1331,22 @@
             "break" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.mud_bricks.break",
-               "volume" : 1.0
+               "volume" : 0.50
             },
             "default" : "",
             "hit" : {
                "pitch" : 0.50,
                "sound" : "block.mud_bricks.hit",
-               "volume" : 0.350
+               "volume" : 0.10
             },
             "item.use.on" : {
                "pitch" : 0.80,
                "sound" : "block.mud_bricks.step"
             },
             "place" : {
-               "pitch" : [ 0.80, 1.0 ],
+               "pitch" : [ 0.60, 0.80 ],
                "sound" : "block.mud_bricks.place",
-               "volume" : 0.80
+               "volume" : 0.30
             }
          }
       },
@@ -1355,13 +1355,13 @@
             "break" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.muddy_mangrove_roots.break",
-               "volume" : 1.0
+               "volume" : 0.40
             },
             "default" : "",
             "hit" : {
                "pitch" : 0.50,
                "sound" : "block.muddy_mangrove_roots.hit",
-               "volume" : 0.350
+               "volume" : 0.050
             },
             "item.use.on" : {
                "pitch" : 0.80,
@@ -1370,7 +1370,7 @@
             "place" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.muddy_mangrove_roots.place",
-               "volume" : 0.80
+               "volume" : 0.250
             }
          }
       },
@@ -1651,13 +1651,13 @@
             "break" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.packed_mud.break",
-               "volume" : 1.0
+               "volume" : 0.40
             },
             "default" : "",
             "hit" : {
                "pitch" : 0.50,
                "sound" : "block.packed_mud.hit",
-               "volume" : 0.350
+               "volume" : 0.10
             },
             "item.use.on" : {
                "pitch" : 0.80,
@@ -1666,7 +1666,7 @@
             "place" : {
                "pitch" : [ 0.80, 1.0 ],
                "sound" : "block.packed_mud.place",
-               "volume" : 0.80
+               "volume" : 0.250
             }
          }
       },
@@ -4883,6 +4883,51 @@
             "sound" : "mob.glow_squid.ink_squirt",
             "volume" : 1.0
          },
+         "horn_break" : {
+            "pitch" : 1.0,
+            "sound" : "mob.goat.horn_break",
+            "volume" : 1.0
+         },
+         "horn_call0" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.0",
+            "volume" : 1.0
+         },
+         "horn_call1" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.1",
+            "volume" : 1.0
+         },
+         "horn_call2" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.2",
+            "volume" : 1.0
+         },
+         "horn_call3" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.3",
+            "volume" : 1.0
+         },
+         "horn_call4" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.4",
+            "volume" : 1.0
+         },
+         "horn_call5" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.5",
+            "volume" : 1.0
+         },
+         "horn_call6" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.6",
+            "volume" : 1.0
+         },
+         "horn_call7" : {
+            "pitch" : 1.0,
+            "sound" : "horn.call.7",
+            "volume" : 1.0
+         },
          "ignite" : {
             "pitch" : [ 0.80, 1.20 ],
             "sound" : "fire.ignite",
@@ -4961,6 +5006,11 @@
          "item_taken" : {
             "pitch" : [ 0.80, 1.20 ],
             "sound" : "mob.allay.item_taken",
+            "volume" : 1
+         },
+         "item_thrown" : {
+            "pitch" : 1,
+            "sound" : "mob.allay.item_thrown",
             "volume" : 1
          },
          "jump_to_block" : {
@@ -5189,6 +5239,11 @@
          "record.13" : {
             "pitch" : 1.0,
             "sound" : "record.13",
+            "volume" : 1.0
+         },
+         "record.5" : {
+            "pitch" : 1.0,
+            "sound" : "record.5",
             "volume" : 1.0
          },
          "record.blocks" : {
@@ -6154,15 +6209,15 @@
                },
                "jump" : {
                   "sound" : "block.mangrove_roots.step",
-                  "volume" : 0.120
+                  "volume" : 0.10
                },
                "land" : {
                   "sound" : "block.mangrove_roots.fall",
-                  "volume" : 0.140
+                  "volume" : 0.10
                },
                "step" : {
                   "sound" : "block.mangrove_roots.step",
-                  "volume" : 0.170
+                  "volume" : 0.10
                }
             },
             "pitch" : 1.0,
@@ -6261,15 +6316,15 @@
                },
                "jump" : {
                   "sound" : "block.mud.step",
-                  "volume" : 0.120
+                  "volume" : 0.10
                },
                "land" : {
                   "sound" : "block.mud.fall",
-                  "volume" : 0.140
+                  "volume" : 0.10
                },
                "step" : {
                   "sound" : "block.mud.step",
-                  "volume" : 0.170
+                  "volume" : 0.10
                }
             },
             "pitch" : 1.0,
@@ -6284,15 +6339,15 @@
                },
                "jump" : {
                   "sound" : "block.mud_bricks.step",
-                  "volume" : 0.120
+                  "volume" : 0.050
                },
                "land" : {
                   "sound" : "block.mud_bricks.fall",
-                  "volume" : 0.140
+                  "volume" : 0.050
                },
                "step" : {
                   "sound" : "block.mud_bricks.step",
-                  "volume" : 0.170
+                  "volume" : 0.050
                }
             },
             "pitch" : 1.0,
@@ -6307,15 +6362,15 @@
                },
                "jump" : {
                   "sound" : "block.muddy_mangrove_roots.step",
-                  "volume" : 0.120
+                  "volume" : 0.050
                },
                "land" : {
                   "sound" : "block.muddy_mangrove_roots.fall",
-                  "volume" : 0.140
+                  "volume" : 0.050
                },
                "step" : {
                   "sound" : "block.muddy_mangrove_roots.step",
-                  "volume" : 0.170
+                  "volume" : 0.050
                }
             },
             "pitch" : 1.0,
@@ -6515,15 +6570,15 @@
                },
                "jump" : {
                   "sound" : "block.packed_mud.step",
-                  "volume" : 0.120
+                  "volume" : 0.050
                },
                "land" : {
                   "sound" : "block.packed_mud.fall",
-                  "volume" : 0.140
+                  "volume" : 0.050
                },
                "step" : {
                   "sound" : "block.packed_mud.step",
-                  "volume" : 0.170
+                  "volume" : 0.050
                }
             },
             "pitch" : 1.0,

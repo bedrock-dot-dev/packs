@@ -1938,7 +1938,7 @@
         }
       },
       {
-        "popup_dialog_bg@persona.realms_plus_extra_info_popup_dialog_bg": {
+        "dialog_bg@persona.realms_plus_extra_info_popup_dialog_bg": {
           "$dialog_content": "persona.realms_extra_info_panel",
           "size": [ 219, 133 ]
         }
@@ -5222,6 +5222,7 @@
     "$persona_popup_title_text|default": "dr.classic_skins.select_skin.title",
     "$persona_popup_title_font_type|default": "MinecraftTen",
     "$persona_popup_title_offset|default": [ 0, 5.5 ],
+    "$section_content_offset|default": [ 0, 0 ],
     "controls": [
       {
         "background_image": {
@@ -5235,17 +5236,29 @@
         }
       },
       {
-        "title": {
-          "type": "label",
-          "size": [ "100%", 10 ],
-          "layer": 2,
+        "title_panel@common.empty_panel": {
+          "size": [ "100% - 16px", 21 ],
           "anchor_from": "top_middle",
           "anchor_to": "top_middle",
-          "font_type": "$persona_popup_title_font_type",
-          "text_alignment": "center",
-          "offset": "$persona_popup_title_offset",
-          "text": "$persona_popup_title_text",
-          "color": "$light_button_default_text_color"
+          "controls": [
+            {
+              "title": {
+                "type": "label",
+                "$persona_popup_title_size|default": [ "100%", 15 ],
+                "$persona_popup_title_offset|default": [ 0, 2 ],
+                "size": "$persona_popup_title_size",
+                "layer": 2,
+                "font_type": "$persona_popup_title_font_type",
+                "text_alignment": "center",
+                "offset": "$persona_popup_title_offset",
+                "text": "$persona_popup_title_text",
+                "color": "$light_button_default_text_color",
+
+                "$persona_popup_title_bindings|default": [],
+                "bindings": "$persona_popup_title_bindings"
+              }
+            }
+          ]
         }
       },
       { "popup_content@$dialog_content": {} }
@@ -5412,6 +5425,7 @@
       }
     ]
   },
+
   //////////////////////////////////////////////////////////////////////////////////////////////
   // custom skins popup
   //////////////////////////////////////////////////////////////////////////////////////////////
@@ -5420,7 +5434,7 @@
     "size": [ "100%", "100%" ],
     "$persona_popup_title_text|default": "dr.classic_skins.select_skin.title",
     "$persona_popup_title_font_type|default": "MinecraftTen",
-    "$persona_popup_title_offset|default": [ 0, 8 ],
+    "$persona_popup_title_offset|default": [ 0, 3 ],
     "controls": [
       {
         "background_image": {
@@ -5434,16 +5448,24 @@
         }
       },
       {
-        "title": {
-          "type": "label",
+        "vertical_align_title@common.empty_panel": {
           "size": [ "100%", 23 ],
-          "layer": 2,
           "anchor_from": "top_middle",
           "anchor_to": "top_middle",
-          "text_alignment": "center",
-          "offset": "$persona_popup_title_offset",
-          "text": "$persona_popup_title_text",
-          "color": "$light_button_default_text_color"
+          "controls": [
+            {
+              "title": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "max_size": [ "100%", "100%" ],
+                "layer": 2,
+                "text_alignment": "center",
+                "offset": "$persona_popup_title_offset",
+                "text": "$persona_popup_title_text",
+                "color": "$light_button_default_text_color"
+              }
+            }
+          ]
         }
       },
       { "popup_content@$dialog_content": {} }
@@ -6666,6 +6688,133 @@
     ]
   },
 
+  //-------------------- Emote Slot Editor Popup  ----------------------------------------------
+  "close_emote_popup_controller@common.empty_panel": {
+    "$gamepad_helper_layer": 2,
+    "$gamepad_helper_visible_binding_name": "#is_using_gamepad",
+    "controls": [
+      {
+        "close_ui@common.gamepad_helper_dpad_left": {
+          "$icon_description_bind": "controller.buttonTip.cancel",
+          "$icon_description_bind_type": "none"
+        }
+      }
+    ],
+
+    "bindings": [
+      {
+        "binding_name": "#is_using_gamepad",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "emote_close_popup@common.close_button": {
+    "$close_button_to_button_id": "button.emote_slot_popup_close"
+  },
+
+  "emote_assign_replace_button@common_buttons.light_text_button": {
+    "size": [ "100% - 18px", 21 ],
+    "$button_offset": [ 0, -2 ],
+    "$anchor": "bottom_middle",
+    "$pressed_button_name": "button.emote_assign_replace",
+    "$button_text": "#emote_popup_assign_replace_text",
+    "$button_text_binding_type": "global",
+    "$focus_id": "emote_assign_replace_button",
+    "bindings": [
+      {
+        "binding_name": "#emote_popup_assign_replace_enabled",
+        "binding_name_override": "#enabled"
+      },
+      {
+        "binding_name": "(not #is_using_gamepad)",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "emote_equip_slot_content@common.empty_panel": {
+    "$close_button_visible_binding_type": "global",
+    "controls": [
+      { "close@common.close_button": { } },
+      {
+        "emote_wheel_content@persona_common.emote_wheel_panel": {
+          "$gamepad_helper_visible_binding_name": "#is_using_gamepad",
+          "size": [ "100% - 18px", "100% - 50px" ],
+          "layer": 2,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [ 0, 24 ]
+        }
+      },
+      {
+        "cancel@persona.close_emote_popup_controller": {
+          "size": [ 50, 20 ],
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [ -18, -16 ]
+        }
+      },
+      {
+        "assign_replace_button@persona.emote_assign_replace_button": {
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [ 0, -9 ]
+        }
+      }
+    ]
+  },
+
+  "popup_dialog__emote_equip_slot_editor@popup_dialog.popup_dialog": {
+    "size": [ "100%", "100%" ],
+    "layer": 990,
+    "$section_content_size": [ "100%", "100% - 16px" ],
+    "$close_button_to_button_id": "button.close_dialog",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "focused"
+      },
+      {
+        "from_button_id": "button.menu_left",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "global"
+      }
+    ],
+    "controls": [
+      {
+        "background_image": {
+          "type": "image",
+          "size": [ "100%", "100% + 64px" ],
+          "texture": "textures/ui/White",
+          "color": "$dressing_room_dark_bg_color",
+          "alpha": 0.8
+        }
+      },
+      {
+        "popup_background@persona.popup_dialog_bg": {
+          "$persona_popup_title_text": "#emote_popup_title",
+          "$persona_popup_title_size": [ "100% - 20px", "default" ],
+          "$persona_popup_title_font_type": "default",
+          "$show_close_button": false,
+          "$dialog_content": "persona.emote_equip_slot_content",
+          "size": [ "107%y", "80%" ],
+          "$persona_popup_title_bindings": [
+            {
+              "binding_name": "#emote_popup_title"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
   ///////////////////////////////////////////////////////////////////////////////////////
   //// left panel content
 
@@ -6853,7 +7002,8 @@
             "restore_failed": "@common_store.popup_dialog__restore_failed",
             "switch_character_skin_screens": "@persona.popup_dialog__switch_persona_and_classic_skin",
             "custom_skin_info": "@persona.popup_dialog__custom_skin_info",
-            "realms_plus_extra_info": "@persona.popup_dialog__realms_plus_extra_info"
+            "realms_plus_extra_info": "@persona.popup_dialog__realms_plus_extra_info",
+            "emote_equip_slot_editor": "@persona.popup_dialog__emote_equip_slot_editor"
           }
         }
       }

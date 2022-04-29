@@ -47,8 +47,7 @@
       },
       "minecraft:particle_appearance_tinting": {
         "color": [ "variable.particle_random_1 * 0.3 + 0.7", "variable.particle_random_1 * 0.3 + 0.7", "variable.particle_random_1 * 0.3 + 0.7", 0 ]
-      },
-      "minecraft:particle_appearance_lighting": {}
+      }
     }
   }
 } 

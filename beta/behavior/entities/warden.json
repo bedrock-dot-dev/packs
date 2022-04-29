@@ -30,6 +30,7 @@
         "damage": 30
       },
       "minecraft:vibration_listener": {},
+      "minecraft:vibration_damper": {},
       "minecraft:suspect_tracking": {},
       "minecraft:anger_level": {
         "max_anger": 150,
@@ -38,7 +39,7 @@
         "angry_boost": 20,
         "anger_decrement_interval": 1.0,
         "default_annoyingness": 35,
-        "default_projectile_annoyingness":  20,
+        "default_projectile_annoyingness":  10,
         "on_increase_sounds": [
           { "sound": "listening_angry", "condition" : "query.anger_level(this) >= 40" },
           { "sound": "listening", "condition" : "query.anger_level(this) >= 0" }
@@ -122,10 +123,10 @@
         "priority": 3,
         "duration": 3.0,
         "speed_multiplier": 1.2,
-        "attack_damage": 30,
+        "attack_damage": 10,
         "attack_range_horizontal": 15,
         "attack_range_vertical": 20,
-        "attack_cooldown": 5,
+        "attack_cooldown": 2,
         "knockback_vertical_strength": 0.5,
         "knockback_horizontal_strength": 2.5,
         "knockback_height_cap": 0.5,
@@ -175,7 +176,10 @@
       },
       "minecraft:follow_range": 30,
       "minecraft:fire_immune": {},
-      "minecraft:nameable": {}
+      "minecraft:nameable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/warden.json"
+      }
     },
     "events": {
       "minecraft:spawn_emerging": {

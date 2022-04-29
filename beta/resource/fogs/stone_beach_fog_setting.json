@@ -18,7 +18,7 @@
             "render_distance_type": "fixed"
           },
           "min_percent": 0.25,
-          "mid_seconds": 6,
+          "mid_seconds": 5,
           "mid_percent": 0.6,
           "max_seconds": 30
         }

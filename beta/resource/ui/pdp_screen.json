@@ -1940,9 +1940,7 @@
         }
       },
       {
-        "pad_3@pdp.vertical_padding_2px": {
-          "debug": "red"
-        }
+        "pad_3@pdp.vertical_padding_2px": {}
       },
       { "divider_3@common.horizontal_divider": { "$image_size": [ "100% - 6px", 1 ] } }
     ]

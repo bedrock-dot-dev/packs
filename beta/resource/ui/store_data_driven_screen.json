@@ -752,40 +752,7 @@
 
     "controls": [
       {
-        "button_image_panel": {
-          "type": "panel",
-          "size": [ "100%c", "100%" ],
-          "controls": [
-            {
-              "button_image": {
-                "type": "image",
-                "size": [ 24, 24 ],
-                "texture": "#nav_button_texture",
-                "allow_debug_missing_texture": false,
-                "layer": 1,
-                "bindings": [
-                  {
-                    "binding_type": "$store_factory_collection_details",
-                    "binding_collection_name": "$store_factory_collection_name",
-                    "binding_collection_prefix": "$store_factory_collection_prefix"
-                  },
-                  {
-                    "binding_type": "$nav_button_binding_type",
-                    "binding_collection_name": "$nav_button_collection_name",
-                    "binding_name": "#nav_button_texture",
-                    "binding_name_override": "#texture"
-                  },
-                  {
-                    "binding_type": "$nav_button_binding_type",
-                    "binding_collection_name": "$nav_button_collection_name",
-                    "binding_name": "(not (#nav_button_texture = ''))",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
-            }
-          ]
-        }
+        "image_panel@store_layout.nav_image_panel": {}
       },
       {
         "padding": {
@@ -823,6 +790,108 @@
         }
       }
     ]
+  },
+
+  "nav_image_panel": {
+    "type": "panel",
+    "size": [ "100%c", "100%" ],
+    "controls": [
+      {
+        "button_image_panel@store_layout.nav_button_image_panel": {
+          "bindings": [
+            {
+              "binding_type": "$store_factory_collection_details",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_collection_prefix": "$store_factory_collection_prefix"
+            },
+            {
+              "binding_type": "$nav_button_binding_type",
+              "binding_collection_name": "$nav_button_collection_name",
+              "binding_name": "(#nav_button_animation = '')", // static image is visible if no animation is available
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "button_animated_panel@store_layout.nav_button_image_panel": {
+          "$nav_button_image_content": "store_layout.nav_button_animation",
+          "$nav_texture_binding_name": "#nav_button_animation",
+          "bindings": [
+            {
+              "binding_type": "$store_factory_collection_details",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_collection_prefix": "$store_factory_collection_prefix"
+            },
+            {
+              "binding_type": "$nav_button_binding_type",
+              "binding_collection_name": "$nav_button_collection_name",
+              "binding_name": "(not (#nav_button_animation = ''))", // animation is visibile if service response contains animation field
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "nav_button_image_panel": {
+    "type": "panel",
+    "size": [ "100%c", "100%" ],
+    "$nav_button_image_content|default": "store_layout.nav_button_image",
+    "$nav_texture_binding_name|default": "#nav_button_texture",
+    "controls": [
+      {
+        "button_image@$nav_button_image_content": {
+          "bindings": [
+            {
+              "binding_type": "$store_factory_collection_details",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_collection_prefix": "$store_factory_collection_prefix"
+            },
+            {
+              "binding_type": "$nav_button_binding_type",
+              "binding_collection_name": "$nav_button_collection_name",
+              "binding_name": "$nav_texture_binding_name",
+              "binding_name_override": "#texture"
+            },
+            {
+              "binding_type": "$nav_button_binding_type",
+              "binding_collection_name": "$nav_button_collection_name",
+              "binding_name": "(not ($nav_texture_binding_name = ''))",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "nav_button_image": {
+    "type": "image",
+    "size": [ 24, 24 ],
+    "texture": "$nav_texture_binding_name",
+    "allow_debug_missing_texture": false,
+    "layer": 1
+  },
+
+  "nav_button_animation": {
+    "type": "image",
+    "layer": 1,
+    "texture": "$nav_texture_binding_name",
+    "allow_debug_missing_texture": false,
+    "uv_size": [ 19, 19 ],
+    "size": [ 24, 24 ],
+    "uv": "@store_layout.nav_button_flip_book",
+    "disable_anim_fast_forward": true
+  },
+
+  "nav_button_flip_book": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "frame_count": 22,
+    "frame_step": 7,
+    "fps": 10
   },
 
   "nav_button_fill@store_layout.nav_button_standard": {
