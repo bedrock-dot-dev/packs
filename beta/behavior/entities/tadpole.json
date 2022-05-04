@@ -9,9 +9,10 @@
 		},
 		"component_groups": {
 			"grow_up": {
-				"minecraft:transformation": {
-					"into": "minecraft:frog"
-				}
+        "minecraft:transformation": {
+          "into": "minecraft:frog",
+          "transformation_sound": "convert_to_frog"
+        }
 			}
 		},
     "components": {

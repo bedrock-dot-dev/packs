@@ -1655,8 +1655,8 @@
             "textures/blocks/mangrove_propagule_hanging"
          ]
       },
-      "mangrove_propagule_carried" : {
-         "textures" : "textures/blocks/mangrove_propagule_carried"
+      "mangrove_propagule_item" : {
+         "textures" : "textures/items/mangrove_propagule"
       },
       "mangrove_roots_side" : {
          "textures" : "textures/blocks/mangrove_roots_side"

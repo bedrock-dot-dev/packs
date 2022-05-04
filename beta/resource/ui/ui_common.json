@@ -6199,8 +6199,6 @@
                 "font_scale_factor": "$tooltip_text_font_scale",
                 "$tooltip_text_color|default": "$f_color_format",
                 "color": "$tooltip_text_color",
-                "$tooltip_text_font_type|default": "default",
-                "font_type": "$tooltip_text_font_type",
                 "bindings": [
                   {
                     "binding_name": "$tooltip_text_binding_name",

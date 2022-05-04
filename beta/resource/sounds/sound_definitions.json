@@ -10780,6 +10780,51 @@
             "sounds/mob/strider/tempt5"
          ]
       },
+      "mob.tadpole.convert_to_frog" : {
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "name" : "sounds/mob/frog/idle1",
+               "pitch" : 0.950,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/frog/idle2",
+               "pitch" : 0.90,
+               "volume" : 0.820
+            },
+            {
+               "name" : "sounds/mob/frog/idle3",
+               "pitch" : 0.90,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/mob/frog/idle4",
+               "pitch" : 0.950,
+               "volume" : 0.80
+            },
+            {
+               "name" : "sounds/mob/frog/idle5",
+               "pitch" : 0.90,
+               "volume" : 0.850
+            },
+            {
+               "name" : "sounds/mob/frog/idle6",
+               "pitch" : 0.90,
+               "volume" : 0.90
+            },
+            {
+               "name" : "sounds/mob/frog/idle7",
+               "pitch" : 0.90,
+               "volume" : 0.70
+            },
+            {
+               "name" : "sounds/mob/frog/idle8",
+               "pitch" : 0.90,
+               "volume" : 0.30
+            }
+         ]
+      },
       "mob.tadpole.death" : {
          "category" : "neutral",
          "sounds" : [
@@ -10797,20 +10842,16 @@
          "category" : "neutral",
          "sounds" : [
             {
-               "name" : "sounds/mob/tadpole/hurt1",
-               "volume" : 0.650
+               "name" : "sounds/mob/tadpole/hurt1"
             },
             {
-               "name" : "sounds/mob/tadpole/hurt2",
-               "volume" : 0.650
+               "name" : "sounds/mob/tadpole/hurt2"
             },
             {
-               "name" : "sounds/mob/tadpole/hurt3",
-               "volume" : 0.650
+               "name" : "sounds/mob/tadpole/hurt3"
             },
             {
-               "name" : "sounds/mob/tadpole/hurt4",
-               "volume" : 0.650
+               "name" : "sounds/mob/tadpole/hurt4"
             }
          ]
       },

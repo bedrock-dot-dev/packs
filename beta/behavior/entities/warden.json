@@ -167,6 +167,7 @@
         "effect_range": 20,
         "effect_time": 13,
         "mob_effect": "darkness",
+        "cooldown_time": 6,
         "entity_filter": {
           "all_of": [
             { "test": "is_family", "subject": "other", "value": "player" },

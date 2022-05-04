@@ -1304,7 +1304,7 @@
 
   "crafting_grid_2x2_with_label": {
     "type": "panel",
-    "size": [ 36, 47 ],
+    "size": [ "default", 47 ],
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
     "controls": [
@@ -1359,8 +1359,8 @@
         }
       },
       {
-        "crafting_grid_2x2@crafting.crafting_grid_2x2": {
-          "offset": [ 8, 17 ]
+        "crafting_grid_2x2@crafting.crafting_grid_2x2_with_label": {
+          "offset": [ 8, 7 ]
         }
       },
       {
