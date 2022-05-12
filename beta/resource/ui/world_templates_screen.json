@@ -127,6 +127,7 @@
     "anchor_to": "top_left",
     "$button_text": "#generate_random_button_text",
     "$button_text_binding_type": "global",
+    "tts_ignore_subsections": true,
     "focus_change_left": "FOCUS_OVERRIDE_STOP",
     "focus_change_right": "FOCUS_OVERRIDE_STOP",
     "bindings": [
@@ -199,7 +200,7 @@
   },
 
   "my_templates_label@world_templates.label_content_template": {
-    "$label_content_label": "selectTemplate.myTemplates"
+    "$label_content_label": "$section_header"
   },
 
   "realms_plus_templates_label@world_templates.label_content_template": {
@@ -207,7 +208,7 @@
   },
 
   "custom_templates_label@world_templates.label_content_template": {
-    "$label_content_label": "selectTemplate.importedTemplates"
+    "$label_content_label": "$section_header"
   },
 
   "generate_random_button@world_templates.grid_button_content_template": {
@@ -663,6 +664,14 @@
     "$pressed_button_name": "button.more_realms_plus_templates"
   },
 
+  "world_template_inventory_see_more_button@world_templates.see_more_templates_button": {
+    "$pressed_button_name": "button.inventory"
+  },
+
+  "custom_world_template_see_more_button@world_templates.see_more_templates_button": {
+    "$pressed_button_name": "button.more_custom_templates"
+  },
+
   "world_template_section_factory": {
     "type": "stack_panel",
     "size": [ "100%", "default" ],
@@ -735,6 +744,36 @@
     "$world_template_section_control_ids": {
       "defaultTemplateItem": "world_templates.realms_plus_template_item",
       "viewMoreButton": "world_templates.realms_plus_see_more_button"
+    }
+  },
+
+  "world_template_inventory_section_factory@world_templates.world_template_section_factory": {
+    "$collection_name": "world_templates",
+    "$collection_prefix": "offer",
+    "$pressed_button_name": "button.menu_world_template_clicked",
+
+    "$world_template_section_name": "world_template_inventory_factory",
+    "$world_template_section_visible_binding": "#template_list_visible",
+    "$world_template_collection_binding": "#world_template_inventory_factory_collection",
+
+    "$world_template_section_control_ids": {
+      "defaultTemplateItem": "world_templates.world_template_item",
+      "viewMoreButton": "world_templates.world_template_inventory_see_more_button"
+    }
+  },
+
+  "custom_world_template_section_factory@world_templates.world_template_section_factory": {
+    "$collection_name": "custom_world_templates",
+    "$collection_prefix": "offer",
+    "$pressed_button_name": "button.menu_custom_world_template_clicked",
+
+    "$world_template_section_name": "custom_world_template_factory",
+    "$world_template_section_visible_binding": "#custom_template_list_visible",
+    "$world_template_collection_binding": "#custom_world_template_factory_collection",
+
+    "$world_template_section_control_ids": {
+      "defaultTemplateItem": "world_templates.world_template_item",
+      "viewMoreButton": "world_templates.custom_world_template_see_more_button"
     }
   },
 
@@ -869,6 +908,7 @@
           "type": "stack_panel",
           "orientation": "vertical",
           "size": [ "100%", "100%c" ],
+          "$section_header": "selectTemplate.myTemplates",
           "controls": [
             {
               "my_templates_label_panel@world_templates.my_templates_label": {
@@ -880,21 +920,8 @@
                 ]
               }
             },
-            { "world_template_item_grid@world_templates.world_template_item_grid": {} },
             {
-              "inventory_button@common_buttons.dark_text_button": {
-                "size": [ "100%", 30 ],
-                "$pressed_button_name": "button.inventory",
-                "$button_text": "selectTemplate.seeMore",
-                "focus_change_left": "FOCUS_OVERRIDE_STOP",
-                "focus_change_right": "FOCUS_OVERRIDE_STOP",
-                "bindings": [
-                  {
-                    "binding_name": "#template_list_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
+              "world_template_inventory_section_factory@world_templates.world_template_inventory_section_factory": {}
             },
             {
               "template_bottom_padding": {
@@ -971,7 +998,6 @@
                       ]
                     }
                   },
-                  ////
                   {
                     "suggested_content_panel": {
                       "type": "stack_panel",
@@ -998,7 +1024,9 @@
                             ]
                           }
                         },
-                        { "suggested_template_section_factory@world_templates.suggested_template_section_factory": {} },
+                        {
+                          "suggested_template_section_factory@world_templates.suggested_template_section_factory": {}
+                        },
                         {
                           "suggested_template_bottom_padding": {
                             "type": "panel",
@@ -1019,6 +1047,7 @@
           "type": "stack_panel",
           "orientation": "vertical",
           "size": [ "100%", "100%c" ],
+          "$section_header": "selectTemplate.importedTemplates",
           "controls": [
             {
               "custom_templates_label_panel@world_templates.custom_templates_label": {
@@ -1030,21 +1059,8 @@
                 ]
               }
             },
-            { "custom_world_template_item_grid@world_templates.custom_world_template_item_grid": {} },
             {
-              "see_more_custom_templates_button@common_buttons.dark_text_button": {
-                "size": [ "100%", 30 ],
-                "$pressed_button_name": "button.more_custom_templates",
-                "$button_text": "selectTemplate.seeMore",
-                "focus_change_left": "FOCUS_OVERRIDE_STOP",
-                "focus_change_right": "FOCUS_OVERRIDE_STOP",
-                "bindings": [
-                  {
-                    "binding_name": "#custom_template_list_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ]
-              }
+              "custom_world_template_section_factory@world_templates.custom_world_template_section_factory": {}
             },
             {
               "custom_template_list_bottom_padding": {
