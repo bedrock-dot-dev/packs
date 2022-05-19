@@ -3057,7 +3057,7 @@
         "gift_promo_banner": "@promo_timeline.promo_banner_panel",
         "coin_row_section": "@coin_purchase.main_panel",
         "promo_timeline": "@promo_timeline.promo_landing_panel",
-        "image_message_row": "@common_store.image_message_panel",
+        "image_message_row": "@promo_timeline.image_message_panel",
         "coin_bundle_section": "@coin_purchase.bundle_panel",
         "vertical_line_divider_row": "@common_store.vertical_line_divider_row"
       },

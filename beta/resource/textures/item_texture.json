@@ -1,5 +1,5 @@
 {
-   "resource_pack_name" : "Leaf Leather",
+   "resource_pack_name" : "vanilla",
    "texture_data" : {
       "acacia_door" : {
          "textures" : "textures/items/door_acacia"
@@ -378,9 +378,6 @@
       },
       "flower_pot" : {
          "textures" : "textures/items/flower_pot"
-      },
-      "gartzke.leaf_leather" : {
-         "textures" : "textures/items/leaf_leather"
       },
       "ghast_tear" : {
          "textures" : "textures/items/ghast_tear"

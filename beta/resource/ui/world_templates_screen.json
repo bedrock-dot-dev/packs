@@ -749,7 +749,7 @@
 
   "world_template_inventory_section_factory@world_templates.world_template_section_factory": {
     "$collection_name": "world_templates",
-    "$collection_prefix": "offer",
+    "$collection_prefix": "",
     "$pressed_button_name": "button.menu_world_template_clicked",
 
     "$world_template_section_name": "world_template_inventory_factory",
@@ -764,7 +764,7 @@
 
   "custom_world_template_section_factory@world_templates.world_template_section_factory": {
     "$collection_name": "custom_world_templates",
-    "$collection_prefix": "offer",
+    "$collection_prefix": "",
     "$pressed_button_name": "button.menu_custom_world_template_clicked",
 
     "$world_template_section_name": "custom_world_template_factory",

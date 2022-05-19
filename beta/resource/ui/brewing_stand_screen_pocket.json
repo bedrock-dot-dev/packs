@@ -44,7 +44,6 @@
   "brewing_fuel_slot": {
     "type": "panel",
     "size": [ 32, 32 ],
-    "offset": [ 4, 0 ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "controls": [
@@ -158,7 +157,7 @@
         "brewing_bubbles_panel": {
           "type": "panel",
           "size": [ 12, 29 ],
-          "offset": [ 68, 6 ],
+          "offset": [ 64, 6 ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "controls": [
@@ -181,7 +180,7 @@
         "brewing_fuel_bar_panel": {
           "type": "panel",
           "size": [ 24, 6 ],
-          "offset": [ 62, 35 ],
+          "offset": [ 58, 35 ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "controls": [
@@ -203,7 +202,7 @@
       {
         "brewing_fuel_pipes@brewing_stand.brewing_fuel_pipes": {
           "layer": 3,
-          "offset": [ 35, 19 ],
+          "offset": [ 31, 19 ],
           "anchor_from": "top_left",
           "anchor_to": "top_left"
         }
@@ -356,39 +355,6 @@
     "type": "panel",
     "controls": [
       { "bg@brewing_stand_pocket.background_image": {} },
-      {
-        "input_panel": {
-          "type": "input_panel",
-          "layer": 0,
-          "button_mappings": [
-            {
-              "from_button_id": "button.menu_select",
-              "to_button_id": "button.cursor_drop_all",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.menu_secondary_select",
-              "to_button_id": "button.cursor_drop_one",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.menu_ok",
-              "to_button_id": "button.cursor_drop_all",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.controller_select",
-              "to_button_id": "button.cursor_drop_one",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.controller_secondary_select",
-              "to_button_id": "button.cursor_drop_all",
-              "mapping_type": "pressed"
-            }
-          ]
-        }
-      },
       { "root_panel@common.root_panel": { "size": [ "85%", "85%" ] } },
       { "header_and_content_stack_panel@brewing_stand_pocket.header_and_content_stack_panel": {} },
 

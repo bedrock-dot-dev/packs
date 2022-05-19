@@ -640,39 +640,6 @@
     "type": "panel",
     "controls": [
       { "bg@enchanting_pocket.background_image": {} },
-      {
-        "input_panel": {
-          "type": "input_panel",
-          "layer": 0,
-          "button_mappings": [
-            {
-              "from_button_id": "button.menu_select",
-              "to_button_id": "button.cursor_drop_all",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.menu_secondary_select",
-              "to_button_id": "button.cursor_drop_one",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.menu_ok",
-              "to_button_id": "button.cursor_drop_all",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.controller_select",
-              "to_button_id": "button.cursor_drop_one",
-              "mapping_type": "pressed"
-            },
-            {
-              "from_button_id": "button.controller_secondary_select",
-              "to_button_id": "button.cursor_drop_all",
-              "mapping_type": "pressed"
-            }
-          ]
-        }
-      },
       { "root_panel@common.root_panel": { "size": [ "85%", "85%" ] } },
       { "header_and_content_stack_panel@enchanting_pocket.header_and_content_stack_panel": {} },
 

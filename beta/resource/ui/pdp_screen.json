@@ -2066,6 +2066,7 @@
     "type": "panel",
     "size": [ 55, 11 ],
     "$rating_bind_name|default": "#content_rating",
+
     "controls": [
       {
         "empty_rating": {
@@ -2083,8 +2084,6 @@
                 "clip_pixelperfect": false,
                 "bindings": [
                   {
-                    "binding_type": "$store_factory_binding_type",
-                    "binding_collection_name": "$store_factory_collection_name",
                     "binding_name": "$rating_bind_name",
                     "binding_name_override": "#clip_ratio"
                   }
@@ -2105,7 +2104,7 @@
       {
         "empty_rating": {
           "type": "image",
-          "size": [ 82, 16 ],
+          "size": [ 81, 19 ],
           "texture": "textures/ui/5stars_empty_new",
           "clip_direction": "right",
           "clip_pixelperfect": false,

@@ -9030,7 +9030,7 @@ xbox.report.quittingEarly=Quitting early
 xbox.report.unsportingBehavior=Unsporting behavior
 xbox.report.voiceCommunication=Voice communication
 
-# Player safety toast messages
+## Player safety toast messages
 safety.muted.title=Text temporarily disabled
 safety.muted.message=Remember to follow Minecraft's Community Guidelines.
 
