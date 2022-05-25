@@ -5017,11 +5017,11 @@ item.bucketPowderSnow.name=Pulverschneeeimer	#
 item.goat_horn.name=Ziegenhorn	#
 item.minecraft.goat_horn.sound.0=Sinnieren	#
 item.minecraft.goat_horn.sound.1=Singen	#
-item.minecraft.goat_horn.sound.2=Suche	#
+item.minecraft.goat_horn.sound.2=Suchen	#
 item.minecraft.goat_horn.sound.3=Fühlen	#
 item.minecraft.goat_horn.sound.4=Bewundern	#
-item.minecraft.goat_horn.sound.5=Ruf	#
-item.minecraft.goat_horn.sound.6=Sehnsucht	#
+item.minecraft.goat_horn.sound.5=Rufen	#
+item.minecraft.goat_horn.sound.6=Sehnen	#
 item.minecraft.goat_horn.sound.7=Widerstehen	#
 
 

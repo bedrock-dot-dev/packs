@@ -6832,7 +6832,7 @@ item.echo_shard.name=메아리 조각	#
 item.recovery_compass.name=복구 나침반	#
 item.disc_fragment.name=디스크 조각	#
 item.disc_fragment_5.desc=음악 디스크 - 5	#
-item.record_5.desc=사무엘 오베르크 - 5	#
+item.record_5.desc=Samuel Åberg - 5	#
 
 
 action.hint.exit.chest_boat=점프를 탭하여 보트에서 나오기	#

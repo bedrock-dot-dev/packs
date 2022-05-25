@@ -435,7 +435,7 @@
     "controls": [
       {
         "pad@common.empty_panel": {
-          "size": [ "5% + 2px", "100%" ]
+          "size": [ 5, "100%" ]
         }
       },
       {
@@ -443,7 +443,7 @@
           "type": "panel",
           "anchor_to": "bottom_left",
           "anchor_from": "bottom_left",
-          "size": [ "100%", 60 ],
+          "size": [ "100% - 5px", 60 ],
           "controls": [
             {
               "badge_and_caption@start.badge_and_caption": {}
@@ -553,10 +553,7 @@
 
   "upper_online_buttons_panel": {
     "type": "stack_panel",
-    "anchor_to": "bottom_left",
-    "anchor_from": "bottom_left",
-    "size": [ "50% - 75px", "100%c" ],
-    "offset": [ 0, "-23%" ],
+    "size": [ "100%", "100%c" ],
     "controls": [
       {
         "stacked_column": {
@@ -696,7 +693,7 @@
     ],
     "bindings": [
       {
-        "binding_name": "#online_buttons_visible",
+        "binding_name": "#upper_online_buttons_visible",
         "binding_name_override": "#visible"
       }
     ]
@@ -706,12 +703,8 @@
     "type": "stack_panel",
     "anchor_to": "bottom_left",
     "anchor_from": "bottom_left",
-    "size": [ "50% - 75px", "100%c" ],
-    "offset": [ 0, "-10%" ],
+    "size": [ "100%", "100%c" ],
     "controls": [
-      {
-        "gathering_panel@start.gathering_panel": {}
-      },
       {
         "stacked_column": {
           "type": "stack_panel",
@@ -725,7 +718,7 @@
               "feedback_padding": {
                 "ignored": "$feedback_ignored",
                 "type": "panel",
-                "size": [ "5%", 0 ],
+                "size": [ 3, "100%" ],
                 "bindings": [
                   {
                     "binding_name": "#feedback_visible",
@@ -771,7 +764,7 @@
               "achievements_padding": {
                 "ignored": "$achievements_ignored",
                 "type": "panel",
-                "size": [ 3, 0 ],
+                "size": [ 3, "100%" ],
                 "bindings": [
                   {
                     "binding_name": "#achievements_icon_visible",
@@ -798,7 +791,7 @@
             {
               "invite_padding": {
                 "type": "panel",
-                "size": [ 3, 0 ],
+                "size": [ 3, "100%" ],
                 "bindings": [
                   {
                     "binding_name": "#realms_notification_visible",
@@ -817,12 +810,6 @@
             }
           ]
         }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_name": "#online_buttons_visible",
-        "binding_name_override": "#visible"
       }
     ]
   },
@@ -1692,10 +1679,25 @@
         "main_buttons_and_title_panel@start.main_buttons_stack_panel": {}
       },
       {
-        "upper_online_buttons_panel@start.upper_online_buttons_panel": {}
-      },
-      {
-        "lower_online_buttons_panel@start.lower_online_buttons_panel": {}
+        "online_button_stack": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_to": "bottom_left",
+          "anchor_from": "bottom_left",
+          "size": [ "50% - 75px", "100%c" ],
+          "offset": [ 0, "-10%" ],
+          "controls": [
+            {
+              "gathering_panel@start.gathering_panel": {}
+            },
+            {
+              "upper_online_buttons_panel@start.upper_online_buttons_panel": {}
+            },
+            {
+              "lower_online_buttons_panel@start.lower_online_buttons_panel": {}
+            }
+          ]
+        }
       },
       {
         "skin_panel@start.skin_panel": { "layer": 1 }

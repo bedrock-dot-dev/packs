@@ -1176,8 +1176,6 @@
     ],
 
     "$category_featured_offer_size": [ "10%", "100%" ],
-    "$featured_skin_grid_size": [ "100%", "100%" ],
-    "$featured_skin_pack_button_max_size": [ "20%", "56.25%x" ],
 
     "$featured_grid_dimensions": [ 10, 1 ]
   },

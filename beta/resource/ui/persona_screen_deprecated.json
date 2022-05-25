@@ -5198,6 +5198,7 @@
     "controls": [
       {
         "default_skin@common.empty_panel": {
+          "ignored": "$console_edition",
           "size": [ "100% - 4px", 65 ],
           "bindings": [
             {

@@ -1449,7 +1449,7 @@
           "layer": -8,
           "anchor_from": "top_middle",
           "anchor_to": "top_middle",
-          "texture": "textures/ui/cointier_backdrop",
+          "texture": "textures/ui/bundle_wide_tile",
           "controls": [
             {
               "bevel": {
