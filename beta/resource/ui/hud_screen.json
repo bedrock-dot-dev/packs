@@ -120,7 +120,7 @@
                         {
                           "progress_bar_nub@progress_bar_nub": {
                             "size": [ "100%c - 10px", 5 ],
-                            "max_size": [ 190, 5 ],
+                            "max_size": [ 172, 5 ],
                             "layer": 3,
                             "controls": [
                               {
@@ -949,12 +949,36 @@
     ]
   },
 
+  //Note - This is the outer panel that 'reserves' the maximum space required for the right expandable portion of the hot bar
+  // so the hotbar doesn't move as result of center alignment and width change
+  "hotbar_elipses_panel_right": {
+    "type": "panel",
+    "size": [ 21, 22 ],
+    "controls": [
+      // The inner panels that change visibility according to current settings
+      { "content@hud.hotbar_elipses_panel_right_content": {} },
+      {
+        "hotbar_end_cap@hud.hotbar_end_cap": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "bindings": [
+            {
+              "binding_name": "(not #hotbar_elipses_right_visible)",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "hotbar_elipses_panel_right_content": {
     "type": "stack_panel",
-    "size": [ 20, 22 ],
     "orientation": "horizontal",
     "controls": [
-      { "elipses_content@hud.hotbar_elipses_panel_right_art": {} }
+      { "elipses_content@hud.hotbar_elipses_panel_right_art": {} },
+      { "hotbar_end_cap@hud.hotbar_end_cap": {} }
     ],
     "bindings": [
       {
@@ -982,11 +1006,35 @@
     ]
   },
 
+  //Note - This is the outer panel that 'reserves' the maximum space required for the left expandable portion of the hot bar
+  // so the hotbar doesn't move as result of center alignment and width change
+  "hotbar_elipses_panel_left": {
+    "type": "panel",
+    "size": [ 21, 22 ],
+    "controls": [
+      // The inner panels that change visibility according to current settings
+      { "content@hud.hotbar_elipses_panel_left_content": {} },
+      {
+        "hotbar_start_cap@hud.hotbar_start_cap": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "bindings": [
+            {
+              "binding_name": "(not #hotbar_elipses_left_visible)",
+              "binding_name_override": "#visible",
+              "binding_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "hotbar_elipses_panel_left_content": {
     "type": "stack_panel",
     "orientation": "horizontal",
-    "size": [ 20, 22 ],
     "controls": [
+      { "hotbar_start_cap@hud.hotbar_start_cap": {} },
       { "button@hud.hotbar_elipses_panel_left_art": {} }
     ],
     "bindings": [
@@ -1021,11 +1069,9 @@
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "controls": [
-      { "hotbar_start_cap@hud.hotbar_start_cap": {} },
-      { "hotbar_elipses_panel_left@hud.hotbar_elipses_panel_left_content": {} },
+      { "hotbar_elipses_panel_left@hud.hotbar_elipses_panel_left": {} },
       { "hotbar_grid@hud.hotbar_grid": {} },
-      { "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {} },
-      { "hotbar_end_cap@hud.hotbar_end_cap": {} }
+      { "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right": {} }
     ]
   },
 

@@ -1082,16 +1082,10 @@
     "$ignore_color_picker": true,
 
     "$category_featured_offer_size": [ "20%", "100%x" ],
+    "$featured_skin_grid_size": [ "100%", "100%c" ],
+    "$featured_skin_pack_button_max_size": [ "33%", "56.25%x" ],
 
-    "$featured_grid_dimensions": [ 5, 1 ],
-
-    "variables": [
-      {
-        "requires": "($pocket_screen and $is_ios)",
-        "$category_featured_offer_size": [ "22%", "100%x" ],
-        "$featured_grid_dimensions": [ 4, 1 ]
-      }
-    ]
+    "$featured_grid_dimensions": [ 5, 1 ]
   },
 
   "bottom_panel_content": {

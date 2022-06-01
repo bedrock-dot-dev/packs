@@ -6048,11 +6048,7 @@
 
     "controls": [
       { "pack_label@persona.persona_skin_pack_label": {} },
-      {
-        "default_skin_button@persona.default_skin_button_panel": {
-          "ignored": "$console_edition"
-        }
-      },
+      { "default_skin_button@persona.default_skin_button_panel": {} },
       { "owned_packs_grid@persona.persona_skin_pack_grid": {} }
     ]
   },

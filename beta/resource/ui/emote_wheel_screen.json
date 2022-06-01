@@ -5,9 +5,8 @@
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
-        "to_button_id": "button.emote_wheel_exit_non_gamepad",
-        "mapping_type": "global",
-        "input_mode_condition": "not_gamepad"
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
       },
       {
         "from_button_id": "button.controller_start",
@@ -19,6 +18,7 @@
         "to_button_id": "button.menu_exit",
         "mapping_type": "global"
       }
+
     ],
     "$screen_animations": [
       "@common.screen_exit_animation_push_fade",

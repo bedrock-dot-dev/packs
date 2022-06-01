@@ -3784,37 +3784,6 @@
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1
          },
-         "trader_llama" : {
-            "events" : {
-               "add.chest" : {
-                  "pitch" : [ 0.80, 1.20 ],
-                  "sound" : "mob.horse.armor",
-                  "volume" : 1.0
-               },
-               "ambient" : "mob.llama.idle",
-               "armor" : {
-                  "pitch" : 1.0,
-                  "sound" : "mob.llama.swag",
-                  "volume" : 0.50
-               },
-               "death" : "mob.llama.death",
-               "eat" : {
-                  "pitch" : [ 0.80, 1.20 ],
-                  "sound" : "mob.llama.eat",
-                  "volume" : [ 0.50, 1.50 ]
-               },
-               "hurt" : "mob.llama.hurt",
-               "mad" : "mob.llama.angry",
-               "shoot" : "mob.llama.spit",
-               "step" : {
-                  "pitch" : 1.0,
-                  "sound" : "mob.llama.step",
-                  "volume" : 0.150
-               }
-            },
-            "pitch" : [ 0.80, 1.20 ],
-            "volume" : 0.80
-         },
          "tropicalfish" : {
             "events" : {
                "flop" : {
@@ -5994,7 +5963,7 @@
                "default" : "",
                "fall" : {
                   "sounds" : "step.froglight",
-                  "volume" : 0.40
+                  "volume" : 1.0
                },
                "jump" : {
                   "sound" : "step.froglight",
@@ -6006,7 +5975,7 @@
                },
                "step" : {
                   "sound" : "step.froglight",
-                  "volume" : 0.170
+                  "volume" : 1.0
                }
             },
             "pitch" : 1.0,

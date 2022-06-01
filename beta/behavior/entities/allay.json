@@ -20,7 +20,7 @@
       "pickup_item": {
         "minecraft:behavior.pickup_items": {
           "priority": 2,
-          "max_dist": 32,
+          "max_dist": 64,
           "search_height": 32,
           "goal_radius": 2.2,
           "speed_multiplier": 6,
