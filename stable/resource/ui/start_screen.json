@@ -1,4 +1,4 @@
-﻿{
+{
   "namespace": "start",
 
   "achievements_icon": {
@@ -300,6 +300,169 @@
     ]
   },
 
+  //--------------------------------------------------------------------------
+  // Gatherings
+  //--------------------------------------------------------------------------
+
+  "gathering_button@common_buttons.light_text_button": {
+    "anchor_to": "bottom_left",
+    "anchor_from": "bottom_left",
+    "$pressed_button_name": "button.gathering",
+    "$button_text": "#gathering_button_text",
+    "$button_text_binding_type": "global",
+    "$button_text_size": [ "100%", "100%" ],
+    "$focus_override_right": "play_button",
+    "size": [ 80, 25 ],
+    "bindings": [
+      {
+        "binding_name": "#gathering_button_enabled",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+
+  "gathering_badge": {
+    "type": "image",
+    "size": [ 30, 20 ],
+    "anchor_to": "bottom_left",
+    "anchor_from": "bottom_left",
+    "layer": 20,
+    "bindings": [
+      {
+        "binding_name": "#gathering_badge",
+        "binding_name_override": "#texture"
+      },
+      {
+        "binding_name": "#gathering_badge_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "badge_and_caption": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100%", "100%c" ],
+    "anchor_to": "bottom_middle",
+    "anchor_from": "bottom_middle",
+    "offset": [ -4, -20 ],
+    "controls": [
+      {
+        "caption_and_padding": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", "100%c" ],
+          "layer": 14,
+          "controls": [
+            {
+              "pad@common.empty_panel": {
+                "size": [ 4, -2 ]
+              }
+            },
+            {
+              "caption@start.gathering_caption": {}
+            }
+          ]
+        }
+      },
+      {
+        "badge_and_padding": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 20 ],
+          "controls": [
+            {
+              "badge@start.gathering_badge": {}
+            },
+            {
+              "fill@common.empty_panel": {
+                "size": [ "fill", "100%" ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "gathering_caption": {
+    "type": "image",
+    "size": [ "100%c", "100%c + 14px" ],
+    "anchor_to": "bottom_middle",
+    "anchor_from": "bottom_middle",
+    "layer": 9,
+    "$gathering_caption_foreground_color|default": "$0_color_format",
+    "$gathering_caption_background_color|default": "$f_color_format",
+    "color": "$gathering_caption_background_color",
+    "texture": "textures/ui/newOffersIcon",
+    "keep_ratio": false,
+    "controls": [
+      {
+        "countdown_text": {
+          "type": "label",
+          "text": "#text",
+          "font_scale_factor": 0.9,
+          "offset": [ 0, -2 ],
+          "size": [ 100, "default" ],
+          "text_alignment": "center",
+          "color": "$gathering_caption_foreground_color",
+          "bindings": [
+            {
+              "binding_name": "#gathering_countdown_text",
+              "binding_name_override": "#text",
+              "binding_condition": "always_when_visible"
+            },
+            {
+              "binding_name": "#gathering_caption_foreground_color",
+              "binding_name_override": "#color"
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#gathering_caption_background_color",
+        "binding_name_override": "#color"
+      }
+    ]
+  },
+
+  "gathering_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", 60 ],
+    "controls": [
+      {
+        "pad@common.empty_panel": {
+          "size": [ "5% + 2px", "100%" ]
+        }
+      },
+      {
+        "inner_panel": {
+          "type": "panel",
+          "anchor_to": "bottom_left",
+          "anchor_from": "bottom_left",
+          "size": [ "100%", 60 ],
+          "controls": [
+            {
+              "badge_and_caption@start.badge_and_caption": {}
+            },
+            {
+              "gathering_button@start.gathering_button": {}
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#gathering_enabled",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
   //---------------------------------------------------------------------------
   // Online Buttons Panel (and the lang button)
   //---------------------------------------------------------------------------
@@ -546,6 +709,9 @@
     "size": [ "50% - 75px", "100%c" ],
     "offset": [ 0, "-10%" ],
     "controls": [
+      {
+        "gathering_panel@start.gathering_panel": {}
+      },
       {
         "stacked_column": {
           "type": "stack_panel",

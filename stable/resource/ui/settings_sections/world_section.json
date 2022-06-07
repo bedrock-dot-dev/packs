@@ -823,14 +823,14 @@
         "experimental_toggles_label@settings_common.option_group_label": {
           "$text": "createWorldScreen.experimentalgameplay",
           // Ignore education toggle in education since education doesn't allow experiments presently
-          "ignored": "$education_edition"
+          "ignored": "($is_publish and $education_edition)"
         }
       },
       {
         "experimental_toggles_label_info@settings_common.option_group_label": {
           "$text": "createWorldScreen.experimentalgameplayinfo",
           // Ignore education toggle in education since education doesn't allow experiments presently
-          "ignored": "$education_edition"
+          "ignored": "($is_publish and $education_edition)"
         }
       },
       {
@@ -839,7 +839,7 @@
           "orientation": "vertical",
           "size": [ "100%", "100%c" ],
           // Ignore education toggle in education since education doesn't allow experiments presently
-          "ignored": "$education_edition",
+          "ignored": "($is_publish and $education_edition)",
           "factory": {
             "name": "experimental_toggle_factory",
             "control_name": "world_section.experimental_toggle"

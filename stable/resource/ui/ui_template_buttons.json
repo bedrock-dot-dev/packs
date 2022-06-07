@@ -498,6 +498,8 @@
     "max_size": "$button_text_max_size",
     "$text_alignment|default": "center",
     "text_alignment": "$text_alignment",
+    "$tts_section_header|default": "",
+    "tts_section_header": "$tts_section_header",
     "bindings": [
       {
         "binding_type": "$button_text_binding_type",
@@ -511,7 +513,6 @@
 
   "underline_button@common.button": {
     "size": [ "100%c", "100%c" ],
-    "pressed_control": "hover",
 
     "$underline_button_size|default": [ "100%c", "100%c" ],
     "$single_label_size": [ "default", 8 ],

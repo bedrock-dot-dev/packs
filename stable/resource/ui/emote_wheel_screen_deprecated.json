@@ -39,7 +39,14 @@
     "$default_text_color": [ 0.7, 0.7, 0.7 ],
     "$screen_content": "persona_deprecated.emote_wheel_deprecated_screen_content",
     "$is_full_screen_layout": false,
-    "gamepad_cursor_deflection_mode": true
+    "gamepad_cursor_deflection_mode": true,
+    "$screen_bg_content": "emote_wheel_touch_zone"
+  },
+
+  "emote_wheel_touch_zone@common_buttons.light_content_button": {
+    "size": [ "100%", "100%" ],
+    "$pressed_button_name": "button.menu_exit",
+    "alpha": 0
   },
 
   /////////////////////////////////////////////////////////////

@@ -1940,9 +1940,7 @@
         }
       },
       {
-        "pad_3@pdp.vertical_padding_2px": {
-          "debug": "red"
-        }
+        "pad_3@pdp.vertical_padding_2px": {}
       },
       { "divider_3@common.horizontal_divider": { "$image_size": [ "100% - 6px", 1 ] } }
     ]
@@ -2068,6 +2066,7 @@
     "type": "panel",
     "size": [ 55, 11 ],
     "$rating_bind_name|default": "#content_rating",
+
     "controls": [
       {
         "empty_rating": {
@@ -2085,8 +2084,6 @@
                 "clip_pixelperfect": false,
                 "bindings": [
                   {
-                    "binding_type": "$store_factory_binding_type",
-                    "binding_collection_name": "$store_factory_collection_name",
                     "binding_name": "$rating_bind_name",
                     "binding_name_override": "#clip_ratio"
                   }
@@ -2107,7 +2104,7 @@
       {
         "empty_rating": {
           "type": "image",
-          "size": [ 82, 16 ],
+          "size": [ 81, 19 ],
           "texture": "textures/ui/5stars_empty_new",
           "clip_direction": "right",
           "clip_pixelperfect": false,
@@ -4276,18 +4273,21 @@
                 "controls": [
                   {
                     "description_text_collapsed@pdp.description_label": {
-                      "$contents_max_size": [ "fill", 20 ]
+                      "$contents_max_size": [ "fill", 20 ],
+                      "notify_on_ellipses": [
+                        "collapsed_show_more_panel"
+                      ]
                     }
                   },
                   {
-                    "button_panel@pdp.description_toggle_show_button_panel": {
+                    "collapsed_show_more_panel@pdp.description_toggle_show_button_panel": {
                       "size": [ "100%cm + 2px", "100%sm" ],
                       "$button_text": "store.offerDescription.showMore",
                       "$border_offset": [ 3.5, 3 ],
                       "$show_button_offset": [ 3.5, 2.5 ],
                       "bindings": [
                         {
-                          "binding_name": "(not #has_tags)",
+                          "binding_name": "#collapsed_show_more_visible",
                           "binding_name_override": "#visible"
                         }
                       ]
@@ -4930,6 +4930,7 @@
                                 "note_text": {
                                   "type": "label",
                                   "size": [ "100%", "default" ],
+                                  "max_size": [ "100% - 50px", "default" ],
                                   "text": "store.offerDescription.playerCountNote",
                                   "font_scale_factor": 0.8,
                                   "font_type": "smooth",

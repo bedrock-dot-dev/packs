@@ -1300,6 +1300,7 @@
 
     "$shadow|default": false,
     "$enable_profanity_filter|default": false,
+    "$newline_refresh|default": "#newline_refresh",
     "$text_alpha|default": 1.0,
     "$locked_color|default": [ 1.0, 1.0, 1.0, 1.0 ],
     "$locked_text_alpha|default": 0.5,
@@ -1336,6 +1337,9 @@
         "binding_type": "$text_color_binding_type",
         "binding_name": "$text_color_binding_name",
         "binding_name_override": "#color"
+      },
+      {
+        "binding_name": "#newline_refresh"
       }
     ]
   },
@@ -1628,6 +1632,113 @@
     ]
   },
 
+  "text_edit_box_scrolling_content": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "$scrolling_content_anchor_from": "top_middle",
+    "$scrolling_content_anchor_to": "top_middle",
+    "controls": [
+      {
+        "$text_edit_text_control@common.text_edit_box_label": {
+          "layer": 1,
+          "size": [ "100%", "default" ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "font_size": "normal",
+          "$text_box_tts_name": "accessibility.textbox.tts.title"
+        }
+      }
+    ]
+  },
+
+  "scrollable_text_edit_box@common.text_edit_box": {
+    "controls": [
+      {
+        "centering_panel": {
+          "type": "panel",
+          "size": [ "100% - 6px", "100% - 4px" ],
+          "controls": [
+            {
+              "clipper_panel": {
+                "type": "panel",
+                "size": "$text_edit_clipping_panel_size",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "offset": "$text_offset",
+                "clips_children": true,
+                "$disabled_color|default": "$color",
+                "controls": [
+                  {
+                    "text_edit_text_control@common.scrolling_panel": {
+                      "size": [ "100%", "100%" ],
+                      "$scroll_size": [ 6, "100%-4px" ],
+                      "anchor_from": "top_middle",
+                      "anchor_to": "top_middle",
+                      "$scrolling_content": "common.text_edit_box_scrolling_content",
+                      "$scrolling_content_anchor_from": "top_middle",
+                      "$scrolling_content_anchor_to": "top_middle",
+                      "$show_background": false,
+                      "$scroll_panel_consume_hover_events": false,
+                      "$scroll_bar_left_padding_size": [ 0, 0 ],
+                      "$scroll_bar_right_padding_size": [ 2, 0 ]
+                    }
+                  },
+                  {
+                    "visibility_panel": {
+                      "type": "panel",
+                      "controls": [
+                        {
+                          "place_holder_control@$place_holder_control": {
+                            "layer": 1,
+                            "size": "$text_edit_box_label_size",
+                            "offset": "$text_edit_box_label_offset",
+                            "min_size": "$text_edit_box_label_min_size",
+                            "anchor_from": "$text_edit_box_label_anchor_point",
+                            "anchor_to": "$text_edit_box_label_anchor_point",
+                            "$text_alpha|default": "$alpha",
+                            "$locked_text_alpha|default": "$disabled_alpha",
+                            "$locked_color|default": "$disabled_color"
+                          }
+                        }
+                      ],
+
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "$text_edit_text_control",
+                          "source_property_name": "(#item_name = '')",
+                          "target_property_name": "#visible",
+                          "resolve_sibling_scope": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "locked": {
+          "type": "panel",
+          "$disabled_color|default": "$color",
+          "controls": [
+            {
+              "edit_box_indent@$text_background_default": {
+                "$color": "$disabled_color",
+                "$alpha": "$disabled_alpha"
+              }
+            }
+          ]
+        }
+      },
+      { "default@$text_background_default": {} },
+      { "hover@$text_background_hover": {} },
+      { "pressed@$text_background_hover": {} }
+    ]
+  },
+
   "transparent_text_edit_box": {
     "type": "edit_box",
 
@@ -1845,6 +1956,55 @@
     ]
   },
 
+  "scrollable_multiline_text_edit_box@common.scrollable_text_edit_box": {
+    "enabled_newline": true,
+    "max_length": 100,
+    "$text_edit_box_label_size": [ "100%", "100%" ],
+
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$text_edit_box_selected_to_button_id",
+        "handle_select": true,
+        "handle_deselect": true,
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$text_edit_box_selected_to_button_id",
+        "handle_select": false,
+        "handle_deselect": true,
+        "mapping_type": "global",
+        "consume_event": false
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$text_edit_box_selected_to_button_id",
+        "handle_select": true,
+        "handle_deselect": false,
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "$text_edit_box_deselected_to_button_id",
+        "handle_select": false,
+        "handle_deselect": true,
+        "mapping_type": "global"
+      },
+      {
+        "to_button_id": "$text_edit_box_hovered_button_id",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "$text_edit_box_clear_from_button_id",
+        "to_button_id": "$text_edit_box_clear_to_button_id",
+        "handle_select": false,
+        "handle_deselect": false,
+        "mapping_type": "focused"
+      }
+    ]
+  },
+
   "dirt_background": {
     "ignored": "($is_holographic and not $is_living_room_mode)",
     "type": "image",
@@ -1998,7 +2158,7 @@
           "anchor_to": "top_left",
           "layer": 2,
           "font_type": "$font_type",
-          "font_size":  "$font_size",
+          "font_size": "$font_size",
           "enable_profanity_filter": false,
 
           "font_scale_factor": "$single_line_font_scale_factor",
@@ -5234,6 +5394,7 @@
               "$xbl_immediate_signin_screen_size": [ 317, 158 ], // XBL Immediate Signin Popup
               "$xbl_optional_signin_screen_size": [ 317, 158 ], // XBL Optional Signin Popup
               "$xbl_console_signin_screen_size": [ 316, 161 ], // XBL Console Signin Popup
+              "$xbl_console_qr_signin_screen_size": [ 364, 182 ], // XBL Console QR Signin Popup
               "$xbl_console_signin_succeeded_screen_size": [ 230, "100% - 50px" ], // XBL Console Signin Succeeded Popup
               "$xbl_first_launch_screen_size": [ 317, 146 ], // XBL First Launch Popup, Trial Upsell
               "$xbl_gamer_profile_screen_size": [ 260, "100% - 50px" ], // XBL Console Signin Succeeded Popup
@@ -5282,6 +5443,7 @@
               "$xbl_immediate_signin_screen_size": [ 316, 153 ], // XBL Immediate Signin Popup
               "$xbl_optional_signin_screen_size": [ 316, 153 ], // XBL Optional Signin Popup
               "$xbl_console_signin_screen_size": [ 316, 161 ], // XBL Console Signin Popup
+              "$xbl_console_qr_signin_screen_size": [ 316, 158 ], // XBL Console QR Signin Popup
               "$xbl_console_signin_succeeded_screen_size": [ 230, "100% - 4px" ], // XBL Console Signin Succeeded Popup
               "$xbl_first_launch_screen_size": [ 316, 146 ], // XBL First Launch Popup, Trial Upsell
               "$xbl_gamer_profile_screen_size": [ 316, "100% - 4px" ], // XBL Console Signin Succeeded Popup
@@ -6037,8 +6199,6 @@
                 "font_scale_factor": "$tooltip_text_font_scale",
                 "$tooltip_text_color|default": "$f_color_format",
                 "color": "$tooltip_text_color",
-                "$tooltip_text_font_type|default": "default",
-                "font_type": "$tooltip_text_font_type",
                 "bindings": [
                   {
                     "binding_name": "$tooltip_text_binding_name",

@@ -6189,7 +6189,7 @@
                   {
                     "label_panel_layout": {
                       "type": "panel",
-                      "size": [ "100%", "100%c + 8px" ],
+                      "size": [ "97%", "100%c + 8px" ],
                       "controls": [
                         {
                           "label": {
@@ -6198,7 +6198,6 @@
                             "font_type": "smooth",
                             "color": "$dark_button_default_text_color",
                             "size": [ "100%", "default" ],
-                            "text_alignment": "center",
                             "layer": 1,
                             "shadow": false,
                             "text": "#feature_server_message_text",
