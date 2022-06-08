@@ -840,6 +840,20 @@
               }
             },
             {
+              "modify_control_layout_button@settings_common.action_button": {
+                "$pressed_button_name": "button.modify_control_layout",
+                "$button_text": "Modify Control Layout",
+                "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+                "bindings": [
+                  {
+                    "binding_name": "#resizable_ui",
+                    "binding_name_override": "#visible",
+                    "binding_type": "global"
+                  }
+                ]
+              }
+            },
+            {
               "option_toggle_invert_y@settings_common.option_toggle": {
                 "$option_label": "options.invertYAxis",
                 "$option_binding_name": "#touch_invert_y_axis",
@@ -1021,6 +1035,26 @@
                 "$label_bindings": [
                   {
                     "binding_name": "$option_label"
+                  }
+                ]
+              }
+            },
+            {
+              "hotbar_scale@settings_common.option_slider": {
+                "$option_label": "#hotbar_scale_slider_label",
+                "$slider_name": "hotbar_scale",
+                "$slider_value_binding_name": "#hotbar_scale",
+                "$slider_tts_text_value": "#hotbar_scale_text_value",
+                "$option_enabled_binding_name": "#hotbar_scale_enabled",
+                "$label_bindings": [
+                  {
+                    "binding_name": "$option_label"
+                  }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#resizable_ui_active",
+                    "binding_name_override": "#visible"
                   }
                 ]
               }

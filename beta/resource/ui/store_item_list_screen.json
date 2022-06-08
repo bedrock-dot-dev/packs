@@ -473,6 +473,7 @@
                             "text": "#offer_prompt_text",
                             "font_type": "smooth",
                             "layer": 4,
+                            "tts_override_control_value": "#tts_offer_prompt_text",
                             "bindings": [
                               {
                                 "binding_type": "$store_factory_collection_details",
@@ -482,6 +483,11 @@
                               {
                                 "binding_type": "$offer_binding_type",
                                 "binding_name": "#offer_prompt_text",
+                                "binding_collection_name": "$offer_collection_name"
+                              },
+                              {
+                                "binding_type": "$offer_binding_type",
+                                "binding_name": "#tts_offer_prompt_text",
                                 "binding_collection_name": "$offer_collection_name"
                               },
                               {

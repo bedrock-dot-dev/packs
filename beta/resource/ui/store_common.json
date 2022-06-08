@@ -102,6 +102,18 @@
         "binding_collection_name": "$offer_collection_name",
         "binding_name": "#top_row_focus_override_up",
         "binding_name_override": "#focus_change_up"
+      },
+      {
+        "binding_type": "$offer_binding_type",
+        "binding_collection_name": "$offer_collection_name",
+        "binding_name": "#offer_grid_item_button_focus_id",
+        "binding_name_override": "#focus_identifier"
+      },
+      {
+        "binding_type": "$offer_binding_type",
+        "binding_collection_name": "$offer_collection_name",
+        "binding_name": "#last_item_focus_override_right",
+        "binding_name_override": "#focus_change_right"
       }
     ],
     "button_mappings": [
@@ -1271,6 +1283,15 @@
     "$cycle_pack_button_binding_type|default": "global",
     "$cycle_pack_button_enabled|default": "#cycle_pack_button",
 
+    "$cycle_pack_button_name_left|default": "",
+    "$cycle_pack_button_name_right|default": "",
+
+    "$cycle_pack_button_up_right_refusal|default": false,
+
+    "property_bag": {
+      "#is_cycle_button_focused": true
+    },
+
     "$cycle_pack_bindings|default": [
       {
         "binding_type": "$cycle_pack_button_factory_collection_details",
@@ -1286,10 +1307,6 @@
         "binding_collection_name": "$cycle_pack_button_collection",
         "binding_name": "$cycle_pack_button_enabled",
         "binding_name_override": "#enabled"
-      },
-      {
-        "binding_name": "(not #is_using_gamepad)",
-        "binding_name_override": "#focus_enabled"
       }
     ],
 
@@ -1323,7 +1340,30 @@
         ]
       }
     ],
-
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed",
+        "button_up_right_of_first_refusal": "$cycle_pack_button_up_right_refusal"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed",
+        "button_up_right_of_first_refusal": "$cycle_pack_button_up_right_refusal"
+      },
+      {
+        "from_button_id": "button.menu_tab_right",
+        "to_button_id": "$cycle_pack_button_name_right",
+        "mapping_type": "focused"
+      },
+      {
+        "from_button_id": "button.menu_tab_left",
+        "to_button_id": "$cycle_pack_button_name_left",
+        "mapping_type": "focused"
+      }
+    ],
     "bindings": "$cycle_pack_bindings"
   },
 
@@ -2729,6 +2769,7 @@
           "text": "#offer_prompt_text",
           "font_type": "smooth",
           "layer": 4,
+          "tts_override_control_value": "#tts_offer_prompt_text",
           "bindings": [
             {
               "binding_type": "$store_factory_collection_details",
@@ -2745,6 +2786,11 @@
               "binding_name": "#offer_prompt_text_visibility",
               "binding_collection_name": "$offer_collection_name",
               "binding_name_override": "#visible"
+            },
+            {
+              "binding_type": "$offer_binding_type",
+              "binding_name": "#tts_offer_prompt_text",
+              "binding_collection_name": "$offer_collection_name"
             }
           ]
         }
@@ -2854,6 +2900,7 @@
                 "color": "$coin_color",
                 "anchor_from": "bottom_right",
                 "anchor_to": "bottom_right",
+                "tts_override_control_value": "#tts_offer_prompt_text",
                 "bindings": [
                   {
                     "binding_type": "$store_factory_collection_details",
@@ -2870,6 +2917,11 @@
                     "binding_name": "#offer_prompt_text_visibility",
                     "binding_collection_name": "$hero_offer_collection_name",
                     "binding_name_override": "#visible"
+                  },
+                  {
+                    "binding_type": "$hero_offer_binding_type",
+                    "binding_name": "#tts_offer_prompt_text",
+                    "binding_collection_name": "$hero_offer_collection_name"
                   }
                 ]
               }
@@ -3276,14 +3328,6 @@
                           "binding_type": "$store_factory_collection_details",
                           "binding_collection_name": "$store_factory_collection_name",
                           "binding_collection_prefix": "$store_factory_collection_prefix"
-                        }
-                      ],
-                      "button_mappings": [
-                        {
-                          "from_button_id": "button.menu_select",
-                          "to_button_id": "button.navigate_carousel_right",
-                          "mapping_type": "pressed",
-                          "button_up_right_of_first_refusal": true
                         }
                       ]
                     }
@@ -4542,7 +4586,6 @@
           "type": "panel",
           "size": [ "25%", "100%" ],
           "collection_index": 3,
-          "$focus_override_right": "FOCUS_OVERRIDE_STOP",
           "controls": [
             {
               "show_more@common_store.store_offer_grid_show_more": {
@@ -4770,6 +4813,10 @@
           "$pressed_button_name": "button.show_more_offers",
           "bindings": [
             {
+              "binding_type": "$offer_collection_details",
+              "binding_collection_name": "$offer_collection_name"
+            },
+            {
               "binding_type": "$store_factory_collection_details",
               "binding_collection_name": "$store_factory_collection_name",
               "binding_collection_prefix": "$store_factory_collection_prefix"
@@ -4779,6 +4826,18 @@
               "binding_collection_name": "$offer_collection_name",
               "binding_name": "#top_row_focus_override_up",
               "binding_name_override": "#focus_change_up"
+            },
+            {
+              "binding_type": "$offer_binding_type",
+              "binding_collection_name": "$offer_collection_name",
+              "binding_name": "#offer_grid_item_button_focus_id",
+              "binding_name_override": "#focus_identifier"
+            },
+            {
+              "binding_type": "$offer_binding_type",
+              "binding_collection_name": "$offer_collection_name",
+              "binding_name": "#last_item_focus_override_right",
+              "binding_name_override": "#focus_change_right"              
             }
           ],
           "button_mappings": [
@@ -4864,6 +4923,7 @@
     "text": "#offer_markdown_percentage",
     "font_scale_factor": 1,
     "layer": 4,
+    "tts_override_control_value": "#tts_offer_markdown_percentage",
     "bindings": [
       {
         "binding_type": "$store_factory_collection_details",
@@ -4873,6 +4933,11 @@
       {
         "binding_type": "$offer_binding_type",
         "binding_name": "#offer_markdown_percentage",
+        "binding_collection_name": "$offer_collection_name"
+      },
+      {
+        "binding_type": "$offer_binding_type",
+        "binding_name": "#tts_offer_markdown_percentage",
         "binding_collection_name": "$offer_collection_name"
       },
       {
@@ -4894,6 +4959,7 @@
     "layer": 4,
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
+    "tts_override_control_value": "#tts_offer_markdown_percentage",
     "bindings": [
       {
         "binding_type": "$store_factory_collection_details",
@@ -4904,6 +4970,11 @@
         "binding_type": "$hero_offer_binding_type",
         "binding_collection_name": "$hero_offer_collection_name",
         "binding_name": "#offer_markdown_percentage"
+      },
+      {
+        "binding_type": "$hero_offer_binding_type",
+        "binding_collection_name": "$hero_offer_collection_name",
+        "binding_name": "#tts_offer_markdown_percentage"
       },
       {
         "binding_type": "$hero_offer_binding_type",
@@ -4930,6 +5001,7 @@
           "offset": "$offer_price_offset",
           "text": "#offer_full_price",
           "font_type": "smooth",
+          "tts_override_control_value": "#tts_overrride_offer_full_price",
           "layer": 4, // place behind sale banner when possible
           "bindings": [
             {
@@ -4947,6 +5019,11 @@
               "binding_name": "$offer_strikethrough_price_visible_binding",
               "binding_collection_name": "$offer_collection_name",
               "binding_name_override": "#visible"
+            },
+            {
+              "binding_type": "$offer_binding_type",
+              "binding_name": "#tts_overrride_offer_full_price",
+              "binding_collection_name": "$offer_collection_name"
             }
           ],
           "controls": [
@@ -5477,6 +5554,12 @@
                                       "binding_type": "$offer_binding_type",
                                       "binding_name": "#offer_minecoin_text",
                                       "binding_collection_name": "$offer_collection_name"
+                                    },
+                                    {
+                                      "binding_type": "$offer_binding_type",
+                                      "binding_name": "#tts_offer_minecoin_text",
+                                      "binding_collection_name": "#tts_override_control_value",
+                                      "binding_name_override": "#visible"
                                     }
                                   ]
                                 }
@@ -5705,6 +5788,7 @@
                         {
                           "rtx_label@common_store.rtx_label": {
                             "size": [ 20, 14 ],
+                            "priority": 1,
                             "bindings": [
                               {
                                 "binding_type": "$store_factory_collection_details",
@@ -5724,7 +5808,7 @@
                           "realms_plus_panel": {
                             "type": "panel",
                             "size": [ 16, 12 ],
-                            "priority": 0,
+                            "priority": 1,
                             "controls": [
                               {
                                 "realmsPlus_chevron@realmsPlus_content.realms_plus_content_chevron": {
@@ -5849,6 +5933,7 @@
                         },
                         {
                           "markdown_panel@common_store.offer_price_markdown_panel": {
+                            "priority": 1,
                             "$offer_price_offset": [ 0, 2 ]
                           }
                         },
@@ -5865,7 +5950,7 @@
                             "anchor_from": "bottom_left",
                             "anchor_to": "bottom_left",
                             "size": [ "100%c", 11 ],
-                            "priority": 1,
+                            "priority": 0,
                             "controls": [
                               {
                                 "offer_status_text_panel": {
@@ -5881,6 +5966,7 @@
                                         "text": "#offer_prompt_text",
                                         "font_type": "smooth",
                                         "layer": 4,
+                                        "tts_override_control_value": "#tts_offer_prompt_text",
                                         "bindings": [
                                           {
                                             "binding_type": "$store_factory_collection_details",
@@ -5897,6 +5983,11 @@
                                             "binding_name": "#offer_prompt_text_visibility",
                                             "binding_collection_name": "$offer_collection_name",
                                             "binding_name_override": "#visible"
+                                          },
+                                          {
+                                            "binding_type": "$offer_binding_type",
+                                            "binding_name": "#tts_offer_prompt_text",
+                                            "binding_collection_name": "$offer_collection_name"
                                           }
                                         ]
                                       }
@@ -6287,6 +6378,9 @@
                 "$cycle_pack_button_factory_collection_prefix": "$store_factory_collection_prefix",
                 "$cycle_pack_button_factory_collection_name": "$store_factory_collection_name",
 
+                //"$disabled_focus_button_collection_details": null,
+
+
                 "controls": [
                   {
                     "progress_loading@common_store.progress_loading": {
@@ -6305,6 +6399,7 @@
                   {
                     "cycle_pack_left_button@common_store.cycle_pack_left_button": {
                       "$pressed_button_name": "button.cycle_offer_left",
+                      "$cycle_pack_button_name_left": "button.cycle_offer_left",
                       "size": [ 23, "100%" ]
                     }
                   },
@@ -6319,6 +6414,7 @@
                   {
                     "cycle_pack_right_button@common_store.cycle_pack_right_button": {
                       "$pressed_button_name": "button.cycle_offer_right",
+                      "$cycle_pack_button_name_right": "button.cycle_offer_right",
                       "size": [ 23, "100%" ]
                     }
                   }
@@ -7531,7 +7627,7 @@
         "vertical_line_divider_horizontal_panel_with_padding": {
           "type": "stack_panel",
           "orientation": "horizontal",
-          "size": ["100%", "2px"],
+          "size": [ "100%", "2px" ],
           "controls": [
             {
               "vert_line_divider_row_left_buffer": {

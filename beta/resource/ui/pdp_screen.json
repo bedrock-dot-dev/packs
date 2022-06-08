@@ -998,12 +998,18 @@
     "layer": 1,
     "$discount_label_binding_type|default": "global",
     "$discount_label_binding_collection|default": "",
+    "tts_override_control_value": "#tts_markdown_percentage",
 
     "bindings": [
       {
         "binding_type": "$discount_label_binding_type",
         "binding_collection_name": "$discount_label_binding_collection",
         "binding_name": "#markdown_percentage"
+      },
+      {
+        "binding_type": "$discount_label_binding_type",
+        "binding_collection_name": "$discount_label_binding_collection",
+        "binding_name": "#tts_markdown_percentage"
       }
     ]
   },
@@ -1019,9 +1025,13 @@
     "text": "#purchase_with_coins_button_text",
     "$purchase_price_font_type|default": "default",
     "font_type": "$purchase_price_font_type",
+    "tts_override_control_value": "#tts_purchase_with_coins_button_text",
     "bindings": [
       {
         "binding_name": "#purchase_with_coins_button_text"
+      },
+      {
+        "binding_name": "#tts_purchase_with_coins_button_text"
       }
     ]
   },
@@ -1616,10 +1626,14 @@
           "color": "$text_color",
           "text": "#full_price",
           "$purchase_price_font_type|default": "smooth",
+          "tts_override_control_value": "#tts_full_price",
           "font_type": "$purchase_price_font_type",
           "bindings": [
             {
               "binding_name": "#full_price"
+            },
+            {
+              "binding_name": "#tts_full_price"
             },
             {
               "binding_name": "#is_on_sale",
@@ -5189,6 +5203,7 @@
                 "font_type": "smooth",
                 "$offer_price_color|default": "$dark_button_secondary_default_text_color",
                 "color": "$offer_price_color",
+                "tts_override_control_value": "#tts_offer_prompt_text",
                 "property_bag": {
                   "#default_prompt_color": "$dark_button_secondary_default_text_color",
                   "#coin_prompt_color": "$coin_color",
@@ -5204,6 +5219,11 @@
                     "binding_type": "$mashup_collection_binding_type",
                     "binding_collection_name": "$mashup_collection_name",
                     "binding_name": "#offer_prompt_text"
+                  },
+                  {
+                    "binding_type": "$mashup_collection_binding_type",
+                    "binding_collection_name": "$mashup_collection_name",
+                    "binding_name": "#tts_offer_prompt_text"
                   },
                   {
                     "binding_type": "$mashup_collection_binding_type",

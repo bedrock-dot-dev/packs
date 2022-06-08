@@ -350,6 +350,12 @@
         "mapping_type": "focused"
       },
       {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.controller_back",
+        "mapping_type": "focused",
+        "ignored": "(not $allow_controller_back_button_mapping)"
+      },
+      {
         "ignored": "(not $enable_directional_toggling)",
         "from_button_id": "button.menu_left",
         "to_button_id": "$toggle_off_button",

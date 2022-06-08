@@ -1,4 +1,5 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.0.5</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.10.22</h1>
+This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Client Entity Documentation">Client Entity Documentation</a></th> </tr>
@@ -9642,6 +9643,12 @@ Allows an entity to attack, while also delaying the damage-dealt until a specifi
 <td style="border-style:solid; border-width:2; padding:8px">The minimum idle time in seconds between the last detected disturbance to the start of digging.</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:2; padding:8px">on_start</td>
+<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Event(s) to run when the goal starts.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:2; padding:8px">suspicion_is_disturbance</td>
 <td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
 <td style="border-style:solid; border-width:2; padding:8px">false</td>
@@ -9808,6 +9815,27 @@ Allows this entity to fly around looking for a player to shoot fireballs at. Can
 <h2><p id="minecraft:behavior.dragontakeoff">minecraft:behavior.dragontakeoff</p></h2>
 
 Allows the dragon to leave perch mode and go back to flying around. Can only be used by the Ender Dragon.</br><a href="#Index">Back to top</a><br><br>
+
+<h2><p id="minecraft:behavior.drink_milk">minecraft:behavior.drink_milk</p></h2>
+
+Allows the mob to drink milk based on specified environment conditions.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">cooldown_seconds</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">5.00</td>
+<td style="border-style:solid; border-width:2; padding:8px">Time (in seconds) that the goal is on cooldown before it can be used again.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">filters</td>
+<td style="border-style:solid; border-width:2; padding:8px">Minecraft Filter</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">Conditions that need to be met for the behavior to start.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
 
 <h2><p id="minecraft:behavior.drink_potion">minecraft:behavior.drink_potion</p></h2>
 
@@ -16397,7 +16425,7 @@ Defines how much exhaustion each player action should take.</br><h3></h3>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">attack</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.3</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.1</td>
 <td style="border-style:solid; border-width:2; padding:8px">Amount of exhaustion applied when attacking.</br></td>
 </tr>
 <tr>
@@ -16409,19 +16437,19 @@ Defines how much exhaustion each player action should take.</br><h3></h3>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">heal</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">3</td>
+<td style="border-style:solid; border-width:2; padding:8px">6</td>
 <td style="border-style:solid; border-width:2; padding:8px">Amount of exhaustion applied when healed through food regeneration.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">jump</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.2</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.05</td>
 <td style="border-style:solid; border-width:2; padding:8px">Amount of exhaustion applied when jumping.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">mine</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.025</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.005</td>
 <td style="border-style:solid; border-width:2; padding:8px">Amount of exhaustion applied when mining.</br></td>
 </tr>
 <tr>
@@ -16433,19 +16461,19 @@ Defines how much exhaustion each player action should take.</br><h3></h3>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">sprint_jump</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.8</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.2</td>
 <td style="border-style:solid; border-width:2; padding:8px">Amount of exhaustion applied when sprint jumping.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">swim</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.015</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.01</td>
 <td style="border-style:solid; border-width:2; padding:8px">Amount of exhaustion applied when swimming.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">walk</td>
 <td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
-<td style="border-style:solid; border-width:2; padding:8px">0.01</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
 <td style="border-style:solid; border-width:2; padding:8px">Amount of exhaustion applied when walking.</br></td>
 </tr>
 </table>
@@ -19843,6 +19871,10 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.dragontakeoff</td>
 <td style="border-style:solid; border-width:2; padding:8px">-1912535317</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.drink_milk</td>
+<td style="border-style:solid; border-width:2; padding:8px">14686590835698253470</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:behavior.drink_potion</td>

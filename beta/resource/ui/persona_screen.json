@@ -1165,6 +1165,7 @@
         "left_cycle_button@persona.left_cycle_button": {
           "size": [ 15, "100%sm" ],
           "$pressed_button_name": "button.cycle_featured_skins_left",
+          "$cycle_pack_button_name_left": "button.cycle_featured_skins_left",
           "$cycle_pack_button_enabled": "#is_left_cycle_featured_skins_button_enabled"
         }
       },
@@ -1181,6 +1182,7 @@
         "right_cycle_button@persona.right_cycle_button": {
           "size": [ 15, "100%sm" ],
           "$pressed_button_name": "button.cycle_featured_skins_right",
+          "$cycle_pack_button_name_right": "button.cycle_featured_skins_right",
           "$cycle_pack_button_enabled": "#is_right_cycle_featured_skins_button_enabled"
         }
       }
@@ -1410,6 +1412,7 @@
         "left_cycle_button@persona.left_cycle_button": {
           "size": [ 15, "100%sm" ],
           "$pressed_button_name": "button.cycle_featured_pieces_left",
+          "$cycle_pack_button_name_left": "button.cycle_featured_pieces_left",
           "$cycle_pack_button_enabled": "#is_left_cycle_featured_pieces_button_enabled"
         }
       },
@@ -1464,6 +1467,7 @@
         "right_cycle_button@persona.right_cycle_button": {
           "size": [ 15, "100%sm" ],
           "$pressed_button_name": "button.cycle_featured_pieces_right",
+          "$cycle_pack_button_name_right": "button.cycle_featured_pieces_right",
           "$cycle_pack_button_enabled": "#is_right_cycle_featured_pieces_button_enabled"
         }
       }
@@ -4531,10 +4535,6 @@
       {
         "binding_name": "#is_leg_or_arms",
         "binding_name_override": "#visible"
-      },
-      {
-        "binding_name": "#is_leg_or_arms_selected",
-        "binding_name_override": "#enabled"
       }
     ]
   },
@@ -4845,6 +4845,7 @@
               "left_cycle_button@persona.left_cycle_button": {
                 "size": [ 15, "100%" ],
                 "$pressed_button_name": "button.cycle_featured_pieces_left",
+                "$cycle_pack_button_name_left": "button.cycle_featured_pieces_left",
                 "$cycle_pack_button_enabled": "#is_left_cycle_featured_pieces_button_enabled"
               }
             },
@@ -4873,6 +4874,7 @@
               "right_cycle_button@persona.right_cycle_button": {
                 "size": [ 15, "100%" ],
                 "$pressed_button_name": "button.cycle_featured_pieces_right",
+                "$cycle_pack_button_name_right": "button.cycle_featured_pieces_right",
                 "$cycle_pack_button_enabled": "#is_right_cycle_featured_pieces_button_enabled"
               }
             }
@@ -6048,7 +6050,11 @@
 
     "controls": [
       { "pack_label@persona.persona_skin_pack_label": {} },
-      { "default_skin_button@persona.default_skin_button_panel": {} },
+      {
+        "default_skin_button@persona.default_skin_button_panel": {
+          "ignored": "$console_edition"
+        }
+      },
       { "owned_packs_grid@persona.persona_skin_pack_grid": {} }
     ]
   },
