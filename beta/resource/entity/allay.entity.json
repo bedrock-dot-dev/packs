@@ -33,7 +33,8 @@
 				{ "dancing": "controller.animation.allay.dancing" }
 			],
       "render_controllers": [ "controller.render.allay" ],
-      "enable_attachables":  true
-		}
+      "enable_attachables":  true,
+      "held_item_ignores_lighting": true
+    }
 	}
 }

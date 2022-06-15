@@ -19,7 +19,14 @@
       "type": "label",
       "size": [ "100%-4px", "default" ],
       "color": "$body_text_color",
-      "text": "onlinePlay.message"
+      "$safety_description_text|default": "onlinePlay.message",
+      "variables": [
+        {
+          "requires": "$is_editor_mode_enabled",
+          "$safety_description_text": "onlinePlay.editor.message"
+        }
+      ],
+      "text": "$safety_description_text"
     },
   
     "online_safety_label_panel@common.scrolling_panel": {
@@ -101,6 +108,14 @@
       "layer": 101,
       "$text_name": "onlinePlay.notRated",
       "$description_text": "onlinePlay.message",
+      "variables": [
+        {
+          "requires": "$is_editor_mode_enabled",
+          "$text_name": "onlinePlay.editor.notRated",
+          "$description_text": "onlinePlay.editor.message"
+        }
+      ],
+
       "$button_size": [ "100%", 30 ],
   
       "$show_close_button": false,

@@ -1157,23 +1157,28 @@
     }
   },
 
-  "toolbox_toggle_panel": {
+  "editor_toggle_panel": {
     "type": "stack_panel",
     "size": [ "100%", "30%x" ],
     "orientation": "horizontal",
-    "ignored": "$is_toolbox_ignored",
+    "ignored": "$is_editor_ignored",
     "controls": [
       {
-        "toolbox_confirmation_panel": {
+        "editor_confirmation_panel": {
           "type": "stack_panel",
           "size": [ "68%", "100%c" ],
           "controls": [
             {
-              "toolbox_mode_toggle@settings_common.option_toggle": {
-                "$option_label": "options.toolboxMode",
-                "$option_binding_name": "#toolbox_mode",
-                "$option_enabled_binding_name": "#toolbox_mode_enabled",
-                "$toggle_name": "toolbox_mode"
+              "editor_active_label": {
+                "type": "label",
+                "text": "#editor_activity_label",
+                "color": "$light_button_locked_text_color",
+                "size": [ "100%", "default" ],
+                "bindings": [
+                  {
+                    "binding_name": "#editor_activity_label"
+                  }
+                ]
               }
             },
             {
@@ -1183,14 +1188,14 @@
               }
             },
             {
-              "toolbox_confirmation_section_label": {
+              "editor_confirmation_section_label": {
                 "type": "label",
-                "text": "#toolbox_label",
+                "text": "#editor_label",
                 "color": "$light_button_locked_text_color",
                 "size": [ "100%", "default" ],
                 "bindings": [
                   {
-                    "binding_name": "#toolbox_label"
+                    "binding_name": "#editor_label"
                   }
                 ]
               }
@@ -1199,22 +1204,22 @@
         }
       },
       {
-        "toolbox_toggle_spacer": {
+        "editor_toggle_spacer": {
           "type": "panel",
           "size": [ "2%", 10 ]
         }
       },
       {
-        "toolbox_image_panel": {
+        "editor_image_panel": {
           "type": "stack_panel",
           "size": [ "30%", "100%x" ],
           "controls": [
             {
-              "toolbox_icon": {
+              "editor_icon": {
                 "type": "image",
                 "layer": 2,
                 "size": [ "100%", "100%" ],
-                "texture": "textures/ui/enable_toolbox"
+                "texture": "textures/ui/enable_editor"
               }
             }
           ]
@@ -1276,7 +1281,7 @@
         "section_panel_1": {
           "type": "panel",
           "size": [ "100%", "100%c + 14px" ],
-          "ignored": "$is_toolbox_ignored",
+          "ignored": "$is_editor_ignored",
           "controls": [
             {
               "section_divider": {
@@ -1411,11 +1416,11 @@
     "size": [ "100%", "100%c" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "$is_toolbox_ignored|default": false,
+    "$is_editor_ignored|default": false,
     "variables": [
       {
         "requires": "(not $is_desktop or $is_publish)",
-        "$is_toolbox_ignored": true
+        "$is_editor_ignored": true
       }
     ],
     "bindings": [
@@ -1428,7 +1433,7 @@
     ],
     "controls": [
       {
-        "toolbox_toggle@general_section.toolbox_toggle_panel": {}
+        "editor_toggle@general_section.editor_toggle_panel": {}
       },
       {
         "creator_toggles@general_section.creator_toggles_panel": {}
@@ -5598,7 +5603,7 @@
           "$dropdown_name": "dev_transport_layer_dropdown",
           "$options_dropdown_toggle_label_binding": "#dev_transport_layer_dropdown_toggle_label",
           "$option_enabled_binding_name": "#dev_transport_layer_dropdown_enabled",
-          "$dropdown_scroll_content_size": [ "100%", "250%" ]
+          "$dropdown_scroll_content_size": [ "100%", "200%" ]
         }
       },
       {
@@ -6956,12 +6961,6 @@
         "@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#transport_layer_raknet",
           "$radio_label_text": "options.dev_transport_layer.raknet"
-        }
-      },
-      {
-        "@settings_common.radio_with_label": {
-          "$toggle_state_binding_name": "#transport_layer_nethernet_xmpp",
-          "$radio_label_text": "options.dev_transport_layer.nethernet_xmpp"
         }
       },
       {

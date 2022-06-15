@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.10.22</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.10.23</h1>
 This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -55,7 +55,7 @@ This is documentation for a preview release of Minecraft. New features, componen
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:collision_box</td>
 <td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px">true</td>
-<td style="border-style:solid; border-width:3; padding:7px">Defines the area of the block that collides with entities. If set to true, a unit cube is used. If set to false, the block's collision with entities is disabled. If you want to specify this component as an object, you can either provide both an "origin" and "size", just an "origin", just a "size", or just a "shape", but no other combination of these fields. If this component is omitted, the collision box of a unit cube will be used.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<td style="border-style:solid; border-width:3; padding:7px">Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">origin</td>
@@ -120,21 +120,21 @@ Specifies the language file key that maps to which expandable/collapsible group 
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:flammable</td>
-<td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Describes the flammable properties for this block.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<td style="border-style:solid; border-width:3; padding:7px">Describes the flammable properties for this block. If set to true, default values are used. If set to false, this block will not be able to catch on fire. If this component is omitted, the block will not be able to catch on fire naturally from neighbors or lava, but it can still be directly ignited, and that fire will be able to spread to neighbor blocks.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">burn_odds</td>
+<td style="border-style:solid; border-width:2; padding:8px">catch_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">How likely the block will be destroyed by flames when on fire. Value must be greater than or equal to 0.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">5</td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. The default value of 5 is the same as that of Planks.</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:2; padding:8px">flame_odds</td>
+<td style="border-style:solid; border-width:2; padding:8px">destroy_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
-<td style="border-style:solid; border-width:2; padding:8px">0</td>
-<td style="border-style:solid; border-width:2; padding:8px">How likely the block will catch flame when next to a fire. Value must be greater than or equal to 0.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">20</td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. The default value of 20 is the same as that of Planks.</br></td>
 </tr>
 </table>
 </td>
@@ -251,6 +251,54 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 </td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:queued_ticking</td>
+<td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">Triggers the specified event, either once, or at a regular interval equal to a number of ticks randomly chosen from the interval_range provided.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">interval_range</td>
+<td style="border-style:solid; border-width:2; padding:8px">Array</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">A range of values, specified in ticks, that will be used to decide the interval between times this event triggers. Each interval will be chosen randomly from the range, so the times between this event triggering will differ given an interval_range of two different values. If the values in the interval_range are the same, the event will always be triggered after that number of ticks.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">looping</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">Does the event loop? If false, the event will only be triggered once, after a delay equal to a number of ticks randomly chosen from the interval_range. If true, the event will loop, and each interval between events will be equal to a number of ticks randomly chosen from the interval_range.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">on_tick</td>
+<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
+<td style="border-style:solid; border-width:2; padding:8px"></td>
+<td style="border-style:solid; border-width:2; padding:8px">The event that will be triggered once or on an interval.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">condition</td>
+<td style="border-style:solid; border-width:1; padding:9px">String</td>
+<td style="border-style:solid; border-width:1; padding:9px">1</td>
+<td style="border-style:solid; border-width:1; padding:9px">A condition using Molang queries that results to true/false. If true on the scheduled tick, the event will be triggered. If false on the scheduled tick, the event will not be triggered.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">event</td>
+<td style="border-style:solid; border-width:1; padding:9px">String</td>
+<td style="border-style:solid; border-width:1; padding:9px">set_block_property</td>
+<td style="border-style:solid; border-width:1; padding:9px">The event that will be triggered.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">target</td>
+<td style="border-style:solid; border-width:1; padding:9px">String</td>
+<td style="border-style:solid; border-width:1; padding:9px">self</td>
+<td style="border-style:solid; border-width:1; padding:9px">The target of the event executed by the block.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:random_ticking</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
@@ -291,54 +339,6 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 <td style="border-style:solid; border-width:3; padding:7px">Vector [a, b, c]</td>
 <td style="border-style:solid; border-width:3; padding:7px">rotation[0, 0, 0]</td>
 <td style="border-style:solid; border-width:3; padding:7px">This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z. Angles need to be in factors of 90.</br>Experimental toggles required: Holiday Creator Features</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:ticking</td>
-<td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Triggers the specified event, either once, or at a regular interval equal to a number of ticks randomly chosen from the range provided.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">looping</td>
-<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
-<td style="border-style:solid; border-width:2; padding:8px">true</td>
-<td style="border-style:solid; border-width:2; padding:8px">Does the event loop? If false, the event will only be triggered once, after a delay equal to a number of ticks randomly chosen from the range. If true, the event will loop, and each interval between events will be equal to a number of ticks randomly chosen from the range.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">on_tick</td>
-<td style="border-style:solid; border-width:2; padding:8px">Trigger</td>
-<td style="border-style:solid; border-width:2; padding:8px"></td>
-<td style="border-style:solid; border-width:2; padding:8px">The event that will be triggered once or on an interval.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
-<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">condition</td>
-<td style="border-style:solid; border-width:1; padding:9px">String</td>
-<td style="border-style:solid; border-width:1; padding:9px">1</td>
-<td style="border-style:solid; border-width:1; padding:9px">A condition using Molang queries that results to true/false. If true on the scheduled tick, the event will be triggered. If false on the scheduled tick, the event will not be triggered.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">event</td>
-<td style="border-style:solid; border-width:1; padding:9px">String</td>
-<td style="border-style:solid; border-width:1; padding:9px">set_block_property</td>
-<td style="border-style:solid; border-width:1; padding:9px">The event that will be triggered.</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:1; padding:9px">target</td>
-<td style="border-style:solid; border-width:1; padding:9px">String</td>
-<td style="border-style:solid; border-width:1; padding:9px">self</td>
-<td style="border-style:solid; border-width:1; padding:9px">The target of the event executed by the block.</br></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">range</td>
-<td style="border-style:solid; border-width:2; padding:8px">Array</td>
-<td style="border-style:solid; border-width:2; padding:8px">[10, 10]</td>
-<td style="border-style:solid; border-width:2; padding:8px">The Range between which the component will trigger his event.</br></td>
-</tr>
-</table>
-</td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:unit_cube</td>

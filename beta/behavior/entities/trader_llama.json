@@ -358,7 +358,15 @@
       },
       "minecraft:behavior.hurt_by_target": {
         "priority": 1,
-        "hurt_owner": true
+        "hurt_owner": true,
+        "entity_types": {
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "trader_llama"
+          }
+        }
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 2,
@@ -417,7 +425,7 @@
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:type_family": {
-        "family": [ "llama", "mob" ]
+        "family": [ "trader_llama", "llama", "mob" ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -497,8 +505,18 @@
           "deals_damage": true,
           "on_damage": {
             "filters": {
-              "test": "in_caravan",
-              "value": false
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "trader_llama"
+                },
+                {
+                  "test": "in_caravan",
+                  "value": false
+                }
+              ]
             },
             "event": "minecraft:become_angry"
           }

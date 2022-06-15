@@ -440,9 +440,15 @@
   },
 
   "texture_pack_optional@progress.simple_popup_dialog_base": {
-    "$title_text": "progressScreen.dialog.title.resourcePack",
-    "$description_text": "progressScreen.dialog.message.resourcePackOptional",
+    "$description_text|default": "progressScreen.dialog.message.resourcePackOptional",
+    "variables": [
+      {
+        "requires": "$is_editor_mode_enabled",
+        "$description_text": "progressScreen.editor.dialog.message.resourcePackOptional"
+      }
+    ],
 
+    "$title_text": "progressScreen.dialog.title.resourcePack",
     "$top_button_text": "#empty_binding",
     "$middle_button_press": "button.join_and_download_all",
     "$middle_button_text": "#join_and_download",
@@ -451,9 +457,16 @@
   },
 
   "texture_pack_required@progress.simple_popup_dialog_base": {
-    "$title_text": "progressScreen.dialog.title.resourcePack",
-    "$description_text": "progressScreen.dialog.message.resourcePackRequired",
+    "$description_text|default": "progressScreen.dialog.message.resourcePackRequired",
+    "variables": [
+      {
+        "requires": "$is_editor_mode_enabled",
+        "$title_text": "progressScreen.editor.dialog.title.resourcePack",
+        "$description_text": "progressScreen.editor.dialog.message.resourcePackRequired"
+      }
+    ],
 
+    "$title_text": "progressScreen.dialog.title.resourcePack",
     "$top_button_text": "#empty_binding",
     "$middle_button_press": "button.join_and_download_all",
     "$middle_button_text": "#join_and_download",
