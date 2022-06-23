@@ -2862,16 +2862,6 @@
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1
          },
-         "gartzke:floating_lantern" : {
-            "events" : {
-               "ambient" : "mob.blaze.breathe",
-               "death" : "mob.blaze.death",
-               "hurt" : "mob.blaze.hit",
-               "shoot" : "mob.blaze.shoot"
-            },
-            "pitch" : [ 0.80, 1.20 ],
-            "volume" : 1
-         },
          "ghast" : {
             "events" : {
                "ambient" : "mob.ghast.moan",
