@@ -6418,6 +6418,18 @@
           "$pressed_button_name": "button.dev_reset_cloud_upload_option",
           "$button_text": "Reset Cloud Upload Dialog Option"
         }
+      },
+      {
+        "padding_graphics_buttons": {
+          "type": "panel",
+          "size": [ "100%", 3 ]
+        }
+      },
+      {
+        "trigger_graphics_device_loss@settings_common.action_button": {
+          "$pressed_button_name": "button.dev_trigger_graphics_device_loss",
+          "$button_text": "Trigger Graphics Device Loss"
+        }
       }
     ]
   },
@@ -7129,6 +7141,12 @@
         "dev_chunkMapMode_client@settings_common.radio_with_label": {
           "$toggle_state_binding_name": "#chunk_map_mode_client",
           "$radio_label_text": "options.dev_chunk_map_mode_client"
+        }
+      },
+      {
+        "dev_chunkMapMode_client@settings_common.radio_with_label": {
+          "$toggle_state_binding_name": "#chunk_map_mode_client_main_chunksource",
+          "$radio_label_text": "options.dev_chunk_map_mode_client_main_chunksource"
         }
       },
       {

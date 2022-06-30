@@ -339,7 +339,19 @@
           "vine",
           "waterlily",
           "wheat",
-          "yellow_flower"
+          "yellow_flower",
+          "azalea",
+          "flowering_azalea",
+          "azalea_leaves",
+          "azalea_leaves_flowered",
+          "cave_vines",
+          "cave_vines_body_with_berries",
+          "cave_vines_head_with_berries",
+          "small_dripleaf_block",
+          "big_dripleaf",
+          "spore_blossom",
+          "hanging_roots",
+          "mangrove_leaves"
         ]
       },
       "minecraft:follow_range": {

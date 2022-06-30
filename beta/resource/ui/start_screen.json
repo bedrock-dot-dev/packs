@@ -405,6 +405,7 @@
           "offset": [ 0, -2 ],
           "size": [ 100, "default" ],
           "text_alignment": "center",
+          "layer": 10,
           "color": "$gathering_caption_foreground_color",
           "bindings": [
             {
@@ -832,12 +833,6 @@
     "$focus_override_right": "profile_button"
   },
 
-  "editor_mode_button@start.main_button": {
-    "$pressed_button_name": "button.editor_mode",
-    "$button_text": "menu.editorMode",
-    "$focus_override_right": "profile_button"
-  },
-
   "course_button@start.main_button": {
     "$pressed_button_name": "button.menu_courses",
     "$button_text": "course.edu.courses"
@@ -1150,20 +1145,6 @@
                 "ignored": "(not $play_button_visible)",
                 "controls": [
                   { "play_button@start.play_button": {} }
-                ]
-              }
-            },
-            {
-              "stacked_row_editor@start.stacked_row": {
-                "ignored": "$is_editor_ignored",
-                "controls": [
-                  { "editor_mode_button@start.editor_mode_button": {} }
-                ],
-                "bindings": [
-                  {
-                    "binding_name": "#editor_button_visible",
-                    "binding_name_override": "#visible"
-                  }
                 ]
               }
             },
@@ -1635,7 +1616,6 @@
     "$achievements_ignored|default": false,
     "$feedback_ignored|default": false,
     "$store_ignored|default": false,
-    "$is_editor_ignored|default": false,
     "variables": [
       {
         "requires": "$education_edition",
@@ -1662,10 +1642,6 @@
       {
         "requires": "$trial",
         "$achievements_ignored": true
-      },
-      {
-        "requires": "(not $is_desktop or $is_publish)",
-        "$is_editor_ignored": true
       }
     ],
     "bindings": [

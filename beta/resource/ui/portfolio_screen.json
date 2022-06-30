@@ -200,16 +200,28 @@
     // Photos are square, so use x for y size
     "size": [ "100%-32px", "100%x" ],
     "offset": [ 0, -2 ],
-    "bindings": [
-      {
-        "binding_name": "#photo_visibility",
-        "binding_name_override": "#visible",
-        "binding_type": "collection",
-        "binding_collection_name": "photos"
-      }
-    ],
     "controls": [
-      { "screenshot@portfolio.screenshot": {} },
+      {
+        "screenshot@portfolio.screenshot": {
+          "bindings": [
+            {
+              "binding_name": "#screenshot_path",
+              "binding_name_override": "#texture",
+              "binding_type": "global"
+            },
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "screenshot_column_collection",
+              "binding_collection_prefix": "screenshot_column"
+            },
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "screenshot_row_collection",
+              "binding_collection_prefix": "screenshot_row"
+            }
+          ]
+        }
+      },
       { "screenshot_frame@portfolio.screenshot_frame": { "layer": 4 } },
       { "photo_corner_bl@portfolio.photo_corner_bl": { "layer": 5 } },
       { "photo_corner_br@portfolio.photo_corner_br": { "layer": 5 } },
@@ -221,20 +233,12 @@
   "pick_item@common.empty_panel": {
     "type": "panel",
     "size": [ 100, 100 ],
-    "bindings": [
-      {
-        "binding_type": "collection",
-        "binding_name": "#pick_item_visible",
-        "binding_name_override": "#visible",
-        "binding_collection_name": "pick_collection"
-      }
-    ],
+    "$screenshot_collection_name": "screenshot",
     "controls": [
       {
         "photo@portfolio.page_photo": {
           "size": [ "100% - 8px", "100% - 8px" ],
           "bindings": [],
-          "$screenshot_collection_name": "pick_collection",
           "$caption_enabled": false
         }
       },
@@ -245,8 +249,13 @@
           "bindings": [
             {
               "binding_type": "collection_details",
-              "binding_collection_name": "pick_collection",
-              "binding_collection_prefix": "picking"
+              "binding_collection_name": "screenshot_column_collection",
+              "binding_collection_prefix": "screenshot_column"
+            },
+            {
+              "binding_type": "collection_details",
+              "binding_collection_name": "screenshot_row_collection",
+              "binding_collection_prefix": "screenshot_row"
             }
           ],
           "button_mappings": [
@@ -263,24 +272,14 @@
 
   "header": {
     "type": "label",
-    "offset": [ -11, 0 ],
     "max_size": [ "100%", "default" ],
-    "size": [ "default", "default" ],
     "color": "$book_page_number_color",
     "text": "$header_text"
   },
 
-  "screenshot_grid": {
-    "type": "grid",
-    "size": [ "default", "default" ],
-    "grid_item_template": "portfolio.pick_item",
-    "grid_dimension_binding": "#pick_grid_dimensions",
-    "collection_name": "pick_collection",
-    "bindings": [
-      {
-        "binding_name": "#pick_grid_dimensions"
-      }
-    ]
+  "screenshot_grid@edu_common.stack_panel_grid": {
+    "$grid_collection_prefix": "screenshot",
+    "$stack_grid_item": "portfolio.pick_item"
   },
 
   "text_centering_panel": {
@@ -294,20 +293,13 @@
       }
     ]
   },
-  
+
   "pick_scrolling_content": {
     "type": "stack_panel",
-    "size": [ 225, "default" ],
+    "size": [ "100%", "default" ],
     "controls": [
-      {
-        "header@portfolio.text_centering_panel": {
-        }
-      },
-      {
-        "portfolio_grid@portfolio.screenshot_grid": {
-          "$pick_grid_dimension_binding": "#pick_grid_dimensions"
-        }
-      }
+      { "header@portfolio.text_centering_panel": {} },
+      { "portfolio_grid@portfolio.screenshot_grid": {} }
     ]
   },
 

@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.10.24</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.20.20</h1>
 This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -9418,6 +9418,12 @@ Allows the mob to target another mob that hurts an entity it trusts.</br><h3></h
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
 <td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
 <td style="border-style:solid; border-width:1; padding:9px">1.0</td>
@@ -10451,6 +10457,12 @@ Allows the mob to follow mobs that are in a caravan.</br><h3></h3>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
 <td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
 <td style="border-style:solid; border-width:1; padding:9px">1.0</td>
@@ -10938,6 +10950,12 @@ Allows the mob to target another mob that hurts them.</br><h3></h3>
 <td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
 <td style="border-style:solid; border-width:1; padding:9px">3.0</td>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
@@ -12206,6 +12224,12 @@ Allows an entity to attack the closest target within a given subset of specific 
 <td style="border-style:solid; border-width:3; padding:7px">3.0</td>
 <td style="border-style:solid; border-width:3; padding:7px">Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true.</br></td>
 </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">reevaluate_description</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
+<td style="border-style:solid; border-width:3; padding:7px">false</td>
+<td style="border-style:solid; border-width:3; padding:7px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
+</tr>
 </table>
 </td>
 </tr>
@@ -12319,6 +12343,12 @@ Allows the mob to check for and pursue the nearest valid target.</br><h3></h3>
 <td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
 <td style="border-style:solid; border-width:1; padding:9px">3.0</td>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
@@ -12538,6 +12568,12 @@ Allows the mob to target another mob that hurts their owner.</br><h3></h3>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
 <td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
 <td style="border-style:solid; border-width:1; padding:9px">1.0</td>
@@ -12590,6 +12626,12 @@ Allows the mob to target a mob that is hurt by their owner.</br><h3></h3>
 <td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
 <td style="border-style:solid; border-width:1; padding:9px">3.0</td>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
@@ -13503,6 +13545,12 @@ Allows the mob to give items it has to others.</br><h3></h3>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
 <td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
 <td style="border-style:solid; border-width:1; padding:9px">1.0</td>
@@ -13794,6 +13842,12 @@ Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an
 <td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
 <td style="border-style:solid; border-width:1; padding:9px">3.0</td>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
@@ -14779,6 +14833,12 @@ Allows the mob to target the same entity its owner is targeting.</br><h3></h3>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
 <td style="border-style:solid; border-width:1; padding:9px">Decimal</td>
 <td style="border-style:solid; border-width:1; padding:9px">1.0</td>
@@ -14839,6 +14899,12 @@ Allows the wither to focus its attacks on whichever mob has dealt the most damag
 <td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
 <td style="border-style:solid; border-width:1; padding:9px">3.0</td>
 <td style="border-style:solid; border-width:1; padding:9px">Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:9px">reevaluate_description</td>
+<td style="border-style:solid; border-width:1; padding:9px">Boolean</td>
+<td style="border-style:solid; border-width:1; padding:9px">false</td>
+<td style="border-style:solid; border-width:1; padding:9px">If true, the mob will stop being targeted if it stops meeting any conditions.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">sprint_speed_multiplier</td>
