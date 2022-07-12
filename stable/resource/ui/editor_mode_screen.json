@@ -4,9 +4,9 @@
 *********************************************************/
 
 {
-  "namespace": "toolbox",
+  "namespace": "editor",
 
-  "toolbox_mode": {
+  "editor_mode": {
     "type": "panel",
     "controls": [
       {
@@ -14,7 +14,7 @@
       },
       {
         "title@settings_common.selector_group_label": {
-          "text": "toolboxMode.text",
+          "text": "editorMode.text",
           "text_alignment": "center",
           "anchor_from": "center",
           "anchor_to": "center"
@@ -23,8 +23,8 @@
     ]
   },
 
-  "toolbox_mode_screen@common.base_screen": {
-    "$screen_content": "toolbox.toolbox_mode",
+  "editor_mode_screen@common.base_screen": {
+    "$screen_content": "editor.editor_mode",
     "$screen_bg_content": "common.screen_background"
   }
 }

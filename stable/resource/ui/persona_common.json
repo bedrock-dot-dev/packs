@@ -535,7 +535,7 @@
       {
         "from_button_id": "button.menu_cancel",
         "to_button_id": "button.select_emote_slot_1",
-        "scope": "controller",
+        "input_mode_condition": "gamepad_and_not_gaze",
         "mapping_type": "pressed"
       },
       {
@@ -604,7 +604,7 @@
           "$emote_slot_name": "emote_slot_0",
           "$wheel_state_texture": "textures/ui/emote_wheel_updated_select_0",
           "$emote_image_offset": [ 0, "-33.57%" ],
-          "$emote_touch_label_offset": [ 0, "-52%" ],
+          "$emote_touch_label_offset": [ 0, "-56%" ],
           "$emote_touch_label_alignment": "center"
         }
       },
@@ -653,7 +653,7 @@
     "controls": [
       {
         "emote_name@persona_common.emote_label": {
-          "size": [ 56, 35 ],
+          "size": [ 35, 35 ],
           "offset": [ 0, "7%" ],
           "text": "#emote_name",
           "layer": 10,

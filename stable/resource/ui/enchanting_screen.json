@@ -225,6 +225,12 @@
         "from_button_id": "button.menu_ok",
         "to_button_id": "button.menu_ok",
         "mapping_type": "focused"
+      },
+      {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.menu_ok",
+        "mapping_type": "focused",
+        "ignored": "(not $is_ps4)"
       }
     ],
     "controls": [

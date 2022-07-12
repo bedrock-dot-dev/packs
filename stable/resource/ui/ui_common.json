@@ -326,6 +326,8 @@
     "$default_focus_precedence|default": 0,
     "default_focus_precedence": "$default_focus_precedence",
 
+    "$allow_controller_back_button_mapping|default": false,
+
     "layer": 1,
     "sound_name": "random.click",
     "sound_volume": 1.0,
@@ -410,6 +412,12 @@
         "from_button_id": "button.menu_ok",
         "to_button_id": "button.menu_ok",
         "mapping_type": "focused"
+      },
+      {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.controller_back",
+        "mapping_type": "focused",
+        "ignored": "(not $allow_controller_back_button_mapping)"
       },
       {
         "ignored": "(not $enable_directional_toggling)",
@@ -3996,6 +4004,12 @@
         "mapping_type": "pressed"
       },
       {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.container_take_all_place_all",
+        "mapping_type": "pressed",
+        "ignored": "(not $is_ps4)"
+      },
+      {
         "from_button_id": "button.menu_secondary_select",
         "to_button_id": "button.container_take_half_place_one",
         "mapping_type": "pressed"
@@ -4062,6 +4076,12 @@
         "from_button_id": "button.menu_ok",
         "to_button_id": "button.container_take_all_place_all",
         "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.container_take_all_place_all",
+        "mapping_type": "pressed",
+        "ignored": "(not $is_ps4)"
       },
       {
         "from_button_id": "button.menu_secondary_select",
@@ -4505,6 +4525,12 @@
         "mapping_type": "pressed"
       },
       {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.container_reset_held",
+        "mapping_type": "pressed",
+        "ignored": "(not $is_ps4)"
+      },
+      {
         "from_button_id": "button.controller_select",
         "to_button_id": "button.container_reset_held",
         "mapping_type": "pressed"
@@ -4576,6 +4602,12 @@
         "mapping_type": "pressed"
       },
       {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.cursor_drop_all",
+        "mapping_type": "pressed",
+        "ignored": "(not $is_ps4)"
+      },
+      {
         "from_button_id": "button.controller_select",
         "to_button_id": "button.cursor_drop_one",
         "mapping_type": "pressed"
@@ -4640,8 +4672,7 @@
     "controls": [
       { "left_panel@$left_panel_control": {} },
       {
-        "offset_panel": {
-          "type": "panel",
+        "offset_panel@common.root_panel": {
           "size": [ 4, "100%" ],
           "visible": "$middle_offset_visible",
           "controls": [
@@ -5058,6 +5089,12 @@
         "from_button_id": "button.menu_ok",
         "to_button_id": "button.container_reset_held",
         "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.container_reset_held",
+        "mapping_type": "pressed",
+        "ignored": "(not $is_ps4)"
       },
       {
         "from_button_id": "button.controller_select",
@@ -5869,6 +5906,12 @@
         "from_button_id": "button.menu_ok",
         "to_button_id": "button.cursor_drop_all",
         "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.controller_back",
+        "to_button_id": "button.cursor_drop_all",
+        "mapping_type": "pressed",
+        "ignored": "(not $is_ps4)"
       },
       {
         "from_button_id": "button.controller_select",

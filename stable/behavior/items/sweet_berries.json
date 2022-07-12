@@ -20,7 +20,10 @@
           "dirt",
           "podzol",
           "moss_block",
-          "mycelium"
+          "mycelium",
+          "mud",
+          "muddy_mangrove_roots",
+          "dirt_with_roots"
         ]
       }
     }
