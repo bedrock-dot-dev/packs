@@ -18,7 +18,12 @@
 				{
 					"name": "head",
 					"parent": "root",
-					"pivot": [0, 4, 0],
+					"pivot": [0, 4, 0]
+				},
+				{
+					"name": "look_at",
+					"parent": "head",
+					"pivot": [0, 4, 0.75],
 					"cubes": [
 						{"origin": [-2.5, 4.01, -2.5], "size": [5, 5, 5], "uv": [0, 0]}
 					]

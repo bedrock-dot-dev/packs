@@ -1,4 +1,4 @@
-<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.20.20</h1>
+<h1>ENTITIES DOCUMENTATION </br>Version: 1.19.20.22</h1>
 This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -16749,6 +16749,33 @@ Allows entities to flock in groups in water or not.</br><h3></h3>
 </table>
 <a href="#Index">Back to top</a><br><br>
 
+<h2><p id="minecraft:game_event_movement_tracking">minecraft:game_event_movement_tracking</p></h2>
+
+Allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.</br><h3></h3>
+
+<table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">emit_flap</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">false</td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, the `flap` game event will be emitted when the entity moves through air.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">emit_move</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, the `entityMove` game event will be emitted when the entity moves on ground or through a solid.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">emit_swim</td>
+<td style="border-style:solid; border-width:2; padding:8px">Boolean</td>
+<td style="border-style:solid; border-width:2; padding:8px">true</td>
+<td style="border-style:solid; border-width:2; padding:8px">If true, the `swim` game event will be emitted when the entity moves through a liquid.</br></td>
+</tr>
+</table>
+<a href="#Index">Back to top</a><br><br>
+
 <h2><p id="minecraft:genetics">minecraft:genetics</p></h2>
 
 Defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.</br><h3></h3>
@@ -20672,6 +20699,10 @@ Sets the mapping of internal animation controller references to actual animation
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:flocking</td>
 <td style="border-style:solid; border-width:2; padding:8px">1967597361</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">minecraft:game_event_movement_tracking</td>
+<td style="border-style:solid; border-width:2; padding:8px">763815151</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">minecraft:genetics</td>

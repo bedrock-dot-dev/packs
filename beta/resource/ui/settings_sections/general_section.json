@@ -404,12 +404,28 @@
       // Add some padding between the buttons/toggles to reduce the impression upon the eyes. (ADO:515619)
       { "paddingUnlinkMSAAccount": { "ignored": "((not $is_pregame) or (not $is_ps4))", "type": "panel", "size": "$spatialPatternsPadding" } },
 
-	  {
+      {
         "unlink_msa_account@settings_common.action_button": {
           // (never show in game) AND (never show unless its PS4)
           "ignored": "((not $is_pregame) or (not $is_ps4))",
           "$pressed_button_name": "button.unlink_msa",
           "$button_text": "options.unlink_msa.button",
+          "bindings": [
+            {
+              "binding_name": "#logged_in",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+
+      { "paddingDeleteAccount": { "ignored": "((not $is_pregame) or (not $is_ios))", "type": "panel", "size": "$spatialPatternsPadding" } },
+      {
+        "delete_account@settings_common.action_button": {
+          // (never show in game) AND (never show unless its iOS)
+          "ignored": "((not $is_pregame) or (not $is_ios))",
+          "$pressed_button_name": "button.delete_account",
+          "$button_text": "options.delete_account.button",
           "bindings": [
             {
               "binding_name": "#logged_in",
@@ -650,6 +666,22 @@
                 "bindings": [
                   {
                     "binding_name": "#commerce_id"
+                  }
+                ]
+              }
+            },
+            {
+              "treatment_ids_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "size": [ "100%", "default" ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#treatment_ids",
+                "bindings": [
+                  {
+                    "binding_name": "#treatment_ids"
                   }
                 ]
               }

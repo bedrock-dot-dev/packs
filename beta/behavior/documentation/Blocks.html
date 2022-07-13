@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.20.20</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.20.22</h1>
 This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -110,13 +110,13 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:2; padding:8px">catch_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">5</td>
-<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. The default value of 5 is the same as that of Planks.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a catch_chance_modifier greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the destroy_chance_modifier is 0). If the catch_chance_modifier is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if destroy_chance_modifier is greater than 0). The default value of 5 is the same as that of Planks.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">destroy_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">20</td>
-<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. The default value of 20 is the same as that of Planks.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a destroy_chance_modifier of 0, the block will never be destroyed by fire, and the fire will burn forever if the catch_chance_modifier is greater than 0. The default value of 20 is the same as that of Planks.</br></td>
 </tr>
 </table>
 </td>

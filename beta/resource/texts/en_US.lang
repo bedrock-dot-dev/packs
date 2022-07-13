@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=slotId + count exceeds slot cont
 commands.loot.failure.negativeCount=count cannot be negative a negative number
 commands.loot.success=%1$s items were dropped.
 commands.loot.replaceSuccess=Replaced %s %d of %s with %d item(s) over %d slot(s)
+commands.loot.replaceSuccess.block=Replaced %s slot %d with %d item(s) over %d slot(s)
 commands.tagsfromitem.description=Lists all tags associated with the given item.
 commands.tagsfromitem.success.single=There is %d tag on the item %s:
 commands.tagsfromitem.success.multiple=There are %d tags on the item %s:
@@ -2264,15 +2265,18 @@ xbl.syncIAP.confirmSync.prompt.yes=Yes, Sync My Purchases
 
 xbl.marketplace.account.error.body.nobutton=There is an error with your account. You will be unable to use the marketplace until we have resolved the issue. If this issue persists for several days please contact support.
 
-playfab.account.banned.title=You've been banned
-playfab.account.banned.body=You have been banned from playing multiplayer in Minecraft. You won't be able to play on servers, join realms, host or join multiplayer games or use the marketplace.
-playfab.account.banned.body.line1=You have been banned from playing multiplayer in Minecraft due to "%s". You won't be able to play on servers, join realms, host or join multiplayer games or use the marketplace.
+playfab.account.banned.temporary=suspended
+playfab.account.banned.permanent=banned
+playfab.account.banned.title=You've been %s
+playfab.account.banned.body=You have been %s from playing multiplayer in Minecraft. You won't be able to play on servers, join realms, host or join multiplayer games or use the marketplace.
+playfab.account.banned.body.line1=You have been %s from playing multiplayer in Minecraft due to "%s". You won't be able to play on servers, join realms, host or join multiplayer games or use the marketplace.
 playfab.account.banned.body.line2.hour=You have 1 hour remaining on your suspension.
 playfab.account.banned.body.line2.hours=You have %d hours remaining on your suspension.
 playfab.account.banned.body.line2.day=You have 1 day remaining on your suspension.
 playfab.account.banned.body.line2.days=You have %d days remaining on your suspension.
-playfab.account.banned.body.line2.forever=This suspension is permanent.
+playfab.account.banned.body.line2.forever=This ban is permanent.
 playfab.account.banned.body.button=More info
+
 
 store.sign_in_warning.no_xbl_and_local_content=Important! You have purchased packs and/or Minecoins that are only available on this device and might be lost due to a device malfunction, loss, or uninstalling Minecraft! Sign in with a Microsoft Account (free) and transfer your pack entitlements and Minecoins to that account to protect and access your them on any device that you sign in on.
 store.sign_in_warning.no_xbl_and_no_local_content.line1=Important! Purchased packs that are only available on this device can be lost due to device malfunction, loss or uninstalling Minecraft!
@@ -5207,6 +5211,7 @@ joincode.service.unavailable=Join codes are not available right now. Try refresh
 ##EDU Pause Menu
 edu.pause.ipaddress=IP ADDRESS
 edu.pause.port=PORT
+edu.pause.nethernetLabel=Connection Info
 
 key.attack=Attack/Destroy
 key.back=Walk Backwards
@@ -5665,6 +5670,15 @@ options.destroyvibration=Destroy Block (vibrate)
 options.debug=Debug
 options.flighting_debug=Flighting Debug
 options.debugTitle=Developer Options
+options.delete_account.button=Delete Microsoft Account
+options.delete_account.confirm.title=Delete Microsoft Account?
+options.delete_account.confirm.warning=WARNING: You will no longer be able to protect progression or purchases made on your device after deleting your account %s.
+options.delete_account.confirm.warning.2=Deleting your Microsoft Account from this game will affect all Minecraft games that use this account.
+options.delete_account.confirm.checkbox1=You will no longer be able to access in-game store content when you play on other platforms.
+options.delete_account.confirm.checkbox2=You will no longer be able to play online with your friends.
+options.delete_account.confirm.checkbox3=You will no longer be able to access Realms, including Realms subscriptions that are currently active.
+options.delete_account.confirm.checkbox4=You understand the above and you would like to continue with deleting your account.
+options.delete_account.confirm.button=Delete
 options.dev_game_tip=Gameplay Tips
 options.dev_ad_show_debug_panel=Show EDU Sign In Debug Panel
 options.dev_ad_token_refresh_threshold=EDU Sign In Token Refresh Threshold Seconds
@@ -6071,7 +6085,7 @@ options.sounds.title=Audio Settings
 options.accessibility=Accessibility
 options.accessibility.title=Accessibility Settings
 options.screenShake=Camera Shake
-options.darknessEffectModifier.message=Adjust how dark the screen can get during the Darkness effect (caused by mobs, potions, and more)
+options.darknessEffectModifier.message=Adjust how dark the screen can get during the Darkness effect (caused by mobs and other sources)
 options.darknessEffectModifier=Darkness effect strength
 options.notificationDuration=Notification duration
 options.notificationDuration.message=Choose how long messages like game invites and Marketplace offers are visible
@@ -7356,7 +7370,7 @@ store.realmsPlus.faq.answer2=A personal server allows you to create a shared wor
 store.realmsPlus.faq.question3=Do my friends need to purchase Realms Plus to play on my Realm?
 store.realmsPlus.faq.answer3=Your friends don’t need to purchase a Realms Plus subscription to play on your Realm. You can invite any friend (that has their multiplayer permissions enabled) to join your Realm for free.
 store.realmsPlus.faq.question4=Which devices support Realms Plus for Minecraft?
-store.realmsPlus.faq.answer4=Realms Plus is currently available for Minecraft on mobile, Windows 10, the Xbox One consoles as well as the Nintendo Switch, and PlayStation 4. You can play Realms and use any content from Realms Plus on any of these devices if you’re signed into your Microsoft Account.##disable_3rd_party_console_resource_pack_check
+store.realmsPlus.faq.answer4=Realms Plus is currently available on any platform where you can install Minecraft Bedrock Edition. You can play Realms and use any content from Realms Plus on any of these devices if you’re signed into your Microsoft Account.##disable_3rd_party_console_resource_pack_check
 store.realmsPlus.faq.question5=How much does a Realms Plus subscription cost?
 store.realmsPlus.faq.answer5=%s per month for a 10-player server and access to 150+ marketplace packs.
 store.realmsPlus.faq.question6=How often are new packs added to Realms Plus?
@@ -7755,6 +7769,9 @@ store.search.sort_menu.LowestPrice=:minecoin: Low to High
 store.search.sort_menu.HighestRating=Rating: High to Low
 store.search.sort_menu.LowestRating=Rating: Low to High
 store.search.sort_menu.resultText=by %s 
+
+store.pagination.next=Next >	## Chevrons (< and >) should not be moved
+store.pagination.previous=< Previous	## Chevrons (< and >) should not be moved
 
 store.shareDescription=Whoa! %s made such a cool pack. You've got to check this out.
 store.copyToastMessage=Link copied to clipboard!
@@ -8711,7 +8728,7 @@ tile.black_candle_cake.name=Cake with Black Candle
 
 item.spyglass.name=Spyglass
 item.amethyst_shard.name=Amethyst Shard
-tile.amethyst_block.name=Amethyst Block
+tile.amethyst_block.name=Block of Amethyst
 tile.budding_amethyst.name=Budding Amethyst
 tile.amethyst_cluster.name=Amethyst Cluster
 tile.large_amethyst_bud.name=Large Amethyst Bud

@@ -425,6 +425,13 @@
     ]
   },
 
+  "up_arrow_icon": {
+    "type": "image",
+    "texture": "textures/ui/up_arrow",
+    "color": "$glyph_color",
+    "size": [ 12, 12 ]
+  },
+
   "plus_icon": {
     "type": "image",
     "layer": 2,
@@ -650,9 +657,19 @@
     "to": 1
   },
 
+  "error_image_animation": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "$failure_anim_frame_step|default": 0,
+    "frame_count": "$failure_anim_frame_step",
+    "frame_step": 194,
+    "fps": 4,
+    "reversible": false
+  },
+
   "progress_loading": {
     "type": "panel",
-    "size": [ "100%", "100%" ],
+    "size": [ "100%cm", "50%" ],
 
     "$hide_failure_text|default": false,
     "$use_sibling_scope|default": true,
@@ -661,41 +678,86 @@
 
     "controls": [
       {
+        "centerer": {
+          "type": "panel",
+          "size": [ "100%sm", "100%c + 8px" ],
+          "layer": 0,
+          "controls": [
+            {
+              "progress_loading_spinner@common_store.progress_loading_spinner": {}
+            }
+          ]
+        }
+      },
+      {
         "progress_loading_outline@common_store.banner_fill": {
-          "visible": "(not $hide_progress_loading_outline)"
+          "visible": "(not $hide_failure_text) or (not $hide_progress_loading_outline)",
+          "size": [ "100%sm + 8px", "100%" ],
+          "layer": 1,
+          "alpha": 0,
+          "anims": [
+            "@common_store.failure_text_wait_animation"
+          ]
         }
       },
       {
         "stack_panel": {
+          "ignored": "$hide_failure_text",
           "type": "stack_panel",
           "orientation": "vertical",
+          "size": [ "100%cm", "100% - 8px" ],
+          "layer": 2,
           "controls": [
             {
-              "centerer_0": {
-                "type": "panel",
-                "size": [ "100%", "100%c" ],
+              "top_panel": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100%sm", "100%cm" ],
                 "controls": [
+                  {
+                    "error_glyph_panel": {
+                      "type": "panel",
+                      "size": [ "100%c", "100%c" ],
+                      "controls": [
+                        {
+                          "error_image": {
+                            "type": "image",
+                            "size": [ 13, 20 ],
+                            "offset": [ 0, 2 ],
+                            "texture": "textures/ui/ErrorGlyph",
+                            "alpha": 0,
+                            "anims": [
+                              "@common_store.failure_text_wait_animation"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "padding": {
+                      "type": "panel",
+                      "size": [ 4, "100%sm" ]
+                    }
+                  },
                   {
                     "store_failure_text": {
                       "type": "label",
                       "layer": "($baseLayer + 1)",
                       "color": "$body_text_color",
-                      "text_alignment": "center",
-                      "ignored": "$hide_failure_text",
-                      "size": [ "100%-4px", "default" ],
+                      "text_alignment": "left",
+                      "size": [ "fill", "default" ],
                       "font_type": "smooth",
                       "font_scale_factor": 1.2,
-                      "$store_failure_text|default": "store.connection.failed.body",
-                      "$store_failure_text_binding_type|default": "none",
-                      "text": "$store_failure_text",
+                      "text": "#store_failure_text",
                       "alpha": 0,
                       "anims": [
                         "@common_store.failure_text_wait_animation"
                       ],
                       "bindings": [
                         {
-                          "binding_name": "$store_failure_text",
-                          "binding_type": "$store_failure_text_binding_type"
+                          "binding_name": "#store_failure_text",
+                          "binding_type": "global"
                         }
                       ]
                     }
@@ -704,45 +766,52 @@
               }
             },
             {
-              "centerer_1": {
+              "padding": {
                 "type": "panel",
-                "size": [ "100%", "100%c + 8px" ],
-                "controls": [
-                  {
-                    "progress_loading_spinner@common_store.progress_loading_spinner": {
-                      "layer": "($baseLayer + 1)"
-                    }
-                  }
-                ]
+                "size": [ "100%sm", "fill" ]
               }
             },
             {
-              "centerer_2": {
-                "type": "panel",
-                "size": [ "100%", "100%c" ],
-                "controls": [
+              "image": {
+                "type": "image",
+                "size": [ 194, 80 ],
+                "alpha": 0,
+                "anims": [
+                  "@common_store.failure_text_wait_animation"
+                ],
+                "uv_size": [ 194, 80 ],
+                "uv": "@common_store.error_image_animation",
+                "disable_anim_fast_forward": true,
+                "bindings": [
                   {
-                    "store_failure_code": {
-                      "type": "label",
-                      "layer": "($baseLayer + 1)",
-                      "color": "$body_text_color",
-                      "text_alignment": "center",
-                      "ignored": "$hide_failure_text",
-                      "size": [ "100%-4px", "default" ],
-                      "text": "#store_failure_code",
-                      "alpha": 0,
-                      "anims": [
-                        "@common_store.failure_text_wait_animation"
-                      ],
-                      "bindings": [
-                        {
-                          "binding_name": "#store_failure_code"
-                        }
-                      ]
-                    }
+                    "binding_name": "#store_failure_image",
+                    "binding_name_override": "#texture"
                   }
                 ]
               }
+            }
+          ]
+        }
+      },
+      {
+        "store_failure_code": {
+          "ignored": "$hide_failure_text",
+          "type": "label",
+          "color": "$e_color_format",
+          "anchor_from": "bottom_left",
+          "anchor_to": "top_left",
+          "text_alignment": "left",
+          "size": [ "100%sm-4px", "default" ],
+          "layer": 3,
+          "offset": [ 1, 2 ],
+          "text": "#store_failure_code",
+          "alpha": 0,
+          "anims": [
+            "@common_store.failure_text_wait_animation"
+          ],
+          "bindings": [
+            {
+              "binding_name": "#store_failure_code"
             }
           ]
         }
@@ -3198,7 +3267,89 @@
       {
         "padding_0": {
           "type": "panel",
-          "size": [ "100%", 4 ]
+          "size": [ "100%", 8 ]
+        }
+      },
+      {
+        "pagination_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 25 ],
+          "controls": [
+            {
+              "padding_far_left": {
+                "type": "panel",
+                "size": [ 4, "100%" ]
+              }
+            },
+            {
+              "padding_left": {
+                "type": "panel",
+                "size": [ "fill", "100%" ]
+              }
+            },
+            {
+              "first_page_button@common_buttons.light_text_button": {
+                "size": [ 25, "100%" ],
+                "$pressed_button_name": "button.navigate_first_page",
+                "$button_text": "<<",
+                "bindings": [
+                  {
+                    "binding_type": "$store_factory_collection_details",
+                    "binding_collection_name": "$store_factory_collection_name",
+                    "binding_collection_prefix": "$store_factory_collection_prefix"
+                  },
+                  {
+                    "binding_name": "#first_enabled",
+                    "binding_name_override": "#enabled"
+                  }
+                ]
+              }
+            },
+            {
+              "pagination_middle_buttons_panel@common_store.pagination_middle_buttons_panel": {}
+            },
+            {
+              "padding_right_fill": {
+                "type": "panel",
+                "size": [ "fill", "100%" ]
+              }
+            },
+            {
+              "go_to_top_button@common_buttons.light_content_button": {
+                "size": [ 25, "100%" ],
+                "$pressed_button_name": "button.go_to_top",
+                "$button_content": "common_store.pagination_top_button_panel",
+                "$focus_id": "up_button",
+                "$focus_override_left": "next_button"
+              }
+            },
+            {
+              "padding_far_right": {
+                "type": "panel",
+                "size": [ 4, "100%" ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_type": "$store_factory_collection_details",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_collection_prefix": "$store_factory_collection_prefix"
+            },
+            {
+              "binding_type": "$store_factory_binding_type",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_name": "#pagination_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ "100%", 8 ]
         }
       },
       {
@@ -3213,6 +3364,95 @@
         "binding_collection_name": "$store_factory_collection_name",
         "binding_name": "#offer_collection_visible",
         "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "pagination_top_button_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "top_button_image@common_store.up_arrow_icon": {
+          // Image isn't centered within its canvas so we offset to center. (11 x 9 image in 12 x 12 canvas)
+          "offset": [ 0.5, 1.5 ]
+        }
+      }
+    ]
+  },
+
+  "pagination_middle_buttons_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", "100%" ],
+    "controls": [
+      {
+        "previous_page_button@common_buttons.light_text_form_fitting_button": {
+          "$form_fitting_min_size": [ 85, 23 ],
+          "$pressed_button_name": "button.navigate_previous_page",
+          "$button_text": "store.pagination.previous",
+          "$focus_id": "previous_button",
+          "$focus_override_right": "next_button",
+          "bindings": [
+            {
+              "binding_type": "$store_factory_collection_details",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_collection_prefix": "$store_factory_collection_prefix"
+            },
+            {
+              "binding_name": "#first_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
+      },
+      {
+        "current_page_number_panel": {
+          "type": "panel",
+          "size": [ 25, "100%" ],
+          "controls": [
+            {
+              "current_page_number": {
+                "type": "label",
+                "color": "$body_text_color",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "text_alignment": "center",
+                "text": "#page_number_text",
+                "bindings": [
+                  {
+                    "binding_type": "$store_factory_collection_details",
+                    "binding_collection_name": "$store_factory_collection_name",
+                    "binding_collection_prefix": "$store_factory_collection_prefix"
+                  },
+                  {
+                    "binding_name": "#page_number_text"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "next_page_button@common_buttons.light_text_form_fitting_button": {
+          "$form_fitting_min_size": [ 85, 23 ],
+          "$pressed_button_name": "button.navigate_next_page",
+          "$button_text": "store.pagination.next",
+          "$focus_id": "next_button",
+          "$focus_override_left": "previous_button",
+          "$focus_override_right": "up_button",
+          "bindings": [
+            {
+              "binding_type": "$store_factory_collection_details",
+              "binding_collection_name": "$store_factory_collection_name",
+              "binding_collection_prefix": "$store_factory_collection_prefix"
+            },
+            {
+              "binding_name": "#next_enabled",
+              "binding_name_override": "#enabled"
+            }
+          ]
+        }
       }
     ]
   },
@@ -4837,7 +5077,7 @@
               "binding_type": "$offer_binding_type",
               "binding_collection_name": "$offer_collection_name",
               "binding_name": "#last_item_focus_override_right",
-              "binding_name_override": "#focus_change_right"              
+              "binding_name_override": "#focus_change_right"
             }
           ],
           "button_mappings": [

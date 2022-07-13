@@ -4550,8 +4550,9 @@
          },
          "block.sculk_catalyst.bloom" : {
             "attenuation_distance" : 12,
+            "pitch" : [ 0.60, 1.0 ],
             "sound" : "bloom.sculk_catalyst",
-            "volume" : 0.250
+            "volume" : 2.0
          },
          "block.sculk_sensor.clicking" : {
             "pitch" : 0.730,
@@ -4578,7 +4579,7 @@
          },
          "block.smithing_table.use" : {
             "pitch" : 1.0,
-            "sound" : "random.anvil_use",
+            "sound" : "smithing_table.use",
             "volume" : 0.250
          },
          "block.smoker.smoke" : {
