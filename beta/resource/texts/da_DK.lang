@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=slotId + count overstiger pladse
 commands.loot.failure.negativeCount=count kan ikke være et negativt tal	#
 commands.loot.success=%1$s genstande blev droppet.	#
 commands.loot.replaceSuccess=Erstattede %s %d af %s med %d genstand(e) over %d plads(er)	#
+commands.loot.replaceSuccess.block=Erstattede %s plads %d med %d genstand(e) over %d plads(er)	#
 commands.tagsfromitem.description=Viser alle tags, der er knyttet til den angivne genstand.	#
 commands.tagsfromitem.success.single=Der er %d tag på genstanden %s:	#
 commands.tagsfromitem.success.multiple=Der er %d tags på genstanden %s:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Ødelæg blok (vibrer)	#
 options.debug=Fejlfinding	#
 options.flighting_debug=Flighting debug	#
 options.debugTitle=Udviklerindstillinger	#
+options.delete_account.button=Slet Microsoft-konto	#
+options.delete_account.confirm.title=Slet Microsoft-konto?	#
+options.delete_account.confirm.warning=ADVARSEL: Hvis du sletter din konto, vil du ikke længere kunne gemme fremskridt og køb foretaget på din enhed%s.	#
+options.delete_account.confirm.warning.2=Hvis du sletter din Microsoft-konto fra spillet, påvirker det alle Minecraft-spil, der bruger kontoen.	#
+options.delete_account.confirm.checkbox1=Du vil ikke længere have adgang til indhold købt i butikken, når du spiller på andre platforme.	#
+options.delete_account.confirm.checkbox2=Du vil ikke længere kunne spille online med dine venner.	#
+options.delete_account.confirm.checkbox3=Du vil ikke længere have adgang til Realms, herunder allerede aktive Realms-abonnementer.	#
+options.delete_account.confirm.checkbox4=Du har forstået ovenstående og vil fortsat gerne slette din konto.	#
+options.delete_account.confirm.button=Slet	#
 options.dev_game_tip=Spiltips	#
 options.dev_ad_show_debug_panel=Vis EDU-tegn i Debug-panel	#
 options.dev_ad_token_refresh_threshold=Opdateringsgrænse i sekunder for login-token i EDU	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Bedømmelse: Høj til lav	#
 store.search.sort_menu.LowestRating=Bedømmelse: Lav til høj	#
 store.search.sort_menu.resultText=efter %s 	#
 
+store.pagination.next=Næste &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Tilbage		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Wow! %s har udviklet en cool pakke. Den er vi nødt til at tjekke ud.	#
 store.copyToastMessage=Linket er kopieret til udklipsholderen.	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Kage med sort lys	#
 
 item.spyglass.name=Kikkert	#
 item.amethyst_shard.name=Ametystskår	#
-tile.amethyst_block.name=Ametystblok	#
+tile.amethyst_block.name=Blok af ametyst	#
 tile.budding_amethyst.name=Spirende ametyst	#
 tile.amethyst_cluster.name=Ametystklynge	#
 tile.large_amethyst_bud.name=Stor ametystknop	#

@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=slotId + count (брой) над
 commands.loot.failure.negativeCount=count (брой) не може да бъде отрицателно число	#
 commands.loot.success=Пуснати са %1$s предмета.	#
 commands.loot.replaceSuccess=Замества %s %d на %s с %d артикул(а) над %d слот(а)	#
+commands.loot.replaceSuccess.block=Замести %s слот %d с %d предмет(и) над %d слот(овете)	#
 commands.tagsfromitem.description=Изброява всички етикети, свързани с дадения предмет.	#
 commands.tagsfromitem.success.single=Има %d етикет на %s на предмета:	#
 commands.tagsfromitem.success.multiple=Има %d етикета на %s на предмета:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Разрушаване на блок (вибриран�
 options.debug=Отстраняване на грешки	#
 options.flighting_debug=Отстраняване на грешки на бърза актуализация	#
 options.debugTitle=Опции за разработчици	#
+options.delete_account.button=Изтриване на акаунта в Microsoft	#
+options.delete_account.confirm.title=Изтриване на акаунта в Microsoft?	#
+options.delete_account.confirm.warning=ВНИМАНИЕ: След като изтриете акаунта си %s, вече няма да можете да защитавате напредък или покупки, направени на вашата система.	#
+options.delete_account.confirm.warning.2=Ако изтриете акаунта си в Microsoft от тази игра, това ще засегне всички игри на Minecraft, които използват този акаунт в Microsoft.	#
+options.delete_account.confirm.checkbox1=Вече няма да имате достъп до съдържание от магазина в играта, когато играете на други платформи.	#
+options.delete_account.confirm.checkbox2=Вече няма да можете да играете онлайн с приятелите си.	#
+options.delete_account.confirm.checkbox3=Вече няма да имате достъп до Realms, включително абонаменти за Realms, които са активни в момента.	#
+options.delete_account.confirm.checkbox4=Разбирате горното и искате да продължите с изтриването на акаунта си.	#
+options.delete_account.confirm.button=Изтриване	#
 options.dev_game_tip=Съвети за игра	#
 options.dev_ad_show_debug_panel=Показване на знак EDU в панела за отстраняване на грешки	#
 options.dev_ad_token_refresh_threshold=Секунди за праг на обновяване на маркер за влизане на EDU	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Оценка: От високо към ни
 store.search.sort_menu.LowestRating=Оценка: От ниско към високо	#
 store.search.sort_menu.resultText=по %s 	#
 
+store.pagination.next=Следващо &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Предишно		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Еха! %s е направил много готин пакет. Просто трябва да се види.	#
 store.copyToastMessage=Връзката е копирана в клипборда!	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Торта с черна свещ	#
 
 item.spyglass.name=Далекоглед	#
 item.amethyst_shard.name=Къс от аметист	#
-tile.amethyst_block.name=Блок от аметист	#
+tile.amethyst_block.name=Блок аметист	#
 tile.budding_amethyst.name=Образувание на аметист	#
 tile.amethyst_cluster.name=Друза на аметист	#
 tile.large_amethyst_bud.name=Голям кристал на аметист	#

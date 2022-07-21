@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.20.22</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.20.23</h1>
 This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -18,6 +18,12 @@ This is documentation for a preview release of Minecraft. New features, componen
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:block_light_filter</td>
+<td style="border-style:solid; border-width:3; padding:7px">Integer</td>
+<td style="border-style:solid; border-width:3; padding:7px">15</td>
+<td style="border-style:solid; border-width:3; padding:7px">The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.</br></td>
+</tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:breathability</td>
 <td style="border-style:solid; border-width:3; padding:7px">Enumerator</td>
@@ -74,6 +80,21 @@ Specifies the language file key that maps to which expandable/collapsible group 
 </td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:destructible_by_explosion</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">Describes the destructible by explosion properties for this block. If set to true, the block will have the default explosion resistance. If set to false, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">explosion_resistance</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:destructible_by_mining</td>
 <td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px">true</td>
@@ -93,12 +114,6 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:3; padding:7px">Localization String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">Specifies the language file key that maps to what text will be displayed when you hover over the block. Key is limited to 256 characters.</br>Experimental toggles required: Holiday Creator Features</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:explosion_resistance</td>
-<td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
-<td style="border-style:solid; border-width:3; padding:7px">0.0</td>
-<td style="border-style:solid; border-width:3; padding:7px">How much power it can resist from explosion. Bigger the value is, more explosion power it blocks from explosion. If the value is less than remaining power from explosion, the block would destroy.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:flammable</td>
@@ -132,12 +147,6 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:3; padding:7px">Identifier String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">The geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.</br>Experimental toggles required: Holiday Creator Features</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:light_dampening</td>
-<td style="border-style:solid; border-width:3; padding:7px">Integer</td>
-<td style="border-style:solid; border-width:3; padding:7px">15</td>
-<td style="border-style:solid; border-width:3; padding:7px">The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:light_emission</td>
@@ -354,12 +363,6 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">Specifies that a unit cube is to be used with tessellation.</br>Experimental toggles required: Holiday Creator Features</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:unwalkable</td>
-<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
-<td style="border-style:solid; border-width:3; padding:7px">false</td>
-<td style="border-style:solid; border-width:3; padding:7px">Sets the block as unwalkable. Mobs would not attempt to path over top of it when the value is set to true.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>

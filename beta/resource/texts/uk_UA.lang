@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=slotId + кількість пе
 commands.loot.failure.negativeCount=кількість не може бути від’ємним числом	#
 commands.loot.success=Випало %1$s предметів.	#
 commands.loot.replaceSuccess=%s %d із %s замінено на елементи (%d) в %d слотах	#
+commands.loot.replaceSuccess.block=Замінено %s слот %d на %d елемент(и) через %d слот(и)	#
 commands.tagsfromitem.description=Перелічує всі теги, пов'язані з даним елементом.	#
 commands.tagsfromitem.success.single=На елементі %s є тег %d:	#
 commands.tagsfromitem.success.multiple=На елемент %s є %d теги:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Знищення блока (вібрація)	#
 options.debug=Налагодження	#
 options.flighting_debug=Тестове налагодження	#
 options.debugTitle=Параметри розробника	#
+options.delete_account.button=Видалити обліковий запис Microsoft	#
+options.delete_account.confirm.title=Видалити обліковий запис Microsoft?	#
+options.delete_account.confirm.warning=УВАГА! Ви більше не зможете зберігати прогрес і покупки, здійснені на вашому пристрої, якщо видалите обліковий запис %s.	#
+options.delete_account.confirm.warning.2=Видалення вашого облікового запису Microsoft у цій грі вплине на всі ігри Minecraft на цій платформі, у яких використовується цей обліковий запис Microsoft.	#
+options.delete_account.confirm.checkbox1=Ви більше не матимете доступу до вмісту магазину у грі, граючи на інших платформах.	#
+options.delete_account.confirm.checkbox2=Ви більше не зможете грати онлайн зі своїми друзями.	#
+options.delete_account.confirm.checkbox3=Ви більше не матимете доступу до Realms, зокрема до активних передплат на Realms.	#
+options.delete_account.confirm.checkbox4=Ви розумієте вищесказане і хотіли б продовжити видалення свого облікового запису.	#
+options.delete_account.confirm.button=Видалити	#
 options.dev_game_tip=Поради щодо ігрового процесу	#
 options.dev_ad_show_debug_panel=Показати панель налагодження входу в EDU	#
 options.dev_ad_token_refresh_threshold=Порогове значення для оновлення маркерів входу в EDU в секундах	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Оцінка: за зменшенням	#
 store.search.sort_menu.LowestRating=Оцінка: за збільшенням	#
 store.search.sort_menu.resultText=по %s 	#
 
+store.pagination.next=Далі &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Назад		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Нічого собі! З’явився крутезний пакет від %s. Ви просто мусите поглянути на його.	#
 store.copyToastMessage=Посилання скопійовано до буфера обміну!	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Торт із чорною свічкою	#
 
 item.spyglass.name=Підзорна труба	#
 item.amethyst_shard.name=Осколок аметисту	#
-tile.amethyst_block.name=Блок аметисту	#
+tile.amethyst_block.name=Блок аметиста	#
 tile.budding_amethyst.name=Зростаючий аметист	#
 tile.amethyst_cluster.name=Кластер аметисту	#
 tile.large_amethyst_bud.name=Велика бростка аметисту	#

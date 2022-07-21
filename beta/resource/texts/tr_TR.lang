@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=slotId + count, %d yuva kapsayı
 commands.loot.failure.negativeCount=count negatif bir sayı olamaz	#
 commands.loot.success=%1$s eşya bırakıldı.	#
 commands.loot.replaceSuccess=%s %d/%s, %d yuva üzerinde %d eşya ile değiştirildi	#
+commands.loot.replaceSuccess.block=%s yuva %d, %d yuvada %d eşya ile değiştirildi	#
 commands.tagsfromitem.description=Belirtilen eşyayla ilişkili tüm etiketleri listeler.	#
 commands.tagsfromitem.success.single=%s eşyası üzerinde %d etiket var:	#
 commands.tagsfromitem.success.multiple=%d eşyası üzerinde %s etiket var:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Bloku Yok Et (titreştir)	#
 options.debug=Hata Ayıkla	#
 options.flighting_debug=Uçuş Hatalarını Ayıklama	#
 options.debugTitle=Geliştirici Seçenekleri	#
+options.delete_account.button=Microsoft Hesabını Sil	#
+options.delete_account.confirm.title=Microsoft Hesabı silinsin mi?	#
+options.delete_account.confirm.warning=UYARI: %s hesabını sildikten sonra ilerleme durumunu veya cihazında satın aldığın içerikleri elinde tutamazsın.	#
+options.delete_account.confirm.warning.2=Bu oyun üzerinden Microsoft Hesabının bağlantısını kesersen bu hesabı kullanan tüm Minecraft oyunların bu durumdan etkilenecek.	#
+options.delete_account.confirm.checkbox1=Bundan sonra diğer platformlarda oynadığında oyun içi Mağaza içeriklerine erişemeyeceksin.	#
+options.delete_account.confirm.checkbox2=Artık arkadaşlarınla çevrimiçi oynayamayacaksın.	#
+options.delete_account.confirm.checkbox3=Bundan sonra, şu anda etkin olan Realms abonelikleri de dâhil olmak üzere Realms'a erişemeyeceksin.	#
+options.delete_account.confirm.checkbox4=Yukarıdakileri anladın ve hesabını silme işlemine devam etmek istiyorsun.	#
+options.delete_account.confirm.button=Sil	#
 options.dev_game_tip=Oyun İpuçları	#
 options.dev_ad_show_debug_panel=Hata Ayıklama Panelinde EDU İşaretini Göster	#
 options.dev_ad_token_refresh_threshold=EDU Oturum Açma Belirteci Yenileme Eşiği Saniye Sayısı	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Değerlendirme: Yüksekten Düşüğe	#
 store.search.sort_menu.LowestRating=Değerlendirme: Düşükten Yükseğe	#
 store.search.sort_menu.resultText=%s ile 	#
 
+store.pagination.next=Sonraki &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Önceki		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Vay! %s havalı bir paket oluşturdu. Buna bir bakman lazım.	#
 store.copyToastMessage=Bağlantı panoya kopyalandı!	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Siyah Mumlu Kek	#
 
 item.spyglass.name=Dürbün	#
 item.amethyst_shard.name=Ametist Parçası	#
-tile.amethyst_block.name=Ametist Bloku	#
+tile.amethyst_block.name=Ametist Bloğu	#
 tile.budding_amethyst.name=Tomurcuklanan Ametist	#
 tile.amethyst_cluster.name=Ametist Demeti	#
 tile.large_amethyst_bud.name=Büyük Ametist Filizi	#

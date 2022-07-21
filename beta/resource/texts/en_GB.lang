@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=slotId + count exceeds slot cont
 commands.loot.failure.negativeCount=count cannot be a negative number	#
 commands.loot.success=%1$s items were dropped.	#
 commands.loot.replaceSuccess=Replaced %s %d of %s with %d item(s) over %d slot(s)	#
+commands.loot.replaceSuccess.block=Replaced %s slot %d with %d item(s) over %d slot(s)	#
 commands.tagsfromitem.description=Lists all tags associated with the given item.	#
 commands.tagsfromitem.success.single=There is %d tag on the item %s:	#
 commands.tagsfromitem.success.multiple=There are %d tags on the item %s:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Destroy Block (vibrate)	#
 options.debug=Debug	#
 options.flighting_debug=Flighting Debug	#
 options.debugTitle=Developer Options	#
+options.delete_account.button=Delete Microsoft Account	#
+options.delete_account.confirm.title=Delete Microsoft Account?	#
+options.delete_account.confirm.warning=WARNING: You will no longer be able to protect progression or purchases made on your device after deleting your account %s.	#
+options.delete_account.confirm.warning.2=Deleting your Microsoft Account from this game will affect all Minecraft games that use this account.	#
+options.delete_account.confirm.checkbox1=You will no longer be able to access in-game store content when you play on other platforms.	#
+options.delete_account.confirm.checkbox2=You will no longer be able to play online with your friends.	#
+options.delete_account.confirm.checkbox3=You will no longer be able to access Realms, including Realms subscriptions that are currently active.	#
+options.delete_account.confirm.checkbox4=You understand the above and you would like to continue with deleting your account.	#
+options.delete_account.confirm.button=Delete	#
 options.dev_game_tip=Gameplay Tips	#
 options.dev_ad_show_debug_panel=Show EDU Sign In Debug Panel	#
 options.dev_ad_token_refresh_threshold=EDU Sign In Token Refresh Threshold Seconds	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Rating: High to Low	#
 store.search.sort_menu.LowestRating=Rating: Low to High	#
 store.search.sort_menu.resultText=by %s 	#
 
+store.pagination.next=Next &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Previous		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Whoa! %s made such a cool pack. You've got to check this out.	#
 store.copyToastMessage=Link copied to clipboard!	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Cake with Black Candle	#
 
 item.spyglass.name=Spyglass	#
 item.amethyst_shard.name=Amethyst Shard	#
-tile.amethyst_block.name=Amethyst Block	#
+tile.amethyst_block.name=Block of Amethyst	#
 tile.budding_amethyst.name=Budding Amethyst	#
 tile.amethyst_cluster.name=Amethyst Cluster	#
 tile.large_amethyst_bud.name=Large Amethyst Bud	#

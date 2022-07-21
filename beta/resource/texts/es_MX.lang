@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=La suma de "slotId" + "count" ex
 commands.loot.failure.negativeCount=El valor de "count" no puede ser un número negativo	#
 commands.loot.success=Se soltaron %1$s objetos.	#
 commands.loot.replaceSuccess=Se reemplazaron %s %d de %s por %d objeto(s) en %d ranura(s)	#
+commands.loot.replaceSuccess.block=Se reemplazó %s ranura %d con %d elemento (s) sobre %d ranura (s)	#
 commands.tagsfromitem.description=Enumera todas las etiquetas asociadas con el objeto.	#
 commands.tagsfromitem.success.single=Hay %d etiqueta en el objeto %s:	#
 commands.tagsfromitem.success.multiple=Hay %d etiqueta/s en el objeto %s:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Destruir bloque (vibrar)	#
 options.debug=Depurar	#
 options.flighting_debug=Depuración de vuelo	#
 options.debugTitle=Opciones de desarrollador	#
+options.delete_account.button=Eliminar la cuenta de Microsoft	#
+options.delete_account.confirm.title=¿Eliminar la cuenta de Microsoft?	#
+options.delete_account.confirm.warning=ADVERTENCIA: Si eliminas tu cuenta ya no podrás almacenar el progreso o las compras realizadas en tu dispositivo %s.	#
+options.delete_account.confirm.warning.2=Si eliminas tu cuenta de Microsoft de este juego, se verán afectadas todas las partidas de Minecraft creadas con esta cuenta.	#
+options.delete_account.confirm.checkbox1=Ya no podrás acceder a ningún contenido de la tienda dentro del juego al jugar en otras plataformas.	#
+options.delete_account.confirm.checkbox2=Ya no podrás jugar en línea con tus amigos.	#
+options.delete_account.confirm.checkbox3=Ya no podrás acceder a los Realms, esto incluye las suscripciones a los Realms que estén activas.	#
+options.delete_account.confirm.checkbox4=Entiendes lo anterior y deseas continuar con la eliminación de tu cuenta.	#
+options.delete_account.confirm.button=Eliminar	#
 options.dev_game_tip=Consejos del juego	#
 options.dev_ad_show_debug_panel=Mostrar signo EDU en el panel de depuración	#
 options.dev_ad_token_refresh_threshold=Umbral de actualización en segundos del token de inicio de sesión de EDU	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Calificación: de alta a baja	#
 store.search.sort_menu.LowestRating=Calificación: de baja a alta	#
 store.search.sort_menu.resultText=por %s 	#
 
+store.pagination.next=Siguiente &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Anterior		### Chevrons (< and >) should not be moved
+
 store.shareDescription=¡Wow! %s hizo un pack genial. Tienes que verlo.	#
 store.copyToastMessage=¡Se copió el vínculo en el portapapeles!	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Pastel con vela negra	#
 
 item.spyglass.name=Catalejo	#
 item.amethyst_shard.name=Fragmento de amatista	#
-tile.amethyst_block.name=Bloque de amatista	#
+tile.amethyst_block.name=Bloque de Amatista	#
 tile.budding_amethyst.name=Germinador de amatista	#
 tile.amethyst_cluster.name=Racimo de amatista	#
 tile.large_amethyst_bud.name=Capullo de amatista grande	#

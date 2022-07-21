@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=La valeur slotId + count dépass
 commands.loot.failure.negativeCount=le nombre ne peut pas être négatif	#
 commands.loot.success=%1$s objets ont été lâchés.	#
 commands.loot.replaceSuccess=Remplacement de %s %d de %s par %d objet(s) sur %d emplacement(s)	#
+commands.loot.replaceSuccess.block=Remplacement de %s emplacement %d par %d objet(s) sur %d emplacement(s).	#
 commands.tagsfromitem.description=Répertorie toutes les balises associées à l’élément donné.	#
 commands.tagsfromitem.success.single=Il y a %d balise sur l’élément %s :	#
 commands.tagsfromitem.success.multiple=Il y a %d balises sur l’élément %s :	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Détruire un bloc (vibrations)	#
 options.debug=Débogage	#
 options.flighting_debug=Débogage à la volée	#
 options.debugTitle=Options de développement	#
+options.delete_account.button=Supprimer le compte Microsoft	#
+options.delete_account.confirm.title=Supprimer le compte Microsoft ?	#
+options.delete_account.confirm.warning=ATTENTION : Vous ne pourrez plus protéger la progression ou les achats réalisés sur votre appareil après avoir supprimé votre compte %s.	#
+options.delete_account.confirm.warning.2=Supprimer votre compte Microsoft à partir de ce jeu affectera tous les jeux Minecraft qui utilisent ce compte.	#
+options.delete_account.confirm.checkbox1=Vous ne pourrez plus accéder aux contenus issus du magasin du jeu lorsque vous jouerez sur d'autres plateformes.	#
+options.delete_account.confirm.checkbox2=Vous ne pourrez plus jouer en ligne avec vos amis.	#
+options.delete_account.confirm.checkbox3=Vous ne pourrez plus accéder aux Realms, y compris aux abonnements Realms qui sont en cours.	#
+options.delete_account.confirm.checkbox4=Vous comprenez ce qui précède et vous souhaitez continuer à supprimer votre compte.	#
+options.delete_account.confirm.button=Supprimer	#
 options.dev_game_tip=Astuces de jeu	#
 options.dev_ad_show_debug_panel=Afficher la connexion à EDU dans le panneau de débogage	#
 options.dev_ad_token_refresh_threshold=Fréquence de rafraîchissement en secondes des jetons de connexion EDU	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Évaluation : ordre décroissant	#
 store.search.sort_menu.LowestRating=Évaluation : ordre croissant	#
 store.search.sort_menu.resultText=par %s 	#
 
+store.pagination.next=Suivant &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Précédent		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Waouh ! %s a préparé un pack super cool. Il faut que tu voies ça.	#
 store.copyToastMessage=Lien copié dans le presse-papier !	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Gâteau avec bougie noire	#
 
 item.spyglass.name=Longue-vue	#
 item.amethyst_shard.name=Éclat d'améthyste	#
-tile.amethyst_block.name=Bloc d'améthyste	#
+tile.amethyst_block.name=Bloc d’améthyste	#
 tile.budding_amethyst.name=Druse d'améthyste	#
 tile.amethyst_cluster.name=Amas d'améthystes	#
 tile.large_amethyst_bud.name=Grand cristal d'améthyste	#

@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=Hodnota slotId + počet presahuj
 commands.loot.failure.negativeCount=počet nemôže byť záporné číslo	#
 commands.loot.success=Počet vydaných predmetov: %1$s.	#
 commands.loot.replaceSuccess=%s %d z položky %s sa nahradili %d položkou (položkami) v %d slote (slotoch)	#
+commands.loot.replaceSuccess.block=%s miesto %d %d sa nahradilo položkou (položkami) %d miestom (miestami)	#
 commands.tagsfromitem.description=Zoznam všetkých značiek priradených k danej položke.	#
 commands.tagsfromitem.success.single=Na položku %s je %d značka:	#
 commands.tagsfromitem.success.multiple=Na položku %s existuje %d značiek:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Zničiť blok (vibrácie)	#
 options.debug=Ladenie	#
 options.flighting_debug=Ladenie testovacej verzie	#
 options.debugTitle=Možnosti pre vývojárov	#
+options.delete_account.button=Odstrániť konto Microsoft	#
+options.delete_account.confirm.title=Odstrániť konto Microsoft?	#
+options.delete_account.confirm.warning=UPOZORNENIE: Po odstránení konta %s už nebudete môcť chrániť postup ani nákupy uskutočnené prostredníctvom zariadenia.	#
+options.delete_account.confirm.warning.2=Odstránenie konta Microsoft z tejto hry ovplyvní všetky hry Minecraft, ktoré používajú toto konto.	#
+options.delete_account.confirm.checkbox1=Pri hre na iných platformách už nebudete mať prístup k žiadnemu obsahu v obchode v hre.	#
+options.delete_account.confirm.checkbox2=Už nebudete môcť hrať online s priateľmi.	#
+options.delete_account.confirm.checkbox3=Už nebudete mať prístup k službe Realms vrátane práve aktívneho predplatného Realms.	#
+options.delete_account.confirm.checkbox4=Rozumiete vyššie uvedenému a chcete pokračovať v odstránení svojho konta.	#
+options.delete_account.confirm.button=Odstrániť	#
 options.dev_game_tip=Tipy na hranie hry	#
 options.dev_ad_show_debug_panel=Zobraziť znak EDU na paneli ladenia	#
 options.dev_ad_token_refresh_threshold=Značka EDU v prahu obnovenia tokenu (v sekundách)	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Hodnotenie: od najvyššieho	#
 store.search.sort_menu.LowestRating=Hodnotenie: od najnižšieho	#
 store.search.sort_menu.resultText=podľa %s 	#
 
+store.pagination.next=Nasledujúce &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; predchádzajúce		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Fíha! Autor %s vytvoril úžasný balík. Musíte ho vyskúšať.	#
 store.copyToastMessage=Prepojenie sa skopírovalo do schránky.	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Torta s čiernou sviečkou	#
 
 item.spyglass.name=Ďalekohľad	#
 item.amethyst_shard.name=Ametystový črep	#
-tile.amethyst_block.name=Ametystový blok	#
+tile.amethyst_block.name=Blok ametystu	#
 tile.budding_amethyst.name=Pučiaci ametyst	#
 tile.amethyst_cluster.name=Ametystový strapec	#
 tile.large_amethyst_bud.name=Veľký ametystový púčik	#

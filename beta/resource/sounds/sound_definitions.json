@@ -5204,35 +5204,35 @@
          ]
       },
       "horn.call.0" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call0" ]
       },
       "horn.call.1" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call1" ]
       },
       "horn.call.2" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call2" ]
       },
       "horn.call.3" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call3" ]
       },
       "horn.call.4" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call4" ]
       },
       "horn.call.5" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call5" ]
       },
       "horn.call.6" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call6" ]
       },
       "horn.call.7" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call7" ]
       },
       "item.bone_meal.use" : {

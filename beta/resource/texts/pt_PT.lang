@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=slotId + contagem excede o taman
 commands.loot.failure.negativeCount=a contagem não pode ser um número negativo	#
 commands.loot.success=Foram largados %1$s itens.	#
 commands.loot.replaceSuccess=Substituídos %s %d de %s por %d item(s) em %d ranhura(s)	#
+commands.loot.replaceSuccess.block=Substituíste %s espaço %d com %d artigo(s) em %d espaço(s)	#
 commands.tagsfromitem.description=Lista todas as etiquetas associadas ao artigo.	#
 commands.tagsfromitem.success.single=Há %d etiqueta no artigo %s:	#
 commands.tagsfromitem.success.multiple=Existem %d etiquetas no artigo %s:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Destruir Bloco (vibrar)	#
 options.debug=Depuração	#
 options.flighting_debug=Depuração de Voo	#
 options.debugTitle=Opções do Programador	#
+options.delete_account.button=Eliminar Conta Microsoft	#
+options.delete_account.confirm.title=Eliminar Conta Microsoft?	#
+options.delete_account.confirm.warning=AVISO: Depois de eliminares a tua conta, deixarás de poder armazenar o teu progresso ou as compras feitas no teu dispositivo %s.	#
+options.delete_account.confirm.warning.2=Se eliminares a tua Conta Microsoft neste jogo, todos os jogos Minecraft que utilizam esta Conta Microsoft serão afetados.	#
+options.delete_account.confirm.checkbox1=Deixarás de ter acesso a conteúdos da loja no jogo quando jogares noutras plataformas.	#
+options.delete_account.confirm.checkbox2=Deixarás de poder jogar online com os teus amigos.	#
+options.delete_account.confirm.checkbox3=Deixarás de ter acesso aos Realms, incluindo às subscrições de Realms que ainda estão ativas.	#
+options.delete_account.confirm.checkbox4=Compreendes os termos acima e gostarias de prosseguir com a eliminação da tua conta.	#
+options.delete_account.confirm.button=Eliminar	#
 options.dev_game_tip=Sugestões de Jogo	#
 options.dev_ad_show_debug_panel=Mostrar Início de Sessão EDU no Painel de Depuração	#
 options.dev_ad_token_refresh_threshold=EDU Iniciar Sessão Token Atualizar Limite Segundos	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Class.: Mais alto para mais baixo	#
 store.search.sort_menu.LowestRating=Class.: Mais baixo para mais alto	#
 store.search.sort_menu.resultText=por %s 	#
 
+store.pagination.next=Seguinte &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Anterior		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Uau! A %s criou um pack tão fixe. Não o podes perder.	#
 store.copyToastMessage=Ligação copiada para a área de transferência!	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Bolo com Vela Preta	#
 
 item.spyglass.name=Luneta	#
 item.amethyst_shard.name=Fragmento de Ametista	#
-tile.amethyst_block.name=Bloco Ametista	#
+tile.amethyst_block.name=Bloco de Ametista	#
 tile.budding_amethyst.name=Nascente de Ametista	#
 tile.amethyst_cluster.name=Aglomerado de Ametista	#
 tile.large_amethyst_bud.name=Botão de Ametista Grande	#

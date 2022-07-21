@@ -995,6 +995,7 @@ commands.loot.failure.countExceedsContainerSize=το slotId + πλήθος υπ�
 commands.loot.failure.negativeCount=το πλήθος δεν μπορεί να είναι αρνητική τιμή ή αρνητικός αριθμός	#
 commands.loot.success=Έπεσαν %1$s αντικείμενα.	#
 commands.loot.replaceSuccess=Έγινε αντικατάσταση %s %d από %s με %d αντικείμενο(α) σε %d υποδοχή(ές)	#
+commands.loot.replaceSuccess.block=Έγινε αντικατάσταση %s υποδοχής %d με %d αντικείμενο(α) πάνω από %d υποδοχή(ές)	#
 commands.tagsfromitem.description=Παραθέτει όλες τις ετικέτες που σχετίζονται με το συγκεκριμένο αντικείμενο.	#
 commands.tagsfromitem.success.single=Υπάρχει %d ετικέτα στο αντικείμενο %s:	#
 commands.tagsfromitem.success.multiple=Υπάρχουν %d ετικέτες στο στοιχείο %s:	#
@@ -5669,6 +5670,15 @@ options.destroyvibration=Καταστροφή κύβου (δόνηση)	#
 options.debug=Εντοπισμός σφαλμάτων	#
 options.flighting_debug=Μέθοδος πακέτου αξιολόγησης - Εντοπισμός σφαλμάτων	#
 options.debugTitle=Επιλογές προγραμματιστών	#
+options.delete_account.button=Διαγραφή λογαριασμού Microsoft	#
+options.delete_account.confirm.title=Να διαγραφεί ο λογαριασμός Microsoft;	#
+options.delete_account.confirm.warning=ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Μετά τη διαγραφή του λογαριασμού %s, δεν θα μπορείς πια να προστατεύεις την πρόοδό σου ή τις αγορές που έχεις πραγματοποιήσει στη συσκευή σου.	#
+options.delete_account.confirm.warning.2=Η διαγραφή του λογαριασμού Microsoft σας από αυτό το παιχνίδι θα επηρεάσει όλα τα παιχνίδια Minecraft που χρησιμοποιούν αυτόν τον λογαριασμό.	#
+options.delete_account.confirm.checkbox1=Δεν θα μπορείς πια να έχεις πρόσβαση σε περιεχόμενο καταστήματος εντός του παιχνιδιού όταν παίζεις σε άλλες πλατφόρμες.	#
+options.delete_account.confirm.checkbox2=Δεν θα μπορείς πια να παίζεις online με τους φίλους σου.	#
+options.delete_account.confirm.checkbox3=Δεν θα μπορείς πια να έχεις πρόσβαση στο Realms, συμπεριλαμβανομένων των συνδρομών Realms που είναι ενεργές αυτή τη στιγμή.	#
+options.delete_account.confirm.checkbox4=Κατανοείς τα παραπάνω και θα ήθελες να συνεχίσεις με τη διαγραφή του λογαριασμού σου.	#
+options.delete_account.confirm.button=Διαγραφή	#
 options.dev_game_tip=Συμβουλές παιχνιδιού	#
 options.dev_ad_show_debug_panel=Εμφάνιση πίνακα εντοπισμού σφαλμάτων με την είσοδο σε EDU	#
 options.dev_ad_token_refresh_threshold=Δευτερόλεπτα ορίου ανανέωσης διακριτικού εισόδου σε EDU	#
@@ -7760,6 +7770,9 @@ store.search.sort_menu.HighestRating=Αξιολόγηση: Υψηλότερη - 
 store.search.sort_menu.LowestRating=Αξιολόγηση: Χαμηλότερη - Υψηλότερη	#
 store.search.sort_menu.resultText=κατά %s 	#
 
+store.pagination.next=Επόμενο &gt;		### Chevrons (< and >) should not be moved
+store.pagination.previous=&lt; Προηγούμενο		### Chevrons (< and >) should not be moved
+
 store.shareDescription=Ουάου! Η ομάδα %s δημιούργησε ένα εντυπωσιακό πακέτο. Πρέπει να το δεις.	#
 store.copyToastMessage=Η σύνδεση αντιγράφηκε στο Πρόχειρο!	#
 
@@ -8715,7 +8728,7 @@ tile.black_candle_cake.name=Τούρτα με μαύρο κερί	#
 
 item.spyglass.name=Μονοκυάλι	#
 item.amethyst_shard.name=Θραύσμα αμέθυστου	#
-tile.amethyst_block.name=Κύβος αμέθυστου	#
+tile.amethyst_block.name=Μπλοκ Αμέθυστου	#
 tile.budding_amethyst.name=Ανθοφόρος αμέθυστος	#
 tile.amethyst_cluster.name=Συστάδα αμέθυστου	#
 tile.large_amethyst_bud.name=Μεγάλος ανθός αμέθυστου	#
