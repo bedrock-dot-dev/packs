@@ -1804,6 +1804,8 @@
     "texture": "textures/ui/profile_bg"
   },
 
+  "render_below_base_screen@common.base_screen": { "force_render_below": true },
+
   "profile_screen@common.base_screen": {
     "$safezone_screen_matrix_layer": 20,
     "$ignore_inventory_button": true,
