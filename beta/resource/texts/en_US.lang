@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Delete
 options.dev_game_tip=Gameplay Tips
 options.dev_ad_show_debug_panel=Show EDU Sign In Debug Panel
 options.dev_ad_token_refresh_threshold=EDU Sign In Token Refresh Threshold Seconds
+options.dev_side_by_side_comparison_rate=Side By Side Comparison Rate
 options.dev_playfab_token_refresh_threshold=Playfab Token Refresh Threshold Minutes
 options.dev_assertions_debug_break=Assertions break in the debugger
 options.dev_assertions_show_dialog=Assertions show a modal dialog
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Editor Mode adds powerful tools 
 options.editor.modeActive=Minecraft is currently in Editor Mode.
 options.editor.modeNotActive=Minecraft is not currently in Editor Mode.
 options.editor.achievementsDisabled=Achievements cannot be earned in this project.
+
+options.dcast_character.Title=New Characters for character Creation
 
 patchNotes.loading=Loading Patch Notes
 patchNotes.continue=Continue
@@ -9477,6 +9480,7 @@ trade.expMax=Experience: MAX
 trade.levelPrefix=Level %d
 trade.levelPrefixAndName=Level %d - %s
 trade.levelPrefixAndName.max=Max Level - %s
+trade.nameAndLevel=%s - %s
 trade.level.1=Novice
 trade.level.2=Apprentice
 trade.level.3=Journeyman

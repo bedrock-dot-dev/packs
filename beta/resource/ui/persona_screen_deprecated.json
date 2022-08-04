@@ -6082,7 +6082,8 @@
           "control_ids": {
             "no_store_connection": "@common_store.popup_dialog__no_store_connection",
             "restore_popup": "@common_store.popup_dialog__restore_popup",
-            "restore_failed": "@common_store.popup_dialog__restore_failed"
+            "restore_failed": "@common_store.popup_dialog__restore_failed",
+            "dcast_character_select_popup": "@persona_dcast_character_screen.popup_dialog__dcast_character_select"
           }
         }
       }

@@ -1,4 +1,4 @@
-<h1>PARTICLES DOCUMENTATION </br>Version: 1.19.20.24</h1>
+<h1>PARTICLES DOCUMENTATION </br>Version: 1.19.30.20</h1>
 This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -618,7 +618,7 @@ Particles expire when in a block of the type not in the list. Note: this compone
 <h3><p id="Particle Lifetime Events component">Particle Lifetime Events component</p></h3>
 
 This component allows for triggering events based on various lifetime events.</br><h4></h4>
-<br / ><textarea readonly="true" cols="121" rows="26">
+<br / ><textarea readonly="true" cols="121" rows="18">
 "minecraft:particle_lifetime_events": {
       // all events use the event names in the event section
       // all events can be either an array or a string
@@ -626,14 +626,6 @@ This component allows for triggering events based on various lifetime events.</b
       "creation_event": <string> 
       "expiration_event": [<string>, ...] // fires when the particle expires (does not wait for particles to expire too)
       "expiration_event": <string>,
-
-      "custom_events: {
-        {
-          "eventtrigger" molang,
-          "eventname": event
-        },
-        ...
-      }
 
       // event timeline
       "timeline": {

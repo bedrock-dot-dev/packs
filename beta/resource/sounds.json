@@ -4488,6 +4488,11 @@
             "sound" : "block.composter.ready",
             "volume" : 1.0
          },
+         "block.enchanting_table.use" : {
+            "pitch" : 1.0,
+            "sound" : "block.enchanting_table.use",
+            "volume" : 1.0
+         },
          "block.end_portal.spawn" : {
             "pitch" : 1.0,
             "sound" : "block.end_portal.spawn",

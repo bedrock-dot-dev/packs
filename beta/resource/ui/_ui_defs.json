@@ -108,6 +108,7 @@
     "ui/persona_common.json",
     "ui/persona_screen.json",
     "ui/persona_screen_deprecated.json",
+    "ui/persona_dcast_character_screen.json",
     "ui/play_screen.json",
     "ui/tabbed_upsell_screen.json",
     "ui/win10_trial_conversion_screen.json",

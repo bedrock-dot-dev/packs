@@ -1,0 +1,123 @@
+{
+  "namespace": "persona_dcast_character_screen",
+
+  "popup_dialog__dcast_character_select@popup_dialog.popup_dialog": {
+    "size": [ "100%", "100%" ],
+    "layer": 990,
+    "$section_content_size": [ "100%", "100% - 16px" ],
+    "$close_button_to_button_id": "button.close_dialog",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "focused"
+      },
+      {
+        "from_button_id": "button.menu_left",
+        "to_button_id": "$close_button_to_button_id",
+        "mapping_type": "global"
+      }
+    ],
+    "controls": [
+      {
+        "background_image": {
+          "type": "image",
+          "size": [ "100%", "100% + 64px" ],
+          "texture": "textures/ui/White",
+          "color": "$dressing_room_dark_bg_color",
+          "alpha": 0.8
+        }
+      },
+      {
+        "popup_background@persona_dcast_character_screen.popup_dcast_character_select_bg": {
+          "$persona_popup_title_text": "Hello world",
+          "$persona_popup_title_size": [ "100% - 20px", "100% - 21px" ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [ 0, 21 ],
+          "$show_close_button": true,
+          "$dialog_content": "persona_dcast_character_screen.dcast_character_select_content",
+          "$persona_popup_title_font_type": "MinecraftTen",
+          //"$dialog_content": "persona.emote_equip_slot_content",
+          "size": [ "107%y", "80%" ]
+        }
+      }
+    ]
+  },
+
+  "popup_dcast_character_select_bg@common_dialogs.dialog_background_hollow_2": {
+    "size": [ "100%", "100%" ],
+    "$section_content_size": [ "100%", "100% - 16px" ],
+    "$persona_popup_title_text|default": "dr.classic_skins.select_skin.title",
+    "$persona_popup_title_offset|default": [ 0, 5.5 ],
+    "$section_content_offset|default": [ 0, 0 ],
+    "$persona_popup_title_bindings|default": [],
+    "controls": [
+      {
+        "popup_bottom_bar": {
+          "type": "stack_panel",
+          "size": [ "95%", 32 ],
+          "offset": [ 0, -6 ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "Select_Button@common_buttons.light_text_button": {
+                "size": [ "70%", "100%" ],
+                "$pressed_button_name": "button.dcast_select",
+                "$button_text": "gui.select"
+              }
+            },
+            {
+              "empty_space": {
+                "type": "panel",
+                "size": [ 2, 0 ]
+              }
+            },
+            {
+              "Back_Button@common_buttons.light_text_button": {
+                "size": [ "30%", "100%" ],
+                "$pressed_button_name": "button.dcast_back",
+                "$button_text": "gui.back"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "dcast_character_select_content@common.empty_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "$close_button_visible_binding_type": "global",
+    "controls": [
+      {
+        "background_image": {
+          "$dialog_bg_size|default": [ "100% - 2px", "100% - 2px" ],
+          "type": "image",
+          "texture": "textures/ui/White",
+          "color": "$dressing_room_dark_bg_color",
+          "alpha": "$dressing_room_background_alpha"
+        }
+      }
+    ]
+  },
+
+  "dcast_single_character_button@common_buttons.light_button_assets": {
+    "$button_size_override": [ 20, 20 ],
+    "$button_content": "coin_purchase.button_content",
+    "$pressed_button_name": "button.purchase_coins",
+    "$dcast_character_factory_binding_type": "collection_details",
+    "$dcast_character_factory_collection_details": "collection_details",
+    "$dcast_character_factory_collection_name": "factory_collection",
+    "bindings": [
+    ]
+  }
+}

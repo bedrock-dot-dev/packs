@@ -2055,7 +2055,7 @@
    "melon_block" : {
       "sound" : "wood",
       "textures" : {
-         "down" : "melon_side",
+         "down" : "melon_top",
          "side" : "melon_side",
          "up" : "melon_top"
       }

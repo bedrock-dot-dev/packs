@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.20.24</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.30.20</h1>
 This is documentation for a preview release of Minecraft. New features, components, and capabilities in this release are not final and might change without notice before the final release.<br/>Be sure to check the documentation once the release is out of preview if your add-on isn't working properly. Resource and Behavior Packs created for the preview are not guaranteed to work on the final release.<br/>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
@@ -40,13 +40,13 @@ This is documentation for a preview release of Minecraft. New features, componen
 <td style="border-style:solid; border-width:2; padding:8px">origin</td>
 <td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
 <td style="border-style:solid; border-width:2; padding:8px">[-8.0, 0.0, -8.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">Minimal position Bounds of the collision box. Origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Minimal position of the bounds of the collision box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">size</td>
 <td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
 <td style="border-style:solid; border-width:2; padding:8px">[16.0, 16.0, 16.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">Size of each side of the collision box. Size is specified as [x, y, z]. Origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Size of each side of the collision box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</br></td>
 </tr>
 </table>
 </td>
@@ -55,29 +55,21 @@ This is documentation for a preview release of Minecraft. New features, componen
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:crafting_table</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Describes the component of a custom crafting table. This component supports only "recipe_shaped" and "recipe_shapeless" typed recipes and not others like "recipe_furnace" or "recipe_brewing_mix". If there are two recipes for one item, the recipe book will pick the first that was parsed. If two input recipes are the same, crafting may assert and the resulting item may vary.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="crafting_tags">crafting_tags</p></h3>
+<td style="border-style:solid; border-width:3; padding:7px">Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. This component supports only "recipe_shaped" and "recipe_shapeless" typed recipes and not others like "recipe_furnace" or "recipe_brewing_mix". If there are two recipes for one item, the recipe book will pick the first that was parsed. If two input recipes are the same, crafting may assert and the resulting item may vary.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="crafting_tags">crafting_tags</p></h3>
 
 Defines the tags recipes should define to be crafted on this table. Limited to 64 tags. Each tag is limited to 64 characters.</br><a href="#Index">Back to top</a><br><br>
 
 <h3><p id="table_name">table_name</p></h3>
 
-Specifies the language file key that maps to what text will be displayed in the UI of this table. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this field is omitted, the name displayed will default to the name specified in the display_name component. If this block has no display_name component, the name displayed will default to the name of the block.</br><a href="#Index">Back to top</a><br><br>
+Specifies the language file key that maps to what text will be displayed in the UI of this table. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this field is omitted, the name displayed will default to the name specified in the "display_name" component. If this block has no "display_name" component, the name displayed will default to the name of the block.</br><a href="#Index">Back to top</a><br><br>
 
 </td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:creative_category</td>
-<td style="border-style:solid; border-width:3; padding:7px">String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this component is omitted, the block will not appear in the inventory or crafting table container screens.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="category">category</p></h3>
-
-Determines which category this block will be placed under in the inventory and crafting table container screens. Options are "construction", "nature", "equipment", "items", and "none". If omitted or "none" is specified, the block will not appear in the inventory or crafting table container screens.</br><a href="#Index">Back to top</a><br><br>
-
-<h3><p id="group">group</p></h3>
-
-Specifies the language file key that maps to which expandable/collapsible group this block will be a part of within a category. If the string given can not be resolved as a loc string, then we will check if there is an existing group whose name matches the raw string. If this field is omitted, or there is no group whose name matches the loc string or the raw string, this block will be placed standalone in the given category.</br><a href="#Index">Back to top</a><br><br>
-
-</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px"></br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:destructible_by_explosion</td>
@@ -98,7 +90,7 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:destructible_by_mining</td>
 <td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px">true</td>
-<td style="border-style:solid; border-width:3; padding:7px">Describes the destructible by mining properties for this block. If set to true, the block will have the default destroy time. If set to false, this block is indestructible by mining. If the component is omitted, the block will have the default destroy time.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<td style="border-style:solid; border-width:3; padding:7px">Describes the destructible by mining properties for this block. If set to true, the block will take the default number of seconds to destroy. If set to false, this block is indestructible by mining. If the component is omitted, the block will take the default number of seconds to destroy.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">seconds_to_destroy</td>
@@ -119,19 +111,19 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:flammable</td>
 <td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Describes the flammable properties for this block. If set to true, default values are used. If set to false, this block will not be able to catch on fire. If this component is omitted, the block will not be able to catch on fire naturally from neighbors or lava, but it can still be directly ignited, and that fire will be able to spread to neighbor blocks.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<td style="border-style:solid; border-width:3; padding:7px">Describes the flammable properties for this block. If set to true, default values are used. If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">catch_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">5</td>
-<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a catch_chance_modifier greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the destroy_chance_modifier is 0). If the catch_chance_modifier is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if destroy_chance_modifier is greater than 0). The default value of 5 is the same as that of Planks.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a "catch_chance_modifier" greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the "destroy_chance_modifier" is 0). If the "catch_chance_modifier" is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if "destroy_chance_modifier" is greater than 0). The default value of 5 is the same as that of Planks.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">destroy_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">20</td>
-<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a destroy_chance_modifier of 0, the block will never be destroyed by fire, and the fire will burn forever if the catch_chance_modifier is greater than 0. The default value of 20 is the same as that of Planks.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a "destroy_chance_modifier" of 0, the block will never be destroyed by fire, and the fire will burn forever if the "catch_chance_modifier" is greater than 0. The default value of 20 is the same as that of Planks.</br></td>
 </tr>
 </table>
 </td>
@@ -146,7 +138,7 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:geometry</td>
 <td style="border-style:solid; border-width:3; padding:7px">Identifier String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">The geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.</br>Experimental toggles required: Holiday Creator Features</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">The description identifier of the geometry file to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:light_emission</td>
@@ -170,9 +162,9 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:material_instances</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: 'up', 'down', 'north', 'south', 'east', 'west', or '*'. You can also give an instance the name of your choosing such as 'my_instance', and then assign it to a face by doing 'north':'my_instance'.</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="Material Instance">Material Instance</p></h3>
+<td style="border-style:solid; border-width:3; padding:7px">The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: "up", "down", "north", "south", "east", "west", or "*". You can also give an instance the name of your choosing such as "my_instance", and then assign it to a face by doing "north":"my_instance".</br>Experimental toggles required: Holiday Creator Features</br><h3><p id="Material Instance">Material Instance</p></h3>
 
-A material instance definition to map to a material instance in a geometry file. The material instance '*' will be used for any materials that don't have a match.</br><h4></h4>
+A material instance definition to map to a material instance in a geometry file. The material instance "*" will be used for any materials that don't have a match.</br><h4></h4>
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
 <tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
@@ -192,7 +184,7 @@ A material instance definition to map to a material instance in a geometry file.
 <td style="border-style:solid; border-width:1; padding:9px">render_method</td>
 <td style="border-style:solid; border-width:1; padding:9px">String</td>
 <td style="border-style:solid; border-width:1; padding:9px">opaque</td>
-<td style="border-style:solid; border-width:1; padding:9px">The render method to use. Must be one of these options:</br>'opaque' - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency.</br>'double_sided' - Used for completely disabling backface culling.</br>'blend' - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).</br>'alpha_test' - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">The render method to use. Must be one of these options:</br>"opaque" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency.</br>"double_sided" - Used for completely disabling backface culling.</br>"blend" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).</br>"alpha_test" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">texture</td>
@@ -234,13 +226,34 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 <td style="border-style:solid; border-width:1; padding:9px">allowed_faces</td>
 <td style="border-style:solid; border-width:1; padding:9px">Array</td>
 <td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">List of any of the following strings: up, down, north, south, east, west, side, all. Limited to 6 faces.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">List of any of the following strings describing which face(s) this block can be placed on: "up", "down", "north", "south", "east", "west", "side", "all". Limited to 6 faces.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:1; padding:9px">block_filter</td>
 <td style="border-style:solid; border-width:1; padding:9px">Array</td>
 <td style="border-style:solid; border-width:1; padding:9px"></td>
-<td style="border-style:solid; border-width:1; padding:9px">List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction. Limited to 64 blocks.</br></td>
+<td style="border-style:solid; border-width:1; padding:9px">List of blocks that this block can be placed against in the "allowed_faces" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:1;">
+<tr> <th style="border-style:solid; border-width:1;">Name</th> <th style="border-style:solid; border-width:1;">Type</th> <th style="border-style:solid; border-width:1;">Default Value</th> <th style="border-style:solid; border-width:1;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">name</td>
+<td style="border-style:solid; border-width:1; padding:10px">String</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">The name of a block.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">states</td>
+<td style="border-style:solid; border-width:1; padding:10px">Array</td>
+<td style="border-style:solid; border-width:1; padding:10px"></td>
+<td style="border-style:solid; border-width:1; padding:10px">The list of Vanilla block states and their values that the block can have, expressed in key/value pairs.</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:1; padding:10px">tags</td>
+<td style="border-style:solid; border-width:1; padding:10px">String</td>
+<td style="border-style:solid; border-width:1; padding:10px">1</td>
+<td style="border-style:solid; border-width:1; padding:10px">A condition using Molang queries that results to true/false that can be used to query for blocks with certain tags.</br></td>
+</tr>
+</table>
+</td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -335,25 +348,25 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:rotation</td>
 <td style="border-style:solid; border-width:3; padding:7px">Vector [a, b, c]</td>
 <td style="border-style:solid; border-width:3; padding:7px">rotation[0, 0, 0]</td>
-<td style="border-style:solid; border-width:3; padding:7px">This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z. Angles need to be in factors of 90.</br>Experimental toggles required: Holiday Creator Features</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">The block's rotation around the center of the cube in degrees. The rotation is specified as [x, y, z]. Angles need to be in factors of 90.</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:selection_box</td>
 <td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<td style="border-style:solid; border-width:3; padding:7px">Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
 <tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">origin</td>
 <td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
 <td style="border-style:solid; border-width:2; padding:8px">[-8.0, 0.0, -8.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">Minimal position Bounds of the selection box. Origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Minimal position of the bounds of the selection box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">size</td>
 <td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
 <td style="border-style:solid; border-width:2; padding:8px">[16.0, 16.0, 16.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">Size of each side of the selection box. Size is specified as [x, y, z]. Origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">Size of each side of the selection box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.</br></td>
 </tr>
 </table>
 </td>
@@ -383,7 +396,7 @@ These properties are part of the Block Definition. This helps the system determi
 <h2>Code Example</h2>
 Example<br / ><textarea readonly="true" cols="66" rows="20">
 {
-  "format_version": "1.19.20",
+  "format_version": "1.19.30",
   "minecraft:block": {
     "description": {
       "identifier": "design:lavenderstone"

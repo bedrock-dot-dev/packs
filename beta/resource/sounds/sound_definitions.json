@@ -1497,6 +1497,23 @@
             }
          ]
       },
+      "block.enchanting_table.use" : {
+         "category" : "block",
+         "sounds" : [
+            {
+               "name" : "sounds/block/enchanting_table/enchant1",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/enchanting_table/enchant2",
+               "volume" : 1
+            },
+            {
+               "name" : "sounds/block/enchanting_table/enchant3",
+               "volume" : 1
+            }
+         ]
+      },
       "block.end_portal.spawn" : {
          "__use_legacy_max_distance" : "true",
          "category" : "block",

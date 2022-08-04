@@ -171,12 +171,6 @@
                           "binding_type": "$offer_collection_details",
                           "binding_collection_name": "$offer_collection_name",
                           "binding_collection_prefix": "$offer_collection_prefix"
-                        },
-                        {
-                          "binding_type": "$offer_binding_type",
-                          "binding_collection_name": "$offer_collection_name",
-                          "binding_name": "#button_highlight_color",
-                          "binding_name_override": "#color"
                         }
                       ]
                     }
