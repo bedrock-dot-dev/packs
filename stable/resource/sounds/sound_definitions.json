@@ -2238,19 +2238,19 @@
       "bloom.sculk_catalyst" : {
          "category" : "block",
          "sounds" : [
-            "sounds/particles/soulspeed1",
-            "sounds/particles/soulspeed2",
-            "sounds/particles/soulspeed3",
-            "sounds/particles/soulspeed4",
-            "sounds/particles/soulspeed5",
-            "sounds/particles/soulspeed6",
-            "sounds/particles/soulspeed7",
-            "sounds/particles/soulspeed8",
-            "sounds/particles/soulspeed9",
-            "sounds/particles/soulspeed10",
-            "sounds/particles/soulspeed11",
-            "sounds/particles/soulspeed12",
-            "sounds/particles/soulspeed13"
+            "sounds/particle/soulspeed1",
+            "sounds/particle/soulspeed2",
+            "sounds/particle/soulspeed3",
+            "sounds/particle/soulspeed4",
+            "sounds/particle/soulspeed5",
+            "sounds/particle/soulspeed6",
+            "sounds/particle/soulspeed7",
+            "sounds/particle/soulspeed8",
+            "sounds/particle/soulspeed9",
+            "sounds/particle/soulspeed10",
+            "sounds/particle/soulspeed11",
+            "sounds/particle/soulspeed12",
+            "sounds/particle/soulspeed13"
          ]
       },
       "bottle.dragonbreath" : {
@@ -5204,35 +5204,35 @@
          ]
       },
       "horn.call.0" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call0" ]
       },
       "horn.call.1" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call1" ]
       },
       "horn.call.2" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call2" ]
       },
       "horn.call.3" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call3" ]
       },
       "horn.call.4" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call4" ]
       },
       "horn.call.5" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call5" ]
       },
       "horn.call.6" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call6" ]
       },
       "horn.call.7" : {
-         "category" : "hostile",
+         "category" : "record",
          "sounds" : [ "sounds/item/horn/call7" ]
       },
       "item.bone_meal.use" : {

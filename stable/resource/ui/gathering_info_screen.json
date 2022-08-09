@@ -107,6 +107,22 @@
                       "$button_text": "#info_button_text",
                       "$button_text_binding_type": "global"
                     }
+                  },
+                  {
+                    "pad_4@common.empty_panel": {
+                      "size": [ "100%", 10 ]
+                    }
+                  },
+                  {
+                    "gamepad_helper_panel": {
+                      "type": "panel",
+                      "size": [ "100%", 26 ],
+                      "controls": [
+                        {
+                          "gamepad_helpers@gathering_info.gamepad_helpers": {}
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -211,5 +227,19 @@
     "anchor_to": "top_left",
     "layer": 3,
     "texture": "textures/ui/HowToPlayDivider"
+  },
+
+  "gamepad_helpers": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", 26 ],
+    "controls": [
+      {
+        "gamepad_helper_a@common.gamepad_helper_a": {}
+      },
+      {
+        "gamepad_helper_b@common.gamepad_helper_b": {}
+      }
+    ]
   }
 }

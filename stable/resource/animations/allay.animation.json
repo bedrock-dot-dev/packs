@@ -1,6 +1,17 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.allay.look_at_target.default" : {
+			"loop" : true,
+			"bones" : {
+				"look_at" : {
+					"relative_to" : {
+						"rotation" : "entity"
+					},
+					"rotation" : [ "query.target_x_rotation", "query.target_y_rotation", 0.0 ]
+				}
+			}
+		},
 		"animation.allay.idle": {
 			"loop": true,
 			"animation_length": 2,
@@ -338,6 +349,33 @@
 			}
 		},
 		"animation.allay.hold_item": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"post": [-40, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": {
+							"post": [-40, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"rightItem": {
+          "scale": 0.7,
+          "rotation": [ "-15.0 * (variable.holding_trident)", 0, "90.0 * (variable.holding_trident)" ],
+          "position": [ 0.0, "3.50 * (variable.holding_trident)", 0.0 ]
+				}
+			}
+		},
+		"animation.allay.hold_item_fly": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 2,
 			"bones": {

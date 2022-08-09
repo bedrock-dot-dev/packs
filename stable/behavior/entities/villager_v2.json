@@ -690,7 +690,7 @@
       
       "unskilled": {
           "minecraft:type_family": {
-            "family": [ "villager", "peasant", "mob" ]
+            "family": [ "villager", "peasant", "unskilled", "mob" ]
           },
           "minecraft:variant": {
             "value": 0

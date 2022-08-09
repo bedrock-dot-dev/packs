@@ -1,4 +1,4 @@
-<h1>MOLANG DOCUMENTATION </br>Version: 1.19.10.3</h1>
+<h1>MOLANG DOCUMENTATION </br>Version: 1.19.20.2</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Why Does Molang Exist?">Why Does Molang Exist?</a></th> </tr>
@@ -1018,6 +1018,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">Returns the ground speed of the entity in meters/second</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.had_component_group</td>
+<td style="border-style:solid; border-width:3; padding:7px">Usable only in behavior packs when determining the default value for an entity's Property. Requires one string argument. If the entity is being loaded from data that was last saved with a component_group with the specified name, returns 1.0, otherwise returns 0.0. The purpose of this query is to allow entity definitions to change and still be able to load the correct state of entities. </br></td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.has_any_family</td>
 <td style="border-style:solid; border-width:3; padding:7px">Returns 1 if the entity has any of the specified families, else 0.</br></td>
 </tr>
@@ -1771,10 +1775,6 @@ Query Functions are operators that access a wide variety of information. They ca
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.actor_property</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Holiday Creator Features' AND 'Upcoming Creator Features' to use.) Takes one argument: the name of the property on the entity. Returns the value of that property if it exists, else 0.0 if not.</br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.biome_has_all_tags</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Takes either no position (assumes the current entity position) or three parameters: x, y, z (representing the world-origin-relative position), followed by whatever tags you want to query for, and returns 1 if all of them exist in the biome, else it returns 0.  Eg: query.biome_has_all_tags('is_cold', 'has_trees')</br></td>
 </tr>
@@ -1835,12 +1835,12 @@ Query Functions are operators that access a wide variety of information. They ca
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Returns the array of entities that are riding this entity</br></td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">query.has_actor_property</td>
-<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Holiday Creator Features' AND 'Upcoming Creator Features' to use.) Takes one argument: the name of the property on the Actor. Returns 1.0 if a property with the given name exists, 0 otherwise. </br></td>
-</tr>
-<tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.has_player_rider</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Molang Features' to use.) Returns 1 if the entity has a player riding it, else it returns 0</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.has_property</td>
+<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Holiday Creator Features' AND 'Upcoming Creator Features' to use.) Takes one argument: the name of the property on the Actor. Returns 1.0 if a property with the given name exists, 0 otherwise. </br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_attached</td>
@@ -1853,6 +1853,10 @@ Query Functions are operators that access a wide variety of information. They ca
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.is_spectator</td>
 <td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Spectator Mode' to use.) Returns 1.0 if the entity is spectator, else it returns 0.0</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">query.property</td>
+<td style="border-style:solid; border-width:3; padding:7px">(EXPERIMENTAL. Enable 'Holiday Creator Features' AND 'Upcoming Creator Features' to use.) Takes one argument: the name of the property on the entity. Returns the value of that property if it exists, else 0.0 if not.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">query.relative_block_has_all_tags</td>

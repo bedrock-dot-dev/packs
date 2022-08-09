@@ -1,4 +1,4 @@
-<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.10.3</h1>
+<h1>BLOCKS DOCUMENTATION </br>Version: 1.19.20.2</h1>
 <h2><p id="Index">Index</p></h2>
 <table border="1">
 <tr> <th><a href="#Blocks">Blocks</a></th> </tr>
@@ -17,33 +17,6 @@
 
 <table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:3;">
 <tr> <th style="border-style:solid; border-width:3;">Name</th> <th style="border-style:solid; border-width:3;">Type</th> <th style="border-style:solid; border-width:3;">Default Value</th> <th style="border-style:solid; border-width:3;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:aim_collision</td>
-<td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
-<td style="border-style:solid; border-width:3; padding:7px"></td>
-<td style="border-style:solid; border-width:3; padding:7px">Describes the collision of the block for raycast and its outline. If set to false it disables the collision of the block with entities. An origin of [-8.0, 0.0, -8.0] with a size of [16, 16, 16] is a unit cube.</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
-<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">origin</td>
-<td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
-<td style="border-style:solid; border-width:2; padding:8px">[-8.0, 0.0, -8.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">Minimal position Bounds of the selection box. Origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:2; padding:8px">size</td>
-<td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
-<td style="border-style:solid; border-width:2; padding:8px">[16.0, 16.0, 16.0]</td>
-<td style="border-style:solid; border-width:2; padding:8px">Size of each side of the selection box. Size is specified as [x, y, z]. Origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:block_light_emission</td>
-<td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
-<td style="border-style:solid; border-width:3; padding:7px">0.0</td>
-<td style="border-style:solid; border-width:3; padding:7px">The amount of light this block will emit in a range [0.0, 1.0].</br></td>
-</tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:block_light_filter</td>
 <td style="border-style:solid; border-width:3; padding:7px">Integer</td>
@@ -106,22 +79,40 @@ Specifies the language file key that maps to which expandable/collapsible group 
 </td>
 </tr>
 <tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:destroy_time</td>
-<td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
-<td style="border-style:solid; border-width:3; padding:7px">0.0</td>
-<td style="border-style:solid; border-width:3; padding:7px">Sets the destroy time property for the block. Greater numbers result in greater mining times. Time is measured in seconds with base equipment.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:destructible_by_explosion</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">Describes the destructible by explosion properties for this block. If set to true, the block will have the default explosion resistance. If set to false, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">explosion_resistance</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:destructible_by_mining</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px">true</td>
+<td style="border-style:solid; border-width:3; padding:7px">Describes the destructible by mining properties for this block. If set to true, the block will have the default destroy time. If set to false, this block is indestructible by mining. If the component is omitted, the block will have the default destroy time.</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">seconds_to_destroy</td>
+<td style="border-style:solid; border-width:2; padding:8px">Decimal</td>
+<td style="border-style:solid; border-width:2; padding:8px">0.0</td>
+<td style="border-style:solid; border-width:2; padding:8px">Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.</br></td>
+</tr>
+</table>
+</td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:display_name</td>
 <td style="border-style:solid; border-width:3; padding:7px">Localization String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">Specifies the language file key that maps to what text will be displayed when you hover over the block. Key is limited to 256 characters.</br>Experimental toggles required: Holiday Creator Features</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:explosion_resistance</td>
-<td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
-<td style="border-style:solid; border-width:3; padding:7px">0.0</td>
-<td style="border-style:solid; border-width:3; padding:7px">How much power it can resist from explosion. Bigger the value is, more explosion power it blocks from explosion. If the value is less than remaining power from explosion, the block would destroy.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:flammable</td>
@@ -133,13 +124,13 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <td style="border-style:solid; border-width:2; padding:8px">catch_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">5</td>
-<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. The default value of 5 is the same as that of Planks.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire. For a catch_chance_modifier greater than 0, the fire will continue to burn until the block is destroyed (or it will burn forever if the destroy_chance_modifier is 0). If the catch_chance_modifier is 0, and the block is directly ignited, the fire will eventually burn out without destroying the block (or it will have a chance to be destroyed if destroy_chance_modifier is greater than 0). The default value of 5 is the same as that of Planks.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:2; padding:8px">destroy_chance_modifier</td>
 <td style="border-style:solid; border-width:2; padding:8px">Integer</td>
 <td style="border-style:solid; border-width:2; padding:8px">20</td>
-<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. The default value of 20 is the same as that of Planks.</br></td>
+<td style="border-style:solid; border-width:2; padding:8px">A modifier affecting the chance that this block will be destroyed by flames when on fire. Values are greater than or equal to 0, with a higher number meaning more likely to be destroyed by fire. For a destroy_chance_modifier of 0, the block will never be destroyed by fire, and the fire will burn forever if the catch_chance_modifier is greater than 0. The default value of 20 is the same as that of Planks.</br></td>
 </tr>
 </table>
 </td>
@@ -147,14 +138,20 @@ Specifies the language file key that maps to which expandable/collapsible group 
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:friction</td>
 <td style="border-style:solid; border-width:3; padding:7px">Decimal</td>
-<td style="border-style:solid; border-width:3; padding:7px">0.6</td>
-<td style="border-style:solid; border-width:3; padding:7px">Property describing the friction for this block in a range of [0.1, 1.0]. Friction affects an entity's movement speed when it travels on the block. Greater value results in less friction.</br></td>
+<td style="border-style:solid; border-width:3; padding:7px">0.4</td>
+<td style="border-style:solid; border-width:3; padding:7px">Describes the friction for this block in a range of (0.0-0.9). Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:geometry</td>
 <td style="border-style:solid; border-width:3; padding:7px">Identifier String</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">The geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.</br>Experimental toggles required: Holiday Creator Features</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:light_emission</td>
+<td style="border-style:solid; border-width:3; padding:7px">Integer</td>
+<td style="border-style:solid; border-width:3; padding:7px">0</td>
+<td style="border-style:solid; border-width:3; padding:7px">The amount of light this block will emit in a range (0-15). Higher value means more light will be emitted.</br></td>
 </tr>
 <tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:loot</td>
@@ -340,16 +337,31 @@ List of conditions where the block can be placed/survive. Limited to 64 conditio
 <td style="border-style:solid; border-width:3; padding:7px">This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z. Angles need to be in factors of 90.</br>Experimental toggles required: Holiday Creator Features</br></td>
 </tr>
 <tr>
+<td style="border-style:solid; border-width:3; padding:7px">minecraft:selection_box</td>
+<td style="border-style:solid; border-width:3; padding:7px">Boolean / JSON Object</td>
+<td style="border-style:solid; border-width:3; padding:7px"></td>
+<td style="border-style:solid; border-width:3; padding:7px">Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used</br>Experimental toggles required: Holiday Creator Features</br><table border="1" style="width:100%; border-style:solid; border-collapse:collapse; border-width:2;">
+<tr> <th style="border-style:solid; border-width:2;">Name</th> <th style="border-style:solid; border-width:2;">Type</th> <th style="border-style:solid; border-width:2;">Default Value</th> <th style="border-style:solid; border-width:2;">Description</th> </tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">origin</td>
+<td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
+<td style="border-style:solid; border-width:2; padding:8px">[-8.0, 0.0, -8.0]</td>
+<td style="border-style:solid; border-width:2; padding:8px">Minimal position Bounds of the selection box. Origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
+</tr>
+<tr>
+<td style="border-style:solid; border-width:2; padding:8px">size</td>
+<td style="border-style:solid; border-width:2; padding:8px">Vector [a, b, c]</td>
+<td style="border-style:solid; border-width:2; padding:8px">[16.0, 16.0, 16.0]</td>
+<td style="border-style:solid; border-width:2; padding:8px">Size of each side of the selection box. Size is specified as [x, y, z]. Origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive</br></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
 <td style="border-style:solid; border-width:3; padding:7px">minecraft:unit_cube</td>
 <td style="border-style:solid; border-width:3; padding:7px">JSON Object</td>
 <td style="border-style:solid; border-width:3; padding:7px"></td>
 <td style="border-style:solid; border-width:3; padding:7px">Specifies that a unit cube is to be used with tessellation.</br>Experimental toggles required: Holiday Creator Features</br></td>
-</tr>
-<tr>
-<td style="border-style:solid; border-width:3; padding:7px">minecraft:unwalkable</td>
-<td style="border-style:solid; border-width:3; padding:7px">Boolean</td>
-<td style="border-style:solid; border-width:3; padding:7px">false</td>
-<td style="border-style:solid; border-width:3; padding:7px">Sets the block as unwalkable. Mobs would not attempt to path over top of it when the value is set to true.</br></td>
 </tr>
 </table>
 <a href="#Index">Back to top</a><br><br>
@@ -370,7 +382,7 @@ These properties are part of the Block Definition. This helps the system determi
 <h2>Code Example</h2>
 Example<br / ><textarea readonly="true" cols="66" rows="20">
 {
-  "format_version": "1.16.0",
+  "format_version": "1.19.20",
   "minecraft:block": {
     "description": {
       "identifier": "design:lavenderstone"
@@ -384,7 +396,7 @@ Example<br / ><textarea readonly="true" cols="66" rows="20">
         "flame_odds": 50,
         "burn_odds": 0
     },
-      "minecraft:block_light_emission": 1.0
+      "minecraft:light_emission": 1
     }
   }
 }

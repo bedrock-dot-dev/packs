@@ -75,6 +75,9 @@
         "can_path_over_lava": true,
         "avoid_damage_blocks": true
       },
+      "minecraft:preferred_path": {
+        "max_fall_blocks": 20
+      },
       "minecraft:ambient_sound_interval": {
         "value": 2.0,
         "range": 4.0,

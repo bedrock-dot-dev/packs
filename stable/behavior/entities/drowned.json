@@ -111,6 +111,11 @@
           "can_walk": true,
           "avoid_sun": true
         }
+      },
+
+      "minecraft:can_break_doors": {
+        "minecraft:annotation.break_door": {
+        }
       }
     },
 
@@ -127,8 +132,6 @@
       "minecraft:collision_box": {
         "width": 0.6,
         "height": 1.9
-      },
-      "minecraft:annotation.break_door": {
       },
       "minecraft:underwater_movement": {
         "value": 0.06
@@ -515,43 +518,60 @@
 
     "events": {
       "minecraft:entity_spawned": {
-        "randomize": [
+        "sequence": [
           {
-            "weight": 15,
-            "remove": {
-            },
-            "add": {
-              "component_groups": [
-                "minecraft:mode_switcher",
-                "minecraft:ranged_mode",
-                "minecraft:adult_drowned"
-              ]
-            }
-          },
-          {
-            "weight": 85,
             "randomize": [
               {
-                "weight": 95,
+                "weight": 15,
                 "remove": {
                 },
                 "add": {
                   "component_groups": [
-                    "minecraft:melee_mode",
+                    "minecraft:mode_switcher",
+                    "minecraft:ranged_mode",
                     "minecraft:adult_drowned"
                   ]
                 }
               },
               {
-                "weight": 5,
-                "remove": {
-                },
+                "weight": 85,
+                "randomize": [
+                  {
+                    "weight": 95,
+                    "remove": {
+                    },
+                    "add": {
+                      "component_groups": [
+                        "minecraft:melee_mode",
+                        "minecraft:adult_drowned"
+                      ]
+                    }
+                  },
+                  {
+                    "weight": 5,
+                    "remove": {
+                    },
+                    "add": {
+                      "component_groups": [
+                        "minecraft:melee_mode",
+                        "minecraft:baby_drowned"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 10,
                 "add": {
-                  "component_groups": [
-                    "minecraft:melee_mode",
-                    "minecraft:baby_drowned"
-                  ]
+                  "component_groups": [ "minecraft:can_break_doors" ]
                 }
+              },
+              {
+                "weight": 90
               }
             ]
           }
