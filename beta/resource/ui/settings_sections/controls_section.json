@@ -192,6 +192,7 @@
     "$keymapping_grid_dimension": "#keyboard_full_grid_dimension",
     "$keymapping_collection": "keyboard_full_collection"
   },
+  
 
   // gamepad controls
   "gamepad_mapping_item": {
@@ -420,6 +421,32 @@
             },
             {
               "keyboard_keymapping_grid@controls_section.keymapping_grid": {}
+            },
+            {
+              "control_alt_chords_standard_keyboard_section": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "bindings": [
+                  {
+                    // Show full keyboard section when the full keyboard toggle is enabled
+                    "binding_name": "#show_standard_copy_coordinates_keys",
+                    "binding_name_override": "#visible"
+                  }
+                ],
+                "controls": [
+                  {
+                    "option_group_label@settings_common.option_group_label": {
+                      "$text": "options.control_alt_keybinds_section"
+                    }
+                  },
+                  {
+                    "control_alt_chord_keymapping_grid@controls_section.keymapping_grid": {
+                      "$keymapping_grid_dimension": "#keyboard_standard_control_alt_chord_grid_dimension",
+                      "$keymapping_collection": "keyboard_standard_control_alt_chord_collection"
+                    }
+                  }
+                ]
+              }
             }
           ]
         }
@@ -459,6 +486,32 @@
             },
             {
               "keyboard_full_keymapping_grid@controls_section.full_keymapping_grid": {}
+            },
+            {
+              "control_alt_chords_full_keyboard_section": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%c" ],
+                "bindings": [
+                  {
+                    // Show full keyboard section when the full keyboard toggle is enabled
+                    "binding_name": "#show_full_copy_coordinates_keys",
+                    "binding_name_override": "#visible"
+                  }
+                ],
+                "controls": [
+                  {
+                    "option_group_label@settings_common.option_group_label": {
+                      "$text": "options.control_alt_keybinds_section"
+                    }
+                  },
+                  {
+                    "control_alt_chord_keymapping_grid@controls_section.keymapping_grid": {
+                      "$keymapping_grid_dimension": "#keyboard_full_control_alt_chord_grid_dimension",
+                      "$keymapping_collection": "keyboard_full_control_alt_chord_collection"
+                    }
+                  }
+                ]
+              }
             }
           ]
         }

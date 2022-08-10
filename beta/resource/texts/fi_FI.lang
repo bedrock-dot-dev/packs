@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Poista	#
 options.dev_game_tip=Pelivinkit	#
 options.dev_ad_show_debug_panel=Näytä EDU-kirjautumisen vianmäärityspaneeli	#
 options.dev_ad_token_refresh_threshold=Kynnyssekunnit EDU:n kirjautumispoletin päivittymiseen	#
+options.dev_side_by_side_comparison_rate=Rinnakkaisvertailutahti	#
 options.dev_playfab_token_refresh_threshold=Playfab-tunnisteen päivityskynnys minuutteina	#
 options.dev_assertions_debug_break=Väitekatko virheiden tarkastusohjelmassa	#
 options.dev_assertions_show_dialog=Väitteet näyttävät modaalisen dialogin	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Editoritila lisää tehokkaita t
 options.editor.modeActive=Minecraft on tällä hetkellä editoritilassa.	#
 options.editor.modeNotActive=Minecraft ei ole tällä hetkellä editoritilassa.	#
 options.editor.achievementsDisabled=Tässä projektissa ei voi ansaita saavutuksia.	#
+
+options.dcast_character.Title=Uusia hahmoja hahmonluontiin	#
 
 patchNotes.loading=Ladataan korjaustiedoston tietoja	#
 patchNotes.continue=Jatka	#
@@ -9477,6 +9480,7 @@ trade.expMax=Kokemus: MAX	#
 trade.levelPrefix=Taso %d	#
 trade.levelPrefixAndName=Taso %d - %s	#
 trade.levelPrefixAndName.max=Suurin taso - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Noviisi	#
 trade.level.2=Harjoittelija	#
 trade.level.3=Jokapaikan höylä	#

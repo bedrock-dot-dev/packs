@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Διαγραφή	#
 options.dev_game_tip=Συμβουλές παιχνιδιού	#
 options.dev_ad_show_debug_panel=Εμφάνιση πίνακα εντοπισμού σφαλμάτων με την είσοδο σε EDU	#
 options.dev_ad_token_refresh_threshold=Δευτερόλεπτα ορίου ανανέωσης διακριτικού εισόδου σε EDU	#
+options.dev_side_by_side_comparison_rate=Ποσοστό σύγκρισης	#
 options.dev_playfab_token_refresh_threshold=Λεπτά ορίου ανανέωσης διακριτικού Playfab	#
 options.dev_assertions_debug_break=Διακοπή διεκδικήσεων στο πρόγραμμα εντοπισμού σφαλμάτων	#
 options.dev_assertions_show_dialog=Οι διεκδικήσεις εμφανίζουν αποκλειστικό παράθυρο διαλόγου	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Η Λειτουργία προγ
 options.editor.modeActive=Αυτή τη στιγμή, το Minecraft βρίσκεται σε Λειτουργία προγράμματος επεξεργασίας.	#
 options.editor.modeNotActive=Αυτή τη στιγμή, το Minecraft δεν βρίσκεται σε Λειτουργία προγράμματος επεξεργασίας.	#
 options.editor.achievementsDisabled=Δεν μπορούν να αποκτηθούν επιτεύγματα σε αυτό το έργο.	#
+
+options.dcast_character.Title=Νέοι χαρακτήρες για τη δυνατότητα δημιουργίας χαρακτήρων	#
 
 patchNotes.loading=Φόρτωση σημειώσεων ενημέρωσης κώδικα	#
 patchNotes.continue=Συνέχεια	#
@@ -9477,6 +9480,7 @@ trade.expMax=Εμπειρία: ΜΕΓΙΣΤΗ	#
 trade.levelPrefix=Επίπεδο %d	#
 trade.levelPrefixAndName=Επίπεδο %d - %s	#
 trade.levelPrefixAndName.max=Μέγ. επίπεδο - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Αρχάριος	#
 trade.level.2=Μαθητευόμενος	#
 trade.level.3=Έμπειρος	#

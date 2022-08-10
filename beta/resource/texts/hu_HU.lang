@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Törlés	#
 options.dev_game_tip=Játéktippek	#
 options.dev_ad_show_debug_panel=EDU bejelentkezés mutatása a hibakereső panelen	#
 options.dev_ad_token_refresh_threshold=OKTATÁSI bejelentkezési token frissítési küszöb másodpercben	#
+options.dev_side_by_side_comparison_rate=Egymás melletti összehasonlítási arány	#
 options.dev_playfab_token_refresh_threshold=Playfab tokenfrissítési küszöb percben	#
 options.dev_assertions_debug_break=Az állítás megszakításhoz vezetett a hibakeresőben	#
 options.dev_assertions_show_dialog=Az állítások párbeszédablakot jelenítettek meg	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=A Szerkesztő mód hatékony esz
 options.editor.modeActive=A Minecraft jelenleg Szerkesztő módban van.	#
 options.editor.modeNotActive=A Minecraft jelenleg nincs Szerkesztő módban.	#
 options.editor.achievementsDisabled=Ebben a projektben nem lehet mérföldköveket elérni.	#
+
+options.dcast_character.Title=Új karakterek a karakter-létrehozáshoz	#
 
 patchNotes.loading=Javítócsomag megjegyzéseinek betöltése	#
 patchNotes.continue=Folytatás	#
@@ -9477,6 +9480,7 @@ trade.expMax=Tapasztalati pont: MAX.	#
 trade.levelPrefix=%d. szint	#
 trade.levelPrefixAndName=%d. szint – %s	#
 trade.levelPrefixAndName.max=Max. szint – %s	#
+trade.nameAndLevel=%s – %s	#
 trade.level.1=Kezdő	#
 trade.level.2=Tanuló	#
 trade.level.3=Iparos	#

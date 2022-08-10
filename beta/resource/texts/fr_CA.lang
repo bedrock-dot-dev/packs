@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Supprimer	#
 options.dev_game_tip=Astuces de jeu	#
 options.dev_ad_show_debug_panel=Afficher le signe EDU dans le panneau de débogage	#
 options.dev_ad_token_refresh_threshold=Le jeton de connexion EDU actualise le seuil des secondes	#
+options.dev_side_by_side_comparison_rate=Taux de comparaison côte à côte	#
 options.dev_playfab_token_refresh_threshold=Seuil d'actualisation en minutes du jeton PlayFab	#
 options.dev_assertions_debug_break=Les assertions brisent dans le débogueur	#
 options.dev_assertions_show_dialog=Les assertions affichent une boîte de dialogue modale	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Le mode éditeur ajoute des outi
 options.editor.modeActive=Minecraft est actuellement en mode éditeur.	#
 options.editor.modeNotActive=Minecraft n’est actuellement pas en mode éditeur.	#
 options.editor.achievementsDisabled=Vous ne pouvez pas remporter de succès dans ce projet.	#
+
+options.dcast_character.Title=Nouveaux personnages pour la création de personnages	#
 
 patchNotes.loading=Chargement des notes de version	#
 patchNotes.continue=Continuer	#
@@ -9477,6 +9480,7 @@ trade.expMax=Expérience : MAX	#
 trade.levelPrefix=Niveau %d	#
 trade.levelPrefixAndName=Niveau %d - %s	#
 trade.levelPrefixAndName.max=Niveau max - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Novice	#
 trade.level.2=Apprenti	#
 trade.level.3=Compagnon	#

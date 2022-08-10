@@ -1301,6 +1301,40 @@
           "$option_binding_name": "#copy_coordinate_ui",
           "$toggle_name": "copy_coordinate_ui"
         }
+      },
+      {
+        "creator_setting_button": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%", 30 ],
+          "bindings": [
+            {
+              "binding_name": "#show_keybinds_button",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "go_to_keybinds@settings_common.action_button": {
+                "$pressed_button_name": "button.go_to_keybinds",
+                "$button_text": "options.go_to_keybinds",
+                "size": [ "100%", "100%" ],
+                "bindings": [
+                  {
+                    "binding_name": "#go_to_keybinds",
+                    "binding_name_override": "#enabled"
+                  }
+                ]
+              }
+            },
+            {
+              "creator_settings_section_label_spacer": {
+                "type": "panel",
+                "size": [ "1%", "100%" ]
+              }
+            }
+          ]
+        }
       }
     ]
   },

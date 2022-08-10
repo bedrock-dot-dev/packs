@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Eliminar	#
 options.dev_game_tip=Sugestões de Jogo	#
 options.dev_ad_show_debug_panel=Mostrar Início de Sessão EDU no Painel de Depuração	#
 options.dev_ad_token_refresh_threshold=EDU Iniciar Sessão Token Atualizar Limite Segundos	#
+options.dev_side_by_side_comparison_rate=Comparação de Taxa Lado a Lado	#
 options.dev_playfab_token_refresh_threshold=Playfab Token Atualizar Limite Minutos	#
 options.dev_assertions_debug_break=Quebra de asserções no depurador	#
 options.dev_assertions_show_dialog=As asserções apresentam um diálogo modal	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=O Modo de Edição adiciona ferr
 options.editor.modeActive=O Minecraft está atualmente no Modo de Edição.	#
 options.editor.modeNotActive=O Minecraft não está atualmente no Modo de Edição.	#
 options.editor.achievementsDisabled=Não é possível obter conquistas neste projeto.	#
+
+options.dcast_character.Title=Novas Personagens para a Criação de personagens	#
 
 patchNotes.loading=Notas de Patch de Carregamento	#
 patchNotes.continue=Continuar	#
@@ -9477,6 +9480,7 @@ trade.expMax=Experiência: MÁX	#
 trade.levelPrefix=Nível %d	#
 trade.levelPrefixAndName=Nível %d - %s	#
 trade.levelPrefixAndName.max=Nível Max - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Principiante	#
 trade.level.2=Aprendiz	#
 trade.level.3=Artífice	#

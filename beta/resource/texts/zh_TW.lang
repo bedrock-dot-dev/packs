@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=刪除	#
 options.dev_game_tip=遊戲秘訣	#
 options.dev_ad_show_debug_panel=顯示「EDU 登入除錯面板」	#
 options.dev_ad_token_refresh_threshold=EDU 登入代幣重新整理閾值秒數	#
+options.dev_side_by_side_comparison_rate=角色比較評價	#
 options.dev_playfab_token_refresh_threshold=Playfab 代幣重新整理閾值分鐘數	#
 options.dev_assertions_debug_break=偵錯工具中的判斷提示分隔設定	#
 options.dev_assertions_show_dialog=判斷提示會顯示模態對話方塊	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=編輯器模式加入了強大�
 options.editor.modeActive=Minecraft 目前處於編輯器模式。	#
 options.editor.modeNotActive=Minecraft 目前未處於編輯器模式。	#
 options.editor.achievementsDisabled=本專案無法獲得成就。	#
+
+options.dcast_character.Title=新的角色創建特質	#
 
 patchNotes.loading=載入補丁說明	#
 patchNotes.continue=繼續	#
@@ -9477,6 +9480,7 @@ trade.expMax=經驗值：最大	#
 trade.levelPrefix=等級 %d	#
 trade.levelPrefixAndName=等級 %d - %s	#
 trade.levelPrefixAndName.max=最大等級 - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=初學者	#
 trade.level.2=學徒	#
 trade.level.3=老手	#

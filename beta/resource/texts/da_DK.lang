@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Slet	#
 options.dev_game_tip=Spiltips	#
 options.dev_ad_show_debug_panel=Vis EDU-tegn i Debug-panel	#
 options.dev_ad_token_refresh_threshold=Opdateringsgrænse i sekunder for login-token i EDU	#
+options.dev_side_by_side_comparison_rate=Sammenligningsrate	#
 options.dev_playfab_token_refresh_threshold=Opdateringsgrænse i minutter for Playfab-token	#
 options.dev_assertions_debug_break=Assertionsnedbrud i fejlfinderen	#
 options.dev_assertions_show_dialog=Assertions viser en modal dialogboks	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Med redigeringstilstand får du 
 options.editor.modeActive=Minecraft er i redigeringstilstand.	#
 options.editor.modeNotActive=Minecraft er ikke i redigeringstilstand.	#
 options.editor.achievementsDisabled=Du kan ikke opnå gennemførelser i dette projekt.	#
+
+options.dcast_character.Title=Nye figurer til figuroprettelse	#
 
 patchNotes.loading=Indlæser rettelsesnoter	#
 patchNotes.continue=Fortsæt	#
@@ -9477,6 +9480,7 @@ trade.expMax=Erfaring: MAKS.	#
 trade.levelPrefix=Niveau %d	#
 trade.levelPrefixAndName=Niveau %d - %s	#
 trade.levelPrefixAndName.max=Maks. niveau - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Begynder	#
 trade.level.2=Lærling	#
 trade.level.3=Faglært	#

@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Elimina	#
 options.dev_game_tip=Suggerimenti di gioco	#
 options.dev_ad_show_debug_panel=Mostra pannello debug accesso EDU	#
 options.dev_ad_token_refresh_threshold=Limite di secondi dell'aggiornamento del gettone accesso EDU	#
+options.dev_side_by_side_comparison_rate=Tasso di confronto affiancato	#
 options.dev_playfab_token_refresh_threshold=Limite di minuti dell'aggiornamento del gettone Playfab	#
 options.dev_assertions_debug_break=Interruzione asserzioni nel debugger	#
 options.dev_assertions_show_dialog=Le asserzioni mostrano un dialogo modale	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=La modalità editor aggiunge att
 options.editor.modeActive=Minecraft è attualmente in modalità editor.	#
 options.editor.modeNotActive=Minecraft non è attualmente in modalità editor.	#
 options.editor.achievementsDisabled=In questo progetto non è possibile sbloccare obiettivi.	#
+
+options.dcast_character.Title=Nuovi personaggi per la creazione del personaggio	#
 
 patchNotes.loading=Caricamento delle note sull'aggiornamento	#
 patchNotes.continue=Continua	#
@@ -9477,6 +9480,7 @@ trade.expMax=Esperienza: MAX	#
 trade.levelPrefix=Livello %d	#
 trade.levelPrefixAndName=Livello %d - %s	#
 trade.levelPrefixAndName.max=Livello max - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Principiante	#
 trade.level.2=Apprendista	#
 trade.level.3=Specialista	#

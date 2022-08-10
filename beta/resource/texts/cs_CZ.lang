@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Odstranit	#
 options.dev_game_tip=Rady pro hraní hry	#
 options.dev_ad_show_debug_panel=Zobrazit značku vzdělávání v panelu ladění	#
 options.dev_ad_token_refresh_threshold=Doba aktualizace prahu přihlašovacího tokenu ke vzdělávání v sekundách	#
+options.dev_side_by_side_comparison_rate=Porovnání vedle sebe	#
 options.dev_playfab_token_refresh_threshold=Doba aktualizace prahu tokenu Playfab v minutách	#
 options.dev_assertions_debug_break=Přerušení kontrolních výrazů v ladicím programu	#
 options.dev_assertions_show_dialog=Zobrazení kontrolních výrazů v modálním dialogovém okně	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Režim editoru přidává výkon
 options.editor.modeActive=Minecraft je momentálně v režimu editoru.	#
 options.editor.modeNotActive=Minecraft momentálně není v režimu editoru.	#
 options.editor.achievementsDisabled=V tomto projektu nelze získávat herní úspěchy.	#
+
+options.dcast_character.Title=Nové postavy pro tvorbu postav	#
 
 patchNotes.loading=Načítání poznámek k opravě	#
 patchNotes.continue=Pokračovat	#
@@ -9477,6 +9480,7 @@ trade.expMax=Zkušenosti: MAX	#
 trade.levelPrefix=Úroveň %d	#
 trade.levelPrefixAndName=Úroveň %d–%s	#
 trade.levelPrefixAndName.max=Max. úroveň – %s	#
+trade.nameAndLevel=%s – %s	#
 trade.level.1=Nováček	#
 trade.level.2=Učedník	#
 trade.level.3=Nádeník	#

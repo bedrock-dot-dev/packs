@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Usuń	#
 options.dev_game_tip=Wskazówki dotyczące rozgrywki	#
 options.dev_ad_show_debug_panel=Pokaż znak EDU w panelu debugowania	#
 options.dev_ad_token_refresh_threshold=Próg sekundowy odświeżania znaku EDU w tokenie	#
+options.dev_side_by_side_comparison_rate=Porównanie obok siebie	#
 options.dev_playfab_token_refresh_threshold=Próg minutowy odświeżania tokenów Playfab	#
 options.dev_assertions_debug_break=Instrukcja break asercji w debuggerze	#
 options.dev_assertions_show_dialog=Asercja pokazuje modalny dialog	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Tryb edytora dodaje zaawansowane
 options.editor.modeActive=Minecraft jest obecnie w trybie edytora.	#
 options.editor.modeNotActive=Minecraft nie jest obecnie w trybie edytora.	#
 options.editor.achievementsDisabled=W tym świecie nie można zdobywać osiągnięć.	#
+
+options.dcast_character.Title=Nowe postacie do tworzenia postaci	#
 
 patchNotes.loading=Ładowanie informacji o poprawkach	#
 patchNotes.continue=Kontynuuj	#
@@ -9477,6 +9480,7 @@ trade.expMax=Doświadczenie: MAKS.	#
 trade.levelPrefix=Poziom %d	#
 trade.levelPrefixAndName=Poziom %d – %s	#
 trade.levelPrefixAndName.max=Maks. poziom: %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Nowicjusz	#
 trade.level.2=Terminator	#
 trade.level.3=Czeladnik	#

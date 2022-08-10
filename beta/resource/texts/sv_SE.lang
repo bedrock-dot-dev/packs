@@ -1129,7 +1129,7 @@ commands.schedule.too.many.areas=Mer än ett tickområde hittades med namnet %s.
 
 commands.scoreboard.description=Sparar och visar resultat för diverse uppgifter.							###
 commands.scoreboard.allMatchesFailed=Alla matchningar misslyckades													###
-commands.scoreboard.noMultiWildcard=Endast ett jokertecken från användare tillåts										###
+commands.scoreboard.noMultiWildcard=Endast ett jokertecken från spelare tillåts										###
 commands.scoreboard.objectiveNotFound=Hittade inget mål med namnet "%1$s"							###1: Objective Name
 commands.scoreboard.objectiveReadOnly=Målet "%1$s" är skrivskyddat och kan inte anges				###1: Objective Name
 commands.scoreboard.objectives.add.alreadyExists=Det finns redan ett mål med namnet "%1$s"		###1: Objective Name
@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Ta bort	#
 options.dev_game_tip=Speltips	#
 options.dev_ad_show_debug_panel=Visa EDU-skylt i debug-panelen	#
 options.dev_ad_token_refresh_threshold=Uppdateringsgräns i sekunder för EDU-inloggningsnyckel	#
+options.dev_side_by_side_comparison_rate=Jämförelsegrad sida vid sida	#
 options.dev_playfab_token_refresh_threshold=Minuter för uppdateringströskel för Playfab-token	#
 options.dev_assertions_debug_break=Påståenden fungerar inte i debuggern	#
 options.dev_assertions_show_dialog=Påståenden visar en moduldialog	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Redigeringsläget lägger till k
 options.editor.modeActive=Minecraft är i redigeringsläge just nu.	#
 options.editor.modeNotActive=Minecraft är inte i redigeringsläge just nu.	#
 options.editor.achievementsDisabled=Det går inte att få achievements i det här projektet.	#
+
+options.dcast_character.Title=Nya karaktärer till karaktärsskaparen	#
 
 patchNotes.loading=Laddar patchinformation	#
 patchNotes.continue=Fortsätt	#
@@ -9477,6 +9480,7 @@ trade.expMax=Erfarenhet: MAX	#
 trade.levelPrefix=Nivå %d	#
 trade.levelPrefixAndName=Nivå %d – %s	#
 trade.levelPrefixAndName.max=Maxnivå – %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Novis	#
 trade.level.2=Lärling	#
 trade.level.3=Gesäll	#
@@ -9712,9 +9716,9 @@ dr.marketplace.get_more_skins=Skaffa fler utseenden	#
 dr.classic_skins.show_more=Visa mer	#
 
 onlinePlay.notRated=Onlineläget är inte åldersmärkt	#
-onlinePlay.message=När du spelar online kan du stöta på chattmeddelanden eller annat innehåll från användare som inte åldersmärkts och kanske inte är lämpligt för alla åldrar.	#
+onlinePlay.message=När du spelar online kan du stöta på chattmeddelanden eller annat innehåll från spelare som inte åldersmärkts och kanske inte är lämpligt för alla åldrar.	#
 onlinePlay.editor.notRated=Onlineredigering är inte åldersmärkt	#
-onlinePlay.editor.message=När du redigerar online kan du stöta på chattmeddelanden eller annat innehåll från användare som inte åldersmärkts och kanske inte är lämpligt för alla åldrar.	#
+onlinePlay.editor.message=När du redigerar online kan du stöta på chattmeddelanden eller annat innehåll från spelare som inte åldersmärkts och kanske inte är lämpligt för alla åldrar.	#
 onlinePlay.doNotShowAgain=Visa inte det här igen	#
 onlinePlay.proceed=Fortsätt	#
 onlinePlay.Back=Tillbaka	#

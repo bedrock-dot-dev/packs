@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=削除	#
 options.dev_game_tip=ゲームプレイのヒント	#
 options.dev_ad_show_debug_panel=デバッグ パネルに EDU マークを表示	#
 options.dev_ad_token_refresh_threshold=トークンの更新のしきい値 (秒) 内の EDU マーク	#
+options.dev_side_by_side_comparison_rate=サイド バイ サイド比較レート	#
 options.dev_playfab_token_refresh_threshold=Playfab トークンの更新期限 (分)	#
 options.dev_assertions_debug_break=アサーションのデバッガーへの割り込み	#
 options.dev_assertions_show_dialog=アサーションによるモーダル ダイアログの表示	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=エディタモードは、ワ�
 options.editor.modeActive=Minecraft は現在エディタモードを使用中です。	#
 options.editor.modeNotActive=Minecraft は現在エディタモードを使用していません。	#
 options.editor.achievementsDisabled=このプロジェクトでは実績を獲得できません。	#
+
+options.dcast_character.Title=キャラクター作成用の新キャラクター	#
 
 patchNotes.loading=パッチノートの読み込み	#
 patchNotes.continue=続ける	#
@@ -9477,6 +9480,7 @@ trade.expMax=経験値: MAX	#
 trade.levelPrefix=レベル %d	#
 trade.levelPrefixAndName=レベル %d ～ %s	#
 trade.levelPrefixAndName.max=最大レベル - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=未熟者	#
 trade.level.2=見習い	#
 trade.level.3=熟練者	#

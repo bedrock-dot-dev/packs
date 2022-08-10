@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Удалить	#
 options.dev_game_tip=Советы по игровому процессу	#
 options.dev_ad_show_debug_panel=Отображать значок EDU на панели отладки	#
 options.dev_ad_token_refresh_threshold=Граничное количество секунд для интервала обновления маркера входа EDU	#
+options.dev_side_by_side_comparison_rate=Параллельное сравнение	#
 options.dev_playfab_token_refresh_threshold=Предельное время обновления жетона Playfab (в минутах)	#
 options.dev_assertions_debug_break=Прерывание утверждений в отладчике	#
 options.dev_assertions_show_dialog=Прерывания вызывают модальное диалоговое окно	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Редактор добавля�
 options.editor.modeActive=Сейчас в Minecraft включен режим редактора.	#
 options.editor.modeNotActive=Режим редактора Minecraft не включен	#
 options.editor.achievementsDisabled=В этом проекте недоступны достижения.	#
+
+options.dcast_character.Title=Новые персонажи для их создания	#
 
 patchNotes.loading=Загрузка заметок об исправлении	#
 patchNotes.continue=Продолжить	#
@@ -9477,6 +9480,7 @@ trade.expMax=Опыт: MAКСИМУМ	#
 trade.levelPrefix=Уровень %d	#
 trade.levelPrefixAndName=Уровень %d — %s	#
 trade.levelPrefixAndName.max=Максимальный уровень — %s	#
+trade.nameAndLevel=%s : %s	#
 trade.level.1=Новичок	#
 trade.level.2=Ученик	#
 trade.level.3=Подмастерье	#

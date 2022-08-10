@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Verwijderen	#
 options.dev_game_tip=Speltips	#
 options.dev_ad_show_debug_panel=EDU-teken in foutopsporingspaneel tonen	#
 options.dev_ad_token_refresh_threshold=Vernieuwingsdrempelwaarde in seconden van EDU-aanmeldingstoken	#
+options.dev_side_by_side_comparison_rate=Naast elkaar vergelijking van percentage	#
 options.dev_playfab_token_refresh_threshold=Drempelwaarde in minuten voor vernieuwen van PlayFab-token	#
 options.dev_assertions_debug_break=Assertieonderbreking in foutopsporing	#
 options.dev_assertions_show_dialog=Asserties tonen een modaal dialoogvenster	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=De editormodus voegt krachtige h
 options.editor.modeActive=Minecraft bevindt zich momenteel in de editormodus.	#
 options.editor.modeNotActive=Minecraft bevindt zich momenteel niet in de editormodus.	#
 options.editor.achievementsDisabled=Er kunnen in dit project geen achievements worden verdiend.	#
+
+options.dcast_character.Title=Nieuwe personages voor het maken van personages	#
 
 patchNotes.loading=Patch-notities laden	#
 patchNotes.continue=Doorgaan	#
@@ -9477,6 +9480,7 @@ trade.expMax=Ervaring: MAX	#
 trade.levelPrefix=Niveau %d	#
 trade.levelPrefixAndName=Niveau %d - %s	#
 trade.levelPrefixAndName.max=Max. niveau - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Beginner	#
 trade.level.2=Leerling	#
 trade.level.3=Gezel	#

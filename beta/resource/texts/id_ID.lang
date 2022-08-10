@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Hapus	#
 options.dev_game_tip=Tips Pola Permainan	#
 options.dev_ad_show_debug_panel=Tampilkan Tanda EDU di Panel Debug	#
 options.dev_ad_token_refresh_threshold=Detik Ambang Batas Penyegaran Token Masuk EDU	#
+options.dev_side_by_side_comparison_rate=Tingkat Perbandingan Berdampingan	#
 options.dev_playfab_token_refresh_threshold=Menit Ambang Batas Penyegaran Token Playfab	#
 options.dev_assertions_debug_break=Penegasan berhenti di debugger	#
 options.dev_assertions_show_dialog=Penegasan menampilkan dialog modal	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Mode Editor menambahkan berbagai
 options.editor.modeActive=Minecraft saat ini dalam Mode Editor.	#
 options.editor.modeNotActive=Minecraft saat ini tidak dalam Mode Editor.	#
 options.editor.achievementsDisabled=Prestasi tidak dapat diperoleh di proyek ini.	#
+
+options.dcast_character.Title=Karakter Baru untuk Kreasi Karakter	#
 
 patchNotes.loading=Memuat Catatan Patch	#
 patchNotes.continue=Lanjutkan	#
@@ -9477,6 +9480,7 @@ trade.expMax=Pengalaman: MAX	#
 trade.levelPrefix=Level %d	#
 trade.levelPrefixAndName=Level %d - %s	#
 trade.levelPrefixAndName.max=Level Maks - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Pemula	#
 trade.level.2=Murid	#
 trade.level.3=Pekerja Harian	#

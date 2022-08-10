@@ -708,10 +708,36 @@
     "$button_text": "#cancel_button_text",
     "$button_text_binding_type": "global",
     "size": [ 66, 26 ],
-    "offset": [ 0, 55 ],
+    "offset": [ 0, 0 ],
     "bindings": [
       {
         "binding_name": "#cancel_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "retry_button@common_buttons.light_text_button": {
+    "$pressed_button_name": "button.menu_retry",
+    "$button_text": "gui.retry",
+    "size": [ 66, 26 ],
+    "offset": [ 50, 0 ],
+    "bindings": [
+      {
+        "binding_name": "#retry_and_abort_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "abort_button@common_buttons.light_text_button": {
+    "$pressed_button_name": "button.menu_exit",
+    "$button_text": "gui.cancel",
+    "size": [ 66, 26 ],
+    "offset": [ -50, 0 ],
+    "bindings": [
+      {
+        "binding_name": "#retry_and_abort_visible",
         "binding_name_override": "#visible"
       }
     ]
@@ -724,8 +750,7 @@
     "anchor_to": "center",
     "controls": [
       {
-        "progress_title_text@progress.progress_title_text": {
-        }
+        "progress_title_text@progress.progress_title_text": {}
       },
       {
         "progress_bar_text@progress.progress_bar_text": {}
@@ -744,7 +769,9 @@
     "layer": 2,
     "controls": [
       {
-        "cancel_button@progress.cancel_button": {}
+        "cancel_button@progress.cancel_button": {
+          "offset": [ 0, 55 ]
+        }
       }
     ]
   },
@@ -752,10 +779,21 @@
   "modal_button_panel@button_panel": {
     "controls": [
       {
-        "cancel_button@progress.cancel_button": {
-          // reset offset
-          "offset": [ 0, 0 ]
-        }
+        "cancel_button@progress.cancel_button": {}
+      }
+    ]
+  },
+
+  "modal_button_panel_with_retry@modal_button_panel": {
+    "controls": [
+      {
+        "abort_button@progress.abort_button": {}
+      },
+      {
+        "cancel_button@progress.cancel_button": {}
+      },
+      {
+        "retry_button@progress.retry_button": {}
       }
     ]
   },
@@ -1044,24 +1082,7 @@
     ],
     "controls": [
       {
-        "modal_progress_panel_with_cancel@progress.modal_progress_panel_with_cancel": {
-          "bindings": [
-            {
-              "binding_name": "#cancel_visible",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
-      },
-      {
-        "modal_progress_panel_no_cancel@progress.modal_progress_panel_no_cancel": {
-          "bindings": [
-            {
-              "binding_name": "#cancel_not_visible",
-              "binding_name_override": "#visible"
-            }
-          ]
-        }
+        "modal_progress_panel@progress.modal_progress_panel_no_cancel": {}
       }
     ]
   },
@@ -1149,16 +1170,10 @@
               }
             },
             {
-              "modal_button_panel@progress.modal_button_panel": {
+              "modal_button_panel@$modal_button_panel_type": {
                 "anchor_from": "bottom_middle",
                 "anchor_to": "bottom_middle",
-                "size": [ "100%", "100%c" ],
-                "bindings": [
-                  {
-                    "binding_name": "#cancel_visible",
-                    "binding_name_override": "#visible"
-                  }
-                ]
+                "size": [ "100%", "100%c" ]
               }
             },
             {
@@ -1186,7 +1201,9 @@
         }
       },
       {
-        "world_modal_progress_panel@progress.world_modal_progress_panel": {}
+        "world_modal_progress_panel@progress.world_modal_progress_panel": {
+          "$modal_button_panel_type": "progress.modal_button_panel"
+        }
       },
       { "popup_dialog_factory@progress.popup_dialog_factory": {} }
     ]
@@ -1201,7 +1218,9 @@
         }
       },
       {
-        "world_modal_progress_panel@progress.world_modal_progress_panel": {}
+        "world_modal_progress_panel@progress.world_modal_progress_panel": {
+          "$modal_button_panel_type": "progress.modal_button_panel_with_retry"
+        }
       },
       {
         "save_icon@progress.auto_save": {}

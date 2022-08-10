@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Sil	#
 options.dev_game_tip=Oyun İpuçları	#
 options.dev_ad_show_debug_panel=Hata Ayıklama Panelinde EDU İşaretini Göster	#
 options.dev_ad_token_refresh_threshold=EDU Oturum Açma Belirteci Yenileme Eşiği Saniye Sayısı	#
+options.dev_side_by_side_comparison_rate=Yan Yana Karşılaştırma Oranı	#
 options.dev_playfab_token_refresh_threshold=Playfab Jeton Yenileme Eşiği Dakika Sayısı	#
 options.dev_assertions_debug_break=Hata ayıklayıcısında onay belgesi sorunu	#
 options.dev_assertions_show_dialog=Onay Belgeleri kalıcı iletişim kutusu gösterir	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Düzenleyici Modu, dünyaları d
 options.editor.modeActive=Minecraft şu anda Düzenleyici Modunda.	#
 options.editor.modeNotActive=Minecraft şu anda Düzenleyici Modunda değil.	#
 options.editor.achievementsDisabled=Bu projede başarı kazanılamaz.	#
+
+options.dcast_character.Title=Karakter Oluşturma için Yeni Karakterler	#
 
 patchNotes.loading=Yama Notları Yükleniyor	#
 patchNotes.continue=Devam Et	#
@@ -9477,6 +9480,7 @@ trade.expMax=Tecrübe: MAKS	#
 trade.levelPrefix=Seviye %d	#
 trade.levelPrefixAndName=Seviye %d - %s	#
 trade.levelPrefixAndName.max=En Yüksek Seviye - %s	#
+trade.nameAndLevel=%s : %s	#
 trade.level.1=Acemi	#
 trade.level.2=Çırak	#
 trade.level.3=Kalfa	#

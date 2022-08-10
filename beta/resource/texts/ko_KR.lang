@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=삭제	#
 options.dev_game_tip=게임 플레이 팁	#
 options.dev_ad_show_debug_panel=EDU 로그인 디버그 패널 표시	#
 options.dev_ad_token_refresh_threshold=EDU 로그인 토큰 새로 고침 임계값 초	#
+options.dev_side_by_side_comparison_rate=일대일 비율	#
 options.dev_playfab_token_refresh_threshold=Playfab 토큰 새로 고침 임계값(분)	#
 options.dev_assertions_debug_break=어서션이 디버거에 침입	#
 options.dev_assertions_show_dialog=어서션이 모달 대화 상자 표시	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=편집기 모드는 월드를 �
 options.editor.modeActive=Minecraft가 현재 편집기 모드에서 열렸습니다.	#
 options.editor.modeNotActive=Minecraft가 현재 편집기 모드에서 열리지 않았습니다.	#
 options.editor.achievementsDisabled=이 프로젝트에서는 도전 과제를 얻을 수 없습니다.	#
+
+options.dcast_character.Title=캐릭터 생성에 새로운 캐릭터	#
 
 patchNotes.loading=패치 노트 로드	#
 patchNotes.continue=계속하기	#
@@ -9477,6 +9480,7 @@ trade.expMax=경험치: 최대	#
 trade.levelPrefix=레벨 %d	#
 trade.levelPrefixAndName=레벨 %d - %s	#
 trade.levelPrefixAndName.max=최대 레벨 - %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=초보자	#
 trade.level.2=수습	#
 trade.level.3=장인	#

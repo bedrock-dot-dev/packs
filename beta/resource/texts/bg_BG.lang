@@ -5699,6 +5699,7 @@ options.delete_account.confirm.button=Изтриване	#
 options.dev_game_tip=Съвети за игра	#
 options.dev_ad_show_debug_panel=Показване на знак EDU в панела за отстраняване на грешки	#
 options.dev_ad_token_refresh_threshold=Секунди за праг на обновяване на маркер за влизане на EDU	#
+options.dev_side_by_side_comparison_rate=Степен на сравнение от двете страни	#
 options.dev_playfab_token_refresh_threshold=Минути за праг на обновяване на маркер на Playfab	#
 options.dev_assertions_debug_break=Твърденията се „чупят“ в дебъгера	#
 options.dev_assertions_show_dialog=Твърденията се показват в модален диалогов прозорец	#
@@ -6296,6 +6297,8 @@ options.editor.modeDescription.messageWithMouse=Режимът на редакц
 options.editor.modeActive=В момента Minecraft е в режим на редакция.	#
 options.editor.modeNotActive=В момента Minecraft не е в режим на редакция.	#
 options.editor.achievementsDisabled=В този проект не могат да се печелят постижения.	#
+
+options.dcast_character.Title=Нови персонажи за създаване на персонажи	#
 
 patchNotes.loading=Зареждане на бележките за корекцията	#
 patchNotes.continue=Напред	#
@@ -9477,6 +9480,7 @@ trade.expMax=Точки опит: МАКСИМУМ	#
 trade.levelPrefix=Ниво %d	#
 trade.levelPrefixAndName=Ниво %d - %s	#
 trade.levelPrefixAndName.max=Максимално ниво – %s	#
+trade.nameAndLevel=%s - %s	#
 trade.level.1=Новак	#
 trade.level.2=Чирак	#
 trade.level.3=Калфа	#
