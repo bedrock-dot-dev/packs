@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Voulez-vous vraiment supprimer ce ser
 addExternalServerScreen.addTitle=Ajouter un serveur externe	#
 addExternalServerScreen.editTitle=Modifier un serveur externe	#
 
-feature.endcity=Ville de l'Ender	#
+feature.end_city=Ville de l'Ender	#
 feature.fortress=Forteresse du Nether	#
 feature.mansion=Manoir des bois	#
 feature.mineshaft=Conduit de mine	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Fort	#
 feature.temple=Temple	#
 feature.village=Village	#
 feature.shipwreck=Épave	#
-feature.buriedtreasure=Trésor enfoui	#
+feature.buried_treasure=Trésor enfoui	#
 feature.ruins=Ruines aquatiques	#
-feature.pillageroutpost=Avant-poste de pillards	#
-feature.bastionremnant=Vestiges de bastion	#
-feature.ruinedportal=Portail en ruines	#
+feature.pillager_outpost=Avant-poste de pillards	#
+feature.bastion_remnant=Vestiges de bastion	#
+feature.ruined_portal=Portail en ruines	#
 
 feed.like=J'aime	#
 feed.manage_feed=Gérer le flux	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Élaboration d'une sauvegarde...	#
 menu.saving=Sauvegarde...	#
 menu.editorMode=Mode éditeur	#
 menu.editor.play=Reprendre	#
+menu.cast_select_title=Choisissez votre personnage de départ	#
 
 merchant.deprecated=Échangez autre chose pour débloquer !	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Appuyez sur sauter pour sortir du bateau	#
 action.hint.exit.console.chest_boat=Appuyez sur :_input_key.jump: pour sortir du bateau	#
 entity.chest_boat.name=Bateau avec coffre	#
-feature.ancientcity=Ville antique	#
+feature.ancient_city=Ville antique	#
 
 storageManager.mainSizeLabel=%s - 1 objet	#
 storageManager.mainSizeLabelPlural=%s - %s objets	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Terre cuite gris clair	#
 tile.stained_hardened_clay.white.name=Terre cuite blanche	#
 tile.stained_hardened_clay.yellow.name=Terre cuite jaune	#
 tile.structure_block.name=Bloc de structure	#
+structure_block.waterlog_block=Blocs d’engorgement	#
 tile.structure_void.name=Vide de structure	#
 tile.wool.black.name=Laine noire	#
 tile.wool.blue.name=Laine bleue	#

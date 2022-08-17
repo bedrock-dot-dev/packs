@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Er du sikker på at du vil fjerne den
 addExternalServerScreen.addTitle=Legg til ekstern server	#
 addExternalServerScreen.editTitle=Rediger ekstern server	#
 
-feature.endcity=Sluttby	#
+feature.end_city=Sluttby	#
 feature.fortress=Underverdenfestning	#
 feature.mansion=Herskapshus i skogen	#
 feature.mineshaft=Gruvegang	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Festning	#
 feature.temple=Tempel	#
 feature.village=Landsby	#
 feature.shipwreck=Skipsvrak	#
-feature.buriedtreasure=Nedgravd skatt	#
+feature.buried_treasure=Nedgravd skatt	#
 feature.ruins=Ruinene i dypet	#
-feature.pillageroutpost=Plyndrerutpost	#
-feature.bastionremnant=Bastionsruin	#
-feature.ruinedportal=Ødelagt portal	#
+feature.pillager_outpost=Plyndrerutpost	#
+feature.bastion_remnant=Bastionsruin	#
+feature.ruined_portal=Ødelagt portal	#
 
 feed.like=Liker	#
 feed.manage_feed=Administrer tidslinje	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Tar sikkerhetskopi …	#
 menu.saving=Lagrer …	#
 menu.editorMode=Redigeringsmodus	#
 menu.editor.play=Fortsett	#
+menu.cast_select_title=Velg startkarakteren din	#
 
 merchant.deprecated=Kjøp/selg noe annet for å låse opp!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Trykk på hopp for å gå ut av båten	#
 action.hint.exit.console.chest_boat=Trykk på :_input_key.jump: for å gå ut av båten	#
 entity.chest_boat.name=Båt med kiste	#
-feature.ancientcity=Eldgammel by	#
+feature.ancient_city=Eldgammel by	#
 
 storageManager.mainSizeLabel=%s – ett element	#
 storageManager.mainSizeLabelPlural=%s – %s elementer	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Lysegrå terrakotta	#
 tile.stained_hardened_clay.white.name=Hvit terrakotta	#
 tile.stained_hardened_clay.yellow.name=Gul terrakotta	#
 tile.structure_block.name=Byggverksblokk	#
+structure_block.waterlog_block=Fyll blokker med vann	#
 tile.structure_void.name=Tomrom	#
 tile.wool.black.name=Svart ull	#
 tile.wool.blue.name=Blå ull	#

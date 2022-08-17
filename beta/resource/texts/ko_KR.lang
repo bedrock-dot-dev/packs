@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=이 서버를 제거하시겠습니�
 addExternalServerScreen.addTitle=외부 서버 추가	#
 addExternalServerScreen.editTitle=외부 서버 편집	#
 
-feature.endcity=엔더 도시	#
+feature.end_city=엔더 도시	#
 feature.fortress=네더 요새	#
 feature.mansion=삼림 대저택	#
 feature.mineshaft=폐광	#
@@ -2797,11 +2797,11 @@ feature.stronghold=성채	#
 feature.temple=사원	#
 feature.village=마을	#
 feature.shipwreck=난파선	#
-feature.buriedtreasure=숨겨진 보물	#
+feature.buried_treasure=묻혀 있는 보물	#
 feature.ruins=바다 폐허	#
-feature.pillageroutpost=약탈자 전초 기지	#
-feature.bastionremnant=요새 잔해	#
-feature.ruinedportal=폐허가 된 포털	#
+feature.pillager_outpost=약탈자 전초 기지	#
+feature.bastion_remnant=요새 잔해	#
+feature.ruined_portal=폐허가 된 포탈	#
 
 feed.like=좋아요	#
 feed.manage_feed=피드 관리	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=백업 만드는 중...	#
 menu.saving=저장 중...	#
 menu.editorMode=편집기 모드	#
 menu.editor.play=계속하기	#
+menu.cast_select_title=시작 캐릭터 선택	#
 
 merchant.deprecated=잠금을 해제하려면 다른 물건을 거래하세요!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=점프를 탭하여 보트에서 나오기	#
 action.hint.exit.console.chest_boat=보트에서 나오려면 :_input_key.jump: 키를 누르세요.	#
 entity.chest_boat.name=상자가 실린 보트	#
-feature.ancientcity=고대 도시	#
+feature.ancient_city=고대 도시	#
 
 storageManager.mainSizeLabel=%s - 아이템 1개	#
 storageManager.mainSizeLabelPlural=%s - 아이템 %s개	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=밝은 회색 테라코타	#
 tile.stained_hardened_clay.white.name=흰색 테라코타	#
 tile.stained_hardened_clay.yellow.name=노란색 테라코타	#
 tile.structure_block.name=구조물 블록	#
+structure_block.waterlog_block=워터로그 블록	#
 tile.structure_void.name=구조물 공허 공간	#
 tile.wool.black.name=검은색 양털	#
 tile.wool.blue.name=파란색 양털	#

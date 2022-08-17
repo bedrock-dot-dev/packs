@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Наистина ли искате д
 addExternalServerScreen.addTitle=Добавяне на външен сървър	#
 addExternalServerScreen.editTitle=Редактиране на външен сървър	#
 
-feature.endcity=Град в Края	#
+feature.end_city=Град в Края	#
 feature.fortress=Пъклена крепост	#
 feature.mansion=Горско имение	#
 feature.mineshaft=Миньорска шахта	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Укрепление	#
 feature.temple=Храм	#
 feature.village=Село	#
 feature.shipwreck=Корабокрушение	#
-feature.buriedtreasure=Заровено съкровище	#
+feature.buried_treasure=Заровено съкровище	#
 feature.ruins=Океански руини	#
-feature.pillageroutpost=База на грабители	#
-feature.bastionremnant=Останките на бастиона	#
-feature.ruinedportal=Разрушен портал	#
+feature.pillager_outpost=База на грабители	#
+feature.bastion_remnant=Останките на бастиона	#
+feature.ruined_portal=Разрушен портал	#
 
 feed.like=Харесване	#
 feed.manage_feed=Управляване на информационен канал	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Създаване на архивно копие...	#
 menu.saving=Записване...	#
 menu.editorMode=Режим на редакция	#
 menu.editor.play=Възобновяване	#
+menu.cast_select_title=Изберете началния си персонаж	#
 
 merchant.deprecated=Обменете нещо друго, за да отключите!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Докоснете „скок“, за да слезете от лодката	#
 action.hint.exit.console.chest_boat=Натиснете :_input_key.jump:, за да слезете от лодката	#
 entity.chest_boat.name=Лодка със сандък	#
-feature.ancientcity=Древен град	#
+feature.ancient_city=Древен град	#
 
 storageManager.mainSizeLabel=%s – 1 елемент	#
 storageManager.mainSizeLabelPlural=%s – %s елемента	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Светлосива глина	#
 tile.stained_hardened_clay.white.name=Бяла глина	#
 tile.stained_hardened_clay.yellow.name=Жълта глина	#
 tile.structure_block.name=Структурен блок	#
+structure_block.waterlog_block=Заблатени блокове	#
 tile.structure_void.name=Структурна празнина	#
 tile.wool.black.name=Черна вълна	#
 tile.wool.blue.name=Синя вълна	#

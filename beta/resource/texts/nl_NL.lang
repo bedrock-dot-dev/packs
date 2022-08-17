@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Weet je zeker dat je deze server wilt
 addExternalServerScreen.addTitle=Externe server toevoegen	#
 addExternalServerScreen.editTitle=Externe server bewerken	#
 
-feature.endcity=End-stad	#
+feature.end_city=End-stad	#
 feature.fortress=Nether-fort	#
 feature.mansion=Woodland-landhuis	#
 feature.mineshaft=Mijnschacht	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Vesting	#
 feature.temple=Tempel	#
 feature.village=Dorp	#
 feature.shipwreck=Schipbreuk	#
-feature.buriedtreasure=Begraven schat	#
+feature.buried_treasure=Begraven schat	#
 feature.ruins=Oceaanruïne	#
-feature.pillageroutpost=Plunderaarsvoorpost	#
-feature.bastionremnant=Bastionruïne	#
-feature.ruinedportal=Verwoest portaal	#
+feature.pillager_outpost=Plunderaarsvoorpost	#
+feature.bastion_remnant=Bastionruïne	#
+feature.ruined_portal=Verwoest portaal	#
 
 feed.like=Leuk vinden	#
 feed.manage_feed=Feed beheren	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Back-up maken...	#
 menu.saving=Opslaan...	#
 menu.editorMode=Editormodus	#
 menu.editor.play=Hervatten	#
+menu.cast_select_title=Kies je startpersonage	#
 
 merchant.deprecated=Verhandel iets anders om te ontgrendelen!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Tik op Springen om de boot te verlaten	#
 action.hint.exit.console.chest_boat=Tik op :_input_key.jump: om de boot te verlaten	#
 entity.chest_boat.name=Boot met kist	#
-feature.ancientcity=Eeuwenoude stad	#
+feature.ancient_city=Eeuwenoude stad	#
 
 storageManager.mainSizeLabel=%s - 1 item	#
 storageManager.mainSizeLabelPlural=%s - %s items	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Lichtgrijze terracotta	#
 tile.stained_hardened_clay.white.name=Witte terracotta	#
 tile.stained_hardened_clay.yellow.name=Gele terracotta	#
 tile.structure_block.name=Constructieblok	#
+structure_block.waterlog_block=Wateroverlastblokken	#
 tile.structure_void.name=Constructieleegte	#
 tile.wool.black.name=Zwarte wol	#
 tile.wool.blue.name=Blauwe wol	#

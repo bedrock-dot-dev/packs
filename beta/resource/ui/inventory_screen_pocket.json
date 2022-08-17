@@ -840,14 +840,14 @@
       },
       {
         "crafting_arrow_down@crafting_pocket.crafting_arrow_down": {
-          "offset": [ 0, "57%" ]
+          "offset": [ 0, "65%-4px" ]
         }
       },
       {
         "output@crafting_pocket.output_grid_and_label": {
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
-          "offset": [ 0, -18 ]
+          "offset": [ 0, -7 ]
         }
       }
     ]

@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Er du sikker på, at du vil fjerne se
 addExternalServerScreen.addTitle=Tilføj ekstern server	#
 addExternalServerScreen.editTitle=Rediger ekstern server	#
 
-feature.endcity=End-by	#
+feature.end_city=End-by	#
 feature.fortress=Nether-fæstning	#
 feature.mansion=Skovpalæ	#
 feature.mineshaft=Mineskakt	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Højborg	#
 feature.temple=Tempel	#
 feature.village=Landsby	#
 feature.shipwreck=Skibsvrag	#
-feature.buriedtreasure=Begravet skat	#
+feature.buried_treasure=Begravet skat	#
 feature.ruins=Havruiner	#
-feature.pillageroutpost=Røverfort	#
-feature.bastionremnant=Bastionsruin	#
-feature.ruinedportal=Ødelagt portal	#
+feature.pillager_outpost=Røverfort	#
+feature.bastion_remnant=Bastionsruin	#
+feature.ruined_portal=Ødelagt portal	#
 
 feed.like=Like	#
 feed.manage_feed=Administrer feed	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Sikkerhedskopierer ...	#
 menu.saving=Gemmer ...	#
 menu.editorMode=Redigeringstilstand	#
 menu.editor.play=Genoptag	#
+menu.cast_select_title=Choose your starting Character	#
 
 merchant.deprecated=Foretag en anden handel for at låse op!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Tryk på hop for at gå fra borde	#
 action.hint.exit.console.chest_boat=Tryk på :_input_key.jump: for at gå fra borde	#
 entity.chest_boat.name=Båd med kiste	#
-feature.ancientcity=Oldtidsby	#
+feature.ancient_city=Oldtidsby	#
 
 storageManager.mainSizeLabel=%s - 1 element	#
 storageManager.mainSizeLabelPlural=%s - %s elementer	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Lysegrå terrakotta	#
 tile.stained_hardened_clay.white.name=Hvid terrakotta	#
 tile.stained_hardened_clay.yellow.name=Gul terrakotta	#
 tile.structure_block.name=Strukturblok	#
+structure_block.waterlog_block=Waterlog Blocks	#
 tile.structure_void.name=Strukturtomrum	#
 tile.wool.black.name=Sort uld	#
 tile.wool.blue.name=Blå uld	#

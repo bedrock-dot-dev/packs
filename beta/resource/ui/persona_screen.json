@@ -7009,8 +7009,7 @@
             "switch_character_skin_screens": "@persona.popup_dialog__switch_persona_and_classic_skin",
             "custom_skin_info": "@persona.popup_dialog__custom_skin_info",
             "realms_plus_extra_info": "@persona.popup_dialog__realms_plus_extra_info",
-            "emote_equip_slot_editor": "@persona.popup_dialog__emote_equip_slot_editor",
-            "cast_character_select_popup": "@persona_cast_character_screen.popup_dialog__cast_character_select"
+            "emote_equip_slot_editor": "@persona.popup_dialog__emote_equip_slot_editor"
           }
         }
       }

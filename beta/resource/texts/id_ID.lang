@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Kamu yakin ingin menghapus server ini
 addExternalServerScreen.addTitle=Tambahkan Server Eksternal	#
 addExternalServerScreen.editTitle=Edit Server Eksternal	#
 
-feature.endcity=Kota End	#
+feature.end_city=Kota End	#
 feature.fortress=Benteng Nether	#
 feature.mansion=Rumah Hutan	#
 feature.mineshaft=Lubang Tambang	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Benteng	#
 feature.temple=Kuil	#
 feature.village=Desa	#
 feature.shipwreck=Bangkai Kapal	#
-feature.buriedtreasure=Harta Karun Terpendam	#
+feature.buried_treasure=Harta Karun Terpendam	#
 feature.ruins=Reruntuhan Laut	#
-feature.pillageroutpost=Pos Depan Penjarah	#
-feature.bastionremnant=Puing Bastion	#
-feature.ruinedportal=Portal Hancur	#
+feature.pillager_outpost=Pos Penjarah	#
+feature.bastion_remnant=Puing Bastion	#
+feature.ruined_portal=Portal Hancur	#
 
 feed.like=Suka	#
 feed.manage_feed=Kelola umpan	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Membuat cadangan...	#
 menu.saving=Menyimpan...	#
 menu.editorMode=Mode Editor	#
 menu.editor.play=Lanjutkan	#
+menu.cast_select_title=Pilih Karakter awalmu	#
 
 merchant.deprecated=Tukarkan sesuatu yang lain untuk membuka!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Ketuk lompat untuk keluar dari perahu	#
 action.hint.exit.console.chest_boat=Tekan :_input_key.jump: untuk keluar dari perahu	#
 entity.chest_boat.name=Perahu dengan Peti	#
-feature.ancientcity=Kota Kuno	#
+feature.ancient_city=Kota Kuno	#
 
 storageManager.mainSizeLabel=%s - 1 Item	#
 storageManager.mainSizeLabelPlural=%s - %s Item	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Terakota Abu-Abu Muda	#
 tile.stained_hardened_clay.white.name=Terakota Putih	#
 tile.stained_hardened_clay.yellow.name=Terakota Kuning	#
 tile.structure_block.name=Blok Struktur	#
+structure_block.waterlog_block=Blok Terendam	#
 tile.structure_void.name=Kekosongan Struktur	#
 tile.wool.black.name=Wol Hitam	#
 tile.wool.blue.name=Wol Biru	#

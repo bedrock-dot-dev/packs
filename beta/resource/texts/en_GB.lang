@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Are you sure you want to remove this 
 addExternalServerScreen.addTitle=Add External Server	#
 addExternalServerScreen.editTitle=Edit External Server	#
 
-feature.endcity=End City	#
+feature.end_city=End City	#
 feature.fortress=Nether Fortress	#
 feature.mansion=Woodland Mansion	#
 feature.mineshaft=Mineshaft	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Stronghold	#
 feature.temple=Temple	#
 feature.village=Village	#
 feature.shipwreck=Shipwreck	#
-feature.buriedtreasure=Buried Treasure	#
+feature.buried_treasure=Buried Treasure	#
 feature.ruins=Ocean Ruins	#
-feature.pillageroutpost=Pillager Outpost	#
-feature.bastionremnant=Bastion Remnant	#
-feature.ruinedportal=Ruined Portal	#
+feature.pillager_outpost=Pillager Outpost	#
+feature.bastion_remnant=Bastion Remnant	#
+feature.ruined_portal=Ruined Portal	#
 
 feed.like=Like	#
 feed.manage_feed=Manage feed	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Making backup...	#
 menu.saving=Saving...	#
 menu.editorMode=Editor Mode	#
 menu.editor.play=Resume	#
+menu.cast_select_title=Choose your starting character	#
 
 merchant.deprecated=Trade something else to unlock!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Tap jump to exit the boat	#
 action.hint.exit.console.chest_boat=Press :_input_key.jump: to exit the boat	#
 entity.chest_boat.name=Boat with Chest	#
-feature.ancientcity=Ancient City	#
+feature.ancient_city=Ancient City	#
 
 storageManager.mainSizeLabel=%s - 1 Item	#
 storageManager.mainSizeLabelPlural=%s - %s Items	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Light Grey Terracotta	#
 tile.stained_hardened_clay.white.name=White Terracotta	#
 tile.stained_hardened_clay.yellow.name=Yellow Terracotta	#
 tile.structure_block.name=Structure Block	#
+structure_block.waterlog_block=Waterlog Blocks	#
 tile.structure_void.name=Structure Void	#
 tile.wool.black.name=Black Wool	#
 tile.wool.blue.name=Blue Wool	#

@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Oletko varma, että haluat poistaa t�
 addExternalServerScreen.addTitle=Lisää ulkoinen palvelin	#
 addExternalServerScreen.editTitle=Muokkaa ulkoista palvelinta	#
 
-feature.endcity=Äärikaupunki	#
+feature.end_city=Äärikaupunki	#
 feature.fortress=Hornalinnoitus	#
 feature.mansion=Metsämaan kartano	#
 feature.mineshaft=Kaivoskuilu	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Linnoitus	#
 feature.temple=Temppeli	#
 feature.village=Kylä	#
 feature.shipwreck=Hylky	#
-feature.buriedtreasure=Haudattu aarre	#
+feature.buried_treasure=Haudattu aarre	#
 feature.ruins=Meriraunio	#
-feature.pillageroutpost=Ryöstelijätukikohta	#
-feature.bastionremnant=Bastionin jäännös	#
-feature.ruinedportal=Raunioportaali	#
+feature.pillager_outpost=Ryöstelijätukikohta	#
+feature.bastion_remnant=Bastionin jäännös	#
+feature.ruined_portal=Raunioportaali	#
 
 feed.like=Tykkää	#
 feed.manage_feed=Hallitse syötettä	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Luodaan varmuuskopiota...	#
 menu.saving=Tallennetaan…	#
 menu.editorMode=Editoritila	#
 menu.editor.play=Jatka	#
+menu.cast_select_title=Valitse aloitushahmosi	#
 
 merchant.deprecated=Avaa vaihtamalla jotakin muuta!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Nouse veneestä napauttamalla hyppyä	#
 action.hint.exit.console.chest_boat=Nouse veneestä painamalla :_input_key.jump:	#
 entity.chest_boat.name=Arkullinen vene	#
-feature.ancientcity=Muinainen kaupunki	#
+feature.ancient_city=Muinainen kaupunki	#
 
 storageManager.mainSizeLabel=%s - 1 kappale	#
 storageManager.mainSizeLabelPlural=%s - %s kappaletta	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Vaaleanharmaa terrakotta	#
 tile.stained_hardened_clay.white.name=Valkoinen terrakotta	#
 tile.stained_hardened_clay.yellow.name=Keltainen terrakotta	#
 tile.structure_block.name=Rakennekuutio	#
+structure_block.waterlog_block=Vetiset kuutiot	#
 tile.structure_void.name=Rakennetyhjiö	#
 tile.wool.black.name=Mustaa villaa	#
 tile.wool.blue.name=Sinistä villaa	#

@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Na pewno chcesz usunąć ten serwer? 
 addExternalServerScreen.addTitle=Dodaj serwer zewnętrzny	#
 addExternalServerScreen.editTitle=Edytuj serwer zewnętrzny	#
 
-feature.endcity=Miasto Kresu	#
+feature.end_city=Miasto Kresu	#
 feature.fortress=Forteca Netheru	#
 feature.mansion=Leśny dwór	#
 feature.mineshaft=Kopalnia	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Twierdza	#
 feature.temple=Świątynia	#
 feature.village=Wioska	#
 feature.shipwreck=Wrak statku	#
-feature.buriedtreasure=Zakopany skarb	#
+feature.buried_treasure=Ukryty skarb	#
 feature.ruins=Ruiny w oceanie	#
-feature.pillageroutpost=Posterunek grabieżcy	#
-feature.bastionremnant=Ruiny bastionu	#
-feature.ruinedportal=Ruiny portalu	#
+feature.pillager_outpost=Posterunek grabieżców	#
+feature.bastion_remnant=Ruiny bastionu	#
+feature.ruined_portal=Ruiny portalu	#
 
 feed.like=Polub	#
 feed.manage_feed=Zarządzaj aktualnościami	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Tworzenie kopii zapasowej...	#
 menu.saving=Zapisywanie...	#
 menu.editorMode=Tryb edytora	#
 menu.editor.play=Wznów	#
+menu.cast_select_title=Wybierz swoją postać startową	#
 
 merchant.deprecated=Sprzedaj coś innego, żeby odblokować!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Stuknij skok, żeby wyjść z łódki	#
 action.hint.exit.console.chest_boat=Naciśnij :_input_key.jump:, aby wyjść z łódki	#
 entity.chest_boat.name=Łódka ze skrzynią	#
-feature.ancientcity=Starożytne miasto	#
+feature.ancient_city=Starożytne miasto	#
 
 storageManager.mainSizeLabel=%s – 1 przedmiot	#
 storageManager.mainSizeLabelPlural=%s – przedmioty (%s)	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Jasnoszara terakota	#
 tile.stained_hardened_clay.white.name=Biała terakota	#
 tile.stained_hardened_clay.yellow.name=Żółta terakota	#
 tile.structure_block.name=Blok budowli	#
+structure_block.waterlog_block=Bloki zalane wodą	#
 tile.structure_void.name=Pustka obiektu	#
 tile.wool.black.name=Czarna wełna	#
 tile.wool.blue.name=Niebieska wełna	#

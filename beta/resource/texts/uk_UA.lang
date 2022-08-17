@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Ви справді хочете ви
 addExternalServerScreen.addTitle=Додавання зовнішнього сервера	#
 addExternalServerScreen.editTitle=Змінення зовнішнього сервера	#
 
-feature.endcity=Місто Енду	#
+feature.end_city=Місто Енду	#
 feature.fortress=Незерська фортеця	#
 feature.mansion=Лісовий маєток	#
 feature.mineshaft=Шахта	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Твердиня	#
 feature.temple=Храм	#
 feature.village=Село	#
 feature.shipwreck=Затонулий корабель	#
-feature.buriedtreasure=Закопаний скарб	#
+feature.buried_treasure=Закопаний скарб	#
 feature.ruins=Підводні руїни	#
-feature.pillageroutpost=Застава мародерів	#
-feature.bastionremnant=Руїни бастіону	#
-feature.ruinedportal=Зруйнований портал	#
+feature.pillager_outpost=Застава мародерів	#
+feature.bastion_remnant=Руїни бастіону	#
+feature.ruined_portal=Зруйнований портал	#
 
 feed.like=Подобається	#
 feed.manage_feed=Керувати стрічкою	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Резервне копіювання…	#
 menu.saving=Збереження…	#
 menu.editorMode=Режим редактора	#
 menu.editor.play=Відновити	#
+menu.cast_select_title=Виберіть початкового персонажа	#
 
 merchant.deprecated=Обміняйте щось інше, щоб розблокувати!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Самуель Оберг - 5	#
 action.hint.exit.chest_boat=Торкніться кнопки "Стрибнути", щоб зійти з човна	#
 action.hint.exit.console.chest_boat=Натисніть :_input_key.jump:, щоб зійти з човна	#
 entity.chest_boat.name=Човен зі скринею	#
-feature.ancientcity=Стародавнє місто	#
+feature.ancient_city=Стародавнє місто	#
 
 storageManager.mainSizeLabel=%s – 1 елем.	#
 storageManager.mainSizeLabelPlural=%s – %s елем.	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Світло-сіра кераміка	#
 tile.stained_hardened_clay.white.name=Біла кераміка	#
 tile.stained_hardened_clay.yellow.name=Жовта кераміка	#
 tile.structure_block.name=Структурний блок	#
+structure_block.waterlog_block=Затоплені блоки	#
 tile.structure_void.name=Структурна пустота	#
 tile.wool.black.name=Чорна вовна	#
 tile.wool.blue.name=Синя вовна	#

@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Opravdu chcete odebrat tento server?	
 addExternalServerScreen.addTitle=Přidat externí server	#
 addExternalServerScreen.editTitle=Upravit externí server	#
 
-feature.endcity=Endové město	#
+feature.end_city=Endové město	#
 feature.fortress=Pevnost v Netheru	#
 feature.mansion=Lesní sídlo	#
 feature.mineshaft=Důlní šachta	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Pevnost	#
 feature.temple=Chrám	#
 feature.village=Vesnice	#
 feature.shipwreck=Vrak lodi	#
-feature.buriedtreasure=Zakopaný poklad	#
+feature.buried_treasure=Zakopaný poklad	#
 feature.ruins=Ruiny v oceánu	#
-feature.pillageroutpost=Pevnost plenitelů	#
-feature.bastionremnant=Pozůstatek citadely	#
-feature.ruinedportal=Zničený portál	#
+feature.pillager_outpost=Pevnost plenitelů	#
+feature.bastion_remnant=Pozůstatek citadely	#
+feature.ruined_portal=Zničený portál	#
 
 feed.like=Líbí se	#
 feed.manage_feed=Spravovat informační kanál	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Vytváření zálohy...	#
 menu.saving=Ukládání...	#
 menu.editorMode=Režim editoru	#
 menu.editor.play=Pokračovat	#
+menu.cast_select_title=Vyberte si svou počáteční postavu	#
 
 merchant.deprecated=K odemčení vyměňte něco jiného!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Klepnutím na skok z člunu vystoupíte	#
 action.hint.exit.console.chest_boat=Stiskněte :_input_key.jump: pro vystoupení z člunu	#
 entity.chest_boat.name=Člun s truhlou	#
-feature.ancientcity=Starobylé město	#
+feature.ancient_city=Starobylé město	#
 
 storageManager.mainSizeLabel=%s – 1 položka	#
 storageManager.mainSizeLabelPlural=%s – položek: %s	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Světle šedá terakota	#
 tile.stained_hardened_clay.white.name=Bílá terakota	#
 tile.stained_hardened_clay.yellow.name=Žlutá terakota	#
 tile.structure_block.name=Blok budovy	#
+structure_block.waterlog_block=Vodní bloky	#
 tile.structure_void.name=Prázdná stavba	#
 tile.wool.black.name=Černá vlna	#
 tile.wool.blue.name=Modrá vlna	#

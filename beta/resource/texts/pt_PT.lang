@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Tens a certeza de que pretendes remov
 addExternalServerScreen.addTitle=Adicionar Servidor Externo	#
 addExternalServerScreen.editTitle=Editar Servidor Externo	#
 
-feature.endcity=Cidade do Fim	#
+feature.end_city=Cidade do End	#
 feature.fortress=Fortaleza do Nether	#
 feature.mansion=Mansão da Floresta	#
 feature.mineshaft=Poço de Minas	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Fortaleza	#
 feature.temple=Templo	#
 feature.village=Aldeia	#
 feature.shipwreck=Navio Encalhado	#
-feature.buriedtreasure=Tesouro Enterrado	#
+feature.buried_treasure=Tesouro Enterrado	#
 feature.ruins=Ruínas no Oceano	#
-feature.pillageroutpost=Posto de Pillager	#
-feature.bastionremnant=Resto do Bastião	#
-feature.ruinedportal=Portal Arruinado	#
+feature.pillager_outpost=Posto de Saqueador	#
+feature.bastion_remnant=Resto do Bastião	#
+feature.ruined_portal=Portal Arruinado	#
 
 feed.like=Gostar	#
 feed.manage_feed=Gerir feed	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=A fazer cópia de segurança...	#
 menu.saving=A guardar...	#
 menu.editorMode=Modo de Edição	#
 menu.editor.play=Retomar	#
+menu.cast_select_title=Escolhe a tua Personagem inicial	#
 
 merchant.deprecated=Troca alguma coisa para desbloquear!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Toca em saltar para sair do barco	#
 action.hint.exit.console.chest_boat=Toca em :_input_key.jump: para sair do barco	#
 entity.chest_boat.name=Barco com Baú	#
-feature.ancientcity=Cidade Ancestral	#
+feature.ancient_city=Cidade Ancestral	#
 
 storageManager.mainSizeLabel=%s - 1 Item	#
 storageManager.mainSizeLabelPlural=%s - %s Itens	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Terracota Cinzenta-Clara	#
 tile.stained_hardened_clay.white.name=Terracota Branca	#
 tile.stained_hardened_clay.yellow.name=Terracota Amarela	#
 tile.structure_block.name=Bloco de Estrutura	#
+structure_block.waterlog_block=Blocos de Alagamento	#
 tile.structure_void.name=Estrutura Nula	#
 tile.wool.black.name=Lã Preta	#
 tile.wool.blue.name=Lã Azul	#

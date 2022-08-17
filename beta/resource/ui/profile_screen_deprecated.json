@@ -1227,7 +1227,8 @@
             "restore_popup": "@common_store.popup_dialog__restore_popup",
             "restore_failed": "@common_store.popup_dialog__restore_failed",
             "toast_message": "@profile_deprecated.popup_toast",
-            "delete_persona": "@profile_deprecated.popup_dialog__delete_persona"
+            "delete_persona": "@profile_deprecated.popup_dialog__delete_persona",
+            "cast_character_select_popup": "@persona_cast_character_screen.popup_dialog__cast_character_select"
           }
         }
       }

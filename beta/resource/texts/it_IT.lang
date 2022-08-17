@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Vuoi davvero eliminare questo server?
 addExternalServerScreen.addTitle=Aggiungi server esterno	#
 addExternalServerScreen.editTitle=Modifica server esterno	#
 
-feature.endcity=Città dell'End	#
+feature.end_city=Città dell'End	#
 feature.fortress=Fortezza del Nether	#
 feature.mansion=Villa nel bosco	#
 feature.mineshaft=Miniera	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Roccaforte	#
 feature.temple=Tempio	#
 feature.village=Villaggio	#
 feature.shipwreck=Relitto	#
-feature.buriedtreasure=Tesoro sepolto	#
+feature.buried_treasure=Tesoro sepolto	#
 feature.ruins=Rovine oceaniche	#
-feature.pillageroutpost=Avamposto del saccheggiatore	#
-feature.bastionremnant=Resto di bastione	#
-feature.ruinedportal=Portale In rovina	#
+feature.pillager_outpost=Avamposto del saccheggiatore	#
+feature.bastion_remnant=Resto di bastione	#
+feature.ruined_portal=Portale in rovina	#
 
 feed.like=Mi piace	#
 feed.manage_feed=Gestisci feed	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Backup in corso...	#
 menu.saving=Salvataggio...	#
 menu.editorMode=Modalità editor	#
 menu.editor.play=Riprendi	#
+menu.cast_select_title=Scegli il tuo personaggio iniziale	#
 
 merchant.deprecated=Scambia qualcos'altro per sbloccare!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Tocca Salta per scendere dalla barca	#
 action.hint.exit.console.chest_boat=Premi :_input_key.jump: per scendere dalla barca	#
 entity.chest_boat.name=Barca con cassa	#
-feature.ancientcity=Città antica	#
+feature.ancient_city=Città antica	#
 
 storageManager.mainSizeLabel=%s - 1 oggetto	#
 storageManager.mainSizeLabelPlural=%s - %s oggetti	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Terracotta grigio chiaro	#
 tile.stained_hardened_clay.white.name=Terracotta bianca	#
 tile.stained_hardened_clay.yellow.name=Terracotta gialla	#
 tile.structure_block.name=Blocco struttura	#
+structure_block.waterlog_block=Blocchi da inserire in acqua	#
 tile.structure_void.name=Vuoto struttura	#
 tile.wool.black.name=Lana nera	#
 tile.wool.blue.name=Lana blu	#

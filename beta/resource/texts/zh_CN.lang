@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=确定要移除此服务器吗？	#
 addExternalServerScreen.addTitle=添加外部服务器	#
 addExternalServerScreen.editTitle=编辑外部服务器	#
 
-feature.endcity=末地之城	#
+feature.end_city=末地城	#
 feature.fortress=下界要塞	#
 feature.mansion=林地宅邸	#
 feature.mineshaft=废弃矿井	#
@@ -2797,11 +2797,11 @@ feature.stronghold=要塞	#
 feature.temple=神庙	#
 feature.village=村庄	#
 feature.shipwreck=沉船	#
-feature.buriedtreasure=埋藏的宝藏	#
+feature.buried_treasure=埋藏的宝藏	#
 feature.ruins=海洋废墟	#
-feature.pillageroutpost=掠夺者前哨	#
-feature.bastionremnant=堡垒遗迹	#
-feature.ruinedportal=破坏的传送门	#
+feature.pillager_outpost=掠夺者前哨	#
+feature.bastion_remnant=堡垒遗迹	#
+feature.ruined_portal=破坏的传送门	#
 
 feed.like=赞	#
 feed.manage_feed=管理信息提要	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=制作备份中...	#
 menu.saving=保存中……	#
 menu.editorMode=编辑器模式	#
 menu.editor.play=继续	#
+menu.cast_select_title=选择你的初始角色	#
 
 merchant.deprecated=交易一些其他东西来解锁！	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=塞缪尔·阿伯格 - 5	#
 action.hint.exit.chest_boat=点击“跳跃”离开船	#
 action.hint.exit.console.chest_boat=按下 :_input_key.jump: 离开船	#
 entity.chest_boat.name=带箱子的船	#
-feature.ancientcity=古城	#
+feature.ancient_city=古城	#
 
 storageManager.mainSizeLabel=%s - 1 项目	#
 storageManager.mainSizeLabelPlural=%s - %s 项目	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=淡灰色陶瓦	#
 tile.stained_hardened_clay.white.name=白色陶瓦	#
 tile.stained_hardened_clay.yellow.name=黄色陶瓦	#
 tile.structure_block.name=结构方块	#
+structure_block.waterlog_block=水涝方块	#
 tile.structure_void.name=结构空位	#
 tile.wool.black.name=黑色羊毛	#
 tile.wool.blue.name=蓝色羊毛	#

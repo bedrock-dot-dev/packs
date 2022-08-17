@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Biztosan eltávolítod ezt a kiszolg�
 addExternalServerScreen.addTitle=Külső kiszolgáló hozzáadása	#
 addExternalServerScreen.editTitle=Külső kiszolgáló szerkesztése	#
 
-feature.endcity=Vég-város	#
+feature.end_city=Vég-város	#
 feature.fortress=Alvilági erőd	#
 feature.mansion=Erdei ház	#
 feature.mineshaft=Bánya	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Erőd	#
 feature.temple=Templom	#
 feature.village=Falu	#
 feature.shipwreck=Hajóroncs	#
-feature.buriedtreasure=Elásott kincs	#
+feature.buried_treasure=Elásott kincs	#
 feature.ruins=Tengermélyi romok	#
-feature.pillageroutpost=Fosztogatótábor	#
-feature.bastionremnant=Bástya maradványa	#
-feature.ruinedportal=Romos portál	#
+feature.pillager_outpost=Fosztogatótábor	#
+feature.bastion_remnant=Bástyamaradvány	#
+feature.ruined_portal=Romos portál	#
 
 feed.like=Kedvelés	#
 feed.manage_feed=Hírcsatorna kezelése	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Biztonsági másolat létrehozása...	#
 menu.saving=Mentés...	#
 menu.editorMode=Szerkesztő mód	#
 menu.editor.play=Folytatás	#
+menu.cast_select_title=Válaszd ki a kezdő karakteredet	#
 
 merchant.deprecated=A feloldáshoz adj el valami mást!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=5 – Samuel Åberg	#
 action.hint.exit.chest_boat=Koppints az ugrásra a csónakból való kiszálláshoz	#
 action.hint.exit.console.chest_boat=Nyomd meg a(z) :_input_key.jump: billentyűt a csónakból való kiszálláshoz	#
 entity.chest_boat.name=Csónak ládával	#
-feature.ancientcity=Ősi város	#
+feature.ancient_city=Ősi város	#
 
 storageManager.mainSizeLabel=%s – 1 elem	#
 storageManager.mainSizeLabelPlural=%s – %s elem	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Világosszürke terrakotta	#
 tile.stained_hardened_clay.white.name=Fehér terrakotta	#
 tile.stained_hardened_clay.yellow.name=Sárga terrakotta	#
 tile.structure_block.name=Szerkezeti blokk	#
+structure_block.waterlog_block=Átnedvesedett blokkok	#
 tile.structure_void.name=Szerkezeti üres hely	#
 tile.wool.black.name=Fekete gyapjú	#
 tile.wool.blue.name=Kék gyapjú	#

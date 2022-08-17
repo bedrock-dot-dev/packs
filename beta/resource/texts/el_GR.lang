@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Είσαι βέβαιος ότι επ
 addExternalServerScreen.addTitle=Προσθήκη εξωτερικού διακομιστή	#
 addExternalServerScreen.editTitle=Επεξεργασία εξωτερικού διακομιστή	#
 
-feature.endcity=Πόλη του Τέλους	#
+feature.end_city=Πόλη του Τέλους	#
 feature.fortress=Οχυρό εγκάτων	#
 feature.mansion=Έπαυλη στο δάσος	#
 feature.mineshaft=Ορυχείο	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Οχυρό	#
 feature.temple=Ναός	#
 feature.village=Χωριό	#
 feature.shipwreck=Ναυάγιο	#
-feature.buriedtreasure=Θαμμένος θησαυρός	#
+feature.buried_treasure=Θαμμένος Θησαυρός	#
 feature.ruins=Ωκεάνια ερείπια	#
-feature.pillageroutpost=Φυλάκιο Άρπαγα	#
-feature.bastionremnant=Απομεινάρι προμαχώνα	#
-feature.ruinedportal=Κατεστραμμένη πύλη	#
+feature.pillager_outpost=Φυλάκιο Άρπαγα	#
+feature.bastion_remnant=Απομεινάρι Προμαχώνα	#
+feature.ruined_portal=Κατεστραμμένη Πύλη	#
 
 feed.like=Επισήμανση "Μου αρέσει"	#
 feed.manage_feed=Διαχείριση τροφοδοσίας	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Δημιουργία αντιγράφου ασφαλείας..
 menu.saving=Αποθήκευση...	#
 menu.editorMode=Λειτουργία προγράμματος επεξεργασίας	#
 menu.editor.play=Συνέχιση	#
+menu.cast_select_title=Διάλεξε τον αρχικό Χαρακτήρα σου!	#
 
 merchant.deprecated=Πούλησε κάτι άλλο για να ξεκλειδωθεί!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Πάτησε άλμα για να βγεις από τη βάρκα	#
 action.hint.exit.console.chest_boat=Πάτησε :_input_key.jump: για να βγεις από τη βάρκα	#
 entity.chest_boat.name=Βάρκα με σεντούκι	#
-feature.ancientcity=Αρχαία πόλη	#
+feature.ancient_city=Αρχαία Πόλη	#
 
 storageManager.mainSizeLabel=%s - 1 αντικείμενο	#
 storageManager.mainSizeLabelPlural=%s - %s αντικείμενα	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Ανοικτό γκρι τερακότα	
 tile.stained_hardened_clay.white.name=Λευκή τερακότα	#
 tile.stained_hardened_clay.yellow.name=Κίτρινη τερακότα	#
 tile.structure_block.name=Κύβος οικοδομήματος	#
+structure_block.waterlog_block=Κύβοι με Νερό	#
 tile.structure_void.name=Κενό οικοδομήματος	#
 tile.wool.black.name=Μαύρο μαλλί	#
 tile.wool.blue.name=Μπλε μαλλί	#

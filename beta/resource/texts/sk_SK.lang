@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Naozaj chcete odstrániť tento serve
 addExternalServerScreen.addTitle=Pridať externý server	#
 addExternalServerScreen.editTitle=Úprava externého servera	#
 
-feature.endcity=Mesto na konci sveta	#
+feature.end_city=Mesto na konci sveta	#
 feature.fortress=Netheritová pevnosť	#
 feature.mansion=Lesný kaštieľ	#
 feature.mineshaft=Šachta	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Pevnosť	#
 feature.temple=Chrám	#
 feature.village=Dedina	#
 feature.shipwreck=Stroskotaná loď	#
-feature.buriedtreasure=Zakopaný poklad	#
+feature.buried_treasure=Zakopaný poklad	#
 feature.ruins=Ruiny v oceáne	#
-feature.pillageroutpost=Základňa plieniteľov	#
-feature.bastionremnant=Pozostatok citadely	#
-feature.ruinedportal=Zničený portál	#
+feature.pillager_outpost=Posádka plieniteľov	#
+feature.bastion_remnant=Pozostatok bašty	#
+feature.ruined_portal=Zničený portál	#
 
 feed.like=Páči sa	#
 feed.manage_feed=Spravovať informačný kanál	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Vytvára sa záloha...	#
 menu.saving=Ukladá sa…	#
 menu.editorMode=Režim editora	#
 menu.editor.play=Pokračovať	#
+menu.cast_select_title=Vyberte si svoju počiatočnú postavu	#
 
 merchant.deprecated=Na odomknutie obchodujte s niečím iným.	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Ak chcete vystúpiť z člna, ťuknite na položku Vyskočiť	#
 action.hint.exit.console.chest_boat=Ak chcete vystúpiť z člna, stlačte tlačidlo :_input_key.jump:	#
 entity.chest_boat.name=Čln s truhlicou	#
-feature.ancientcity=Starobylé mesto	#
+feature.ancient_city=Starobylé mesto	#
 
 storageManager.mainSizeLabel=%s – 1 položka	#
 storageManager.mainSizeLabelPlural=%s – počet položiek: %s	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Svetlosivá terakota	#
 tile.stained_hardened_clay.white.name=Biela terakota	#
 tile.stained_hardened_clay.yellow.name=Žltá terakota	#
 tile.structure_block.name=Blok stavby	#
+structure_block.waterlog_block=Bloky zaplavené vodou	#
 tile.structure_void.name=Medzera v stavbe	#
 tile.wool.black.name=Čierna vlna	#
 tile.wool.blue.name=Modrá vlna	#

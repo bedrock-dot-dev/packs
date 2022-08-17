@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=¿Seguro que quieres eliminar este se
 addExternalServerScreen.addTitle=Añadir servidor externo	#
 addExternalServerScreen.editTitle=Editar servidor externo	#
 
-feature.endcity=Ciudad de End	#
+feature.end_city=Ciudad de End	#
 feature.fortress=Fortaleza del Inframundo	#
 feature.mansion=Mansión de bosque	#
 feature.mineshaft=Pozo de mina	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Fortaleza	#
 feature.temple=Templo	#
 feature.village=Aldea	#
 feature.shipwreck=Naufragio	#
-feature.buriedtreasure=Tesoro enterrado	#
+feature.buried_treasure=Tesoro enterrado	#
 feature.ruins=Ruinas oceánicas	#
-feature.pillageroutpost=Puesto de saqueadores	#
-feature.bastionremnant=Restos del bastión	#
-feature.ruinedportal=Portal destrozado	#
+feature.pillager_outpost=Puesto de saqueadores	#
+feature.bastion_remnant=Restos del bastión	#
+feature.ruined_portal=Portal destrozado	#
 
 feed.like=Me gusta	#
 feed.manage_feed=Administrar feed	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Realizando copia de seguridad...	#
 menu.saving=Guardando...	#
 menu.editorMode=Modo Editor	#
 menu.editor.play=Reanudar	#
+menu.cast_select_title=Elige tu personaje inicial	#
 
 merchant.deprecated=¡Comercia otra cosa para desbloquear!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Toca Saltar para salir del barco.	#
 action.hint.exit.console.chest_boat=Pulsa :_input_key.jump: para salir del barco	#
 entity.chest_boat.name=Barco con cofre	#
-feature.ancientcity=Ciudad antigua	#
+feature.ancient_city=Ciudad antigua	#
 
 storageManager.mainSizeLabel=%s: 1 objeto	#
 storageManager.mainSizeLabelPlural=%s: %s objetos	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Terracota gris claro	#
 tile.stained_hardened_clay.white.name=Terracota blanca	#
 tile.stained_hardened_clay.yellow.name=Terracota amarilla	#
 tile.structure_block.name=Bloque de estructuras	#
+structure_block.waterlog_block=Bloques de agua	#
 tile.structure_void.name=Vacío de estructuras	#
 tile.wool.black.name=Lana negra	#
 tile.wool.blue.name=Lana azul	#

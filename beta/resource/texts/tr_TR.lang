@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Bu sunucuyu kaldırmak istediğinizde
 addExternalServerScreen.addTitle=Harici Sunucu ekle	#
 addExternalServerScreen.editTitle=Harici Sunucuyu düzenle	#
 
-feature.endcity=End Şehri	#
+feature.end_city=End Şehri	#
 feature.fortress=Nether Kalesi	#
 feature.mansion=Orman Malikanesi	#
 feature.mineshaft=Maden kuyusu	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Kale	#
 feature.temple=Tapınak	#
 feature.village=Köy	#
 feature.shipwreck=Gemi Enkazı	#
-feature.buriedtreasure=Gömülü Hazine	#
+feature.buried_treasure=Gömülü Hazine	#
 feature.ruins=Okyanus Harabeleri	#
-feature.pillageroutpost=Yağmacı Karakolu	#
-feature.bastionremnant=Kale Burcu Kalıntısı	#
-feature.ruinedportal=Yıkılmış Geçit	#
+feature.pillager_outpost=Yağmacı Karakolu	#
+feature.bastion_remnant=Tabya Kalıntısı	#
+feature.ruined_portal=Yıkılmış Geçit	#
 
 feed.like=Beğen	#
 feed.manage_feed=Haber akışını yönet	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Yedekleme yapılıyor...	#
 menu.saving=Kaydediliyor...	#
 menu.editorMode=Düzenleyici Modu	#
 menu.editor.play=Sürdür	#
+menu.cast_select_title=Başlangıç Karakterinizi seçin	#
 
 merchant.deprecated=Kilidi açmak için başka bir şeyi takas et!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Tekneden çıkmak için zıplamaya dokun	#
 action.hint.exit.console.chest_boat=Tekneden çıkmak için :_input_key.jump: düğmesine bas	#
 entity.chest_boat.name=Sandıklı Tekne	#
-feature.ancientcity=Antik Şehir	#
+feature.ancient_city=Antik Şehir	#
 
 storageManager.mainSizeLabel=%s - 1 Eşya	#
 storageManager.mainSizeLabelPlural=%s - %s Eşyalar	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Açık Gri Terakota	#
 tile.stained_hardened_clay.white.name=Beyaz Terakota	#
 tile.stained_hardened_clay.yellow.name=Sarı Terakota	#
 tile.structure_block.name=Yapı Bloku	#
+structure_block.waterlog_block=Su Dolu Bloklar	#
 tile.structure_void.name=Yapı Boşluğu	#
 tile.wool.black.name=Siyah Yün	#
 tile.wool.blue.name=Mavi Yün	#

@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Bist du dir sicher, dass du diesen Se
 addExternalServerScreen.addTitle=Externen Server hinzufügen	#
 addExternalServerScreen.editTitle=Externen Server bearbeiten	#
 
-feature.endcity=Endsiedlung	#
+feature.end_city=Endsiedlung	#
 feature.fortress=Netherfestung	#
 feature.mansion=Waldanwesen	#
 feature.mineshaft=Mine	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Festung	#
 feature.temple=Tempel	#
 feature.village=Dorf	#
 feature.shipwreck=Schiffswrack	#
-feature.buriedtreasure=Vergrabener Schatz	#
+feature.buried_treasure=Vergrabener Schatz	#
 feature.ruins=Ozeanruinen	#
-feature.pillageroutpost=Plünderer-Außenposten	#
-feature.bastionremnant=Überreste der Bastion	#
-feature.ruinedportal=Zerstörtes Portal	#
+feature.pillager_outpost=Plünderer-Außenposten	#
+feature.bastion_remnant=Überreste der Bastion	#
+feature.ruined_portal=Zerstörtes Portal	#
 
 feed.like=Like	#
 feed.manage_feed=Feed verwalten	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Backup wird angelegt ...	#
 menu.saving=Wird gespeichert ...	#
 menu.editorMode=Editor-Modus	#
 menu.editor.play=Fortsetzen	#
+menu.cast_select_title=Wähle deinen Startcharakter	#
 
 merchant.deprecated=Handle etwas anderes, um ein neues Angebot freizuschalten!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg – 5	#
 action.hint.exit.chest_boat=Tippe auf Springen, um das Boot zu verlassen	#
 action.hint.exit.console.chest_boat=Drücke :_input_key.jump:, um das Boot zu verlassen	#
 entity.chest_boat.name=Boot mit Truhe	#
-feature.ancientcity=Uralte Stadt	#
+feature.ancient_city=Uralte Stadt	#
 
 storageManager.mainSizeLabel=%s - 1 Gegenstand	#
 storageManager.mainSizeLabelPlural=%s - %s Gegenstände	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Hellgraue Keramik	#
 tile.stained_hardened_clay.white.name=Weiße Keramik	#
 tile.stained_hardened_clay.yellow.name=Gelbe Keramik	#
 tile.structure_block.name=Konstruktionsblock	#
+structure_block.waterlog_block=Wasseraufnahme-Blöcke	#
 tile.structure_void.name=Konstruktionsleere	#
 tile.wool.black.name=Schwarze Wolle	#
 tile.wool.blue.name=Blaue Wolle	#

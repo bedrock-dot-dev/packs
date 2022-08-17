@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=Tem certeza que deseja remover este s
 addExternalServerScreen.addTitle=Adicionar servidor externo	#
 addExternalServerScreen.editTitle=Editar servidor externo	#
 
-feature.endcity=Cidade do End	#
+feature.end_city=Cidade do End	#
 feature.fortress=Fortaleza do Nether	#
 feature.mansion=Mansão da Mata	#
 feature.mineshaft=Mina	#
@@ -2797,11 +2797,11 @@ feature.stronghold=Vidente da fortaleza	#
 feature.temple=Templo	#
 feature.village=Vila	#
 feature.shipwreck=Naufrágio	#
-feature.buriedtreasure=Tesouro Enterrado	#
+feature.buried_treasure=Tesouro Enterrado	#
 feature.ruins=Ruínas do Oceano	#
-feature.pillageroutpost=Posto do Saqueador	#
-feature.bastionremnant=Bastião Remanescente	#
-feature.ruinedportal=Portal Arruinado	#
+feature.pillager_outpost=Posto Avançado do Saqueador	#
+feature.bastion_remnant=Bastião Remanescente	#
+feature.ruined_portal=Portal Arruinado	#
 
 feed.like=Curtir	#
 feed.manage_feed=Gerenciar Feed	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=Fazendo backup...	#
 menu.saving=Salvando...	#
 menu.editorMode=Modo Editor	#
 menu.editor.play=Continuar	#
+menu.cast_select_title=Escolha seu personagem inicial	#
 
 merchant.deprecated=Troque algo mais para desbloquear!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=Toque em Pular para sair do barco	#
 action.hint.exit.console.chest_boat=Pressione :_input_key.jump: para sair do barco	#
 entity.chest_boat.name=Barco com Baú	#
-feature.ancientcity=Cidade Antiga	#
+feature.ancient_city=Cidade Ancestral	#
 
 storageManager.mainSizeLabel=%s - 1 item	#
 storageManager.mainSizeLabelPlural=%s - %s itens	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=Terracota Cinza-clara	#
 tile.stained_hardened_clay.white.name=Terracota Branca	#
 tile.stained_hardened_clay.yellow.name=Terracota Amarela	#
 tile.structure_block.name=Bloco de Estrutura	#
+structure_block.waterlog_block=Blocos de alagamento	#
 tile.structure_void.name=Estrutura Vazia	#
 tile.wool.black.name=Lã Preta	#
 tile.wool.blue.name=Lã Azul	#

@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=確定要移除這個伺服器嗎？	
 addExternalServerScreen.addTitle=新增外部伺服器	#
 addExternalServerScreen.editTitle=編輯外部伺服器	#
 
-feature.endcity=終界城市	#
+feature.end_city=終界城市	#
 feature.fortress=地獄要塞	#
 feature.mansion=林地府邸	#
 feature.mineshaft=礦洞	#
@@ -2797,11 +2797,11 @@ feature.stronghold=要塞	#
 feature.temple=神殿	#
 feature.village=村莊	#
 feature.shipwreck=沉船	#
-feature.buriedtreasure=埋藏的寶藏	#
+feature.buried_treasure=埋藏寶藏	#
 feature.ruins=海洋遺址	#
-feature.pillageroutpost=劫掠者前哨	#
-feature.bastionremnant=堡壘遺蹟	#
-feature.ruinedportal=已破壞的傳送門	#
+feature.pillager_outpost=劫掠者前哨	#
+feature.bastion_remnant=壁壘遺蹟	#
+feature.ruined_portal=已破壞的傳送門	#
 
 feed.like=說讚	#
 feed.manage_feed=管理動態	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=製作備份中...	#
 menu.saving=儲存中...	#
 menu.editorMode=編輯器模式	#
 menu.editor.play=繼續	#
+menu.cast_select_title=選擇你的起始角色	#
 
 merchant.deprecated=用其他物品交易來解鎖！	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=塞繆爾阿伯格 - 5	#
 action.hint.exit.chest_boat=按一下跳躍離開小船	#
 action.hint.exit.console.chest_boat=按 :_input_key.jump: 離開小船	#
 entity.chest_boat.name=附箱子的船	#
-feature.ancientcity=古城	#
+feature.ancient_city=古城	#
 
 storageManager.mainSizeLabel=%s - 1 個物品	#
 storageManager.mainSizeLabelPlural=%s - %s 個物品	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=淺灰色陶瓦	#
 tile.stained_hardened_clay.white.name=白色陶瓦	#
 tile.stained_hardened_clay.yellow.name=黃色陶瓦	#
 tile.structure_block.name=結構方塊	#
+structure_block.waterlog_block=含水方塊	#
 tile.structure_void.name=結構空位	#
 tile.wool.black.name=黑色羊毛	#
 tile.wool.blue.name=藍色羊毛	#

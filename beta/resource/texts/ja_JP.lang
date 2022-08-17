@@ -2787,7 +2787,7 @@ addExternalServerScreen.removeConfirmation=本当にこのサーバーを削除�
 addExternalServerScreen.addTitle=外部サーバーを追加	#
 addExternalServerScreen.editTitle=外部サーバーを編集	#
 
-feature.endcity=果ての都市	#
+feature.end_city=果ての都市	#
 feature.fortress=ネザー砦	#
 feature.mansion=森林の邸宅	#
 feature.mineshaft=廃坑	#
@@ -2797,11 +2797,11 @@ feature.stronghold=要塞	#
 feature.temple=寺院	#
 feature.village=村	#
 feature.shipwreck=難破船	#
-feature.buriedtreasure=隠し財宝	#
+feature.buried_treasure=隠し財宝	#
 feature.ruins=海底遺跡	#
-feature.pillageroutpost=略奪者の前哨基地	#
-feature.bastionremnant=砦の遺跡	#
-feature.ruinedportal=破壊されたポータル	#
+feature.pillager_outpost=略奪者の前哨基地	#
+feature.bastion_remnant=砦の遺跡	#
+feature.ruined_portal=破壊されたポータル	#
 
 feed.like=いいね!	#
 feed.manage_feed=フィードを管理	#
@@ -5539,6 +5539,7 @@ menu.makingBackup=バックアップを作成中...	#
 menu.saving=保存中...	#
 menu.editorMode=エディタモード	#
 menu.editor.play=再開	#
+menu.cast_select_title=始めるキャラクターを選択しよう	#
 
 merchant.deprecated=他の取引をして解除してください!	#
 
@@ -6948,7 +6949,7 @@ item.record_5.desc=Samuel Åberg - 5	#
 action.hint.exit.chest_boat=ジャンプをタップしてボートから出る	#
 action.hint.exit.console.chest_boat=:_input_key.jump: を押してボートから出る	#
 entity.chest_boat.name=チェスト付きボート	#
-feature.ancientcity=古都	#
+feature.ancient_city=古都	#
 
 storageManager.mainSizeLabel=%s - 1 アイテム	#
 storageManager.mainSizeLabelPlural=%s - %s アイテム	#
@@ -8090,6 +8091,7 @@ tile.stained_hardened_clay.silver.name=薄灰色のテラコッタ	#
 tile.stained_hardened_clay.white.name=白のテラコッタ	#
 tile.stained_hardened_clay.yellow.name=黄色のテラコッタ	#
 tile.structure_block.name=ストラクチャー ブロック	#
+structure_block.waterlog_block=浸水ブロック	#
 tile.structure_void.name=ストラクチャー ヴォイド	#
 tile.wool.black.name=黒のウール	#
 tile.wool.blue.name=青のウール	#
