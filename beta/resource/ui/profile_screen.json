@@ -348,6 +348,7 @@
     "$preset_appearance_property_bag|default": {},
     "property_bag": "$preset_appearance_property_bag",
     "$select_preset_to_button_id|default": "button.select_appearance",
+    "$binding_preset_add_visible_name|default": "#is_preset_add_visible",
     "controls": [
       {
         "create_new_preset_image": {
@@ -358,7 +359,7 @@
           "property_bag": "$preset_appearance_property_bag",
           "bindings": [
             {
-              "binding_name": "#is_preset_add_visible",
+              "binding_name": "$binding_preset_add_visible_name",
               "binding_name_override": "#visible",
               "binding_condition": "always"
             }
@@ -397,9 +398,10 @@
     "$pressed_button_name": "button.retry_appearance_preset",
     "$button_content": "profile.retry_button_image_content",
     "property_bag": "$preset_appearance_property_bag",
+    "$binding_is_retry_visible_name|default": "#is_retry_visible",
     "bindings": [
       {
-        "binding_name": "#is_retry_visible",
+        "binding_name": "$binding_is_retry_visible_name",
         "binding_name_override": "#visible",
         "binding_condition": "always"
       }
@@ -412,9 +414,10 @@
     "$hide_progress_loading_outline": true,
     "$preset_appearance_property_bag|default": {},
     "property_bag": "$preset_appearance_property_bag",
+    "$binding_is_preset_loading_visible_name|default": "#is_preset_loading_visible",
     "bindings": [
       {
-        "binding_name": "#is_preset_loading_visible",
+        "binding_name": "$binding_is_preset_loading_visible_name",
         "binding_name_override": "#visible",
         "binding_condition": "always"
       }
@@ -1400,6 +1403,9 @@
     "$button_text": "$confirm_button_text",
     "$confirm_button_text|default": "#none",
     "$confirm_button_enabled|default": "#none",
+    "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+    "$focus_override_right": "FOCUS_OVERRIDE_STOP",
     "bindings": [
       {
         "binding_name": "$confirm_button_enabled",
@@ -1835,6 +1841,18 @@
       {
         "from_button_id": "button.menu_right",
         "to_button_id": "button.menu_right",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_up",
+        "to_button_id": "button.menu_up",
+        "mapping_type": "global",
+        "scope": "view"
+      },
+      {
+        "from_button_id": "button.menu_down",
+        "to_button_id": "button.menu_down",
         "mapping_type": "global",
         "scope": "view"
       }

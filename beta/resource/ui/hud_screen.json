@@ -918,6 +918,11 @@
     "$item_collection_name": "$hotbar_collection_name"
   },
 
+  "item_storage@common.storage_bar": {
+    "$storage_bar_required|default": true,
+    "$item_collection_name": "$hotbar_collection_name"
+  },
+
   "container_item_lock_overlay@common.container_item_lock_overlay": {
     "$item_collection_name": "$hotbar_collection_name"
   },
@@ -934,6 +939,7 @@
     "anchor_from": "top_left",
     "$stack_count_required|default": true,
     "$durability_bar_required|default": true,
+    "$storage_bar_required|default": true,
     "controls": [
       { "hotbar_slot_selected_image@hotbar_slot_selected_image": {} },
       { "hotbar_renderer@hotbar_renderer": {} },
@@ -974,6 +980,11 @@
               }
             },
             {
+              "item_store@item_storage": {
+                "layer": 5
+              }
+            },
+            {
               "container_item_lock_overlay@hud.container_item_lock_overlay": {
                 "layer": 6,
                 "size": [ 16, 16 ]
@@ -997,6 +1008,7 @@
     "anchor_from": "top_left",
     "$stack_count_required|default": true,
     "$durability_bar_required|default": true,
+    "$storage_bar_required|default": true,
     "controls": [
       {
         "hotbar_slot_selected_image@hotbar_slot_selected_image": {
@@ -1040,6 +1052,11 @@
             },
             {
               "item_dura@item_durability": {
+                "layer": 5
+              }
+            },
+            {
+              "item_store@item_storage": {
                 "layer": 5
               }
             },
@@ -1554,7 +1571,7 @@
     "anim_type": "alpha",
     "duration": 0,
     "from": 0,
-    "to": 0.6,
+    "to": "$text_background_alpha",
     "next": "@hud.anim_item_name_background_alpha_stay"
   },
 
@@ -1568,7 +1585,7 @@
     "anim_type": "alpha",
     "easing": "in_expo",
     "duration": 2,
-    "from": 0.6,
+    "from": "$text_background_alpha",
     "to": 0
   },
 
@@ -1617,6 +1634,17 @@
                       "color": "$text_color",
                       "text": "#text",
                       "alpha": "@hud.anim_item_name_text_alpha_in",
+                      "variables": [
+                        {
+                          "requires": "(not $text_shadow)",
+                          "$show_shadow": false
+                        },
+                        {
+                          "requires": "$text_shadow",
+                          "$show_shadow": true
+                        }
+                      ],
+                      "shadow": "$show_shadow",
                       "bindings": [
                         {
                           "binding_name": "$text_binding",
@@ -1693,7 +1721,7 @@
     "size": [ "100%c + 12px", "100%c + 5px" ],
     "offset": [ 0, -42 ],
     "texture": "textures/ui/hud_tip_text_background",
-    "alpha": "@hud.anim_item_name_background_alpha_out",
+    "alpha": 1.0,
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "$wait_duration|default": 1,
@@ -1817,7 +1845,7 @@
     "easing": "linear",
     "duration": "$title_fade_in_time",
     "from": 0,
-    "to": "$title_alpha",
+    "to": "$text_background_alpha",
     "next": "@hud.anim_title_background_alpha_stay"
   },
 
@@ -1831,7 +1859,7 @@
     "anim_type": "alpha",
     "easing": "linear",
     "duration": "$title_fade_out_time",
-    "from": "$title_alpha",
+    "from": "$text_background_alpha",
     "to": 0,
     "destroy_at_end": "hud_title_text",
     "end_event": "hud_title_text_complete"
@@ -1868,7 +1896,7 @@
     "easing": "linear",
     "duration": "$title_fade_in_time",
     "from": 0,
-    "to": "$title_alpha",
+    "to": "$text_background_alpha",
     "next": "@hud.anim_subtitle_background_alpha_stay"
   },
 
@@ -1882,7 +1910,7 @@
     "anim_type": "alpha",
     "easing": "linear",
     "duration": "$title_fade_out_time",
-    "from": "$title_alpha",
+    "from": "$text_background_alpha",
     "to": 0,
     "end_event": "hud_subtitle_text_complete"
   },
@@ -1920,11 +1948,11 @@
                 "font_size": "extra_large",
                 "variables": [
                   {
-                    "requires": "(not $title_shadow)",
+                    "requires": "(not $text_shadow)",
                     "$show_shadow": false
                   },
                   {
-                    "requires": "$title_shadow",
+                    "requires": "$text_shadow",
                     "$show_shadow": true
                   }
                 ],
@@ -1987,11 +2015,11 @@
                     "$anim_type": "@hud.anim_subtitle_text_alpha_in"
                   },
                   {
-                    "requires": "(not $title_shadow)",
+                    "requires": "(not $text_shadow)",
                     "$show_shadow": false
                   },
                   {
-                    "requires": "$title_shadow",
+                    "requires": "$text_shadow",
                     "$show_shadow": true
                   }
                 ],

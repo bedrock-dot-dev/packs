@@ -1791,6 +1791,11 @@
               }
             },
             {
+              "storage_bar@common.storage_bar": {
+                "layer": 8
+              }
+            },
+            {
               "$overlay_image_control_name@$overlay_images": {
                 "layer": 9
               }
@@ -1845,6 +1850,7 @@
   "grid_item_for_recipe_book@crafting.inventory_container_item": {
     "$stack_count_required": true,
     "$durability_bar_required": false,
+    "$storage_bar_required": false,
     "$item_renderer_binding_condition": "visible",
     "$button_ref": "crafting.creative_no_coalesce_container_slot_button",
     "$background_images": "crafting.recipe_container_cell_images",

@@ -331,10 +331,6 @@
       {
         "binding_name": "#gathering_badge",
         "binding_name_override": "#texture"
-      },
-      {
-        "binding_name": "#gathering_badge_visible",
-        "binding_name_override": "#visible"
       }
     ]
   },
@@ -379,6 +375,12 @@
                 "size": [ "fill", "100%" ]
               }
             }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#gathering_badge_visible",
+              "binding_name_override": "#visible"
+            }
           ]
         }
       }
@@ -387,7 +389,7 @@
 
   "gathering_caption": {
     "type": "image",
-    "size": [ "100%c", "100%c + 14px" ],
+    "size": [ "100%c + 6px", "100%c + 12px" ],
     "anchor_to": "bottom_middle",
     "anchor_from": "bottom_middle",
     "layer": 9,
