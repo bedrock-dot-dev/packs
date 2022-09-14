@@ -3265,7 +3265,7 @@
           ],
           "bindings": [
             {
-              "binding_name": "(not #using_touch)",
+              "binding_name": "(#not_using_touch_or_bundle_selected)",
               "binding_name_override": "#visible"
             }
           ]
@@ -3275,7 +3275,7 @@
         "white_border@common.white_border_slot": {
           "bindings": [
             {
-              "binding_name": "(not #using_touch)",
+              "binding_name": "(#not_using_touch_or_bundle_selected)",
               "binding_name_override": "#visible"
             }
           ]

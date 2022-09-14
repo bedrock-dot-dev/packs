@@ -1582,7 +1582,7 @@
       { "cell_red@crafting.cell_image_red": {} },
       { "cell_selected@crafting.cell_image_selected": {} },
       { "cell_hint@game_tip.cell_image_classic_hint": {} },
-      { "cell_darkgrey@crafting.cell_image_darkgrey": {}}
+      { "cell_darkgrey@crafting.cell_image_darkgrey": {} }
     ],
     "bindings": [
       {
@@ -1880,7 +1880,6 @@
   "scroll_grid": {
     "type": "grid",
     "size": [ "100%", "default" ],
-    "layer": 1,
     "anchor_to": "top_left",
     "anchor_from": "top_left",
 

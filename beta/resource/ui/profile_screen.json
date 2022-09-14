@@ -1443,14 +1443,18 @@
     ]
   },
 
+  "popup_dialog__preview_difference_information@profile.popup_dialog__difference_information": {
+    "$confirm_button_name": "button.close_entry_prompt_dialog"
+  },
+
   "popup_dialog__difference_information@profile.profile_common_dialog": {
     "$ignore_close_button": true,
     "$popup_panel_size": [ "80%", "93%" ],
+    "$confirm_button_name": "button.close_differences_dialog",
     "$title_text": "dr.modal.difference_information_title",
-    "$close_button_to_button_id": "button.close_differences_dialog",
+    "$close_button_to_button_id": "button.close_entry_prompt_dialog",
     "$scrolling_content": "profile.different_info_panel_contents",
     "$confirm_button_text": "gui.ok",
-    "$confirm_button_name": "button.close_differences_dialog",
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
@@ -1885,6 +1889,7 @@
             "restore_failed": "@common_store.popup_dialog__restore_failed",
             "toast_message": "@profile.popup_toast",
             "difference_information": "@profile.popup_dialog__difference_information",
+            "difference_preview": "@profile.popup_dialog__preview_difference_information",
             "delete_persona": "@profile.popup_dialog__delete_persona",
             "create_persona": "@profile.popup_dialog__create_persona",
             "cast_character_select_popup": "@persona_cast_character_screen.popup_dialog__cast_character_select",

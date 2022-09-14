@@ -1571,7 +1571,7 @@
     "anim_type": "alpha",
     "duration": 0,
     "from": 0,
-    "to": "$text_background_alpha",
+    "to": "$title_alpha",
     "next": "@hud.anim_item_name_background_alpha_stay"
   },
 
@@ -1585,7 +1585,7 @@
     "anim_type": "alpha",
     "easing": "in_expo",
     "duration": 2,
-    "from": "$text_background_alpha",
+    "from": "$title_alpha",
     "to": 0
   },
 
@@ -1636,11 +1636,11 @@
                       "alpha": "@hud.anim_item_name_text_alpha_in",
                       "variables": [
                         {
-                          "requires": "(not $text_shadow)",
+                          "requires": "(not $title_shadow)",
                           "$show_shadow": false
                         },
                         {
-                          "requires": "$text_shadow",
+                          "requires": "$title_shadow",
                           "$show_shadow": true
                         }
                       ],
@@ -1845,7 +1845,7 @@
     "easing": "linear",
     "duration": "$title_fade_in_time",
     "from": 0,
-    "to": "$text_background_alpha",
+    "to": "$title_alpha",
     "next": "@hud.anim_title_background_alpha_stay"
   },
 
@@ -1859,7 +1859,7 @@
     "anim_type": "alpha",
     "easing": "linear",
     "duration": "$title_fade_out_time",
-    "from": "$text_background_alpha",
+    "from": "$title_alpha",
     "to": 0,
     "destroy_at_end": "hud_title_text",
     "end_event": "hud_title_text_complete"
@@ -1896,7 +1896,7 @@
     "easing": "linear",
     "duration": "$title_fade_in_time",
     "from": 0,
-    "to": "$text_background_alpha",
+    "to": "$title_alpha",
     "next": "@hud.anim_subtitle_background_alpha_stay"
   },
 
@@ -1910,7 +1910,7 @@
     "anim_type": "alpha",
     "easing": "linear",
     "duration": "$title_fade_out_time",
-    "from": "$text_background_alpha",
+    "from": "$title_alpha",
     "to": 0,
     "end_event": "hud_subtitle_text_complete"
   },
@@ -1948,11 +1948,11 @@
                 "font_size": "extra_large",
                 "variables": [
                   {
-                    "requires": "(not $text_shadow)",
+                    "requires": "(not $title_shadow)",
                     "$show_shadow": false
                   },
                   {
-                    "requires": "$text_shadow",
+                    "requires": "$title_shadow",
                     "$show_shadow": true
                   }
                 ],
@@ -2015,11 +2015,11 @@
                     "$anim_type": "@hud.anim_subtitle_text_alpha_in"
                   },
                   {
-                    "requires": "(not $text_shadow)",
+                    "requires": "(not $title_shadow)",
                     "$show_shadow": false
                   },
                   {
-                    "requires": "$text_shadow",
+                    "requires": "$title_shadow",
                     "$show_shadow": true
                   }
                 ],

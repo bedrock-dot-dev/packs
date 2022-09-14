@@ -3,11 +3,12 @@
 
   "popup_dialog__cast_character_preview@persona_cast_character_screen.popup_dialog__cast_character_select": {
     "$character_cast_prompt_title": "menu.character_cast.preview_title",
+    "$close_button_to_button_id": "button.close_entry_prompt_dialog",
     "$bottom_button_controls": [
       {
         "close_button@common_buttons.light_text_button": {
           "size": [ "100%", "100%" ],
-          "$pressed_button_name": "button.cast_back",
+          "$pressed_button_name": "button.close_entry_prompt_dialog",
           "$button_text": "gui.close"
         }
       }
@@ -111,7 +112,6 @@
             },
             {
               "close_button_holder@common_dialogs.common_close_button_holder": {
-                "$close_button_to_button_id": "button.close_dialog"
               }
             }
           ]
@@ -122,33 +122,28 @@
       },
       {
         "popup_bottom_bar": {
-          "type": "stack_panel",
+          "type": "panel",
           "size": [ "95%", 32 ],
           "offset": [ 0, -6 ],
           "layer": 50,
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
-          "orientation": "horizontal",
 
           "$bottom_button_controls|default": [
             {
               "select_button@common_buttons.light_text_button": {
-                "size": [ "63%", "100%" ],
+                "size": [ "100%", "100%" ],
                 "$pressed_button_name": "button.cast_select",
-                "$button_text": "gui.select"
-              }
-            },
-            {
-              "empty_space": {
-                "type": "panel",
-                "size": [ 2, 0 ]
-              }
-            },
-            {
-              "back_button@common_buttons.light_text_button": {
-                "size": [ "37%", "100%" ],
-                "$pressed_button_name": "button.cast_back",
-                "$button_text": "gui.back"
+                "$button_text": "gui.select",
+                "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+                "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+                "$focus_override_right": "FOCUS_OVERRIDE_STOP",
+                "bindings": [
+                  {
+                    "binding_name": "#cast_enabled_select",
+                    "binding_name_override": "#enabled"
+                  }
+                ]
               }
             }
           ],
@@ -193,6 +188,13 @@
     "anchor_from": "top_left",
     "$show_background": false,
     "size": [ "66%", "100%" ],
+
+    "focus_container": true,
+    "focus_wrap_enabled": false,
+    "focus_navigation_mode_left": "stop",
+    "focus_navigation_mode_right": "stop",
+    "focus_navigation_mode_up": "stop",
+
     "$scroll_size": [ 5, "100% - 4px" ],
     "$scrolling_content": "persona_cast_character_screen.cast_grid_with_buttons",
     "$comment_panel_size": [ "40% - 1px", "100%c" ]
@@ -378,6 +380,27 @@
     ]
   },
 
+  "character_loading_anim@persona.loading_icon": {
+    "anchor_from": "center",
+    "anchor_to": "center"
+  },
+
+  "character_loading_anim_panel": {
+    "type": "image",
+    "size": [ "100%c + 12px", "100%c + 6px" ],
+    "texture": "textures/ui/Banners",
+    "layer": 600,
+    "controls": [
+      { "character_loading_anim@persona_cast_character_screen.character_loading_anim": {} }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#is_character_loading",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
   "cast_character_screen_right_side_model": {
     "type": "input_panel",
     "size": [ "52%y", "100%" ],
@@ -390,7 +413,8 @@
     "$gesture_input_panel_control": "preset_input_panel",
     "$skin_preview": "#cast_preview_skin",
     "controls": [
-      { "skin_model_panel@persona.skin_viewer_panel_skin_model": {} }
+      { "skin_model_panel@persona.skin_viewer_panel_skin_model": {} },
+      { "skin_model_loading_anim@persona_cast_character_screen.character_loading_anim_panel": {} }
     ],
     "button_mappings": [
       {
