@@ -1079,7 +1079,8 @@
                 "focus_navigation_mode_right": "contained",
                 "focus_navigation_mode_left": "$main_content_focus_container_left",
                 "focus_container_custom_left": "$main_content_focus_container_left_custom",
-
+                "tts_skip_message": true,
+                "tts_skip_children": true,
                 "default_focus_precedence": 20,
 
                 "controls": [

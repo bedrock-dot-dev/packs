@@ -214,7 +214,7 @@
     "$visibility_binding_name": "#selectable_button_visibility",
     "$focus_override_left": "enchanting_lapis",
     "$focus_override_right": "FOCUS_OVERRIDE_STOP",
-
+    "sound_volume": 0.0,
     "button_mappings": [
       {
         "from_button_id": "button.menu_select",
