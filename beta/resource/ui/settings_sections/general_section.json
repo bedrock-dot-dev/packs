@@ -2208,22 +2208,8 @@
         }
       },
       {
-        "upscaling_toggle@settings_common.option_toggle": {
-          "ignored": "($is_holographic and $win10_edition)",
-          "$option_label": "options.upscaling",
-          "$option_binding_name": "#graphics_upscaling",
-          "$option_enabled_binding_name": "#graphics_upscaling_enabled",
-          "$toggle_name": "graphics_upscaling",
-          "controls": [
-            {
-              "rtx_disabled_option_upsell@general_section.rtx_disabled_option_upsell": {
-                "$rtx_disabled_option_upsell_visible": "#rtx_upscale_disabled_option_upsell_visible",
-                "$rtx_disabled_option_is_hovered_button_event": "button.rtx_upscale_disabled_option_is_hovered",
-                "$rtx_disabled_option_upsell_tooltip_visible": "#rtx_upscale_disabled_option_upsell_tooltip_visible"
-              }
-            },
-            { "option_generic_core@settings_common.option_generic_core": {} }
-          ]
+        "upscaling_toggle@general_section.upscaling_toggle": {
+          "ignored": "$dev_new_video_settings"
         }
       },
       {
@@ -2338,41 +2324,13 @@
         }
       },
       {
-        "max_framerate_slider@settings_common.option_slider": {
-          "ignored": "($is_publish)",
-          "$option_label": "#max_framerate_slider_label",
-          "$slider_name": "max_framerate",
-          "$slider_value_binding_name": "#max_framerate",
-          "$slider_tts_text_value": "#max_framerate_text_value",
-          "$option_enabled_binding_name": "#max_framerate_enabled",
-          "$slider_steps_binding_name": "#max_framerate_steps",
-          "$label_bindings": [
-            {
-              "binding_name": "$option_label"
-            }
-          ]
+        "max_framerate_slider@general_section.max_framerate_slider": {
+          "ignored": "$dev_new_video_settings"
         }
       },
       {
-        "msaa_slider@settings_common.option_slider": {
-          "ignored": "($is_holographic or $is_win10_arm)",
-          "$option_label": "#msaa_slider_label",
-          "$slider_name": "msaa",
-          "$slider_value_binding_name": "#msaa",
-          "$slider_tts_text_value": "#msaa_text_value",
-          "$option_enabled_binding_name": "#msaa_enabled",
-          "$slider_steps_binding_name": "#msaa_steps",
-          "$label_bindings": [
-            {
-              "binding_name": "$option_label"
-            }
-          ],
-          "bindings": [
-            {
-              "binding_name": "#show_msaa",
-              "binding_name_override": "#visible"
-            }
-          ]
+        "msaa_slider@general_section.msaa_slider": {
+          "ignored": "$dev_new_video_settings"
         }
       },
       {
@@ -2457,6 +2415,58 @@
           }
         }
       }
+    ]
+  },
+
+  "max_framerate_slider@settings_common.option_slider": {
+    "ignored": "($is_publish)",
+    "$option_label": "#max_framerate_slider_label",
+    "$slider_name": "max_framerate",
+    "$slider_value_binding_name": "#max_framerate",
+    "$slider_tts_text_value": "#max_framerate_text_value",
+    "$option_enabled_binding_name": "#max_framerate_enabled",
+    "$slider_steps_binding_name": "#max_framerate_steps",
+    "$label_bindings": [
+      {
+        "binding_name": "$option_label"
+      }
+    ]
+  },
+  "msaa_slider@settings_common.option_slider": {
+    "ignored": "($is_holographic or $is_win10_arm)",
+    "$option_label": "#msaa_slider_label",
+    "$slider_name": "msaa",
+    "$slider_value_binding_name": "#msaa",
+    "$slider_tts_text_value": "#msaa_text_value",
+    "$option_enabled_binding_name": "#msaa_enabled",
+    "$slider_steps_binding_name": "#msaa_steps",
+    "$label_bindings": [
+      {
+        "binding_name": "$option_label"
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#show_msaa",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "upscaling_toggle@settings_common.option_toggle": {
+    "ignored": "($is_holographic and $win10_edition)",
+    "$option_label": "options.upscaling",
+    "$option_binding_name": "#graphics_upscaling",
+    "$option_enabled_binding_name": "#graphics_upscaling_enabled",
+    "$toggle_name": "graphics_upscaling",
+    "controls": [
+      {
+        "rtx_disabled_option_upsell@general_section.rtx_disabled_option_upsell": {
+          "$rtx_disabled_option_upsell_visible": "#rtx_upscale_disabled_option_upsell_visible",
+          "$rtx_disabled_option_is_hovered_button_event": "button.rtx_upscale_disabled_option_is_hovered",
+          "$rtx_disabled_option_upsell_tooltip_visible": "#rtx_upscale_disabled_option_upsell_tooltip_visible"
+        }
+      },
+      { "option_generic_core@settings_common.option_generic_core": {} }
     ]
   },
 
@@ -4011,7 +4021,7 @@
     "type": "label",
     "text": "options.darknessEffectModifier.message",
     "size": [ "100%", "default" ],
-    "color": "$light_button_locked_text_color"
+    "color": "$option_description_text_color"
   },
 
   "notification_duration_label": {
@@ -4025,7 +4035,7 @@
     "type": "label",
     "text": "options.notificationDuration.message",
     "size": [ "100%", "default" ],
-    "color": "$light_button_locked_text_color"
+    "color": "$option_description_text_color"
   },
 
   "accessibility_section": {

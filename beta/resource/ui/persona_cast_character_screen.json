@@ -19,7 +19,7 @@
     "size": [ "100%", "100%" ],
     "layer": 500,
     "$section_content_size": [ "100%", "100% - 16px" ],
-    "$close_button_to_button_id": "button.close_dialog",
+    "$close_button_to_button_id": "button.cast_back",
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
@@ -76,7 +76,7 @@
           "anchor_from": "center",
           "anchor_to": "center",
           "$show_close_button": true,
-          "size": [ "113%y", "80%" ]
+          "size": [ "116%y", "90%" ]
         }
       }
     ]
@@ -110,10 +110,7 @@
                 "anchor_to": "top_middle"
               }
             },
-            {
-              "close_button_holder@common_dialogs.common_close_button_holder": {
-              }
-            }
+            { "close_button_holder@common_dialogs.common_close_button_holder": {} }
           ]
         }
       },
@@ -187,7 +184,7 @@
     "anchor_to": "top_left",
     "anchor_from": "top_left",
     "$show_background": false,
-    "size": [ "66%", "100%" ],
+    "size": [ "62%", "100%" ],
 
     "focus_container": true,
     "focus_wrap_enabled": false,
@@ -201,13 +198,14 @@
   },
 
   "cast_grid_with_buttons": {
-    "type": "panel",
+    "type": "stack_panel",
+    "orientation": "vertical",
     "size": [ "100%-1px", "100%c" ],
     "controls": [
       {
         "top_spacing": {
           "type": "panel",
-          "size": [ "100%", 4 ]
+          "size": [ "100%", 2 ]
         }
       },
       {
@@ -251,17 +249,20 @@
                 "anchor_from": "top_left",
                 "anchor_to": "top_left",
                 "texture": "textures/ui/White",
-                "color": "$dressing_room_dark_bg_color"
+                "color": "black",
+                "alpha": 0.8
               }
             },
             {
-              "background_highlight@persona.equipped_border": {
+              "selected@persona.selected_border": {
+                "layer": 8,
+                "$enable_border": false,
                 "bindings": [
                   {
-                    "binding_name": "#cast_button_selected",
-                    "binding_name_override": "#visible",
                     "binding_type": "collection",
-                    "binding_collection_name": "$cast_single_character_collection_name"
+                    "binding_collection_name": "$cast_single_character_collection_name",
+                    "binding_name": "#cast_button_selected",
+                    "binding_name_override": "#visible"
                   }
                 ]
               }
