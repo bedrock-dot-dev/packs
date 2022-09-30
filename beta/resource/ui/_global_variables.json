@@ -5,7 +5,7 @@
   "$light_button_default_text_color": [ 0.3, 0.3, 0.3 ],
   "$light_button_hover_text_color": [ 1.0, 1.0, 1.0 ],
   "$light_button_pressed_text_color": [ 1.0, 1.0, 1.0 ],
-  "$light_button_locked_text_color": [ 0.0, 0.0, 0.0 ],
+  "$light_button_locked_text_color": [ 0.3, 0.3, 0.3 ],
 
   "$light_toggle_default_text_color": [ 0.3, 0.3, 0.3 ],
   "$light_toggle_hover_text_color": [ 1.0, 1.0, 1.0 ],

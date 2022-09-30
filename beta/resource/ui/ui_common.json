@@ -3403,7 +3403,8 @@
     "property_bag": {
       "drop_shadow": true,
       "round_value": true,
-      "round_up": true
+      "round_up": true,
+      "is_storage_bar": true
     },
     "bindings": [
       {
@@ -4427,11 +4428,6 @@
       }
     ],
     "controls": [
-      {
-        "progress_bar_holding@common.inventory_hold_icon_holding": {
-          "layer": 70
-        }
-      },
       {
         "progress_bar_release@common.inventory_hold_icon_release": {
           "layer": 70
@@ -5788,6 +5784,22 @@
                 "propagate_alpha": true,
                 "disable_anim_fast_forward": true,
                 "layer": -1
+              }
+            },
+            {
+              "factory_panel": {
+                "type": "panel",
+                "controls": [
+                  {
+                    "error_dialog_factory": {
+                      "type": "factory",
+                      "control_ids": {
+                        "error_popup": "@display_logged_error.display_logged_error_modal",
+                        "error_details": "@display_logged_error.error_details_modal"
+                      }
+                    }
+                  }
+                ]
               }
             }
           ]
